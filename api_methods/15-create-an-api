@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apigee API Reference</title>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="5SnAHnkM99G178tpdGG4T7Bgj7V9lPByFAy9md9dOVk=" name="csrf-token" />
+    <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
+
+	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
+       <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+       <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+       <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+       <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+  </head>
+
+
+  <body>
+
+ <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+            <span class="icon-bar"></span>
+          </a>
+		<div class="brand"><a href="/apis">Apigee APIs</a></div>
+
+        <div class="container">
+            <ul class="nav">
+	          <li><a href="/quick_starts">Quick Starts</a></li>
+              <li><a href="/api_resources">API Resources</a></li>
+              <li><a href="/appendix/javascript">JavaScript Object Model</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="container">
+      <div class="content">
+        <div class="row">
+           <div class="span24">
+			<div>
+</div>
+            <div id="breadcrumb">
+<a href="apigee.com/docs/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/1-apis">APIs</a> > Create an API</div>
+
+<h1>Create an API</h1> 
+</p>
+
+<div class="row">
+	<div class="span6"><p>
+		<b>API Platform Base Path:</b>
+		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
+		<b>API Resource Path:</b>
+		<p>/apis</p>
+		<p>
+		Creates an API facade (and an API proxy configuration) on Apigee
+		</p>
+	</div>
+
+	<div class="span6">
+		<p>
+		<b>Verb:</b>
+		<span class="verb-POST">POST</span>
+		</p>
+		<b>Auth:</b>
+		Basic Auth
+		</p>
+
+		<b>Content Types:</b>
+		
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+		</p>
+
+
+		<p>
+		<b><a href="http://apigee.com/docs/api/content/quickstarts/local-api-development">Developer Guide Topic</a></b>
+		</p>
+	</div>
+</div>
+
+
+
+<div class="span24"><p>
+This method creates the framework of an API proxy in Apigee, providing an alternative to creating APIs via the UI. 
+
+<p>The API will not be accessible at runtime until a proxy endpoint and target endpoint are defined. 
+<p>Usually, this request is followed up with an export API proxy method call, which exports the API proxy bundle to the developer's local machine for development.
+</p>
+
+
+
+<b>cURL:</b>
+<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/apis</pre>
+
+<b>Sample Request:</b>
+<pre>curl -H &quot;Content-type:application/json&quot; -X POST -d \
+'{&quot;name&quot; : &quot;myAPI&quot;}'  \
+-u myname:mypass  https://api.enterprise.apigee.com/v1/o/{myorg}/apis</pre>
+<b>Request Payload Elements:</b> 
+<div>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Default</th>
+			<th>Required?</th>
+		</tr>
+		</thead>
+		<tr>
+<div class="request_element" id="request_element_50">
+<td>name</td>
+<td>The name of the API</td>
+<td>N/A</td>
+<td>Yes</td>
+<!-- <td><a href="/request_elements/50" class="btn btn-mini">Detail</a></td> -->
+</div></tr>
+
+
+
+		</table>
+		</div>
+
+
+<b>Sample Response:</b> 
+	<pre>{
+    &quot;configurationVersion&quot;: {
+        &quot;majorVersion&quot;: 4, 
+        &quot;minorVersion&quot;: 0
+    }, 
+    &quot;contextInfo&quot;: &quot;Revision 1 of application weatherTest, in organization apiProvider&quot;, 
+    &quot;createdAt&quot;: 1343182801400, 
+    &quot;createdBy&quot;: &quot;admin@apigee.com&quot;, 
+    &quot;lastModifiedAt&quot;: 1343182801400, 
+    &quot;lastModifiedBy&quot;: &quot;admin@apigee.com&quot;, 
+    &quot;name&quot;: &quot;myAPI&quot;, 
+    &quot;policies&quot;: [], 
+    &quot;proxyEndpoints&quot;: [], 
+    &quot;resources&quot;: [], 
+    &quot;revision&quot;: &quot;1&quot;, 
+    &quot;targetEndpoints&quot;: [], 
+    &quot;targetServers&quot;: [], 
+    &quot;type&quot;: &quot;Application&quot;
+}</pre>
+
+<b>Response Payload Elements:</b>
+	<div><table class="table table-bordered">
+		<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+		</tr>
+		</thead>
+		<tr>
+<div class="response_element" id="response_element_272">
+<td>configurationVersion </td>
+<td>The version of Apigee that the configuration is valid for</td>
+<!-- <td><a href="/response_elements/272" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_273">
+<td>contextInfo </td>
+<td>Apigee generated contextual information about the entity</td>
+<!-- <td><a href="/response_elements/273" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_274">
+<td>name </td>
+<td>The name of the API</td>
+<!-- <td><a href="/response_elements/274" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_275">
+<td>policies </td>
+<td>Policies attached to the API </td>
+<!-- <td><a href="/response_elements/275" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_276">
+<td>proxyEndpoints </td>
+<td>Named proxy endpoints (receiver) defined for the API proxy</td>
+<!-- <td><a href="/response_elements/276" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_277">
+<td>resources </td>
+<td>Any code, scripts, XSLT files used by policies attached to this API</td>
+<!-- <td><a href="/response_elements/277" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_278">
+<td>revision </td>
+<td>The sequential numbered packages of code and configuration that make up an API proxy</td>
+<!-- <td><a href="/response_elements/278" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_279">
+<td>targetEndpoints </td>
+<td>Named proxy endpoints (sender) defined for the API proxy</td>
+<!-- <td><a href="/response_elements/279" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_280">
+<td>targetServers </td>
+<td>Target servers defined for load balancing purposes</td>
+<!-- <td><a href="/response_elements/280" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_281">
+<td>type </td>
+<td>Internal entity definition used by Apigee</td>
+<!-- <td><a href="/response_elements/281" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr>
+	</table>
+	</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->
+
+       <!-- <footer>
+        <p>&copy; Apigee, Inc. 2012</p>
+      </footer>  -->
+
+    </div> <!-- /container -->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+     <script src="/assets/application-3acbc888ea1a902e92db3f484dfc60e4.js" type="text/javascript"></script> 
+
+  </body>
+</html>

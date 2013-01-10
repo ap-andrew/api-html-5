@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apigee API Reference</title>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="5SnAHnkM99G178tpdGG4T7Bgj7V9lPByFAy9md9dOVk=" name="csrf-token" />
+    <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
+
+	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
+       <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+       <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+       <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+       <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+  </head>
+
+
+  <body>
+
+ <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+            <span class="icon-bar"></span>
+          </a>
+		<div class="brand"><a href="/apis">Apigee APIs</a></div>
+
+        <div class="container">
+            <ul class="nav">
+	          <li><a href="/quick_starts">Quick Starts</a></li>
+              <li><a href="/api_resources">API Resources</a></li>
+              <li><a href="/appendix/javascript">JavaScript Object Model</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="container">
+      <div class="content">
+        <div class="row">
+           <div class="span24">
+			<div>
+</div>
+            <div id="category">
+API Configuration and Management
+</div>
+
+<div id="breadcrumb">
+<a href="apigee.com/docs/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > Debug Sessions</div>
+
+
+<div class="page-header">
+  <h1>Debug Sessions</h1>
+</div>
+
+<!-- <div class=btn>
+<a href="/api_methods/new">Add an API Method</a>
+</div> -->
+
+<div class="lead">API Platform Base Path: https://api.enterprise.apigee.com/v1/o/{org_name}</div>
+
+<table class="table">
+		<tr><td class="lead">API Resource Path: /debugsessions</td></tr>
+		<tr><td>A session configured on Apigee to record specified messages and associated processing for debugging purposes</td></tr>
+  		<tr><td></td></tr>
+       <!-- <td><div id="well"><pre></pre></div></td></tr> -->
+</table>
+	
+<table class="table table-bordered">
+
+<tbody>
+		<tr><td colspan="2"><span class="lead">Create Debug Session</span></td><td><a href="/api_methods/41-create-debug-session" class="btn btn-mini">Detail</a></td> 
+	    <tr><td colspan="3"><span id="well"><pre>/environments/{environmentName} /apis/{apiName}/revisions/{revisionVersion}/debugsessions/{sessionID}</pre></span></td></tr>
+		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">Creates a Debug session on Apigee</td></tr>
+  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+		<tr><td colspan="2"><span class="lead">Delete a debug session</span></td><td><a href="/api_methods/43-delete-a-debug-session" class="btn btn-mini">Detail</a></td> 
+	    <tr><td colspan="3"><span id="well"><pre>/environments/{environmentName}/apis/{apiName}/revisions/{revisionVersion}/debugsessions/{sessionID}</pre></span></td></tr>
+		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">Deletes a debug session previously generated in an environment</td></tr>
+  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+		<tr><td colspan="2"><span class="lead">Get Debug Session Data</span></td><td><a href="/api_methods/42-get-debug-session-data" class="btn btn-mini">Detail</a></td> 
+	    <tr><td colspan="3"><span id="well"><pre>/environments/{environmentName}/apis/{apiName}/revisions/{revisionId/debugsessions/{debugSessionId}/data</pre></span></td></tr>
+		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2"></td></tr>
+  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+		<tr><td colspan="2"><span class="lead">List Debug Sessions</span></td><td><a href="/api_methods/7-list-debug-sessions" class="btn btn-mini">Detail</a></td> 
+	    <tr><td colspan="3"><span id="well"><pre>/environment/{environmentName}/debugsessions</pre></span></td></tr>
+		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">Get a list of debug sessions by ID within an environment</td></tr>
+  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+</tbody>
+</table>
+
+<!-- Schema:
+
+<div id="well"><pre></pre></div> -->
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->
+
+       <!-- <footer>
+        <p>&copy; Apigee, Inc. 2012</p>
+      </footer>  -->
+
+    </div> <!-- /container -->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+     <script src="/assets/application-3acbc888ea1a902e92db3f484dfc60e4.js" type="text/javascript"></script> 
+
+  </body>
+</html>

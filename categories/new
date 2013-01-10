@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apigee API Reference</title>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="5SnAHnkM99G178tpdGG4T7Bgj7V9lPByFAy9md9dOVk=" name="csrf-token" />
+    <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
+
+	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
+       <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+       <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+       <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+       <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+  </head>
+
+
+  <body>
+
+ <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+            <span class="icon-bar"></span>
+          </a>
+		<div class="brand"><a href="/apis">Apigee APIs</a></div>
+
+        <div class="container">
+            <ul class="nav">
+	          <li><a href="/quick_starts">Quick Starts</a></li>
+              <li><a href="/api_resources">API Resources</a></li>
+              <li><a href="/appendix/javascript">JavaScript Object Model</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="container">
+      <div class="content">
+        <div class="row">
+           <div class="span24">
+			<div>
+</div>
+            <h1>New category</h1>
+
+<form accept-charset="UTF-8" action="/categories" class="formtastic category" id="new_category" method="post" novalidate="novalidate"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="5SnAHnkM99G178tpdGG4T7Bgj7V9lPByFAy9md9dOVk=" /></div>
+  <fieldset class="inputs"><ol>
+    <li class="string input optional stringish" id="category_name_input"><label class=" label" for="category_name">Name</label><input id="category_name" maxlength="255" name="category[name]" type="text" />
+
+</li>
+    <li class="string input optional stringish" id="category_description_input"><label class=" label" for="category_description">Description</label><input id="category_description" maxlength="255" name="category[description]" type="text" />
+
+</li>
+    <li class="text input optional" id="category_doc_input"><label class=" label" for="category_doc">Doc</label><textarea id="category_doc" name="category[doc]" rows="20"></textarea>
+
+</li>
+</ol></fieldset>
+  <fieldset class="actions"><ol>
+    <li class="action input_action " id="category_submit_action"><input name="commit" type="submit" value="Create Category" /></li>
+</ol></fieldset></form>
+
+<a href="/categories">Back</a>
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->
+
+       <!-- <footer>
+        <p>&copy; Apigee, Inc. 2012</p>
+      </footer>  -->
+
+    </div> <!-- /container -->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+     <script src="/assets/application-3acbc888ea1a902e92db3f484dfc60e4.js" type="text/javascript"></script> 
+
+  </body>
+</html>
