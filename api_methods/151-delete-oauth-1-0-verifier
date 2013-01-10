@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5SnAHnkM99G178tpdGG4T7Bgj7V9lPByFAy9md9dOVk=" name="csrf-token" />
+<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -18,31 +18,14 @@
 
   <body>
 
- <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
-            <span class="icon-bar"></span>
-          </a>
-		<div class="brand"><a href="/apis">Apigee APIs</a></div>
 
-        <div class="container">
-            <ul class="nav">
-	          <li><a href="/quick_starts">Quick Starts</a></li>
-              <li><a href="/api_resources">API Resources</a></li>
-              <li><a href="/appendix/javascript">JavaScript Object Model</a></li>
-            </ul>
-        </div>
-      </div>
-    </div>
-  </div>
 
     <div class="container">
       <div class="content">
         <div class="row">
-           <div class="span24">
-			<div>
-</div>
+           <div class="span12">
+			<!-- <div>
+</div> -->
             <div id="breadcrumb">
 <a href="apigee.com/docs/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/32-oauth-1-0a-verifiers">OAuth 1.0a Verifiers</a> > Delete OAuth 1.0 Verifier</div>
 
@@ -70,13 +53,12 @@
 		</p>
 
 
-
 	</div>
 </div>
 
 
 
-<div class="span24"><p>
+<div class="span18"><p>
 Deletes the specified verifier code, which is the verifier code given by the provider
 </p>
 
