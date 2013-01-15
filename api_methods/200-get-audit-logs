@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apigee API Reference</title>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+    <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
+
+	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
+       <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+       <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+       <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+       <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+  </head>
+
+
+  <body>
+
+
+
+    <div class="container">
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<!-- <div>
+</div> -->
+            <div id="breadcrumb">
+<a href="apigee.com/docs/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/46-audits">Audits</a> > Get audit logs</div>
+
+<h1>Get audit logs</h1> 
+</p>
+
+<div class="row">
+	<div class="span6"><p>
+		<b>API Platform Base Path:</b>
+		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
+		<b>API Resource Path:</b>
+		<p>/audits</p>
+		<p>
+		Gets audit records for organizations, APIs, API revisions, and policies. (Note that base path inserts audits before organizations: /audits/organizations/{myorg}.
+		</p>
+	</div>
+
+	<div class="span6">
+		<p>
+		<b>Verb:</b>
+		<span class="verb-GET">GET</span>
+		</p>
+		<b>Auth:</b>
+		Basic Auth
+		</p>
+
+		<b>Content Types:</b>
+		
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+		</p>
+
+	</div>
+</div>
+
+
+
+<div class="span18"><p>
+<p>Append the target resource as a URL parameter to the base path of the request for an audit.</p>
+Supported audit targets:
+<ul>
+<li>/apis/{apiName}</li>
+<li>/apis/{apiName}/revisions/{revisionNumber}/policies/{policyName}</li>
+<li>/apis/{apiName}/revisions/{revisionNumber}/resources/{resourceName}</li></ul>
+
+<p>An audit returns a history of GET, CREATE, UPDATE, and DELETE operations on the audit target.</p>
+
+<p>For API revisions, deploy and undeploy actions are recorded as CREATE operations. Therefore a CREATE action on an API revision indicates that a new revision was deployed while the previous revision was undeployed. </p>
+
+<p>Supported query parameters:</p>
+<ul>
+<li>timeline: Filters results by time interval. Defaults to "today".</li>
+<li>operation: Filters results by operation (GET, CREATE, UPDATE, and DELETE). </li>
+<li>user: Filters results by email address for Apigee user.</li></ul>
+
+</p>
+
+
+
+<b>cURL:</b>
+<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/audits/o/{myorg}</pre>
+
+
+
+
+<button type="button" class="btn" data-toggle="collapse" data-target="#qparams">
+Query Parameters:
+</button>
+<div id="collapsible">
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Default</th>
+			<th>Required?</th>
+		</tr>
+		</thead>
+		<div class="query_parameter" id="query_parameter_21">
+<tr>
+<td>timeline</td>
+<td>Filters results by time interval</td>
+<td>Last 24 hours</td>
+<td>No</td>
+<!-- <td><a href="/query_parameters/21" class="btn btn-mini">Detail</a></td></tr> -->
+<!-- <tr><td colspan="6">Description: Filters results by time interval</td></tr> -->
+<!-- <td><a href="/api_methods/200-get-audit-logs?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</tr>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="query_parameter" id="query_parameter_22">
+<tr>
+<td>user</td>
+<td>Filters results by Apigee user's email address</td>
+<td>N/A</td>
+<td>No</td>
+<!-- <td><a href="/query_parameters/22" class="btn btn-mini">Detail</a></td></tr> -->
+<!-- <tr><td colspan="6">Description: Filters results by Apigee user's email address</td></tr> -->
+<!-- <td><a href="/api_methods/200-get-audit-logs?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</tr>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="query_parameter" id="query_parameter_23">
+<tr>
+<td>operation</td>
+<td>Filters results by operation</td>
+<td>N/A</td>
+<td>No</td>
+<!-- <td><a href="/query_parameters/23" class="btn btn-mini">Detail</a></td></tr> -->
+<!-- <tr><td colspan="6">Description: Filters results by operation</td></tr> -->
+<!-- <td><a href="/api_methods/200-get-audit-logs?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</tr>
+</div>
+
+
+
+
+
+
+
+
+
+
+		</table>
+
+</div>
+
+<b>Sample Response:</b> 
+	<pre>	&lt;AuditRecord&gt;
+    	&lt;Operation&gt;GET&lt;/Operation&gt;
+    	&lt;RequestUri&gt;/v1/o/myOrg&lt;/RequestUri&gt;
+    	&lt;Response&gt;Organization {name='myOrg', type='trial', displayname='myOrg', name='myOrg', createdAt='1346755305264', createdBy='defaultUser', lastModifiedAt='1346755305264', lastModifiedBy='defaultUser', description=null}&lt;/Response&gt;
+    	&lt;ResponseCode&gt;200&lt;/ResponseCode&gt;
+    	&lt;TimeStamp&gt;1346755316891&lt;/TimeStamp&gt;
+	&lt;/AuditRecord&gt;
+
+	&lt;AuditRecord&gt;
+    	&lt;Operation&gt;DELETE&lt;/Operation&gt;
+    	&lt;RequestUri&gt;/v1/o/myOrg&lt;/RequestUri&gt;
+    	&lt;Response&gt;Organization {name='myOrg', type='trial', displayname='myOrg', name='myOrg', createdAt='1346755305264', createdBy='defaultUser', lastModifiedAt='1346755305264', lastModifiedBy='defaultUser', description=null}&lt;/Response&gt;
+    	&lt;ResponseCode&gt;200&lt;/ResponseCode&gt;
+    	&lt;TimeStamp&gt;1346755331511&lt;/TimeStamp&gt;
+	&lt;/AuditRecord&gt;
+
+	&lt;AuditRecord&gt;
+    	&lt;Operation&gt;GET&lt;/Operation&gt;
+    	&lt;RequestUri&gt;/v1/o/myOrg&lt;/RequestUri&gt;
+    	&lt;Response&gt;Organization {name='myOrg', type='trial', displayname='myOrg', name='myOrg', createdAt='1346755305264', createdBy='defaultUser', lastModifiedAt='1346755305264', lastModifiedBy='defaultUser', description=null}&lt;/Response&gt;
+    	&lt;ResponseCode&gt;200&lt;/ResponseCode&gt;
+    	&lt;TimeStamp&gt;1346755316805&lt;/TimeStamp&gt;
+	&lt;/AuditRecord&gt;
+
+	&lt;AuditRecord&gt;
+    	&lt;Operation&gt;CREATE&lt;/Operation&gt;
+&lt;Request&gt;Organization {name='myOrg', type='null', displayname='null', name='myOrg', createdAt='null', createdBy='null', lastModifiedAt='null', lastModifiedBy='null', description=null}&lt;/Request&gt;
+    	&lt;RequestUri&gt;/v1/o/myOrg&lt;/RequestUri&gt;
+    	&lt;Response&gt;Organization {name='myOrg', type='trial', displayname='myOrg', name='myOrg', createdAt='1346755305264', createdBy='defaultUser', lastModifiedAt='1346755305264', lastModifiedBy='defaultUser', description=null}&lt;/Response&gt;
+    	&lt;ResponseCode&gt;201&lt;/ResponseCode&gt;
+    	&lt;TimeStamp&gt;1346755305365&lt;/TimeStamp&gt;
+	&lt;/AuditRecord&gt;
+&lt;/AuditRecords&gt;
+</pre>
+
+<b>Response Payload Elements:</b>
+	<div><table class="table table-bordered">
+		<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+		</tr>
+		</thead>
+		<tr>
+<div class="response_element" id="response_element_696">
+<td>AuditRecord </td>
+<td>The audit record for an operation on the target resource</td>
+<!-- <td><a href="/response_elements/696" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/200-get-audit-logs?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_698">
+<td>Operation </td>
+<td>The operation (GET, CREATE, UPDATE, or DELETE) logged for this target</td>
+<!-- <td><a href="/response_elements/698" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/200-get-audit-logs?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_699">
+<td>RequestUri </td>
+<td>The URI path of the request to the audit target</td>
+<!-- <td><a href="/response_elements/699" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/200-get-audit-logs?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_701">
+<td>Response </td>
+<td>The body of the response message generated by Apigee for the operation</td>
+<!-- <td><a href="/response_elements/701" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/200-get-audit-logs?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_702">
+<td>ResponseCode </td>
+<td>The response code returned for the operation</td>
+<!-- <td><a href="/response_elements/702" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/200-get-audit-logs?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_704">
+<td>TimeStamp </td>
+<td>Unix time when the action was logged by the auditing system</td>
+<!-- <td><a href="/response_elements/704" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/200-get-audit-logs?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr>
+	</table>
+	</div>
+
+
+<b>Errors</b> 
+	<pre>Failure 4xx with proper error message
+&lt;Error&gt;
+&lt;Code&gt;audit.invalid_search_parameter&lt;/Code&gt;
+&lt;Message&gt;Search parameter is not valid &lt;/Message&gt;
+&lt;Contexts/&gt;
+&lt;/Error&gt;</pre>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->
+
+       <!-- <footer>
+        <p>&copy; Apigee, Inc. 2012</p>
+      </footer>  -->
+
+    </div> <!-- /container -->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+     <script src="/assets/application-3acbc888ea1a902e92db3f484dfc60e4.js" type="text/javascript"></script> 
+
+  </body>
+</html>

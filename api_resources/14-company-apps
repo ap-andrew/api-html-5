@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apigee API Reference</title>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+    <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
+
+	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
+       <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+       <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+       <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+       <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+  </head>
+
+
+  <body>
+
+
+
+    <div class="container">
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<!-- <div>
+</div> -->
+            <div id="category">
+Developer and App Administration
+</div>
+
+<div id="breadcrumb">
+<a href="apigee.com/docs/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > Company Apps</div>
+
+
+<div class="page-header">
+  <h1>Company Apps</h1>
+</div>
+
+<!-- <div class=btn>
+<a href="/api_methods/new">Add an API Method</a>
+</div> -->
+
+<div class="lead">API Platform Base Path: https://api.enterprise.apigee.com/v1/o/{org_name}</div>
+
+<table class="table">
+		<tr><td class="lead">API Resource Path: /companies/{companyName}/apps</td></tr>
+		<tr><td>An app associated with a company</td></tr>
+  		<tr><td>An application can be associated with a company in the same way that an app can be associated with a developer. An app associated with a company is called a company app.
+
+For more background information, see companies for a description of the distinction between organization developers and company developers. Also see Apps for details on the Developer Apps API.</td></tr>
+       <!-- <td><div id="well"><pre>{
+  &quot;accessType&quot; : &quot;read&quot;,
+  &quot;appFamily&quot; : &quot;default&quot;,
+  &quot;attributes&quot; : [ {
+    &quot;name&quot; : &quot;Platform&quot;,
+    &quot;value&quot; : &quot;iOS&quot;
+  } ],
+  &quot;callbackUrl&quot; : &quot;api.company.com&quot;,
+  &quot;createdAt&quot; : 1343835346639,
+  &quot;createdBy&quot; : &quot;andrew@apigee.com&quot;,
+  &quot;credentials&quot; : [ {
+    &quot;apiProducts&quot; : [ {
+      &quot;apiproduct&quot; : &quot;weather_free&quot;,
+      &quot;status&quot; : &quot;approved&quot;
+    } ],
+    &quot;attributes&quot; : [ ],
+    &quot;consumerKey&quot; : &quot;GlouKJyAARkstGJt2rp8HbGmWd7qf0Hv&quot;,
+    &quot;consumerSecret&quot; : &quot;NOGKpokG1ThDPUdU&quot;,
+    &quot;status&quot; : &quot;approved&quot;
+  } ],
+  &quot;developerId&quot; : &quot;apiprovider@@@6ejTv4l6eQpvqesS&quot;,
+  &quot;lastModifiedAt&quot; : 1343835346639,
+  &quot;lastModifiedBy&quot; : &quot;admin@apigee.com&quot;,
+  &quot;name&quot; : &quot;weatherapp&quot;,
+  &quot;status&quot; : &quot;approved&quot;
+}</pre></div></td></tr> -->
+</table>
+	
+<table class="table table-bordered">
+
+<tbody>
+		<tr><td colspan="2"><span class="lead">Create app for a company</span></td><td><a href="/api_methods/98-create-app-for-a-company" class="btn btn-mini">Detail</a></td> 
+	    <tr><td colspan="3"><span id="well"><pre>/companies/{company_name}/apps</pre></span></td></tr>
+		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">Creates an App for a Company</td></tr>
+  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+		<tr><td colspan="2"><span class="lead">Delete a company app</span></td><td><a href="/api_methods/67-delete-a-company-app" class="btn btn-mini">Detail</a></td> 
+	    <tr><td colspan="3"><span id="well"><pre>/companies/{company_name}/apps/{app_name}</pre></span></td></tr>
+		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">Deletes a company app</td></tr>
+  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+		<tr><td colspan="2"><span class="lead">Get count of API Resources for Company App</span></td><td><a href="/api_methods/66-get-count-of-api-resources-for-company-app" class="btn btn-mini">Detail</a></td> 
+	    <tr><td colspan="3"><span id="well"><pre>/companies/{companyName}/apps/{appname}?query=count&amp;entity=apiresources</pre></span></td></tr>
+		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">Gets the count API Resources for a Company App</td></tr>
+  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+		<tr><td colspan="2"><span class="lead">List company apps</span></td><td><a href="/api_methods/68-list-company-apps" class="btn btn-mini">Detail</a></td> 
+	    <tr><td colspan="3"><span id="well"><pre>/companies/{company_name}/apps</pre></span></td></tr>
+		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">List Company Apps in an Organization</td></tr>
+  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+		<tr><td colspan="2"><span class="lead">List Company Apps (Expanded)</span></td><td><a href="/api_methods/69-list-company-apps-expanded" class="btn btn-mini">Detail</a></td> 
+	    <tr><td colspan="3"><span id="well"><pre>/companies/{company_name}/apps?expand=true</pre></span></td></tr>
+		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">Gets an expanded list Company Apps</td></tr>
+  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+		<tr><td colspan="2"><span class="lead">Update a Company App</span></td><td><a href="/api_methods/65-update-a-company-app" class="btn btn-mini">Detail</a></td> 
+	    <tr><td colspan="3"><span id="well"><pre>/companies/{company_name}/apps/{app_name}</pre></span></td></tr>
+		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-PUT">PUT</span> </td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">Updates an existing Company App</td></tr>
+  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+		<tr><td colspan="2"><span class="lead">Update a company app with an additional API product</span></td><td><a href="/api_methods/132-update-a-company-app-with-an-additional-api-product" class="btn btn-mini">Detail</a></td> 
+	    <tr><td colspan="3"><span id="well"><pre>/companies/{company_name}/apps/{app_name}/keys/{consumer_key}</pre></span></td></tr>
+		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">Update existing app key with an API product. </td></tr>
+  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+		<tr><td colspan="2"><span class="lead">Update Company App</span></td><td><a href="/api_methods/99-update-company-app" class="btn btn-mini">Detail</a></td> 
+	    <tr><td colspan="3"><span id="well"><pre>/companies/{company_name}/apps/{app_name}</pre></span></td></tr>
+		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-PUT">PUT</span> </td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">Updates an existing company app with a new profile</td></tr>
+  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+</tbody>
+</table>
+
+<!-- Schema:
+
+<div id="well"><pre></pre></div> -->
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->
+
+       <!-- <footer>
+        <p>&copy; Apigee, Inc. 2012</p>
+      </footer>  -->
+
+    </div> <!-- /container -->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+     <script src="/assets/application-3acbc888ea1a902e92db3f484dfc60e4.js" type="text/javascript"></script> 
+
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apigee API Reference</title>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+    <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
+
+	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
+       <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+       <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+       <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+       <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+  </head>
+
+
+  <body>
+
+
+
+    <div class="container">
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<!-- <div>
+</div> -->
+            <div id="category">
+Administration
+</div>
+
+<div id="breadcrumb">
+<a href="apigee.com/docs/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > Audits</div>
+
+
+<div class="page-header">
+  <h1>Audits</h1>
+</div>
+
+<!-- <div class=btn>
+<a href="/api_methods/new">Add an API Method</a>
+</div> -->
+
+<div class="lead">API Platform Base Path: https://api.enterprise.apigee.com/v1/o/{org_name}</div>
+
+<table class="table">
+		<tr><td class="lead">API Resource Path: /audits</td></tr>
+		<tr><td>Events stored as log entries in the Apigee datastore. (Note that the base path for audits precedes /organizations.)</td></tr>
+  		<tr><td><p>Audit logs provide access to  the actions (create, read, update, delete) executed on entities managed by Apigee.</p>
+
+<p>The following details are captured as audit details for an event:</p>
+
+<ul><li>Operation: create, update, read, delete, deploy, undeploy</li>
+<li>RequestURI</li>
+<li>Request</li>
+<li>ResponseCode</li>
+<li>Response</li>
+<li>User</li>
+<li>TimeStamp</li>
+</ul></td></tr>
+       <!-- <td><div id="well"><pre></pre></div></td></tr> -->
+</table>
+	
+<table class="table table-bordered">
+
+<tbody>
+		<tr><td colspan="2"><span class="lead">Get audit logs</span></td><td><a href="/api_methods/200-get-audit-logs" class="btn btn-mini">Detail</a></td> 
+	    <tr><td colspan="3"><span id="well"><pre>/audits</pre></span></td></tr>
+		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">Gets audit records for organizations, APIs, API revisions, and policies. (Note that base path inserts audits before organizations: /audits/organizations/{myorg}.</td></tr>
+		<tr><td><strong>Content Types:</strong></td><td>
+		
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+		</td></tr>
+  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+		<tr><td colspan="2"><span class="lead">Lists audit entries for a user in an organization</span></td><td><a href="/api_methods/201-lists-audit-entries-for-a-user-in-an-organization" class="btn btn-mini">Detail</a></td> 
+	    <tr><td colspan="3"><span id="well"><pre>/users/{user_email}/audits</pre></span></td></tr>
+		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">List audit entries for an Apigee user. Note that the base path for this request does not include organization.</td></tr>
+		<tr><td><strong>Content Types:</strong></td><td>
+		
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+		</td></tr>
+  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+</tbody>
+</table>
+
+<!-- Schema:
+
+<div id="well"><pre></pre></div> -->
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->
+
+       <!-- <footer>
+        <p>&copy; Apigee, Inc. 2012</p>
+      </footer>  -->
+
+    </div> <!-- /container -->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+     <script src="/assets/application-3acbc888ea1a902e92db3f484dfc60e4.js" type="text/javascript"></script> 
+
+  </body>
+</html>

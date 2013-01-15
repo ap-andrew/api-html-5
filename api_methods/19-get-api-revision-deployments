@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apigee API Reference</title>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+    <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
+
+	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
+       <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+       <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+       <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+       <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+  </head>
+
+
+  <body>
+
+
+
+    <div class="container">
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<!-- <div>
+</div> -->
+            <div id="breadcrumb">
+<a href="apigee.com/docs/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/36-deployments">Deployments</a> > Get API Revision Deployments</div>
+
+<h1>Get API Revision Deployments</h1> 
+</p>
+
+<div class="row">
+	<div class="span6"><p>
+		<b>API Platform Base Path:</b>
+		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
+		<b>API Resource Path:</b>
+		<p>/apis/{api_name}/revisions/{revision_number}/deployments</p>
+		<p>
+		Get Deployments for an API Revision
+		</p>
+	</div>
+
+	<div class="span6">
+		<p>
+		<b>Verb:</b>
+		<span class="verb-GET">GET</span>
+		</p>
+		<b>Auth:</b>
+		Basic Auth
+		</p>
+
+
+	</div>
+</div>
+
+
+
+<div class="span18"><p>
+Returns deployment details for a specific revision number of an API.
+</p>
+
+
+
+<b>cURL:</b>
+<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/apis/{apiName}/revisions/{revisionNumber}/deployments</pre>
+
+
+
+<b>Sample Response:</b> 
+	<pre>{
+  &quot;aPIProxy&quot; : &quot;weatherTest&quot;,
+  &quot;environment&quot; : [ {
+    &quot;configuration&quot; : {
+      &quot;basePath&quot; : &quot;/&quot;,
+      &quot;steps&quot; : [ ]
+    },
+    &quot;name&quot; : &quot;test&quot;,
+    &quot;server&quot; : [ {
+      &quot;status&quot; : &quot;deployed&quot;,
+      &quot;type&quot; : [ &quot;message-processor&quot; ],
+      &quot;uUID&quot; : &quot;90096dd1-1019-406b-9f42-fbb80cd01200&quot;
+    }, {
+      &quot;status&quot; : &quot;deployed&quot;,
+      &quot;type&quot; : [ &quot;message-processor&quot; ],
+      &quot;uUID&quot; : &quot;7d6e2eb1-581a-4db0-8045-20d9c3306549&quot;
+    }, {
+      &quot;status&quot; : &quot;deployed&quot;,
+      &quot;type&quot; : [ &quot;router&quot; ],
+      &quot;uUID&quot; : &quot;1619e2d7-c822-45e0-9f97-63882fb6a805&quot;
+    }, {
+      &quot;status&quot; : &quot;deployed&quot;,
+      &quot;type&quot; : [ &quot;router&quot; ],
+      &quot;uUID&quot; : &quot;8a5f3d5f-46f8-4e99-b4cc-955875c8a8c8&quot;
+    } ],
+    &quot;state&quot; : &quot;deployed&quot;
+  } ],
+  &quot;name&quot; : &quot;1&quot;,
+  &quot;organization&quot; : &quot;myorg&quot;
+}</pre>
+
+<b>Response Payload Elements:</b>
+	<div><table class="table table-bordered">
+		<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+		</tr>
+		</thead>
+		<tr>
+<div class="response_element" id="response_element_313">
+<td>aPIProxy </td>
+<td>APi proxy settings</td>
+<!-- <td><a href="/response_elements/313" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/19-get-api-revision-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_314">
+<td>environment </td>
+<td>Environment settings</td>
+<!-- <td><a href="/response_elements/314" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/19-get-api-revision-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_315">
+<td>configuration </td>
+<td>Confirguation settings for the revision</td>
+<!-- <td><a href="/response_elements/315" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/19-get-api-revision-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_316">
+<td>basePath </td>
+<td>Basepath for the API in this environment</td>
+<!-- <td><a href="/response_elements/316" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/19-get-api-revision-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_317">
+<td>steps </td>
+<td>Policies attached to the API revision</td>
+<!-- <td><a href="/response_elements/317" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/19-get-api-revision-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_318">
+<td>name </td>
+<td>Name of the environment where the revision is deployed</td>
+<!-- <td><a href="/response_elements/318" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/19-get-api-revision-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_319">
+<td>name </td>
+<td>Name of the revision (the revision numer deployed)</td>
+<!-- <td><a href="/response_elements/319" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/19-get-api-revision-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_320">
+<td>organization </td>
+<td>The organization where the API is deployed</td>
+<!-- <td><a href="/response_elements/320" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/19-get-api-revision-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr>
+	</table>
+	</div>
+
+
+<b>Errors</b> 
+	<pre>Failure 4xx with proper error message
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;Error&gt;
+     &lt;Code&gt;messaging.config.beans.ApplicationRevisionDoesNotExist&lt;/Code&gt;
+     &lt;Message&gt;APIProxy revision 2 does not exist&lt;/Message&gt;
+     &lt;Contexts/&gt;
+&lt;/Error&gt;</pre>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->
+
+       <!-- <footer>
+        <p>&copy; Apigee, Inc. 2012</p>
+      </footer>  -->
+
+    </div> <!-- /container -->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+     <script src="/assets/application-3acbc888ea1a902e92db3f484dfc60e4.js" type="text/javascript"></script> 
+
+  </body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apigee API Reference</title>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+    <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
+
+	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
+       <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+       <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+       <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+       <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+  </head>
+
+
+  <body>
+
+
+
+    <div class="container">
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<!-- <div>
+</div> -->
+            <div id="category">
+API Configuration and Management
+</div>
+
+<div id="breadcrumb">
+<a href="apigee.com/docs/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > APIs</div>
+
+
+<div class="page-header">
+  <h1>APIs</h1>
+</div>
+
+<!-- <div class=btn>
+<a href="/api_methods/new">Add an API Method</a>
+</div> -->
+
+<div class="lead">API Platform Base Path: https://api.enterprise.apigee.com/v1/o/{org_name}</div>
+
+<table class="table">
+		<tr><td class="lead">API Resource Path: /apis</td></tr>
+		<tr><td>An API facade that acts as a managed proxy for a service</td></tr>
+  		<tr><td>An API to create and manage API facades, which act as a proxies for existing services.  In Apigee, an API facade is defined by a base URL, a backend service URL, and  a number of API resources (URIs).</td></tr>
+       <!-- <td><div id="well"><pre>{
+  &quot;configurationVersion&quot; : {
+    &quot;majorVersion&quot; : 4,
+    &quot;minorVersion&quot; : 0
+  },
+  &quot;contextInfo&quot; : &quot;Revision 10 of application weatherAPI, in organization apiProvider&quot;,
+  &quot;createdAt&quot; : 1343781993471,
+  &quot;createdBy&quot; : &quot;orgAdmin&quot;,
+  &quot;lastModifiedAt&quot; : 1343781993471,
+  &quot;lastModifiedBy&quot; : &quot;orgAdmin&quot;,
+  &quot;name&quot; : &quot;weatherAPI&quot;,
+  &quot;policies&quot; : [ &quot;Quota&quot; ],
+  &quot;proxyEndpoints&quot; : [ &quot;default&quot; ],
+  &quot;resources&quot; : [ ],
+  &quot;revision&quot; : &quot;10&quot;,
+  &quot;targetEndpoints&quot; : [ &quot;default&quot; ],
+  &quot;targetServers&quot; : [ ],
+  &quot;type&quot; : &quot;Application&quot;
+}</pre></div></td></tr> -->
+</table>
+	
+<table class="table table-bordered">
+
+<tbody>
+		<tr><td colspan="2"><span class="lead">Create an API</span></td><td><a href="/api_methods/15-create-an-api" class="btn btn-mini">Detail</a></td> 
+	    <tr><td colspan="3"><span id="well"><pre>/apis</pre></span></td></tr>
+		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">Creates an API facade (and an API proxy configuration) on Apigee</td></tr>
+		<tr><td><strong>Content Types:</strong></td><td>
+		
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+		</td></tr>
+  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+		<tr><td colspan="2"><span class="lead">Delete an API</span></td><td><a href="/api_methods/3-delete-an-api" class="btn btn-mini">Detail</a></td> 
+	    <tr><td colspan="3"><span id="well"><pre>/apis/{apiname}</pre></span></td></tr>
+		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">Deletes an API and all associated endpoints, policies,  resources, and revisions</td></tr>
+  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+		<tr><td colspan="2"><span class="lead">Delete an API Revision</span></td><td><a href="/api_methods/27-delete-an-api-revision" class="btn btn-mini">Detail</a></td> 
+	    <tr><td colspan="3"><span id="well"><pre>/apis/{apiName}/revision/{revisionNumber}</pre></span></td></tr>
+		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">Deletes a specific revision of an API</td></tr>
+  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+		<tr><td colspan="2"><span class="lead">Deploy an API to an Environment</span></td><td><a href="/api_methods/25-deploy-an-api-to-an-environment" class="btn btn-mini">Detail</a></td> 
+	    <tr><td colspan="3"><span id="well"><pre>/apis/{apiName}/revisions/{revisionNumber}/deployments?action=deploy&amp;env={envName}&amp;basepath={/basepath}</pre></span></td></tr>
+		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">Pushes an API to an environment (typically 'test' or 'prod') for execution</td></tr>
+  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+		<tr><td colspan="2"><span class="lead">Export an API</span></td><td><a href="/api_methods/105-export-an-api" class="btn btn-mini">Detail</a></td> 
+	    <tr><td colspan="3"><span id="well"><pre>/apis/{api_name}/revisions{revision_number}?format=bundle</pre></span></td></tr>
+		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">Exports an API from Apigee to the local machine a ZIP bundle of config and code files.</td></tr>
+  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+		<tr><td colspan="2"><span class="lead">Get an API</span></td><td><a href="/api_methods/104-get-an-api" class="btn btn-mini">Detail</a></td> 
+	    <tr><td colspan="3"><span id="well"><pre>/apis/{api_name}</pre></span></td></tr>
+		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">Gets an API, providing a pointer to existing revisions of the API.</td></tr>
+  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+		<tr><td colspan="2"><span class="lead">Import an API</span></td><td><a href="/api_methods/24-import-an-api" class="btn btn-mini">Detail</a></td> 
+	    <tr><td colspan="3"><span id="well"><pre>/apis?action=import&amp;name={api_name}</pre></span></td></tr>
+		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">Uploads an API proxy from a local machine to Apigee</td></tr>
+  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+		<tr><td colspan="2"><span class="lead">List APIs</span></td><td><a href="/api_methods/1-list-apis" class="btn btn-mini">Detail</a></td> 
+	    <tr><td colspan="3"><span id="well"><pre>/apis</pre></span></td></tr>
+		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">Gets all APIs in an Organization</td></tr>
+  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+		<tr><td colspan="2"><span class="lead">Undeploy an API from an Environment</span></td><td><a href="/api_methods/26-undeploy-an-api-from-an-environment" class="btn btn-mini">Detail</a></td> 
+	    <tr><td colspan="3"><span id="well"><pre>/apis/{api_name}/deployments?action=undeploy&amp;env={environment_name}&amp;revision={revision_number}</pre></span></td></tr>
+		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">Removes an API from an environment (typically 'test' or 'prod')</td></tr>
+  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+		<tr><td colspan="2"><span class="lead">Update an API</span></td><td><a href="/api_methods/2-update-an-api" class="btn btn-mini">Detail</a></td> 
+	    <tr><td colspan="3"><span id="well"><pre>/apis/{api_name}</pre></span></td></tr>
+		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-PUT">PUT</span> </td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">Use the POST method to update a specific API proxy in an organization</td></tr>
+		<tr><td><strong>Content Types:</strong></td><td>
+		
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+		</td></tr>
+  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+</tbody>
+</table>
+
+<!-- Schema:
+
+<div id="well"><pre></pre></div> -->
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->
+
+       <!-- <footer>
+        <p>&copy; Apigee, Inc. 2012</p>
+      </footer>  -->
+
+    </div> <!-- /container -->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+     <script src="/assets/application-3acbc888ea1a902e92db3f484dfc60e4.js" type="text/javascript"></script> 
+
+  </body>
+</html>
