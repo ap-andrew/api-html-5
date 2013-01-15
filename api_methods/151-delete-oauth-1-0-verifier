@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,7 +33,7 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
@@ -43,7 +43,7 @@
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-DELETE">DELETE</span>
@@ -56,40 +56,37 @@
 	</div>
 </div>
 
+<div class="span18">
+	<p>
+	Deletes the specified verifier code, which is the verifier code given by the provider
+	</p>
 
-
-<div class="span18"><p>
-Deletes the specified verifier code, which is the verifier code given by the provider
-</p>
-
-
-
-<b>cURL:</b>
-<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/organizations/{org}/oauth1/verifiers/{verifiercode}</pre>
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/organizations/{org}/oauth1/verifiers/{verifiercode}</pre>
 
 
 
 <b>Sample Response:</b> 
 	<pre>{
-  &quot;appUserId&quot; : &quot;Developer@apigee.com&quot;,
-  &quot;attributes&quot; : [ {
-    &quot;name&quot; : &quot;region&quot;,
-    &quot;value&quot; : &quot;north&quot;
+  "appUserId" : "Developer@apigee.com",
+  "attributes" : [ {
+    "name" : "region",
+    "value" : "north"
   } ],
-  &quot;code&quot; : &quot;1234&quot;,
-  &quot;createdAt&quot; : 1343035589955,
-  &quot;createdBy&quot; : &quot;Admin&quot;,
-  &quot;expiresAt&quot; : 1343037389955,
-  &quot;issuedAt&quot; : 1343035589955,
-  &quot;lastModifiedAt&quot; : 1343035589955,
-  &quot;lastModifiedBy&quot; : &quot;Admin&quot;,
-  &quot;requestToken&quot; : &quot;wsxHGWZBwruGfkDGrPNWM2HNVddd&quot;
+  "code" : "1234",
+  "createdAt" : 1343035589955,
+  "createdBy" : "Admin",
+  "expiresAt" : 1343037389955,
+  "issuedAt" : 1343035589955,
+  "lastModifiedAt" : 1343035589955,
+  "lastModifiedBy" : "Admin",
+  "requestToken" : "wsxHGWZBwruGfkDGrPNWM2HNVddd"
 }</pre>
 
 
 
-<b>Errors</b> 
-	<pre>Failure 404 with proper error message
+	<b>Errors</b> 
+		<pre>Failure 404 with proper error message
 {
   &quot;code&quot; : &quot;keymanagement.service.....&quot;,
   &quot;message&quot; : &quot;Verifier doesnot exist&quot;,
@@ -102,14 +99,6 @@ Error Codes:
 2. keymanagement.service.oauth10_verifier_deletion_failed</pre>
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

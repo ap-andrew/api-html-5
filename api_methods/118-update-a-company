@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,7 +33,7 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
@@ -43,7 +43,7 @@
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-POST">POST</span>
@@ -56,39 +56,35 @@
 	</div>
 </div>
 
+<div class="span18">
+	<p>
+	
+	</p>
 
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/companies/{companyName}</pre>
 
-<div class="span18"><p>
-
-</p>
-
-
-
-<b>cURL:</b>
-<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/companies/{companyName}</pre>
-
-<b>Sample Request:</b>
-<pre>{
- &quot;name&quot; : &quot;DevCompany&quot;,
- &quot;displayName&quot; : &quot;Developer Company&quot;,
- &quot;status&quot; : &quot;active&quot;,
- &quot;attributes&quot; : [ {
-    &quot;name&quot; : &quot;region&quot;,
-    &quot;value&quot; : &quot;south&quot;
+	<b>Sample Request:</b>
+	<pre>{
+ "name" : "DevCompany",
+ "displayName" : "Developer Company",
+ "status" : "active",
+ "attributes" : [ {
+    "name" : "region",
+    "value" : "south"
  } ]
 }</pre>
-<b>Request Payload Elements:</b> 
-<div>
-<table class="table table-bordered">
-	<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-			<th>Default</th>
-			<th>Required?</th>
-		</tr>
-		</thead>
-		<tr>
+	<b>Request Payload Elements:</b> 
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Default</th>
+				<th>Required?</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="request_element" id="request_element_13">
 <td>name</td>
 <td>Name of the company</td>
@@ -129,35 +125,34 @@
 
 
 
-		</table>
-		</div>
+			</table>
 
 
 <b>Sample Response:</b> 
 	<pre>{
-  &quot;name&quot; : &quot;DevCompany&quot;,
-  &quot;displayName&quot; : &quot;Developer Company&quot;,
-  &quot;organization&quot; : &quot;myorg&quot;,
-  &quot;status&quot; : &quot;active&quot;,
-  &quot;attributes&quot; : [ {
-    &quot;name&quot; : &quot;region&quot;,
-    &quot;value&quot; : &quot;north&quot;
+  "name" : "DevCompany",
+  "displayName" : "Developer Company",
+  "organization" : "myorg",
+  "status" : "active",
+  "attributes" : [ {
+    "name" : "region",
+    "value" : "north"
   } ],
-  &quot;createdAt&quot; : 1343049811765,
-  &quot;createdBy&quot; : &quot;Admin&quot;,
-  &quot;lastModifiedAt&quot; : 1343049811875,
-  &quot;lastModifiedBy&quot; : &quot;Admin&quot;
+  "createdAt" : 1343049811765,
+  "createdBy" : "Admin",
+  "lastModifiedAt" : 1343049811875,
+  "lastModifiedBy" : "Admin"
 }</pre>
 
-<b>Response Payload Elements:</b>
-	<div><table class="table table-bordered">
-		<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-		</tr>
-		</thead>
-		<tr>
+	<b>Response Payload Elements:</b>
+		<table class="table table-bordered">
+			<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="response_element" id="response_element_93">
 <td>name </td>
 <td>Name of the company</td>
@@ -212,20 +207,11 @@
 <!-- <td><a href="/response_elements/101" class="btn btn-mini">Detail</a></td> -->
 <!-- <td><a href="/api_methods/118-update-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
-	</table>
-	</div>
+		</table>
 
 
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

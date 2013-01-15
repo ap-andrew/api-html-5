@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,17 +33,17 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
-		<p>/oauth/1/requesttokens/{request_token}</p>
+		<p>/oauth1/requesttokens/{request_token}</p>
 		<p>
 		Deletes the request token specified
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-DELETE">DELETE</span>
@@ -56,44 +56,41 @@
 	</div>
 </div>
 
+<div class="span18">
+	<p>
+	
+	</p>
 
-
-<div class="span18"><p>
-
-</p>
-
-
-
-<b>cURL:</b>
-<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}//oauth/1/requesttokens/{requesttoken}</pre>
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/oauth1/requesttokens/{requesttoken}</pre>
 
 
 
 <b>Sample Response:</b> 
 	<pre>{
-  &quot;app&quot; : &quot;myApp&quot;,
-  &quot;attributes&quot; : [ {
-    &quot;name&quot; : &quot;region&quot;,
-    &quot;value&quot; : &quot;north&quot;
+  "app" : "myApp",
+  "attributes" : [ {
+    "name" : "region",
+    "value" : "north"
   } ],
-  &quot;callbackUrl&quot; : &quot;api.company.com&quot;,
-  &quot;consumerKey&quot; : &quot;Lmupmwb5mD6CAEl6vqii1kojTGMiCnWj&quot;,
-  &quot;createdAt&quot; : 1343034561737,
-  &quot;createdBy&quot; : &quot;Admin&quot;,
-  &quot;expiresAt&quot; : 1343036361737,
-  &quot;issuedAt&quot; : 1343034561737,
-  &quot;lastModifiedAt&quot; : 1343034561817,
-  &quot;lastModifiedBy&quot; : &quot;Admin&quot;,
-  &quot;scope&quot; : &quot;global&quot;,
-  &quot;secret&quot; : &quot;kSdnf7pBZADjxg5qfMkHhDVTumR5&quot;,
-  &quot;status&quot; : &quot;approved&quot;,
-  &quot;token&quot; : &quot;1wXHJFNXLA0Haeg4lVMToZWJHaFM&quot;
+  "callbackUrl" : "api.company.com",
+  "consumerKey" : "Lmupmwb5mD6CAEl6vqii1kojTGMiCnWj",
+  "createdAt" : 1343034561737,
+  "createdBy" : "Admin",
+  "expiresAt" : 1343036361737,
+  "issuedAt" : 1343034561737,
+  "lastModifiedAt" : 1343034561817,
+  "lastModifiedBy" : "Admin",
+  "scope" : "global",
+  "secret" : "kSdnf7pBZADjxg5qfMkHhDVTumR5",
+  "status" : "approved",
+  "token" : "1wXHJFNXLA0Haeg4lVMToZWJHaFM"
 }</pre>
 
 
 
-<b>Errors</b> 
-	<pre>{
+	<b>Errors</b> 
+		<pre>{
   &quot;code&quot; : &quot;keymanagement.service......&quot;,
   &quot;message&quot; : &quot;Request Token doesnot exist&quot;,
   &quot;contexts&quot; : [ ]
@@ -104,14 +101,6 @@ Error Code:
 2. keymanagement.service.oauth10_request_token_deletion_failed</pre>
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,7 +33,7 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
@@ -43,7 +43,7 @@
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-PUT">PUT</span>
@@ -56,31 +56,27 @@
 	</div>
 </div>
 
+<div class="span18">
+	<p>
+	Updates the access token attributes. Can update attributes of Authorization Code and AccessToken  Only attributes given in payload will be updated and the remaining existing attributes will remain intact.
+	</p>
 
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/oauth2/accesstokens/{accessToken}</pre>
 
-<div class="span18"><p>
-Updates the access token attributes. Can update attributes of Authorization Code and AccessToken  Only attributes given in payload will be updated and the remaining existing attributes will remain intact.
-</p>
-
-
-
-<b>cURL:</b>
-<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/oauth2/accesstokens/{accessToken}</pre>
-
-<b>Sample Request:</b>
-<pre> {&quot;attributes&quot; : [ {&quot;name&quot; : &quot;InternalID&quot;,&quot;value&quot; : &quot;User452&quot;} ],&quot;scope&quot; : &quot;read&quot;}</pre>
-<b>Request Payload Elements:</b> 
-<div>
-<table class="table table-bordered">
-	<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-			<th>Default</th>
-			<th>Required?</th>
-		</tr>
-		</thead>
-		<tr>
+	<b>Sample Request:</b>
+	<pre> {"attributes" : [ {"name" : "InternalID","value" : "User452"} ],"scope" : "read"}</pre>
+	<b>Request Payload Elements:</b> 
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Default</th>
+				<th>Required?</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="request_element" id="request_element_7">
 <td>attributes</td>
 <td>Name/value pair used to extend the default access token profile</td>
@@ -101,43 +97,42 @@ Updates the access token attributes. Can update attributes of Authorization Code
 
 
 
-		</table>
-		</div>
+			</table>
 
 
 <b>Sample Response:</b> 
 	<pre>{
-  &quot;apiProducts&quot; : [ &quot;sandbox&quot; ],
-  &quot;app&quot; : &quot;app1&quot;,
-  &quot;attributes&quot; : [ {
-	&quot;name&quot; : &quot;att_n1&quot;,
-	&quot;value&quot; : &quot;att_v1&quot;
+  "apiProducts" : [ "sandbox" ],
+  "app" : "app1",
+  "attributes" : [ {
+	"name" : "att_n1",
+	"value" : "att_v1"
   } ],
-  &quot;clientId&quot; : &quot;fGytmxA5UDajPMdOA5E3bebiBOBPikOT&quot;,
-  &quot;createdAt&quot; : 1343038476540,
-  &quot;createdBy&quot; : &quot;defaultUser&quot;,
-  &quot;expiresAt&quot; : 1343040276540,
-  &quot;grantType&quot; : &quot;password&quot;,
-  &quot;issuedAt&quot; : 1343038476540,
-  &quot;lastModifiedAt&quot; : 1343038476958,
-  &quot;lastModifiedBy&quot; : &quot;defaultUser&quot;,
-  &quot;refreshCount&quot; : 0,
-  &quot;refreshToken&quot; : &quot;1h11770Z&quot;,
-  &quot;scope&quot; : &quot;read&quot;,
-  &quot;status&quot; : &quot;approved&quot;,
-  &quot;token&quot; : &quot;taFM3LHUTQAFhL0dIFg81XhRc7vC&quot;,
-  &quot;tokenType&quot; : &quot;BearerToken&quot;
+  "clientId" : "fGytmxA5UDajPMdOA5E3bebiBOBPikOT",
+  "createdAt" : 1343038476540,
+  "createdBy" : "defaultUser",
+  "expiresAt" : 1343040276540,
+  "grantType" : "password",
+  "issuedAt" : 1343038476540,
+  "lastModifiedAt" : 1343038476958,
+  "lastModifiedBy" : "defaultUser",
+  "refreshCount" : 0,
+  "refreshToken" : "1h11770Z",
+  "scope" : "read",
+  "status" : "approved",
+  "token" : "taFM3LHUTQAFhL0dIFg81XhRc7vC",
+  "tokenType" : "BearerToken"
 }</pre>
 
-<b>Response Payload Elements:</b>
-	<div><table class="table table-bordered">
-		<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-		</tr>
-		</thead>
-		<tr>
+	<b>Response Payload Elements:</b>
+		<table class="table table-bordered">
+			<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="response_element" id="response_element_234">
 <td>apiProducts </td>
 <td>API products associated with this consumer key</td>
@@ -246,12 +241,11 @@ Updates the access token attributes. Can update attributes of Authorization Code
 <!-- <td><a href="/response_elements/251" class="btn btn-mini">Detail</a></td> -->
 <!-- <td><a href="/api_methods/111-update-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
-	</table>
-	</div>
+		</table>
 
 
-<b>Errors</b> 
-	<pre>Failure 404 with proper error message
+	<b>Errors</b> 
+		<pre>Failure 404 with proper error message
 &lt;Error&gt;
 &lt;Code&gt;keymanagement.service.invalid_{entity}&lt;/Code&gt;
 &lt;Message&gt;Invalid Access Token&lt;/Message&gt;
@@ -264,14 +258,6 @@ Error Codes:
 3. keymanagement.service.access_token_update_failed</pre>
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

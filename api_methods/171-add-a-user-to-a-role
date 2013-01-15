@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,7 +33,7 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
@@ -43,7 +43,7 @@
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-POST">POST</span>
@@ -52,38 +52,38 @@
 		Basic Auth
 		</p>
 
+		<b>Content Types:</b>
+		
+<div class="content_type" id="content_type_3">
+application/x-www-url-form-encoded
+</div>
+		</p>
 
 	</div>
 </div>
 
+<div class="span18">
+	<p>
+	
+	</p>
 
-
-<div class="span18"><p>
-
-</p>
-
-
-
-<b>cURL:</b>
-<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/userroles/{roleName}/users -X POST</pre>
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/userroles/{roleName}/users -X POST</pre>
 
 
 
+	Query Parameters:
 
-<button type="button" class="btn" data-toggle="collapse" data-target="#qparams">
-Query Parameters:
-</button>
-<div id="collapsible">
-<table class="table table-bordered">
-	<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-			<th>Default</th>
-			<th>Required?</th>
-		</tr>
-		</thead>
-		<div class="query_parameter" id="query_parameter_1">
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Default</th>
+				<th>Required?</th>
+			</tr>
+			</thead>
+			<div class="query_parameter" id="query_parameter_1">
 <tr>
 <td>id</td>
 <td></td>
@@ -104,26 +104,24 @@ Query Parameters:
 
 
 
-		</table>
-
-</div>
+			</table>
 
 <b>Sample Response:</b> 
 	<pre>Success 2xx with proper response
   {
-  &quot;emailId&quot; : &quot;guest@apigee.com&quot;,
-  &quot;firstName&quot; : &quot;guest&quot;,
-  &quot;lastName&quot; : &quot;guest&quot;,
-  &quot;roles&quot; : {
-    &quot;role&quot; : [ {
-      &quot;name&quot; : &quot;apiproxyadmin&quot;,
-      &quot;organization&quot; : &quot;myorg&quot;
+  "emailId" : "guest@apigee.com",
+  "firstName" : "guest",
+  "lastName" : "guest",
+  "roles" : {
+    "role" : [ {
+      "name" : "apiproxyadmin",
+      "organization" : "myorg"
     }, {
-      &quot;name&quot; : &quot;orgadmin&quot;,
-      &quot;organization&quot; : &quot;myorg&quot;
+      "name" : "orgadmin",
+      "organization" : "myorg"
     }, {
-      &quot;name&quot; : &quot;reportsadmin&quot;,
-      &quot;organization&quot; : &quot;myorg&quot;
+      "name" : "reportsadmin",
+      "organization" : "myorg"
     } ]
   }</pre>
 
@@ -131,14 +129,6 @@ Query Parameters:
 
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

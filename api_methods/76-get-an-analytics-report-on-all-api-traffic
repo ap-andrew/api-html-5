@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,7 +33,7 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
@@ -43,7 +43,7 @@
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-GET">GET</span>
@@ -59,38 +59,35 @@
 	</div>
 </div>
 
+<div class="span18">
+	<p>
+	Use the GET method to retrieve the metrics for all the available APIs for a given customer in a specific organization and environment. All API traffic displays the total daily throughput over the last 3 months for all APIs in the account.
+	</p>
 
-
-<div class="span18"><p>
-Use the GET method to retrieve the metrics for all the available APIs for a given customer in a specific organization and environment. All API traffic displays the total daily throughput over the last 3 months for all APIs in the account.
-</p>
-
-
-
-<b>cURL:</b>
-<pre>https://api.enterprise.apigee.com/v1/organizations/myorg/environments/prod/stats/?select=message_count&amp;timeRange=1/20/2012 00:00~1/30/2012 00:00&amp;timeUnit=hour </pre>
+	<b>cURL:</b>
+	<pre>https://api.enterprise.apigee.com/v1/organizations/myorg/environments/prod/stats/?select=message_count&amp;timeRange=1/20/2012 00:00~1/30/2012 00:00&amp;timeUnit=hour </pre>
 
 
 
 <b>Sample Response:</b> 
 	<pre>{
-    &quot;environments&quot;: [
+    "environments": [
        {
-           &quot;metrics&quot;: [
+           "metrics": [
                {
-                   &quot;name&quot;: &quot;message_count&quot;,
-                   &quot;values&quot;: [
+                   "name": "message_count",
+                   "values": [
                           {
-                           &quot;timestamp&quot;: 1335241800000,
-                           &quot;value&quot;: &quot;9090.0&quot;
+                           "timestamp": 1335241800000,
+                           "value": "9090.0"
                           }
                    ]
                }
            ],
-           &quot;name&quot;: &quot;test&quot;
+           "name": "test"
        }
     ],
-    &quot;metaData&quot;: {}
+    "metaData": {}
 }
 }</pre>
 
@@ -98,14 +95,6 @@ Use the GET method to retrieve the metrics for all the available APIs for a give
 
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

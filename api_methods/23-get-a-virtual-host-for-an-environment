@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,7 +33,7 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
@@ -43,7 +43,7 @@
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-GET">GET</span>
@@ -56,41 +56,38 @@
 	</div>
 </div>
 
+<div class="span18">
+	<p>
+	Every environment in Apigee has at least one virtual host.  The virtual host defines the HTTP settings for connection with the Apigee organization. All API proxies in an environment share the same virtual hosts. This method returns the list of named virtual hosts. You can use the names here to get details for the virtual host. This is the best way to verify the connection settings that client apps must use to invoke your APIs.
+	</p>
 
-
-<div class="span18"><p>
-Every environment in Apigee has at least one virtual host.  The virtual host defines the HTTP settings for connection with the Apigee organization. All API proxies in an environment share the same virtual hosts. This method returns the list of named virtual hosts. You can use the names here to get details for the virtual host. This is the best way to verify the connection settings that client apps must use to invoke your APIs.
-</p>
-
-
-
-<b>cURL:</b>
-<pre>curl -u myname:mypass -H &quot;Accept:application/json&quot; https://api.enterprise.apigee.com/v1/o/{myorg}/environments/test/virtualhosts/default</pre>
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass -H &quot;Accept:application/json&quot; https://api.enterprise.apigee.com/v1/o/{myorg}/environments/test/virtualhosts/default</pre>
 
 
 
 <b>Sample Response:</b> 
 	<pre>{
-    &quot;VirtualHost&quot;: {
-        &quot;name&quot;: &quot;default&quot;, 
-        &quot;HostAliases&quot;: {
-            &quot;HostAlias&quot;: &quot;myorg-test.apigee.net&quot;
+    "VirtualHost": {
+        "name": "default", 
+        "HostAliases": {
+            "HostAlias": "myorg-test.apigee.net"
         }, 
-        &quot;Interfaces&quot;: &quot;&quot;, 
-        &quot;Port&quot;: 80
+        "Interfaces": "", 
+        "Port": 80
     }
 }
 </pre>
 
-<b>Response Payload Elements:</b>
-	<div><table class="table table-bordered">
-		<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-		</tr>
-		</thead>
-		<tr>
+	<b>Response Payload Elements:</b>
+		<table class="table table-bordered">
+			<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="response_element" id="response_element_378">
 <td>VirtualHost </td>
 <td>Settings for a named virtual host</td>
@@ -121,20 +118,11 @@ Every environment in Apigee has at least one virtual host.  The virtual host def
 <!-- <td><a href="/response_elements/382" class="btn btn-mini">Detail</a></td> -->
 <!-- <td><a href="/api_methods/23-get-a-virtual-host-for-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
-	</table>
-	</div>
+		</table>
 
 
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

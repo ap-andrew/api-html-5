@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,7 +33,7 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
@@ -43,7 +43,7 @@
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-GET">GET</span>
@@ -56,62 +56,59 @@
 	</div>
 </div>
 
+<div class="span18">
+	<p>
+	Returns detail on deployments of the API specified. Returns result across environments (that is, returns deployments of the API in test and in prod environments (as well others if they exist)
+	</p>
 
-
-<div class="span18"><p>
-Returns detail on deployments of the API specified. Returns result across environments (that is, returns deployments of the API in test and in prod environments (as well others if they exist)
-</p>
-
-
-
-<b>cURL:</b>
-<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/apis/{apiName}/deployments</pre>
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/apis/{apiName}/deployments</pre>
 
 
 
 <b>Sample Response:</b> 
 	<pre>{
-  &quot;environment&quot; : [ {
-    &quot;name&quot; : &quot;test&quot;,
-    &quot;revision&quot; : [ {
-      &quot;configuration&quot; : {
-        &quot;basePath&quot; : &quot;/&quot;,
-        &quot;steps&quot; : [ ]
+  "environment" : [ {
+    "name" : "test",
+    "revision" : [ {
+      "configuration" : {
+        "basePath" : "/",
+        "steps" : [ ]
       },
-      &quot;name&quot; : &quot;1&quot;,
-      &quot;server&quot; : [ {
-        &quot;status&quot; : &quot;deployed&quot;,
-        &quot;type&quot; : [ &quot;message-processor&quot; ],
-        &quot;uUID&quot; : &quot;90096dd1-1019-406b-9f42-fbb80cd01200&quot;
+      "name" : "1",
+      "server" : [ {
+        "status" : "deployed",
+        "type" : [ "message-processor" ],
+        "uUID" : "90096dd1-1019-406b-9f42-fbb80cd01200"
       }, {
-        &quot;status&quot; : &quot;deployed&quot;,
-        &quot;type&quot; : [ &quot;message-processor&quot; ],
-        &quot;uUID&quot; : &quot;7d6e2eb1-581a-4db0-8045-20d9c3306549&quot;
+        "status" : "deployed",
+        "type" : [ "message-processor" ],
+        "uUID" : "7d6e2eb1-581a-4db0-8045-20d9c3306549"
       }, {
-        &quot;status&quot; : &quot;deployed&quot;,
-        &quot;type&quot; : [ &quot;router&quot; ],
-        &quot;uUID&quot; : &quot;1619e2d7-c822-45e0-9f97-63882fb6a805&quot;
+        "status" : "deployed",
+        "type" : [ "router" ],
+        "uUID" : "1619e2d7-c822-45e0-9f97-63882fb6a805"
       }, {
-        &quot;status&quot; : &quot;deployed&quot;,
-        &quot;type&quot; : [ &quot;router&quot; ],
-        &quot;uUID&quot; : &quot;8a5f3d5f-46f8-4e99-b4cc-955875c8a8c8&quot;
+        "status" : "deployed",
+        "type" : [ "router" ],
+        "uUID" : "8a5f3d5f-46f8-4e99-b4cc-955875c8a8c8"
       } ],
-      &quot;state&quot; : &quot;deployed&quot;
+      "state" : "deployed"
     } ]
   } ],
-  &quot;name&quot; : &quot;weatherTest&quot;,
-  &quot;organization&quot; : &quot;myorg&quot;
+  "name" : "weatherTest",
+  "organization" : "myorg"
 }</pre>
 
-<b>Response Payload Elements:</b>
-	<div><table class="table table-bordered">
-		<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-		</tr>
-		</thead>
-		<tr>
+	<b>Response Payload Elements:</b>
+		<table class="table table-bordered">
+			<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="response_element" id="response_element_60">
 <td>environment </td>
 <td>Settings for the environment</td>
@@ -166,12 +163,11 @@ Returns detail on deployments of the API specified. Returns result across enviro
 <!-- <td><a href="/response_elements/68" class="btn btn-mini">Detail</a></td> -->
 <!-- <td><a href="/api_methods/18-get-api-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
-	</table>
-	</div>
+		</table>
 
 
-<b>Errors</b> 
-	<pre>Failure 4xx with proper error message
+	<b>Errors</b> 
+		<pre>Failure 4xx with proper error message
 &lt;Error&gt;
 	&lt;Code&gt;messaging.config.beans.ApplicationDoesNotExist&lt;/Code&gt;
 	&lt;Message&gt;APIProxy named myapp1 does not exist&lt;/Message&gt;
@@ -179,14 +175,6 @@ Returns detail on deployments of the API specified. Returns result across enviro
 &lt;/Error&gt;</pre>
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

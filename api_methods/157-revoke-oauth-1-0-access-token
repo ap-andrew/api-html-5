@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,7 +33,7 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
@@ -43,7 +43,7 @@
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-POST">POST</span>
@@ -52,20 +52,23 @@
 		Basic Auth
 		</p>
 
+		<b>Content Types:</b>
+		
+<div class="content_type" id="content_type_3">
+application/x-www-url-form-encoded
+</div>
+		</p>
 
 	</div>
 </div>
 
+<div class="span18">
+	<p>
+	
+	</p>
 
-
-<div class="span18"><p>
-
-</p>
-
-
-
-<b>cURL:</b>
-<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/organizations/{org}/oauth1/accesstokens/{accesstoken}?action=revoke</pre>
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/organizations/{org}/oauth1/accesstokens/{accesstoken}?action=revoke</pre>
 
 
 
@@ -74,8 +77,8 @@
 
 
 
-<b>Errors</b> 
-	<pre>Failure 404 with proper error message
+	<b>Errors</b> 
+		<pre>Failure 404 with proper error message
 {
   &quot;code&quot; : &quot;keymanagement.service.....&quot;,
   &quot;message&quot; : &quot;Access Token doesnot exist&quot;,
@@ -88,14 +91,6 @@ Error Codes:
 4. keymanagement.service.oauth10_access_token_revoke_failed</pre>
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,7 +33,7 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
@@ -43,7 +43,7 @@
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-GET">GET</span>
@@ -56,40 +56,37 @@
 	</div>
 </div>
 
+<div class="span18">
+	<p>
+	Returns an environment's details.
+	</p>
 
-
-<div class="span18"><p>
-Returns an environment's details.
-</p>
-
-
-
-<b>cURL:</b>
-<pre>curl -u :myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/environments/{environmentName}</pre>
+	<b>cURL:</b>
+	<pre>curl -u :myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/environments/{environmentName}</pre>
 
 
 
 <b>Sample Response:</b> 
 	<pre>{
-  &quot;createdAt&quot; : 1336660158465,
-  &quot;createdBy&quot; : &quot;admin&quot;,
-  &quot;lastModifiedAt&quot; : 1336660158465,
-  &quot;lastModifiedBy&quot; : &quot;admin&quot;,
-  &quot;name&quot; : &quot;test&quot;,
-  &quot;properties&quot; : {
-    &quot;property&quot; : [ ]
+  "createdAt" : 1336660158465,
+  "createdBy" : "admin",
+  "lastModifiedAt" : 1336660158465,
+  "lastModifiedBy" : "admin",
+  "name" : "test",
+  "properties" : {
+    "property" : [ ]
   }
 </pre>
 
-<b>Response Payload Elements:</b>
-	<div><table class="table table-bordered">
-		<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-		</tr>
-		</thead>
-		<tr>
+	<b>Response Payload Elements:</b>
+		<table class="table table-bordered">
+			<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="response_element" id="response_element_409">
 <td>createdAt </td>
 <td>Unix time when the environment was created</td>
@@ -126,20 +123,11 @@ Returns an environment's details.
 <!-- <td><a href="/response_elements/414" class="btn btn-mini">Detail</a></td> -->
 <!-- <td><a href="/api_methods/113-get-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
-	</table>
-	</div>
+		</table>
 
 
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

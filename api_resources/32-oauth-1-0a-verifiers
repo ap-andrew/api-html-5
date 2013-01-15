@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -30,8 +30,8 @@
 Oauth
 </div>
 
-<div id="breadcrumb">
-<a href="apigee.com/docs/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > OAuth 1.0a Verifiers</div>
+<!-- <div id="breadcrumb">
+<a href="apigee.com/docs/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > OAuth 1.0a Verifiers</div> -->
 
 
 <div class="page-header">
@@ -42,10 +42,10 @@ Oauth
 <a href="/api_methods/new">Add an API Method</a>
 </div> -->
 
-<div class="lead">API Platform Base Path: https://api.enterprise.apigee.com/v1/o/{org_name}</div>
+<h3>API Platform Base Path: https://api.enterprise.apigee.com/v1/o/{org_name}</h3>
 
 <table class="table">
-		<tr><td class="lead">API Resource Path: /oauth1/verifiers</td></tr>
+		<tr><td><h3>API Resource Path: /oauth1/verifiers</h3></td></tr>
 		<tr><td>OAuth 1.0a Verifiers</td></tr>
   		<tr><td>A successful validation/verification of this API call returns the following responses and passes the request to protected resources:
 

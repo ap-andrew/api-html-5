@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,7 +33,7 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
@@ -43,7 +43,7 @@
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-GET">GET</span>
@@ -56,47 +56,44 @@
 	</div>
 </div>
 
+<div class="span18">
+	<p>
+	Returns the profile for the Developer by email address. Note that email address must be URL encoded:  developer@apigee.com should be encoded as developer%40apigee%2Ecom, for example, or it may be escaped, &quot;developer.apigee.com&quot;
+	</p>
 
-
-<div class="span18"><p>
-Returns the profile for the Developer by email address. Note that email address must be URL encoded:  developer@apigee.com should be encoded as developer%40apigee%2Ecom, for example, or it may be escaped, &quot;developer.apigee.com&quot;
-</p>
-
-
-
-<b>cURL:</b>
-<pre>curl  -u myname:mypass &quot;https://api.enterprise.apigee.com/v1/o/{myorg}/developers/developer%40apigee%2Ecom&quot;</pre>
+	<b>cURL:</b>
+	<pre>curl  -u myname:mypass &quot;https://api.enterprise.apigee.com/v1/o/{myorg}/developers/developer%40apigee%2Ecom&quot;</pre>
 
 
 
 <b>Sample Response:</b> 
 	<pre>{
-  &quot;apps&quot; : [ &quot;myApp&quot; ],
-  &quot;email&quot; : &quot;developer@company.com&quot;,
-  &quot;firstName&quot; : &quot;Nikola&quot;,
-  &quot;lastName&quot; : &quot;Tesla&quot;,
-  &quot;userName&quot; : &quot;theramin&quot;,
-  &quot;organizationName&quot; : &quot;myorg&quot;,
-  &quot;status&quot; : &quot;active&quot;,
-  &quot;attributes&quot; : [ {
-    &quot;name&quot; : &quot;region&quot;,
-    &quot;value&quot; : &quot;north&quot;
+  "apps" : [ "myApp" ],
+  "email" : "developer@company.com",
+  "firstName" : "Nikola",
+  "lastName" : "Tesla",
+  "userName" : "theramin",
+  "organizationName" : "myorg",
+  "status" : "active",
+  "attributes" : [ {
+    "name" : "region",
+    "value" : "north"
   } ],
-  &quot;createdAt&quot; : 1344280370614,
-  &quot;createdBy&quot; : &quot;admin@apigee.com&quot;,
-  &quot;lastModifiedAt&quot; : 1344280370614,
-  &quot;lastModifiedBy&quot; : &quot;admin@apigee.com&quot;
+  "createdAt" : 1344280370614,
+  "createdBy" : "admin@apigee.com",
+  "lastModifiedAt" : 1344280370614,
+  "lastModifiedBy" : "admin@apigee.com"
 }</pre>
 
-<b>Response Payload Elements:</b>
-	<div><table class="table table-bordered">
-		<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-		</tr>
-		</thead>
-		<tr>
+	<b>Response Payload Elements:</b>
+		<table class="table table-bordered">
+			<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="response_element" id="response_element_291">
 <td>apps </td>
 <td>A list of apps associated with the developer</td>
@@ -145,20 +142,11 @@ Returns the profile for the Developer by email address. Note that email address 
 <!-- <td><a href="/response_elements/298" class="btn btn-mini">Detail</a></td> -->
 <!-- <td><a href="/api_methods/34-get-a-developer?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
-	</table>
-	</div>
+		</table>
 
 
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

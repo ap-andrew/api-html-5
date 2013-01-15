@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,7 +33,7 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
@@ -43,7 +43,7 @@
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-DELETE">DELETE</span>
@@ -56,65 +56,54 @@
 	</div>
 </div>
 
+<div class="span18">
+	<p>
+	Deletes an app associated with a developer.
+	</p>
 
-
-<div class="span18"><p>
-Deletes an app associated with a developer.
-</p>
-
-
-
-<b>cURL:</b>
-<pre>curl -u myname:mypass -X DELETE https://api.enterprise.apigee.com/v1/o/{myorg}/developers/{developerEmail}/apps/{appName}</pre>
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass -X DELETE https://api.enterprise.apigee.com/v1/o/{myorg}/developers/{developerEmail}/apps/{appName}</pre>
 
 
 
 <b>Sample Response:</b> 
 	<pre>{
-  &quot;accessType&quot; : &quot;read&quot;,
-  &quot;appFamily&quot; : &quot;default&quot;,
-  &quot;attributes&quot; : [ {
-    &quot;name&quot; : &quot;Platform&quot;,
-    &quot;value&quot; : &quot;iOS&quot;
+  "accessType" : "read",
+  "appFamily" : "default",
+  "attributes" : [ {
+    "name" : "Platform",
+    "value" : "iOS"
   } ],
-  &quot;callbackUrl&quot; : &quot;www.apigee.com&quot;,
-  &quot;createdAt&quot; : 1344280373885,
-  &quot;createdBy&quot; : &quot;admin@apigee.com&quot;,
-  &quot;credentials&quot; : [ {
-    &quot;apiProducts&quot; : [ {
-      &quot;apiproduct&quot; : &quot;weather_free&quot;,
-      &quot;status&quot; : &quot;approved&quot;
+  "callbackUrl" : "www.apigee.com",
+  "createdAt" : 1344280373885,
+  "createdBy" : "admin@apigee.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "weather_free",
+      "status" : "approved"
     } ],
-    &quot;attributes&quot; : [ ],
-    &quot;consumerKey&quot; : &quot;pXuAJIwL0GQfIGfv1LMVi0sy7A4Du5H8&quot;,
-    &quot;consumerSecret&quot; : &quot;mFzE7ihu7jcri6kF&quot;,
-    &quot;status&quot; : &quot;approved&quot;
+    "attributes" : [ ],
+    "consumerKey" : "pXuAJIwL0GQfIGfv1LMVi0sy7A4Du5H8",
+    "consumerSecret" : "mFzE7ihu7jcri6kF",
+    "status" : "approved"
   } ],
-  &quot;developerId&quot; : &quot;apigee-cs@@@ZUu9gimoIfaf3f65&quot;,
-  &quot;lastModifiedAt&quot; : 1344280373885,
-  &quot;lastModifiedBy&quot; : &quot;admin@apigee.com&quot;,
-  &quot;name&quot; : &quot;weatherapp&quot;,
-  &quot;status&quot; : &quot;approved&quot;
+  "developerId" : "apigee-cs@@@ZUu9gimoIfaf3f65",
+  "lastModifiedAt" : 1344280373885,
+  "lastModifiedBy" : "admin@apigee.com",
+  "name" : "weatherapp",
+  "status" : "approved"
 }</pre>
 
 
 
-<b>Errors</b> 
-	<pre>{
+	<b>Errors</b> 
+		<pre>{
   &quot;code&quot; : &quot;developer.service.AppDoesNotExist&quot;,
   &quot;message&quot; : &quot;App named weatherapp does not exist in organization myorg&quot;,
   &quot;contexts&quot; : [ ]
 }</pre>
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

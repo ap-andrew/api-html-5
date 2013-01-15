@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,7 +33,7 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
@@ -43,7 +43,7 @@
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-DELETE">DELETE</span>
@@ -56,46 +56,43 @@
 	</div>
 </div>
 
+<div class="span18">
+	<p>
+	
+	</p>
 
-
-<div class="span18"><p>
-
-</p>
-
-
-
-<b>cURL:</b>
-<pre>curl -u myname:mypass https://HostName/v1/o/{myorg}/companies/{companyName}/apps/{appName}/keys/{consumerKey}</pre>
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass https://HostName/v1/o/{myorg}/companies/{companyName}/apps/{appName}/keys/{consumerKey}</pre>
 
 
 
 <b>Sample Response:</b> 
 	<pre>{
-  &quot;apiProducts&quot; : [ {
-    &quot;apiproduct&quot; : &quot;TestApiProduct1&quot;,
-    &quot;status&quot; : &quot;approved&quot;
+  "apiProducts" : [ {
+    "apiproduct" : "TestApiProduct1",
+    "status" : "approved"
   }, {
-    &quot;apiproduct&quot; : &quot;TestApiProduct2&quot;,
-    &quot;status&quot; : &quot;approved&quot;
+    "apiproduct" : "TestApiProduct2",
+    "status" : "approved"
   } ],
-  &quot;attributes&quot; : [ {
-    &quot;name&quot; : &quot;region&quot;,
-    &quot;value&quot; : &quot;west&quot;
+  "attributes" : [ {
+    "name" : "region",
+    "value" : "west"
   } ],
-  &quot;consumerKey&quot; : &quot;C64Uz5qXThbdYVeWcrPoAJgNvdXSjGgj&quot;,
-  &quot;consumerSecret&quot; : &quot;yTTig5Z6nfXizzvp&quot;,
-  &quot;status&quot; : &quot;approved&quot;
+  "consumerKey" : "C64Uz5qXThbdYVeWcrPoAJgNvdXSjGgj",
+  "consumerSecret" : "yTTig5Z6nfXizzvp",
+  "status" : "approved"
 }</pre>
 
-<b>Response Payload Elements:</b>
-	<div><table class="table table-bordered">
-		<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-		</tr>
-		</thead>
-		<tr>
+	<b>Response Payload Elements:</b>
+		<table class="table table-bordered">
+			<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="response_element" id="response_element_420">
 <td>apiProducts </td>
 <td>API products with which this company app key is associated</td>
@@ -132,12 +129,11 @@
 <!-- <td><a href="/response_elements/425" class="btn btn-mini">Detail</a></td> -->
 <!-- <td><a href="/api_methods/51-delete-a-company-app-key?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
-	</table>
-	</div>
+		</table>
 
 
-<b>Errors</b> 
-	<pre>Failure 4xx with proper error message
+	<b>Errors</b> 
+		<pre>Failure 4xx with proper error message
 {
   &quot;code&quot; : &quot;keymanagement.service.InvalidClientIdForGivenApp&quot;,
   &quot;message&quot; : &quot;Invalid consumer key for Given App&quot;,
@@ -145,14 +141,6 @@
 }</pre>
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

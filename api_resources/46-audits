@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -30,8 +30,8 @@
 Administration
 </div>
 
-<div id="breadcrumb">
-<a href="apigee.com/docs/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > Audits</div>
+<!-- <div id="breadcrumb">
+<a href="apigee.com/docs/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > Audits</div> -->
 
 
 <div class="page-header">
@@ -42,10 +42,10 @@ Administration
 <a href="/api_methods/new">Add an API Method</a>
 </div> -->
 
-<div class="lead">API Platform Base Path: https://api.enterprise.apigee.com/v1/o/{org_name}</div>
+<h3>API Platform Base Path: https://api.enterprise.apigee.com/v1/o/{org_name}</h3>
 
 <table class="table">
-		<tr><td class="lead">API Resource Path: /audits</td></tr>
+		<tr><td><h3>API Resource Path: /audits</h3></td></tr>
 		<tr><td>Events stored as log entries in the Apigee datastore. (Note that the base path for audits precedes /organizations.)</td></tr>
   		<tr><td><p>Audit logs provide access to  the actions (create, read, update, delete) executed on entities managed by Apigee.</p>
 

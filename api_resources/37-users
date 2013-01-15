@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -30,8 +30,8 @@
 Administration
 </div>
 
-<div id="breadcrumb">
-<a href="apigee.com/docs/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > Users</div>
+<!-- <div id="breadcrumb">
+<a href="apigee.com/docs/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > Users</div> -->
 
 
 <div class="page-header">
@@ -42,10 +42,10 @@ Administration
 <a href="/api_methods/new">Add an API Method</a>
 </div> -->
 
-<div class="lead">API Platform Base Path: https://api.enterprise.apigee.com/v1/o/{org_name}</div>
+<h3>API Platform Base Path: https://api.enterprise.apigee.com/v1/o/{org_name}</h3>
 
 <table class="table">
-		<tr><td class="lead">API Resource Path: /users</td></tr>
+		<tr><td><h3>API Resource Path: /users</h3></td></tr>
 		<tr><td>Users with an account in an organization on the Apigee API Platform</td></tr>
   		<tr><td></td></tr>
        <!-- <td><div id="well"><pre></pre></div></td></tr> -->
@@ -59,10 +59,10 @@ Administration
 		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 		<tr><td><strong>Description:</strong></td><td colspan="2">Associates a user with one or more roles</td></tr>
   		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-		<tr><td colspan="2"><span class="lead">Creates a user</span></td><td><a href="/api_methods/160-creates-a-user" class="btn btn-mini">Detail</a></td> 
+		<tr><td colspan="2"><span class="lead">Create a user</span></td><td><a href="/api_methods/160-create-a-user" class="btn btn-mini">Detail</a></td> 
 	    <tr><td colspan="3"><span id="well"><pre>/users</pre></span></td></tr>
 		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
-		<tr><td><strong>Description:</strong></td><td colspan="2">Creates in an Apigee API Platform organization</td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">Creates a user in an organization on the API Platform</td></tr>
   		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
 		<tr><td colspan="2"><span class="lead">Delete a user</span></td><td><a href="/api_methods/165-delete-a-user" class="btn btn-mini">Detail</a></td> 
 	    <tr><td colspan="3"><span id="well"><pre>/users/{user_email}</pre></span></td></tr>

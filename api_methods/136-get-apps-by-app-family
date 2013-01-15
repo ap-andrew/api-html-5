@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,7 +33,7 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
@@ -43,7 +43,7 @@
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-GET">GET</span>
@@ -56,40 +56,29 @@
 	</div>
 </div>
 
+<div class="span18">
+	<p>
+	Lists, by name, all Apps contained in an App Family
+	</p>
 
-
-<div class="span18"><p>
-Lists, by name, all Apps contained in an App Family
-</p>
-
-
-
-<b>cURL:</b>
-<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/apps?appfamily={appfamily}</pre>
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/apps?appfamily={appfamily}</pre>
 
 
 
 <b>Sample Response:</b> 
-	<pre>[ &quot;app2.1&quot;, &quot;app2.2&quot; ]</pre>
+	<pre>[ "app2.1", "app2.2" ]</pre>
 
 
 
-<b>Errors</b> 
-	<pre>{
+	<b>Errors</b> 
+		<pre>{
  &quot;code&quot; : &quot;keymanagement.service.invalid_application_name&quot;,
  &quot;message&quot; : &quot;App Name is not valid &quot;,
  &quot;contexts&quot; : [ ]
 }</pre>
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

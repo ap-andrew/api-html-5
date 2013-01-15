@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,7 +33,7 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
@@ -43,7 +43,7 @@
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-DELETE">DELETE</span>
@@ -59,64 +59,61 @@
 	</div>
 </div>
 
+<div class="span18">
+	<p>
+	Deletes an API product from an organization. Note that deleting an API product will cause app requests to the resources URIs)  defined in the API product to fail. Make sure you create a new API product to serve existing apps (unless your intention is disable access to the resources defined in the API product.)
+	</p>
 
-
-<div class="span18"><p>
-Deletes an API product from an organization. Note that deleting an API product will cause app requests to the resources URIs)  defined in the API product to fail. Make sure you create a new API product to serve existing apps (unless your intention is disable access to the resources defined in the API product.)
-</p>
-
-
-
-<b>cURL:</b>
-<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/apiproducts/{apiproductName}</pre>
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/apiproducts/{apiproductName}</pre>
 
 
 
 <b>Sample Response:</b> 
 	<pre>{
-  &quot;apiResources&quot; : [ &quot;/weather&quot; ],
-  &quot;approvalType&quot; : &quot;auto&quot;,
-  &quot;attributes&quot; : [ {
-    &quot;name&quot; : &quot;description&quot;,
-    &quot;value&quot; : &quot;Premium  API Product&quot;
+  "apiResources" : [ "/weather" ],
+  "approvalType" : "auto",
+  "attributes" : [ {
+    "name" : "description",
+    "value" : "Premium  API Product"
   }, {
-    &quot;name&quot; : &quot;developer.quota.interval&quot;,
-    &quot;value&quot; : &quot;1&quot;
+    "name" : "developer.quota.interval",
+    "value" : "1"
   }, {
-    &quot;name&quot; : &quot;developer.quota.limit&quot;,
-    &quot;value&quot; : &quot;1&quot;
+    "name" : "developer.quota.limit",
+    "value" : "1"
   }, {
-    &quot;name&quot; : &quot;developer.quota.timeunit&quot;,
-    &quot;value&quot; : &quot;second&quot;
+    "name" : "developer.quota.timeunit",
+    "value" : "second"
   }, {
-    &quot;name&quot; : &quot;access&quot;,
-    &quot;value&quot; : &quot;external&quot;
+    "name" : "access",
+    "value" : "external"
   }, {
-    &quot;name&quot; : &quot;apisDeployedIn&quot;,
-    &quot;value&quot; : &quot;test&quot;
+    "name" : "apisDeployedIn",
+    "value" : "test"
   }, {
-    &quot;name&quot; : &quot;servicePlan&quot;,
-    &quot;value&quot; : &quot;Premium&quot;
+    "name" : "servicePlan",
+    "value" : "Premium"
   } ],
-  &quot;createdAt&quot; : 1344874372459,
-  &quot;createdBy&quot; : &quot;admin@apigee.com&quot;,
-  &quot;description&quot; : &quot;Premium API Product&quot;,
-  &quot;displayName&quot; : &quot;Premium API Product&quot;,
-  &quot;lastModifiedAt&quot; : 1344874372459,
-  &quot;lastModifiedBy&quot; : &quot;admin@apigee.com&quot;,
-  &quot;name&quot; : &quot;api_premium&quot;,
-  &quot;scopes&quot; : [ ]
+  "createdAt" : 1344874372459,
+  "createdBy" : "admin@apigee.com",
+  "description" : "Premium API Product",
+  "displayName" : "Premium API Product",
+  "lastModifiedAt" : 1344874372459,
+  "lastModifiedBy" : "admin@apigee.com",
+  "name" : "api_premium",
+  "scopes" : [ ]
 }</pre>
 
-<b>Response Payload Elements:</b>
-	<div><table class="table table-bordered">
-		<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-		</tr>
-		</thead>
-		<tr>
+	<b>Response Payload Elements:</b>
+		<table class="table table-bordered">
+			<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="response_element" id="response_element_458">
 <td>apiResources </td>
 <td>A list of URIs bundled in the API product</td>
@@ -183,26 +180,17 @@ Deletes an API product from an organization. Note that deleting an API product w
 <!-- <td><a href="/response_elements/468" class="btn btn-mini">Detail</a></td> -->
 <!-- <td><a href="/api_methods/13-delete-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
-	</table>
-	</div>
+		</table>
 
 
-<b>Errors</b> 
-	<pre>{
+	<b>Errors</b> 
+		<pre>{
   &quot;code&quot; : &quot;keymanagement.service.apiproduct_doesnot_exist&quot;,
   &quot;message&quot; : &quot;ApiProduct with name api_free does not exist&quot;,
   &quot;contexts&quot; : [ ]
 }</pre>
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

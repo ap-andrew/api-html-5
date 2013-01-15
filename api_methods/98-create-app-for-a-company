@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,7 +33,7 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
@@ -43,7 +43,7 @@
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-POST">POST</span>
@@ -56,19 +56,17 @@
 	</div>
 </div>
 
+<div class="span18">
+	<p>
+	Creates an app that belongs to a company.
+	</p>
 
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/companies/{companyName}/apps -X POST</pre>
 
-<div class="span18"><p>
-Creates an app that belongs to a company.
-</p>
-
-
-
-<b>cURL:</b>
-<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/companies/{companyName}/apps -X POST</pre>
-
-<b>Sample Request:</b>
-<pre>{
+	<b>Sample Request:</b>
+	<pre>$ curl -H &quot;Content-type:application/json&quot; -X POST -d \
+'{
   &quot;accessType&quot; : &quot;read&quot;,
   &quot;attributes&quot; : [ {
     &quot;name&quot; : &quot;Language&quot;,
@@ -77,19 +75,20 @@ Creates an app that belongs to a company.
   &quot;apiProducts&quot;: [ &quot;TestApiProduct&quot;],
   &quot;callbackUrl&quot; : &quot;www.apigee.com&quot;,
   &quot;name&quot; : &quot;sandboxTestApp&quot;
-}</pre>
-<b>Request Payload Elements:</b> 
-<div>
-<table class="table table-bordered">
-	<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-			<th>Default</th>
-			<th>Required?</th>
-		</tr>
-		</thead>
-		<tr>
+}' \
+https://api.enterprise.apigee.com/v1/o/{org_name}/companies/{company_name}/apps \
+-u myname:mypass</pre>
+	<b>Request Payload Elements:</b> 
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Default</th>
+				<th>Required?</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="request_element" id="request_element_51">
 <td>accessType</td>
 <td>Acces type for the app (unused by Apigee)</td>
@@ -140,47 +139,46 @@ Creates an app that belongs to a company.
 
 
 
-		</table>
-		</div>
+			</table>
 
 
 <b>Sample Response:</b> 
 	<pre>{
-  &quot;accessType&quot; : &quot;read&quot;,
-  &quot;attributes&quot; : [ {
-    &quot;name&quot; : &quot;Language&quot;,
-    &quot;value&quot; : &quot;java&quot;
+  "accessType" : "read",
+  "attributes" : [ {
+    "name" : "Language",
+    "value" : "java"
   } ],
-  &quot;callbackUrl&quot; : &quot;www.apigee.com&quot;,
-  &quot;createdAt&quot; : 1343050516114,
-  &quot;createdBy&quot; : &quot;Admin&quot;,
-  &quot;credentials&quot; : [ {
-    &quot;apiProducts&quot; : [ {
-      &quot;apiproduct&quot; : &quot;TestApiProduct&quot;,
-      &quot;status&quot; : &quot;approved&quot;
+  "callbackUrl" : "www.apigee.com",
+  "createdAt" : 1343050516114,
+  "createdBy" : "Admin",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "TestApiProduct",
+      "status" : "approved"
     } ],
-    &quot;attributes&quot; : [ ],
-    &quot;consumerKey&quot; : &quot;N6S0jcOhgbsCJD3B7EGNFo0FYAZSpCez&quot;,
-    &quot;consumerSecret&quot; : &quot;BCJpVuK3uq9VuEgK&quot;,
-    &quot;status&quot; : &quot;approved&quot;
+    "attributes" : [ ],
+    "consumerKey" : "N6S0jcOhgbsCJD3B7EGNFo0FYAZSpCez",
+    "consumerSecret" : "BCJpVuK3uq9VuEgK",
+    "status" : "approved"
   } ],
-  &quot;lastModifiedAt&quot; : 1343050516114,
-  &quot;lastModifiedBy&quot; : &quot;Admin&quot;,
-  &quot;name&quot; : &quot;sandboxTestApp&quot;,
-  &quot;status&quot; : &quot;approved&quot;
+  "lastModifiedAt" : 1343050516114,
+  "lastModifiedBy" : "Admin",
+  "name" : "sandboxTestApp",
+  "status" : "approved"
 }
 
 </pre>
 
-<b>Response Payload Elements:</b>
-	<div><table class="table table-bordered">
-		<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-		</tr>
-		</thead>
-		<tr>
+	<b>Response Payload Elements:</b>
+		<table class="table table-bordered">
+			<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="response_element" id="response_element_529">
 <td>accessType </td>
 <td></td>
@@ -283,12 +281,11 @@ Creates an app that belongs to a company.
 <!-- <td><a href="/response_elements/545" class="btn btn-mini">Detail</a></td> -->
 <!-- <td><a href="/api_methods/98-create-app-for-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
-	</table>
-	</div>
+		</table>
 
 
-<b>Errors</b> 
-	<pre>Failure 4xx with proper error message
+	<b>Errors</b> 
+		<pre>Failure 4xx with proper error message
 {
   &quot;code&quot; : &quot;keymanagement.service.app_invalid_name&quot;,
   &quot;message&quot; : &quot;Invalid App Name&quot;,
@@ -296,14 +293,6 @@ Creates an app that belongs to a company.
 }</pre>
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

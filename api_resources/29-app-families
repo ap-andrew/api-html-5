@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -30,8 +30,8 @@
 Developer and App Administration
 </div>
 
-<div id="breadcrumb">
-<a href="apigee.com/docs/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > App Families</div>
+<!-- <div id="breadcrumb">
+<a href="apigee.com/docs/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > App Families</div> -->
 
 
 <div class="page-header">
@@ -42,10 +42,10 @@ Developer and App Administration
 <a href="/api_methods/new">Add an API Method</a>
 </div> -->
 
-<div class="lead">API Platform Base Path: https://api.enterprise.apigee.com/v1/o/{org_name}</div>
+<h3>API Platform Base Path: https://api.enterprise.apigee.com/v1/o/{org_name}</h3>
 
 <table class="table">
-		<tr><td class="lead">API Resource Path: /developers/{developerEmail}/appfamilies</td></tr>
+		<tr><td><h3>API Resource Path: /developers/{developerEmail}/appfamilies</h3></td></tr>
 		<tr><td>A collection of apps associated with a developer</td></tr>
   		<tr><td>App families enable you to create functional groups of apps. A single app may be instantiated in several forms. For example, an app may have sandbox instance and a production instance. App families enable these app instances to be associated. You can do this by linking the instances of the app together in a an app family collection. Specify an app family name, associate that name with a developer or a company of your organization, and select one or more app IDs to add to the contents of the app family. You can create app families for developer apps or for company apps within your organization.</td></tr>
        <!-- <td><div id="well"><pre>{

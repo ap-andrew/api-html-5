@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,7 +33,7 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
@@ -43,7 +43,7 @@
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-POST">POST</span>
@@ -68,10 +68,9 @@ text/xml
 	</div>
 </div>
 
-
-
-<div class="span18"><p>
-Use the POST method to create a new API product. 
+<div class="span18">
+	<p>
+	Use the POST method to create a new API product. 
 You need to:
 Name the API product
 Bundle Resources by defining resource paths (URIs)
@@ -83,40 +82,37 @@ developer.quota.interval - integer
 developer.quota.timeunit second/minute/hour/day/month)
 
 You can also use attributes to set any arbitrary metadata that you need for monitoring or analytics.
-</p>
+	</p>
 
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/apiproducts</pre>
 
-
-<b>cURL:</b>
-<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/apiproducts</pre>
-
-<b>Sample Request:</b>
-<pre>$ curl -H &amp;quot;Content-Type:application/json&amp;quot; -X POST -d \
-   '{&amp;quot;apiResources&amp;quot;: [ &amp;quot;/**&amp;quot; ], 
-     &amp;quot;approvalType&amp;quot;: &amp;quot;auto&amp;quot;, 
-     &amp;quot;attributes&amp;quot;:
-      [{&amp;quot;name&amp;quot;: &amp;quot;description&amp;quot;, &amp;quot;value&amp;quot;: &amp;quot;Introductory API Product&amp;quot;},
-       {&amp;quot;name&amp;quot;: &amp;quot;developer.quota.interval&amp;quot;,&amp;quot;value&amp;quot;: &amp;quot;1&amp;quot;},
-       {&amp;quot;name&amp;quot;: &amp;quot;developer.quota.limit&amp;quot;,&amp;quot;value&amp;quot;: &amp;quot;1000&amp;quot;},
-       {&amp;quot;name&amp;quot;: &amp;quot;developer.quota.timeunit&amp;quot;,&amp;quot;value&amp;quot;: &amp;quot;month&amp;quot;},
-       {&amp;quot;name&amp;quot;: &amp;quot;servicePlan&amp;quot;, &amp;quot;value&amp;quot;: &amp;quot;Introductory&amp;quot;}],
-     &amp;quot;description&amp;quot;: &amp;quot;Free API Product&amp;quot;,
-     &amp;quot;displayName&amp;quot;: &amp;quot;Free API Product&amp;quot;,
-     &amp;quot;name&amp;quot;: &amp;quot;weather_free&amp;quot;,
-     &amp;quot;scopes&amp;quot;: []}' \
--u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/apiproducts</pre>
-<b>Request Payload Elements:</b> 
-<div>
-<table class="table table-bordered">
-	<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-			<th>Default</th>
-			<th>Required?</th>
-		</tr>
-		</thead>
-		<tr>
+	<b>Sample Request:</b>
+	<pre>$ curl -H &quot;Content-Type:application/json&quot; -X POST -d \
+   '{&quot;apiResources&quot;: [ &quot;/weather&quot; ], 
+     &quot;approvalType&quot;: &quot;auto&quot;, 
+     &quot;attributes&quot;:
+      [{&quot;name&quot;: &quot;description&quot;, &quot;value&quot;: &quot;Introductory API Product&quot;},
+       {&quot;name&quot;: &quot;developer.quota.interval&quot;,&quot;value&quot;: &quot;1&quot;},
+       {&quot;name&quot;: &quot;developer.quota.limit&quot;,&quot;value&quot;: &quot;1000&quot;},
+       {&quot;name&quot;: &quot;developer.quota.timeunit&quot;,&quot;value&quot;: &quot;month&quot;},
+       {&quot;name&quot;: &quot;servicePlan&quot;, &quot;value&quot;: &quot;Introductory&quot;}],
+     &quot;description&quot;: &quot;Free API Product&quot;,
+     &quot;displayName&quot;: &quot;Free API Product&quot;,
+     &quot;name&quot;: &quot;weather_free&quot;,
+     &quot;scopes&quot;: []}' \
+-u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/apiproducts</pre>
+	<b>Request Payload Elements:</b> 
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Default</th>
+				<th>Required?</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="request_element" id="request_element_1">
 <td>approvalType</td>
 <td>Manual or Auto. If Manual, consumer key is generated and returned in 'pending' state. If manual consumer key generated and returned in 'Approved' state.</td>
@@ -157,16 +153,6 @@ You can also use attributes to set any arbitrary metadata that you need for moni
 
 
 <tr>
-<div class="request_element" id="request_element_5">
-<td>apiResources</td>
-<td>A comma separated list of API resources to be bundled in the API Product. </td>
-<td>/*</td>
-<td>Yes</td>
-<!-- <td><a href="/request_elements/5" class="btn btn-mini">Detail</a></td> -->
-</div></tr>
-
-
-<tr>
 <div class="request_element" id="request_element_6">
 <td>scopes</td>
 <td>A comma separated list of scopes. These must map to the scopes defined in an Oauth policy associated with the API Product. Any scope mismatch between an Acces Token presented and the API Product results in auth failure.</td>
@@ -176,50 +162,59 @@ You can also use attributes to set any arbitrary metadata that you need for moni
 </div></tr>
 
 
+<tr>
+<div class="request_element" id="request_element_5">
+<td>apiResources</td>
+<td>A comma separated list of API resources to be bundled in the API Product. </td>
+<td>N/A</td>
+<td>Yes</td>
+<!-- <td><a href="/request_elements/5" class="btn btn-mini">Detail</a></td> -->
+</div></tr>
 
-		</table>
-		</div>
+
+
+			</table>
 
 
 <b>Sample Response:</b> 
 	<pre>{
-  &quot;apiResources&quot; : [ &quot;/**&quot; ],
-  &quot;approvalType&quot; : &quot;auto&quot;,
-  &quot;attributes&quot; : [ {
-    &quot;name&quot; : &quot;description&quot;,
-    &quot;value&quot; : &quot;Introductory API Product&quot;
+  "apiResources" : [ "/weather" ],
+  "approvalType" : "auto",
+  "attributes" : [ {
+    "name" : "description",
+    "value" : "Introductory API Product"
   }, {
-    &quot;name&quot; : &quot;developer.quota.interval&quot;,
-    &quot;value&quot; : &quot;1&quot;
+    "name" : "developer.quota.interval",
+    "value" : "1"
   }, {
-    &quot;name&quot; : &quot;developer.quota.limit&quot;,
-    &quot;value&quot; : &quot;1000&quot;
+    "name" : "developer.quota.limit",
+    "value" : "1000"
   }, {
-    &quot;name&quot; : &quot;developer.quota.timeunit&quot;,
-    &quot;value&quot; : &quot;month&quot;
+    "name" : "developer.quota.timeunit",
+    "value" : "month"
   }, {
-    &quot;name&quot; : &quot;servicePlan&quot;,
-    &quot;value&quot; : &quot;Introductory&quot;
+    "name" : "servicePlan",
+    "value" : "Introductory"
   } ],
-  &quot;createdAt&quot; : 1353356675793,
-  &quot;createdBy&quot; : &quot;rsaha@apigee.com&quot;,
-  &quot;description&quot; : &quot;Free API Product&quot;,
-  &quot;displayName&quot; : &quot;Free API Product&quot;,
-  &quot;lastModifiedAt&quot; : 1353356675793,
-  &quot;lastModifiedBy&quot; : &quot;admin@apigee.com&quot;,
-  &quot;name&quot; : &quot;weather_free&quot;,
-  &quot;scopes&quot; : [ ]
+  "createdAt" : 1353356675793,
+  "createdBy" : "rsaha@apigee.com",
+  "description" : "Free API Product",
+  "displayName" : "Free API Product",
+  "lastModifiedAt" : 1353356675793,
+  "lastModifiedBy" : "admin@apigee.com",
+  "name" : "weather_free",
+  "scopes" : [ ]
 }</pre>
 
-<b>Response Payload Elements:</b>
-	<div><table class="table table-bordered">
-		<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-		</tr>
-		</thead>
-		<tr>
+	<b>Response Payload Elements:</b>
+		<table class="table table-bordered">
+			<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="response_element" id="response_element_204">
 <td>apiResources </td>
 <td>A comma separated list of API resources to be bundled in the API Product. </td>
@@ -274,20 +269,11 @@ You can also use attributes to set any arbitrary metadata that you need for moni
 <!-- <td><a href="/response_elements/212" class="btn btn-mini">Detail</a></td> -->
 <!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
-	</table>
-	</div>
+		</table>
 
 
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

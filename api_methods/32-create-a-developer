@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,7 +33,7 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
@@ -43,7 +43,7 @@
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-POST">POST</span>
@@ -56,42 +56,38 @@
 	</div>
 </div>
 
+<div class="span18">
+	<p>
+	Creates a profile for a developer in an Apigee organization
+	</p>
 
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/developers -X POST</pre>
 
-<div class="span18"><p>
-Creates a profile for a developer in an Apigee organization
-</p>
-
-
-
-<b>cURL:</b>
-<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/developers -X POST</pre>
-
-<b>Sample Request:</b>
-<pre>{
-    &quot;email&quot;: &quot;ntesla@theramin.com&quot;,
-    &quot;firstName&quot;: &quot;Nikola&quot;,
-    &quot;lastName&quot;: &quot;Tesla&quot;,
-    &quot;userName&quot;: &quot;theramin&quot;,
-    &quot;attributes&quot;: [
+	<b>Sample Request:</b>
+	<pre>{
+    "email": "ntesla@theramin.com",
+    "firstName": "Nikola",
+    "lastName": "Tesla",
+    "userName": "theramin",
+    "attributes": [
         {
-            &quot;name&quot;: &quot;region&quot;,
-            &quot;value&quot;: &quot;north&quot;
+            "name": "region",
+            "value": "north"
         }
     ]
 }</pre>
-<b>Request Payload Elements:</b> 
-<div>
-<table class="table table-bordered">
-	<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-			<th>Default</th>
-			<th>Required?</th>
-		</tr>
-		</thead>
-		<tr>
+	<b>Request Payload Elements:</b> 
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Default</th>
+				<th>Required?</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="request_element" id="request_element_19">
 <td>email</td>
 <td>The developer's email, used to unique identify the developer in Apigee</td>
@@ -142,37 +138,36 @@ Creates a profile for a developer in an Apigee organization
 
 
 
-		</table>
-		</div>
+			</table>
 
 
 <b>Sample Response:</b> 
 	<pre>{
-  &quot;email&quot; : &quot;ntesla@theramin.com&quot;,
-  &quot;firstName&quot; : &quot;Nikola&quot;,
-  &quot;lastName&quot; : &quot;Tesla&quot;,
-  &quot;userName&quot; : &quot;theramin&quot;,
-  &quot;organizationName&quot; : &quot;myorg&quot;,
-  &quot;status&quot; : &quot;active&quot;,
-  &quot;attributes&quot; : [ {
-    &quot;name&quot; : &quot;region&quot;,
-    &quot;value&quot; : &quot;north&quot;
+  "email" : "ntesla@theramin.com",
+  "firstName" : "Nikola",
+  "lastName" : "Tesla",
+  "userName" : "theramin",
+  "organizationName" : "myorg",
+  "status" : "active",
+  "attributes" : [ {
+    "name" : "region",
+    "value" : "north"
   } ],
-  &quot;createdAt&quot; : 1345058241037,
-  &quot;createdBy&quot; : &quot;andrew@apigee.com&quot;,
-  &quot;lastModifiedAt&quot; : 1345058241037,
-  &quot;lastModifiedBy&quot; : &quot;andrew@apigee.com&quot;
+  "createdAt" : 1345058241037,
+  "createdBy" : "andrew@apigee.com",
+  "lastModifiedAt" : 1345058241037,
+  "lastModifiedBy" : "andrew@apigee.com"
 }</pre>
 
-<b>Response Payload Elements:</b>
-	<div><table class="table table-bordered">
-		<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-		</tr>
-		</thead>
-		<tr>
+	<b>Response Payload Elements:</b>
+		<table class="table table-bordered">
+			<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="response_element" id="response_element_518">
 <td>email </td>
 <td>The developer's email (used asa unique key to retrieve information about this developer)</td>
@@ -239,20 +234,11 @@ Creates a profile for a developer in an Apigee organization
 <!-- <td><a href="/response_elements/528" class="btn btn-mini">Detail</a></td> -->
 <!-- <td><a href="/api_methods/32-create-a-developer?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
-	</table>
-	</div>
+		</table>
 
 
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

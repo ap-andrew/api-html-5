@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,7 +33,7 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
@@ -43,7 +43,7 @@
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-GET">GET</span>
@@ -59,10 +59,9 @@
 	</div>
 </div>
 
-
-
-<div class="span18"><p>
-<p><code>dimension_name</code> is the entity for which the API Platform collects metrics. Apigee defines a set of dimensions that can be used in your reports.  Supported dimensions include:</p>
+<div class="span18">
+	<p>
+	<p><code>dimension_name</code> is the entity for which the API Platform collects metrics. Apigee defines a set of dimensions that can be used in your reports.  Supported dimensions include:</p>
 
 <p>api: The name of an API managed by the API Platform</p>
 
@@ -76,30 +75,25 @@
 
 <p>access_token: The app end user's OAuth access token</p>
 
-</p>
+	</p>
+
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/myorg/environments/test/stats/apis?select=message_count&amp;timeRange=7/24/2012%2000:00~8/25/2012%2000:00&amp;timeUnit=hour&amp;sortby=message_count&amp;sort=DESC</pre>
 
 
 
-<b>cURL:</b>
-<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/myorg/environments/test/stats/apis?select=message_count&amp;timeRange=7/24/2012%2000:00~8/25/2012%2000:00&amp;timeUnit=hour&amp;sortby=message_count&amp;sort=DESC</pre>
+	Query Parameters:
 
-
-
-
-<button type="button" class="btn" data-toggle="collapse" data-target="#qparams">
-Query Parameters:
-</button>
-<div id="collapsible">
-<table class="table table-bordered">
-	<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-			<th>Default</th>
-			<th>Required?</th>
-		</tr>
-		</thead>
-		<div class="query_parameter" id="query_parameter_13">
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Default</th>
+				<th>Required?</th>
+			</tr>
+			</thead>
+			<div class="query_parameter" id="query_parameter_13">
 <tr>
 <td>select</td>
 <td>message_count, error_count, total_response_time, max_response_time, min_response_time, data_exchange_size, end_point_response_time</td>
@@ -220,71 +214,69 @@ Query Parameters:
 
 
 
-		</table>
-
-</div>
+			</table>
 
 <b>Sample Response:</b> 
 	<pre>{
-  &quot;environments&quot; : [ {
-	&quot;dimensions&quot; : [ {
-  	  &quot;metrics&quot; : [ 
+  "environments" : [ {
+	"dimensions" : [ {
+  	  "metrics" : [ 
                  {
-    	        &quot;name&quot; : &quot;message_count&quot;,
-    	        &quot;values&quot; : [ {
-      	           &quot;timestamp&quot; : 1335241800000,
-      	           &quot;value&quot; : &quot;1.0&quot;
+    	        "name" : "message_count",
+    	        "values" : [ {
+      	           "timestamp" : 1335241800000,
+      	           "value" : "1.0"
     	         } ]
   	      } ,
                  {
-    	         &quot;name&quot; : &quot;error_count&quot;,
-    	         &quot;values&quot; : [ {
-      	            &quot;timestamp&quot; : 1335241800000,
-      	            &quot;value&quot; : &quot;0.0&quot;
+    	         "name" : "error_count",
+    	         "values" : [ {
+      	            "timestamp" : 1335241800000,
+      	            "value" : "0.0"
     	           } ]
   	    } 
               ],
   	
-               &quot;name&quot; : &quot;api1&quot;
+               "name" : "api1"
 	}, 
             {
-  	  &quot;metrics&quot; : [ 
+  	  "metrics" : [ 
                {
-    	      &quot;name&quot; : &quot;message_count&quot;,
-    	      &quot;values&quot; : [ {
-      	             &quot;timestamp&quot; : 1335241800000,
-      	             &quot;value&quot; : &quot;1.0&quot;
+    	      "name" : "message_count",
+    	      "values" : [ {
+      	             "timestamp" : 1335241800000,
+      	             "value" : "1.0"
     	          } ]
   	     },
                 {
-    	        &quot;name&quot; : &quot;error_count&quot;,
-    	        &quot;values&quot; : [ {
-      	              &quot;timestamp&quot; : 1335241800000,
-      	              &quot;value&quot; : &quot;0.0&quot;
+    	        "name" : "error_count",
+    	        "values" : [ {
+      	              "timestamp" : 1335241800000,
+      	              "value" : "0.0"
     	        } ]
   	    } 
              ],
   	
-             &quot;name&quot; : &quot;api2&quot;
+             "name" : "api2"
 	} 
           ],
         
-         &quot;name&quot; : &quot;test&quot;
+         "name" : "test"
       } 
     ],
-   &quot;metaData&quot; : {
+   "metaData" : {
     }
 }</pre>
 
-<b>Response Payload Elements:</b>
-	<div><table class="table table-bordered">
-		<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-		</tr>
-		</thead>
-		<tr>
+	<b>Response Payload Elements:</b>
+		<table class="table table-bordered">
+			<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="response_element" id="response_element_1">
 <td>metadata </td>
 <td>Metadata associated with the report</td>
@@ -315,20 +307,11 @@ Query Parameters:
 <!-- <td><a href="/response_elements/10" class="btn btn-mini">Detail</a></td> -->
 <!-- <td><a href="/api_methods/71-get-an-analytics-report-for-a-dimension?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
-	</table>
-	</div>
+		</table>
 
 
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

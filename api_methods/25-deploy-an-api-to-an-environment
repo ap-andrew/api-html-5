@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,17 +33,17 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
-		<p>/apis/{apiName}/revisions/{revisionNumber}/deployments?action=deploy&amp;env={envName}&amp;basepath={/basepath}</p>
+		<p>/apis/{api_name}/revisions/{revision_number}/deployments?action=deploy&amp;env={environment_name}&amp;basepath={/basepath}</p>
 		<p>
 		Pushes an API to an environment (typically 'test' or 'prod') for execution
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-POST">POST</span>
@@ -59,59 +59,56 @@
 	</div>
 </div>
 
+<div class="span18">
+	<p>
+	APIs  cannot be invoked until they have been deployed to an environment. By default every organization in Apigee is provisioned with two environments--test and prod. To get a list of available environments in your organization, use the GET Ogrniazation method, or list environments.
+	</p>
 
-
-<div class="span18"><p>
-APIs  cannot be invoked until they have been deployed to an environment. By default every organization in Apigee is provisioned with two environments--test and prod. To get a list of available environments in your organization, use the GET Ogrniazation method, or list environments.
-</p>
-
-
-
-<b>cURL:</b>
-<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/apis/{apiName}/revisions/{revisionNumber}/deployments?action=deploy&amp;env={envName}&amp;basepath={/basepath}</pre>
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/apis/{apiName}/revisions/{revisionNumber}/deployments?action=deploy&amp;env={envName}&amp;basepath={/basepath}</pre>
 
 
 
 <b>Sample Response:</b> 
 	<pre>{
-  &quot;aPIProxy&quot; : &quot;myapi&quot;,
-  &quot;configuration&quot; : {
-    &quot;basePath&quot; : &quot;/myapi&quot;,
-    &quot;steps&quot; : [ ]
+  "aPIProxy" : "myapi",
+  "configuration" : {
+    "basePath" : "/myapi",
+    "steps" : [ ]
   },
-  &quot;environment&quot; : &quot;test&quot;,
-  &quot;name&quot; : &quot;1&quot;,
-  &quot;organization&quot; : &quot;myorg&quot;,
-  &quot;revision&quot; : &quot;1&quot;,
-  &quot;server&quot; : [ {
-    &quot;status&quot; : &quot;deployed&quot;,
-    &quot;type&quot; : [ &quot;message-processor&quot; ],
-    &quot;uUID&quot; : &quot;90096dd1-1019-406b-9f42-fbb80cd01200&quot;
+  "environment" : "test",
+  "name" : "1",
+  "organization" : "myorg",
+  "revision" : "1",
+  "server" : [ {
+    "status" : "deployed",
+    "type" : [ "message-processor" ],
+    "uUID" : "90096dd1-1019-406b-9f42-fbb80cd01200"
   }, {
-    &quot;status&quot; : &quot;deployed&quot;,
-    &quot;type&quot; : [ &quot;message-processor&quot; ],
-    &quot;uUID&quot; : &quot;7d6e2eb1-581a-4db0-8045-20d9c3306549&quot;
+    "status" : "deployed",
+    "type" : [ "message-processor" ],
+    "uUID" : "7d6e2eb1-581a-4db0-8045-20d9c3306549"
   }, {
-    &quot;status&quot; : &quot;deployed&quot;,
-    &quot;type&quot; : [ &quot;router&quot; ],
-    &quot;uUID&quot; : &quot;1619e2d7-c822-45e0-9f97-63882fb6a805&quot;
+    "status" : "deployed",
+    "type" : [ "router" ],
+    "uUID" : "1619e2d7-c822-45e0-9f97-63882fb6a805"
   }, {
-    &quot;status&quot; : &quot;deployed&quot;,
-    &quot;type&quot; : [ &quot;router&quot; ],
-    &quot;uUID&quot; : &quot;8a5f3d5f-46f8-4e99-b4cc-955875c8a8c8&quot;
+    "status" : "deployed",
+    "type" : [ "router" ],
+    "uUID" : "8a5f3d5f-46f8-4e99-b4cc-955875c8a8c8"
   } ],
-  &quot;state&quot; : &quot;deployed&quot;
+  "state" : "deployed"
 }</pre>
 
-<b>Response Payload Elements:</b>
-	<div><table class="table table-bordered">
-		<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-		</tr>
-		</thead>
-		<tr>
+	<b>Response Payload Elements:</b>
+		<table class="table table-bordered">
+			<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="response_element" id="response_element_282">
 <td>aPIProxy </td>
 <td>The name of the API proxy</td>
@@ -166,20 +163,11 @@ APIs  cannot be invoked until they have been deployed to an environment. By defa
 <!-- <td><a href="/response_elements/290" class="btn btn-mini">Detail</a></td> -->
 <!-- <td><a href="/api_methods/25-deploy-an-api-to-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
-	</table>
-	</div>
+		</table>
 
 
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

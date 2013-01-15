@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -30,8 +30,8 @@
 Appendix
 </div>
 
-<div id="breadcrumb">
-<a href="apigee.com/docs/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > Maps</div>
+<!-- <div id="breadcrumb">
+<a href="apigee.com/docs/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > Maps</div> -->
 
 
 <div class="page-header">
@@ -42,10 +42,10 @@ Appendix
 <a href="/api_methods/new">Add an API Method</a>
 </div> -->
 
-<div class="lead">API Platform Base Path: https://api.enterprise.apigee.com/v1/o/{org_name}</div>
+<h3>API Platform Base Path: https://api.enterprise.apigee.com/v1/o/{org_name}</h3>
 
 <table class="table">
-		<tr><td class="lead">API Resource Path: /maps</td></tr>
+		<tr><td><h3>API Resource Path: /maps</h3></td></tr>
 		<tr><td>A persistence resource that supports storing arbitrary data</td></tr>
   		<tr><td>Maps provide an API for storing arbitrary name/value pairs that can be access at runtime by custom policies, or for other custom runtime requirements such as protocol support. Each map has one or more 'entries', each of which which defines a name/value pair that can be fetched, updated, deleted via the API.</td></tr>
        <!-- <td><div id="well"><pre>{

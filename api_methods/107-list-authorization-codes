@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,7 +33,7 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
@@ -43,7 +43,7 @@
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-GET">GET</span>
@@ -56,50 +56,47 @@
 	</div>
 </div>
 
+<div class="span18">
+	<p>
+	
+	</p>
 
-
-<div class="span18"><p>
-
-</p>
-
-
-
-<b>cURL:</b>
-<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/oauth2/authorizationcodes</pre>
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/oauth2/authorizationcodes</pre>
 
 
 
 <b>Sample Response:</b> 
 	<pre>{
-  &quot;authorizationCode&quot; : [ {
-    &quot;attributes&quot; : [ {
-      &quot;name&quot; : &quot;region&quot;,
-      &quot;value&quot; : &quot;south&quot;
+  "authorizationCode" : [ {
+    "attributes" : [ {
+      "name" : "region",
+      "value" : "south"
     } ],
-    &quot;client_id&quot; : &quot;kjvzAT2kR03jcZGQDod6VtMt8Lj0Ce6c&quot;,
-    &quot;code&quot; : &quot;m9PEEI6I&quot;,
-    &quot;createdAt&quot; : 1343043442176,
-    &quot;createdBy&quot; : &quot;Admin&quot;,
-    &quot;expiresAt&quot; : 1343045242176,
-    &quot;issuedAt&quot; : 1343043442176,
-    &quot;lastModifiedAt&quot; : 1343043442176,
-    &quot;lastModifiedBy&quot; : &quot;Admin&quot;,
-    &quot;scope&quot; : &quot;&quot;,
-    &quot;status&quot; : &quot;active&quot;
+    "client_id" : "kjvzAT2kR03jcZGQDod6VtMt8Lj0Ce6c",
+    "code" : "m9PEEI6I",
+    "createdAt" : 1343043442176,
+    "createdBy" : "Admin",
+    "expiresAt" : 1343045242176,
+    "issuedAt" : 1343043442176,
+    "lastModifiedAt" : 1343043442176,
+    "lastModifiedBy" : "Admin",
+    "scope" : "",
+    "status" : "active"
   },
   {...}
  ]
 }</pre>
 
-<b>Response Payload Elements:</b>
-	<div><table class="table table-bordered">
-		<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-		</tr>
-		</thead>
-		<tr>
+	<b>Response Payload Elements:</b>
+		<table class="table table-bordered">
+			<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="response_element" id="response_element_22">
 <td>attributes </td>
 <td>Name/value pairs used to extend the default auth code profile</td>
@@ -166,12 +163,11 @@
 <!-- <td><a href="/response_elements/32" class="btn btn-mini">Detail</a></td> -->
 <!-- <td><a href="/api_methods/107-list-authorization-codes?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
-	</table>
-	</div>
+		</table>
 
 
-<b>Errors</b> 
-	<pre>Failure 500 with proper error message
+	<b>Errors</b> 
+		<pre>Failure 500 with proper error message
 {
   &quot;code&quot; : &quot;keymanagement.service.invalid_request-authorization_code_invalid&quot;,
   &quot;message&quot; : &quot;Unable to fetch authorization code details&quot;,
@@ -182,14 +178,6 @@ Error Codes:
 1. keymanagement.service.authorization_codes_fetch_failed</pre>
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

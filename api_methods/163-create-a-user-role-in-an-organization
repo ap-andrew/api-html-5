@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,7 +33,7 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
@@ -43,7 +43,7 @@
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-POST">POST</span>
@@ -56,37 +56,36 @@
 	</div>
 </div>
 
+<div class="span18">
+	<p>
+	
+	</p>
 
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/userroles</pre>
 
-<div class="span18"><p>
-
-</p>
-
-
-
-<b>cURL:</b>
-<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/userroles</pre>
-
-<b>Sample Request:</b>
-<pre>{
+	<b>Sample Request:</b>
+	<pre>$ curl -H &quot;Content-type:application/json&quot; -X POST -d \ 
+'{
   &quot;role&quot; : [ {
     &quot;name&quot; : &quot;apiproxyadmin&quot;
   }, {
     &quot;name&quot; : &quot;reportsadmin&quot;
   } ]
-}</pre>
-<b>Request Payload Elements:</b> 
-<div>
-<table class="table table-bordered">
-	<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-			<th>Default</th>
-			<th>Required?</th>
-		</tr>
-		</thead>
-		<tr>
+}' \
+https://api.enterprise.apigee.com/v1/o/{org_name}/userroles \
+-u myname:mypass</pre>
+	<b>Request Payload Elements:</b> 
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Default</th>
+				<th>Required?</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="request_element" id="request_element_76">
 <td>role</td>
 <td>A list of named roles</td>
@@ -97,16 +96,15 @@
 
 
 
-		</table>
-		</div>
+			</table>
 
 
 <b>Sample Response:</b> 
 	<pre>    {
-  &quot;role&quot; : [ {
-    &quot;name&quot; : &quot;apiproxyadmin&quot;
+  "role" : [ {
+    "name" : "apiproxyadmin"
   }, {
-    &quot;name&quot; : &quot;reportsadmin&quot;
+    "name" : "reportsadmin"
   } ]
 }</pre>
 
@@ -114,14 +112,6 @@
 
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

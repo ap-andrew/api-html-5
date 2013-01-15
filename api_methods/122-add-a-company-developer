@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,7 +33,7 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
@@ -43,7 +43,7 @@
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-POST">POST</span>
@@ -65,42 +65,38 @@ text/xml
 	</div>
 </div>
 
+<div class="span18">
+	<p>
+	
+	</p>
 
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/companies/{company_name}/developers</pre>
 
-<div class="span18"><p>
-
-</p>
-
-
-
-<b>cURL:</b>
-<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/companies/{companyName}/developers</pre>
-
-<b>Sample Request:</b>
-<pre>$ curl -H &amp;quot;Content-Type:application/json&amp;quot; -X POST -d \
+	<b>Sample Request:</b>
+	<pre>$ curl -H "Content-Type:application/json" -X POST -d \
 '{
- &amp;quot;developer&amp;quot; : [ {
-   &amp;quot;email&amp;quot; : &amp;quot;dev1@apigee.com&amp;quot;,
-   &amp;quot;role&amp;quot; : &amp;quot;developer&amp;quot;
+ "developer" : [ {
+   "email" : "dev1@apigee.com",
+   "role" : "developer"
  }, {
-   &amp;quot;email&amp;quot; : &amp;quot;developer@apigee.com&amp;quot;,
-   &amp;quot;role&amp;quot; : &amp;quot;developer&amp;quot;
+   "email" : "developer@apigee.com",
+   "role" : "developer"
  } ]
 }'
 https://api.enterprise.apigee.com/v1/o/{org_name}/companies/{company_name}/developers \
 -u myname:mypass</pre>
-<b>Request Payload Elements:</b> 
-<div>
-<table class="table table-bordered">
-	<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-			<th>Default</th>
-			<th>Required?</th>
-		</tr>
-		</thead>
-		<tr>
+	<b>Request Payload Elements:</b> 
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Default</th>
+				<th>Required?</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="request_element" id="request_element_17">
 <td>email</td>
 <td>The unique ID for a Company Developer</td>
@@ -121,32 +117,31 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/companies/{company_name}/devel
 
 
 
-		</table>
-		</div>
+			</table>
 
 
 <b>Sample Response:</b> 
 	<pre>{
-  &quot;developer&quot; : [ {
-    &quot;email&quot; : &quot;dev1@apigee.com&quot;,
-    &quot;role&quot; : &quot;developer&quot;
+  "developer" : [ {
+    "email" : "dev1@apigee.com",
+    "role" : "developer"
   }, {
-    &quot;email&quot; : &quot;developer@apigee.com&quot;,
-    &quot;role&quot; : &quot;developer&quot;
+    "email" : "developer@apigee.com",
+    "role" : "developer"
   } ]
 }
 
 </pre>
 
-<b>Response Payload Elements:</b>
-	<div><table class="table table-bordered">
-		<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-		</tr>
-		</thead>
-		<tr>
+	<b>Response Payload Elements:</b>
+		<table class="table table-bordered">
+			<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="response_element" id="response_element_122">
 <td>email </td>
 <td>The unique key ID a Company Developer</td>
@@ -159,12 +154,11 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/companies/{company_name}/devel
 <!-- <td><a href="/response_elements/123" class="btn btn-mini">Detail</a></td> -->
 <!-- <td><a href="/api_methods/122-add-a-company-developer?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
-	</table>
-	</div>
+		</table>
 
 
-<b>Errors</b> 
-	<pre>Failure 4xx with proper error message
+	<b>Errors</b> 
+		<pre>Failure 4xx with proper error message
 {
   &quot;code&quot; : &quot;developer.service.DevelopersDoesNotExist&quot;,
   &quot;message&quot; : &quot;Developers [dev2@apigee.com] doesnot exist&quot;,
@@ -172,14 +166,6 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/companies/{company_name}/devel
 }</pre>
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

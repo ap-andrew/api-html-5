@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,7 +33,7 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
@@ -43,7 +43,7 @@
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-GET">GET</span>
@@ -65,34 +65,28 @@ text/xml
 	</div>
 </div>
 
+<div class="span18">
+	<p>
+	
+	</p>
 
-
-<div class="span18"><p>
-
-</p>
-
-
-
-<b>cURL:</b>
-<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/users/{userEmail}/audits</pre>
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/users/{userEmail}/audits</pre>
 
 
 
+	Query Parameters:
 
-<button type="button" class="btn" data-toggle="collapse" data-target="#qparams">
-Query Parameters:
-</button>
-<div id="collapsible">
-<table class="table table-bordered">
-	<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-			<th>Default</th>
-			<th>Required?</th>
-		</tr>
-		</thead>
-		<div class="query_parameter" id="query_parameter_24">
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Default</th>
+				<th>Required?</th>
+			</tr>
+			</thead>
+			<div class="query_parameter" id="query_parameter_24">
 <tr>
 <td>timeline</td>
 <td></td>
@@ -153,32 +147,30 @@ Query Parameters:
 
 
 
-		</table>
-
-</div>
+			</table>
 
 <b>Sample Response:</b> 
-	<pre>&lt;AuditRecord&gt;
-  &lt;Category&gt;{categoryvalue}&lt;/Category&gt;
- &lt;Id&gt;{auditrecord-uniqueid}&lt;/Id&gt;
-&lt;Operation&gt;{operation-name}&lt;/Operation&gt;
-&lt;RequestUri&gt;{request-uri-value}&lt;/RequestUri&gt;
-&lt;Response&gt;{response}&lt;/Response&gt;   
-&lt;ResponseCode&gt;{response-code}&lt;/ResponseCode&gt;      
-&lt;Source&gt;{source}&lt;/Source&gt;  
-&lt;Severity&gt;{severity}&lt;/Severity&gt;
-&lt;TimeStamp&gt;{timestamp}&lt;/TimeStamp&gt;
-&lt;SubCategory&gt;{subcategory}&lt;/SubCategory&gt;
-&lt;Type&gt;{type}&lt;/Type&gt;  
+	<pre><AuditRecord>
+  <Category>{categoryvalue}</Category>
+ <Id>{auditrecord-uniqueid}</Id>
+<Operation>{operation-name}</Operation>
+<RequestUri>{request-uri-value}</RequestUri>
+<Response>{response}</Response>   
+<ResponseCode>{response-code}</ResponseCode>      
+<Source>{source}</Source>  
+<Severity>{severity}</Severity>
+<TimeStamp>{timestamp}</TimeStamp>
+<SubCategory>{subcategory}</SubCategory>
+<Type>{type}</Type>  
  
-&lt;/AuditRecord&gt;
-&lt;!-- One or more Audit Record --&gt;
-&lt;/AuditRecords&gt;</pre>
+</AuditRecord>
+<!-- One or more Audit Record -->
+</AuditRecords></pre>
 
 
 
-<b>Errors</b> 
-	<pre>Failure 4xx with proper error message
+	<b>Errors</b> 
+		<pre>Failure 4xx with proper error message
 &lt;Error&gt;
 &lt;Code&gt;audit.invalid_search_parameter&lt;/Code&gt;
 &lt;Message&gt;Search parameter is not valid &lt;/Message&gt;
@@ -187,14 +179,6 @@ Query Parameters:
 </pre>
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,7 +33,7 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
@@ -43,7 +43,7 @@
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-GET">GET</span>
@@ -56,58 +56,55 @@
 	</div>
 </div>
 
+<div class="span18">
+	<p>
+	
+	</p>
 
-
-<div class="span18"><p>
-
-</p>
-
-
-
-<b>cURL:</b>
-<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/companies?expand=true</pre>
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/companies?expand=true</pre>
 
 
 
 <b>Sample Response:</b> 
 	<pre>{
-  &quot;company&quot; : [ {
-    &quot;apps&quot; : [ ],
-    &quot;name&quot; : &quot;DevCompany1&quot;,
-    &quot;displayName&quot; : &quot;&quot;,
-    &quot;organization&quot; : &quot;AutomationOrganization&quot;,
-    &quot;status&quot; : &quot;active&quot;,
-    &quot;attributes&quot; : [ ],
-    &quot;createdAt&quot; : 1343027924464,
-    &quot;createdBy&quot; : &quot;defaultUser&quot;,
-    &quot;lastModifiedAt&quot; : 1343027924464,
-    &quot;lastModifiedBy&quot; : &quot;defaultUser&quot;
+  "company" : [ {
+    "apps" : [ ],
+    "name" : "DevCompany1",
+    "displayName" : "",
+    "organization" : "AutomationOrganization",
+    "status" : "active",
+    "attributes" : [ ],
+    "createdAt" : 1343027924464,
+    "createdBy" : "defaultUser",
+    "lastModifiedAt" : 1343027924464,
+    "lastModifiedBy" : "defaultUser"
   }, {
-    &quot;apps&quot; : [ ],
-    &quot;name&quot; : &quot;DevCompany&quot;,
-    &quot;displayName&quot; : &quot;Developer Company&quot;,
-    &quot;organization&quot; : &quot;AutomationOrganization&quot;,
-    &quot;status&quot; : &quot;active&quot;,
-    &quot;attributes&quot; : [ {
-      &quot;name&quot; : &quot;region&quot;,
-      &quot;value&quot; : &quot;south&quot;
+    "apps" : [ ],
+    "name" : "DevCompany",
+    "displayName" : "Developer Company",
+    "organization" : "AutomationOrganization",
+    "status" : "active",
+    "attributes" : [ {
+      "name" : "region",
+      "value" : "south"
     } ],
-    &quot;createdAt&quot; : 1343049811765,
-    &quot;createdBy&quot; : &quot;Admin&quot;,
-    &quot;lastModifiedAt&quot; : 1343049811875,
-    &quot;lastModifiedBy&quot; : &quot;Admin&quot;
+    "createdAt" : 1343049811765,
+    "createdBy" : "Admin",
+    "lastModifiedAt" : 1343049811875,
+    "lastModifiedBy" : "Admin"
   } ]
 }</pre>
 
-<b>Response Payload Elements:</b>
-	<div><table class="table table-bordered">
-		<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-		</tr>
-		</thead>
-		<tr>
+	<b>Response Payload Elements:</b>
+		<table class="table table-bordered">
+			<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="response_element" id="response_element_416">
 <td>apps </td>
 <td>A list of apps registered by the company</td>
@@ -138,12 +135,11 @@
 <!-- <td><a href="/response_elements/419" class="btn btn-mini">Detail</a></td> -->
 <!-- <td><a href="/api_methods/121-list-companies-in-an-organization-detailed-view?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
-	</table>
-	</div>
+		</table>
 
 
-<b>Errors</b> 
-	<pre>Failure 4xx with proper error message
+	<b>Errors</b> 
+		<pre>Failure 4xx with proper error message
 {
  &quot;code&quot; : &quot;developer.service.CompanyDoesNotExist&quot;,
  &quot;message&quot; : &quot;Company named DevCompany1 does not exist in organization {organizationName}&quot;,
@@ -151,14 +147,6 @@
 }</pre>
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

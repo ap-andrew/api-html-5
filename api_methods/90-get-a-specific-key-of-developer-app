@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,17 +33,17 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
-		<p>/developers/{developerEmail}/apps/{appName}/keys/{consumerKey}</p>
+		<p>/developers/{developer_email}/apps/{app_name}/keys/{consumer_key}</p>
 		<p>
 		Returns details for a consumer key for a developer app
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-GET">GET</span>
@@ -56,49 +56,46 @@
 	</div>
 </div>
 
+<div class="span18">
+	<p>
+	Returns details for a consumer key, including the key and secret value, associated API products, and other metadata-
+	</p>
 
-
-<div class="span18"><p>
-Returns details for a consumer key, including the key and secret value, associated API products, and other metadata-
-</p>
-
-
-
-<b>cURL:</b>
-<pre>curl -u myname:mypass &amp;quot;https://api.enterprise.apigee.com/v1/o/{myorg}/developers/{developerEmail}/apps/{appName}/keys/{consumerKey}&amp;quot;</pre>
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass &amp;quot;https://api.enterprise.apigee.com/v1/o/{myorg}/developers/{developerEmail}/apps/{appName}/keys/{consumerKey}&amp;quot;</pre>
 
 
 
 <b>Sample Response:</b> 
 	<pre>{
-  &quot;apiProducts&quot; : [ {
-    &quot;apiproduct&quot; : &quot;FreeWeatherAPI&quot;,
-    &quot;status&quot; : &quot;approved&quot;
+  "apiProducts" : [ {
+    "apiproduct" : "FreeWeatherAPI",
+    "status" : "approved"
   }, {
-    &quot;apiproduct&quot; : &quot;PremiumWeatherAPI&quot;,
-    &quot;status&quot; : &quot;approved&quot;
+    "apiproduct" : "PremiumWeatherAPI",
+    "status" : "approved"
   } ],
-  &quot;attributes&quot; : [ {
-    &quot;name&quot; : &quot;region&quot;,
-    &quot;value&quot; : &quot;south&quot;
+  "attributes" : [ {
+    "name" : "region",
+    "value" : "south"
   }, {
-    &quot;name&quot; : &quot;country&quot;,
-    &quot;value&quot; : &quot;norway&quot;
+    "name" : "country",
+    "value" : "norway"
   } ],
-  &quot;consumerKey&quot; : &quot;GGAjbeS9tZRwRgojDdbiHYln4EEU8K8i&quot;,
-  &quot;consumerSecret&quot; : &quot;pgppv4OsarzfwY2x&quot;,
-  &quot;status&quot; : &quot;approved&quot;
+  "consumerKey" : "GGAjbeS9tZRwRgojDdbiHYln4EEU8K8i",
+  "consumerSecret" : "pgppv4OsarzfwY2x",
+  "status" : "approved"
 }</pre>
 
-<b>Response Payload Elements:</b>
-	<div><table class="table table-bordered">
-		<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-		</tr>
-		</thead>
-		<tr>
+	<b>Response Payload Elements:</b>
+		<table class="table table-bordered">
+			<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="response_element" id="response_element_321">
 <td>apiProducts </td>
 <td>Name of an API product associated with the key</td>
@@ -135,20 +132,11 @@ Returns details for a consumer key, including the key and secret value, associat
 <!-- <td><a href="/response_elements/326" class="btn btn-mini">Detail</a></td> -->
 <!-- <td><a href="/api_methods/90-get-a-specific-key-of-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
-	</table>
-	</div>
+		</table>
 
 
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

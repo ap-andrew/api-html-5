@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,17 +33,17 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
-		<p>/oauth/1/requesttokens</p>
+		<p>/oauth1/requesttokens</p>
 		<p>
 		Returns list of all Oauth 1.0a request tokens, with detail for each token
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-GET">GET</span>
@@ -56,53 +56,50 @@
 	</div>
 </div>
 
+<div class="span18">
+	<p>
+	
+	</p>
 
-
-<div class="span18"><p>
-
-</p>
-
-
-
-<b>cURL:</b>
-<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/oauth/1/requesttokens</pre>
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/oauth/1/requesttokens</pre>
 
 
 
 <b>Sample Response:</b> 
 	<pre>{
-  &quot;requestToken&quot; : [ {
-    &quot;app&quot; : &quot;app1&quot;,
-    &quot;attributes&quot; : [ ],
-    &quot;callbackUrl&quot; : &quot;api.company.com&quot;,
-    &quot;consumerKey&quot; : &quot;HAflZ3JzeQaEuPzTVQ5YCIy9TAh0Lhba&quot;,
-    &quot;createdAt&quot; : 1343028237179,
-    &quot;createdBy&quot; : &quot;defaultUser&quot;,
-    &quot;expiresAt&quot; : 1343028237184,
-    &quot;issuedAt&quot; : 1343028237179,
-    &quot;lastModifiedAt&quot; : 1343028237179,
-    &quot;lastModifiedBy&quot; : &quot;defaultUser&quot;,
-    &quot;secret&quot; : &quot;u3rn4tdRaBYvnk4FdZmOD6oDoQA8&quot;,
-    &quot;status&quot; : &quot;expired&quot;,
-    &quot;token&quot; : &quot;bKf4sSPg8vUoeLmR4iNCbl2y94NB&quot;
+  "requestToken" : [ {
+    "app" : "app1",
+    "attributes" : [ ],
+    "callbackUrl" : "api.company.com",
+    "consumerKey" : "HAflZ3JzeQaEuPzTVQ5YCIy9TAh0Lhba",
+    "createdAt" : 1343028237179,
+    "createdBy" : "defaultUser",
+    "expiresAt" : 1343028237184,
+    "issuedAt" : 1343028237179,
+    "lastModifiedAt" : 1343028237179,
+    "lastModifiedBy" : "defaultUser",
+    "secret" : "u3rn4tdRaBYvnk4FdZmOD6oDoQA8",
+    "status" : "expired",
+    "token" : "bKf4sSPg8vUoeLmR4iNCbl2y94NB"
   }, {
-    &quot;app&quot; : &quot;myApp&quot;,
-    &quot;attributes&quot; : [ {
-      &quot;name&quot; : &quot;region&quot;,
-      &quot;value&quot; : &quot;south&quot;
+    "app" : "myApp",
+    "attributes" : [ {
+      "name" : "region",
+      "value" : "south"
     } ],
-    &quot;callbackUrl&quot; : &quot;www.nike.com&quot;,
-    &quot;consumerKey&quot; : &quot;Lmupmwb5mD6CAEl6vqii1kojTGMiCnWj&quot;,
-    &quot;createdAt&quot; : 1343034561737,
-    &quot;createdBy&quot; : &quot;Admin&quot;,
-    &quot;expiresAt&quot; : 1343036361737,
-    &quot;issuedAt&quot; : 1343034561737,
-    &quot;lastModifiedAt&quot; : 1343034561737,
-    &quot;lastModifiedBy&quot; : &quot;Admin&quot;,
-    &quot;scope&quot; : &quot;local&quot;,
-    &quot;secret&quot; : &quot;kSdnf7pBZADjxg5qfMkHhDVTumR5&quot;,
-    &quot;status&quot; : &quot;approved&quot;,
-    &quot;token&quot; : &quot;1wXHJFNXLA0Haeg4lVMToZWJHaFM&quot;
+    "callbackUrl" : "www.nike.com",
+    "consumerKey" : "Lmupmwb5mD6CAEl6vqii1kojTGMiCnWj",
+    "createdAt" : 1343034561737,
+    "createdBy" : "Admin",
+    "expiresAt" : 1343036361737,
+    "issuedAt" : 1343034561737,
+    "lastModifiedAt" : 1343034561737,
+    "lastModifiedBy" : "Admin",
+    "scope" : "local",
+    "secret" : "kSdnf7pBZADjxg5qfMkHhDVTumR5",
+    "status" : "approved",
+    "token" : "1wXHJFNXLA0Haeg4lVMToZWJHaFM"
   },
   {.....}
  ]
@@ -110,8 +107,8 @@
 
 
 
-<b>Errors</b> 
-	<pre>Failure 500 with proper error message
+	<b>Errors</b> 
+		<pre>Failure 500 with proper error message
 {
   &quot;code&quot; : &quot;keymanagement.service.oauth10_request_token_fetch_failed,
   &quot;message&quot; : &quot;unable to fetch request token details&quot;,
@@ -122,14 +119,6 @@ Error Codes:
 1. keymanagement.service.oauth10_request_token_fetch_failed</pre>
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

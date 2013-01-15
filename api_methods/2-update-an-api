@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,7 +33,7 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
@@ -43,7 +43,7 @@
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-PUT">PUT</span>
@@ -68,53 +68,42 @@ text/xml
 	</div>
 </div>
 
+<div class="span18">
+	<p>
+	Updates the API using the information included in the request. Only the information to be updated needs to be included. In this example, we add a description to the API proxy using the PUT method.
+	</p>
 
-
-<div class="span18"><p>
-Updates the API using the information included in the request. Only the information to be updated needs to be included. In this example, we add a description to the API proxy using the PUT method.
-</p>
-
-
-
-<b>cURL:</b>
-<pre>curl -u myname:mypass https://api.enterprise.apigee.com/apis/{apiName}</pre>
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/apis/{apiName}</pre>
 
 
 
 <b>Sample Response:</b> 
 	<pre>{
-  &quot;configurationVersion&quot; : {
-    &quot;majorVersion&quot; : 4,
-    &quot;minorVersion&quot; : 0
+  "configurationVersion" : {
+    "majorVersion" : 4,
+    "minorVersion" : 0
   },
-  &quot;contextInfo&quot; : &quot;Revision 1 of application myAPI, in organization apiProvider&quot;,
-  &quot;createdAt&quot; : 1343841147364,
-  &quot;createdBy&quot; : &quot;andrew@apigee.com&quot;,
-  &quot;description&quot; : &quot;My new API&quot;,
-  &quot;lastModifiedAt&quot; : 1343841582954,
-  &quot;lastModifiedBy&quot; : &quot;andrew@apigee.com&quot;,
-  &quot;name&quot; : &quot;weatherTest2&quot;,
-  &quot;policies&quot; : [ ],
-  &quot;proxyEndpoints&quot; : [ ],
-  &quot;resources&quot; : [ ],
-  &quot;revision&quot; : &quot;1&quot;,
-  &quot;targetEndpoints&quot; : [ ],
-  &quot;targetServers&quot; : [ ],
-  &quot;type&quot; : &quot;Application&quot;
+  "contextInfo" : "Revision 1 of application myAPI, in organization apiProvider",
+  "createdAt" : 1343841147364,
+  "createdBy" : "andrew@apigee.com",
+  "description" : "My new API",
+  "lastModifiedAt" : 1343841582954,
+  "lastModifiedBy" : "andrew@apigee.com",
+  "name" : "weatherTest2",
+  "policies" : [ ],
+  "proxyEndpoints" : [ ],
+  "resources" : [ ],
+  "revision" : "1",
+  "targetEndpoints" : [ ],
+  "targetServers" : [ ],
+  "type" : "Application"
 }</pre>
 
 
 
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

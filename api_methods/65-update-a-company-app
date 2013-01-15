@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,7 +33,7 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
@@ -43,7 +43,7 @@
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-PUT">PUT</span>
@@ -56,39 +56,35 @@
 	</div>
 </div>
 
+<div class="span18">
+	<p>
+	
+	</p>
 
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/companies/{companyName}/apps/{appName}</pre>
 
-<div class="span18"><p>
-
-</p>
-
-
-
-<b>cURL:</b>
-<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/companies/{companyName}/apps/{appName}</pre>
-
-<b>Sample Request:</b>
-<pre>{
-  &quot;access_type&quot; : &quot;read&quot;,
-  &quot;attributes&quot; : [ {
-    &quot;name&quot; : &quot;Language&quot;,
-    &quot;value&quot; : &quot;java-j2ee&quot;
+	<b>Sample Request:</b>
+	<pre>{
+  "access_type" : "read",
+  "attributes" : [ {
+    "name" : "Language",
+    "value" : "java-j2ee"
   } ],
-  &quot;apiProducts&quot;: [ &quot;sandbox&quot;],
-  &quot;callback_url&quot; : &quot;www.apigee.com&quot;
+  "apiProducts": [ "sandbox"],
+  "callback_url" : "www.apigee.com"
 }</pre>
-<b>Request Payload Elements:</b> 
-<div>
-<table class="table table-bordered">
-	<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-			<th>Default</th>
-			<th>Required?</th>
-		</tr>
-		</thead>
-		<tr>
+	<b>Request Payload Elements:</b> 
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Default</th>
+				<th>Required?</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="request_element" id="request_element_30">
 <td>access_type</td>
 <td></td>
@@ -129,35 +125,34 @@
 
 
 
-		</table>
-		</div>
+			</table>
 
 
 <b>Sample Response:</b> 
 	<pre>{
-  &quot;access_type&quot; : &quot;read&quot;,
-  &quot;attributes&quot; : [ {
-    &quot;name&quot; : &quot;Language&quot;,
-    &quot;value&quot; : &quot;java-j2ee&quot;
+  "access_type" : "read",
+  "attributes" : [ {
+    "name" : "Language",
+    "value" : "java-j2ee"
   } ],
-  &quot;callback_url&quot; : &quot;www.apigee.com&quot;,
-  &quot;created_at&quot; : 1342431404360,
-  &quot;created_by&quot; : &quot;Admin&quot;,
-  &quot;lastmodified_at&quot; : 1342431590819,
-  &quot;lastmodified_by&quot; : &quot;Admin&quot;,
-  &quot;name&quot; : &quot;sandboxTestApp&quot;,
-  &quot;status&quot; : &quot;approved&quot;
+  "callback_url" : "www.apigee.com",
+  "created_at" : 1342431404360,
+  "created_by" : "Admin",
+  "lastmodified_at" : 1342431590819,
+  "lastmodified_by" : "Admin",
+  "name" : "sandboxTestApp",
+  "status" : "approved"
 }</pre>
 
-<b>Response Payload Elements:</b>
-	<div><table class="table table-bordered">
-		<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-		</tr>
-		</thead>
-		<tr>
+	<b>Response Payload Elements:</b>
+		<table class="table table-bordered">
+			<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="response_element" id="response_element_155">
 <td>access_type </td>
 <td>Unenforced by Apigee</td>
@@ -212,26 +207,17 @@
 <!-- <td><a href="/response_elements/163" class="btn btn-mini">Detail</a></td> -->
 <!-- <td><a href="/api_methods/65-update-a-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
-	</table>
-	</div>
+		</table>
 
 
-<b>Errors</b> 
-	<pre>{
+	<b>Errors</b> 
+		<pre>{
   &quot;code&quot; : &quot;developer.service.AppDoesNotExist&quot;,
   &quot;message&quot; : &quot;App named sandboxTestApp1 does not exist in organization AutomationOrganization&quot;,
   &quot;contexts&quot; : [ ]
 }</pre>
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

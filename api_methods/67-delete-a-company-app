@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,7 +33,7 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
@@ -43,7 +43,7 @@
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-DELETE">DELETE</span>
@@ -56,49 +56,38 @@
 	</div>
 </div>
 
+<div class="span18">
+	<p>
+	
+	</p>
 
-
-<div class="span18"><p>
-
-</p>
-
-
-
-<b>cURL:</b>
-<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/companies/{companyName}/apps -X DELETE</pre>
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/companies/{companyName}/apps -X DELETE</pre>
 
 
 
 <b>Sample Response:</b> 
 	<pre>{
-  &quot;access_type&quot; : &quot;read&quot;,
-  &quot;app_family&quot; : &quot;default&quot;,
-  &quot;attributes&quot; : [ {
-	&quot;name&quot; : &quot;Language&quot;,
-	&quot;value&quot; : &quot;java&quot;
+  "access_type" : "read",
+  "app_family" : "default",
+  "attributes" : [ {
+	"name" : "Language",
+	"value" : "java"
   } ],
-  &quot;callback_url&quot; : &quot;www.apigee.com&quot;,
-  &quot;company_name&quot; : &quot;DevCompany&quot;,
-  &quot;created_at&quot; : 1342265140683,
-  &quot;created_by&quot; : &quot;defaultUser&quot;,
-  &quot;lastmodified_at&quot; : 1342265140683,
-  &quot;lastmodified_by&quot; : &quot;defaultUser&quot;,
-  &quot;name&quot; : &quot;DevApp2&quot;,
-  &quot;status&quot; : &quot;approved&quot;
+  "callback_url" : "www.apigee.com",
+  "company_name" : "DevCompany",
+  "created_at" : 1342265140683,
+  "created_by" : "defaultUser",
+  "lastmodified_at" : 1342265140683,
+  "lastmodified_by" : "defaultUser",
+  "name" : "DevApp2",
+  "status" : "approved"
 }</pre>
 
 
 
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,7 +33,7 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
@@ -43,7 +43,7 @@
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-POST">POST</span>
@@ -56,31 +56,27 @@
 	</div>
 </div>
 
+<div class="span18">
+	<p>
+	This method enables developer apps to be associated in a collection called an 'App Family". The association of such apps is entirely arbitrary. This is often used to associate a 'sandbox' version of an app with a 'production' version of an app. Apigee does no special processing on such collections, except to maintain the relationship among apps that are contained in the family that is created using this method. 
+	</p>
 
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/developers/{developerEmail}/appfamilies -X POST</pre>
 
-<div class="span18"><p>
-This method enables developer apps to be associated in a collection called an 'App Family". The association of such apps is entirely arbitrary. This is often used to associate a 'sandbox' version of an app with a 'production' version of an app. Apigee does no special processing on such collections, except to maintain the relationship among apps that are contained in the family that is created using this method. 
-</p>
-
-
-
-<b>cURL:</b>
-<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/developers/{developerEmail}/appfamilies -X POST</pre>
-
-<b>Sample Request:</b>
-<pre> {&quot;name&quot; : &quot;WeatherApps&quot;,&quot;apps&quot;: [&quot;weatherapp&quot;, &quot;weatherapp_prod&quot;]}</pre>
-<b>Request Payload Elements:</b> 
-<div>
-<table class="table table-bordered">
-	<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-			<th>Default</th>
-			<th>Required?</th>
-		</tr>
-		</thead>
-		<tr>
+	<b>Sample Request:</b>
+	<pre> {"name" : "WeatherApps","apps": ["weatherapp", "weatherapp_prod"]}</pre>
+	<b>Request Payload Elements:</b> 
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Default</th>
+				<th>Required?</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="request_element" id="request_element_46">
 <td>name</td>
 <td>App family to which Developer Apps will be added</td>
@@ -101,26 +97,25 @@ This method enables developer apps to be associated in a collection called an 'A
 
 
 
-		</table>
-		</div>
+			</table>
 
 
 <b>Sample Response:</b> 
 	<pre>Success 201 
 {
-  &quot;apps&quot; : [ &quot;weatherapp&quot;, &quot;weatherapp_prod&quot; ],
-  &quot;name&quot; : &quot;WeatherApps&quot;
+  "apps" : [ "weatherapp", "weatherapp_prod" ],
+  "name" : "WeatherApps"
 }</pre>
 
-<b>Response Payload Elements:</b>
-	<div><table class="table table-bordered">
-		<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-		</tr>
-		</thead>
-		<tr>
+	<b>Response Payload Elements:</b>
+		<table class="table table-bordered">
+			<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="response_element" id="response_element_232">
 <td>apps </td>
 <td>App family to which Developer Apps will be added</td>
@@ -133,12 +128,11 @@ This method enables developer apps to be associated in a collection called an 'A
 <!-- <td><a href="/response_elements/233" class="btn btn-mini">Detail</a></td> -->
 <!-- <td><a href="/api_methods/125-create-an-app-aamily?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
-	</table>
-	</div>
+		</table>
 
 
-<b>Errors</b> 
-	<pre>Failure 4xx with proper error message
+	<b>Errors</b> 
+		<pre>Failure 4xx with proper error message
 &lt;Error&gt;
 &lt;Code&gt;keymanagement.service.invalid_company_name&lt;/Code&gt;
 &lt;Message&gt;Company Name is not valid &lt;/Message&gt;
@@ -152,14 +146,6 @@ This method enables developer apps to be associated in a collection called an 'A
 &lt;/Error&gt;</pre>
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

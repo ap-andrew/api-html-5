@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,7 +33,7 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
@@ -43,7 +43,7 @@
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-GET">GET</span>
@@ -56,60 +56,49 @@
 	</div>
 </div>
 
+<div class="span18">
+	<p>
+	Retrieves an app profile by ID.
+	</p>
 
-
-<div class="span18"><p>
-Retrieves an app profile by ID.
-</p>
-
-
-
-<b>cURL:</b>
-<pre>curl https://api.enterprise.apigee.com/v1/o/apigee-pm/apps/72d0da6a-6551-48d8-98af-1da6187d0adc -u myname:mypass</pre>
+	<b>cURL:</b>
+	<pre>curl https://api.enterprise.apigee.com/v1/o/apigee-pm/apps/72d0da6a-6551-48d8-98af-1da6187d0adc -u myname:mypass</pre>
 
 
 
 <b>Sample Response:</b> 
 	<pre>{
-  &quot;accessType&quot; : &quot;read&quot;,
-  &quot;apiProducts&quot; : [ ],
-  &quot;appFamily&quot; : &quot;default&quot;,
-  &quot;appId&quot; : &quot;72d0da6a-6441-48d8-98af-1da6187d0adc&quot;,
-  &quot;attributes&quot; : [ ],
-  &quot;callbackUrl&quot; : &quot;login.myapp.com&quot;,
-  &quot;createdAt&quot; : 1354204157152,
-  &quot;createdBy&quot; : &quot;andrew@apigee.com&quot;,
-  &quot;credentials&quot; : [ {
-    &quot;apiProducts&quot; : [ {
-      &quot;apiproduct&quot; : &quot;API PremiumProduct&quot;,
-      &quot;status&quot; : &quot;approved&quot;
+  "accessType" : "read",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "72d0da6a-6441-48d8-98af-1da6187d0adc",
+  "attributes" : [ ],
+  "callbackUrl" : "login.myapp.com",
+  "createdAt" : 1354204157152,
+  "createdBy" : "andrew@apigee.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "API PremiumProduct",
+      "status" : "approved"
     } ],
-    &quot;attributes&quot; : [ ],
-    &quot;consumerKey&quot; : &quot;FbLtTbxQC3jhGlNFbeGI75fsfaVH4ZmQ&quot;,
-    &quot;consumerSecret&quot; : &quot;IwpLk8xg8lX1AUxY&quot;,
-    &quot;scopes&quot; : [ ],
-    &quot;status&quot; : &quot;approved&quot;
+    "attributes" : [ ],
+    "consumerKey" : "FbLtTbxQC3jhGlNFbeGI75fsfaVH4ZmQ",
+    "consumerSecret" : "IwpLk8xg8lX1AUxY",
+    "scopes" : [ ],
+    "status" : "approved"
   } ],
-  &quot;developerId&quot; : &quot;jAvgq2abxyuMsyd0&quot;,
-  &quot;lastModifiedAt&quot; : 1354204157152,
-  &quot;lastModifiedBy&quot; : &quot;andrew@apigee.com&quot;,
-  &quot;name&quot; : &quot;SampleApp&quot;,
-  &quot;scopes&quot; : [ ],
-  &quot;status&quot; : &quot;approved&quot;
+  "developerId" : "jAvgq2abxyuMsyd0",
+  "lastModifiedAt" : 1354204157152,
+  "lastModifiedBy" : "andrew@apigee.com",
+  "name" : "SampleApp",
+  "scopes" : [ ],
+  "status" : "approved"
 }</pre>
 
 
 
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

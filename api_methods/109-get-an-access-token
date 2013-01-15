@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,7 +33,7 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
@@ -43,7 +43,7 @@
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-GET">GET</span>
@@ -56,48 +56,45 @@
 	</div>
 </div>
 
+<div class="span18">
+	<p>
+	
+	</p>
 
-
-<div class="span18"><p>
-
-</p>
-
-
-
-<b>cURL:</b>
-<pre>curl -u myname:mypass ttp://api.enterprise.apigee.com/v1/o/{myorg}/oauth2/accesstokens/{accessToken}</pre>
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass ttp://api.enterprise.apigee.com/v1/o/{myorg}/oauth2/accesstokens/{accessToken}</pre>
 
 
 
 <b>Sample Response:</b> 
 	<pre>{
-  &quot;app&quot; : &quot;app1&quot;,
-  &quot;attributes&quot; : [ ],
-  &quot;clientId&quot; : &quot;fGytmxA5UDajPMdOA5E3bebiBOBPikOT&quot;,
-  &quot;createdAt&quot; : 1343036540877,
-  &quot;createdBy&quot; : &quot;defaultUser&quot;,
-  &quot;expiresAt&quot; : 1343038340877,
-  &quot;grantType&quot; : &quot;password&quot;,
-  &quot;issuedAt&quot; : 1343036540877,
-  &quot;lastModifiedAt&quot; : 1343036540877,
-  &quot;lastModifiedBy&quot; : &quot;defaultUser&quot;,
-  &quot;refreshCount&quot; : 0,
-  &quot;refreshToken&quot; : &quot;Nn5Pt2eO&quot;,
-  &quot;scope&quot; : &quot;&quot;,
-  &quot;status&quot; : &quot;approved&quot;,
-  &quot;token&quot; : &quot;25poPXCPOw43s0hJBn6tQYnUb5KF&quot;,
-  &quot;tokenType&quot; : &quot;BearerToken&quot;
+  "app" : "app1",
+  "attributes" : [ ],
+  "clientId" : "fGytmxA5UDajPMdOA5E3bebiBOBPikOT",
+  "createdAt" : 1343036540877,
+  "createdBy" : "defaultUser",
+  "expiresAt" : 1343038340877,
+  "grantType" : "password",
+  "issuedAt" : 1343036540877,
+  "lastModifiedAt" : 1343036540877,
+  "lastModifiedBy" : "defaultUser",
+  "refreshCount" : 0,
+  "refreshToken" : "Nn5Pt2eO",
+  "scope" : "",
+  "status" : "approved",
+  "token" : "25poPXCPOw43s0hJBn6tQYnUb5KF",
+  "tokenType" : "BearerToken"
 }</pre>
 
-<b>Response Payload Elements:</b>
-	<div><table class="table table-bordered">
-		<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-		</tr>
-		</thead>
-		<tr>
+	<b>Response Payload Elements:</b>
+		<table class="table table-bordered">
+			<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="response_element" id="response_element_43">
 <td>app </td>
 <td>Name of the app for which the access token was created</td>
@@ -200,12 +197,11 @@
 <!-- <td><a href="/response_elements/59" class="btn btn-mini">Detail</a></td> -->
 <!-- <td><a href="/api_methods/109-get-an-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
-	</table>
-	</div>
+		</table>
 
 
-<b>Errors</b> 
-	<pre>Failure 404 with proper error message
+	<b>Errors</b> 
+		<pre>Failure 404 with proper error message
 {
   &quot;code&quot; : &quot;keymanagement.service.AccessTokenDoesntExists&quot;,
   &quot;message&quot; : &quot;Access Token doesnt exists&quot;,
@@ -216,14 +212,6 @@ Error Codes:
 1. keymanagement.service.oauth_access_token_doesnot_exist</pre>
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

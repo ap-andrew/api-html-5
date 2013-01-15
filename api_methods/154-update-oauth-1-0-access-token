@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,7 +33,7 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
@@ -43,7 +43,7 @@
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-POST">POST</span>
@@ -56,40 +56,36 @@
 	</div>
 </div>
 
+<div class="span18">
+	<p>
+	Any portion of the access token profile may be updated using POST. In this example, we update the access token with custom attributes and a new scope. The entire updated access token profile is returned in the response.
+	</p>
 
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/organizations/{org}/oauth1/accesstokens/{accesstoken}</pre>
 
-<div class="span18"><p>
-Any portion of the access token profile may be updated using POST. In this example, we update the access token with custom attributes and a new scope. The entire updated access token profile is returned in the response.
-</p>
-
-
-
-<b>cURL:</b>
-<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/organizations/{org}/oauth1/accesstokens/{accesstoken}</pre>
-
-<b>Sample Request:</b>
-<pre>{
-  &quot;attributes&quot; : [ {
-    &quot;name&quot; : &quot;region&quot;,
-    &quot;value&quot; : &quot;south&quot;
+	<b>Sample Request:</b>
+	<pre>{
+  "attributes" : [ {
+    "name" : "region",
+    "value" : "south"
   }, {
-    &quot;name&quot; : &quot;country&quot;,
-    &quot;value&quot; : &quot;norway&quot;
+    "name" : "country",
+    "value" : "norway"
   } ],
-  &quot;scope&quot; : &quot;global&quot;
+  "scope" : "global"
 }</pre>
-<b>Request Payload Elements:</b> 
-<div>
-<table class="table table-bordered">
-	<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-			<th>Default</th>
-			<th>Required?</th>
-		</tr>
-		</thead>
-		<tr>
+	<b>Request Payload Elements:</b> 
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Default</th>
+				<th>Required?</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="request_element" id="request_element_48">
 <td>attributes</td>
 <td>Name/value elements used to extend the default profile</td>
@@ -110,40 +106,39 @@ Any portion of the access token profile may be updated using POST. In this examp
 
 
 
-		</table>
-		</div>
+			</table>
 
 
 <b>Sample Response:</b> 
 	<pre>{
-  &quot;apiProducts&quot; : [ &quot;PremiumApiProduct&quot; ],
-  &quot;app&quot; : &quot;myApp&quot;,
-  &quot;appUserId&quot; : &quot;Developer@apigee.com&quot;,
-  &quot;attributes&quot; : [ {
-    &quot;name&quot; : &quot;region&quot;,
-    &quot;value&quot; : &quot;south&quot;
+  "apiProducts" : [ "PremiumApiProduct" ],
+  "app" : "myApp",
+  "appUserId" : "Developer@apigee.com",
+  "attributes" : [ {
+    "name" : "region",
+    "value" : "south"
   }, {
-    &quot;name&quot; : &quot;country&quot;,
-    &quot;value&quot; : &quot;norway&quot;
+    "name" : "country",
+    "value" : "norway"
   } ],
-  &quot;consumerKey&quot; : &quot;mlfBg7NH9tCua8wUhuamKHeTdfHxMB0A&quot;,
-  &quot;consumerSecret&quot; : &quot;iF1lDg239ngfhLWH&quot;,
-  &quot;createdAt&quot; : 1343037194128,
-  &quot;createdBy&quot; : &quot;1343037194128&quot;,
-  &quot;expiresAt&quot; : 1343038994128,
-  &quot;issuedAt&quot; : 1343037194128,
-  &quot;lastModifiedAt&quot; : 1343037194207,
-  &quot;lastModifiedBy&quot; : &quot;Admin&quot;,
-  &quot;scope&quot; : &quot;global&quot;,
-  &quot;secret&quot; : &quot;HJ3Gl6KTF01pAH24GAAdGfb8dOq1&quot;,
-  &quot;status&quot; : &quot;approved&quot;,
-  &quot;token&quot; : &quot;kNw6eQrL5G7etEBcvqvRTL01E5rY&quot;
+  "consumerKey" : "mlfBg7NH9tCua8wUhuamKHeTdfHxMB0A",
+  "consumerSecret" : "iF1lDg239ngfhLWH",
+  "createdAt" : 1343037194128,
+  "createdBy" : "1343037194128",
+  "expiresAt" : 1343038994128,
+  "issuedAt" : 1343037194128,
+  "lastModifiedAt" : 1343037194207,
+  "lastModifiedBy" : "Admin",
+  "scope" : "global",
+  "secret" : "HJ3Gl6KTF01pAH24GAAdGfb8dOq1",
+  "status" : "approved",
+  "token" : "kNw6eQrL5G7etEBcvqvRTL01E5rY"
 }</pre>
 
 
 
-<b>Errors</b> 
-	<pre>Failure 404 with proper error message
+	<b>Errors</b> 
+		<pre>Failure 404 with proper error message
 {
   &quot;code&quot; : &quot;keymanagement.service.....&quot;,
   &quot;message&quot; : &quot;Access Token doesnot exist&quot;,
@@ -157,14 +152,6 @@ Error Codes:
 5. keymanagement.service.oauth10_access_token_update_failed</pre>
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

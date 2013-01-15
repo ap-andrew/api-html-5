@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,7 +33,7 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
@@ -43,7 +43,7 @@
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-GET">GET</span>
@@ -65,10 +65,9 @@ text/xml
 	</div>
 </div>
 
-
-
-<div class="span18"><p>
-<p>Append the target resource as a URL parameter to the base path of the request for an audit.</p>
+<div class="span18">
+	<p>
+	<p>Append the target resource as a URL parameter to the base path of the request for an audit.</p>
 Supported audit targets:
 <ul>
 <li>/apis/{apiName}</li>
@@ -85,30 +84,25 @@ Supported audit targets:
 <li>operation: Filters results by operation (GET, CREATE, UPDATE, and DELETE). </li>
 <li>user: Filters results by email address for Apigee user.</li></ul>
 
-</p>
+	</p>
+
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/audits/o/{myorg}</pre>
 
 
 
-<b>cURL:</b>
-<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/audits/o/{myorg}</pre>
+	Query Parameters:
 
-
-
-
-<button type="button" class="btn" data-toggle="collapse" data-target="#qparams">
-Query Parameters:
-</button>
-<div id="collapsible">
-<table class="table table-bordered">
-	<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-			<th>Default</th>
-			<th>Required?</th>
-		</tr>
-		</thead>
-		<div class="query_parameter" id="query_parameter_21">
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Default</th>
+				<th>Required?</th>
+			</tr>
+			</thead>
+			<div class="query_parameter" id="query_parameter_21">
 <tr>
 <td>timeline</td>
 <td>Filters results by time interval</td>
@@ -169,55 +163,53 @@ Query Parameters:
 
 
 
-		</table>
-
-</div>
+			</table>
 
 <b>Sample Response:</b> 
-	<pre>	&lt;AuditRecord&gt;
-    	&lt;Operation&gt;GET&lt;/Operation&gt;
-    	&lt;RequestUri&gt;/v1/o/myOrg&lt;/RequestUri&gt;
-    	&lt;Response&gt;Organization {name='myOrg', type='trial', displayname='myOrg', name='myOrg', createdAt='1346755305264', createdBy='defaultUser', lastModifiedAt='1346755305264', lastModifiedBy='defaultUser', description=null}&lt;/Response&gt;
-    	&lt;ResponseCode&gt;200&lt;/ResponseCode&gt;
-    	&lt;TimeStamp&gt;1346755316891&lt;/TimeStamp&gt;
-	&lt;/AuditRecord&gt;
+	<pre>	<AuditRecord>
+    	<Operation>GET</Operation>
+    	<RequestUri>/v1/o/myOrg</RequestUri>
+    	<Response>Organization {name='myOrg', type='trial', displayname='myOrg', name='myOrg', createdAt='1346755305264', createdBy='defaultUser', lastModifiedAt='1346755305264', lastModifiedBy='defaultUser', description=null}</Response>
+    	<ResponseCode>200</ResponseCode>
+    	<TimeStamp>1346755316891</TimeStamp>
+	</AuditRecord>
 
-	&lt;AuditRecord&gt;
-    	&lt;Operation&gt;DELETE&lt;/Operation&gt;
-    	&lt;RequestUri&gt;/v1/o/myOrg&lt;/RequestUri&gt;
-    	&lt;Response&gt;Organization {name='myOrg', type='trial', displayname='myOrg', name='myOrg', createdAt='1346755305264', createdBy='defaultUser', lastModifiedAt='1346755305264', lastModifiedBy='defaultUser', description=null}&lt;/Response&gt;
-    	&lt;ResponseCode&gt;200&lt;/ResponseCode&gt;
-    	&lt;TimeStamp&gt;1346755331511&lt;/TimeStamp&gt;
-	&lt;/AuditRecord&gt;
+	<AuditRecord>
+    	<Operation>DELETE</Operation>
+    	<RequestUri>/v1/o/myOrg</RequestUri>
+    	<Response>Organization {name='myOrg', type='trial', displayname='myOrg', name='myOrg', createdAt='1346755305264', createdBy='defaultUser', lastModifiedAt='1346755305264', lastModifiedBy='defaultUser', description=null}</Response>
+    	<ResponseCode>200</ResponseCode>
+    	<TimeStamp>1346755331511</TimeStamp>
+	</AuditRecord>
 
-	&lt;AuditRecord&gt;
-    	&lt;Operation&gt;GET&lt;/Operation&gt;
-    	&lt;RequestUri&gt;/v1/o/myOrg&lt;/RequestUri&gt;
-    	&lt;Response&gt;Organization {name='myOrg', type='trial', displayname='myOrg', name='myOrg', createdAt='1346755305264', createdBy='defaultUser', lastModifiedAt='1346755305264', lastModifiedBy='defaultUser', description=null}&lt;/Response&gt;
-    	&lt;ResponseCode&gt;200&lt;/ResponseCode&gt;
-    	&lt;TimeStamp&gt;1346755316805&lt;/TimeStamp&gt;
-	&lt;/AuditRecord&gt;
+	<AuditRecord>
+    	<Operation>GET</Operation>
+    	<RequestUri>/v1/o/myOrg</RequestUri>
+    	<Response>Organization {name='myOrg', type='trial', displayname='myOrg', name='myOrg', createdAt='1346755305264', createdBy='defaultUser', lastModifiedAt='1346755305264', lastModifiedBy='defaultUser', description=null}</Response>
+    	<ResponseCode>200</ResponseCode>
+    	<TimeStamp>1346755316805</TimeStamp>
+	</AuditRecord>
 
-	&lt;AuditRecord&gt;
-    	&lt;Operation&gt;CREATE&lt;/Operation&gt;
-&lt;Request&gt;Organization {name='myOrg', type='null', displayname='null', name='myOrg', createdAt='null', createdBy='null', lastModifiedAt='null', lastModifiedBy='null', description=null}&lt;/Request&gt;
-    	&lt;RequestUri&gt;/v1/o/myOrg&lt;/RequestUri&gt;
-    	&lt;Response&gt;Organization {name='myOrg', type='trial', displayname='myOrg', name='myOrg', createdAt='1346755305264', createdBy='defaultUser', lastModifiedAt='1346755305264', lastModifiedBy='defaultUser', description=null}&lt;/Response&gt;
-    	&lt;ResponseCode&gt;201&lt;/ResponseCode&gt;
-    	&lt;TimeStamp&gt;1346755305365&lt;/TimeStamp&gt;
-	&lt;/AuditRecord&gt;
-&lt;/AuditRecords&gt;
+	<AuditRecord>
+    	<Operation>CREATE</Operation>
+<Request>Organization {name='myOrg', type='null', displayname='null', name='myOrg', createdAt='null', createdBy='null', lastModifiedAt='null', lastModifiedBy='null', description=null}</Request>
+    	<RequestUri>/v1/o/myOrg</RequestUri>
+    	<Response>Organization {name='myOrg', type='trial', displayname='myOrg', name='myOrg', createdAt='1346755305264', createdBy='defaultUser', lastModifiedAt='1346755305264', lastModifiedBy='defaultUser', description=null}</Response>
+    	<ResponseCode>201</ResponseCode>
+    	<TimeStamp>1346755305365</TimeStamp>
+	</AuditRecord>
+</AuditRecords>
 </pre>
 
-<b>Response Payload Elements:</b>
-	<div><table class="table table-bordered">
-		<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-		</tr>
-		</thead>
-		<tr>
+	<b>Response Payload Elements:</b>
+		<table class="table table-bordered">
+			<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="response_element" id="response_element_696">
 <td>AuditRecord </td>
 <td>The audit record for an operation on the target resource</td>
@@ -254,12 +246,11 @@ Query Parameters:
 <!-- <td><a href="/response_elements/704" class="btn btn-mini">Detail</a></td> -->
 <!-- <td><a href="/api_methods/200-get-audit-logs?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
-	</table>
-	</div>
+		</table>
 
 
-<b>Errors</b> 
-	<pre>Failure 4xx with proper error message
+	<b>Errors</b> 
+		<pre>Failure 4xx with proper error message
 &lt;Error&gt;
 &lt;Code&gt;audit.invalid_search_parameter&lt;/Code&gt;
 &lt;Message&gt;Search parameter is not valid &lt;/Message&gt;
@@ -267,14 +258,6 @@ Query Parameters:
 &lt;/Error&gt;</pre>
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,17 +33,17 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
-		<p>/developers/{developerEmail}/apps/{appName}/keys/{consumerKey}</p>
+		<p>/developers/{developer_email}/apps/{app_name}/keys/{consumer_key}</p>
 		<p>
 		Adds an API Product to a Developer App Key
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-POST">POST</span>
@@ -56,41 +56,37 @@
 	</div>
 </div>
 
-
-
-<div class="span18"><p>
-Updates an existing Developer App Key with the specified APi Product, enabling the Developer App that holds the Key to access the URIs bundled in the API Product.
+<div class="span18">
+	<p>
+	Updates an existing Developer App Key with the specified APi Product, enabling the Developer App that holds the Key to access the URIs bundled in the API Product.
 The ApiProduct(s) specified in request payload will be merged with existing ApiProduct(s) for this key.
-</p>
+	</p>
 
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass &amp;quot;https://api.enterprise.apigee.com/v1/o/{myorg}/developers/{developerEmail}/apps/{appName}/keys/{consumerKey}&amp;quot;</pre>
 
-
-<b>cURL:</b>
-<pre>curl -u myname:mypass &amp;quot;https://api.enterprise.apigee.com/v1/o/{myorg}/developers/{developerEmail}/apps/{appName}/keys/{consumerKey}&amp;quot;</pre>
-
-<b>Sample Request:</b>
-<pre> {
-  &quot;apiProducts&quot;: [&quot;ApiProduct_qa&quot;],
-  &quot;attributes&quot; : [{
-    &quot;name&quot; : &quot;region&quot;,
-    &quot;value&quot; : &quot;south&quot;
+	<b>Sample Request:</b>
+	<pre> {
+  "apiProducts": ["ApiProduct_qa"],
+  "attributes" : [{
+    "name" : "region",
+    "value" : "south"
   },{
-    &quot;name&quot; : &quot;country&quot;,
-    &quot;value&quot; : &quot;norway&quot;
+    "name" : "country",
+    "value" : "norway"
   }]
 }</pre>
-<b>Request Payload Elements:</b> 
-<div>
-<table class="table table-bordered">
-	<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-			<th>Default</th>
-			<th>Required?</th>
-		</tr>
-		</thead>
-		<tr>
+	<b>Request Payload Elements:</b> 
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Default</th>
+				<th>Required?</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="request_element" id="request_element_40">
 <td>apiProducts</td>
 <td>The name of the API Product to added to the Developer App Key</td>
@@ -111,40 +107,39 @@ The ApiProduct(s) specified in request payload will be merged with existing ApiP
 
 
 
-		</table>
-		</div>
+			</table>
 
 
 <b>Sample Response:</b> 
 	<pre>{
-  &quot;apiProducts&quot; : [ {
-    &quot;apiproduct&quot; : &quot;ApiProduct&quot;,
-    &quot;status&quot; : &quot;approved&quot;
+  "apiProducts" : [ {
+    "apiproduct" : "ApiProduct",
+    "status" : "approved"
   }, {
-    &quot;apiproduct&quot; : &quot;ApiProduct_qa&quot;,
-    &quot;status&quot; : &quot;approved&quot;
+    "apiproduct" : "ApiProduct_qa",
+    "status" : "approved"
   } ],
-  &quot;attributes&quot; : [ {
-    &quot;name&quot; : &quot;region&quot;,
-    &quot;value&quot; : &quot;south&quot;
+  "attributes" : [ {
+    "name" : "region",
+    "value" : "south"
   }, {
-    &quot;name&quot; : &quot;country&quot;,
-    &quot;value&quot; : &quot;norway&quot;
+    "name" : "country",
+    "value" : "norway"
   } ],
-  &quot;consumerKey&quot; : &quot;0F2S7iCWcQ4mDQVGXwS5tgPAGWnNxo0q&quot;,
-  &quot;consumerSecret&quot; : &quot;CciaOUKFPXVgBIGk&quot;,
-  &quot;status&quot; : &quot;approved&quot;
+  "consumerKey" : "0F2S7iCWcQ4mDQVGXwS5tgPAGWnNxo0q",
+  "consumerSecret" : "CciaOUKFPXVgBIGk",
+  "status" : "approved"
 }</pre>
 
-<b>Response Payload Elements:</b>
-	<div><table class="table table-bordered">
-		<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-		</tr>
-		</thead>
-		<tr>
+	<b>Response Payload Elements:</b>
+		<table class="table table-bordered">
+			<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="response_element" id="response_element_213">
 <td>apiproduct </td>
 <td>The name of the API Product added to the Developer App Key</td>
@@ -181,26 +176,17 @@ The ApiProduct(s) specified in request payload will be merged with existing ApiP
 <!-- <td><a href="/response_elements/218" class="btn btn-mini">Detail</a></td> -->
 <!-- <td><a href="/api_methods/89-update-key-with-apiproduct-s?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
-	</table>
-	</div>
+		</table>
 
 
-<b>Errors</b> 
-	<pre>{
+	<b>Errors</b> 
+		<pre>{
   &quot;code&quot; : &quot;keymanagement.service.InvalidClientIdForGivenApp&quot;,
   &quot;message&quot; : &quot;Invalid consumer key for Given App&quot;,
   &quot;contexts&quot; : [ ]
 }</pre>
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

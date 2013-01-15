@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -30,8 +30,8 @@
 Oauth
 </div>
 
-<div id="breadcrumb">
-<a href="apigee.com/docs/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > OAuth 1.0a Request Tokens</div>
+<!-- <div id="breadcrumb">
+<a href="apigee.com/docs/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > OAuth 1.0a Request Tokens</div> -->
 
 
 <div class="page-header">
@@ -42,10 +42,10 @@ Oauth
 <a href="/api_methods/new">Add an API Method</a>
 </div> -->
 
-<div class="lead">API Platform Base Path: https://api.enterprise.apigee.com/v1/o/{org_name}</div>
+<h3>API Platform Base Path: https://api.enterprise.apigee.com/v1/o/{org_name}</h3>
 
 <table class="table">
-		<tr><td class="lead">API Resource Path: /oauth1/requesttokens</td></tr>
+		<tr><td><h3>API Resource Path: /oauth1/requesttokens</h3></td></tr>
 		<tr><td>OAuth 1.0a Request Tokens</td></tr>
   		<tr><td></td></tr>
        <!-- <td><div id="well"><pre>{
@@ -73,27 +73,27 @@ Oauth
 
 <tbody>
 		<tr><td colspan="2"><span class="lead">Approve a Request Token</span></td><td><a href="/api_methods/147-approve-a-request-token" class="btn btn-mini">Detail</a></td> 
-	    <tr><td colspan="3"><span id="well"><pre>/oauth/1/requesttokens/{request_token}?action=approve</pre></span></td></tr>
+	    <tr><td colspan="3"><span id="well"><pre>/oauth1/requesttokens/{request_token}?action=approve</pre></span></td></tr>
 		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 		<tr><td><strong>Description:</strong></td><td colspan="2">Approves an OAuth 1.0a Request Token</td></tr>
   		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
 		<tr><td colspan="2"><span class="lead">Delete a Request Token</span></td><td><a href="/api_methods/146-delete-a-request-token" class="btn btn-mini">Detail</a></td> 
-	    <tr><td colspan="3"><span id="well"><pre>/oauth/1/requesttokens/{request_token}</pre></span></td></tr>
+	    <tr><td colspan="3"><span id="well"><pre>/oauth1/requesttokens/{request_token}</pre></span></td></tr>
 		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 		<tr><td><strong>Description:</strong></td><td colspan="2">Deletes the request token specified</td></tr>
   		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
 		<tr><td colspan="2"><span class="lead">Get an Oauth 1.0a Request Token</span></td><td><a href="/api_methods/143-get-an-oauth-1-0a-request-token" class="btn btn-mini">Detail</a></td> 
-	    <tr><td colspan="3"><span id="well"><pre>/oauth/1/requesttokens/{request_token}?consumerKey={consumer_key}</pre></span></td></tr>
+	    <tr><td colspan="3"><span id="well"><pre>/oauth1/requesttokens/{request_token}?consumerKey={consumer_key}</pre></span></td></tr>
 		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 		<tr><td><strong>Description:</strong></td><td colspan="2">Gets the Oauth 1.0a Request Token for the speficied consumer key</td></tr>
   		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
 		<tr><td colspan="2"><span class="lead">List Request Tokens</span></td><td><a href="/api_methods/144-list-request-tokens" class="btn btn-mini">Detail</a></td> 
-	    <tr><td colspan="3"><span id="well"><pre>/oauth/1/requesttokens</pre></span></td></tr>
+	    <tr><td colspan="3"><span id="well"><pre>/oauth1/requesttokens</pre></span></td></tr>
 		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 		<tr><td><strong>Description:</strong></td><td colspan="2">Returns list of all Oauth 1.0a request tokens, with detail for each token</td></tr>
   		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
 		<tr><td colspan="2"><span class="lead">Revoke a Request Token</span></td><td><a href="/api_methods/148-revoke-a-request-token" class="btn btn-mini">Detail</a></td> 
-	    <tr><td colspan="3"><span id="well"><pre>/oauth/1/requesttokens/{request_token}?action=revoke</pre></span></td></tr>
+	    <tr><td colspan="3"><span id="well"><pre>/oauth1/requesttokens/{request_token}?action=revoke</pre></span></td></tr>
 		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 		<tr><td><strong>Description:</strong></td><td colspan="2"></td></tr>
   		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>

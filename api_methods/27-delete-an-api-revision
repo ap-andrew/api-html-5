@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,17 +33,17 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
-		<p>/apis/{apiName}/revision/{revisionNumber}</p>
+		<p>/apis/{api_name}/revision/{revision_number}</p>
 		<p>
 		Deletes a specific revision of an API
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-DELETE">DELETE</span>
@@ -59,41 +59,30 @@
 	</div>
 </div>
 
+<div class="span18">
+	<p>
+	Deletes a specific revision of an API. Note that a deployed revision cannot be deleted. You must undeploy the revision before deletion.
+	</p>
 
-
-<div class="span18"><p>
-Deletes a specific revision of an API. Note that a deployed revision cannot be deleted. You must undeploy the revision before deletion.
-</p>
-
-
-
-<b>cURL:</b>
-<pre>curl -u myname:mypass https://api.enterprise.apigee.com/apis/{apiName}/revisions/{revisionNumber}</pre>
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/apis/{apiName}/revisions/{revisionNumber}</pre>
 
 
 
 <b>Sample Response:</b> 
-	<pre>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
-&lt;APIProxy name=&quot;sampleAPI&quot; revision=”1”&gt;
-   &lt;ConfigurationVersion majorVersion=”4” minorVersion=”0” /&gt;
-    &lt;StepDefinitions/&gt;
-    &lt;ProxyEndpoints/&gt;
-    &lt;Resources/&gt;
-    &lt;TargetEndpoints/&gt;
-&lt;/APIProxy&gt;</pre>
+	<pre><?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy name="sampleAPI" revision=”1”>
+   <ConfigurationVersion majorVersion=”4” minorVersion=”0” />
+    <StepDefinitions/>
+    <ProxyEndpoints/>
+    <Resources/>
+    <TargetEndpoints/>
+</APIProxy></pre>
 
 
 
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

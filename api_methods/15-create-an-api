@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,7 +33,7 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
@@ -43,7 +43,7 @@
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-POST">POST</span>
@@ -68,36 +68,33 @@ text/xml
 	</div>
 </div>
 
-
-
-<div class="span18"><p>
-This method creates the framework of an API proxy in Apigee, providing an alternative to creating APIs via the UI. 
+<div class="span18">
+	<p>
+	This method creates the framework of an API proxy in Apigee, providing an alternative to creating APIs via the UI. 
 
 <p>The API will not be accessible at runtime until a proxy endpoint and target endpoint are defined. 
 <p>Usually, this request is followed up with an export API proxy method call, which exports the API proxy bundle to the developer's local machine for development.
-</p>
+	</p>
 
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/apis</pre>
 
-
-<b>cURL:</b>
-<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/apis</pre>
-
-<b>Sample Request:</b>
-<pre>curl -H &quot;Content-type:application/json&quot; -X POST -d \
+	<b>Sample Request:</b>
+	<pre>$ curl -H &quot;Content-type:application/json&quot; -X POST -d \
 '{&quot;name&quot; : &quot;myAPI&quot;}'  \
--u myname:mypass  https://api.enterprise.apigee.com/v1/o/{myorg}/apis</pre>
-<b>Request Payload Elements:</b> 
-<div>
-<table class="table table-bordered">
-	<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-			<th>Default</th>
-			<th>Required?</th>
-		</tr>
-		</thead>
-		<tr>
+https://api.enterprise.apigee.com/v1/o/{org_name}/apis \
+-u myname:mypass</pre>
+	<b>Request Payload Elements:</b> 
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Default</th>
+				<th>Required?</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="request_element" id="request_element_50">
 <td>name</td>
 <td>The name of the API</td>
@@ -108,40 +105,39 @@ This method creates the framework of an API proxy in Apigee, providing an altern
 
 
 
-		</table>
-		</div>
+			</table>
 
 
 <b>Sample Response:</b> 
 	<pre>{
-    &quot;configurationVersion&quot;: {
-        &quot;majorVersion&quot;: 4, 
-        &quot;minorVersion&quot;: 0
+    "configurationVersion": {
+        "majorVersion": 4, 
+        "minorVersion": 0
     }, 
-    &quot;contextInfo&quot;: &quot;Revision 1 of application weatherTest, in organization apiProvider&quot;, 
-    &quot;createdAt&quot;: 1343182801400, 
-    &quot;createdBy&quot;: &quot;admin@apigee.com&quot;, 
-    &quot;lastModifiedAt&quot;: 1343182801400, 
-    &quot;lastModifiedBy&quot;: &quot;admin@apigee.com&quot;, 
-    &quot;name&quot;: &quot;myAPI&quot;, 
-    &quot;policies&quot;: [], 
-    &quot;proxyEndpoints&quot;: [], 
-    &quot;resources&quot;: [], 
-    &quot;revision&quot;: &quot;1&quot;, 
-    &quot;targetEndpoints&quot;: [], 
-    &quot;targetServers&quot;: [], 
-    &quot;type&quot;: &quot;Application&quot;
+    "contextInfo": "Revision 1 of application weatherTest, in organization apiProvider", 
+    "createdAt": 1343182801400, 
+    "createdBy": "admin@apigee.com", 
+    "lastModifiedAt": 1343182801400, 
+    "lastModifiedBy": "admin@apigee.com", 
+    "name": "myAPI", 
+    "policies": [], 
+    "proxyEndpoints": [], 
+    "resources": [], 
+    "revision": "1", 
+    "targetEndpoints": [], 
+    "targetServers": [], 
+    "type": "Application"
 }</pre>
 
-<b>Response Payload Elements:</b>
-	<div><table class="table table-bordered">
-		<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-		</tr>
-		</thead>
-		<tr>
+	<b>Response Payload Elements:</b>
+		<table class="table table-bordered">
+			<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="response_element" id="response_element_272">
 <td>configurationVersion </td>
 <td>The version of Apigee that the configuration is valid for</td>
@@ -202,20 +198,11 @@ This method creates the framework of an API proxy in Apigee, providing an altern
 <!-- <td><a href="/response_elements/281" class="btn btn-mini">Detail</a></td> -->
 <!-- <td><a href="/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
-	</table>
-	</div>
+		</table>
 
 
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

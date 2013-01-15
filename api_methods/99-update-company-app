@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,7 +33,7 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
@@ -43,7 +43,7 @@
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-PUT">PUT</span>
@@ -56,57 +56,46 @@
 	</div>
 </div>
 
+<div class="span18">
+	<p>
+	
+	</p>
 
-
-<div class="span18"><p>
-
-</p>
-
-
-
-<b>cURL:</b>
-<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/companies/{companyName}/apps/{appName}</pre>
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/companies/{companyName}/apps/{appName}</pre>
 
 
 
 <b>Sample Response:</b> 
 	<pre>{
-  &quot;accessType&quot; : &quot;read&quot;,
-  &quot;attributes&quot; : [ {
-    &quot;name&quot; : &quot;Language&quot;,
-    &quot;value&quot; : &quot;java-j2ee&quot;
+  "accessType" : "read",
+  "attributes" : [ {
+    "name" : "Language",
+    "value" : "java-j2ee"
   } ],
-  &quot;callbackUrl&quot; : &quot;www.apigee.com&quot;,
-  &quot;createdAt&quot; : 1343050516114,
-  &quot;createdBy&quot; : &quot;Admin&quot;,
-  &quot;credentials&quot; : [ {
-    &quot;apiProducts&quot; : [ {
-      &quot;apiproduct&quot; : &quot;TestApiProduct&quot;,
-      &quot;status&quot; : &quot;approved&quot;
+  "callbackUrl" : "www.apigee.com",
+  "createdAt" : 1343050516114,
+  "createdBy" : "Admin",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "TestApiProduct",
+      "status" : "approved"
     } ],
-    &quot;attributes&quot; : [ ],
-    &quot;consumerKey&quot; : &quot;N6S0jcOhgbsCJD3B7EGNFo0FYAZSpCez&quot;,
-    &quot;consumerSecret&quot; : &quot;BCJpVuK3uq9VuEgK&quot;,
-    &quot;status&quot; : &quot;approved&quot;
+    "attributes" : [ ],
+    "consumerKey" : "N6S0jcOhgbsCJD3B7EGNFo0FYAZSpCez",
+    "consumerSecret" : "BCJpVuK3uq9VuEgK",
+    "status" : "approved"
   } ],
-  &quot;lastModifiedAt&quot; : 1343050516317,
-  &quot;lastModifiedBy&quot; : &quot;Admin&quot;,
-  &quot;name&quot; : &quot;sandboxTestApp&quot;,
-  &quot;status&quot; : &quot;approved&quot;
+  "lastModifiedAt" : 1343050516317,
+  "lastModifiedBy" : "Admin",
+  "name" : "sandboxTestApp",
+  "status" : "approved"
 }</pre>
 
 
 
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

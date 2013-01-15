@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -30,8 +30,8 @@
 Developer and App Administration
 </div>
 
-<div id="breadcrumb">
-<a href="apigee.com/docs/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > Company Developers</div>
+<!-- <div id="breadcrumb">
+<a href="apigee.com/docs/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > Company Developers</div> -->
 
 
 <div class="page-header">
@@ -42,10 +42,10 @@ Developer and App Administration
 <a href="/api_methods/new">Add an API Method</a>
 </div> -->
 
-<div class="lead">API Platform Base Path: https://api.enterprise.apigee.com/v1/o/{org_name}</div>
+<h3>API Platform Base Path: https://api.enterprise.apigee.com/v1/o/{org_name}</h3>
 
 <table class="table">
-		<tr><td class="lead">API Resource Path: /companies/{companyName}/developers</td></tr>
+		<tr><td><h3>API Resource Path: /companies/{companyName}/developers</h3></td></tr>
 		<tr><td>Developers grouped into a company entity</td></tr>
   		<tr><td>A developer within an organization who is associated with a company. The company developer creates apps on behalf of the company, and any apps created by a company developer are associated with the company and known as 'company apps'.
 
@@ -80,12 +80,12 @@ text/xml
 		</td></tr>
   		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
 		<tr><td colspan="2"><span class="lead">Delete a developer association with a company</span></td><td><a href="/api_methods/123-delete-a-developer-association-with-a-company" class="btn btn-mini">Detail</a></td> 
-	    <tr><td colspan="3"><span id="well"><pre>/companies/{companyname}/developers/{developer_email}</pre></span></td></tr>
+	    <tr><td colspan="3"><span id="well"><pre>/companies/{company_name}/developers/{developer_email}</pre></span></td></tr>
 		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 		<tr><td><strong>Description:</strong></td><td colspan="2">Removes the association of a Developer with a Company</td></tr>
   		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
 		<tr><td colspan="2"><span class="lead">List Developers in a Company</span></td><td><a href="/api_methods/124-list-developers-in-a-company" class="btn btn-mini">Detail</a></td> 
-	    <tr><td colspan="3"><span id="well"><pre>/companies/{companyname}/developers/</pre></span></td></tr>
+	    <tr><td colspan="3"><span id="well"><pre>/companies/{company_name}/developers/</pre></span></td></tr>
 		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 		<tr><td><strong>Description:</strong></td><td colspan="2">Lists all Developers associated with a Company</td></tr>
   		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>

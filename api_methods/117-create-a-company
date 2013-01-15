@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,7 +33,7 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
@@ -43,7 +43,7 @@
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-POST">POST</span>
@@ -56,40 +56,36 @@
 	</div>
 </div>
 
+<div class="span18">
+	<p>
+	
+	</p>
 
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/companies -X POST</pre>
 
-<div class="span18"><p>
-
-</p>
-
-
-
-<b>cURL:</b>
-<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/companies -X POST</pre>
-
-<b>Sample Request:</b>
-<pre>$ curl -H &amp;quot;Content-type:application/json&amp;quot; -X POST -d \
-'{&amp;quot;name&amp;quot; : &amp;quot;DevCompany&amp;quot;,
- &amp;quot;displayName&amp;quot; : &amp;quot;Developer Company&amp;quot;,
- &amp;quot;status&amp;quot; : &amp;quot;active&amp;quot;,
- &amp;quot;attributes&amp;quot; : [ {
-    &amp;quot;name&amp;quot; : &amp;quot;region&amp;quot;,
-    &amp;quot;value&amp;quot; : &amp;quot;north&amp;quot;
+	<b>Sample Request:</b>
+	<pre>$ curl -H &quot;Content-type:application/json&quot; -X POST -d \
+'{&quot;name&quot; : &quot;DevCompany&quot;,
+ &quot;displayName&quot; : &quot;Developer Company&quot;,
+ &quot;status&quot; : &quot;active&quot;,
+ &quot;attributes&quot; : [ {
+    &quot;name&quot; : &quot;region&quot;,
+    &quot;value&quot; : &quot;north&quot;
  } ]}'
 https://api.enterprise.apigee.com/v1/o/{org_name}/companies \
 -u myname:mypass</pre>
-<b>Request Payload Elements:</b> 
-<div>
-<table class="table table-bordered">
-	<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-			<th>Default</th>
-			<th>Required?</th>
-		</tr>
-		</thead>
-		<tr>
+	<b>Request Payload Elements:</b> 
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Default</th>
+				<th>Required?</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="request_element" id="request_element_9">
 <td>name</td>
 <td>Name of the company to be created</td>
@@ -130,35 +126,34 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/companies \
 
 
 
-		</table>
-		</div>
+			</table>
 
 
 <b>Sample Response:</b> 
 	<pre>{
-  &quot;name&quot; : &quot;DevCompany&quot;,
-  &quot;displayName&quot; : &quot;Developer Company&quot;,
-  &quot;organization&quot; : &quot;myorg&quot;,
-  &quot;status&quot; : &quot;active&quot;,
-  &quot;attributes&quot; : [ {
-    &quot;name&quot; : &quot;region&quot;,
-    &quot;value&quot; : &quot;north&quot;
+  "name" : "DevCompany",
+  "displayName" : "Developer Company",
+  "organization" : "myorg",
+  "status" : "active",
+  "attributes" : [ {
+    "name" : "region",
+    "value" : "north"
   } ],
-  &quot;createdAt&quot; : 1343049811765,
-  &quot;createdBy&quot; : &quot;Admin&quot;,
-  &quot;lastModifiedAt&quot; : 1343049811765,
-  &quot;lastModifiedBy&quot; : &quot;Admin&quot;
+  "createdAt" : 1343049811765,
+  "createdBy" : "Admin",
+  "lastModifiedAt" : 1343049811765,
+  "lastModifiedBy" : "Admin"
 }</pre>
 
-<b>Response Payload Elements:</b>
-	<div><table class="table table-bordered">
-		<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-		</tr>
-		</thead>
-		<tr>
+	<b>Response Payload Elements:</b>
+		<table class="table table-bordered">
+			<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="response_element" id="response_element_84">
 <td>name </td>
 <td>Name of the company</td>
@@ -213,12 +208,11 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/companies \
 <!-- <td><a href="/response_elements/92" class="btn btn-mini">Detail</a></td> -->
 <!-- <td><a href="/api_methods/117-create-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
-	</table>
-	</div>
+		</table>
 
 
-<b>Errors</b> 
-	<pre>Failure 4xx with proper error message
+	<b>Errors</b> 
+		<pre>Failure 4xx with proper error message
 {
   &quot;code&quot; : &quot;developer.service.InvalidCompanyName&quot;,
   &quot;message&quot; : &quot;Invalid Company Name&quot;,
@@ -226,14 +220,6 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/companies \
 }</pre>
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

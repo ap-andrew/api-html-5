@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,7 +33,7 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
@@ -43,7 +43,7 @@
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-POST">POST</span>
@@ -56,44 +56,40 @@
 	</div>
 </div>
 
-
-
-<div class="span18"><p>
-Optional elements:
+<div class="span18">
+	<p>
+	Optional elements:
 AccessType, CallbackUrl, ApiProducts, Attributes
  
 Note:
 CallbackUrl can be ‘,’ separated multiple callback URLs’.
-</p>
+	</p>
 
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/developers/{developerEmail}/apps</pre>
 
-
-<b>cURL:</b>
-<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/developers/{developerEmail}/apps</pre>
-
-<b>Sample Request:</b>
-<pre>{
-  &quot;accessType&quot; : &quot;read&quot;,
-  &quot;attributes&quot; : [ {
-	&quot;name&quot; : &quot;Language&quot;,
-	&quot;value&quot; : &quot;java&quot;
+	<b>Sample Request:</b>
+	<pre>{
+  "accessType" : "read",
+  "attributes" : [ {
+	"name" : "Language",
+	"value" : "java"
   } ],
-  &quot;apiProducts&quot;: [ &quot;TestApiProduct&quot;],
-  &quot;callbackUrl&quot; : &quot;www.apigee.com&quot;,
-  &quot;name&quot; : &quot;MyTestApp&quot;
+  "apiProducts": [ "TestApiProduct"],
+  "callbackUrl" : "www.apigee.com",
+  "name" : "MyTestApp"
 }</pre>
-<b>Request Payload Elements:</b> 
-<div>
-<table class="table table-bordered">
-	<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-			<th>Default</th>
-			<th>Required?</th>
-		</tr>
-		</thead>
-		<tr>
+	<b>Request Payload Elements:</b> 
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Default</th>
+				<th>Required?</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="request_element" id="request_element_36">
 <td>accessType</td>
 <td>Legacy Apigee-specific element, unused in current version of Apigee</td>
@@ -144,45 +140,44 @@ CallbackUrl can be ‘,’ separated multiple callback URLs’.
 
 
 
-		</table>
-		</div>
+			</table>
 
 
 <b>Sample Response:</b> 
 	<pre>{
-  &quot;accessType&quot; : &quot;read&quot;,
-  &quot;attributes&quot; : [ {
-	&quot;name&quot; : &quot;Language&quot;,
-	&quot;value&quot; : &quot;java&quot;
+  "accessType" : "read",
+  "attributes" : [ {
+	"name" : "Language",
+	"value" : "java"
   } ],
-  &quot;callbackUrl&quot; : &quot;www.apigee.com&quot;,
-  &quot;createdAt&quot; : 1343052353553,
-  &quot;createdBy&quot; : &quot;Admin&quot;,
-  &quot;credentials&quot; : [ {
-	&quot;apiProducts&quot; : [ {
-  	&quot;apiproduct&quot; : &quot;TestApiProduct&quot;,
-  	&quot;status&quot; : &quot;pending&quot;
+  "callbackUrl" : "www.apigee.com",
+  "createdAt" : 1343052353553,
+  "createdBy" : "Admin",
+  "credentials" : [ {
+	"apiProducts" : [ {
+  	"apiproduct" : "TestApiProduct",
+  	"status" : "pending"
 	} ],
-	&quot;attributes&quot; : [ ],
-	&quot;consumerKey&quot; : &quot;VBsAd4wO0wkevxGaqlKlVF8qlGa4ydsT&quot;,
-	&quot;consumerSecret&quot; : &quot;gi8yb1ZFZ7ztRhYa&quot;,
-	&quot;status&quot; : &quot;approved&quot;
+	"attributes" : [ ],
+	"consumerKey" : "VBsAd4wO0wkevxGaqlKlVF8qlGa4ydsT",
+	"consumerSecret" : "gi8yb1ZFZ7ztRhYa",
+	"status" : "approved"
   } ],
-  &quot;lastModifiedAt&quot; : 1343052353553,
-  &quot;lastModifiedBy&quot; : &quot;Admin&quot;,
-  &quot;name&quot; : &quot;MyTestApp&quot;,
-  &quot;status&quot; : &quot;approved&quot;
+  "lastModifiedAt" : 1343052353553,
+  "lastModifiedBy" : "Admin",
+  "name" : "MyTestApp",
+  "status" : "approved"
 }</pre>
 
-<b>Response Payload Elements:</b>
-	<div><table class="table table-bordered">
-		<thead>
-		<tr>
-			<th>Name</th>
-			<th>Description</th>
-		</tr>
-		</thead>
-		<tr>
+	<b>Response Payload Elements:</b>
+		<table class="table table-bordered">
+			<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+			</thead>
+			<tr>
 <div class="response_element" id="response_element_164">
 <td>accessType </td>
 <td>Unenforced by  Apigee</td>
@@ -279,20 +274,11 @@ CallbackUrl can be ‘,’ separated multiple callback URLs’.
 <!-- <td><a href="/response_elements/179" class="btn btn-mini">Detail</a></td> -->
 <!-- <td><a href="/api_methods/14-create-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
-	</table>
-	</div>
+		</table>
 
 
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>

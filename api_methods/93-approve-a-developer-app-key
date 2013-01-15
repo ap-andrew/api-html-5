@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,17 +33,17 @@
 </p>
 
 <div class="row">
-	<div class="span6"><p>
+	<div class="span6" style="width:340px;"><p>
 		<b>API Platform Base Path:</b>
 		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
 		<b>API Resource Path:</b>
-		<p>/developers/{developerEmal}/apps/{appName}/keys/{consumerKey}</p>
+		<p>/developers/{developer_emal}/apps/{app_name}/keys/{consumer_key}</p>
 		<p>
 		Changes the status of a consumer key from 'pending' to 'approved'
 		</p>
 	</div>
 
-	<div class="span6">
+	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
 		<span class="verb-POST">POST</span>
@@ -56,16 +56,13 @@
 	</div>
 </div>
 
+<div class="span18">
+	<p>
+	
+	</p>
 
-
-<div class="span18"><p>
-
-</p>
-
-
-
-<b>cURL:</b>
-<pre>$ curl -H &amp;quot;Content-type:application/x-www-form-urlencoded&amp;quot; -X POST \
+	<b>cURL:</b>
+	<pre>$ curl -H &amp;quot;Content-type:application/x-www-form-urlencoded&amp;quot; -X POST \
 https://api.enterprise.apigee.com/v1/o/{org_name}/developers/{developer_email}/apps/{appName}/keys/{consumer_key}?&amp;quot;action=approve&amp;quot; \
 -u myname:mypass</pre>
 
@@ -78,14 +75,6 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/developers/{developer_email}/a
 
 
 </div>
-
-
-
-
-
-
-
-
 
 
             </div>
