@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apigee API Reference</title>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="qVtOYML1BYOzPlI33HkHfsFEOoId1O81YRWmACTEYQ8=" name="csrf-token" />
+    <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
+
+	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
+       <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+       <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+       <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+       <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+  </head>
+
+
+  <body>
+
+
+
+    <div class="container">
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<!-- <div>
+</div> -->
+            <div id="category">
+Oauth
+</div>
+
+<!-- <div id="breadcrumb">
+<a href="apigee.com/docs/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > OAuth 1.0a Access Tokens</div> -->
+
+
+<div class="page-header">
+  <h1>OAuth 1.0a Access Tokens</h1>
+</div>
+
+<!-- <div class=btn>
+<a href="/api_methods/new">Add an API Method</a>
+</div> -->
+
+<h3>API Platform Base Path: https://api.enterprise.apigee.com/v1/o/{org_name}</h3>
+
+<table class="table">
+		<tr><td><h3>API Resource Path: /oauth1/accesstokens</h3></td></tr>
+		<tr><td>Oauth 1.0a Access Tokens</td></tr>
+  		<tr><td>Apigee Enterprise validates the API key, retrieves the service profile associated with the API key, and checks to see that the quota has not been exceeded. When you apply OAuth to the API, Enterprise checks the request for an access token. Apigee Enterprise uses access tokens to define a user's permissions for modifying and using a specific API. If an access token is present, and the API is within the scope of the access token, you are allowed to access the API.
+
+
+
+Prerequisites to use this API call are:
+
+
+
+The provider has created an organization.
+
+You have a valid user ID as a developer.
+
+You have created an App.
+
+You have a valid consumer key.
+
+An access token has been generated.</td></tr>
+       <!-- <td><div id="well"><pre>  &quot;apiProducts&quot; : [ &quot;apiProduct&quot; ],
+  &quot;app&quot; : &quot;myApp&quot;,
+  &quot;appUserId&quot; : &quot;Developer@apigee.com&quot;,
+  &quot;attributes&quot; : [ {
+    &quot;name&quot; : &quot;region&quot;,
+    &quot;value&quot; : &quot;east&quot;
+  } ],
+  &quot;consumerKey&quot; : &quot;mlfBg7NH9tCua8wUhuamKHeTdfHxMB0A&quot;,
+  &quot;consumerSecret&quot; : &quot;iF1lDg239ngfhLWH&quot;,
+  &quot;createdAt&quot; : 1343037194128,
+  &quot;createdBy&quot; : &quot;1343037194128&quot;,
+  &quot;expiresAt&quot; : 1343038994128,
+  &quot;issuedAt&quot; : 1343037194128,
+  &quot;lastModifiedAt&quot; : 1343037194128,
+  &quot;lastModifiedBy&quot; : &quot;Admin&quot;,
+  &quot;scope&quot; : &quot;local&quot;,
+  &quot;secret&quot; : &quot;HJ3Gl6KTF01pAH24GAAdGfb8dOq1&quot;,
+  &quot;status&quot; : &quot;approved&quot;,
+  &quot;token&quot; : &quot;kNw6eQrL5G7etEBcvqvRTL01E5rY&quot;
+}</pre></div></td></tr> -->
+</table>
+	
+<table class="table table-bordered">
+
+<tbody>
+		<tr><td colspan="2"><span class="lead">Approve Oauth 1.0  Access Token</span></td><td><a href="/api_methods/156-approve-oauth-1-0-access-token" class="btn btn-mini">Detail</a></td> 
+	    <tr><td colspan="3"><span id="well"><pre>/oauth1/accesstokens/{access_token}?action=approve</pre></span></td></tr>
+		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">Approves the specified Access Token</td></tr>
+  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+		<tr><td colspan="2"><span class="lead">Delete Oauth 1.0 Access Token</span></td><td><a href="/api_methods/155-delete-oauth-1-0-access-token" class="btn btn-mini">Detail</a></td> 
+	    <tr><td colspan="3"><span id="well"><pre>/oauth1/accesstokens/{access_token}</pre></span></td></tr>
+		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">Deletes the specified access token</td></tr>
+  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+		<tr><td colspan="2"><span class="lead">Get count of Oauth 1.0 Access Tokens</span></td><td><a href="/api_methods/153-get-count-of-oauth-1-0-access-tokens" class="btn btn-mini">Detail</a></td> 
+	    <tr><td colspan="3"><span id="well"><pre>/oauth1/accesstokens</pre></span></td></tr>
+		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">Returns a count of all 1.0a access tokens in an orgnization</td></tr>
+  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+		<tr><td colspan="2"><span class="lead">Get Oauth 1.0 Access Token</span></td><td><a href="/api_methods/152-get-oauth-1-0-access-token" class="btn btn-mini">Detail</a></td> 
+	    <tr><td colspan="3"><span id="well"><pre>/oauth1/accesstokens/{access_token}</pre></span></td></tr>
+		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">Fetches the details of given access token</td></tr>
+  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+		<tr><td colspan="2"><span class="lead">Revoke Oauth 1.0 Access Token</span></td><td><a href="/api_methods/157-revoke-oauth-1-0-access-token" class="btn btn-mini">Detail</a></td> 
+	    <tr><td colspan="3"><span id="well"><pre>/oauth1/accesstokens/{access_token}?action=revoke</pre></span></td></tr>
+		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">Revokes the issued accesstoken</td></tr>
+		<tr><td><strong>Content Types:</strong></td><td>
+		
+<div class="content_type" id="content_type_3">
+application/x-www-url-form-encoded
+</div>
+		</td></tr>
+  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+		<tr><td colspan="2"><span class="lead">Update Oauth 1.0 Access Token</span></td><td><a href="/api_methods/154-update-oauth-1-0-access-token" class="btn btn-mini">Detail</a></td> 
+	    <tr><td colspan="3"><span id="well"><pre>/oauth1/accesstokens/{access_token}</pre></span></td></tr>
+		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">Updates the attributes of given accesstoken</td></tr>
+  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+</tbody>
+</table>
+
+<!-- Schema:
+
+<div id="well"><pre></pre></div> -->
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->
+
+       <!-- <footer>
+        <p>&copy; Apigee, Inc. 2012</p>
+      </footer>  -->
+
+    </div> <!-- /container -->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+     <script src="/assets/application-3acbc888ea1a902e92db3f484dfc60e4.js" type="text/javascript"></script> 
+
+  </body>
+</html>

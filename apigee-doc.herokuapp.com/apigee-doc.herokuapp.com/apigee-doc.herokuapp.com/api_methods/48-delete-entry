@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apigee API Reference</title>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="qVtOYML1BYOzPlI33HkHfsFEOoId1O81YRWmACTEYQ8=" name="csrf-token" />
+    <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
+
+	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
+       <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+       <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+       <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+       <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+  </head>
+
+
+  <body>
+
+
+
+    <div class="container">
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<!-- <div>
+</div> -->
+            <div id="breadcrumb">
+<a href="apigee.com/docs/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/7-maps">Maps</a> > Delete Entry</div>
+
+<h1>Delete Entry</h1> 
+</p>
+
+<div class="row">
+	<div class="span6" style="width:340px;"><p>
+		<b>API Platform Base Path:</b>
+		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
+		<b>API Resource Path:</b>
+		<p>/maps/{map_name}/entries/{entry_name}</p>
+		<p>
+		Deletes a single entry by name
+		</p>
+	</div>
+
+	<div class="span6" style="width:340px;">
+		<p>
+		<b>Verb:</b>
+		<span class="verb-DELETE">DELETE</span>
+		</p>
+		<b>Auth:</b>
+		Basic Auth
+		</p>
+
+
+	</div>
+</div>
+
+<div class="span18">
+	<p>
+	Deletes a single entry from a map
+	</p>
+
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/maps/{mapName}/entries/{entryName}</pre>
+
+
+
+<b>Sample Response:</b> 
+	<pre>{
+  "name" : "qa",
+  "value" : "user2"
+}</pre>
+
+	<b>Response Payload Elements:</b>
+		<table class="table table-bordered">
+			<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+			</thead>
+			<tr>
+<div class="response_element" id="response_element_398">
+<td>name </td>
+<td>The name of the deleted netry</td>
+<!-- <td><a href="/response_elements/398" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/48-delete-entry?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_399">
+<td>value </td>
+<td>The value of the deleted entry</td>
+<!-- <td><a href="/response_elements/399" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/48-delete-entry?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr>
+		</table>
+
+
+	<b>Errors</b> 
+		<pre>Failure 4xx with proper error message
+{
+  &quot;code&quot; : &quot;keymanagement.service.organization_map_doesnt_exist&quot;,
+  &quot;message&quot; : &quot;Organization map does not exist&quot;,
+  &quot;contexts&quot; : [ ]
+}
+
+Failure Codes:
+1. Organization Name Invalid
+2. Map Name Invalid</pre>
+
+</div>
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->
+
+       <!-- <footer>
+        <p>&copy; Apigee, Inc. 2012</p>
+      </footer>  -->
+
+    </div> <!-- /container -->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+     <script src="/assets/application-3acbc888ea1a902e92db3f484dfc60e4.js" type="text/javascript"></script> 
+
+  </body>
+</html>

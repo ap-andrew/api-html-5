@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apigee API Reference</title>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="qVtOYML1BYOzPlI33HkHfsFEOoId1O81YRWmACTEYQ8=" name="csrf-token" />
+    <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
+
+	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
+       <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+       <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+       <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+       <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+  </head>
+
+
+  <body>
+
+
+
+    <div class="container">
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<!-- <div>
+</div> -->
+            <div id="breadcrumb">
+<a href="apigee.com/docs/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/36-deployments">Deployments</a> > Get Deployments for an Organization</div>
+
+<h1>Get Deployments for an Organization</h1> 
+</p>
+
+<div class="row">
+	<div class="span6" style="width:340px;"><p>
+		<b>API Platform Base Path:</b>
+		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
+		<b>API Resource Path:</b>
+		<p>/deployments</p>
+		<p>
+		Returns all deployments for all APIs in an Organization
+		</p>
+	</div>
+
+	<div class="span6" style="width:340px;">
+		<p>
+		<b>Verb:</b>
+		<span class="verb-GET">GET</span>
+		</p>
+		<b>Auth:</b>
+		Basic Auth
+		</p>
+
+
+	</div>
+</div>
+
+<div class="span18">
+	<p>
+	Gets all API deployments across an organization, for all APIs in all environments. 
+	</p>
+
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/o/{myorg}/deployments</pre>
+
+
+
+<b>Sample Response:</b> 
+	<pre>{
+  "environment" : [ {
+    "aPIProxy" : [ {
+      "name" : "api1",
+      "revision" : [ {
+        "configuration" : {
+          "basePath" : "/",
+          "steps" : [ ]
+        },
+        "name" : "1",
+        "server" : [ {
+          "status" : "deployed",
+          "type" : [ "message-processor" ],
+          "uUID" : "90096dd1-1019-406b-9f42-fbb80cd01200"
+        }, {
+          "status" : "deployed",
+          "type" : [ "message-processor" ],
+          "uUID" : "7d6e2eb1-581a-4db0-8045-20d9c3306549"
+        }, {
+          "status" : "deployed",
+          "type" : [ "router" ],
+          "uUID" : "1619e2d7-c822-45e0-9f97-63882fb6a805"
+        }, {
+          "status" : "deployed",
+          "type" : [ "router" ],
+          "uUID" : "8a5f3d5f-46f8-4e99-b4cc-955875c8a8c8"
+        } ],
+        "state" : "deployed"
+      } ]
+    }, {
+      "name" : "api2",
+      "revision" : [ {
+        "configuration" : {
+          "basePath" : "",
+          "steps" : [ ]
+        },
+        "name" : "1",
+        "server" : [ {
+          "status" : "deployed",
+          "type" : [ "message-processor" ],
+          "uUID" : "90096dd1-1019-406b-9f42-fbb80cd01200"
+        }, {
+          "status" : "deployed",
+          "type" : [ "message-processor" ],
+          "uUID" : "7d6e2eb1-581a-4db0-8045-20d9c3306549"
+        }, {
+          "status" : "deployed",
+          "type" : [ "router" ],
+          "uUID" : "1619e2d7-c822-45e0-9f97-63882fb6a805"
+        }, {
+          "status" : "deployed",
+          "type" : [ "router" ],
+          "uUID" : "8a5f3d5f-46f8-4e99-b4cc-955875c8a8c8"
+        } ],
+        "state" : "deployed"
+      } ]
+    }
+    "name" : "test"
+  }, {
+    "aPIProxy" : [ {
+      "name" : "api3",
+      "revision" : [ {
+        "configuration" : {
+          "basePath" : "/",
+          "steps" : [ ]
+        },
+        "name" : "41",
+        "server" : [ {
+          "status" : "deployed",
+          "type" : [ "message-processor" ],
+          "uUID" : "90096dd1-1019-406b-9f42-fbb80cd01200"
+        }, {
+          "status" : "deployed",
+          "type" : [ "message-processor" ],
+          "uUID" : "7d6e2eb1-581a-4db0-8045-20d9c3306549"
+        }, {
+          "status" : "deployed",
+          "type" : [ "router" ],
+          "uUID" : "1619e2d7-c822-45e0-9f97-63882fb6a805"
+        }, {
+          "status" : "deployed",
+          "type" : [ "router" ],
+          "uUID" : "8a5f3d5f-46f8-4e99-b4cc-955875c8a8c8"
+        } ],
+        "state" : "deployed"
+      } ]
+    }, {
+      "name" : "api4",
+      "revision" : [ {
+        "configuration" : {
+          "basePath" : "/",
+          "steps" : [ ]
+        },
+        "name" : "1",
+        "server" : [ {
+          "status" : "deployed",
+          "type" : [ "message-processor" ],
+          "uUID" : "90096dd1-1019-406b-9f42-fbb80cd01200"
+        }, {
+          "status" : "deployed",
+          "type" : [ "message-processor" ],
+          "uUID" : "7d6e2eb1-581a-4db0-8045-20d9c3306549"
+        }, {
+          "status" : "deployed",
+          "type" : [ "router" ],
+          "uUID" : "1619e2d7-c822-45e0-9f97-63882fb6a805"
+        }, {
+          "status" : "deployed",
+          "type" : [ "router" ],
+          "uUID" : "8a5f3d5f-46f8-4e99-b4cc-955875c8a8c8"
+        } ],
+        "state" : "deployed"
+      } ]
+    } ],
+    "name" : "prod"
+  } ],
+  "name" : "myorg"
+}</pre>
+
+	<b>Response Payload Elements:</b>
+		<table class="table table-bordered">
+			<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+			</thead>
+			<tr>
+<div class="response_element" id="response_element_131">
+<td>aPIProxy </td>
+<td>Names of the API proxies deployed in the environment</td>
+<!-- <td><a href="/response_elements/131" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/112-get-deployments-for-an-organization?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_132">
+<td>name </td>
+<td>Name of the API</td>
+<!-- <td><a href="/response_elements/132" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/112-get-deployments-for-an-organization?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_133">
+<td>revision </td>
+<td>Revision number of the deployed API</td>
+<!-- <td><a href="/response_elements/133" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/112-get-deployments-for-an-organization?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_134">
+<td>configuration </td>
+<td>Configuration number of the API proxy</td>
+<!-- <td><a href="/response_elements/134" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/112-get-deployments-for-an-organization?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_135">
+<td>basePath </td>
+<td>Base path of the API, used as a pattern match on incoming requests</td>
+<!-- <td><a href="/response_elements/135" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/112-get-deployments-for-an-organization?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_136">
+<td>steps </td>
+<td>A list of policies on the API</td>
+<!-- <td><a href="/response_elements/136" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/112-get-deployments-for-an-organization?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr>
+		</table>
+
+
+	<b>Errors</b> 
+		<pre>Failure 4xx with proper error message
+{
+  &quot;code&quot; : &quot;organizations.OrganizationDoesNotExist&quot;,
+  &quot;message&quot; : &quot;Organization : AutomationOrganization1 does not exist&quot;,
+  &quot;contexts&quot; : [ ]
+}</pre>
+
+</div>
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->
+
+       <!-- <footer>
+        <p>&copy; Apigee, Inc. 2012</p>
+      </footer>  -->
+
+    </div> <!-- /container -->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+     <script src="/assets/application-3acbc888ea1a902e92db3f484dfc60e4.js" type="text/javascript"></script> 
+
+  </body>
+</html>

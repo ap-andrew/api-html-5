@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apigee API Reference</title>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="qVtOYML1BYOzPlI33HkHfsFEOoId1O81YRWmACTEYQ8=" name="csrf-token" />
+    <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
+
+	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
+       <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+       <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+       <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+       <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+  </head>
+
+
+  <body>
+
+
+
+    <div class="container">
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<!-- <div>
+</div> -->
+            <div id="breadcrumb">
+<a href="apigee.com/docs/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/34-analytics">Analytics</a> > Get an analytics report for a dimension</div>
+
+<h1>Get an analytics report for a dimension</h1> 
+</p>
+
+<div class="row">
+	<div class="span6" style="width:340px;"><p>
+		<b>API Platform Base Path:</b>
+		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
+		<b>API Resource Path:</b>
+		<p>/environments/{environment_name}/stats/{dimension_name}</p>
+		<p>
+		Use the GET method to retrieve metrics for all the APIs for an organization and environment.
+		</p>
+	</div>
+
+	<div class="span6" style="width:340px;">
+		<p>
+		<b>Verb:</b>
+		<span class="verb-GET">GET</span>
+		</p>
+		<b>Auth:</b>
+		Basic Auth
+		</p>
+
+
+		<p>
+		<b><a href="http://apigee.com/docs/api/content/reporting-api-analytics">Developer Guide Topic</a></b>
+		</p>
+	</div>
+</div>
+
+<div class="span18">
+	<p>
+	<p><code>dimension_name</code> is the entity for which the API Platform collects metrics. Apigee defines a set of dimensions that can be used in your reports.  Supported dimensions include:</p>
+
+<p>api: The name of an API managed by the API Platform</p>
+
+<p>apiproduct: The name of an API managed by the API Platform</p>
+
+<p>client_ip: The IP address of the app making the request to your API</p>
+
+<p>developer_email: The developer of the app making the request to your API</p>
+
+<p>developer_app: The name of the app making the request to your API</p>
+
+<p>access_token: The app end user's OAuth access token</p>
+
+	</p>
+
+	<b>cURL:</b>
+	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/myorg/environments/test/stats/apis?select=message_count&amp;timeRange=7/24/2012%2000:00~8/25/2012%2000:00&amp;timeUnit=hour&amp;sortby=message_count&amp;sort=DESC</pre>
+
+
+
+	Query Parameters:
+
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Default</th>
+				<th>Required?</th>
+			</tr>
+			</thead>
+			<div class="query_parameter" id="query_parameter_13">
+<tr>
+<td>select</td>
+<td>message_count, error_count, total_response_time, max_response_time, min_response_time, data_exchange_size, end_point_response_time</td>
+<td>N/A</td>
+<td>Yes</td>
+<!-- <td><a href="/query_parameters/13" class="btn btn-mini">Detail</a></td></tr> -->
+<!-- <tr><td colspan="6">Description: message_count, error_count, total_response_time, max_response_time, min_response_time, data_exchange_size, end_point_response_time</td></tr> -->
+<!-- <td><a href="/api_methods/71-get-an-analytics-report-for-a-dimension?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</tr>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="query_parameter" id="query_parameter_14">
+<tr>
+<td>timeRange</td>
+<td>The start and end time for the desired interval. The date format is MM/DD/YYYY HH:MM. For example, 1/1/2013%2000:00~1/2/2013%2000:00</td>
+<td>N/A</td>
+<td>Yes</td>
+<!-- <td><a href="/query_parameters/14" class="btn btn-mini">Detail</a></td></tr> -->
+<!-- <tr><td colspan="6">Description: The start and end time for the desired interval. The date format is MM/DD/YYYY HH:MM. For example, 1/1/2013%2000:00~1/2/2013%2000:00</td></tr> -->
+<!-- <td><a href="/api_methods/71-get-an-analytics-report-for-a-dimension?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</tr>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="query_parameter" id="query_parameter_15">
+<tr>
+<td>timeUnit</td>
+<td>second, minute, hour, day, week, month, quarter, year, decade, century, millennium</td>
+<td>N/A</td>
+<td>Yes</td>
+<!-- <td><a href="/query_parameters/15" class="btn btn-mini">Detail</a></td></tr> -->
+<!-- <tr><td colspan="6">Description: second, minute, hour, day, week, month, quarter, year, decade, century, millennium</td></tr> -->
+<!-- <td><a href="/api_methods/71-get-an-analytics-report-for-a-dimension?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</tr>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="query_parameter" id="query_parameter_16">
+<tr>
+<td>sortby</td>
+<td>When two or more select values are specified, 'sortby' can be used to specify the select used for sorting results: message_count, error_count, total_response_time, max_response_time, min_response_time, data_exchange_size, end_point_response_time</td>
+<td>N/A</td>
+<td>No</td>
+<!-- <td><a href="/query_parameters/16" class="btn btn-mini">Detail</a></td></tr> -->
+<!-- <tr><td colspan="6">Description: When two or more select values are specified, 'sortby' can be used to specify the select used for sorting results: message_count, error_count, total_response_time, max_response_time, min_response_time, data_exchange_size, end_point_response_time</td></tr> -->
+<!-- <td><a href="/api_methods/71-get-an-analytics-report-for-a-dimension?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</tr>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="query_parameter" id="query_parameter_17">
+<tr>
+<td>sort</td>
+<td>Supported sort scopes are DESC or ASC</td>
+<td>N/A</td>
+<td>No</td>
+<!-- <td><a href="/query_parameters/17" class="btn btn-mini">Detail</a></td></tr> -->
+<!-- <tr><td colspan="6">Description: Supported sort scopes are DESC or ASC</td></tr> -->
+<!-- <td><a href="/api_methods/71-get-an-analytics-report-for-a-dimension?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</tr>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="query_parameter" id="query_parameter_29">
+<tr>
+<td>topk</td>
+<td>Take &quot;top k&quot; results from results, for example, to return the top 5 results &quot;topk=5&quot;.</td>
+<td>N/A</td>
+<td>Yes</td>
+<!-- <td><a href="/query_parameters/29" class="btn btn-mini">Detail</a></td></tr> -->
+<!-- <tr><td colspan="6">Description: Take &quot;top k&quot; results from results, for example, to return the top 5 results &quot;topk=5&quot;.</td></tr> -->
+<!-- <td><a href="/api_methods/71-get-an-analytics-report-for-a-dimension?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</tr>
+</div>
+
+
+
+
+
+
+
+
+
+
+			</table>
+
+<b>Sample Response:</b> 
+	<pre>{
+  "environments" : [ {
+	"dimensions" : [ {
+  	  "metrics" : [ 
+                 {
+    	        "name" : "message_count",
+    	        "values" : [ {
+      	           "timestamp" : 1335241800000,
+      	           "value" : "1.0"
+    	         } ]
+  	      } ,
+                 {
+    	         "name" : "error_count",
+    	         "values" : [ {
+      	            "timestamp" : 1335241800000,
+      	            "value" : "0.0"
+    	           } ]
+  	    } 
+              ],
+  	
+               "name" : "api1"
+	}, 
+            {
+  	  "metrics" : [ 
+               {
+    	      "name" : "message_count",
+    	      "values" : [ {
+      	             "timestamp" : 1335241800000,
+      	             "value" : "1.0"
+    	          } ]
+  	     },
+                {
+    	        "name" : "error_count",
+    	        "values" : [ {
+      	              "timestamp" : 1335241800000,
+      	              "value" : "0.0"
+    	        } ]
+  	    } 
+             ],
+  	
+             "name" : "api2"
+	} 
+          ],
+        
+         "name" : "test"
+      } 
+    ],
+   "metaData" : {
+    }
+}</pre>
+
+	<b>Response Payload Elements:</b>
+		<table class="table table-bordered">
+			<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+			</thead>
+			<tr>
+<div class="response_element" id="response_element_1">
+<td>metadata </td>
+<td>Metadata associated with the report</td>
+<!-- <td><a href="/response_elements/1" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/71-get-an-analytics-report-for-a-dimension?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_2">
+<td>environments </td>
+<td>Environments in the organization where the statistics are collected (supports wildcard * for cross environment statistics collection)</td>
+<!-- <td><a href="/response_elements/2" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/71-get-an-analytics-report-for-a-dimension?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_3">
+<td>metrics </td>
+<td>The values returned for the specified dimension</td>
+<!-- <td><a href="/response_elements/3" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/71-get-an-analytics-report-for-a-dimension?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_7">
+<td>dimensions </td>
+<td>The dimension defined for measurement: in this example api_name.</td>
+<!-- <td><a href="/response_elements/7" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/71-get-an-analytics-report-for-a-dimension?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_10">
+<td>metrics </td>
+<td>Metrics for the report</td>
+<!-- <td><a href="/response_elements/10" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/71-get-an-analytics-report-for-a-dimension?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr>
+		</table>
+
+
+
+</div>
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->
+
+       <!-- <footer>
+        <p>&copy; Apigee, Inc. 2012</p>
+      </footer>  -->
+
+    </div> <!-- /container -->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+     <script src="/assets/application-3acbc888ea1a902e92db3f484dfc60e4.js" type="text/javascript"></script> 
+
+  </body>
+</html>
