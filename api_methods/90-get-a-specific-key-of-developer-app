@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apigee API Reference</title>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+    <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
+
+	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
+       <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+       <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+       <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+       <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+  </head>
+
+
+  <body>
+
+
+
+    <div class="container">
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<!-- <div>
+</div> -->
+            <div id="breadcrumb">
+<a href="apigee.com/docs/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/18-developer-app-keys">Developer App Keys</a> > Get a specific Key of Developer App</div>
+
+<h1>Get a specific Key of Developer App</h1> 
+</p>
+
+<div class="row">
+	<div class="span6"><p>
+		<b>API Platform Base Path:</b>
+		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
+		<b>API Resource Path:</b>
+		<p>/developers/{developerEmail}/apps/{appName}/keys/{consumerKey}</p>
+		<p>
+		Returns details for a consumer key for a developer app
+		</p>
+	</div>
+
+	<div class="span6">
+		<p>
+		<b>Verb:</b>
+		<span class="verb-GET">GET</span>
+		</p>
+		<b>Auth:</b>
+		Basic Auth
+		</p>
+
+
+	</div>
+</div>
+
+
+
+<div class="span18"><p>
+Returns details for a consumer key, including the key and secret value, associated API products, and other metadata-
+</p>
+
+
+
+<b>cURL:</b>
+<pre>curl -u myname:mypass &amp;quot;https://api.enterprise.apigee.com/v1/o/{myorg}/developers/{developerEmail}/apps/{appName}/keys/{consumerKey}&amp;quot;</pre>
+
+
+
+<b>Sample Response:</b> 
+	<pre>{
+  &quot;apiProducts&quot; : [ {
+    &quot;apiproduct&quot; : &quot;FreeWeatherAPI&quot;,
+    &quot;status&quot; : &quot;approved&quot;
+  }, {
+    &quot;apiproduct&quot; : &quot;PremiumWeatherAPI&quot;,
+    &quot;status&quot; : &quot;approved&quot;
+  } ],
+  &quot;attributes&quot; : [ {
+    &quot;name&quot; : &quot;region&quot;,
+    &quot;value&quot; : &quot;south&quot;
+  }, {
+    &quot;name&quot; : &quot;country&quot;,
+    &quot;value&quot; : &quot;norway&quot;
+  } ],
+  &quot;consumerKey&quot; : &quot;GGAjbeS9tZRwRgojDdbiHYln4EEU8K8i&quot;,
+  &quot;consumerSecret&quot; : &quot;pgppv4OsarzfwY2x&quot;,
+  &quot;status&quot; : &quot;approved&quot;
+}</pre>
+
+<b>Response Payload Elements:</b>
+	<div><table class="table table-bordered">
+		<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+		</tr>
+		</thead>
+		<tr>
+<div class="response_element" id="response_element_321">
+<td>apiProducts </td>
+<td>Name of an API product associated with the key</td>
+<!-- <td><a href="/response_elements/321" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/90-get-a-specific-key-of-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_322">
+<td>status </td>
+<td>Status of the association with the API product</td>
+<!-- <td><a href="/response_elements/322" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/90-get-a-specific-key-of-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_323">
+<td>attributes </td>
+<td>Arbitrary name/value pairs associated with the key</td>
+<!-- <td><a href="/response_elements/323" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/90-get-a-specific-key-of-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_324">
+<td>consumerKey </td>
+<td>The value of the consumer key</td>
+<!-- <td><a href="/response_elements/324" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/90-get-a-specific-key-of-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_325">
+<td>consumerSecret </td>
+<td>The value of the secret associated with the consumer key</td>
+<!-- <td><a href="/response_elements/325" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/90-get-a-specific-key-of-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_326">
+<td>status </td>
+<td>Staus of the consumer key: 'approved' or 'pending'</td>
+<!-- <td><a href="/response_elements/326" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/90-get-a-specific-key-of-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr>
+	</table>
+	</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->
+
+       <!-- <footer>
+        <p>&copy; Apigee, Inc. 2012</p>
+      </footer>  -->
+
+    </div> <!-- /container -->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+     <script src="/assets/application-3acbc888ea1a902e92db3f484dfc60e4.js" type="text/javascript"></script> 
+
+  </body>
+</html>

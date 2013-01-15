@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apigee API Reference</title>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+    <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
+
+	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
+       <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+       <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+       <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+       <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+  </head>
+
+
+  <body>
+
+
+
+    <div class="container">
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<!-- <div>
+</div> -->
+            <div id="category">
+Developer and App Administration
+</div>
+
+<div id="breadcrumb">
+<a href="apigee.com/docs/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > App Families</div>
+
+
+<div class="page-header">
+  <h1>App Families</h1>
+</div>
+
+<!-- <div class=btn>
+<a href="/api_methods/new">Add an API Method</a>
+</div> -->
+
+<div class="lead">API Platform Base Path: https://api.enterprise.apigee.com/v1/o/{org_name}</div>
+
+<table class="table">
+		<tr><td class="lead">API Resource Path: /developers/{developerEmail}/appfamilies</td></tr>
+		<tr><td>A collection of apps associated with a developer</td></tr>
+  		<tr><td>App families enable you to create functional groups of apps. A single app may be instantiated in several forms. For example, an app may have sandbox instance and a production instance. App families enable these app instances to be associated. You can do this by linking the instances of the app together in a an app family collection. Specify an app family name, associate that name with a developer or a company of your organization, and select one or more app IDs to add to the contents of the app family. You can create app families for developer apps or for company apps within your organization.</td></tr>
+       <!-- <td><div id="well"><pre>{
+  &quot;apps&quot; : [ &quot;weatherapp_sandbox&quot;, &quot;weatherapp_prod&quot; ],
+  &quot;name&quot; : &quot;WeatherApps&quot;
+}</pre></div></td></tr> -->
+</table>
+	
+<table class="table table-bordered">
+
+<tbody>
+		<tr><td colspan="2"><span class="lead">Create an app aamily</span></td><td><a href="/api_methods/125-create-an-app-aamily" class="btn btn-mini">Detail</a></td> 
+	    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/appfamilies</pre></span></td></tr>
+		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">Create an App Family for Developers</td></tr>
+  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+		<tr><td colspan="2"><span class="lead">Delete an app family</span></td><td><a href="/api_methods/129-delete-an-app-family" class="btn btn-mini">Detail</a></td> 
+	    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/appfamilies/{app_family}</pre></span></td></tr>
+		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">Deletes an App Family and all Apps it contains</td></tr>
+  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+		<tr><td colspan="2"><span class="lead">Get an app family</span></td><td><a href="/api_methods/126-get-an-app-family" class="btn btn-mini">Detail</a></td> 
+	    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/appfamilies/{app_family}</pre></span></td></tr>
+		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">Gets a developer's apps in an app family</td></tr>
+  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+		<tr><td colspan="2"><span class="lead">List all app families in an organization</span></td><td><a href="/api_methods/130-list-all-app-families-in-an-organization" class="btn btn-mini">Detail</a></td> 
+	    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_ email}/app_families</pre></span></td></tr>
+		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">List all App Families in an Organization</td></tr>
+  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+		<tr><td colspan="2"><span class="lead">List app families (detailed view)</span></td><td><a href="/api_methods/131-list-app-families-detailed-view" class="btn btn-mini">Detail</a></td> 
+	    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/app_families?expand=true</pre></span></td></tr>
+		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">An expanded list of all App Families in an Organization, listing Apps in the collection </td></tr>
+  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+		<tr><td colspan="2"><span class="lead">Remove an app from an app family</span></td><td><a href="/api_methods/128-remove-an-app-from-an-app-family" class="btn btn-mini">Detail</a></td> 
+	    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/appfamilies/{app_family}/app/{app_name}</pre></span></td></tr>
+		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">Removes an App from an App Family</td></tr>
+  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+		<tr><td colspan="2"><span class="lead">Update an app family</span></td><td><a href="/api_methods/127-update-an-app-family" class="btn btn-mini">Detail</a></td> 
+	    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/appfamilies/{appfamily_name}</pre></span></td></tr>
+		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">Updates an existing App Family</td></tr>
+  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+</tbody>
+</table>
+
+<!-- Schema:
+
+<div id="well"><pre></pre></div> -->
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->
+
+       <!-- <footer>
+        <p>&copy; Apigee, Inc. 2012</p>
+      </footer>  -->
+
+    </div> <!-- /container -->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+     <script src="/assets/application-3acbc888ea1a902e92db3f484dfc60e4.js" type="text/javascript"></script> 
+
+  </body>
+</html>

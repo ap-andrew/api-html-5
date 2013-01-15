@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apigee API Reference</title>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="5jB7BYAZF/9ZKgHyiK2Yzvyzj71Ndm35j7czc/biatQ=" name="csrf-token" />
+    <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
+
+	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
+       <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+       <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+       <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+       <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+  </head>
+
+
+  <body>
+
+
+
+    <div class="container">
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<!-- <div>
+</div> -->
+            <div id="breadcrumb">
+<a href="apigee.com/docs/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/3-api-products">API Products</a> > Get an API product</div>
+
+<h1>Get an API product</h1> 
+</p>
+
+<div class="row">
+	<div class="span6"><p>
+		<b>API Platform Base Path:</b>
+		<h3><p>https://api.enterprise.apigee.com/v1/o/{org_name}</p></h3>
+		<b>API Resource Path:</b>
+		<p>/apiproducts/{apiproduct_name}</p>
+		<p>
+		Gets an API Product
+		</p>
+	</div>
+
+	<div class="span6">
+		<p>
+		<b>Verb:</b>
+		<span class="verb-GET">GET</span>
+		</p>
+		<b>Auth:</b>
+		Basic Auth
+		</p>
+
+
+		<p>
+		<b><a href="http://apigee.com/docs/api/content/provision-developers-and-apps">Developer Guide Topic</a></b>
+		</p>
+	</div>
+</div>
+
+
+
+<div class="span18"><p>
+Gets the profile for an API Product by name. 
+</p>
+
+
+
+<b>cURL:</b>
+<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/apiproducts/{apiProductName}</pre>
+
+
+
+<b>Sample Response:</b> 
+	<pre>{
+  &quot;apiResources&quot; : [ &quot;/v2/**&quot;, &quot;/v1/receiveSMS&quot;, &quot;/v3/*/send&quot; ],
+  &quot;approvalType&quot; : &quot;auto&quot;,
+  &quot;attributes&quot; : [ {
+    &quot;name&quot; : &quot;RateLimit&quot;,
+    &quot;value&quot; : &quot;100&quot;
+  }, {
+    &quot;name&quot; : &quot;Threshold&quot;,
+    &quot;value&quot; : &quot;50&quot;
+  } ],
+  &quot;createdAt&quot; : 1343052029205,
+  &quot;createdBy&quot; : &quot;Admin&quot;,
+  &quot;description&quot; : &quot;&quot;,
+  &quot;displayName&quot; : &quot;Sandbox Silver&quot;,
+  &quot;lastModifiedAt&quot; : 1343052029205,
+  &quot;lastModifiedBy&quot; : &quot;Admin&quot;,
+  &quot;name&quot; : &quot;sandbox&quot;,
+  &quot;scopes&quot; : [ ]
+}</pre>
+
+<b>Response Payload Elements:</b>
+	<div><table class="table table-bordered">
+		<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+		</tr>
+		</thead>
+		<tr>
+<div class="response_element" id="response_element_219">
+<td>apiResources </td>
+<td>A list of URIs (including wildcards) that represent the bundle of APIs permitted to consumers of this API Product	</td>
+<!-- <td><a href="/response_elements/219" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_220">
+<td>approvalType </td>
+<td>Determines the state of the consumer key generated for requesters of this API Product. For Auto, key are generated in &quot;Approved' state. For Manual, keys are approved in 'Pending' state.</td>
+<!-- <td><a href="/response_elements/220" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_221">
+<td>attributes </td>
+<td>Any app-specific arbitrary attributes that may be used to define visibility of the API Product or runtime policy enforcement (such as setting for a rate-limiting policy.	</td>
+<!-- <td><a href="/response_elements/221" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_222">
+<td>createdAt </td>
+<td>Unix time when the API Product was created</td>
+<!-- <td><a href="/response_elements/222" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_223">
+<td>createdBy </td>
+<td>Apigee user account name of the individual who submitted the POST request that created this entity	</td>
+<!-- <td><a href="/response_elements/223" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_224">
+<td>description </td>
+<td>Human-readable description of the API Product</td>
+<!-- <td><a href="/response_elements/224" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_225">
+<td>displayName </td>
+<td>Friendly name to display to Developers, for example, in a Developer Onboarding app</td>
+<!-- <td><a href="/response_elements/225" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_226">
+<td>lastModifiedAt </td>
+<td>Unix time when the API Product was most recently updated</td>
+<!-- <td><a href="/response_elements/226" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_227">
+<td>lastModifiedBy </td>
+<td>Apigee user account name of the individual who last modified the API Product</td>
+<!-- <td><a href="/response_elements/227" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_228">
+<td>name </td>
+<td>The name of the API Product</td>
+<!-- <td><a href="/response_elements/228" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_229">
+<td>scopes </td>
+<td>Oauth scopes required in the Access Token(s) used to consume any of the API resources (URIs) bundled in this API Product</td>
+<!-- <td><a href="/response_elements/229" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr>
+	</table>
+	</div>
+
+
+<b>Errors</b> 
+	<pre>
+Failure 4xx with proper error message
+{
+   &quot;Error&quot;:{
+      &quot;Code&quot;:&quot;keymanagement.service.apiproduct_invalid_name&quot;,
+      &quot;Message&quot;:&quot;ApiProduct Name is invalid&quot;,
+      &quot;Contexts&quot;:&quot;&quot;
+   }
+}</pre>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->
+
+       <!-- <footer>
+        <p>&copy; Apigee, Inc. 2012</p>
+      </footer>  -->
+
+    </div> <!-- /container -->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+     <script src="/assets/application-3acbc888ea1a902e92db3f484dfc60e4.js" type="text/javascript"></script> 
+
+  </body>
+</html>
