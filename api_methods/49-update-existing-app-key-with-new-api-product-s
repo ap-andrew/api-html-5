@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
+<meta content="USk0bucQFH+6r1vGKL05L09KOe7dI9coGU75eBf4HrI=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -39,7 +39,7 @@
 		<b>API Resource Path:</b>
 		<p>/companies/{company_name}/apps/{app_ame}/keys/{consumer key}</p>
 		<p>
-		Update existing App Key with New ApiProduct(s).
+		Update existing company app key with additional API product(s).
 		</p>
 	</div>
 
@@ -66,13 +66,16 @@ New ApiProduct(s) will merge existing ApiProduct(s).
 	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/organization/sears/companies/devcompany/apps/myapp/keys/1234567890</pre>
 
 	<b>Sample Request:</b>
-	<pre>{
-  "apiProducts" : ["TestApiProduct1","TestApiProduct2"],
-  "attributes" : [ {
-    "name" : "region",
-    "value" : "west"
+	<pre>$ curl -H &quot;Content-type:application/json&quot; -X POST -d \
+'{
+  &quot;apiProducts&quot; : [&quot;TestApiProduct1&quot;,&quot;TestApiProduct2&quot;],
+  &quot;attributes&quot; : [ {
+    &quot;name&quot; : &quot;region&quot;,
+    &quot;value&quot; : &quot;west&quot;
   } ]
-}</pre>
+}' \
+https://api.enterprise.apigee.com/v1/o/{org_name}/companies/{company_name}/apps/{app_name}/keys/{consumer_key} \
+-u myname:mypass</pre>
 	<b>Request Payload Elements:</b> 
 	<table class="table table-bordered">
 		<thead>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
+<meta content="USk0bucQFH+6r1vGKL05L09KOe7dI9coGU75eBf4HrI=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -71,8 +71,10 @@ text/xml
 	</p>
 
 	<b>cURL:</b>
-	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/users/{userEmail}/audits</pre>
+	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/users/{user_email}/audits</pre>
 
+	<b>Sample Request:</b>
+	<pre>$ curl -u myname:mypass https://api.enterprise.apigee.com/v1/users/{user_email}/audits</pre>
 
 
 	Query Parameters:
@@ -92,9 +94,6 @@ text/xml
 <td></td>
 <td>Last 24 hours</td>
 <td>Yes</td>
-<!-- <td><a href="/query_parameters/24" class="btn btn-mini">Detail</a></td></tr> -->
-<!-- <tr><td colspan="6">Description: </td></tr> -->
-<!-- <td><a href="/api_methods/201-lists-audit-entries-for-a-user-in-an-organization?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </tr>
 </div>
 
@@ -112,9 +111,6 @@ text/xml
 <td></td>
 <td>N/A</td>
 <td>Yes</td>
-<!-- <td><a href="/query_parameters/25" class="btn btn-mini">Detail</a></td></tr> -->
-<!-- <tr><td colspan="6">Description: </td></tr> -->
-<!-- <td><a href="/api_methods/201-lists-audit-entries-for-a-user-in-an-organization?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </tr>
 </div>
 
@@ -132,9 +128,6 @@ text/xml
 <td>Supported values are create, update, read, delete, deploy, undeploy</td>
 <td>N/A</td>
 <td>Yes</td>
-<!-- <td><a href="/query_parameters/26" class="btn btn-mini">Detail</a></td></tr> -->
-<!-- <tr><td colspan="6">Description: Supported values are create, update, read, delete, deploy, undeploy</td></tr> -->
-<!-- <td><a href="/api_methods/201-lists-audit-entries-for-a-user-in-an-organization?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </tr>
 </div>
 

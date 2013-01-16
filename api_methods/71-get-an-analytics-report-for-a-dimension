@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
+<meta content="USk0bucQFH+6r1vGKL05L09KOe7dI9coGU75eBf4HrI=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -80,6 +80,9 @@
 	<b>cURL:</b>
 	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/myorg/environments/test/stats/apis?select=message_count&amp;timeRange=7/24/2012%2000:00~8/25/2012%2000:00&amp;timeUnit=hour&amp;sortby=message_count&amp;sort=DESC</pre>
 
+	<b>Sample Request:</b>
+	<pre>$ curl https://api.enterprise.apigee.com/v1/o/{org_name}/environments/test/stats/apis?"select=message_count&timeRange=1/1/2013%2000:00~1/2/2013%2000:00&timeUnit=hour&sortby=message_count&sort=DESC" \
+-u myname:mypass</pre>
 
 
 	Query Parameters:
@@ -99,9 +102,6 @@
 <td>message_count, error_count, total_response_time, max_response_time, min_response_time, data_exchange_size, end_point_response_time</td>
 <td>N/A</td>
 <td>Yes</td>
-<!-- <td><a href="/query_parameters/13" class="btn btn-mini">Detail</a></td></tr> -->
-<!-- <tr><td colspan="6">Description: message_count, error_count, total_response_time, max_response_time, min_response_time, data_exchange_size, end_point_response_time</td></tr> -->
-<!-- <td><a href="/api_methods/71-get-an-analytics-report-for-a-dimension?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </tr>
 </div>
 
@@ -119,9 +119,6 @@
 <td>The start and end time for the desired interval. The date format is MM/DD/YYYY HH:MM. For example, 1/1/2013%2000:00~1/2/2013%2000:00</td>
 <td>N/A</td>
 <td>Yes</td>
-<!-- <td><a href="/query_parameters/14" class="btn btn-mini">Detail</a></td></tr> -->
-<!-- <tr><td colspan="6">Description: The start and end time for the desired interval. The date format is MM/DD/YYYY HH:MM. For example, 1/1/2013%2000:00~1/2/2013%2000:00</td></tr> -->
-<!-- <td><a href="/api_methods/71-get-an-analytics-report-for-a-dimension?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </tr>
 </div>
 
@@ -139,9 +136,6 @@
 <td>second, minute, hour, day, week, month, quarter, year, decade, century, millennium</td>
 <td>N/A</td>
 <td>Yes</td>
-<!-- <td><a href="/query_parameters/15" class="btn btn-mini">Detail</a></td></tr> -->
-<!-- <tr><td colspan="6">Description: second, minute, hour, day, week, month, quarter, year, decade, century, millennium</td></tr> -->
-<!-- <td><a href="/api_methods/71-get-an-analytics-report-for-a-dimension?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </tr>
 </div>
 
@@ -159,9 +153,6 @@
 <td>When two or more select values are specified, 'sortby' can be used to specify the select used for sorting results: message_count, error_count, total_response_time, max_response_time, min_response_time, data_exchange_size, end_point_response_time</td>
 <td>N/A</td>
 <td>No</td>
-<!-- <td><a href="/query_parameters/16" class="btn btn-mini">Detail</a></td></tr> -->
-<!-- <tr><td colspan="6">Description: When two or more select values are specified, 'sortby' can be used to specify the select used for sorting results: message_count, error_count, total_response_time, max_response_time, min_response_time, data_exchange_size, end_point_response_time</td></tr> -->
-<!-- <td><a href="/api_methods/71-get-an-analytics-report-for-a-dimension?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </tr>
 </div>
 
@@ -179,9 +170,6 @@
 <td>Supported sort scopes are DESC or ASC</td>
 <td>N/A</td>
 <td>No</td>
-<!-- <td><a href="/query_parameters/17" class="btn btn-mini">Detail</a></td></tr> -->
-<!-- <tr><td colspan="6">Description: Supported sort scopes are DESC or ASC</td></tr> -->
-<!-- <td><a href="/api_methods/71-get-an-analytics-report-for-a-dimension?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </tr>
 </div>
 
@@ -199,9 +187,6 @@
 <td>Take &quot;top k&quot; results from results, for example, to return the top 5 results &quot;topk=5&quot;.</td>
 <td>N/A</td>
 <td>Yes</td>
-<!-- <td><a href="/query_parameters/29" class="btn btn-mini">Detail</a></td></tr> -->
-<!-- <tr><td colspan="6">Description: Take &quot;top k&quot; results from results, for example, to return the top 5 results &quot;topk=5&quot;.</td></tr> -->
-<!-- <td><a href="/api_methods/71-get-an-analytics-report-for-a-dimension?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </tr>
 </div>
 

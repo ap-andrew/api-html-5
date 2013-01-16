@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
+<meta content="USk0bucQFH+6r1vGKL05L09KOe7dI9coGU75eBf4HrI=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -67,23 +67,23 @@ text/xml
 
 <div class="span18">
 	<p>
-	
+	Associates a developer profile with a company entity. Company entities can be used to manage developers and apps collectively.
 	</p>
 
 	<b>cURL:</b>
-	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/companies/{company_name}/developers</pre>
+	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/companies/{company_name}/developers</pre>
 
 	<b>Sample Request:</b>
-	<pre>$ curl -H "Content-Type:application/json" -X POST -d \
+	<pre>$ curl -H &quot;Content-Type:application/json&quot; -X POST -d \
 '{
- "developer" : [ {
-   "email" : "dev1@apigee.com",
-   "role" : "developer"
+ &quot;developer&quot; : [ {
+   &quot;email&quot; : &quot;dev1@apigee.com&quot;,
+   &quot;role&quot; : &quot;developer&quot;
  }, {
-   "email" : "developer@apigee.com",
-   "role" : "developer"
+   &quot;email&quot; : &quot;developer@apigee.com&quot;,
+   &quot;role&quot; : &quot;developer&quot;
  } ]
-}'
+}' \
 https://api.enterprise.apigee.com/v1/o/{org_name}/companies/{company_name}/developers \
 -u myname:mypass</pre>
 	<b>Request Payload Elements:</b> 

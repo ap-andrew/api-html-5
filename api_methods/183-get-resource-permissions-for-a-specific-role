@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
+<meta content="USk0bucQFH+6r1vGKL05L09KOe7dI9coGU75eBf4HrI=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -64,6 +64,8 @@
 	<b>cURL:</b>
 	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/userroles/{roleName}/permissions?path={resourcePath}</pre>
 
+	<b>Sample Request:</b>
+	<pre>$ curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/userroles/{role_name}/permissions?&quot;path={resource_path}&quot;</pre>
 
 
 <b>Sample Response:</b> 

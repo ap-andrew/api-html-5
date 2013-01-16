@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
+<meta content="USk0bucQFH+6r1vGKL05L09KOe7dI9coGU75eBf4HrI=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -108,9 +108,6 @@ Supported audit targets:
 <td>Filters results by time interval</td>
 <td>Last 24 hours</td>
 <td>No</td>
-<!-- <td><a href="/query_parameters/21" class="btn btn-mini">Detail</a></td></tr> -->
-<!-- <tr><td colspan="6">Description: Filters results by time interval</td></tr> -->
-<!-- <td><a href="/api_methods/200-get-audit-logs?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </tr>
 </div>
 
@@ -128,9 +125,6 @@ Supported audit targets:
 <td>Filters results by Apigee user's email address</td>
 <td>N/A</td>
 <td>No</td>
-<!-- <td><a href="/query_parameters/22" class="btn btn-mini">Detail</a></td></tr> -->
-<!-- <tr><td colspan="6">Description: Filters results by Apigee user's email address</td></tr> -->
-<!-- <td><a href="/api_methods/200-get-audit-logs?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </tr>
 </div>
 
@@ -148,9 +142,6 @@ Supported audit targets:
 <td>Filters results by operation</td>
 <td>N/A</td>
 <td>No</td>
-<!-- <td><a href="/query_parameters/23" class="btn btn-mini">Detail</a></td></tr> -->
-<!-- <tr><td colspan="6">Description: Filters results by operation</td></tr> -->
-<!-- <td><a href="/api_methods/200-get-audit-logs?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </tr>
 </div>
 

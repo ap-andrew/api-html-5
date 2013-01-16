@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
+<meta content="USk0bucQFH+6r1vGKL05L09KOe7dI9coGU75eBf4HrI=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -39,39 +39,60 @@
 		<b>API Resource Path:</b>
 		<p>/companies/{company_name}/apps/{app_name}/keys/{consumer_key}</p>
 		<p>
-		Update existing app key with an API product. 
+		Update existing app key with an API product.
 		</p>
 	</div>
 
 	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
-		<span class="verb-GET">GET</span>
+		<span class="verb-POST">POST</span>
 		</p>
 		<b>Auth:</b>
 		Basic Auth
 		</p>
 
+		<b>Content Types:</b>
+		
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+		</p>
 
 	</div>
 </div>
 
 <div class="span18">
 	<p>
-	Adds an API product to a Company, enabling the Company App to access the API resources (URIs) defined in the API product. Existing API products are merged with the API product added by this method. 
+	Adds an API product to a company app, enabling the company app to access the API resources (URIs) defined in the API product. Existing API products are merged with the API product added by this method.
 	</p>
 
 	<b>cURL:</b>
 	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/companies/{companyName}/apps/{appName}/keys/{consumerkey}</pre>
 
 	<b>Sample Request:</b>
-	<pre>{
-  "apiProducts" : ["TestApiProduct1","TestApiProduct2"],
+	<pre>$ curl -H "Content-type:application/json" -X POST -d 
+'{
+  "apiProducts" : [ {
+    "apiproduct" : "TestApiProduct1",
+    "status" : "approved"
+  }, {
+    "apiproduct" : "TestApiProduct2",
+    "status" : "approved"
+  } ],
   "attributes" : [ {
     "name" : "region",
     "value" : "west"
-  } ]
-}</pre>
+  } ],
+  "consumerKey" : "{consumerkey}",
+  "consumerSecret" : "{consumerSecret}",
+  "status" : "approved"
+}' \
+https://api.enterprise.apigee.com/v1/o/{org_name}/companies/{company_name}/apps/{app_name}/keys/{consumer_key} \
+-u myname:mypass</pre>
 	<b>Request Payload Elements:</b> 
 	<table class="table table-bordered">
 		<thead>

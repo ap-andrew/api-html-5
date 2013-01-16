@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
+<meta content="USk0bucQFH+6r1vGKL05L09KOe7dI9coGU75eBf4HrI=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -62,8 +62,21 @@
 	</p>
 
 	<b>cURL:</b>
-	<pre>curl -u &quot;myname:mypass&quot; &quot;https://api.enterprise.apigee.com/v1/o/{myorg}/developers/{developerEmail}&quot; -X POST</pre>
+	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/developers/{developer_email}</pre>
 
+	<b>Sample Request:</b>
+	<pre>$ curl -H &quot;Content-type:application/json&quot; -X PUT -d \
+'{
+  &quot;firstNname&quot; : &quot;Ewoorde&quot;,
+  &quot;lastName&quot; : &quot;Wilson&quot;,
+  &quot;userName&quot; : &quot;wilson&quot;,
+  &quot;attributes&quot; : [ {
+    &quot;name&quot; : &quot;region&quot;,
+    &quot;value&quot; : &quot;north&quot;
+  } ]
+}' \
+https://api.enterprise.apigee.com/v1/o/{org_name}/developers/{developer_email} \
+-u myname:mypass</pre>
 
 
 <b>Sample Response:</b> 

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
+<meta content="USk0bucQFH+6r1vGKL05L09KOe7dI9coGU75eBf4HrI=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -119,7 +119,7 @@ text/xml
 		<tr><td colspan="2"><span class="lead">Update Key with ApiProduct(s)</span></td><td><a href="/api_methods/89-update-key-with-apiproduct-s" class="btn btn-mini">Detail</a></td> 
 	    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/apps/{app_name}/keys/{consumer_key}</pre></span></td></tr>
 		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
-		<tr><td><strong>Description:</strong></td><td colspan="2">Adds an API Product to a Developer App Key</td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">Adds an API product to a developer app key</td></tr>
   		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
 </tbody>
 </table>

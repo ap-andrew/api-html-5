@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
+<meta content="USk0bucQFH+6r1vGKL05L09KOe7dI9coGU75eBf4HrI=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -46,12 +46,18 @@
 	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
-		<span class="verb-GET">GET</span>
+		<span class="verb-POST">POST</span>
 		</p>
 		<b>Auth:</b>
 		Basic Auth
 		</p>
 
+		<b>Content Types:</b>
+		
+<div class="content_type" id="content_type_3">
+application/x-www-url-form-encoded
+</div>
+		</p>
 
 	</div>
 </div>
@@ -64,6 +70,10 @@
 	<b>cURL:</b>
 	<pre>/developers/{developerEmail}/apps/{appname}?action=revoke</pre>
 
+	<b>Sample Request:</b>
+	<pre>$ curl -H &quot;Content-type: application/x-www-url-form-encoded&quot; -X POST \
+https://api.enterprise.apigee.com/v1/o/{org_name}//developers/{developer_email}/apps/{app_name}?&quot;action=revoke&quot; \
+-u myname:mypass</pre>
 
 
 <b>Sample Response:</b> 

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
+<meta content="USk0bucQFH+6r1vGKL05L09KOe7dI9coGU75eBf4HrI=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -65,15 +65,18 @@
 	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/companies/{companyName}</pre>
 
 	<b>Sample Request:</b>
-	<pre>{
- "name" : "DevCompany",
- "displayName" : "Developer Company",
- "status" : "active",
- "attributes" : [ {
-    "name" : "region",
-    "value" : "south"
+	<pre>$ curl  -H &quot;Content-type:application/json&quot; -X POST -d \
+'{
+ &quot;name&quot; : &quot;DevCompany&quot;,
+ &quot;displayName&quot; : &quot;Developer Company&quot;,
+ &quot;status&quot; : &quot;active&quot;,
+ &quot;attributes&quot; : [ {
+    &quot;name&quot; : &quot;region&quot;,
+    &quot;value&quot; : &quot;south&quot;
  } ]
-}</pre>
+}' \
+https://api.enterprise.apigee.com/v1/o/{org_name}/companies/{company_name} \
+-u myname:mypass</pre>
 	<b>Request Payload Elements:</b> 
 	<table class="table table-bordered">
 		<thead>

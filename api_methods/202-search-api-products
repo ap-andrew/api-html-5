@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
+<meta content="USk0bucQFH+6r1vGKL05L09KOe7dI9coGU75eBf4HrI=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -76,6 +76,8 @@ text/xml
 	<b>cURL:</b>
 	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/apiproducts?attributename=access-type&amp;attributevalue=private</pre>
 
+	<b>Sample Request:</b>
+	<pre>$ curl https://api.enterprise.apigee.com/v1/o/{org_name}/apiproducts?&quot;attributename={attribute_name}&attributevalue={attribute_value}&quot; -u myname:mypass</pre>
 
 
 	Query Parameters:
@@ -95,9 +97,6 @@ text/xml
 <td>The name of an attribute defined in the API product profile</td>
 <td>N/A</td>
 <td>Yes</td>
-<!-- <td><a href="/query_parameters/27" class="btn btn-mini">Detail</a></td></tr> -->
-<!-- <tr><td colspan="6">Description: The name of an attribute defined in the API product profile</td></tr> -->
-<!-- <td><a href="/api_methods/202-search-api-products?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </tr>
 </div>
 
@@ -115,9 +114,6 @@ text/xml
 <td>The value of the attribute specified</td>
 <td>N/A</td>
 <td>Yes</td>
-<!-- <td><a href="/query_parameters/28" class="btn btn-mini">Detail</a></td></tr> -->
-<!-- <tr><td colspan="6">Description: The value of the attribute specified</td></tr> -->
-<!-- <td><a href="/api_methods/202-search-api-products?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </tr>
 </div>
 

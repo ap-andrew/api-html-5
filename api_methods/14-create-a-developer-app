@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="sUrkBwtAZWl68fU8YslzsZ+KNynwsq58twyvOMJEcto=" name="csrf-token" />
+<meta content="USk0bucQFH+6r1vGKL05L09KOe7dI9coGU75eBf4HrI=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -69,16 +69,18 @@ CallbackUrl can be ‘,’ separated multiple callback URLs’.
 	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/developers/{developerEmail}/apps</pre>
 
 	<b>Sample Request:</b>
-	<pre>{
-  "accessType" : "read",
-  "attributes" : [ {
-	"name" : "Language",
-	"value" : "java"
+	<pre>$ curl -H &quot;Content-type:application/json&quot; -X POST -d \
+'{
+  &quot;accessType&quot; : &quot;read&quot;,
+  &quot;attributes&quot; : [ {
+	&quot;name&quot; : &quot;Language&quot;,
+	&quot;value&quot; : &quot;java&quot;
   } ],
-  "apiProducts": [ "TestApiProduct"],
-  "callbackUrl" : "www.apigee.com",
-  "name" : "MyTestApp"
-}</pre>
+  &quot;apiProducts&quot;: [ &quot;TestApiProduct&quot;],
+  &quot;callbackUrl&quot; : &quot;www.apigee.com&quot;,
+  &quot;name&quot; : &quot;MyTestApp&quot;
+}' \
+-u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/developers/{developer_email}/apps</pre>
 	<b>Request Payload Elements:</b> 
 	<table class="table table-bordered">
 		<thead>
