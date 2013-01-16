@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="Hc07Dn4b5xu4P2IuHzM6FzWUD1Nndbwuqd1YOgePU3U=" name="csrf-token" />
+<meta content="5blfCAOOHDQwvrT6LA8Umz9jqkYnQl3pO/AkOql4E+w=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -27,7 +27,7 @@
 			<!-- <div>
 </div> -->
             <div id="breadcrumb">
-<a href="/docs/enterprise/enterprise_home">Home</a> > <a href="/docs/api/api_resources">Platform API Reference</a> > <a href="/api_resources/41-rbac-resources">RBAC Resources</a> > Get a resource</div>
+<a href="/enterprise/enterprise_home">Home</a> > <a href="/api_resources">Platform API Reference</a> > <a href="/api_resources/41-rbac-resources">RBAC Resources</a> > Get a resource</div>
 <p>
 <h1>Get a resource</h1> 
 </p>
