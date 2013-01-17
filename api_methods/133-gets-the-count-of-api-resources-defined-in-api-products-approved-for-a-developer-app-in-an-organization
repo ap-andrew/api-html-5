@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="h7E/PCYqiqO1oUH9FgLqhCyypiJmS5dlD4BzGkvsKNE=" name="csrf-token" />
+<meta content="28ucJ88VIpdT82pjOVF0Ix+qd+vcPjEWJ9U9a2N0law=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -27,7 +27,7 @@
 			<!-- <div>
 </div> -->
             <div id="breadcrumb">
-<a href="/enterprise/enterprise_home">Home</a> > <a href="/api_resources">Platform API Reference</a> > <a href="/api_resources/17-developer-apps">Developer Apps</a> > Gets the count of API resources  defined in API products approved for a developer app in an organization</div>
+<a href="/api_resources">Platform API Reference</a> > <a href="/api_resources/17-developer-apps">Developer Apps</a> > Gets the count of API resources  defined in API products approved for a developer app in an organization</div>
 <p>
 <h1>Gets the count of API resources  defined in API products approved for a developer app in an organization</h1> 
 </p>
