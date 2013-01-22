@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="28ucJ88VIpdT82pjOVF0Ix+qd+vcPjEWJ9U9a2N0law=" name="csrf-token" />
+<meta content="SCqmMSVl2RMYa+lAgg62YrA4ndEGhQMVXyAfq94hgcY=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -63,9 +63,6 @@
 	<p>
 	 This method enables developers to upload an API proxy as a ZIP file from the local machine to the targeted Apigee organization. Once imported, the API revision must be deployed before it can be accessed at runtime.
 	</p>
-
-	<b>cURL:</b>
-	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/test/apis?action=import&amp;name=passthrough -T {filename}.zip -H &amp;quot;Content-Type: application/octet-stream&amp;quot; -X POST</pre>
 
 	<b>Sample Request:</b>
 	<pre>$ curl -H &quot;Content-Type: application/octet-stream&quot; -X POST \

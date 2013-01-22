@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="28ucJ88VIpdT82pjOVF0Ix+qd+vcPjEWJ9U9a2N0law=" name="csrf-token" />
+<meta content="SCqmMSVl2RMYa+lAgg62YrA4ndEGhQMVXyAfq94hgcY=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -63,9 +63,6 @@
 	<p>
 	APIs  cannot be invoked until they have been deployed to an environment. By default every organization in Apigee is provisioned with two environments--test and prod. To get a list of available environments in your organization, use the GET Ogrniazation method, or list environments.
 	</p>
-
-	<b>cURL:</b>
-	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/apis/{apiName}/revisions/{revisionNumber}/deployments?action=deploy&amp;env={envName}&amp;basepath={/basepath}</pre>
 
 
 

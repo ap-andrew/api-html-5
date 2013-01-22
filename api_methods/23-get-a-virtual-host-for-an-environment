@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="28ucJ88VIpdT82pjOVF0Ix+qd+vcPjEWJ9U9a2N0law=" name="csrf-token" />
+<meta content="SCqmMSVl2RMYa+lAgg62YrA4ndEGhQMVXyAfq94hgcY=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -60,9 +60,6 @@
 	<p>
 	Every environment in Apigee has at least one virtual host.  The virtual host defines the HTTP settings for connection with the Apigee organization. All API proxies in an environment share the same virtual hosts. This method returns the list of named virtual hosts. You can use the names here to get details for the virtual host. This is the best way to verify the connection settings that client apps must use to invoke your APIs.
 	</p>
-
-	<b>cURL:</b>
-	<pre>curl -u myname:mypass -H &quot;Accept:application/json&quot; https://api.enterprise.apigee.com/v1/o/{myorg}/environments/test/virtualhosts/default</pre>
 
 
 

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="28ucJ88VIpdT82pjOVF0Ix+qd+vcPjEWJ9U9a2N0law=" name="csrf-token" />
+<meta content="SCqmMSVl2RMYa+lAgg62YrA4ndEGhQMVXyAfq94hgcY=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -84,9 +84,6 @@ developer.quota.timeunit second/minute/hour/day/month)
 
 You can also use attributes to set any arbitrary metadata that you need for monitoring or analytics.
 	</p>
-
-	<b>cURL:</b>
-	<pre>curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/apiproducts</pre>
 
 	<b>Sample Request:</b>
 	<pre>$ curl -H &quot;Content-Type:application/json&quot; -X POST -d \

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="28ucJ88VIpdT82pjOVF0Ix+qd+vcPjEWJ9U9a2N0law=" name="csrf-token" />
+<meta content="SCqmMSVl2RMYa+lAgg62YrA4ndEGhQMVXyAfq94hgcY=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -46,7 +46,7 @@ API Analytics
 <h3>API Platform Base Path: https://api.enterprise.apigee.com/v1/o/{org_name}</h3>
 
 <table class="table">
-		<tr><td><h3>API Resource Path: /environments/{environmentName}/stats</h3></td></tr>
+		<tr><td><h3>API Resource Path: /environments/{env_name}/stats</h3></td></tr>
 		<tr><td>Reports on metrics for API usage and performance</td></tr>
   		<tr><td><p>Returns metrics based on specified dimensions.</p>
 
@@ -79,7 +79,7 @@ API Analytics
 		<tr><td colspan="2"><span class="lead">Get an analytics report for a dimension</span></td><td><a href="/api_methods/71-get-an-analytics-report-for-a-dimension" class="btn btn-mini">Detail</a></td> 
 	    <tr><td colspan="3"><span id="well"><pre>/environments/{environment_name}/stats/{dimension_name}</pre></span></td></tr>
 		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
-		<tr><td><strong>Description:</strong></td><td colspan="2">Use the GET method to retrieve metrics for all the APIs for an organization and environment.</td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">Use the GET method to retrieve metrics for a dimension</td></tr>
   		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
 		<tr><td colspan="2"><span class="lead">Get an analytics report on all API traffic</span></td><td><a href="/api_methods/76-get-an-analytics-report-on-all-api-traffic" class="btn btn-mini">Detail</a></td> 
 	    <tr><td colspan="3"><span id="well"><pre>/environments/{environment_name}/stats</pre></span></td></tr>

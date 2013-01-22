@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="28ucJ88VIpdT82pjOVF0Ix+qd+vcPjEWJ9U9a2N0law=" name="csrf-token" />
+<meta content="SCqmMSVl2RMYa+lAgg62YrA4ndEGhQMVXyAfq94hgcY=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -99,8 +99,17 @@ Oauth
   		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
 		<tr><td colspan="2"><span class="lead">Update Access Token</span></td><td><a href="/api_methods/111-update-access-token" class="btn btn-mini">Detail</a></td> 
 	    <tr><td colspan="3"><span id="well"><pre>/oauth2/accesstokens/{access_token}</pre></span></td></tr>
-		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-PUT">PUT</span> </td></tr>
+		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 		<tr><td><strong>Description:</strong></td><td colspan="2">Updates the access token attributes.</td></tr>
+		<tr><td><strong>Content Types:</strong></td><td>
+		
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+		</td></tr>
   		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
 </tbody>
 </table>
