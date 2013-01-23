@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="SCqmMSVl2RMYa+lAgg62YrA4ndEGhQMVXyAfq94hgcY=" name="csrf-token" />
+<meta content="nSGMEDAwg+K1unGnlVZo1iF4T4Lzy1wt8O1M1b6c1sk=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -52,6 +52,13 @@
 		Basic Auth
 		</p>
 
+		<p>
+		<b>Content Types:</b>
+		
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+		</p>
 
 		<p>
 		<b><a href="http://apigee.com/docs/api/content/reporting-api-analytics">Developer Guide Topic</a></b>
@@ -61,24 +68,30 @@
 
 <div class="span18">
 	<p>
-	<p><code>dimension_name</code> is the entity for which the API Platform collects metrics. Apigee defines a set of dimensions that can be used in your reports.  Supported dimensions include:</p>
+	A report is generated using a GET request on the <code>/stats</code> API resource, accompanied by:
 
-<p>api: The name of an API managed by the API Platform</p>
+<ul><li>An optional URI parameter that defines the dimension for the report. Apigee defines a set of dimensions an pre-aggregates a set of metrics against those dimensions. If no dimension is defined (i.e., if the URI parameter is empty), then a report is generated for all APIs present in the environment specified.</li>
+<li>A set of query parameters that define the metrics, time range, time interval, and filter/drill-down aspects of the report. </li></ul>
 
-<p>apiproduct: The name of an API managed by the API Platform</p>
+<p><code>dimension_name</code>: A URI parameter that defines the entity for which the API Platform metrics should be retrieved. Apigee defines a set of dimensions that can be used in reports. Supported dimensions include:</p>
 
-<p>client_ip: The IP address of the app making the request to your API</p>
+<ul><li><code>/stats/apis</code>: APIs in an organization on the API Platform</li>
+<li><code>/stats/>apiproducts</code>: API products defined in an organization</li>
+<li><code>/stats/client_ip</code>: IP addresses of apps making the request to APIs on the API Platform</li>
+<li><code>/stats/developer_email</code>: The email address of a developer registered in an organization on the API Platform </li>
+<li><code>/stats/developer_app</code>: The name of the developer app making the request to your API</li>
+<li><code>/stats/access_token</code>: The app end user's OAuth access token</li></ul>
 
-<p>developer_email: The developer of the app making the request to your API</p>
+For a complete list of dimensions, metrics, and sample requests, see the <a href="/docs/api/content/reporting-api-analytics">Analytics Developer Guide Topic</a>.
 
-<p>developer_app: The name of the app making the request to your API</p>
+Custom dimensions can be added by defining custom variables as described in the <a href="/docs/enterprise/content/analyzing-api-message-content-using-custom-analytics">Custom Analytics Developer Guide Topic</a>.
 
-<p>access_token: The app end user's OAuth access token</p>
+
 
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl https://api.enterprise.apigee.com/v1/o/{org_name}/environments/test/stats/apis?"select=message_count&timeRange=1/1/2013%2000:00~1/2/2013%2000:00&timeUnit=hour&sortby=message_count&sort=DESC" \
+	<pre>$ curl https://api.enterprise.apigee.com/v1/o/{org_name}/environments/{env_name}/stats/{dimension_name}?"select=message_count&timeRange=1/1/2013%2000:00~1/2/2013%2000:00&timeUnit=hour&sortby=message_count&sort=DESC&filter=(apis%20in%20'weather','news')" \
 -u myname:mypass</pre>
 
 
@@ -93,24 +106,7 @@
 				<th>Required?</th>
 			</tr>
 			</thead>
-			<div class="query_parameter" id="query_parameter_13">
-<tr>
-<td>select</td>
-<td>message_count, error_count, total_response_time, max_response_time, min_response_time, data_exchange_size, end_point_response_time</td>
-<td>N/A</td>
-<td>Yes</td>
-</tr>
-</div>
-
-
-
-
-
-
-
-
-
-<div class="query_parameter" id="query_parameter_14">
+			<div class="query_parameter" id="query_parameter_14">
 <tr>
 <td>timeRange</td>
 <td>The start and end time for the desired interval. The date format is MM/DD/YYYY HH:MM. For example, 1/1/2013%2000:00~1/2/2013%2000:00</td>
@@ -182,6 +178,23 @@
 <tr>
 <td>topk</td>
 <td>Take &quot;top k&quot; results from results, for example, to return the top 5 results &quot;topk=5&quot;.</td>
+<td>N/A</td>
+<td>Yes</td>
+</tr>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="query_parameter" id="query_parameter_13">
+<tr>
+<td>select</td>
+<td>Designates the metric to be aggregated for the report. Supported metrics are message_count, error_count, total_response_time, max_response_time, min_response_time, data_exchange_size, end_point_response_time</td>
 <td>N/A</td>
 <td>Yes</td>
 </tr>

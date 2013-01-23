@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="SCqmMSVl2RMYa+lAgg62YrA4ndEGhQMVXyAfq94hgcY=" name="csrf-token" />
+<meta content="nSGMEDAwg+K1unGnlVZo1iF4T4Lzy1wt8O1M1b6c1sk=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -52,6 +52,16 @@
 		Basic Auth
 		</p>
 
+		<p>
+		<b>Content Types:</b>
+		
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+		</p>
 
 	</div>
 </div>
@@ -62,7 +72,7 @@
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl https://api.enterprise.apigee.com/v1/o/apigee-pm/apps/72d0da6a-6551-48d8-98af-1da6187d0adc \ 
+	<pre>$ curl https://api.enterprise.apigee.com/v1/o/{org_name}/apps/{app_id} \ 
 -u myname:mypass
 </pre>
 

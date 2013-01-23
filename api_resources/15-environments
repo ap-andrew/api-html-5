@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="SCqmMSVl2RMYa+lAgg62YrA4ndEGhQMVXyAfq94hgcY=" name="csrf-token" />
+<meta content="nSGMEDAwg+K1unGnlVZo1iF4T4Lzy1wt8O1M1b6c1sk=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -39,14 +39,10 @@
 Administration
 </div>
 
-<!-- <div class=btn>
-<a href="/api_methods/new">Add an API Method</a>
-</div> -->
-
-<h3>API Platform Base Path: https://api.enterprise.apigee.com/v1/o/{org_name}</h3>
+<h3>API Platform Base Path: <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></h3>
 
 <table class="table">
-		<tr><td><h3>API Resource Path: /environments</h3></td></tr>
+		<tr><td><b>API Resource Path:</b><code>/environments</code></td></tr>
 		<tr><td>A deployment environment for APIs</td></tr>
   		<tr><td>By default, Apigee organizations are provisioned with two environments: 'test' and 'prod'. An environment provides a runtime execution context for APIs. An API revision must be deployed to an environment before it can be accessed at runtime. No constraints are placed on the usage between different environments--test versus prod, for example. Developers are free to implement and enforce any type or testing, promotion, and deployment procedures that suit their development lifecycle.</td></tr>
        <!-- <td><div id="well"><pre>{

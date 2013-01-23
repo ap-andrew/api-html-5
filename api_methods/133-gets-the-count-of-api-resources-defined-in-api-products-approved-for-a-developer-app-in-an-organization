@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="SCqmMSVl2RMYa+lAgg62YrA4ndEGhQMVXyAfq94hgcY=" name="csrf-token" />
+<meta content="nSGMEDAwg+K1unGnlVZo1iF4T4Lzy1wt8O1M1b6c1sk=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -39,7 +39,7 @@
 		<b>API Resource Path:</b>
 		<p>/developers/{developer_email}/apps/{app_name}?&amp;quot;query=count&amp;entity={entity_name}&amp;quot;</p>
 		<p>
-		Gets a count of all API Resources (URIs) in the API Products accessible by an App
+		Gets a count of all API resources (URIs) in the API products accessible by a developer app
 		</p>
 	</div>
 
@@ -58,11 +58,11 @@
 
 <div class="span18">
 	<p>
-	Returns a count of all API Resources (URIs) available to be access by an app through the API products the app is associated with.
+	Returns a count of all API Resources (URIs) available to be accessed by an app through the API products for which the app is approved.
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/{developerEmail}/apps/{app_name}?&quot;query=count&entity=apiresources&quot;</pre>
+	<pre>$ curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/{developer_email}/apps/{app_name}?"query=count&entity=apiresources"</pre>
 
 
 <b>Sample Response:</b> 

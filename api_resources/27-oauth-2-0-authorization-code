@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="SCqmMSVl2RMYa+lAgg62YrA4ndEGhQMVXyAfq94hgcY=" name="csrf-token" />
+<meta content="nSGMEDAwg+K1unGnlVZo1iF4T4Lzy1wt8O1M1b6c1sk=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -39,14 +39,10 @@
 Oauth
 </div>
 
-<!-- <div class=btn>
-<a href="/api_methods/new">Add an API Method</a>
-</div> -->
-
-<h3>API Platform Base Path: https://api.enterprise.apigee.com/v1/o/{org_name}</h3>
+<h3>API Platform Base Path: <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></h3>
 
 <table class="table">
-		<tr><td><h3>API Resource Path: /oauth2/authorizationcodes</h3></td></tr>
+		<tr><td><b>API Resource Path:</b><code>/oauth2/authorizationcodes</code></td></tr>
 		<tr><td>Oauth 2.0 compliant authorization codes</td></tr>
   		<tr><td></td></tr>
        <!-- <td><div id="well"><pre></pre></div></td></tr> -->

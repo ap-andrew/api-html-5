@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="SCqmMSVl2RMYa+lAgg62YrA4ndEGhQMVXyAfq94hgcY=" name="csrf-token" />
+<meta content="nSGMEDAwg+K1unGnlVZo1iF4T4Lzy1wt8O1M1b6c1sk=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -27,9 +27,9 @@
 			<!-- <div>
 </div> -->
             <div id="breadcrumb">
-<a href="/api_resources">Platform API Reference</a> > <a href="/api_resources/18-developer-app-keys">Developer App Keys</a> > Approve a Developer App Key</div>
+<a href="/api_resources">Platform API Reference</a> > <a href="/api_resources/18-developer-app-keys">Developer App Keys</a> > Approve a developer app key</div>
 <p>
-<h1>Approve a Developer App Key</h1> 
+<h1>Approve a developer app key</h1> 
 </p>
 
 <div class="row">
@@ -52,15 +52,26 @@
 		Basic Auth
 		</p>
 
+		<p>
+		<b>Content Types:</b>
+		
+<div class="content_type" id="content_type_3">
+application/x-www-url-form-encoded
+</div>
+		</p>
 
 	</div>
 </div>
 
 <div class="span18">
 	<p>
-	
+	Changes the state of the consumer key associated with a developer app to the 'approved' state.
 	</p>
 
+	<b>Sample Request:</b>
+	<pre>$ curl -H "Content-type:application/x-www-form-urlencoded" -X POST \
+https://api.enterprise.apigee.com/v1/o/{org_name}/developers/{developer_emal}/apps/{app_name}/keys/{consumer_key}?"action=approve" \
+-u myname:mypass</pre>
 
 
 <b>Sample Response:</b> 

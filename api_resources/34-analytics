@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="SCqmMSVl2RMYa+lAgg62YrA4ndEGhQMVXyAfq94hgcY=" name="csrf-token" />
+<meta content="nSGMEDAwg+K1unGnlVZo1iF4T4Lzy1wt8O1M1b6c1sk=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -39,14 +39,10 @@
 API Analytics
 </div>
 
-<!-- <div class=btn>
-<a href="/api_methods/new">Add an API Method</a>
-</div> -->
-
-<h3>API Platform Base Path: https://api.enterprise.apigee.com/v1/o/{org_name}</h3>
+<h3>API Platform Base Path: <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></h3>
 
 <table class="table">
-		<tr><td><h3>API Resource Path: /environments/{env_name}/stats</h3></td></tr>
+		<tr><td><b>API Resource Path:</b><code>/environments/{env_name}/stats</code></td></tr>
 		<tr><td>Reports on metrics for API usage and performance</td></tr>
   		<tr><td><p>Returns metrics based on specified dimensions.</p>
 
@@ -80,11 +76,12 @@ API Analytics
 	    <tr><td colspan="3"><span id="well"><pre>/environments/{environment_name}/stats/{dimension_name}</pre></span></td></tr>
 		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 		<tr><td><strong>Description:</strong></td><td colspan="2">Use the GET method to retrieve metrics for a dimension</td></tr>
-  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-		<tr><td colspan="2"><span class="lead">Get an analytics report on all API traffic</span></td><td><a href="/api_methods/76-get-an-analytics-report-on-all-api-traffic" class="btn btn-mini">Detail</a></td> 
-	    <tr><td colspan="3"><span id="well"><pre>/environments/{environment_name}/stats</pre></span></td></tr>
-		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
-		<tr><td><strong>Description:</strong></td><td colspan="2">Retrieve the metrics for all the available APIs for a given customer in a specific organization and environment.</td></tr>
+		<tr><td><strong>Content Types:</strong></td><td>
+		
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+		</td></tr>
   		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
 </tbody>
 </table>

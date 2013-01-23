@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="SCqmMSVl2RMYa+lAgg62YrA4ndEGhQMVXyAfq94hgcY=" name="csrf-token" />
+<meta content="nSGMEDAwg+K1unGnlVZo1iF4T4Lzy1wt8O1M1b6c1sk=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -39,14 +39,10 @@
 Developer and App Administration
 </div>
 
-<!-- <div class=btn>
-<a href="/api_methods/new">Add an API Method</a>
-</div> -->
-
-<h3>API Platform Base Path: https://api.enterprise.apigee.com/v1/o/{org_name}</h3>
+<h3>API Platform Base Path: <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></h3>
 
 <table class="table">
-		<tr><td><h3>API Resource Path: /developers/{developerEmail}/apps/{appName}/keys</h3></td></tr>
+		<tr><td><b>API Resource Path:</b><code>/developers/{developer_email}/apps/{app_name}/keys</code></td></tr>
 		<tr><td>The consumer key ( or 'API Key') provisioned for an app</td></tr>
   		<tr><td>Credential pairs consisting of consumer key and consumer secret provisioned by Apigee to apps for specific API products. Apigee maintains the relationship between consumer keys and API products, enabling APi products to be added to and removed from consumer keys. A single consumer key can be used to access multiple API products. Keys may be manually or automatically approved for API products--how they are issued depends on the API product configuration. A key must approved and approved for an API product to be capable of accessing any of the URIs defined in the API product.</td></tr>
        <!-- <td><div id="well"><pre> {
@@ -73,10 +69,16 @@ Developer and App Administration
 <table class="table table-bordered">
 
 <tbody>
-		<tr><td colspan="2"><span class="lead">Approve a Developer App Key</span></td><td><a href="/api_methods/93-approve-a-developer-app-key" class="btn btn-mini">Detail</a></td> 
+		<tr><td colspan="2"><span class="lead">Approve a developer app key</span></td><td><a href="/api_methods/93-approve-a-developer-app-key" class="btn btn-mini">Detail</a></td> 
 	    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_emal}/apps/{app_name}/keys/{consumer_key}</pre></span></td></tr>
 		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 		<tr><td><strong>Description:</strong></td><td colspan="2">Changes the status of a consumer key from 'pending' to 'approved'</td></tr>
+		<tr><td><strong>Content Types:</strong></td><td>
+		
+<div class="content_type" id="content_type_3">
+application/x-www-url-form-encoded
+</div>
+		</td></tr>
   		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
 		<tr><td colspan="2"><span class="lead">Approve API Product for the Key of Developer App</span></td><td><a href="/api_methods/95-approve-api-product-for-the-key-of-developer-app" class="btn btn-mini">Detail</a></td> 
 	    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/apps/{app_name}/keys/{consumer_key}/apiproducts/{apiproduct_name}</pre></span></td></tr>

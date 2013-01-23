@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="SCqmMSVl2RMYa+lAgg62YrA4ndEGhQMVXyAfq94hgcY=" name="csrf-token" />
+<meta content="nSGMEDAwg+K1unGnlVZo1iF4T4Lzy1wt8O1M1b6c1sk=" name="csrf-token" />
     <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -39,14 +39,10 @@
 Developer and App Administration
 </div>
 
-<!-- <div class=btn>
-<a href="/api_methods/new">Add an API Method</a>
-</div> -->
-
-<h3>API Platform Base Path: https://api.enterprise.apigee.com/v1/o/{org_name}</h3>
+<h3>API Platform Base Path: <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></h3>
 
 <table class="table">
-		<tr><td><h3>API Resource Path: /developers/{developerEmail}/apps</h3></td></tr>
+		<tr><td><b>API Resource Path:</b><code>/developers/{developerEmail}/apps</code></td></tr>
 		<tr><td>An app that is associated with a developer</td></tr>
   		<tr><td>In Apigee, Apps can belong to individual developers or to groups of developers (known as 'companies'). The Developer App is an App that belongs to a single developer. Apps are created in Apigee in order to obtain credentials to access API Products. So, a Developer App always has associated credentials, API Products, and other metadata (stored as attributes) that can be used for profile-based access control, Analytics, etc. Apps also have status, and may be approved or unapproved. By default Apps are created in the 'approved' state.</td></tr>
        <!-- <td><div id="well"><pre>{
@@ -103,7 +99,7 @@ Developer and App Administration
 		<tr><td colspan="2"><span class="lead">Gets the count of API resources  defined in API products approved for a developer app in an organization</span></td><td><a href="/api_methods/133-gets-the-count-of-api-resources-defined-in-api-products-approved-for-a-developer-app-in-an-organization" class="btn btn-mini">Detail</a></td> 
 	    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/apps/{app_name}?&amp;quot;query=count&amp;entity={entity_name}&amp;quot;</pre></span></td></tr>
 		<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
-		<tr><td><strong>Description:</strong></td><td colspan="2">Gets a count of all API Resources (URIs) in the API Products accessible by an App</td></tr>
+		<tr><td><strong>Description:</strong></td><td colspan="2">Gets a count of all API resources (URIs) in the API products accessible by a developer app</td></tr>
   		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
 		<tr><td colspan="2"><span class="lead">List Apps by Developer</span></td><td><a href="/api_methods/5-list-apps-by-developer" class="btn btn-mini">Detail</a></td> 
 	    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/apps</pre></span></td></tr>
