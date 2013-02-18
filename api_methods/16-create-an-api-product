@@ -5,27 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="nSGMEDAwg+K1unGnlVZo1iF4T4Lzy1wt8O1M1b6c1sk=" name="csrf-token" />
-    <link href="/assets/application-96f9052ab1868e53bd357cfbf8b7889f.css" media="all" rel="stylesheet" type="text/css" />
+<meta content="thRiABTiVJIJRq2vdioTvlq074mU7PwZtuj8ne3kMwo=" name="csrf-token" />
+    <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
        <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
        <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
        <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
        <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+	  <script src="/assets/application-dc5c9a427e1f5afd21166897f350d896.js" type="text/javascript"></script> 
+	  <script type="text/javascript" charset="utf-8">
+	jQuery(document).ready(function () {
+	    jQuery("td span.expand").click(function () {
+	        jQuery(this).parents("tr.main").nextUntil("tr.main").toggle();
+	    });
+	});
+	  </script>
+	<script type="text/javascript">
+	jQuery(document).ready(function() {
+	  jQuery("resource_table").hide();
+	  //toggle the componenet with class msg_body
+	  jQuery(".heading").click(function()
+	  {
+	    jQuery(this).next(".content").slideToggle(500);
+	  });
+	});
+	</script>
   </head>
 
-
   <body>
-
-
-
     <div class="container">
       <div class="content">
         <div class="row">
            <div class="span12">
-			<!-- <div>
-</div> -->
+			<div id="user_bar"  style="float: right;">
+    <a href="/login"><span class="translation_missing" title="translation missing: en.sessions.login">Login</span></a>
+</div>
+
+<!-- <body class="html not-front not-logged-in one-sidebar sidebar-second page-node page-node- page-node-3975 node-type-quick-start" >
+    <a name="top"></a>
+<header id="navbar" role="banner" class="navbar navbar-fixed-top">
+  <div class="main-nav navbar-inner">
+    <div class="container">
+      <div class="row">
+        <div class="nav-collapse">
+          <div class="span3 pull-left">
+                          <a class="brand" href="//apigee.com" title="Home">
+                <img src="http://apigee.com/docs/sites/all/themes/apigee_docs/logo.png" alt="Home" />
+              </a>
+                      </div>
+
+                        <ul id="main-menu" class="nav"><li class="menu-2564 active-trail first"><a href="/docs/enterprise/enterprise_home" title="" class="active-trail">API Platform</a></li>
+<li class="menu-2563"><a href="/docs/app_services" title="">App Services</a></li>
+<li class="menu-795"><a href="/docs/consoletogo/" title="Enterprise API Console">Console To-Go</a></li>
+<li class="menu-811 last"><a href="/docs/content/support" title="Submit support request">Support</a></li>
+</ul>          
+                      <div class="span4 pull-right searchy">
+              <form class="search-form navbar-search pull-right" action="/docs/search/site" method="post" id="search-form--2" accept-charset="UTF-8"><div><input type="hidden" name="form_build_id" value="form-e5wjYxNMonKZYhQe7hWe3ZHnxrTaC3wcKrZlxkDry1c" />
+<input type="hidden" name="form_id" value="search_form" />
+<div class="control-group form-type-textfield form-item-keys">
+ <div class="controls"> <input class="search-query span2 form-text" placeholder="Search" type="text" id="edit-keys--2" name="keys" value="" size="40" maxlength="255" />
+</div></div>
+<input style="display:none" class="btn btn-primary form-submit" type="submit" id="edit-submit--2" name="op" value="Search" /></div></form>            </div>
+          
+                      <div id="header-sign-up-now">
+              <a class="btn btn-large" href="/about/sign-up?origin=http%3A%2F%2Fapigee.com%2Fdocs%2Fapi%2Fcontent%2Fbuilding-composite-service-2-javascript-app">Sign Up Now</a>
+              <span>Have an account?&nbsp;</span><a class="link" href="/about/sign-in?origin=http%3A%2F%2Fapigee.com%2Fdocs%2Fapi%2Fcontent%2Fbuilding-composite-service-2-javascript-app">Sign In</a>
+            </div>
+                  </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="sub-nav navbar-inner">
+    <div class="container">
+      <div class="row">
+                <div role="banner" id="page-header" class="span18">
+            <div class="secondary-menu-wrapper">
+              <ul id="secondary-menu" class="links inline clearfix"><li class="menu-1350 first"><a href="/docs/enterprise/enterprise_home" title="">Home</a></li>
+<li class="menu-3068"><a href="/docs/enterprise/quickstarts" title="">Quick Starts</a></li>
+<li class="menu-4142"><a href="/docs/api/api-resources" title="">API Reference</a></li>
+<li class="menu-3069"><a href="/docs/enterprise/index" title="">How Tos</a></li>
+<li class="menu-3070 last"><a href="/docs/content/console">Console</a></li>
+</ul>            </div>
+        </div>
+        
+              </div>
+    </div>
+  </div>
+  </header>
+
+
+
+			 -->
             <div id="breadcrumb">
 <a href="/api_resources">Platform API Reference</a> > <a href="/api_resources/3-api-products">API Products</a> > Create an API product</div>
 <p>
@@ -71,34 +143,57 @@ text/xml
 
 <div class="span18">
 	<p>
-	Use the POST method to create a new API product. 
-You need to:
-Name the API product
-Bundle Resources by defining resource paths (URIs)
-Define the service plan settings for quota (permitted requests per day/month) and/or spike arrest (permitted requests per second/minute).  
-The service plan defines how much your developers can consume over time. 
-At runtime, these variables are read by the Rate Limiting Policy applied to an API or Resource. Rate Limiting Variabes are set as API Product attributes:
-developer.quota.limit - integer
-developer.quota.interval - integer
-developer.quota.timeunit second/minute/hour/day/month)
+	<p>Use the POST method to create a new API product in an organization.</p>
 
-You can also use attributes to set any arbitrary metadata that you need for monitoring or analytics.
+<p>An API product is a list of API resources (URIs) with associated quota settings and metadata. The goal of API resources is to enable the definition of API 'bundles' that are selected by app developers at design time. API product settings are enforced on the API Platform at runtime by policies: Authorization (API Key, OAuth 1.0a, OAuth 2.0) and Quota. Client apps present credentials (API keys, OAuth tokens) approved for API products. The association of app keys with API products is a primary method of access control on the Apigee API Platform.</p>
+
+<p>Defining API resources:</p>
+<p>An API resource is a URI that equates to the predefined variable <code>proxy.pathsuffix</code>. In other words, an API resource is a URI that occurs in the request path following the base path defined in the ProxyEndpoint configuration.</p>
+For example, if a ProxyEndpoint in the environment 'test' in the organization 'apifactory' is configured with a base path <code>/weather</code>, then an API resource is any URI path that occurs after:  <code>apifactory-test.apigee.net/weather</code>. For example, in the request path <code>apifactory-test.apigee.net/weather/forecasts</code>, <code>/forecasts</code> is an API resource.
+
+<p>API resources can be defined explicitly as URI fragments (for example, <code>/forecasts</code>, <code>/reports</code>, <code>/blogs</code>, <code>/articles</code>), or they can be defined using wildcards:</p>
+<ul><li><code>/*</code>:  Defines a single URI level as wild card. For example, <code>/forecast/*</code> defines <code>/forecast/toronto</code> and <code>/forecasts/newyork</code> as valid URIs. This is often used to support IDs, for example, <code>/reports/*/forecasts</code> defines the following as valid URIs: <code>/reports/toronto/forecasts</code> and /reports/newyork/forecasts</code>.</li>
+<li><code>/**</code>: Defines all levels as wild cards. For example, <code>/reports/**</code> defines <code>/reports/toronto/forecasts</code> and <code>/reports/newyork/forecasts</code> as valid URIs.</li></ul>
+
+
+Quota variables can be set as API Product attributes or as elements:
+<p>As attributes:</p>
+<ul><li>developer.quota.limit</li>
+<li>developer.quota.interval </li>
+<li>developer.quota.timeunit (Supported values are second/minute/hour/day/month)</li></ul>
+<p>As elements:</p>
+<ul><li>quota.limit</li>
+<li>quota.interval</li>
+<li>quota.timeunit (Supported values are second/minute/hour/day/month)</li></ul>
+
+<p>To further limit access to the URIs defined in an API proxy, you can optionally define:
+<ul><li>scopes: A comma-separated list of named scopes, which are validated at runtime against a list of scopes presented in the access token associated with an incoming request. A scope mismatch between API product configuration and access token contents results in an authorization failure.</li>
+<li>proxies: A comma-separated list of API proxies, the names of which derive from APIs listed in an organization. If proxies are specified, request made to the list API resource via API proxies other than those listed result in authorization failures. This feature is used to prevent URIs from being accidentally exposed by other API proxies in an organization.</li>
+<li>environments: A comma-separated list of environments. If environments are specified, requests made to API resources via API proxies deployed in environments other than those specified result in authorization failures. This feature is used to prevent access to production resources via APIs deployed test, for example.</li></ul>
+
+
+<p>Attributes can be used to set any arbitrary metadata that you need for monitoring or analytics.</p>
 	</p>
 
 	<b>Sample Request:</b>
 	<pre>$ curl -H &quot;Content-Type:application/json&quot; -X POST -d \
-   '{&quot;apiResources&quot;: [ &quot;/weather&quot; ], 
-     &quot;approvalType&quot;: &quot;auto&quot;, 
-     &quot;attributes&quot;:
-      [{&quot;name&quot;: &quot;description&quot;, &quot;value&quot;: &quot;Introductory API Product&quot;},
-       {&quot;name&quot;: &quot;developer.quota.interval&quot;,&quot;value&quot;: &quot;1&quot;},
-       {&quot;name&quot;: &quot;developer.quota.limit&quot;,&quot;value&quot;: &quot;1000&quot;},
-       {&quot;name&quot;: &quot;developer.quota.timeunit&quot;,&quot;value&quot;: &quot;month&quot;},
-       {&quot;name&quot;: &quot;servicePlan&quot;, &quot;value&quot;: &quot;Introductory&quot;}],
-     &quot;description&quot;: &quot;Free API Product&quot;,
-     &quot;displayName&quot;: &quot;Free API Product&quot;,
-     &quot;name&quot;: &quot;weather_free&quot;,
-     &quot;scopes&quot;: []}' \
+ '{
+  "approvalType" : "auto",
+  "attributes" : [ {
+    "name" : "division",
+    "value" : "accounting"
+  } ],
+  "displayName" : "Sandbox Silver",
+  "name" : "sandbox",
+  "apiResources" : [ "/v2/**", "/v1/receiveSMS", "/v3/*/send" ],
+  "description" : "Provides rate limited access to sandbox account APIs",
+  "scopes": ["read", "write"],
+  "environments": [ "test" ],
+  "proxies": [ "MyAPI" ],
+  "quota": "10",
+  "quotaInterval": "2",
+  "quotaTimeUnit": "hour"
+}'  \
 -u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/apiproducts</pre>
 	<b>Request Payload Elements:</b> 
 	<table class="table table-bordered">
@@ -123,7 +218,7 @@ You can also use attributes to set any arbitrary metadata that you need for moni
 <tr>
 <div class="request_element" id="request_element_2">
 <td>attributes</td>
-<td>Arbitrary name/value pairs, most commonly used to store variables that define Rate Limit (Quota or Spike Arrest) settings for an API Product (otherwise known as a Service Plan)</td>
+<td>Arbitrary name/value pairs</td>
 <td>N/A</td>
 <td>No</td>
 <!-- <td><a href="/request_elements/2" class="btn btn-mini">Detail</a></td> -->
@@ -151,6 +246,16 @@ You can also use attributes to set any arbitrary metadata that you need for moni
 
 
 <tr>
+<div class="request_element" id="request_element_5">
+<td>apiResources</td>
+<td>A comma separated list of API resources to be bundled in the API Product. </td>
+<td>N/A</td>
+<td>Yes</td>
+<!-- <td><a href="/request_elements/5" class="btn btn-mini">Detail</a></td> -->
+</div></tr>
+
+
+<tr>
 <div class="request_element" id="request_element_6">
 <td>scopes</td>
 <td>A comma separated list of scopes. These must map to the scopes defined in an Oauth policy associated with the API Product. Any scope mismatch between an Acces Token presented and the API Product results in auth failure.</td>
@@ -161,12 +266,52 @@ You can also use attributes to set any arbitrary metadata that you need for moni
 
 
 <tr>
-<div class="request_element" id="request_element_5">
-<td>apiResources</td>
-<td>A comma separated list of API resources to be bundled in the API Product. </td>
+<div class="request_element" id="request_element_88">
+<td>environments</td>
+<td>A comma-separated list of environment name in an organization. Requests to environments not listed are rejected.</td>
+<td>N/A</td>
+<td>No</td>
+<!-- <td><a href="/request_elements/88" class="btn btn-mini">Detail</a></td> -->
+</div></tr>
+
+
+<tr>
+<div class="request_element" id="request_element_89">
+<td>proxies</td>
+<td>A comma-separated list of API proxy names in an organization. Requests to API proxies not listed are rejected.</td>
+<td>N/A</td>
+<td>No</td>
+<!-- <td><a href="/request_elements/89" class="btn btn-mini">Detail</a></td> -->
+</div></tr>
+
+
+<tr>
+<div class="request_element" id="request_element_90">
+<td>quota</td>
+<td>The number of request messages permitted by this API product.</td>
 <td>N/A</td>
 <td>Yes</td>
-<!-- <td><a href="/request_elements/5" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/request_elements/90" class="btn btn-mini">Detail</a></td> -->
+</div></tr>
+
+
+<tr>
+<div class="request_element" id="request_element_91">
+<td>quotaInterval</td>
+<td>The time interval over which the number of request messages is calculated.</td>
+<td>N/A</td>
+<td>Yes</td>
+<!-- <td><a href="/request_elements/91" class="btn btn-mini">Detail</a></td> -->
+</div></tr>
+
+
+<tr>
+<div class="request_element" id="request_element_92">
+<td>quotaTimeUnit</td>
+<td>The time unit defined for the quotaInterval</td>
+<td>N/A</td>
+<td>Yes</td>
+<!-- <td><a href="/request_elements/92" class="btn btn-mini">Detail</a></td> -->
 </div></tr>
 
 
@@ -176,32 +321,25 @@ You can also use attributes to set any arbitrary metadata that you need for moni
 
 <b>Sample Response:</b> 
 	<pre>{
-  "apiResources" : [ "/weather" ],
+  "apiResources" : [ "/v2/**", "/v1/receiveSMS", "/v3/*/send" ],
   "approvalType" : "auto",
   "attributes" : [ {
-    "name" : "description",
-    "value" : "Introductory API Product"
-  }, {
-    "name" : "developer.quota.interval",
-    "value" : "1"
-  }, {
-    "name" : "developer.quota.limit",
-    "value" : "1000"
-  }, {
-    "name" : "developer.quota.timeunit",
-    "value" : "month"
-  }, {
-    "name" : "servicePlan",
-    "value" : "Introductory"
+    "name" : "division",
+    "value" : "accounting"
   } ],
-  "createdAt" : 1353356675793,
-  "createdBy" : "rsaha@apigee.com",
-  "description" : "Free API Product",
-  "displayName" : "Free API Product",
-  "lastModifiedAt" : 1353356675793,
+  "createdAt" : 1360001831329,
+  "createdBy" : "admin@apigee.com",
+  "description" : "Provides rate limited access to sandbox account APIs",
+  "displayName" : "Sandbox Silver",
+  "environments" : [ "test" ],
+  "lastModifiedAt" : 1360001831329,
   "lastModifiedBy" : "admin@apigee.com",
-  "name" : "weather_free",
-  "scopes" : [ ]
+  "name" : "sandbox",
+  "proxies" : [ "MyAPI" ],
+  "quota" : "10",
+  "quotaInterval" : "2",
+  "quotaTimeUnit" : "hour",
+  "scopes" : [ "read", "write" ]
 }</pre>
 
 	<b>Response Payload Elements:</b>
@@ -227,7 +365,7 @@ You can also use attributes to set any arbitrary metadata that you need for moni
 </div></tr><tr>
 <div class="response_element" id="response_element_206">
 <td>attributes </td>
-<td>Arbitrary name/value pairs, most commonly used to store variables that define Rate Limit (Quota or Spike Arrest) settings for an API Product (otherwise known as a Service Plan)</td>
+<td>Arbitrary name/value pairs</td>
 <!-- <td><a href="/response_elements/206" class="btn btn-mini">Detail</a></td> -->
 <!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
@@ -238,54 +376,103 @@ You can also use attributes to set any arbitrary metadata that you need for moni
 <!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_208">
-<td>displayName </td>
-<td>The display name of the API Product, used in Apps that display the API Product to Developers</td>
+<td>createdby </td>
+<td>username of the user who created the API Product</td>
 <!-- <td><a href="/response_elements/208" class="btn btn-mini">Detail</a></td> -->
 <!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_209">
-<td>lastModifiedAt </td>
-<td>UNIX time when the API Product was most recently updated</td>
+<td>displayName  </td>
+<td>The display name of the API Product, used in Apps that display the API Product to Developers Apigee </td>
 <!-- <td><a href="/response_elements/209" class="btn btn-mini">Detail</a></td> -->
 <!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_210">
-<td>lastModifiedBy </td>
-<td>Apigee username of the user who most recently updated the API Product</td>
+<td>lastModifiedAt  </td>
+<td>UNIX time when the API Product was most recently updated </td>
 <!-- <td><a href="/response_elements/210" class="btn btn-mini">Detail</a></td> -->
 <!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_211">
-<td>name </td>
-<td>The internal name of the API Product</td>
+<td>lastModifiedBy  </td>
+<td>Apigee username of the user who most recently updated the API Product </td>
 <!-- <td><a href="/response_elements/211" class="btn btn-mini">Detail</a></td> -->
 <!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_212">
-<td>createdby </td>
-<td>Apigee username of the user who created the API Product</td>
+<td>name  </td>
+<td>The internal name of the API Product</td>
 <!-- <td><a href="/response_elements/212" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_705">
+<td>environments </td>
+<td>A comma-separated list of environment name in an organization. Requests to environments not listed are rejected.</td>
+<!-- <td><a href="/response_elements/705" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_706">
+<td>proxies </td>
+<td>A comma-separated list of API proxy names in an organization. Requests to API proxies not listed are rejected.</td>
+<!-- <td><a href="/response_elements/706" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_707">
+<td>quota </td>
+<td>The number of request messages permitted by this API product.</td>
+<!-- <td><a href="/response_elements/707" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_708">
+<td>quotaInterval </td>
+<td>The time interval over which the number of request messages is calculated.</td>
+<!-- <td><a href="/response_elements/708" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_709">
+<td>quotaTimeUnit </td>
+<td>The time unit defined for the quotaInterval</td>
+<!-- <td><a href="/response_elements/709" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_710">
+<td>scopes </td>
+<td>A comma separated list of scopes. These must map to the scopes defined in an Oauth policy associated with the API Product. Any scope mismatch between an Acces Token presented and the API product results in authorization failure.</td>
+<!-- <td><a href="/response_elements/710" class="btn btn-mini">Detail</a></td> -->
 <!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 
-
+	<b>Errors</b> 
+		<pre>Failure 5xx with proper error message
+{
+   &quot;Error&quot;:{
+      &quot;Code&quot;:&quot;keymanagement.service.apiproduct_invalid_name&quot;,
+      &quot;Message&quot;:&quot;Invalid ApiProduct Name&quot;,
+      &quot;Contexts&quot;:&quot;&quot;
+   }
+}</pre>
+	
+	<b>Last updated:</b>
+	14 days ago
+	</p>
 
 </div>
+
+
 
 
             </div>
         </div><!--/row-->
       </div><!--/content-->
 
-       <!-- <footer>
-        <p>&copy; Apigee, Inc. 2012</p>
-      </footer>  -->
+		<footer>
+        	<p>&copy; Apigee, Inc. 2012</p>
+      	</footer> 
 
     </div> <!-- /container -->
 
-    <!-- Placed at the end of the document so the pages load faster -->
-     <script src="/assets/application-3acbc888ea1a902e92db3f484dfc60e4.js" type="text/javascript"></script> 
+
 
   </body>
 </html>
