@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="thRiABTiVJIJRq2vdioTvlq074mU7PwZtuj8ne3kMwo=" name="csrf-token" />
+<meta content="DJw4t3TMNwe2s9c2LHwI+GiZPAE5eMU+bmuG8zJIFtk=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -38,66 +38,7 @@
       <div class="content">
         <div class="row">
            <div class="span12">
-			<div id="user_bar"  style="float: right;">
-    <a href="/login"><span class="translation_missing" title="translation missing: en.sessions.login">Login</span></a>
-</div>
 
-<!-- <body class="html not-front not-logged-in one-sidebar sidebar-second page-node page-node- page-node-3975 node-type-quick-start" >
-    <a name="top"></a>
-<header id="navbar" role="banner" class="navbar navbar-fixed-top">
-  <div class="main-nav navbar-inner">
-    <div class="container">
-      <div class="row">
-        <div class="nav-collapse">
-          <div class="span3 pull-left">
-                          <a class="brand" href="//apigee.com" title="Home">
-                <img src="http://apigee.com/docs/sites/all/themes/apigee_docs/logo.png" alt="Home" />
-              </a>
-                      </div>
-
-                        <ul id="main-menu" class="nav"><li class="menu-2564 active-trail first"><a href="/docs/enterprise/enterprise_home" title="" class="active-trail">API Platform</a></li>
-<li class="menu-2563"><a href="/docs/app_services" title="">App Services</a></li>
-<li class="menu-795"><a href="/docs/consoletogo/" title="Enterprise API Console">Console To-Go</a></li>
-<li class="menu-811 last"><a href="/docs/content/support" title="Submit support request">Support</a></li>
-</ul>          
-                      <div class="span4 pull-right searchy">
-              <form class="search-form navbar-search pull-right" action="/docs/search/site" method="post" id="search-form--2" accept-charset="UTF-8"><div><input type="hidden" name="form_build_id" value="form-e5wjYxNMonKZYhQe7hWe3ZHnxrTaC3wcKrZlxkDry1c" />
-<input type="hidden" name="form_id" value="search_form" />
-<div class="control-group form-type-textfield form-item-keys">
- <div class="controls"> <input class="search-query span2 form-text" placeholder="Search" type="text" id="edit-keys--2" name="keys" value="" size="40" maxlength="255" />
-</div></div>
-<input style="display:none" class="btn btn-primary form-submit" type="submit" id="edit-submit--2" name="op" value="Search" /></div></form>            </div>
-          
-                      <div id="header-sign-up-now">
-              <a class="btn btn-large" href="/about/sign-up?origin=http%3A%2F%2Fapigee.com%2Fdocs%2Fapi%2Fcontent%2Fbuilding-composite-service-2-javascript-app">Sign Up Now</a>
-              <span>Have an account?&nbsp;</span><a class="link" href="/about/sign-in?origin=http%3A%2F%2Fapigee.com%2Fdocs%2Fapi%2Fcontent%2Fbuilding-composite-service-2-javascript-app">Sign In</a>
-            </div>
-                  </div>
-      </div>
-    </div>
-  </div>
-
-    <div class="sub-nav navbar-inner">
-    <div class="container">
-      <div class="row">
-                <div role="banner" id="page-header" class="span18">
-            <div class="secondary-menu-wrapper">
-              <ul id="secondary-menu" class="links inline clearfix"><li class="menu-1350 first"><a href="/docs/enterprise/enterprise_home" title="">Home</a></li>
-<li class="menu-3068"><a href="/docs/enterprise/quickstarts" title="">Quick Starts</a></li>
-<li class="menu-4142"><a href="/docs/api/api-resources" title="">API Reference</a></li>
-<li class="menu-3069"><a href="/docs/enterprise/index" title="">How Tos</a></li>
-<li class="menu-3070 last"><a href="/docs/content/console">Console</a></li>
-</ul>            </div>
-        </div>
-        
-              </div>
-    </div>
-  </div>
-  </header>
-
-
-
-			 -->
             <div id="breadcrumb">
 <a href="/api_resources">Platform API Reference</a> > <a href="/api_resources/21-company-app-keys">Company App Keys</a> > Update existing app key with new API product(s).</div>
 <p>
@@ -105,11 +46,9 @@
 </p>
 
 <div class="row">
-	<div class="span6" style="width:340px;"><p>
-		<b>API Platform Base Path:</b>
-		<p>https://api.enterprise.apigee.com/v1/o/{org_name}</p>
-		<b>API Resource Path:</b>
-		<p>/companies/{company_name}/apps/{app_ame}/keys/{consumer key}</p>
+	<div class="span6" style="width:340px;">
+		<p><b>API Platform Base Path:</b> https://api.enterprise.apigee.com/v1/o/{org_name}</p>
+		<p><b>API Resource Path:</b> /companies/{company_name}/apps/{app_ame}/keys/{consumer key}</p>
 		<p>
 		Update existing company app key with additional API product(s).
 		</p>
@@ -247,7 +186,7 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/companies/{company_name}/apps/
 }</pre>
 	
 	<b>Last updated:</b>
-	4 days ago
+	5 days ago
 	</p>
 
 </div>
@@ -259,9 +198,9 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/companies/{company_name}/apps/
         </div><!--/row-->
       </div><!--/content-->
 
-		<footer>
+		<!-- <footer>
         	<p>&copy; Apigee, Inc. 2012</p>
-      	</footer> 
+      	</footer>  -->
 
     </div> <!-- /container -->
 

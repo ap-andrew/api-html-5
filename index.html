@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="eUgM+eIpqa8AFvJXGBGgnRE4P1UB0nBPzgTyRtd06rw=" name="csrf-token" />
+<meta content="DJw4t3TMNwe2s9c2LHwI+GiZPAE5eMU+bmuG8zJIFtk=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -33,90 +33,1738 @@
 	</script>
   </head>
 
-
   <body>
-    <!-- Placed at the end of the document so the pages load faster -->
-
-
-
     <div class="container">
       <div class="content">
         <div class="row">
            <div class="span12">
-			<!-- <div>
-</div> -->
-            <div class="btn-group">
-  <a class="btn btn-primary btn-large dropdown-toggle" data-toggle="dropdown" href="#">
-    Apigee APIs
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu">
-	     <li><a href="/categories/3-api-analytics">API Analytics</a></li>
-	     <li><a href="/categories/4-api-configuration-and-management">API Configuration and Management</a></li>
-	     <li><a href="/categories/5-developer-and-app-administration">Developer and App Administration</a></li>
-	     <li><a href="/categories/6-oauth">Oauth</a></li>
-	     <li><a href="/categories/8-appendix">Appendix</a></li>
-	     <li><a href="/categories/9-administration">Administration</a></li>
-	     <li><a href="/categories/10-company-app-families">Company App Families</a></li>
-	     <li><a href="/categories/11-app-services">App Services</a></li>
-	     <li><a href="/categories/12-app-service-management">App Service Management</a></li>
- </ul>
+
+            
+<div id="breadcrumb">
+Platform API Reference
 </div>
+<h3>API Platform Base Path: <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></h3>
+<p>
+<table border="0" class="table" style="width: 690px;" width="690">
+
+<tbody>
+	<tr><td  colspan="4"><h2 class="lead">Analytics</h2></td><td><a href="/api_resources/34-analytics" class="btn btn-mini">Resource Detail</a></td></tr>
+	<tr><td  colspan="5"><span class='best_in_place' id='best_in_place_api_resource_34_description' data-url='/api_resources/34-analytics' data-object='api_resource' data-attribute='description' data-type='input'>Analytics reports based on runtime metrics collected by the API Platform that measure API consumption and performance</span></td></tr>
+	<tr><td  colspan="5">Resource path: <code>/environments/{env_name}/stats</code></td></tr>
+	<tr bgcolor="#EDEDED" class="resource_table">
+		<td><b>URI</b></td>
+		<td><b>Verb</b></td>
+		<td><b>Content Types</b></td>
+		<td colspan="2"><b>Action</b></td>
+	</tr> 
+	<tr>
+					<td><pre>/environments/{environment_name}/stats/{dimension_name}</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td>
+					  	
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+						</td>
+				    <td>Get an analytics report for a dimension</td>  
+				    <td><a href="/api_methods/71-get-an-analytics-report-for-a-dimension" class="btn btn-mini">Detail</a></td>
+	 </tr>
+</tbody>
 
 
-<h1>Apigee API Platform API Overview</h1>
+<tbody>
+	<tr><td  colspan="4"><h2 class="lead">API Products</h2></td><td><a href="/api_resources/3-api-products" class="btn btn-mini">Resource Detail</a></td></tr>
+	<tr><td  colspan="5"><span class='best_in_place' id='best_in_place_api_resource_3_description' data-url='/api_resources/3-api-products' data-object='api_resource' data-attribute='description' data-type='input'>Bundled URIs combined with rate limit settings and developer-defined metadata that enable OAuth-based runtime authorization to API resources</span></td></tr>
+	<tr><td  colspan="5">Resource path: <code>/apiproducts</code></td></tr>
+	<tr bgcolor="#EDEDED" class="resource_table">
+		<td><b>URI</b></td>
+		<td><b>Verb</b></td>
+		<td><b>Content Types</b></td>
+		<td colspan="2"><b>Action</b></td>
+	</tr> 
+	<tr>
+					<td><pre>/apiproducts</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td>
+					  	
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+						</td>
+				    <td>Create an API product</td>  
+				    <td><a href="/api_methods/16-create-an-api-product" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/apiproducts/{apiproduct_name}</pre></td>  
+				    <td><span class="verb-DELETE">
+					DELETE</span></td>
+					<td></td>
+				    <td>Delete an API product</td>  
+				    <td><a href="/api_methods/13-delete-an-api-product" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/apiproducts/{apiproduct_name}</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get an API product</td>  
+				    <td><a href="/api_methods/86-get-an-api-product" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/apiproducts/{apiproductName}?query=count&amp;entity={entity_name}</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get count of keys, apps, developers, or companies for an API product</td>  
+				    <td><a href="/api_methods/10-get-count-of-keys-apps-developers-or-companies-for-an-api-product" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/apiproducts/{apiproduct_name}?query=list&amp;entity={entity_name}</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get list of keys, apps, developers, or companies for an API product</td>  
+				    <td><a href="/api_methods/11-get-list-of-keys-apps-developers-or-companies-for-an-api-product" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/apiproducts</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td>
+					  	
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+						</td>
+				    <td>List API Products</td>  
+				    <td><a href="/api_methods/4-list-api-products" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/apiproducts</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td>
+					  	
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+						</td>
+				    <td>Search API Products</td>  
+				    <td><a href="/api_methods/202-search-api-products" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/apiproducts/{apiproduct_name}</pre></td>  
+				    <td><span class="verb-PUT">
+					PUT</span></td>
+					<td>
+					  	
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+						</td>
+				    <td>Update API Product</td>  
+				    <td><a href="/api_methods/12-update-api-product" class="btn btn-mini">Detail</a></td>
+	 </tr>
+</tbody>
 
-<p>The Apigee API enables you to create, configure, manage, and administer the RESTful resources exposed by Apigee.</p>
 
-<p>You can usually perform the same action in the UI as via the API. The API eneables you do some things a bit differently and more flexibly than the UI does, since the API is not constrained by the same UX needs as a human interface. </p>
-	
-<p>It is important to be aware that you can do some things using the API that are not supported by the UI. Some changes you make via the API may not be reflected in the Apigee UI.</p>
-<p>In the long run, you will probably find that some mix of working in the UI and working via the API is most effective for you. The benefit of Apigee is that you can define and implement the workflow that suits your needs the best.</p>
-<h2><a class="jumplink" name="Prerequisites"></a>Prerequisites</h2>
-<p>The Apigee API is available over the Internet—any HTTP client is supported.</p>
-<p>All you require is a user account within an Apigee organization. This provides the Basic Auth (username:password) credentials that you pass with each API call for authentication.</p>
-<p>If you do not have an account, you can sign up for the trial here: http://enterprise.apigee.com/trial</p>
-<h2><a class="jumplink" name="Entities"></a>The Apigee API Model</h2>
-<p>You can begin familiarizing yourself by using the <strong><a href="http://apigee.com/docs/content/console">Apigee API Console</a></strong>.</p>
-<p>The following diagram displays the entity relationships in the Apigee API.</p>
-<p><img src="https://lh5.googleusercontent.com/1ORuUNj95qr6S-qGv6GCMrMSq8i72Fal-6jt4E6x1fEMsb5iUPmEa16kIh5HimAbE4_p13RaE_aCa_vecH-3hqOUebnpGaIsqc4ZPfsgUSPo1WkH3mo" style="width: 550px; height: 409px; font-size: 13px;"></p>
-<ul>
-	<li><strong>Organization:</strong> Every Apigee account maps into an "organization." Assuming you're an administrator, you can add and remove users to and from your organization. If you are not an administrator, you are a user within your organization. This gives you the ability to log in to the Apigee  UI for your organization. It also enables you to consume the Apigee API to access capabilities within your account. This is why you have to specify the organization in each API request you make.</li>
-	<li><strong>Company:</strong> An optional container for developers. Use the Company entity when you need to group developers under a single entity. This option used when you require billing information for a corporate entity which may or may not be managed by the developers who are building apps.</li>
-	<li><strong>Developer:</strong> A developer is a person who builds apps that consume the APIs managed in your organization. You can add, update, or remove developers within your organization. You can also group developers using "company" entities. Developers can be internal to your organization, they might be partners, or they can be external.</li>
-	<li><strong>App:</strong> A client application (e.g., an iOS or Android app) that is built by a developer and which consumes your API products.</li>
-	<li><strong>App family:</strong> An arbitrary grouping of apps. This is often used to enable the creation of an app family that contains two children: a sandbox instance of the app, and a production instance of the app. (Note: Apigee makes no assumptions about how you structure "Sandbox" and "Live" instances.)</li>
-	<li><strong>API product:</strong> A bundle of <em>resources</em> with an optional associated <strong>service plan</strong> and an <strong>OAuth scope</strong>. (We use "resource" to follow the WADL example—another common term is "methods.") API products form the basis of access control with Apigee. They enable you to bundle your API resources into packages that are consumed by developers. You can have one API, and multiple API Products configured on top of it, such as a "Free Introductory API&nbsp;&nbsp;Product"&nbsp;and a "Premium API Product", for example.</li>
-	<li><strong>Environment:</strong> Every organization (including yours) is provisioned with two environments, one <span style="font-family: courier new,courier,monospace;">test</span> and one <span style="font-family: courier new,courier,monospace;">prod</span>. The naming is arbitrary—you can use these environments however you wish, and Apigee makes no assumptions about your SDLC requirements. You can deploy an API proxy to either environment. Typically you configure your API in the test environment, trace API calls and refine the API, and then deploy it to the prod environment for public consumption. (Note that the two environments have different URLs, which are defined as "virtualhosts."</li>
-	<li><strong>Virtual host:</strong> The hosts which define the base URL for the APIs managed by Apigee. Every organization has one or more virtual hosts per environment. Usually, for each environment, you have one virtual host running on port 80 and another on port 443 to support SSL. To modify your virtual hosts, contact Apigee support.</li>
-	<li><strong>Key:</strong> Sometimes called a <em>consumer key</em> or an <em>API key</em>, this key is presented to Apigee at runtime by an app. The key is used to determine whether the app is allowed to access a particular resource. Note that keys belong to apps and have associated API products. Depending on how you configure your API product, keys can be approved manually or automatically.</li>
-	<li><strong>Access token:</strong> An OAuth construct addressed in the Apigee OAuth documentation.</li>
-	<li><strong>Authorization code: </strong>An OAuth construct addressed in the Apigee OAuth documentation.</li>
-</ul>
-<h2><a class="jumplink" name="Apps"></a>What kinds of apps can I write against the Apigee API?</h2>
-<p>There are a few basic types of apps that you can build against the Apigee API:</p>
-<ul>
-	<li><strong>API provisioning and management:</strong> Import, deploy, configure, and manage API proxies to Apigee.</li>
-	<li><strong>Developer provisioning and management:</strong> Add developers and manage their profiles within your organization.</li>
-	<li><strong>App provisioning and management:</strong> Add apps, and control and monitor their access to your APIs.</li>
-	<li><strong>Analytics and Insights:</strong> Monitor and analyze how your APIs are being consumed.</li>
-	<li><strong>Apigee Account Provisioning:</strong> You can integrate Apigee with your enterprise provisioning systems. APIs are available for adding, deleting, and managing users within your Apigee organization.</li>
-	<li><strong>Developer Portal Apps:</strong> Managing the front-end for your developer program by building apps that register developers, and that enable those developers to register their apps, obtain API keys, and get Analytics.</li>
-	<li><strong>Software Development Lifecycle Apps:</strong> The core of the Apigee system are APIs which are managed by a proxy "facade." These proxies provide pipeline processing of the messages that flow to and from your APIs. API proxies are bundles of configurations and (sometimes scripts and code) and thus require a development process. The API enables you to implement apps or scripts that implement the SLDC best suited to your organization.</li>
-</ul>
-<h2><a class="jumplink" name="Tools"></a>Tools</h2>
-<p>All you need to use the API is an account within the organization set up on Apigee .</p>
-<p>The only tool you require is an HTTP client. For the purposes of this document, we rely on cURL, a command-line HTTP client. Feel free to use any HTTP client you prefer. Or simply use the Apigee console.</p>
-<p>cURL is available here: <a href="http://curl.haxx.se/">http://curl.haxx.se/</a></p>
-<p>Apigee also provides an optional deployment script (written in Python) to assist in&nbsp;importing and deploying APIs.</p>
+<tbody>
+	<tr><td  colspan="4"><h2 class="lead">APIs</h2></td><td><a href="/api_resources/1-apis" class="btn btn-mini">Resource Detail</a></td></tr>
+	<tr><td  colspan="5"><span class='best_in_place' id='best_in_place_api_resource_1_description' data-url='/api_resources/1-apis' data-object='api_resource' data-attribute='description' data-type='input'>API facades that act as managed proxies for backend services</span></td></tr>
+	<tr><td  colspan="5">Resource path: <code>/apis</code></td></tr>
+	<tr bgcolor="#EDEDED" class="resource_table">
+		<td><b>URI</b></td>
+		<td><b>Verb</b></td>
+		<td><b>Content Types</b></td>
+		<td colspan="2"><b>Action</b></td>
+	</tr> 
+	<tr>
+					<td><pre>/apis</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td>
+					  	
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+						</td>
+				    <td>Create an API</td>  
+				    <td><a href="/api_methods/15-create-an-api" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/apis/{api_name}</pre></td>  
+				    <td><span class="verb-DELETE">
+					DELETE</span></td>
+					<td></td>
+				    <td>Delete an API</td>  
+				    <td><a href="/api_methods/3-delete-an-api" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/apis/{api_name}/revision/{revision_number}</pre></td>  
+				    <td><span class="verb-DELETE">
+					DELETE</span></td>
+					<td></td>
+				    <td>Delete an API Revision</td>  
+				    <td><a href="/api_methods/27-delete-an-api-revision" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/apis/{api_name}/revisions/{revision_number}/deployments?action=deploy&amp;env={environment_name}&amp;basepath={/basepath}</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td></td>
+				    <td>Deploy an API to an Environment</td>  
+				    <td><a href="/api_methods/25-deploy-an-api-to-an-environment" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/apis/{api_name}/revisions{revision_number}?format=bundle</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Export an API</td>  
+				    <td><a href="/api_methods/105-export-an-api" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/apis/{api_name}</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get an API</td>  
+				    <td><a href="/api_methods/104-get-an-api" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/apis?action=import&amp;name={api_name}</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td></td>
+				    <td>Import an API</td>  
+				    <td><a href="/api_methods/24-import-an-api" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/apis</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>List APIs</td>  
+				    <td><a href="/api_methods/1-list-apis" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/apis/{api_name}/deployments?action=undeploy&amp;env={environment_name}&amp;revision={revision_number}</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td></td>
+				    <td>Undeploy an API from an Environment</td>  
+				    <td><a href="/api_methods/26-undeploy-an-api-from-an-environment" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/apis/{api_name}</pre></td>  
+				    <td><span class="verb-PUT">
+					PUT</span></td>
+					<td>
+					  	
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+						</td>
+				    <td>Update an API</td>  
+				    <td><a href="/api_methods/2-update-an-api" class="btn btn-mini">Detail</a></td>
+	 </tr>
+</tbody>
+
+
+<tbody>
+	<tr><td  colspan="4"><h2 class="lead">App Families</h2></td><td><a href="/api_resources/29-app-families" class="btn btn-mini">Resource Detail</a></td></tr>
+	<tr><td  colspan="5"><span class='best_in_place' id='best_in_place_api_resource_29_description' data-url='/api_resources/29-app-families' data-object='api_resource' data-attribute='description' data-type='input'>App collections, associated with individual developers, that enable aggregate management of app instances.</span></td></tr>
+	<tr><td  colspan="5">Resource path: <code>/developers/{developer_email}/appfamilies</code></td></tr>
+	<tr bgcolor="#EDEDED" class="resource_table">
+		<td><b>URI</b></td>
+		<td><b>Verb</b></td>
+		<td><b>Content Types</b></td>
+		<td colspan="2"><b>Action</b></td>
+	</tr> 
+	<tr>
+					<td><pre>/developers/{developer_email}/appfamilies</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td></td>
+				    <td>Create an app family</td>  
+				    <td><a href="/api_methods/125-create-an-app-family" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/developers/{developer_email}/appfamilies/{app_family}</pre></td>  
+				    <td><span class="verb-DELETE">
+					DELETE</span></td>
+					<td></td>
+				    <td>Delete an app family</td>  
+				    <td><a href="/api_methods/129-delete-an-app-family" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/developers/{developer_email}/appfamilies/{app_family}</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get an app family</td>  
+				    <td><a href="/api_methods/126-get-an-app-family" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/developers/{developer_ email}/app_families</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>List all app families in an organization</td>  
+				    <td><a href="/api_methods/130-list-all-app-families-in-an-organization" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/developers/{developer_email}/app_families?expand=true</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>List app families (detailed view)</td>  
+				    <td><a href="/api_methods/131-list-app-families-detailed-view" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/developers/{developer_email}/appfamilies/{app_family}/app/{app_name}</pre></td>  
+				    <td><span class="verb-DELETE">
+					DELETE</span></td>
+					<td></td>
+				    <td>Remove an app from an app family</td>  
+				    <td><a href="/api_methods/128-remove-an-app-from-an-app-family" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/developers/{developer_email}/appfamilies/{appfamily_name}</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td></td>
+				    <td>Update an app family</td>  
+				    <td><a href="/api_methods/127-update-an-app-family" class="btn btn-mini">Detail</a></td>
+	 </tr>
+</tbody>
+
+
+<tbody>
+	<tr><td  colspan="4"><h2 class="lead">Apps</h2></td><td><a href="/api_resources/30-apps" class="btn btn-mini">Resource Detail</a></td></tr>
+	<tr><td  colspan="5"><span class='best_in_place' id='best_in_place_api_resource_30_description' data-url='/api_resources/30-apps' data-object='api_resource' data-attribute='description' data-type='input'>Client/consumer applications (apps) registered by developers or companies in an organization on the API Platform to consume provider APIs</span></td></tr>
+	<tr><td  colspan="5">Resource path: <code>/apps</code></td></tr>
+	<tr bgcolor="#EDEDED" class="resource_table">
+		<td><b>URI</b></td>
+		<td><b>Verb</b></td>
+		<td><b>Content Types</b></td>
+		<td colspan="2"><b>Action</b></td>
+	</tr> 
+	<tr>
+					<td><pre>/apps/{app_id}</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td>
+					  	
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+						</td>
+				    <td>Get an app profile</td>  
+				    <td><a href="/api_methods/206-get-an-app-profile" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/apps?appfamily={app_family}</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get apps by app family</td>  
+				    <td><a href="/api_methods/136-get-apps-by-app-family" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/apps?status={status}</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get apps by status</td>  
+				    <td><a href="/api_methods/134-get-apps-by-status" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/apps?apptype={app_type}</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get apps by type</td>  
+				    <td><a href="/api_methods/135-get-apps-by-type" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/apps?createdat={created_at}</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>List apps by creation date</td>  
+				    <td><a href="/api_methods/137-list-apps-by-creation-date" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/apps</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>List apps in an organization</td>  
+				    <td><a href="/api_methods/205-list-apps-in-an-organization" class="btn btn-mini">Detail</a></td>
+	 </tr>
+</tbody>
+
+
+<tbody>
+	<tr><td  colspan="4"><h2 class="lead">Apps: Company</h2></td><td><a href="/api_resources/14-apps-company" class="btn btn-mini">Resource Detail</a></td></tr>
+	<tr><td  colspan="5"><span class='best_in_place' id='best_in_place_api_resource_14_description' data-url='/api_resources/14-apps-company' data-object='api_resource' data-attribute='description' data-type='input'>A consumer/client app associated with a company entity.</span></td></tr>
+	<tr><td  colspan="5">Resource path: <code>/companies/{company_name}/apps</code></td></tr>
+	<tr bgcolor="#EDEDED" class="resource_table">
+		<td><b>URI</b></td>
+		<td><b>Verb</b></td>
+		<td><b>Content Types</b></td>
+		<td colspan="2"><b>Action</b></td>
+	</tr> 
+	<tr>
+					<td><pre>/companies/{company_name}/apps</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td></td>
+				    <td>Create app for a company</td>  
+				    <td><a href="/api_methods/98-create-app-for-a-company" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/companies/{company_name}/apps/{app_name}</pre></td>  
+				    <td><span class="verb-DELETE">
+					DELETE</span></td>
+					<td></td>
+				    <td>Delete a company app</td>  
+				    <td><a href="/api_methods/67-delete-a-company-app" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/companies/{companyName}/apps/{appname}?query=count&amp;entity=apiresources</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get count of API Resources for Company App</td>  
+				    <td><a href="/api_methods/66-get-count-of-api-resources-for-company-app" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/companies/{company_name}/apps</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>List company apps</td>  
+				    <td><a href="/api_methods/68-list-company-apps" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/companies/{company_name}/apps?expand=true</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>List Company Apps (Expanded)</td>  
+				    <td><a href="/api_methods/69-list-company-apps-expanded" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/companies/{company_name}/apps/{app_name}</pre></td>  
+				    <td><span class="verb-PUT">
+					PUT</span></td>
+					<td></td>
+				    <td>Update a Company App</td>  
+				    <td><a href="/api_methods/65-update-a-company-app" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/companies/{company_name}/apps/{app_name}/keys/{consumer_key}</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td>
+					  	
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+						</td>
+				    <td>Update a company app with an additional API product</td>  
+				    <td><a href="/api_methods/132-update-a-company-app-with-an-additional-api-product" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/companies/{company_name}/apps/{app_name}</pre></td>  
+				    <td><span class="verb-PUT">
+					PUT</span></td>
+					<td></td>
+				    <td>Update Company App</td>  
+				    <td><a href="/api_methods/99-update-company-app" class="btn btn-mini">Detail</a></td>
+	 </tr>
+</tbody>
+
+
+<tbody>
+	<tr><td  colspan="4"><h2 class="lead">Apps: Developer</h2></td><td><a href="/api_resources/17-apps-developer" class="btn btn-mini">Resource Detail</a></td></tr>
+	<tr><td  colspan="5"><span class='best_in_place' id='best_in_place_api_resource_17_description' data-url='/api_resources/17-apps-developer' data-object='api_resource' data-attribute='description' data-type='input'>A client/consumer app associated with a developer entity</span></td></tr>
+	<tr><td  colspan="5">Resource path: <code>/developers/{developer_email}/apps</code></td></tr>
+	<tr bgcolor="#EDEDED" class="resource_table">
+		<td><b>URI</b></td>
+		<td><b>Verb</b></td>
+		<td><b>Content Types</b></td>
+		<td colspan="2"><b>Action</b></td>
+	</tr> 
+	<tr>
+					<td><pre>/developers/{developer_email}/apps/{app_name}</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Approve a developer app</td>  
+				    <td><a href="/api_methods/88-approve-a-developer-app" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/developers/{developer_email}/apps</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td></td>
+				    <td>Create a Developer App</td>  
+				    <td><a href="/api_methods/14-create-a-developer-app" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/developers/{developer_email}/apps/{app_name}</pre></td>  
+				    <td><span class="verb-DELETE">
+					DELETE</span></td>
+					<td></td>
+				    <td>Delete a Developer App</td>  
+				    <td><a href="/api_methods/31-delete-a-developer-app" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/developers/{developer_email}/apps/{app_name}</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get a Developer App</td>  
+				    <td><a href="/api_methods/87-get-a-developer-app" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/developers/{developer_email}/apps/{app_name}?&amp;quot;query=count&amp;entity={entity_name}&amp;quot;</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Gets the count of API resources  defined in API products approved for a developer app in an organization</td>  
+				    <td><a href="/api_methods/133-gets-the-count-of-api-resources-defined-in-api-products-approved-for-a-developer-app-in-an-organization" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/developers/{developer_email}/apps</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>List Apps by Developer</td>  
+				    <td><a href="/api_methods/5-list-apps-by-developer" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/developers/{developer_email}/apps?expand=true</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>List Developer Apps (Expanded)</td>  
+				    <td><a href="/api_methods/96-list-developer-apps-expanded" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/developers/{developer_email}/apps/{app_name}?action=revoke</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td>
+					  	
+<div class="content_type" id="content_type_3">
+application/x-www-url-form-encoded
+</div>
+						</td>
+				    <td>Revoke a Developer App</td>  
+				    <td><a href="/api_methods/97-revoke-a-developer-app" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/developers/{developer_email}/apps/{app_name}</pre></td>  
+				    <td><span class="verb-PUT">
+					PUT</span></td>
+					<td></td>
+				    <td>Update a developer app</td>  
+				    <td><a href="/api_methods/30-update-a-developer-app" class="btn btn-mini">Detail</a></td>
+	 </tr>
+</tbody>
+
+
+<tbody>
+	<tr><td  colspan="4"><h2 class="lead">Audits</h2></td><td><a href="/api_resources/46-audits" class="btn btn-mini">Resource Detail</a></td></tr>
+	<tr><td  colspan="5"><span class='best_in_place' id='best_in_place_api_resource_46_description' data-url='/api_resources/46-audits' data-object='api_resource' data-attribute='description' data-type='input'>Events stored as log entries in the API Platform datastore. (Note that the base path for audits precedes /organizations.)</span></td></tr>
+	<tr><td  colspan="5">Resource path: <code>/audits</code></td></tr>
+	<tr bgcolor="#EDEDED" class="resource_table">
+		<td><b>URI</b></td>
+		<td><b>Verb</b></td>
+		<td><b>Content Types</b></td>
+		<td colspan="2"><b>Action</b></td>
+	</tr> 
+	<tr>
+					<td><pre>/audits</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td>
+					  	
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+						</td>
+				    <td>Get audit logs</td>  
+				    <td><a href="/api_methods/200-get-audit-logs" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/users/{user_email}/audits</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td>
+					  	
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+						</td>
+				    <td>Lists audit entries for a user in an organization</td>  
+				    <td><a href="/api_methods/201-lists-audit-entries-for-a-user-in-an-organization" class="btn btn-mini">Detail</a></td>
+	 </tr>
+</tbody>
+
+
+<tbody>
+	<tr><td  colspan="4"><h2 class="lead">Companies</h2></td><td><a href="/api_resources/6-companies" class="btn btn-mini">Resource Detail</a></td></tr>
+	<tr><td  colspan="5"><span class='best_in_place' id='best_in_place_api_resource_6_description' data-url='/api_resources/6-companies' data-object='api_resource' data-attribute='description' data-type='input'>An optional grouping entity for apps, which enables corporate entities or groups of developers to manage apps.</span></td></tr>
+	<tr><td  colspan="5">Resource path: <code>/companies</code></td></tr>
+	<tr bgcolor="#EDEDED" class="resource_table">
+		<td><b>URI</b></td>
+		<td><b>Verb</b></td>
+		<td><b>Content Types</b></td>
+		<td colspan="2"><b>Action</b></td>
+	</tr> 
+	<tr>
+					<td><pre>/companies</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td></td>
+				    <td>Create a company</td>  
+				    <td><a href="/api_methods/117-create-a-company" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/companies/{company_name}</pre></td>  
+				    <td><span class="verb-DELETE">
+					DELETE</span></td>
+					<td></td>
+				    <td>Delete a company</td>  
+				    <td><a href="/api_methods/120-delete-a-company" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/companies/{company_name}</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get details for a company</td>  
+				    <td><a href="/api_methods/119-get-details-for-a-company" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/companies</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>List companies</td>  
+				    <td><a href="/api_methods/6-list-companies" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/companies?expand=true</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>List companies in an organization  (detailed view)</td>  
+				    <td><a href="/api_methods/121-list-companies-in-an-organization-detailed-view" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/companies/{company_name}/appfamilies</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>List company app families</td>  
+				    <td><a href="/api_methods/59-list-company-app-families" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/companies/{company_name}</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td></td>
+				    <td>Update a company</td>  
+				    <td><a href="/api_methods/118-update-a-company" class="btn btn-mini">Detail</a></td>
+	 </tr>
+</tbody>
+
+
+<tbody>
+	<tr><td  colspan="4"><h2 class="lead">Company App Keys</h2></td><td><a href="/api_resources/21-company-app-keys" class="btn btn-mini">Resource Detail</a></td></tr>
+	<tr><td  colspan="5"><span class='best_in_place' id='best_in_place_api_resource_21_description' data-url='/api_resources/21-company-app-keys' data-object='api_resource' data-attribute='description' data-type='input'>Consumer credentials (also known as &amp;quot;API keys&amp;quot; or &amp;quot;app keys&amp;quot;) generated, provisioned, and managed by the API Platform for apps associated with company entities.</span></td></tr>
+	<tr><td  colspan="5">Resource path: <code>/companies/{company_name}/apps/{app_name}/keys</code></td></tr>
+	<tr bgcolor="#EDEDED" class="resource_table">
+		<td><b>URI</b></td>
+		<td><b>Verb</b></td>
+		<td><b>Content Types</b></td>
+		<td colspan="2"><b>Action</b></td>
+	</tr> 
+	<tr>
+					<td><pre>/companies/{company_name}/apps/{app_name}/keys/{consumer_key}?action=approve</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td>
+					  	
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+						</td>
+				    <td>Approve a company app key</td>  
+				    <td><a href="/api_methods/53-approve-a-company-app-key" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/companies/{company_name}/apps/{app_name}/keys/{consumer_key}</pre></td>  
+				    <td><span class="verb-DELETE">
+					DELETE</span></td>
+					<td></td>
+				    <td>Delete a company app key</td>  
+				    <td><a href="/api_methods/51-delete-a-company-app-key" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/companies/{company_name}/apps/{app_name}/keys/{consumer_key}</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get a specific key of company app</td>  
+				    <td><a href="/api_methods/50-get-a-specific-key-of-company-app" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>companies/{company_name}/apps/{app_name}/keys/{consumer_key}?action=revoke</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td></td>
+				    <td>Revoke a company app key</td>  
+				    <td><a href="/api_methods/52-revoke-a-company-app-key" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/companies/{company_name}/apps/{app_ame}/keys/{consumer key}</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td></td>
+				    <td>Update existing app key with new API product(s).</td>  
+				    <td><a href="/api_methods/49-update-existing-app-key-with-new-api-product-s" class="btn btn-mini">Detail</a></td>
+	 </tr>
+</tbody>
+
+
+<tbody>
+	<tr><td  colspan="4"><h2 class="lead">Company Developers</h2></td><td><a href="/api_resources/13-company-developers" class="btn btn-mini">Resource Detail</a></td></tr>
+	<tr><td  colspan="5"><span class='best_in_place' id='best_in_place_api_resource_13_description' data-url='/api_resources/13-company-developers' data-object='api_resource' data-attribute='description' data-type='input'>A collection of developers associated with a company entity.</span></td></tr>
+	<tr><td  colspan="5">Resource path: <code>/companies/{company_name}/developers</code></td></tr>
+	<tr bgcolor="#EDEDED" class="resource_table">
+		<td><b>URI</b></td>
+		<td><b>Verb</b></td>
+		<td><b>Content Types</b></td>
+		<td colspan="2"><b>Action</b></td>
+	</tr> 
+	<tr>
+					<td><pre>/companies/{company_name}/developers</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td>
+					  	
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+						</td>
+				    <td>Add a company developer</td>  
+				    <td><a href="/api_methods/122-add-a-company-developer" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/companies/{company_name}/developers/{developer_email}</pre></td>  
+				    <td><span class="verb-DELETE">
+					DELETE</span></td>
+					<td></td>
+				    <td>Delete a developer association with a company</td>  
+				    <td><a href="/api_methods/123-delete-a-developer-association-with-a-company" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/companies/{company_name}/developers/</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>List Developers in a Company</td>  
+				    <td><a href="/api_methods/124-list-developers-in-a-company" class="btn btn-mini">Detail</a></td>
+	 </tr>
+</tbody>
+
+
+<tbody>
+	<tr><td  colspan="4"><h2 class="lead">Debug Sessions</h2></td><td><a href="/api_resources/10-debug-sessions" class="btn btn-mini">Resource Detail</a></td></tr>
+	<tr><td  colspan="5"><span class='best_in_place' id='best_in_place_api_resource_10_description' data-url='/api_resources/10-debug-sessions' data-object='api_resource' data-attribute='description' data-type='input'>A session configured on the API Platform to record specified messages and associated pipeline processing metadata for debugging purposes</span></td></tr>
+	<tr><td  colspan="5">Resource path: <code>/debugsessions</code></td></tr>
+	<tr bgcolor="#EDEDED" class="resource_table">
+		<td><b>URI</b></td>
+		<td><b>Verb</b></td>
+		<td><b>Content Types</b></td>
+		<td colspan="2"><b>Action</b></td>
+	</tr> 
+	<tr>
+					<td><pre>/environments/{environmentName} /apis/{apiName}/revisions/{revisionVersion}/debugsessions/{sessionID}</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td></td>
+				    <td>Create Debug Session</td>  
+				    <td><a href="/api_methods/41-create-debug-session" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/environments/{environmentName}/apis/{apiName}/revisions/{revisionVersion}/debugsessions/{sessionID}</pre></td>  
+				    <td><span class="verb-DELETE">
+					DELETE</span></td>
+					<td></td>
+				    <td>Delete a debug session</td>  
+				    <td><a href="/api_methods/43-delete-a-debug-session" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/environments/{environmentName}/apis/{apiName}/revisions/{revisionId/debugsessions/{debugSessionId}/data</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get Debug Session Data</td>  
+				    <td><a href="/api_methods/42-get-debug-session-data" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/environment/{environmentName}/debugsessions</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>List Debug Sessions</td>  
+				    <td><a href="/api_methods/7-list-debug-sessions" class="btn btn-mini">Detail</a></td>
+	 </tr>
+</tbody>
+
+
+<tbody>
+	<tr><td  colspan="4"><h2 class="lead">Deployments</h2></td><td><a href="/api_resources/36-deployments" class="btn btn-mini">Resource Detail</a></td></tr>
+	<tr><td  colspan="5"><span class='best_in_place' id='best_in_place_api_resource_36_description' data-url='/api_resources/36-deployments' data-object='api_resource' data-attribute='description' data-type='input'>APIs actively deployed in environments on the API Platform</span></td></tr>
+	<tr><td  colspan="5">Resource path: <code>/apis/{api_name}/deployments</code></td></tr>
+	<tr bgcolor="#EDEDED" class="resource_table">
+		<td><b>URI</b></td>
+		<td><b>Verb</b></td>
+		<td><b>Content Types</b></td>
+		<td colspan="2"><b>Action</b></td>
+	</tr> 
+	<tr>
+					<td><pre>/apis/{api_name}/deployments</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get API deployments</td>  
+				    <td><a href="/api_methods/18-get-api-deployments" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/apis/{api_name}/revisions/{revision_number}/deployments</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get API Revision Deployments</td>  
+				    <td><a href="/api_methods/19-get-api-revision-deployments" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/environments/{environment_name}/deployments</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get Deployments for an Environment</td>  
+				    <td><a href="/api_methods/20-get-deployments-for-an-environment" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/deployments</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get Deployments for an Organization</td>  
+				    <td><a href="/api_methods/112-get-deployments-for-an-organization" class="btn btn-mini">Detail</a></td>
+	 </tr>
+</tbody>
+
+
+<tbody>
+	<tr><td  colspan="4"><h2 class="lead">Developer App Keys</h2></td><td><a href="/api_resources/18-developer-app-keys" class="btn btn-mini">Resource Detail</a></td></tr>
+	<tr><td  colspan="5"><span class='best_in_place' id='best_in_place_api_resource_18_description' data-url='/api_resources/18-developer-app-keys' data-object='api_resource' data-attribute='description' data-type='input'>Consumer credentials (also known as &amp;quot;API keys&amp;quot; or &amp;quot;app keys&amp;quot;) generated, provisioned, and managed by the API Platform for apps associated with individual developers.</span></td></tr>
+	<tr><td  colspan="5">Resource path: <code>/developers/{developer_email}/apps/{app_name}/keys</code></td></tr>
+	<tr bgcolor="#EDEDED" class="resource_table">
+		<td><b>URI</b></td>
+		<td><b>Verb</b></td>
+		<td><b>Content Types</b></td>
+		<td colspan="2"><b>Action</b></td>
+	</tr> 
+	<tr>
+					<td><pre>/developers/{developer_emal}/apps/{app_name}/keys/{consumer_key}</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td>
+					  	
+<div class="content_type" id="content_type_3">
+application/x-www-url-form-encoded
+</div>
+						</td>
+				    <td>Approve a developer app key</td>  
+				    <td><a href="/api_methods/93-approve-a-developer-app-key" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/developers/{developer_email}/apps/{app_name}/keys/{consumer_key}/apiproducts/{apiproduct_name}</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td></td>
+				    <td>Approve API Product for the Key of Developer App</td>  
+				    <td><a href="/api_methods/95-approve-api-product-for-the-key-of-developer-app" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/developers/{developer_email}/apps/{app_name}/keys/{consumer_key}</pre></td>  
+				    <td><span class="verb-DELETE">
+					DELETE</span></td>
+					<td></td>
+				    <td>Delete a Developer App Key</td>  
+				    <td><a href="/api_methods/91-delete-a-developer-app-key" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/developers/{developer_email}/apps/{app_name}/keys/{consumer_key}/apiproducts/{apiproduct_name}</pre></td>  
+				    <td><span class="verb-DELETE">
+					DELETE</span></td>
+					<td>
+					  	
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+						</td>
+				    <td>Delete API product from a developer app key profile</td>  
+				    <td><a href="/api_methods/204-delete-api-product-from-a-developer-app-key-profile" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/developers/{developer_email}/apps/{app_name}/keys/{consumer_key}</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get a specific Key of Developer App</td>  
+				    <td><a href="/api_methods/90-get-a-specific-key-of-developer-app" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/developers/{developer_email}/apps/{app_name}/keys/{consumer_key}</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td></td>
+				    <td>Revoke a Developer App Key</td>  
+				    <td><a href="/api_methods/92-revoke-a-developer-app-key" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/developers/{developer_email}/apps/{app_name}/keys/{consumer_key}/apiproducts/{apiproduct_name}?action=revoke</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td></td>
+				    <td>Revoke API product association with a specific developer app key</td>  
+				    <td><a href="/api_methods/94-revoke-api-product-association-with-a-specific-developer-app-key" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/developers/{developer_email}/apps/{app_name}/keys/{consumer_key}</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td></td>
+				    <td>Update Key with ApiProduct(s)</td>  
+				    <td><a href="/api_methods/89-update-key-with-apiproduct-s" class="btn btn-mini">Detail</a></td>
+	 </tr>
+</tbody>
+
+
+<tbody>
+	<tr><td  colspan="4"><h2 class="lead">Developers</h2></td><td><a href="/api_resources/35-developers" class="btn btn-mini">Resource Detail</a></td></tr>
+	<tr><td  colspan="5"><span class='best_in_place' id='best_in_place_api_resource_35_description' data-url='/api_resources/35-developers' data-object='api_resource' data-attribute='description' data-type='input'>Developers who implement client/consumer apps and are registered with an organization on the API Platform.</span></td></tr>
+	<tr><td  colspan="5">Resource path: <code>/developers</code></td></tr>
+	<tr bgcolor="#EDEDED" class="resource_table">
+		<td><b>URI</b></td>
+		<td><b>Verb</b></td>
+		<td><b>Content Types</b></td>
+		<td colspan="2"><b>Action</b></td>
+	</tr> 
+	<tr>
+					<td><pre>/developers</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td></td>
+				    <td>Create a Developer</td>  
+				    <td><a href="/api_methods/32-create-a-developer" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/developers/{developer_email}</pre></td>  
+				    <td><span class="verb-DELETE">
+					DELETE</span></td>
+					<td></td>
+				    <td>Delete a Developer</td>  
+				    <td><a href="/api_methods/39-delete-a-developer" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/developers/developer_email}</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get a Developer </td>  
+				    <td><a href="/api_methods/34-get-a-developer" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/developers?app={app_name}</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get Developer of an App</td>  
+				    <td><a href="/api_methods/138-get-developer-of-an-app" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/developers</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>List Developers</td>  
+				    <td><a href="/api_methods/9-list-developers" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/developers/{developer_email}</pre></td>  
+				    <td><span class="verb-PUT">
+					PUT</span></td>
+					<td></td>
+				    <td>Update a Developer</td>  
+				    <td><a href="/api_methods/38-update-a-developer" class="btn btn-mini">Detail</a></td>
+	 </tr>
+</tbody>
+
+
+<tbody>
+	<tr><td  colspan="4"><h2 class="lead">Environments</h2></td><td><a href="/api_resources/15-environments" class="btn btn-mini">Resource Detail</a></td></tr>
+	<tr><td  colspan="5"><span class='best_in_place' id='best_in_place_api_resource_15_description' data-url='/api_resources/15-environments' data-object='api_resource' data-attribute='description' data-type='input'>Network-accessible runtime deployment containers (typically named 'test' and 'prod') available for APIs on the API Platform.</span></td></tr>
+	<tr><td  colspan="5">Resource path: <code>/environments</code></td></tr>
+	<tr bgcolor="#EDEDED" class="resource_table">
+		<td><b>URI</b></td>
+		<td><b>Verb</b></td>
+		<td><b>Content Types</b></td>
+		<td colspan="2"><b>Action</b></td>
+	</tr> 
+	<tr>
+					<td><pre>/environments/{environment_name}</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get Environment</td>  
+				    <td><a href="/api_methods/113-get-environment" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/environments</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>List Environments</td>  
+				    <td><a href="/api_methods/21-list-environments" class="btn btn-mini">Detail</a></td>
+	 </tr>
+</tbody>
+
+
+<tbody>
+	<tr><td  colspan="4"><h2 class="lead">Maps</h2></td><td><a href="/api_resources/7-maps" class="btn btn-mini">Resource Detail</a></td></tr>
+	<tr><td  colspan="5"><span class='best_in_place' id='best_in_place_api_resource_7_description' data-url='/api_resources/7-maps' data-object='api_resource' data-attribute='description' data-type='input'>Persistence resources that enable storing arbitrary data</span></td></tr>
+	<tr><td  colspan="5">Resource path: <code>/maps</code></td></tr>
+	<tr bgcolor="#EDEDED" class="resource_table">
+		<td><b>URI</b></td>
+		<td><b>Verb</b></td>
+		<td><b>Content Types</b></td>
+		<td colspan="2"><b>Action</b></td>
+	</tr> 
+	<tr>
+					<td><pre>/maps</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td></td>
+				    <td>Create Map</td>  
+				    <td><a href="/api_methods/44-create-map" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/maps/{map_name}/entries/{entry_name}</pre></td>  
+				    <td><span class="verb-DELETE">
+					DELETE</span></td>
+					<td></td>
+				    <td>Delete Entry</td>  
+				    <td><a href="/api_methods/48-delete-entry" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/maps/{map_name}</pre></td>  
+				    <td><span class="verb-DELETE">
+					DELETE</span></td>
+					<td></td>
+				    <td>Delete Map</td>  
+				    <td><a href="/api_methods/63-delete-map" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/maps?expand=true</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get List of Maps (Expanded)</td>  
+				    <td><a href="/api_methods/158-get-list-of-maps-expanded" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/maps/{map_name}</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get Map</td>  
+				    <td><a href="/api_methods/45-get-map" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/maps</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>List Maps</td>  
+				    <td><a href="/api_methods/46-list-maps" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/maps/{map_name}</pre></td>  
+				    <td><span class="verb-PUT">
+					PUT</span></td>
+					<td></td>
+				    <td>Update map</td>  
+				    <td><a href="/api_methods/62-update-map" class="btn btn-mini">Detail</a></td>
+	 </tr>
+</tbody>
+
+
+<tbody>
+	<tr><td  colspan="4"><h2 class="lead">OAuth 1.0a Access Tokens</h2></td><td><a href="/api_resources/33-oauth-1-0a-access-tokens" class="btn btn-mini">Resource Detail</a></td></tr>
+	<tr><td  colspan="5"><span class='best_in_place' id='best_in_place_api_resource_33_description' data-url='/api_resources/33-oauth-1-0a-access-tokens' data-object='api_resource' data-attribute='description' data-type='input'>Oauth 1.0a Access Tokens</span></td></tr>
+	<tr><td  colspan="5">Resource path: <code>/oauth1/accesstokens</code></td></tr>
+	<tr bgcolor="#EDEDED" class="resource_table">
+		<td><b>URI</b></td>
+		<td><b>Verb</b></td>
+		<td><b>Content Types</b></td>
+		<td colspan="2"><b>Action</b></td>
+	</tr> 
+	<tr>
+					<td><pre>/oauth1/accesstokens/{access_token}?action=approve</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td></td>
+				    <td>Approve Oauth 1.0  Access Token</td>  
+				    <td><a href="/api_methods/156-approve-oauth-1-0-access-token" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/oauth1/accesstokens/{access_token}</pre></td>  
+				    <td><span class="verb-DELETE">
+					DELETE</span></td>
+					<td></td>
+				    <td>Delete Oauth 1.0 Access Token</td>  
+				    <td><a href="/api_methods/155-delete-oauth-1-0-access-token" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/oauth1/accesstokens</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get count of Oauth 1.0 Access Tokens</td>  
+				    <td><a href="/api_methods/153-get-count-of-oauth-1-0-access-tokens" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/oauth1/accesstokens/{access_token}</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get Oauth 1.0 Access Token</td>  
+				    <td><a href="/api_methods/152-get-oauth-1-0-access-token" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/oauth1/accesstokens/{access_token}?action=revoke</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td>
+					  	
+<div class="content_type" id="content_type_3">
+application/x-www-url-form-encoded
+</div>
+						</td>
+				    <td>Revoke Oauth 1.0 Access Token</td>  
+				    <td><a href="/api_methods/157-revoke-oauth-1-0-access-token" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/oauth1/accesstokens/{access_token}</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td></td>
+				    <td>Update Oauth 1.0 Access Token</td>  
+				    <td><a href="/api_methods/154-update-oauth-1-0-access-token" class="btn btn-mini">Detail</a></td>
+	 </tr>
+</tbody>
+
+
+<tbody>
+	<tr><td  colspan="4"><h2 class="lead">OAuth 1.0a Request Tokens</h2></td><td><a href="/api_resources/31-oauth-1-0a-request-tokens" class="btn btn-mini">Resource Detail</a></td></tr>
+	<tr><td  colspan="5"><span class='best_in_place' id='best_in_place_api_resource_31_description' data-url='/api_resources/31-oauth-1-0a-request-tokens' data-object='api_resource' data-attribute='description' data-type='input'>OAuth 1.0a Request Tokens</span></td></tr>
+	<tr><td  colspan="5">Resource path: <code>/oauth1/requesttokens</code></td></tr>
+	<tr bgcolor="#EDEDED" class="resource_table">
+		<td><b>URI</b></td>
+		<td><b>Verb</b></td>
+		<td><b>Content Types</b></td>
+		<td colspan="2"><b>Action</b></td>
+	</tr> 
+	<tr>
+					<td><pre>/oauth1/requesttokens/{request_token}?action=approve</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td></td>
+				    <td>Approve a Request Token</td>  
+				    <td><a href="/api_methods/147-approve-a-request-token" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/oauth1/requesttokens/{request_token}</pre></td>  
+				    <td><span class="verb-DELETE">
+					DELETE</span></td>
+					<td></td>
+				    <td>Delete a Request Token</td>  
+				    <td><a href="/api_methods/146-delete-a-request-token" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/oauth1/requesttokens/{request_token}?consumerKey={consumer_key}</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get an Oauth 1.0a Request Token</td>  
+				    <td><a href="/api_methods/143-get-an-oauth-1-0a-request-token" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/oauth1/requesttokens</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>List Request Tokens</td>  
+				    <td><a href="/api_methods/144-list-request-tokens" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/oauth1/requesttokens/{request_token}?action=revoke</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td></td>
+				    <td>Revoke a Request Token</td>  
+				    <td><a href="/api_methods/148-revoke-a-request-token" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/oauth1/requesttokens/{request_token}</pre></td>  
+				    <td><span class="verb-PUT">
+					PUT</span></td>
+					<td></td>
+				    <td>Update a Request Token</td>  
+				    <td><a href="/api_methods/145-update-a-request-token" class="btn btn-mini">Detail</a></td>
+	 </tr>
+</tbody>
+
+
+<tbody>
+	<tr><td  colspan="4"><h2 class="lead">OAuth 1.0a Verifiers</h2></td><td><a href="/api_resources/32-oauth-1-0a-verifiers" class="btn btn-mini">Resource Detail</a></td></tr>
+	<tr><td  colspan="5"><span class='best_in_place' id='best_in_place_api_resource_32_description' data-url='/api_resources/32-oauth-1-0a-verifiers' data-object='api_resource' data-attribute='description' data-type='input'>OAuth 1.0a Verifiers</span></td></tr>
+	<tr><td  colspan="5">Resource path: <code>/oauth1/verifiers</code></td></tr>
+	<tr bgcolor="#EDEDED" class="resource_table">
+		<td><b>URI</b></td>
+		<td><b>Verb</b></td>
+		<td><b>Content Types</b></td>
+		<td colspan="2"><b>Action</b></td>
+	</tr> 
+	<tr>
+					<td><pre>/oauth1/verifiers/{verifier_code}</pre></td>  
+				    <td><span class="verb-DELETE">
+					DELETE</span></td>
+					<td></td>
+				    <td>Delete OAuth 1.0 Verifier</td>  
+				    <td><a href="/api_methods/151-delete-oauth-1-0-verifier" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/oauth1/verifiers/{verifier_code}</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get an OAuth 1.0 Verifier</td>  
+				    <td><a href="/api_methods/149-get-an-oauth-1-0-verifier" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/oauth1/verifiers</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>List OAuth 1.0 Verifiers</td>  
+				    <td><a href="/api_methods/150-list-oauth-1-0-verifiers" class="btn btn-mini">Detail</a></td>
+	 </tr>
+</tbody>
+
+
+<tbody>
+	<tr><td  colspan="4"><h2 class="lead">Oauth 2.0 Access Tokens</h2></td><td><a href="/api_resources/28-oauth-2-0-access-tokens" class="btn btn-mini">Resource Detail</a></td></tr>
+	<tr><td  colspan="5"><span class='best_in_place' id='best_in_place_api_resource_28_description' data-url='/api_resources/28-oauth-2-0-access-tokens' data-object='api_resource' data-attribute='description' data-type='input'>OAuth 2.0-compliant access tokens generated, managed, and validated by the API Platform</span></td></tr>
+	<tr><td  colspan="5">Resource path: <code>/oauth2/accesstokens</code></td></tr>
+	<tr bgcolor="#EDEDED" class="resource_table">
+		<td><b>URI</b></td>
+		<td><b>Verb</b></td>
+		<td><b>Content Types</b></td>
+		<td colspan="2"><b>Action</b></td>
+	</tr> 
+	<tr>
+					<td><pre>/oauth2/accesstokens/{access_token}?action=approve</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Approve an Access Token</td>  
+				    <td><a href="/api_methods/115-approve-an-access-token" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/oauth2/accesstokens/{access_token}</pre></td>  
+				    <td><span class="verb-DELETE">
+					DELETE</span></td>
+					<td></td>
+				    <td>Delete an Access Token</td>  
+				    <td><a href="/api_methods/114-delete-an-access-token" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/oauth2/accesstokens/{access_token}</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get an Access Token</td>  
+				    <td><a href="/api_methods/109-get-an-access-token" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/oauth2/accesstokens</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get count of AccessTokens</td>  
+				    <td><a href="/api_methods/110-get-count-of-accesstokens" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/oauth2/accesstokens/{access_token}?action=revoke</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td></td>
+				    <td>Revoke an Access Token</td>  
+				    <td><a href="/api_methods/116-revoke-an-access-token" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/oauth2/accesstokens/{access_token}</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td>
+					  	
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+						</td>
+				    <td>Update Access Token</td>  
+				    <td><a href="/api_methods/111-update-access-token" class="btn btn-mini">Detail</a></td>
+	 </tr>
+</tbody>
+
+
+<tbody>
+	<tr><td  colspan="4"><h2 class="lead">Oauth 2.0 Authorization Code</h2></td><td><a href="/api_resources/27-oauth-2-0-authorization-code" class="btn btn-mini">Resource Detail</a></td></tr>
+	<tr><td  colspan="5"><span class='best_in_place' id='best_in_place_api_resource_27_description' data-url='/api_resources/27-oauth-2-0-authorization-code' data-object='api_resource' data-attribute='description' data-type='input'>Oauth 2.0-compliant authorization codes generated, managed, and validated by the API Platform</span></td></tr>
+	<tr><td  colspan="5">Resource path: <code>/oauth2/authorizationcodes</code></td></tr>
+	<tr bgcolor="#EDEDED" class="resource_table">
+		<td><b>URI</b></td>
+		<td><b>Verb</b></td>
+		<td><b>Content Types</b></td>
+		<td colspan="2"><b>Action</b></td>
+	</tr> 
+	<tr>
+					<td><pre>/oauth2/authorizationcodes/{authorization_code}</pre></td>  
+				    <td><span class="verb-DELETE">
+					DELETE</span></td>
+					<td></td>
+				    <td>Delete Authorization Code</td>  
+				    <td><a href="/api_methods/108-delete-authorization-code" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/oauth2/authorizationcodes/{authorization_code}</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get Authorization Code</td>  
+				    <td><a href="/api_methods/106-get-authorization-code" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/oauth2/authorizationcodes</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>List Authorization Codes</td>  
+				    <td><a href="/api_methods/107-list-authorization-codes" class="btn btn-mini">Detail</a></td>
+	 </tr>
+</tbody>
+
+
+<tbody>
+	<tr><td  colspan="4"><h2 class="lead">Organizations</h2></td><td><a href="/api_resources/2-organizations" class="btn btn-mini">Resource Detail</a></td></tr>
+	<tr><td  colspan="5"><span class='best_in_place' id='best_in_place_api_resource_2_description' data-url='/api_resources/2-organizations' data-object='api_resource' data-attribute='description' data-type='input'>The base account structure for the API Platform, an organization is a container for all managed entities, including APIs, API products, developers, apps, environments, etc.</span></td></tr>
+	<tr><td  colspan="5">Resource path: <code>/organizations</code></td></tr>
+	<tr bgcolor="#EDEDED" class="resource_table">
+		<td><b>URI</b></td>
+		<td><b>Verb</b></td>
+		<td><b>Content Types</b></td>
+		<td colspan="2"><b>Action</b></td>
+	</tr> 
+	<tr>
+					<td><pre>/organizations{org_name} or /o/{org_name}</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get Organization</td>  
+				    <td><a href="/api_methods/61-get-organization" class="btn btn-mini">Detail</a></td>
+	 </tr>
+</tbody>
+
+
+<tbody>
+	<tr><td  colspan="4"><h2 class="lead">RBAC Resources</h2></td><td><a href="/api_resources/41-rbac-resources" class="btn btn-mini">Resource Detail</a></td></tr>
+	<tr><td  colspan="5"><span class='best_in_place' id='best_in_place_api_resource_41_description' data-url='/api_resources/41-rbac-resources' data-object='api_resource' data-attribute='description' data-type='input'>An entity in an organization that can be associated with permissions to enable role-based access control</span></td></tr>
+	<tr><td  colspan="5">Resource path: <code>/resources</code></td></tr>
+	<tr bgcolor="#EDEDED" class="resource_table">
+		<td><b>URI</b></td>
+		<td><b>Verb</b></td>
+		<td><b>Content Types</b></td>
+		<td colspan="2"><b>Action</b></td>
+	</tr> 
+	<tr>
+					<td><pre>/resources</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td></td>
+				    <td>Create a resource</td>  
+				    <td><a href="/api_methods/177-create-a-resource" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/resources/?path={resource_name}</pre></td>  
+				    <td><span class="verb-DELETE">
+					DELETE</span></td>
+					<td></td>
+				    <td>Delete a resource</td>  
+				    <td><a href="/api_methods/180-delete-a-resource" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/resources/{resource_name}</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get a resource</td>  
+				    <td><a href="/api_methods/179-get-a-resource" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/resources</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>List resources</td>  
+				    <td><a href="/api_methods/178-list-resources" class="btn btn-mini">Detail</a></td>
+	 </tr>
+</tbody>
+
+
+<tbody>
+	<tr><td  colspan="4"><h2 class="lead">User roles</h2></td><td><a href="/api_resources/38-user-roles" class="btn btn-mini">Resource Detail</a></td></tr>
+	<tr><td  colspan="5"><span class='best_in_place' id='best_in_place_api_resource_38_description' data-url='/api_resources/38-user-roles' data-object='api_resource' data-attribute='description' data-type='input'>Roles for users in an organization on the API Platform</span></td></tr>
+	<tr><td  colspan="5">Resource path: <code>/userroles</code></td></tr>
+	<tr bgcolor="#EDEDED" class="resource_table">
+		<td><b>URI</b></td>
+		<td><b>Verb</b></td>
+		<td><b>Content Types</b></td>
+		<td colspan="2"><b>Action</b></td>
+	</tr> 
+	<tr>
+					<td><pre>/userroles/{role_name}/users?id={user_email}</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td>
+					  	
+<div class="content_type" id="content_type_3">
+application/x-www-url-form-encoded
+</div>
+						</td>
+				    <td>Add a user to a role</td>  
+				    <td><a href="/api_methods/171-add-a-user-to-a-role" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/userroles/{role_name}/permissions</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td></td>
+				    <td>Add permissions for a resource to a user role</td>  
+				    <td><a href="/api_methods/181-add-permissions-for-a-resource-to-a-user-role" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/userroles</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td></td>
+				    <td>Create a user role in an organization</td>  
+				    <td><a href="/api_methods/163-create-a-user-role-in-an-organization" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/userroles/{role_name}</pre></td>  
+				    <td><span class="verb-DELETE">
+					DELETE</span></td>
+					<td></td>
+				    <td>Delete a user role</td>  
+				    <td><a href="/api_methods/169-delete-a-user-role" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/userroles/{role_name}/permissions/{permission_name}?path={resource_path}</pre></td>  
+				    <td><span class="verb-DELETE">
+					DELETE</span></td>
+					<td></td>
+				    <td>Delete permission for a resource</td>  
+				    <td><a href="/api_methods/185-delete-permission-for-a-resource" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/userroles/{role_name}</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get a role</td>  
+				    <td><a href="/api_methods/168-get-a-role" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/userroles/{role_name}/permissions</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get permissions for a resource</td>  
+				    <td><a href="/api_methods/182-get-permissions-for-a-resource" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/userroles/{role_name}/permissions?path={resource_path}</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get resource permissions for a specific role</td>  
+				    <td><a href="/api_methods/183-get-resource-permissions-for-a-specific-role" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/userroles</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get user roles</td>  
+				    <td><a href="/api_methods/164-get-user-roles" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/userroles/{role_name}/users</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get users for a role</td>  
+				    <td><a href="/api_methods/173-get-users-for-a-role" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/userroles/{role_name}/users/{user_email}</pre></td>  
+				    <td><span class="verb-DELETE">
+					DELETE</span></td>
+					<td></td>
+				    <td>Remove user membership in role</td>  
+				    <td><a href="/api_methods/176-remove-user-membership-in-role" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/userroles/{role_name}/permissions/{permission_name}?path={resource_path}</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Verify a user role's permission on a specific resource</td>  
+				    <td><a href="/api_methods/184-verify-a-user-role-s-permission-on-a-specific-resource" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/userroles/{role_rame}/users/{user_email}</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td>
+					  	
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+						</td>
+				    <td>Verify user role membership</td>  
+				    <td><a href="/api_methods/174-verify-user-role-membership" class="btn btn-mini">Detail</a></td>
+	 </tr>
+</tbody>
+
+
+<tbody>
+	<tr><td  colspan="4"><h2 class="lead">Users</h2></td><td><a href="/api_resources/37-users" class="btn btn-mini">Resource Detail</a></td></tr>
+	<tr><td  colspan="5"><span class='best_in_place' id='best_in_place_api_resource_37_description' data-url='/api_resources/37-users' data-object='api_resource' data-attribute='description' data-type='input'>Users with an account in an organization on the Apigee API Platform</span></td></tr>
+	<tr><td  colspan="5">Resource path: <code>/users</code></td></tr>
+	<tr bgcolor="#EDEDED" class="resource_table">
+		<td><b>URI</b></td>
+		<td><b>Verb</b></td>
+		<td><b>Content Types</b></td>
+		<td colspan="2"><b>Action</b></td>
+	</tr> 
+	<tr>
+					<td><pre>/users/{user_email}/userroles</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td>
+					  	
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+						</td>
+				    <td>Associate a user with a user role</td>  
+				    <td><a href="/api_methods/170-associate-a-user-with-a-user-role" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/users</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td></td>
+				    <td>Create a user</td>  
+				    <td><a href="/api_methods/160-create-a-user" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/users/{user_email}</pre></td>  
+				    <td><span class="verb-DELETE">
+					DELETE</span></td>
+					<td></td>
+				    <td>Delete a user from an organization</td>  
+				    <td><a href="/api_methods/162-delete-a-user-from-an-organization" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/users/{user_email}/userroles/{role_name}</pre></td>  
+				    <td><span class="verb-DELETE">
+					DELETE</span></td>
+					<td></td>
+				    <td>Delete role for user</td>  
+				    <td><a href="/api_methods/175-delete-role-for-user" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/users/{user_email}/userroles</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get roles for a user</td>  
+				    <td><a href="/api_methods/172-get-roles-for-a-user" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/users/{user_email}</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Gets a user </td>  
+				    <td><a href="/api_methods/167-gets-a-user" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/users</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>List users in an organization</td>  
+				    <td><a href="/api_methods/166-list-users-in-an-organization" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/users/{user_email}</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td>
+					  	
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+						</td>
+				    <td>Update a user</td>  
+				    <td><a href="/api_methods/161-update-a-user" class="btn btn-mini">Detail</a></td>
+	 </tr>
+</tbody>
+
+
+<tbody>
+	<tr><td  colspan="4"><h2 class="lead">Virtual Hosts</h2></td><td><a href="/api_resources/16-virtual-hosts" class="btn btn-mini">Resource Detail</a></td></tr>
+	<tr><td  colspan="5"><span class='best_in_place' id='best_in_place_api_resource_16_description' data-url='/api_resources/16-virtual-hosts' data-object='api_resource' data-attribute='description' data-type='input'>A named network configuration (including URL) for an environment (for example 'test' or 'prod') on the API Platform.</span></td></tr>
+	<tr><td  colspan="5">Resource path: <code>/virtualhosts</code></td></tr>
+	<tr bgcolor="#EDEDED" class="resource_table">
+		<td><b>URI</b></td>
+		<td><b>Verb</b></td>
+		<td><b>Content Types</b></td>
+		<td colspan="2"><b>Action</b></td>
+	</tr> 
+	<tr>
+					<td><pre>/environments/{environment_name}/virtualhosts/{virtualhost_name}</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>Get a Virtual Host for an Environment</td>  
+				    <td><a href="/api_methods/23-get-a-virtual-host-for-an-environment" class="btn btn-mini">Detail</a></td>
+	 </tr>
+	<tr>
+					<td><pre>/environments/{environment_name}/virtualhosts</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td></td>
+				    <td>List Virtual Hosts for an Environment</td>  
+				    <td><a href="/api_methods/22-list-virtual-hosts-for-an-environment" class="btn btn-mini">Detail</a></td>
+	 </tr>
+</tbody>
+
+
+</table>
+
+
+
+
+
 
             </div>
         </div><!--/row-->
       </div><!--/content-->
 
-       <!-- <footer>
-        <p>&copy; Apigee, Inc. 2012</p>
-      </footer>  -->
+		<!-- <footer>
+        	<p>&copy; Apigee, Inc. 2012</p>
+      	</footer>  -->
 
     </div> <!-- /container -->
 
