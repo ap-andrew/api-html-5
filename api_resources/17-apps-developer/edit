@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apigee API Reference</title>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="eUgM+eIpqa8AFvJXGBGgnRE4P1UB0nBPzgTyRtd06rw=" name="csrf-token" />
+    <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
+
+	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
+       <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+       <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+       <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+       <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+	  <script src="/assets/application-dc5c9a427e1f5afd21166897f350d896.js" type="text/javascript"></script> 
+	  <script type="text/javascript" charset="utf-8">
+	jQuery(document).ready(function () {
+	    jQuery("td span.expand").click(function () {
+	        jQuery(this).parents("tr.main").nextUntil("tr.main").toggle();
+	    });
+	});
+	  </script>
+	<script type="text/javascript">
+	jQuery(document).ready(function() {
+	  jQuery("resource_table").hide();
+	  //toggle the componenet with class msg_body
+	  jQuery(".heading").click(function()
+	  {
+	    jQuery(this).next(".content").slideToggle(500);
+	  });
+	});
+	</script>
+  </head>
+
+
+  <body>
+    <!-- Placed at the end of the document so the pages load faster -->
+
+
+
+    <div class="container">
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<!-- <div>
+</div> -->
+            <div class="page-header">
+  <h1>Edit Api resource</h1>
+</div>
+<form accept-charset="UTF-8" action="/api_resources/17-apps-developer" class="formtastic api_resource" id="edit_api_resource_17" method="post" novalidate="novalidate"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="eUgM+eIpqa8AFvJXGBGgnRE4P1UB0nBPzgTyRtd06rw=" /></div>
+<fieldset class="actions"><ol>
+  <li class="action input_action " id="api_resource_submit_action"><input name="commit" type="submit" value="Update Api resource" /></li>
+</ol></fieldset>  <fieldset class="inputs"><ol>
+     <li class="select input optional" id="api_resource_api_input"><label class=" label" for="api_resource_api_id">Api</label><select id="api_resource_api_id" name="api_resource[api_id]"><option value="1" selected="selected">API Management</option>
+<option value="4">App Services</option>
+<option value="5">Mobile Analytics</option></select>
+
+</li>
+     <li class="select input optional" id="api_resource_category_input"><label class=" label" for="api_resource_category_id">Category</label><select id="api_resource_category_id" name="api_resource[category_id]"><option value="3">API Analytics</option>
+<option value="4">API Configuration and Management</option>
+<option value="5" selected="selected">Developer and App Administration</option>
+<option value="6">Oauth</option>
+<option value="8">Appendix</option>
+<option value="9">Administration</option>
+<option value="10">Company App Families</option>
+<option value="11">App Services</option>
+<option value="12">App Service Management</option></select>
+
+</li> <div class=btn><a href="/categories/new">Add a Category</a></div>
+    <li class="string input required stringish" id="api_resource_name_input"><label class=" label" for="api_resource_name">Name<abbr title="required">*</abbr></label><input id="api_resource_name" maxlength="255" name="api_resource[name]" type="text" value="Apps: Developer" />
+
+</li>
+    <li class="string input required stringish" id="api_resource_path_input"><label class=" label" for="api_resource_path">Path<abbr title="required">*</abbr></label><input id="api_resource_path" maxlength="255" name="api_resource[path]" type="text" value="/developers/{developer_email}/apps" />
+
+</li>
+    <li class="string input optional stringish" id="api_resource_description_input"><label class=" label" for="api_resource_description">Description</label><input id="api_resource_description" maxlength="255" name="api_resource[description]" type="text" value="A client/consumer app associated with a developer entity" />
+
+</li>
+    <li class="text input optional" id="api_resource_doc_input"><label class=" label" for="api_resource_doc">Doc</label><textarea id="api_resource_doc" name="api_resource[doc]" rows="20">In Apigee, Apps can belong to individual developers or to groups of developers (known as 'companies'). The Developer App is an App that belongs to a single developer. Apps are created in Apigee in order to obtain credentials to access API Products. So, a Developer App always has associated credentials, API Products, and other metadata (stored as attributes) that can be used for profile-based access control, Analytics, etc. Apps also have status, and may be approved or unapproved. By default Apps are created in the 'approved' state.</textarea>
+
+</li>
+    <li class="text input optional" id="api_resource_json_sample_input"><label class=" label" for="api_resource_json_sample">Json sample</label><textarea id="api_resource_json_sample" name="api_resource[json_sample]" rows="20">{
+  &quot;accessType&quot; : &quot;read&quot;,
+  &quot;appFamily&quot; : &quot;default&quot;,
+  &quot;attributes&quot; : [ {
+    &quot;name&quot; : &quot;Platform&quot;,
+    &quot;value&quot; : &quot;iOS&quot;
+  } ],
+  &quot;callbackUrl&quot; : &quot;api.company.com&quot;,
+  &quot;createdAt&quot; : 1343835346639,
+  &quot;createdBy&quot; : &quot;andrew@apigee.com&quot;,
+  &quot;credentials&quot; : [ {
+    &quot;apiProducts&quot; : [ {
+      &quot;apiproduct&quot; : &quot;weather_free&quot;,
+      &quot;status&quot; : &quot;approved&quot;
+    } ],
+    &quot;attributes&quot; : [ ],
+    &quot;consumerKey&quot; : &quot;GlouKJyAARkstGJt2rp8HbGmWd7qf0Hv&quot;,
+    &quot;consumerSecret&quot; : &quot;NOGKpokG1ThDPUdU&quot;,
+    &quot;status&quot; : &quot;approved&quot;
+  } ],
+  &quot;developerId&quot; : &quot;apiprovider@@@6ejTv4l6eQpvqesS&quot;,
+  &quot;lastModifiedAt&quot; : 1343835346639,
+  &quot;lastModifiedBy&quot; : &quot;admin@apigee.com&quot;,
+  &quot;name&quot; : &quot;weatherapp&quot;,
+  &quot;status&quot; : &quot;approved&quot;
+}</textarea>
+
+</li>
+    <li class="text input optional" id="api_resource_xml_sample_input"><label class=" label" for="api_resource_xml_sample">Xml sample</label><textarea id="api_resource_xml_sample" name="api_resource[xml_sample]" rows="20"></textarea>
+
+</li>
+    <li class="text input optional" id="api_resource_schema_input"><label class=" label" for="api_resource_schema">Schema</label><textarea id="api_resource_schema" name="api_resource[schema]" rows="20"></textarea>
+
+</li>
+		<p><a href="javascript:void(0)" class="i icon-plus add_nested_fields" data-association="entity_elements" data-blueprint-id="entity_elements_fields_blueprint">Elements</a></p>
+
+</ol></fieldset>
+</form><div data-blueprint="&lt;div class=&quot;fields&quot;&gt;
+	&lt;table&gt;
+		&lt;thead&gt;
+			&lt;th&gt;Name&lt;/th&gt;
+			&lt;th&gt;Description&lt;/th&gt;
+			&lt;th&gt;Default Value&lt;/th&gt;
+			&lt;th&gt;Required?&lt;/th&gt;
+		&lt;/thead&gt;
+		&lt;tbody&gt;
+	  		&lt;td&gt;&lt;input id=&quot;api_resource_entity_elements_attributes_new_entity_elements_name&quot; name=&quot;api_resource[entity_elements_attributes][new_entity_elements][name]&quot; size=&quot;30&quot; type=&quot;text&quot; /&gt;&lt;/td&gt;
+      		&lt;td&gt;&lt;input id=&quot;api_resource_entity_elements_attributes_new_entity_elements_description&quot; name=&quot;api_resource[entity_elements_attributes][new_entity_elements][description]&quot; size=&quot;30&quot; type=&quot;text&quot; /&gt;&lt;/td&gt;
+	  		&lt;td&gt;&lt;input id=&quot;api_resource_entity_elements_attributes_new_entity_elements_default&quot; name=&quot;api_resource[entity_elements_attributes][new_entity_elements][default]&quot; size=&quot;30&quot; type=&quot;text&quot; /&gt;&lt;/td&gt;
+      		&lt;td&gt;&lt;select id=&quot;api_resource_entity_elements_attributes_new_entity_elements_required&quot; name=&quot;api_resource[entity_elements_attributes][new_entity_elements][required]&quot;&gt;&lt;option value=&quot;Yes&quot;&gt;Yes&lt;/option&gt;
+&lt;option value=&quot;No&quot;&gt;No&lt;/option&gt;&lt;/select&gt;&lt;/td&gt;
+		&lt;/tbody&gt;
+		&lt;/table&gt;
+	  &lt;input id=&quot;api_resource_entity_elements_attributes_new_entity_elements__destroy&quot; name=&quot;api_resource[entity_elements_attributes][new_entity_elements][_destroy]&quot; type=&quot;hidden&quot; value=&quot;false&quot; /&gt;&lt;a href=&quot;javascript:void(0)&quot; class=&quot;i icon-remove remove_nested_fields&quot; data-association=&quot;entity_elements&quot;&gt;Delete&lt;/a&gt;
+&lt;/div&gt;" id="entity_elements_fields_blueprint" style="display: none"></div>
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->
+
+       <!-- <footer>
+        <p>&copy; Apigee, Inc. 2012</p>
+      </footer>  -->
+
+    </div> <!-- /container -->
+
+
+
+  </body>
+</html>
