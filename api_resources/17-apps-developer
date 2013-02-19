@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apigee API Reference</title>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="thRiABTiVJIJRq2vdioTvlq074mU7PwZtuj8ne3kMwo=" name="csrf-token" />
+    <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
+
+	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
+       <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+       <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+       <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+       <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+	  <script src="/assets/application-dc5c9a427e1f5afd21166897f350d896.js" type="text/javascript"></script> 
+	  <script type="text/javascript" charset="utf-8">
+	jQuery(document).ready(function () {
+	    jQuery("td span.expand").click(function () {
+	        jQuery(this).parents("tr.main").nextUntil("tr.main").toggle();
+	    });
+	});
+	  </script>
+	<script type="text/javascript">
+	jQuery(document).ready(function() {
+	  jQuery("resource_table").hide();
+	  //toggle the componenet with class msg_body
+	  jQuery(".heading").click(function()
+	  {
+	    jQuery(this).next(".content").slideToggle(500);
+	  });
+	});
+	</script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div id="user_bar"  style="float: right;">
+    <a href="/login"><span class="translation_missing" title="translation missing: en.sessions.login">Login</span></a>
+</div>
+
+<!-- <body class="html not-front not-logged-in one-sidebar sidebar-second page-node page-node- page-node-3975 node-type-quick-start" >
+    <a name="top"></a>
+<header id="navbar" role="banner" class="navbar navbar-fixed-top">
+  <div class="main-nav navbar-inner">
+    <div class="container">
+      <div class="row">
+        <div class="nav-collapse">
+          <div class="span3 pull-left">
+                          <a class="brand" href="//apigee.com" title="Home">
+                <img src="http://apigee.com/docs/sites/all/themes/apigee_docs/logo.png" alt="Home" />
+              </a>
+                      </div>
+
+                        <ul id="main-menu" class="nav"><li class="menu-2564 active-trail first"><a href="/docs/enterprise/enterprise_home" title="" class="active-trail">API Platform</a></li>
+<li class="menu-2563"><a href="/docs/app_services" title="">App Services</a></li>
+<li class="menu-795"><a href="/docs/consoletogo/" title="Enterprise API Console">Console To-Go</a></li>
+<li class="menu-811 last"><a href="/docs/content/support" title="Submit support request">Support</a></li>
+</ul>          
+                      <div class="span4 pull-right searchy">
+              <form class="search-form navbar-search pull-right" action="/docs/search/site" method="post" id="search-form--2" accept-charset="UTF-8"><div><input type="hidden" name="form_build_id" value="form-e5wjYxNMonKZYhQe7hWe3ZHnxrTaC3wcKrZlxkDry1c" />
+<input type="hidden" name="form_id" value="search_form" />
+<div class="control-group form-type-textfield form-item-keys">
+ <div class="controls"> <input class="search-query span2 form-text" placeholder="Search" type="text" id="edit-keys--2" name="keys" value="" size="40" maxlength="255" />
+</div></div>
+<input style="display:none" class="btn btn-primary form-submit" type="submit" id="edit-submit--2" name="op" value="Search" /></div></form>            </div>
+          
+                      <div id="header-sign-up-now">
+              <a class="btn btn-large" href="/about/sign-up?origin=http%3A%2F%2Fapigee.com%2Fdocs%2Fapi%2Fcontent%2Fbuilding-composite-service-2-javascript-app">Sign Up Now</a>
+              <span>Have an account?&nbsp;</span><a class="link" href="/about/sign-in?origin=http%3A%2F%2Fapigee.com%2Fdocs%2Fapi%2Fcontent%2Fbuilding-composite-service-2-javascript-app">Sign In</a>
+            </div>
+                  </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="sub-nav navbar-inner">
+    <div class="container">
+      <div class="row">
+                <div role="banner" id="page-header" class="span18">
+            <div class="secondary-menu-wrapper">
+              <ul id="secondary-menu" class="links inline clearfix"><li class="menu-1350 first"><a href="/docs/enterprise/enterprise_home" title="">Home</a></li>
+<li class="menu-3068"><a href="/docs/enterprise/quickstarts" title="">Quick Starts</a></li>
+<li class="menu-4142"><a href="/docs/api/api-resources" title="">API Reference</a></li>
+<li class="menu-3069"><a href="/docs/enterprise/index" title="">How Tos</a></li>
+<li class="menu-3070 last"><a href="/docs/content/console">Console</a></li>
+</ul>            </div>
+        </div>
+        
+              </div>
+    </div>
+  </div>
+  </header>
+
+
+
+			 -->
+            <div id="category">
+Developer and App Administration
+</div>
+
+<div id="breadcrumb">
+<a href="/docs/enterprise/enterprise_home">Home</a> > <a href="/docs/api/api-resources">Platform API Reference</a> > Apps: Developer</div>
+
+
+<div class="page-header">
+  <h1>Apps: Developer</h1>
+</div>
+
+<!-- <div class=btn>
+<a href="/api_methods/new">Add an API Method</a>
+</div> -->
+
+<div class="lead">API Platform Base Path: https://api.enterprise.apigee.com/v1/o/{org_name}</div>
+
+		<table class="table">
+				<tr><td class="lead">API Resource Path: /developers/{developer_email}/apps</td></tr>
+				<tr><td>A client/consumer app associated with a developer entity</td></tr>
+		  		<tr><td>In Apigee, Apps can belong to individual developers or to groups of developers (known as 'companies'). The Developer App is an App that belongs to a single developer. Apps are created in Apigee in order to obtain credentials to access API Products. So, a Developer App always has associated credentials, API Products, and other metadata (stored as attributes) that can be used for profile-based access control, Analytics, etc. Apps also have status, and may be approved or unapproved. By default Apps are created in the 'approved' state.</td></tr>
+		       <!-- <td><div id="well"><pre>{
+  &quot;accessType&quot; : &quot;read&quot;,
+  &quot;appFamily&quot; : &quot;default&quot;,
+  &quot;attributes&quot; : [ {
+    &quot;name&quot; : &quot;Platform&quot;,
+    &quot;value&quot; : &quot;iOS&quot;
+  } ],
+  &quot;callbackUrl&quot; : &quot;api.company.com&quot;,
+  &quot;createdAt&quot; : 1343835346639,
+  &quot;createdBy&quot; : &quot;andrew@apigee.com&quot;,
+  &quot;credentials&quot; : [ {
+    &quot;apiProducts&quot; : [ {
+      &quot;apiproduct&quot; : &quot;weather_free&quot;,
+      &quot;status&quot; : &quot;approved&quot;
+    } ],
+    &quot;attributes&quot; : [ ],
+    &quot;consumerKey&quot; : &quot;GlouKJyAARkstGJt2rp8HbGmWd7qf0Hv&quot;,
+    &quot;consumerSecret&quot; : &quot;NOGKpokG1ThDPUdU&quot;,
+    &quot;status&quot; : &quot;approved&quot;
+  } ],
+  &quot;developerId&quot; : &quot;apiprovider@@@6ejTv4l6eQpvqesS&quot;,
+  &quot;lastModifiedAt&quot; : 1343835346639,
+  &quot;lastModifiedBy&quot; : &quot;admin@apigee.com&quot;,
+  &quot;name&quot; : &quot;weatherapp&quot;,
+  &quot;status&quot; : &quot;approved&quot;
+}</pre></div></td></tr> -->
+		</table>
+
+
+
+		<table class="table table-bordered">
+		<tbody>
+				<tr><td colspan="2"><span class="lead">Approve a developer app</span></td><td><a href="/api_methods/88-approve-a-developer-app" class="btn btn-mini">Detail</a></td> 
+			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/apps/{app_name}</pre></span></td></tr>
+				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
+				<tr><td><strong>Description:</strong></td><td colspan="2">Changes the status of a developer from 'unapproved' to 'approved'.</td></tr>
+		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+				<tr><td colspan="2"><span class="lead">Create a Developer App</span></td><td><a href="/api_methods/14-create-a-developer-app" class="btn btn-mini">Detail</a></td> 
+			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/apps</pre></span></td></tr>
+				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
+				<tr><td><strong>Description:</strong></td><td colspan="2">Creates an App associated with a Developer</td></tr>
+		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+				<tr><td colspan="2"><span class="lead">Delete a Developer App</span></td><td><a href="/api_methods/31-delete-a-developer-app" class="btn btn-mini">Detail</a></td> 
+			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/apps/{app_name}</pre></span></td></tr>
+				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
+				<tr><td><strong>Description:</strong></td><td colspan="2">Delete a Developer's App</td></tr>
+		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+				<tr><td colspan="2"><span class="lead">Get a Developer App</span></td><td><a href="/api_methods/87-get-a-developer-app" class="btn btn-mini">Detail</a></td> 
+			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/apps/{app_name}</pre></span></td></tr>
+				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
+				<tr><td><strong>Description:</strong></td><td colspan="2">Get the profile of a Developer App</td></tr>
+		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+				<tr><td colspan="2"><span class="lead">Gets the count of API resources  defined in API products approved for a developer app in an organization</span></td><td><a href="/api_methods/133-gets-the-count-of-api-resources-defined-in-api-products-approved-for-a-developer-app-in-an-organization" class="btn btn-mini">Detail</a></td> 
+			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/apps/{app_name}?&amp;quot;query=count&amp;entity={entity_name}&amp;quot;</pre></span></td></tr>
+				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
+				<tr><td><strong>Description:</strong></td><td colspan="2">Gets a count of all API resources (URIs) in the API products accessible by a developer app</td></tr>
+		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+				<tr><td colspan="2"><span class="lead">List Apps by Developer</span></td><td><a href="/api_methods/5-list-apps-by-developer" class="btn btn-mini">Detail</a></td> 
+			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/apps</pre></span></td></tr>
+				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
+				<tr><td><strong>Description:</strong></td><td colspan="2">Lists all apps created by a developer in an organization</td></tr>
+		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+				<tr><td colspan="2"><span class="lead">List Developer Apps (Expanded)</span></td><td><a href="/api_methods/96-list-developer-apps-expanded" class="btn btn-mini">Detail</a></td> 
+			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/apps?expand=true</pre></span></td></tr>
+				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
+				<tr><td><strong>Description:</strong></td><td colspan="2">Provides an expanded view of a developer's collection of apps</td></tr>
+		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+				<tr><td colspan="2"><span class="lead">Revoke a Developer App</span></td><td><a href="/api_methods/97-revoke-a-developer-app" class="btn btn-mini">Detail</a></td> 
+			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/apps/{app_name}?action=revoke</pre></span></td></tr>
+				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
+				<tr><td><strong>Description:</strong></td><td colspan="2">Revokes a Developer App, disabling access to all API Products</td></tr>
+				<tr><td><strong>Content Types:</strong></td><td>
+				
+<div class="content_type" id="content_type_3">
+application/x-www-url-form-encoded
+</div>
+				</td></tr>
+		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+				<tr><td colspan="2"><span class="lead">Update a developer app</span></td><td><a href="/api_methods/30-update-a-developer-app" class="btn btn-mini">Detail</a></td> 
+			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/apps/{app_name}</pre></span></td></tr>
+				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-PUT">PUT</span> </td></tr>
+				<tr><td><strong>Description:</strong></td><td colspan="2">Updates the app to get a new set of consumer credentials. </td></tr>
+		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+		</tbody>
+		</table>
+
+<!-- Schema:
+
+<div id="well"><pre></pre></div> -->
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->
+
+		<footer>
+        	<p>&copy; Apigee, Inc. 2012</p>
+      	</footer> 
+
+    </div> <!-- /container -->
+
+
+
+  </body>
+</html>
