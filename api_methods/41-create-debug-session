@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="AmPwaIAnNcX8RSmG/pxynFgutTe6L7yjdzt7OR3/yDk=" name="csrf-token" />
+<meta content="qXBfC1ECZBNIQggV0KuEZaCWzso/uSR4sJ6e83PO73M=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -48,9 +48,9 @@
 <div class="row">
 	<div class="span6" style="width:340px;">
 		<p><b>API Platform Base Path:</b> https://api.enterprise.apigee.com/v1/o/{org_name}</p>
-		<p><b>API Resource Path:</b> /environments/{environmentName} /apis/{apiName}/revisions/{revisionVersion}/debugsessions/{sessionID}</p>
+		<p><b>API Resource Path:</b> /environments/{env_name} /apis/{api_name}/revisions/{revision_number}/debugsessions</p>
 		<p>
-		Creates a Debug session on Apigee
+		Creates a debug session on Apigee
 		</p>
 	</div>
 
@@ -63,24 +63,112 @@
 		Basic Auth
 		</p>
 
+		<p>
+		<b>Content Types:</b>
+		
+<div class="content_type" id="content_type_3">
+application/x-www-url-form-encoded
+</div>
+		</p>
 
 	</div>
 </div>
 
 <div class="span18">
 	<p>
-	A debug session records messages and the actions taken on those messages during flow processing.
+	A debug session records detailed information on messages, the Flow processing, and policy execution during processing by an API proxy. 
+<p>
+The data returned in the debug session is a single XML file containing all debug data for each message exchange. The debug data is the same as that used to generate the 'Trace' view in the Management UI.
+<p>
+A debug  session captures a maximum of 10 messages or records for a maximum for 2 minutes (by default), whichever comes first.
+<p>
+NOTE: In this API call, <code>/organizations</code> cannot be abbreviated as <code>/o</code>.
+<p>
+Debugging involves the following steps:
+<p>
+1. Start a debug session by creating a debug session 
+<p>
+2. Send a message for that deployed API proxy.
+<p>
+3. Retrieve the debug data associated with the debug session. The data can be fetched by issuing a GET call on the session. 
+<p>
+4 Close the debug session. (Closing the debug session discards all the associated data)
+
 	</p>
 
+	<b>Sample Request:</b>
+	<pre>$ curl  -X POST \ https://api.enterprise.apigee.com/v1/organizations/apifactory/environments/test/apis/weatherapi/revisions/13/debugsessions?"session=MySession"
+-u myname:mypass
+</pre>
 
+
+<b>Query Parameters:</b>
+
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Default</th>
+				<th>Required?</th>
+			</tr>
+			</thead>
+			
+<tr>
+<td>session</td>
+<td>The user-given name of the debug session (used to retrieve the results after debugging completes).</td>
+<td>N/A</td>
+<td>Yes</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+<td>timeout</td>
+<td>The time in seconds after which the particular session should be discarded. Default is 120 seconds.</td>
+<td>120 (seconds)</td>
+<td>No</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+			</table>
 
 <b>Sample Response:</b> 
-	<pre></pre>
+	<pre>{
+  "matchingHeaders" : {
+  },
+  "matchingQParams" : {
+  },
+  "name" : "MySession"
+}</pre>
 
 
+	<b>Errors</b> 
+		<pre>{
+  &quot;code&quot; : &quot;distribution.NotDeployed&quot;,
+  &quot;message&quot; : &quot;Revision 5 of APIProxy weatherapi is not deployed to the environment test&quot;,
+  &quot;contexts&quot; : [ ]
+}</pre>
 	
 	<b>Last updated:</b>
-	7 months ago
+	6 days ago
 	</p>
 
 </div>

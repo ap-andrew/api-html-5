@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="AmPwaIAnNcX8RSmG/pxynFgutTe6L7yjdzt7OR3/yDk=" name="csrf-token" />
+<meta content="qXBfC1ECZBNIQggV0KuEZaCWzso/uSR4sJ6e83PO73M=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/api_resources">Platform API Reference</a> > <a href="/api_resources/7-maps">Maps</a> > Delete Entry</div>
+<a href="/api_resources">Platform API Reference</a> > <a href="/api_resources/7-key-value-maps">Key/Value Maps</a> > Delete Entry</div>
 <p>
 <h1>Delete Entry</h1> 
 </p>
@@ -48,7 +48,7 @@
 <div class="row">
 	<div class="span6" style="width:340px;">
 		<p><b>API Platform Base Path:</b> https://api.enterprise.apigee.com/v1/o/{org_name}</p>
-		<p><b>API Resource Path:</b> /maps/{map_name}/entries/{entry_name}</p>
+		<p><b>API Resource Path:</b> /keyvaluemaps/{map_name}/entries/{entry_name}</p>
 		<p>
 		Deletes a single entry by name
 		</p>
@@ -63,6 +63,16 @@
 		Basic Auth
 		</p>
 
+		<p>
+		<b>Content Types:</b>
+		
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+		</p>
 
 	</div>
 </div>
@@ -72,6 +82,18 @@
 	Deletes a single entry from a map
 	</p>
 
+	<b>Sample Request:</b>
+	<pre>Scoped by organization:
+$ curl https://api.enterprise.apigee.com/v1/o/{org_name}/keyvaluemaps/{map_name}/entries/{entry_name} \
+-u myname:mypass 
+
+Scoped by environment:
+$ curl https://api.enterprise.apigee.com/v1/o/{org_name}/environments/{env_name}/keyvaluemaps/{map_name}/entries/{entry_name} \
+-u myname:mypass 
+
+Scoped by API:
+$ curl https://api.enterprise.apigee.com/v1/o/{org_name}/apis/{api_name}/keyvaluemaps/{map_name}/entries/{entry_name} \
+-u myname:mypass </pre>
 
 
 <b>Sample Response:</b> 
@@ -116,7 +138,7 @@ Failure Codes:
 2. Map Name Invalid</pre>
 	
 	<b>Last updated:</b>
-	about 1 month ago
+	20 minutes ago
 	</p>
 
 </div>
