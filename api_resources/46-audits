@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="qXBfC1ECZBNIQggV0KuEZaCWzso/uSR4sJ6e83PO73M=" name="csrf-token" />
+<meta content="FhBktVbzPo70rCdy8pDZQD91SWhftQCIFc7XYOSYkH0=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -44,7 +44,7 @@ Administration
 </div>
 
 <div id="breadcrumb">
-<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > Audits</div>
+<a href="/docs/enterprise/enterprise_home">Home</a> > <a href="/docs/api/api-resources">Platform API Reference</a> > Audits</div>
 
 
 <div class="page-header">
@@ -55,16 +55,16 @@ Administration
 <a href="/api_methods/new">Add an API Method</a>
 </div> -->
 
-<p><b>API Platform Base Path: </b>https://api.enterprise.apigee.com/v1/o/{org_name}</p>
+<p><b>API Platform Base Path: </b>https://api.enterprise.apigee.com/v1/audits/o/{org_name}</p>
 
 		<table class="table">
 				<tr><td class="lead">API Resource Path: /audits</td></tr>
-				<tr><td>Events stored as log entries in the API Platform datastore. (Note that the base path for audits precedes /organizations.)</td></tr>
+				<tr><td>Events stored as log entries in the API Platform datastore. <b>(Note that the base path for <code>/audits</code> precedes <code>/organizations</code>.)</b></td></tr>
 		  		<tr><td><p>Audit logs provide access to  the actions (create, read, update, delete) executed on entities managed by Apigee.</p>
 
 <p>The following details are captured as audit details for an event:</p>
 
-<ul><li>Operation: create, update, read, delete, deploy, undeploy</li>
+<ul><li>Operation: create, update, get, delete</li>
 <li>RequestURI</li>
 <li>Request</li>
 <li>ResponseCode</li>
@@ -79,10 +79,10 @@ Administration
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Get audit logs</span></td><td><a href="/api_methods/200-get-audit-logs" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List audit entries</span></td><td><a href="/api_methods/200-list-audit-entries" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/audits</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
-				<tr><td><strong>Description:</strong></td><td colspan="2">Gets audit records for organizations, APIs, API revisions, and policies. (Note that base path inserts audits before organizations: /audits/organizations/{myorg}.</td></tr>
+				<tr><td><strong>Description:</strong></td><td colspan="2">Lists audit records for organizations, APIs, API revisions, policies and resources. (Note that base path inserts audits before organizations: <code>/audits/organizations/{org_name}</code>.</td></tr>
 				<tr><td><strong>Content Types:</strong></td><td>
 				
 <div class="content_type" id="content_type_1">

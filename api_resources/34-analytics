@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="qXBfC1ECZBNIQggV0KuEZaCWzso/uSR4sJ6e83PO73M=" name="csrf-token" />
+<meta content="FhBktVbzPo70rCdy8pDZQD91SWhftQCIFc7XYOSYkH0=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -44,7 +44,7 @@ API Analytics
 </div>
 
 <div id="breadcrumb">
-<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > Analytics</div>
+<a href="/docs/enterprise/enterprise_home">Home</a> > <a href="/docs/api/api-resources">Platform API Reference</a> > Analytics</div>
 
 
 <div class="page-header">
@@ -60,27 +60,36 @@ API Analytics
 		<table class="table">
 				<tr><td class="lead">API Resource Path: /environments/{env_name}/stats</td></tr>
 				<tr><td>Analytics reports based on runtime metrics collected by the API Platform that measure API consumption and performance</td></tr>
-		  		<tr><td><p>Returns metrics based on specified dimensions.</p>
+		  		<tr><td><ul><li>Pre-computed, static dimensions used for operational dashboards</li>
+<li>Dynamic dimensions, whose metrics are computed 'on-demand' when a report is built</li>
+<li>Custom dimensions, which enable you to build reports based on message content</li></ul>
 
-<p><b>Dimension:</b> The entity for which Apigee collects metrics. Apigee defines dimensions that can be used in your reports. Some dimensions of initial interest are:</p>
-<p>client_ip: The IP address of the app making the request to your API</p>
-<p>developer: The developer of the app making the request to your API</p>
-<p>developer_app: The name of the app making the request to your API</p>
-<p>access_token: The app end user's OAuth access token</p>
+<p>For each type of dimension, you construct a request by adding the desired dimension by name as a URI parameter following <code>/stats</code>.</p>
 
-<p><b>Metrics:</b> The metric to be measured for the chosen dimension.</p>
+<p>For example:</p>
 
-<p>target_response_time: How long it takes the backend service to respond</p>
-<p>response_status_code: The status code of the response, which is good for measuring specific errors</p>
-<p>message_count: Total number of messages</p>
-<p>request_size: Size if the request message</p>
-<p>response_processing_latency: Duration of processing by the Apigee response pipeline</p>
-<p>response_size: Size of the response message</p>
-<p>request_processing_latency: Duration of processing by the Apigee request pipeline.</p>
-<p>total_response_time: Overall duration of processing for Apigee plus the backend service</p>
-<p>is_error: Defines a message as an error</p>
-<p><b>Time range:</b> Time interval over which metrics should be calculated. </p>
-<p><b>Functions:</b> sum, average, min, max</p>
+<pre>/stats/apis</pre>
+
+<pre>/stats/apps</pre>
+
+<p>You define the report by specifying a set or query parameters that define the desired metrics, calculation, time range, and filters.</p>
+
+<p>For pre-computed metrics, only simple calculations are needed, since the specific function used to perform the calculation is embedded in the metric.</p>
+
+<p>To generate custom reports, you select a <code>metric + function</code> calculation to run over the specified dimensions.</p>
+
+<p>The base request to create a custom report that calculates average response time for all APIs in an environment is:</p>
+
+<pre>/stats/apis?select=avg(total_response_time)</pre>
+
+<p>Use the additional query parameters defined in the API method to construct the complete request.</p>
+
+<p>For usage, see the <a href="https://apigee.com/docs/enterprise/content/reporting-api-analytics">API Platform Developer Guide topic</a>.</p>
+
+<p>A comprehensive reference on all dimensions, metrics, metrics, and functions supported by the API is available in the <a href="https://apigee.com/docs/content/analytics-reference">API Platform Analytics reference</a>.</p>
+
+
+
 </td></tr>
 		       <!-- <td><div id="well"><pre></pre></div></td></tr> -->
 		</table>

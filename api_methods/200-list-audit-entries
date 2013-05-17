@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apigee API Reference</title>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="FhBktVbzPo70rCdy8pDZQD91SWhftQCIFc7XYOSYkH0=" name="csrf-token" />
+    <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
+
+	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
+       <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+       <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+       <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+       <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+	  <script src="/assets/application-dc5c9a427e1f5afd21166897f350d896.js" type="text/javascript"></script> 
+	  <script type="text/javascript" charset="utf-8">
+	jQuery(document).ready(function () {
+	    jQuery("td span.expand").click(function () {
+	        jQuery(this).parents("tr.main").nextUntil("tr.main").toggle();
+	    });
+	});
+	  </script>
+	<script type="text/javascript">
+	jQuery(document).ready(function() {
+	  jQuery("resource_table").hide();
+	  //toggle the componenet with class msg_body
+	  jQuery(".heading").click(function()
+	  {
+	    jQuery(this).next(".content").slideToggle(500);
+	  });
+	});
+	</script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+
+            <div id="breadcrumb">
+<a href="/docs/enterprise/enterprise_home">Home</a> > <a href="/docs/api/api-resources">Platform API Reference</a> > <a href="/docs/api/api_resources/46-audits">Audits</a> > List audit entries</div>
+<p>
+<h1>List audit entries</h1> 
+</p>
+
+<div class="row">
+	<div class="span6" style="width:340px;">
+		<p><b>API Platform Base Path:</b> https://api.enterprise.apigee.com/v1/o/{org_name}</p>
+		<p><b>API Resource Path:</b> /audits</p>
+		<p>
+		Lists audit records for organizations, APIs, API revisions, and policies. (Note that base path inserts audits before organizations: /audits/organizations/{myorg}.
+		</p>
+	</div>
+
+	<div class="span6" style="width:340px;">
+		<p>
+		<b>Verb:</b>
+		<span class="verb-GET">GET</span>
+		</p>
+		<b>Auth:</b>
+		Basic Auth
+		</p>
+
+		<p>
+		<b>Content Types:</b>
+		
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+		</p>
+
+	</div>
+</div>
+
+<div class="span18">
+	<p>
+	<p>The list of audit records provides the details of all calls to the Apigee Platform API made by user within an organization during the specified interval of time.</p>
+
+<p>Append the target resource as a URL parameter to the base path of the request for an audit.</p>
+<p>Supported audit targets:</p>
+<ul>
+<li>/apis/{api_name}</li>
+<li>/apis/{api_name}/revisions/{revision_number}/policies/{policy_name}</li>
+<li>/apis/{api_name}/revisions/{revision_number}/resources/{resource_name}</li></ul>
+
+<p>Note that a resource name identifies a JavaScript, Python, Java, or XSLT file stored under <code>/resources</code> in an API proxy configuration.</p>
+
+<p>An audit returns a history of GET, CREATE, UPDATE, and DELETE operations on the audit target.</p>
+
+<p>To retrieve all audit records for sub-entities, use the query parameter <code>expand=true</code>. By setting <code>expand=true</code> on <code>/apis</code>, you return audit records for all revisions, policies, and resources for all API proxies in your organization.</p>
+
+<p>For API revisions, deploy and undeploy actions are recorded as CREATE operations. Therefore a CREATE action on an API revision indicates that a new revision was deployed while the previous revision was undeployed. </p>
+	</p>
+
+	<b>Sample Request:</b>
+	<pre>$ curl  "https://api.enterprise.apigee.com/v1/audits/o/[org_name}/apis/{api_name}?operation=create&timeline=week" \
+-u myname:mypass</pre>
+
+
+<b>Query Parameters:</b>
+
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Default</th>
+				<th>Required?</th>
+			</tr>
+			</thead>
+			
+<tr>
+<td>user</td>
+<td>Filters results by Apigee user's email address</td>
+<td>N/A</td>
+<td>No</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+<td>timeline</td>
+<td>Filters results by time interval, defaults to day if no value is specified. Valid values are day, week, month.</td>
+<td>Last 24 hours</td>
+<td>Yes</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+<td>operation</td>
+<td>Filters results by operation. Valid values are create, update, get, delete.</td>
+<td>N/A</td>
+<td>No</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+<td>expand</td>
+<td>'true' is the only valid value for this query parameter. When set to true, the audit records for all sub-resources are returned in the list of records. </td>
+<td>N/A</td>
+<td>No</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+			</table>
+
+<b>Sample Response:</b> 
+	<pre>{
+    "auditRecord": [
+        {
+            "operation": "CREATE", 
+            "request": "'{  'configurationVersion' : {    'majorVersion' : 4,    'minorVersion' : 0  },  'contextInfo' : 'Revision null of application -NA-, in organization -NA-',  'createdAt' : 1368567737681,  'createdBy' : 'andrew@apigee.com',  'lastModifiedAt' : 1368567737681,  'lastModifiedBy' : 'andrew@apigee.com',  'name' : 'testnode',  'policies' : [ ],  'proxyEndpoints' : [ ],  'resourceFiles' : [ ],  'resources' : [ ],  'targetEndpoints' : [ ],  'targetServers' : [ ],  'type' : 'Application'}'", 
+            "requestUri": "/v1/organizations/apifactory/apis/weatherapi/", 
+            "response": "{  'configurationVersion' : {    'majorVersion' : 4,    'minorVersion' : 0  },  'contextInfo' : 'Revision 1 of application testnode, in organization apifactory',  'createdAt' : 1368567737681,  'createdBy' : 'andrew@apigee.com',  'displayName' : 'weatherapi',  'lastModifiedAt' : 1368567737681,  'lastModifiedBy' : 'andrew@apigee.com',  'name' : 'testnode',  'policies' : [ ],  'proxyEndpoints' : [ ],  'resourceFiles' : [ ],  'resources' : [ ],  'revision' : '1',  'targetEndpoints' : [ ],  'targetServers' : [ ],  'type' : 'Application'}", 
+            "responseCode": "201", 
+            "timeStamp": 1368567737771, 
+            "user": "andrew@apigee.com"
+        }
+    ]
+}
+</pre>
+
+	<b>Response Payload Elements:</b>
+		<table class="table table-bordered">
+			<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+			</thead>
+			<tr>
+<div class="response_element" id="response_element_696">
+<td>auditRecord </td>
+<td>The audit record for an operation on the target resource</td>
+<!-- <td><a href="/response_elements/696" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/200-list-audit-entries?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_698">
+<td>operation </td>
+<td>The operation (GET, CREATE, UPDATE, or DELETE) logged for this target</td>
+<!-- <td><a href="/response_elements/698" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/200-list-audit-entries?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_699">
+<td>requestUri </td>
+<td>The URI path of the request to the audit target</td>
+<!-- <td><a href="/response_elements/699" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/200-list-audit-entries?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_701">
+<td>response </td>
+<td>The configuration of the API proxy that managed the outbound response</td>
+<!-- <td><a href="/response_elements/701" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/200-list-audit-entries?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_702">
+<td>responseCode </td>
+<td>The HTTP response code returned for the operation from the AIP Platform to the requesting app</td>
+<!-- <td><a href="/response_elements/702" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/200-list-audit-entries?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_704">
+<td>timeStamp </td>
+<td>Unix time when the action was logged by the auditing system</td>
+<!-- <td><a href="/response_elements/704" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/200-list-audit-entries?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_711">
+<td>request </td>
+<td>The configuration of the API proxy that managed the inbound request</td>
+<!-- <td><a href="/response_elements/711" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/200-list-audit-entries?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_712">
+<td>user </td>
+<td>The ID of the user who who issued the API call in the audit record</td>
+<!-- <td><a href="/response_elements/712" class="btn btn-mini">Detail</a></td> -->
+<!-- <td><a href="/api_methods/200-list-audit-entries?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr>
+		</table>
+
+	<b>Errors</b> 
+		<pre>Failure 4xx with proper error message
+&lt;Error&gt;
+&lt;Code&gt;audit.invalid_search_parameter&lt;/Code&gt;
+&lt;Message&gt;Search parameter is not valid &lt;/Message&gt;
+&lt;Contexts/&gt;
+&lt;/Error&gt;</pre>
+	
+	<b>Last updated:</b>
+	about 1 hour ago
+	</p>
+
+</div>
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->
+
+		<!-- <footer>
+        	<p>&copy; Apigee, Inc. 2012</p>
+      	</footer>  -->
+
+    </div> <!-- /container -->
+
+
+
+  </body>
+</html>
