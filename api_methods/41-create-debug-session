@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="FhBktVbzPo70rCdy8pDZQD91SWhftQCIFc7XYOSYkH0=" name="csrf-token" />
+<meta content="A1GDLUFcqffEDCVw98Rnt48AoJgAYbmh7+tWtDiQklo=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/docs/enterprise/enterprise_home">Home</a> > <a href="/docs/api/api-resources">Platform API Reference</a> > <a href="/docs/api/api_resources/10-debug-sessions">Debug Sessions</a> > Create Debug Session</div>
+<a href="/api_resources">Platform API Reference</a> > <a href="/api_resources/10-debug-sessions">Debug Sessions</a> > Create Debug Session</div>
 <p>
 <h1>Create Debug Session</h1> 
 </p>
@@ -97,7 +97,7 @@ Debugging involves the following steps:
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl  -X POST \ https://api.enterprise.apigee.com/v1/organizations/apifactory/environments/test/apis/weatherapi/revisions/13/debugsessions?"session=MySession"
+	<pre>$ curl  -X POST \ https://api.enterprise.apigee.com/v1/organizations/apifactory/environments/test/apis/weatherapi/revisions/13/debugsessions?&quot;session=MySession&quot;
 -u myname:mypass
 </pre>
 
@@ -167,9 +167,6 @@ Debugging involves the following steps:
   &quot;contexts&quot; : [ ]
 }</pre>
 	
-	<b>Last updated:</b>
-	3 months ago
-	</p>
 
 </div>
 

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="FhBktVbzPo70rCdy8pDZQD91SWhftQCIFc7XYOSYkH0=" name="csrf-token" />
+<meta content="A1GDLUFcqffEDCVw98Rnt48AoJgAYbmh7+tWtDiQklo=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/docs/enterprise/enterprise_home">Home</a> > <a href="/docs/api/api-resources">Platform API Reference</a> > <a href="/docs/api/api_resources/7-key-value-maps">Key/Value Maps</a> > Create KeyValueMap</div>
+<a href="/api_resources">Platform API Reference</a> > <a href="/api_resources/7-key-value-maps">Key/Value Maps</a> > Create KeyValueMap</div>
 <p>
 <h1>Create KeyValueMap</h1> 
 </p>
@@ -89,35 +89,35 @@ To scope KeyValueMaps to these entities, use URI parameters as demonstrated in t
 
 	<b>Sample Request:</b>
 	<pre>Scoped to organization:
-$ curl -H "Content-Type:application/json" -X POST -d \
+$ curl -H &quot;Content-Type:application/json&quot; -X POST -d \
    '{
-  "entry" : [ {
-    "name" : "dev",
-    "value" : "user1"
+  &quot;entry&quot; : [ {
+    &quot;name&quot; : &quot;dev&quot;,
+    &quot;value&quot; : &quot;user1&quot;
   } ],
-  "name" : "prodmap"
+  &quot;name&quot; : &quot;prodmap&quot;
 }' \
 -u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/keyvaluemaps
 
 Scoped to environment:
-$ curl -H "Content-Type:application/json" -X POST -d \
+$ curl -H &quot;Content-Type:application/json&quot; -X POST -d \
    '{
-  "entry" : [ {
-    "name" : "dev",
-    "value" : "user1"
+  &quot;entry&quot; : [ {
+    &quot;name&quot; : &quot;dev&quot;,
+    &quot;value&quot; : &quot;user1&quot;
   } ],
-  "name" : "prodmap"
+  &quot;name&quot; : &quot;prodmap&quot;
 }' \
 -u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/environments/{env_name}/keyvaluemaps
 
 Scoped to API:
-$ curl -H "Content-Type:application/json" -X POST -d \
+$ curl -H &quot;Content-Type:application/json&quot; -X POST -d \
    '{
-  "entry" : [ {
-    "name" : "dev",
-    "value" : "user1"
+  &quot;entry&quot; : [ {
+    &quot;name&quot; : &quot;dev&quot;,
+    &quot;value&quot; : &quot;user1&quot;
   } ],
-  "name" : "prodmap"
+  &quot;name&quot; : &quot;prodmap&quot;
 }' \
 -u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/apis/{api_name}/keyvaluemaps</pre>
 	<b>Request Payload Elements:</b> 
@@ -194,9 +194,6 @@ $ curl -H "Content-Type:application/json" -X POST -d \
   &quot;contexts&quot; : [ ]
 }</pre>
 	
-	<b>Last updated:</b>
-	3 months ago
-	</p>
 
 </div>
 

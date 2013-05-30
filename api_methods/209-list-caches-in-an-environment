@@ -40,24 +40,24 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/api_resources">Platform API Reference</a> > <a href="/api_resources/7-key-value-maps">Key/Value Maps</a> > Delete Entry</div>
+<a href="/api_resources">Platform API Reference</a> > <a href="/api_resources/47-caches">Caches</a> > List caches in an environment</div>
 <p>
-<h1>Delete Entry</h1> 
+<h1>List caches in an environment</h1> 
 </p>
 
 <div class="row">
 	<div class="span6" style="width:340px;">
 		<p><b>API Platform Base Path:</b> https://api.enterprise.apigee.com/v1/o/{org_name}</p>
-		<p><b>API Resource Path:</b> /keyvaluemaps/{map_name}/entries/{entry_name}</p>
+		<p><b>API Resource Path:</b> /environments/{env_name}/caches</p>
 		<p>
-		Deletes a single entry by name
+		Returns a list of caches that are available in an environment
 		</p>
 	</div>
 
 	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
-		<span class="verb-DELETE">DELETE</span>
+		<span class="verb-GET">GET</span>
 		</p>
 		<b>Auth:</b>
 		Basic Auth
@@ -74,68 +74,27 @@ text/xml
 </div>
 		</p>
 
+		<p>
+		<b><a href="http://apigee.com/docs/api-platform/content/optimize-performance-using-cache">Developer Guide Topic</a></b>
+		</p>
 	</div>
 </div>
 
 <div class="span18">
 	<p>
-	Deletes a single entry from a map
+	
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>Scoped by organization:
-$ curl https://api.enterprise.apigee.com/v1/o/{org_name}/keyvaluemaps/{map_name}/entries/{entry_name} \
--u myname:mypass 
-
-Scoped by environment:
-$ curl https://api.enterprise.apigee.com/v1/o/{org_name}/environments/{env_name}/keyvaluemaps/{map_name}/entries/{entry_name} \
--u myname:mypass 
-
-Scoped by API:
-$ curl https://api.enterprise.apigee.com/v1/o/{org_name}/apis/{api_name}/keyvaluemaps/{map_name}/entries/{entry_name} \
--u myname:mypass </pre>
+	<pre>$ curl https://api.enterprise.apigee.com/v1/o/{org_name}/environments/{env_name}/caches \
+-u myname:mypass
+</pre>
 
 
 <b>Sample Response:</b> 
-	<pre>{
-  "name" : "qa",
-  "value" : "user2"
-}</pre>
+	<pre>[ "translate-cache", "mycache", "test-cache" ]</pre>
 
-	<b>Response Payload Elements:</b>
-		<table class="table table-bordered">
-			<thead>
-			<tr>
-				<th>Name</th>
-				<th>Description</th>
-			</tr>
-			</thead>
-			<tr>
-<div class="response_element" id="response_element_398">
-<td>name </td>
-<td>The name of the deleted netry</td>
-<!-- <td><a href="/response_elements/398" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/48-delete-entry?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
-</div></tr><tr>
-<div class="response_element" id="response_element_399">
-<td>value </td>
-<td>The value of the deleted entry</td>
-<!-- <td><a href="/response_elements/399" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/48-delete-entry?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
-</div></tr>
-		</table>
 
-	<b>Errors</b> 
-		<pre>Failure 4xx with proper error message
-{
-  &quot;code&quot; : &quot;keymanagement.service.organization_map_doesnt_exist&quot;,
-  &quot;message&quot; : &quot;Organization map does not exist&quot;,
-  &quot;contexts&quot; : [ ]
-}
-
-Failure Codes:
-1. Organization Name Invalid
-2. Map Name Invalid</pre>
 	
 
 </div>

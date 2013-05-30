@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="FhBktVbzPo70rCdy8pDZQD91SWhftQCIFc7XYOSYkH0=" name="csrf-token" />
+<meta content="A1GDLUFcqffEDCVw98Rnt48AoJgAYbmh7+tWtDiQklo=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/docs/enterprise/enterprise_home">Home</a> > <a href="/docs/api/api-resources">Platform API Reference</a> > <a href="/docs/api/api_resources/18-developer-app-keys">Developer App Keys</a> > Update Key with ApiProduct(s)</div>
+<a href="/api_resources">Platform API Reference</a> > <a href="/api_resources/18-developer-app-keys">Developer App Keys</a> > Update Key with ApiProduct(s)</div>
 <p>
 <h1>Update Key with ApiProduct(s)</h1> 
 </p>
@@ -74,15 +74,15 @@ The API product(s) specified in request payload will be merged with existing API
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl -H &quot;Content-type:application/json&quot; -X POST -d \
+	<pre>$ curl -H &amp;quot;Content-type:application/json&amp;quot; -X POST -d \
 '{
-  &quot;apiProducts&quot;: [&quot;ApiProduct_qa&quot;],
-  &quot;attributes&quot; : [{
-    &quot;name&quot; : &quot;region&quot;,
-    &quot;value&quot; : &quot;south&quot;
+  &amp;quot;apiProducts&amp;quot;: [&amp;quot;ApiProduct_qa&amp;quot;],
+  &amp;quot;attributes&amp;quot; : [{
+    &amp;quot;name&amp;quot; : &amp;quot;region&amp;quot;,
+    &amp;quot;value&amp;quot; : &amp;quot;south&amp;quot;
   },{
-    &quot;name&quot; : &quot;country&quot;,
-    &quot;value&quot; : &quot;norway&quot;
+    &amp;quot;name&amp;quot; : &amp;quot;country&amp;quot;,
+    &amp;quot;value&amp;quot; : &amp;quot;norway&amp;quot;
   }]
 }'
 -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/developers/{developerEmail}/apps/{appName}/keys/{consumerKey}</pre>
@@ -195,9 +195,6 @@ The API product(s) specified in request payload will be merged with existing API
   &quot;contexts&quot; : [ ]
 }</pre>
 	
-	<b>Last updated:</b>
-	4 months ago
-	</p>
 
 </div>
 

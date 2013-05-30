@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="FhBktVbzPo70rCdy8pDZQD91SWhftQCIFc7XYOSYkH0=" name="csrf-token" />
+<meta content="A1GDLUFcqffEDCVw98Rnt48AoJgAYbmh7+tWtDiQklo=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/docs/enterprise/enterprise_home">Home</a> > <a href="/docs/api/api-resources">Platform API Reference</a> > <a href="/docs/api/api_resources/34-analytics">Analytics</a> > Get an analytics report for a dimension</div>
+<a href="/api_resources">Platform API Reference</a> > <a href="/api_resources/34-analytics">Analytics</a> > Get an analytics report for a dimension</div>
 <p>
 <h1>Get an analytics report for a dimension</h1> 
 </p>
@@ -102,7 +102,7 @@ Custom dimensions can be added by defining custom variables as described in the 
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl https://api.enterprise.apigee.com/v1/o/{org_name}/environments/{env_name}/stats/{dimension_name}?"select=message_count&timeRange=1/1/2013%2000:00~1/2/2013%2000:00&timeUnit=hour&sortby=message_count&sort=DESC&filter=(apis%20in%20'weather','news')" \
+	<pre>$ curl https://api.enterprise.apigee.com/v1/o/{org_name}/environments/{env_name}/stats/{dimension_name}?&quot;select=message_count&amp;timeRange=1/1/2013%2000:00~1/2/2013%2000:00&amp;timeUnit=hour&amp;sortby=message_count&amp;sort=DESC&amp;filter=(apis%20in%20'weather','news')&quot; \
 -u myname:mypass</pre>
 
 
@@ -333,9 +333,6 @@ Custom dimensions can be added by defining custom variables as described in the 
 		</table>
 
 	
-	<b>Last updated:</b>
-	3 months ago
-	</p>
 
 </div>
 

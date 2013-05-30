@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="FhBktVbzPo70rCdy8pDZQD91SWhftQCIFc7XYOSYkH0=" name="csrf-token" />
+<meta content="A1GDLUFcqffEDCVw98Rnt48AoJgAYbmh7+tWtDiQklo=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/docs/enterprise/enterprise_home">Home</a> > <a href="/docs/api/api-resources">Platform API Reference</a> > <a href="/docs/api/api_resources/46-audits">Audits</a> > List audit entries</div>
+<a href="/api_resources">Platform API Reference</a> > <a href="/api_resources/46-audits">Audits</a> > List audit entries</div>
 <p>
 <h1>List audit entries</h1> 
 </p>
@@ -98,7 +98,7 @@ text/xml
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl  "https://api.enterprise.apigee.com/v1/audits/o/[org_name}/apis/{api_name}?operation=create&timeline=week" \
+	<pre>$ curl  &quot;https://api.enterprise.apigee.com/v1/audits/o/[org_name}/apis/{api_name}?operation=create&amp;timeline=week&quot; \
 -u myname:mypass</pre>
 
 
@@ -267,9 +267,6 @@ text/xml
 &lt;Contexts/&gt;
 &lt;/Error&gt;</pre>
 	
-	<b>Last updated:</b>
-	about 1 hour ago
-	</p>
 
 </div>
 
