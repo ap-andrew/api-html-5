@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="FhBktVbzPo70rCdy8pDZQD91SWhftQCIFc7XYOSYkH0=" name="csrf-token" />
+<meta content="A1GDLUFcqffEDCVw98Rnt48AoJgAYbmh7+tWtDiQklo=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -44,7 +44,7 @@ API Configuration and Management
 </div>
 
 <div id="breadcrumb">
-<a href="/docs/enterprise/enterprise_home">Home</a> > <a href="/docs/api/api-resources">Platform API Reference</a> > Caches</div>
+<a href="/api-resources">Platform API Reference</a> > Caches</div>
 
 
 <div class="page-header">
@@ -85,6 +85,62 @@ API Configuration and Management
 
 		<table class="table table-bordered">
 		<tbody>
+				<tr><td colspan="2"><span class="lead">Create a cache</span></td><td><a href="/api_methods/207-create-a-cache" class="btn btn-mini">Detail</a></td> 
+			    <tr><td colspan="3"><span id="well"><pre>/environments/{env_name}/caches</pre></span></td></tr>
+				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
+				<tr><td><strong>Description:</strong></td><td colspan="2">Creates a cache in an environment</td></tr>
+				<tr><td><strong>Content Types:</strong></td><td>
+				
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+				</td></tr>
+		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+				<tr><td colspan="2"><span class="lead">Get a cache configuration</span></td><td><a href="/api_methods/210-get-a-cache-configuration" class="btn btn-mini">Detail</a></td> 
+			    <tr><td colspan="3"><span id="well"><pre>/environments/{env_name}/caches/{cache_name}</pre></span></td></tr>
+				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
+				<tr><td><strong>Description:</strong></td><td colspan="2">Gets a representation of a a cache resource</td></tr>
+				<tr><td><strong>Content Types:</strong></td><td>
+				
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+				</td></tr>
+		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+				<tr><td colspan="2"><span class="lead">List caches in an environment</span></td><td><a href="/api_methods/209-list-caches-in-an-environment" class="btn btn-mini">Detail</a></td> 
+			    <tr><td colspan="3"><span id="well"><pre>/environments/{env_name}/caches</pre></span></td></tr>
+				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
+				<tr><td><strong>Description:</strong></td><td colspan="2">Returns a list of caches that are available in an environment</td></tr>
+				<tr><td><strong>Content Types:</strong></td><td>
+				
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+				</td></tr>
+		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+				<tr><td colspan="2"><span class="lead">Update a cache</span></td><td><a href="/api_methods/208-update-a-cache" class="btn btn-mini">Detail</a></td> 
+			    <tr><td colspan="3"><span id="well"><pre>/environments/{env_name}/caches/{cache_name}</pre></span></td></tr>
+				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
+				<tr><td><strong>Description:</strong></td><td colspan="2">Updates the configuration of an existing cache</td></tr>
+				<tr><td><strong>Content Types:</strong></td><td>
+				
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+				</td></tr>
+		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
 		</tbody>
 		</table>
 
