@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="A1GDLUFcqffEDCVw98Rnt48AoJgAYbmh7+tWtDiQklo=" name="csrf-token" />
+<meta content="JqOz7VksI/LzL8YruOtg96bh03U52CjJeHiRRLrFCks=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,17 +40,17 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/api_resources">Platform API Reference</a> > <a href="/api_resources/35-developers">Developers</a> > Get a Developer </div>
+<a href="/api_resources">Platform API Reference</a> > <a href="/api_resources/35-developers">Developers</a> > Get a developer</div>
 <p>
-<h1>Get a Developer </h1> 
+<h1>Get a developer</h1> 
 </p>
 
 <div class="row">
 	<div class="span6" style="width:340px;">
 		<p><b>API Platform Base Path:</b> https://api.enterprise.apigee.com/v1/o/{org_name}</p>
-		<p><b>API Resource Path:</b> /developers/developer_email}</p>
+		<p><b>API Resource Path:</b> /developers/{developer_email}</p>
 		<p>
-		Returns the profile for the Developer by email address.
+		Returns the profile for a developer by email address.
 		</p>
 	</div>
 
@@ -69,9 +69,12 @@
 
 <div class="span18">
 	<p>
-	Returns the profile for the Developer by email address. Note that email address must be URL encoded:  developer@apigee.com should be encoded as developer%40apigee%2Ecom, for example, or it may be escaped, &quot;developer.apigee.com&quot;
+	Returns the profile for the Developer by email address.
 	</p>
 
+	<b>Sample Request:</b>
+	<pre>$ curl https://api.enterprise.apigee.com/v1/o/(org_name)/developer/{developer_mail} \
+-u myname:mypass</pre>
 
 
 <b>Sample Response:</b> 

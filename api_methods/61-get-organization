@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="A1GDLUFcqffEDCVw98Rnt48AoJgAYbmh7+tWtDiQklo=" name="csrf-token" />
+<meta content="JqOz7VksI/LzL8YruOtg96bh03U52CjJeHiRRLrFCks=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -63,6 +63,16 @@
 		Basic Auth
 		</p>
 
+		<p>
+		<b>Content Types:</b>
+		
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+		</p>
 
 	</div>
 </div>
@@ -72,6 +82,16 @@
 	An organization is the fundamental container for all objects in an API provider's Apigee account, including APIs, API products, apps, and developers. A user account is required for each organization for which you may be a member. (Most users will have an account in only one organization.) You pass in your credentials (username and password) and the name of your organization with each API request you submit. The organizations parameter may be passed in as /organizations or as /o. Organizations cannot be edited via the API.
 	</p>
 
+	<b>Sample Request:</b>
+	<pre>$ curl https://api.enterprise.apigee.com/v1/o/{org_name} \
+-u myname:mypass 
+
+or 
+
+$ curl https://api.enterprise.apigee.com/v1/organizations/{org_name} \
+-u myname:mypass 
+
+</pre>
 
 
 <b>Sample Response:</b> 

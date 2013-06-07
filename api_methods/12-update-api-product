@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="A1GDLUFcqffEDCVw98Rnt48AoJgAYbmh7+tWtDiQklo=" name="csrf-token" />
+<meta content="JqOz7VksI/LzL8YruOtg96bh03U52CjJeHiRRLrFCks=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -86,19 +86,19 @@ text/xml
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>curl -H &amp;quot;Content-Type:application/json&amp;quot; -X PUT -d \
-   '{&amp;quot;apiResources&amp;quot;: [ &amp;quot;/weather&amp;quot; ],      
-     &amp;quot;approvalType&amp;quot;: &amp;quot;auto&amp;quot;, 
-     &amp;quot;attributes&amp;quot;:
-      [{&amp;quot;name&amp;quot;: &amp;quot;description&amp;quot;, &amp;quot;value&amp;quot;: &amp;quot;Introductory API Product&amp;quot;},
-       {&amp;quot;name&amp;quot;: &amp;quot;developer.quota.interval&amp;quot;,&amp;quot;value&amp;quot;: &amp;quot;1&amp;quot;},
-       {&amp;quot;name&amp;quot;: &amp;quot;developer.quota.limit&amp;quot;,&amp;quot;value&amp;quot;: &amp;quot;1000&amp;quot;},
-       {&amp;quot;name&amp;quot;: &amp;quot;developer.quota.timeunit&amp;quot;,&amp;quot;value&amp;quot;: &amp;quot;month&amp;quot;},
-       {&amp;quot;name&amp;quot;: &amp;quot;servicePlan&amp;quot;, &amp;quot;value&amp;quot;: &amp;quot;Introductory&amp;quot;}],
-     &amp;quot;description&amp;quot;: &amp;quot;New Description&amp;quot;,
-     &amp;quot;displayName&amp;quot;: &amp;quot;Free API Product&amp;quot;,
-     &amp;quot;name&amp;quot;: &amp;quot;weather_free&amp;quot;,
-     &amp;quot;scopes&amp;quot;: []}' \
+	<pre>$ curl -H "Content-Type:application/json" -X PUT -d \
+   '{"apiResources": [ "/weather" ],      
+     "approvalType": "auto", 
+     "attributes":
+      [{"name": "description", "value": "Introductory API Product"},
+       {"name": "developer.quota.interval","value": "1"},
+       {"name": "developer.quota.limit","value": "1000"},
+       {"name": "developer.quota.timeunit","value": "month"},
+       {"name": "servicePlan", "value": "Introductory"}],
+     "description": "New Description",
+     "displayName": "Free API Product",
+     "name": "weather_free",
+     "scopes": []}' \
 -u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/apiproducts/{apiproduct_name}</pre>
 	<b>Request Payload Elements:</b> 
 	<table class="table table-bordered">

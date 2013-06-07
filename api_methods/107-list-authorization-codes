@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="A1GDLUFcqffEDCVw98Rnt48AoJgAYbmh7+tWtDiQklo=" name="csrf-token" />
+<meta content="JqOz7VksI/LzL8YruOtg96bh03U52CjJeHiRRLrFCks=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -176,8 +176,7 @@
 		</table>
 
 	<b>Errors</b> 
-		<pre>Failure 500 with proper error message
-{
+		<pre>{
   &quot;code&quot; : &quot;keymanagement.service.invalid_request-authorization_code_invalid&quot;,
   &quot;message&quot; : &quot;Unable to fetch authorization code details&quot;,
   &quot;contexts&quot; : [ ]

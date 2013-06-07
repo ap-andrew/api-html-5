@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="A1GDLUFcqffEDCVw98Rnt48AoJgAYbmh7+tWtDiQklo=" name="csrf-token" />
+<meta content="JqOz7VksI/LzL8YruOtg96bh03U52CjJeHiRRLrFCks=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -114,12 +114,14 @@ text/xml
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl -H &amp;quot;Content-type:application/json&amp;quot; -X POST -d \
-'{ &amp;quot;role&amp;quot; : [ {
-    &amp;quot;name&amp;quot; : &amp;quot;user&amp;quot;
+	<pre>$ curl -H "Content-type:application/json"; -X POST -d \
+'{
+  "role" : [ {
+    "name" : "user"
   }, {
-    &amp;quot;name&amp;quot; : &amp;quot;businessuser&amp;quot;
-  } ]}'
+    "name" : "businessuser"
+  } ]
+}'
 https://api.enterprise.apigee.com/v1/o/{org_name}/users/{user_email}/userroles \
 -u myname:mypass</pre>
 

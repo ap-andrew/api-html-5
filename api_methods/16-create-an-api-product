@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="A1GDLUFcqffEDCVw98Rnt48AoJgAYbmh7+tWtDiQklo=" name="csrf-token" />
+<meta content="JqOz7VksI/LzL8YruOtg96bh03U52CjJeHiRRLrFCks=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -115,23 +115,23 @@ Quota variables can be set as API Product attributes or as elements:
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl -H &amp;quot;Content-Type:application/json&amp;quot; -X POST -d \
+	<pre>$ curl -H "Content-Type:application/json" -X POST -d \
  '{
-  &quot;approvalType&quot; : &quot;auto&quot;,
-  &quot;attributes&quot; : [ {
-    &quot;name&quot; : &quot;division&quot;,
-    &quot;value&quot; : &quot;accounting&quot;
+  "approvalType" : "auto",
+  "attributes" : [ {
+    "name" : "division",
+    "value" : "accounting"
   } ],
-  &quot;displayName&quot; : &quot;Sandbox Silver&quot;,
-  &quot;name&quot; : &quot;sandbox&quot;,
-  &quot;apiResources&quot; : [ &quot;/v2/**&quot;, &quot;/v1/receiveSMS&quot;, &quot;/v3/*/send&quot; ],
-  &quot;description&quot; : &quot;Provides rate limited access to sandbox account APIs&quot;,
-  &quot;scopes&quot;: [&quot;read&quot;, &quot;write&quot;],
-  &quot;environments&quot;: [ &quot;test&quot; ],
-  &quot;proxies&quot;: [ &quot;MyAPI&quot; ],
-  &quot;quota&quot;: &quot;10&quot;,
-  &quot;quotaInterval&quot;: &quot;2&quot;,
-  &quot;quotaTimeUnit&quot;: &quot;hour&quot;
+  "displayName" : "Sandbox Silver",
+  "name" : "sandbox",
+  "apiResources" : [ "/v2/**", "/v1/receiveSMS", "/v3/*/send" ],
+  "description" : "Provides rate limited access to sandbox account APIs",
+  "scopes": ["read", "write"],
+  "environments": [ "test" ],
+  "proxies": [ "MyAPI" ],
+  "quota": "10",
+  "quotaInterval": "2",
+  "quotaTimeUnit": "hour"
 }'  \
 -u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/apiproducts</pre>
 	<b>Request Payload Elements:</b> 
@@ -383,8 +383,7 @@ Quota variables can be set as API Product attributes or as elements:
 		</table>
 
 	<b>Errors</b> 
-		<pre>Failure 5xx with proper error message
-{
+		<pre>{
    &quot;Error&quot;:{
       &quot;Code&quot;:&quot;keymanagement.service.apiproduct_invalid_name&quot;,
       &quot;Message&quot;:&quot;Invalid ApiProduct Name&quot;,

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="A1GDLUFcqffEDCVw98Rnt48AoJgAYbmh7+tWtDiQklo=" name="csrf-token" />
+<meta content="JqOz7VksI/LzL8YruOtg96bh03U52CjJeHiRRLrFCks=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -81,8 +81,7 @@
 
 
 	<b>Errors</b> 
-		<pre>Failure 4xx with proper error message
-{
+		<pre>{
   &quot;code&quot; : &quot;developer.service.CompanyDoesNotExist&quot;,
   &quot;message&quot; : &quot;Company named DevCompany1 does not exist in organization {organizationName}&quot;,
   &quot;contexts&quot; : [ ]
