@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="JqOz7VksI/LzL8YruOtg96bh03U52CjJeHiRRLrFCks=" name="csrf-token" />
+<meta content="t4MzBrL1ShIk9mFO8fKfX3JWV8OlvZNAWArKcYQJ61w=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,9 +40,9 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/api_resources">Platform API Reference</a> > <a href="/api_resources/17-apps-developer">Apps: Developer</a> > Get a developer app</div>
+<a href="/api_resources">Platform API Reference</a> > <a href="/api_resources/17-apps-developer">Apps: Developer</a> > Get a Developer App</div>
 <p>
-<h1>Get a developer app</h1> 
+<h1>Get a Developer App</h1> 
 </p>
 
 <div class="row">
@@ -72,9 +72,6 @@
 	
 	</p>
 
-	<b>Sample Request:</b>
-	<pre>$ curl https://api.enterprise.apigee.com/v1/o/(org_name)/developer/{developer_mail}/apps/{app_name} \
--u myname:mypass</pre>
 
 
 <b>Sample Response:</b> 
@@ -125,91 +122,91 @@
 <td>accessType </td>
 <td>Access type defined for the app</td>
 <!-- <td><a href="/response_elements/469" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/87-get-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/87-get-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_470">
 <td>attributes </td>
 <td>Name/value pairs used to extend the default profile</td>
 <!-- <td><a href="/response_elements/470" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/87-get-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/87-get-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_471">
 <td>callbackUrl </td>
 <td>A url that can be used for app-specific callbacks</td>
 <!-- <td><a href="/response_elements/471" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/87-get-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/87-get-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_472">
 <td>createdAt </td>
 <td>Unix time when the app was created</td>
 <!-- <td><a href="/response_elements/472" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/87-get-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/87-get-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_473">
 <td>createdBy </td>
 <td>User name of the Apigee user who created the app</td>
 <!-- <td><a href="/response_elements/473" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/87-get-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/87-get-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_474">
 <td>credentials </td>
 <td>A list of API products and associated consumer key/secret pairs for the app</td>
 <!-- <td><a href="/response_elements/474" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/87-get-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/87-get-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_475">
 <td>apiProducts </td>
 <td>A list of API products with which the app is associated</td>
 <!-- <td><a href="/response_elements/475" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/87-get-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/87-get-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_476">
 <td>status </td>
 <td>The status of the association between the app and teh API product: 'approved' or 'pending'</td>
 <!-- <td><a href="/response_elements/476" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/87-get-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/87-get-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_477">
 <td>attributes </td>
 <td>Name/value pairs associated with the API product</td>
 <!-- <td><a href="/response_elements/477" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/87-get-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/87-get-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_478">
 <td>consumerKey </td>
 <td>The value of the consumer key</td>
 <!-- <td><a href="/response_elements/478" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/87-get-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/87-get-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_479">
 <td>consumerSecret </td>
 <td>The value of the consumer secret associated with the consumer key</td>
 <!-- <td><a href="/response_elements/479" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/87-get-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/87-get-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_480">
 <td>lastModifiedAt </td>
 <td>Unix time when the app was last modified</td>
 <!-- <td><a href="/response_elements/480" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/87-get-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/87-get-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_481">
 <td>lastModifiedBy </td>
 <td>User name of the Apigee user who last modified the app</td>
 <!-- <td><a href="/response_elements/481" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/87-get-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/87-get-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_482">
 <td>name </td>
 <td>Name of the app</td>
 <!-- <td><a href="/response_elements/482" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/87-get-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/87-get-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_483">
 <td>status </td>
 <td>Status of the app: 'approved' or 'unapproved'</td>
 <!-- <td><a href="/response_elements/483" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/87-get-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/87-get-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 

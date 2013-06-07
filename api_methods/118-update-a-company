@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="JqOz7VksI/LzL8YruOtg96bh03U52CjJeHiRRLrFCks=" name="csrf-token" />
+<meta content="t4MzBrL1ShIk9mFO8fKfX3JWV8OlvZNAWArKcYQJ61w=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -73,14 +73,14 @@
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl  -H "Content-type:application/json" -X POST -d \
+	<pre>$ curl  -H &quot;Content-type:application/json&quot; -X POST -d \
 '{
- "name" : "DevCompany",
- "displayName" : "Developer Company",
- "status" : "active",
- "attributes" : [ {
-    "name" : "region",
-    "value" : "south"
+ &quot;name&quot; : &quot;DevCompany&quot;,
+ &quot;displayName&quot; : &quot;Developer Company&quot;,
+ &quot;status&quot; : &quot;active&quot;,
+ &quot;attributes&quot; : [ {
+    &quot;name&quot; : &quot;region&quot;,
+    &quot;value&quot; : &quot;south&quot;
  } ]
 }' \
 https://api.enterprise.apigee.com/v1/o/{org_name}/companies/{company_name} \
@@ -168,55 +168,55 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/companies/{company_name} \
 <td>name </td>
 <td>Name of the company</td>
 <!-- <td><a href="/response_elements/93" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/118-update-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/118-update-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_94">
 <td>displayName </td>
 <td>Display name of the company</td>
 <!-- <td><a href="/response_elements/94" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/118-update-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/118-update-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_95">
 <td>organization </td>
 <td>Apigee organization of the company</td>
 <!-- <td><a href="/response_elements/95" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/118-update-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/118-update-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_96">
 <td>status </td>
 <td>Status of the company: Active or Inactive</td>
 <!-- <td><a href="/response_elements/96" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/118-update-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/118-update-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_97">
 <td>attributes </td>
 <td>Arbitrary attributes that can be used to customize the default company profile</td>
 <!-- <td><a href="/response_elements/97" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/118-update-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/118-update-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_98">
 <td>createdAt </td>
 <td>Unix time when the entity was created</td>
 <!-- <td><a href="/response_elements/98" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/118-update-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/118-update-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_99">
 <td>createdBy </td>
 <td>Apigee username of the user who created the company</td>
 <!-- <td><a href="/response_elements/99" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/118-update-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/118-update-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_100">
 <td>lastModifiedAt </td>
 <td>Unix time when the entity was last modified</td>
 <!-- <td><a href="/response_elements/100" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/118-update-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/118-update-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_101">
 <td>lastModifiedBy </td>
 <td>Apigee username of the user who last modified the company</td>
 <!-- <td><a href="/response_elements/101" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/118-update-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/118-update-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 

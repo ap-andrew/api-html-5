@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="JqOz7VksI/LzL8YruOtg96bh03U52CjJeHiRRLrFCks=" name="csrf-token" />
+<meta content="t4MzBrL1ShIk9mFO8fKfX3JWV8OlvZNAWArKcYQJ61w=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -73,7 +73,7 @@
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/companies?"expand=true"</pre>
+	<pre>$ curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/companies?&quot;expand=true&quot;</pre>
 
 
 <b>Sample Response:</b> 
@@ -119,36 +119,37 @@
 <td>company </td>
 <td>Settings for the company</td>
 <!-- <td><a href="/response_elements/415" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/121-list-companies-in-an-organization-detailed-view?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/121-list-companies-in-an-organization-detailed-view?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_416">
 <td>apps </td>
 <td>A list of apps registered by the company</td>
 <!-- <td><a href="/response_elements/416" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/121-list-companies-in-an-organization-detailed-view?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/121-list-companies-in-an-organization-detailed-view?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_417">
 <td>name </td>
 <td>name of the company</td>
 <!-- <td><a href="/response_elements/417" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/121-list-companies-in-an-organization-detailed-view?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/121-list-companies-in-an-organization-detailed-view?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_418">
 <td>displayName </td>
 <td>Display name of the company</td>
 <!-- <td><a href="/response_elements/418" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/121-list-companies-in-an-organization-detailed-view?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/121-list-companies-in-an-organization-detailed-view?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_419">
 <td>organization </td>
 <td>Organization to which the company belongs</td>
 <!-- <td><a href="/response_elements/419" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/121-list-companies-in-an-organization-detailed-view?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/121-list-companies-in-an-organization-detailed-view?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 
 	<b>Errors</b> 
-		<pre>{
+		<pre>Failure 4xx with proper error message
+{
  &quot;code&quot; : &quot;developer.service.CompanyDoesNotExist&quot;,
  &quot;message&quot; : &quot;Company named DevCompany1 does not exist in organization {organizationName}&quot;,
  &quot;contexts&quot; : [ ]

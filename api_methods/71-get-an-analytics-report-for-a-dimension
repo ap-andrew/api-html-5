@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="JqOz7VksI/LzL8YruOtg96bh03U52CjJeHiRRLrFCks=" name="csrf-token" />
+<meta content="t4MzBrL1ShIk9mFO8fKfX3JWV8OlvZNAWArKcYQJ61w=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -304,31 +304,31 @@ Custom dimensions can be added by defining custom variables as described in the 
 <td>metadata </td>
 <td>Metadata associated with the report</td>
 <!-- <td><a href="/response_elements/1" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/71-get-an-analytics-report-for-a-dimension?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/71-get-an-analytics-report-for-a-dimension?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_2">
 <td>environments </td>
 <td>Environments in the organization where the statistics are collected (supports wildcard * for cross environment statistics collection)</td>
 <!-- <td><a href="/response_elements/2" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/71-get-an-analytics-report-for-a-dimension?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/71-get-an-analytics-report-for-a-dimension?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_3">
 <td>metrics </td>
 <td>The values returned for the specified dimension</td>
 <!-- <td><a href="/response_elements/3" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/71-get-an-analytics-report-for-a-dimension?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/71-get-an-analytics-report-for-a-dimension?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_7">
 <td>dimensions </td>
 <td>The dimension defined for measurement: in this example api_name.</td>
 <!-- <td><a href="/response_elements/7" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/71-get-an-analytics-report-for-a-dimension?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/71-get-an-analytics-report-for-a-dimension?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_10">
 <td>metrics </td>
 <td>Metrics for the report</td>
 <!-- <td><a href="/response_elements/10" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/71-get-an-analytics-report-for-a-dimension?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/71-get-an-analytics-report-for-a-dimension?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 

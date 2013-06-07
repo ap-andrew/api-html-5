@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="JqOz7VksI/LzL8YruOtg96bh03U52CjJeHiRRLrFCks=" name="csrf-token" />
+<meta content="t4MzBrL1ShIk9mFO8fKfX3JWV8OlvZNAWArKcYQJ61w=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -213,57 +213,58 @@ text/xml
 <td>auditRecord </td>
 <td>The audit record for an operation on the target resource</td>
 <!-- <td><a href="/response_elements/696" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/200-list-audit-entries?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/200-list-audit-entries?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_698">
 <td>operation </td>
 <td>The operation (GET, CREATE, UPDATE, or DELETE) logged for this target</td>
 <!-- <td><a href="/response_elements/698" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/200-list-audit-entries?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/200-list-audit-entries?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_699">
 <td>requestUri </td>
 <td>The URI path of the request to the audit target</td>
 <!-- <td><a href="/response_elements/699" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/200-list-audit-entries?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/200-list-audit-entries?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_701">
 <td>response </td>
 <td>The configuration of the API proxy that managed the outbound response</td>
 <!-- <td><a href="/response_elements/701" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/200-list-audit-entries?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/200-list-audit-entries?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_702">
 <td>responseCode </td>
 <td>The HTTP response code returned for the operation from the AIP Platform to the requesting app</td>
 <!-- <td><a href="/response_elements/702" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/200-list-audit-entries?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/200-list-audit-entries?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_704">
 <td>timeStamp </td>
 <td>Unix time when the action was logged by the auditing system</td>
 <!-- <td><a href="/response_elements/704" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/200-list-audit-entries?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/200-list-audit-entries?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_711">
 <td>request </td>
 <td>The configuration of the API proxy that managed the inbound request</td>
 <!-- <td><a href="/response_elements/711" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/200-list-audit-entries?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/200-list-audit-entries?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_712">
 <td>user </td>
 <td>The ID of the user who who issued the API call in the audit record</td>
 <!-- <td><a href="/response_elements/712" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/200-list-audit-entries?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/200-list-audit-entries?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 
 	<b>Errors</b> 
-		<pre>&lt;Error&gt;
-  &lt;Code&gt;audit.invalid_search_parameter&lt;/Code&gt;
-  &lt;Message&gt;Search parameter is not valid &lt;/Message&gt;
-  &lt;Contexts/&gt;
+		<pre>Failure 4xx with proper error message
+&lt;Error&gt;
+&lt;Code&gt;audit.invalid_search_parameter&lt;/Code&gt;
+&lt;Message&gt;Search parameter is not valid &lt;/Message&gt;
+&lt;Contexts/&gt;
 &lt;/Error&gt;</pre>
 	
 

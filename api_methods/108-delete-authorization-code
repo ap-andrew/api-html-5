@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="JqOz7VksI/LzL8YruOtg96bh03U52CjJeHiRRLrFCks=" name="csrf-token" />
+<meta content="t4MzBrL1ShIk9mFO8fKfX3JWV8OlvZNAWArKcYQJ61w=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -72,9 +72,6 @@
 	
 	</p>
 
-	<b>Sample Request:</b>
-	<pre>$ curl -X DELETE https://api.enterprise.apigee.com/v1/o/{org_name}/oauth2/authorizationcodes/{authcode} \
--u myname:mypass</pre>
 
 
 <b>Sample Response:</b> 
@@ -111,66 +108,67 @@
 <td>attributes </td>
 <td>Name/value pairs used to extend the default auth code profile</td>
 <!-- <td><a href="/response_elements/33" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_34">
 <td>client_id </td>
 <td>The consumer key of the app</td>
 <!-- <td><a href="/response_elements/34" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_35">
 <td>code </td>
 <td>The value of the authorization code</td>
 <!-- <td><a href="/response_elements/35" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_36">
 <td>createdAt </td>
 <td>Unix time when the auth code was generated</td>
 <!-- <td><a href="/response_elements/36" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_37">
 <td>createdBy </td>
 <td>User name of the Apigee user who created the auth code</td>
 <!-- <td><a href="/response_elements/37" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_38">
 <td>expiresAt </td>
 <td>Unix time when the auth code expires</td>
 <!-- <td><a href="/response_elements/38" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_39">
 <td>issuedAt </td>
 <td>Unix time when the auth code was issued</td>
 <!-- <td><a href="/response_elements/39" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_40">
 <td>lastModifiedAt </td>
 <td>Unix time when the auth code was last modified</td>
 <!-- <td><a href="/response_elements/40" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_41">
 <td>lastModifiedAt </td>
 <td>User name of the Apigee user who last modified the auth code</td>
 <!-- <td><a href="/response_elements/41" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_42">
 <td>status </td>
 <td>Status of the auth code, which changes to expired when the validity period has passed</td>
 <!-- <td><a href="/response_elements/42" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 
 	<b>Errors</b> 
-		<pre>{
+		<pre>Failure 404 with proper error message
+{
   &quot;code&quot; : &quot;keymanagement.service.invalid_request-authorization_code_invalid&quot;,
   &quot;message&quot; : &quot;Invalid Authorization Code&quot;,
   &quot;contexts&quot; : [ ]

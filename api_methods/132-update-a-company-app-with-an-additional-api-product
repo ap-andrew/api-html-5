@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="JqOz7VksI/LzL8YruOtg96bh03U52CjJeHiRRLrFCks=" name="csrf-token" />
+<meta content="t4MzBrL1ShIk9mFO8fKfX3JWV8OlvZNAWArKcYQJ61w=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -167,43 +167,43 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/companies/{company_name}/apps/
 <td>apiProducts </td>
 <td>The list of API products associated with the app</td>
 <!-- <td><a href="/response_elements/444" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/132-update-a-company-app-with-an-additional-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/132-update-a-company-app-with-an-additional-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_445">
 <td>apiproduct </td>
 <td>The name of one API product in the list of API products associated with the app</td>
 <!-- <td><a href="/response_elements/445" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/132-update-a-company-app-with-an-additional-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/132-update-a-company-app-with-an-additional-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_446">
 <td>status </td>
 <td>The status of the app's association with the API product: 'approved' or 'unapproved'</td>
 <!-- <td><a href="/response_elements/446" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/132-update-a-company-app-with-an-additional-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/132-update-a-company-app-with-an-additional-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_447">
 <td>attributes </td>
 <td>Name/value  formatted attributes used to extend the default API product profile</td>
 <!-- <td><a href="/response_elements/447" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/132-update-a-company-app-with-an-additional-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/132-update-a-company-app-with-an-additional-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_448">
 <td>consumerKey </td>
 <td>The value of the consumer key associated with the app</td>
 <!-- <td><a href="/response_elements/448" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/132-update-a-company-app-with-an-additional-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/132-update-a-company-app-with-an-additional-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_449">
 <td>consumerSecret </td>
 <td>The name of the consumer secret associated with the consumer key</td>
 <!-- <td><a href="/response_elements/449" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/132-update-a-company-app-with-an-additional-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/132-update-a-company-app-with-an-additional-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_450">
 <td>status </td>
 <td>The status of the consumer key: 'approved' or 'pending'</td>
 <!-- <td><a href="/response_elements/450" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/132-update-a-company-app-with-an-additional-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/132-update-a-company-app-with-an-additional-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 

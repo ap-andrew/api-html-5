@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="JqOz7VksI/LzL8YruOtg96bh03U52CjJeHiRRLrFCks=" name="csrf-token" />
+<meta content="t4MzBrL1ShIk9mFO8fKfX3JWV8OlvZNAWArKcYQJ61w=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -73,38 +73,13 @@
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl -H "Content-type:application/json" -X PUT -d \
-'{
-  "attributes" : [ {
-    "name" : "region",
-    "value" : "north"
-  } ],
-  "callbackUrl" : "www.dev.com",
-  "scope" : "global"
-}' \
--u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/oauth1/requesttokens/{request_token}</pre>
+	<pre>$ curl -H &quot;Content-type:application/json&quot; -X PUT -d \
+'{request body}' \
+-u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}//oauth1/requesttokens/{request_token}</pre>
 
 
 <b>Sample Response:</b> 
-	<pre>{
-  "app" : "myApp",
-  "attributes" : [ {
-    "name" : "region",
-    "value" : "north"
-  } ],
-  "callbackUrl" : "www.dev.com",
-  "consumerKey" : "Lmupmwb5mD6CAEl6vqii1kojTGMiCnWj",
-  "createdAt" : 1343034561737,
-  "createdBy" : "Admin",
-  "expiresAt" : 1343036361737,
-  "issuedAt" : 1343034561737,
-  "lastModifiedAt" : 1343034561817,
-  "lastModifiedBy" : "Admin",
-  "scope" : "global",
-  "secret" : "kSdnf7pBZADjxg5qfMkHhDVTumR5",
-  "status" : "approved",
-  "token" : "1wXHJFNXLA0Haeg4lVMToZWJHaFM"
-}</pre>
+	<pre></pre>
 
 
 	

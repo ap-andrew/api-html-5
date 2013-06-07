@@ -52,7 +52,7 @@ API Configuration and Management
 </div>
 
 <!-- <div class=btn>
-<a href="/api_methods/new">Add an API Method</a>
+<a href="/docs/api/api_methods/new">Add an API Method</a>
 </div> -->
 
 <p><b>API Platform Base Path: </b>https://api.enterprise.apigee.com/v1/o/{org_name}</p>
@@ -68,7 +68,7 @@ API Configuration and Management
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Create Debug Session</span></td><td><a href="/api_methods/41-create-debug-session" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Create Debug Session</span></td><td><a href="/docs/api/api_methods/41-create-debug-session" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/environments/{env_name} /apis/{api_name}/revisions/{revision_number}/debugsessions</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Creates a debug session on Apigee</td></tr>
@@ -79,17 +79,17 @@ application/x-www-url-form-encoded
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Delete a debug session</span></td><td><a href="/api_methods/43-delete-a-debug-session" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete a debug session</span></td><td><a href="/docs/api/api_methods/43-delete-a-debug-session" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/environments/{environmentName}/apis/{apiName}/revisions/{revisionVersion}/debugsessions/{sessionID}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Deletes a debug session previously generated in an environment</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get Debug Session Data</span></td><td><a href="/api_methods/42-get-debug-session-data" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get Debug Session Data</span></td><td><a href="/docs/api/api_methods/42-get-debug-session-data" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/environments/{env_name}/apis/{api_name}/revisions/{revision_number/debugsessions/{ession_name}/data</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2"></td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">List Debug Sessions</span></td><td><a href="/api_methods/7-list-debug-sessions" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List Debug Sessions</span></td><td><a href="/docs/api/api_methods/7-list-debug-sessions" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/environment/{environmentName}/debugsessions</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Get a list of debug sessions by ID within an environment</td></tr>

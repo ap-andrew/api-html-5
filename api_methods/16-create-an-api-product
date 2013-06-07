@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="JqOz7VksI/LzL8YruOtg96bh03U52CjJeHiRRLrFCks=" name="csrf-token" />
+<meta content="t4MzBrL1ShIk9mFO8fKfX3JWV8OlvZNAWArKcYQJ61w=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -115,7 +115,7 @@ Quota variables can be set as API Product attributes or as elements:
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl -H "Content-Type:application/json" -X POST -d \
+	<pre>$ curl -H &quot;Content-Type:application/json&quot; -X POST -d \
  '{
   "approvalType" : "auto",
   "attributes" : [ {
@@ -294,96 +294,97 @@ Quota variables can be set as API Product attributes or as elements:
 <td>apiResources </td>
 <td>A comma separated list of API resources to be bundled in the API Product. </td>
 <!-- <td><a href="/response_elements/204" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_205">
 <td>approvalType </td>
 <td>Manual or Auto. If Manual, consumer key is generated and returned in 'pending' state. If manual consumer key generated and returned in 'Approved' state.</td>
 <!-- <td><a href="/response_elements/205" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_206">
 <td>attributes </td>
 <td>Arbitrary name/value pairs</td>
 <!-- <td><a href="/response_elements/206" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_207">
 <td>createdAt </td>
 <td>UNIX time when the API Product was created</td>
 <!-- <td><a href="/response_elements/207" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_208">
 <td>createdby </td>
 <td>username of the user who created the API Product</td>
 <!-- <td><a href="/response_elements/208" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_209">
 <td>displayName  </td>
 <td>The display name of the API Product, used in Apps that display the API Product to Developers Apigee </td>
 <!-- <td><a href="/response_elements/209" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_210">
 <td>lastModifiedAt  </td>
 <td>UNIX time when the API Product was most recently updated </td>
 <!-- <td><a href="/response_elements/210" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_211">
 <td>lastModifiedBy  </td>
 <td>Apigee username of the user who most recently updated the API Product </td>
 <!-- <td><a href="/response_elements/211" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_212">
 <td>name  </td>
 <td>The internal name of the API Product</td>
 <!-- <td><a href="/response_elements/212" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_705">
 <td>environments </td>
 <td>A comma-separated list of environment name in an organization. Requests to environments not listed are rejected.</td>
 <!-- <td><a href="/response_elements/705" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_706">
 <td>proxies </td>
 <td>A comma-separated list of API proxy names in an organization. Requests to API proxies not listed are rejected.</td>
 <!-- <td><a href="/response_elements/706" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_707">
 <td>quota </td>
 <td>The number of request messages permitted by this API product.</td>
 <!-- <td><a href="/response_elements/707" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_708">
 <td>quotaInterval </td>
 <td>The time interval over which the number of request messages is calculated.</td>
 <!-- <td><a href="/response_elements/708" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_709">
 <td>quotaTimeUnit </td>
 <td>The time unit defined for the quotaInterval</td>
 <!-- <td><a href="/response_elements/709" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_710">
 <td>scopes </td>
 <td>A comma separated list of scopes. These must map to the scopes defined in an Oauth policy associated with the API Product. Any scope mismatch between an Acces Token presented and the API product results in authorization failure.</td>
 <!-- <td><a href="/response_elements/710" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 
 	<b>Errors</b> 
-		<pre>{
+		<pre>Failure 5xx with proper error message
+{
    &quot;Error&quot;:{
       &quot;Code&quot;:&quot;keymanagement.service.apiproduct_invalid_name&quot;,
       &quot;Message&quot;:&quot;Invalid ApiProduct Name&quot;,

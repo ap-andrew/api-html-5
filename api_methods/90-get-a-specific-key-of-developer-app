@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="JqOz7VksI/LzL8YruOtg96bh03U52CjJeHiRRLrFCks=" name="csrf-token" />
+<meta content="t4MzBrL1ShIk9mFO8fKfX3JWV8OlvZNAWArKcYQJ61w=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -72,9 +72,6 @@
 	Returns details for a consumer key, including the key and secret value, associated API products, and other metadata-
 	</p>
 
-	<b>Sample Request:</b>
-	<pre>$ curl https://api.enterprise.apigee.com/v1/o/{org_name}/developers/{developer_email}/apps/{app_name}/keys/{consumer_key} \
--u myname:mypass</pre>
 
 
 <b>Sample Response:</b> 
@@ -111,37 +108,37 @@
 <td>apiProducts </td>
 <td>Name of an API product associated with the key</td>
 <!-- <td><a href="/response_elements/321" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/90-get-a-specific-key-of-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/90-get-a-specific-key-of-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_322">
 <td>status </td>
 <td>Status of the association with the API product</td>
 <!-- <td><a href="/response_elements/322" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/90-get-a-specific-key-of-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/90-get-a-specific-key-of-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_323">
 <td>attributes </td>
 <td>Arbitrary name/value pairs associated with the key</td>
 <!-- <td><a href="/response_elements/323" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/90-get-a-specific-key-of-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/90-get-a-specific-key-of-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_324">
 <td>consumerKey </td>
 <td>The value of the consumer key</td>
 <!-- <td><a href="/response_elements/324" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/90-get-a-specific-key-of-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/90-get-a-specific-key-of-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_325">
 <td>consumerSecret </td>
 <td>The value of the secret associated with the consumer key</td>
 <!-- <td><a href="/response_elements/325" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/90-get-a-specific-key-of-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/90-get-a-specific-key-of-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_326">
 <td>status </td>
 <td>Staus of the consumer key: 'approved' or 'pending'</td>
 <!-- <td><a href="/response_elements/326" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/90-get-a-specific-key-of-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/90-get-a-specific-key-of-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 

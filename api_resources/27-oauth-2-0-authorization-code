@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="JqOz7VksI/LzL8YruOtg96bh03U52CjJeHiRRLrFCks=" name="csrf-token" />
+<meta content="t4MzBrL1ShIk9mFO8fKfX3JWV8OlvZNAWArKcYQJ61w=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -52,7 +52,7 @@ Oauth
 </div>
 
 <!-- <div class=btn>
-<a href="/api_methods/new">Add an API Method</a>
+<a href="/docs/api/api_methods/new">Add an API Method</a>
 </div> -->
 
 <p><b>API Platform Base Path: </b>https://api.enterprise.apigee.com/v1/o/{org_name}</p>
@@ -68,17 +68,17 @@ Oauth
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Delete Authorization Code</span></td><td><a href="/api_methods/108-delete-authorization-code" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete Authorization Code</span></td><td><a href="/docs/api/api_methods/108-delete-authorization-code" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/oauth2/authorizationcodes/{authorization_code}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Deletes the given authorization Code.</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get Authorization Code</span></td><td><a href="/api_methods/106-get-authorization-code" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get Authorization Code</span></td><td><a href="/docs/api/api_methods/106-get-authorization-code" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/oauth2/authorizationcodes/{authorization_code}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Get a specific Authorization Code</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">List Authorization Codes</span></td><td><a href="/api_methods/107-list-authorization-codes" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List Authorization Codes</span></td><td><a href="/docs/api/api_methods/107-list-authorization-codes" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/oauth2/authorizationcodes</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Lists all the Authorization Codes in an Organization</td></tr>

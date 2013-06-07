@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="JqOz7VksI/LzL8YruOtg96bh03U52CjJeHiRRLrFCks=" name="csrf-token" />
+<meta content="t4MzBrL1ShIk9mFO8fKfX3JWV8OlvZNAWArKcYQJ61w=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -86,19 +86,19 @@ text/xml
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl -H "Content-Type:application/json" -X PUT -d \
-   '{"apiResources": [ "/weather" ],      
-     "approvalType": "auto", 
-     "attributes":
-      [{"name": "description", "value": "Introductory API Product"},
-       {"name": "developer.quota.interval","value": "1"},
-       {"name": "developer.quota.limit","value": "1000"},
-       {"name": "developer.quota.timeunit","value": "month"},
-       {"name": "servicePlan", "value": "Introductory"}],
-     "description": "New Description",
-     "displayName": "Free API Product",
-     "name": "weather_free",
-     "scopes": []}' \
+	<pre>curl -H &quot;Content-Type:application/json&quot; -X PUT -d \
+   '{&quot;apiResources&quot;: [ &quot;/weather&quot; ],      
+     &quot;approvalType&quot;: &quot;auto&quot;, 
+     &quot;attributes&quot;:
+      [{&quot;name&quot;: &quot;description&quot;, &quot;value&quot;: &quot;Introductory API Product&quot;},
+       {&quot;name&quot;: &quot;developer.quota.interval&quot;,&quot;value&quot;: &quot;1&quot;},
+       {&quot;name&quot;: &quot;developer.quota.limit&quot;,&quot;value&quot;: &quot;1000&quot;},
+       {&quot;name&quot;: &quot;developer.quota.timeunit&quot;,&quot;value&quot;: &quot;month&quot;},
+       {&quot;name&quot;: &quot;servicePlan&quot;, &quot;value&quot;: &quot;Introductory&quot;}],
+     &quot;description&quot;: &quot;New Description&quot;,
+     &quot;displayName&quot;: &quot;Free API Product&quot;,
+     &quot;name&quot;: &quot;weather_free&quot;,
+     &quot;scopes&quot;: []}' \
 -u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/apiproducts/{apiproduct_name}</pre>
 	<b>Request Payload Elements:</b> 
 	<table class="table table-bordered">
@@ -197,55 +197,55 @@ text/xml
 <td>apiResources </td>
 <td>A list of URIs (including wildcards) that represent the bundle of APIs permitted to consumers of this API Product</td>
 <!-- <td><a href="/response_elements/138" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/12-update-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/12-update-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_139">
 <td>approvalType </td>
 <td>Determines the state of the consumer key generated for requesters of this API Product. For Auto, key are generated in &quot;Approved' state. For Manual, keys are approved in 'Pending' state. </td>
 <!-- <td><a href="/response_elements/139" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/12-update-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/12-update-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_140">
 <td>attributes </td>
 <td>Any app-specific arbitrary attributes that may be used to define visibility of the API Product or runtime policy enforcement (such as setting for a rate-limiting policy.</td>
 <!-- <td><a href="/response_elements/140" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/12-update-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/12-update-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_141">
 <td>createdAt </td>
 <td>Unix time</td>
 <!-- <td><a href="/response_elements/141" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/12-update-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/12-update-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_142">
 <td>createdBy </td>
 <td>Apigee user account name of the individual who submitted the POST request that created this entity</td>
 <!-- <td><a href="/response_elements/142" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/12-update-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/12-update-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_143">
 <td>lastModifiedAt </td>
 <td>Unix time when the API product was last modified</td>
 <!-- <td><a href="/response_elements/143" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/12-update-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/12-update-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_144">
 <td>lastModifiedBy </td>
 <td>Apigee user account name of the individual who last modified this entity</td>
 <!-- <td><a href="/response_elements/144" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/12-update-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/12-update-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_145">
 <td>name </td>
 <td>Name of the API Product</td>
 <!-- <td><a href="/response_elements/145" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/12-update-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/12-update-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_146">
 <td>scopes </td>
 <td>Oauth scopes required in the access token used to consume any of the API resources (URIs) bundled in this API Product</td>
 <!-- <td><a href="/response_elements/146" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/12-update-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/12-update-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="JqOz7VksI/LzL8YruOtg96bh03U52CjJeHiRRLrFCks=" name="csrf-token" />
+<meta content="t4MzBrL1ShIk9mFO8fKfX3JWV8OlvZNAWArKcYQJ61w=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -73,15 +73,15 @@
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl  -H "Content-type:application/json" -X PUT -d \
+	<pre>$ curl  -H &quot;Content-type:application/json&quot; -X PUT -d \
 '{
-  "access_type" : "read",
-  "attributes" : [ {
-    "name" : "Language",
-    "value" : "java-j2ee"
+  &quot;access_type&quot; : &quot;read&quot;,
+  &quot;attributes&quot; : [ {
+    &quot;name&quot; : &quot;Language&quot;,
+    &quot;value&quot; : &quot;java-j2ee&quot;
   } ],
-  "apiProducts": [ "sandbox"],
-  "callback_url" : "www.apigee.com"
+  &quot;apiProducts&quot;: [ &quot;sandbox&quot;],
+  &quot;callback_url&quot; : &quot;www.apigee.com&quot;
 }' \
 https://api.enterprise.apigee.com/v1/o/{org_name}/companies/{company_name}/apps/{app_name} \
 -u myname:mypass</pre>
@@ -168,55 +168,55 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/companies/{company_name}/apps/
 <td>access_type </td>
 <td>Unenforced by Apigee</td>
 <!-- <td><a href="/response_elements/155" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/65-update-a-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/65-update-a-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_156">
 <td>attributes </td>
 <td>Name/value pairs used to extend the default profile</td>
 <!-- <td><a href="/response_elements/156" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/65-update-a-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/65-update-a-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_157">
 <td>callback_url </td>
 <td>A callback that is used as the redirect_uri in OAuth flows</td>
 <!-- <td><a href="/response_elements/157" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/65-update-a-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/65-update-a-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_158">
 <td>created_at </td>
 <td>Unix time when the app was created</td>
 <!-- <td><a href="/response_elements/158" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/65-update-a-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/65-update-a-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_159">
 <td>created_at </td>
 <td>Unix time when the app was created</td>
 <!-- <td><a href="/response_elements/159" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/65-update-a-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/65-update-a-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_160">
 <td>created_by </td>
 <td>Apigee user name of the user who created this app</td>
 <!-- <td><a href="/response_elements/160" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/65-update-a-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/65-update-a-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_161">
 <td>lastmodified_at </td>
 <td>Unix time when the app was last modified</td>
 <!-- <td><a href="/response_elements/161" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/65-update-a-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/65-update-a-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_162">
 <td>lastmodified_by </td>
 <td>Apigee user name of the user who last modified this app</td>
 <!-- <td><a href="/response_elements/162" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/65-update-a-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/65-update-a-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_163">
 <td>status </td>
 <td>Status of the app: 'active' or 'inactive'</td>
 <!-- <td><a href="/response_elements/163" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/65-update-a-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/65-update-a-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 

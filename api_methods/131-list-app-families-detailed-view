@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="JqOz7VksI/LzL8YruOtg96bh03U52CjJeHiRRLrFCks=" name="csrf-token" />
+<meta content="t4MzBrL1ShIk9mFO8fKfX3JWV8OlvZNAWArKcYQJ61w=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -73,7 +73,7 @@
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/developers/{developer_email}/appfamilies?"expand=true"</pre>
+	<pre>$ curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/developers/{developer_email}/appfamilies?&quot;expand=true&quot;</pre>
 
 
 <b>Sample Response:</b> 
@@ -86,7 +86,8 @@
 
 
 	<b>Errors</b> 
-		<pre>{
+		<pre>Failure 4xx with proper error message
+{
   &quot;code&quot; : &quot;developer.service.DeveloperDoesNotExist&quot;,
   &quot;message&quot; : &quot;Developer named dev11@apigee.com does not exist in organization AutomationOrganization&quot;,
   &quot;contexts&quot; : [ ]

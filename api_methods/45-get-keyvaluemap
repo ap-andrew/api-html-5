@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="JqOz7VksI/LzL8YruOtg96bh03U52CjJeHiRRLrFCks=" name="csrf-token" />
+<meta content="t4MzBrL1ShIk9mFO8fKfX3JWV8OlvZNAWArKcYQJ61w=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -93,7 +93,7 @@ $ curl https://api.enterprise.apigee.com/v1/o/{org_name}/environments/{env_name}
 
 Scoped by API:
 $ curl https://api.enterprise.apigee.com/v1/o/{org_name}/apis/{api_name}/keyvaluemaps/{map_name} \
--u myname:mypass</pre>
+-u myname:mypass </pre>
 
 
 <b>Sample Response:</b> 
@@ -118,13 +118,13 @@ $ curl https://api.enterprise.apigee.com/v1/o/{org_name}/apis/{api_name}/keyvalu
 <td>entry </td>
 <td>Name/value pair that defines the map entry</td>
 <!-- <td><a href="/response_elements/403" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/45-get-keyvaluemap?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/45-get-keyvaluemap?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_404">
 <td>name </td>
 <td>The name of the map</td>
 <!-- <td><a href="/response_elements/404" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/45-get-keyvaluemap?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/45-get-keyvaluemap?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 

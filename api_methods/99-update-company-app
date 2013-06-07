@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="JqOz7VksI/LzL8YruOtg96bh03U52CjJeHiRRLrFCks=" name="csrf-token" />
+<meta content="t4MzBrL1ShIk9mFO8fKfX3JWV8OlvZNAWArKcYQJ61w=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -73,15 +73,16 @@
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl -H "Content-type:application/json" -X PUT -d \
+	<pre>$ curl -H &quot;Content-type:application/json&quot; -X PUT -d \
 '{
-  "emailId" : "guest@apigee.com",
-  "firstName" : "Guest",
-  "id" : "guest@apigee.com",
-  "lastName" : "NoLonger"
+  &quot;accessType&quot; : &quot;read&quot;,
+  &quot;attributes&quot; : [ {
+    &quot;name&quot; : &quot;Platform&quot;,
+    &quot;value&quot; : &quot;iOS&quot;
+  }],
+  &quot;callbackUrl&quot; : &quot;login.company.com&quot;
 }' \
-https://api.enterprise.apigee.com/v1/o/{org_name}/users/{user_email} \
--u myname:mypass</pre>
+-u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/companies/{company_name}/apps/{app_name}</pre>
 
 
 <b>Sample Response:</b> 

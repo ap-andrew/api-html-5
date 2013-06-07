@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="JqOz7VksI/LzL8YruOtg96bh03U52CjJeHiRRLrFCks=" name="csrf-token" />
+<meta content="t4MzBrL1ShIk9mFO8fKfX3JWV8OlvZNAWArKcYQJ61w=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -69,12 +69,9 @@
 
 <div class="span18">
 	<p>
-	Every environment in Apigee has at least one virtual host.  The virtual host defines the HTTP settings for connection with the Apigee organization. All API proxies in an environment share the same virtual hosts. This method returns the list of named virtual hosts. You can use the names here to get details for the virtual host. This is the best way to verify the network address that client apps must use to invoke your APIs. By default, two visrtual hosts are available for each environment: 'default' and 'secure'.
+	Every environment in Apigee has at least one virtual host.  The virtual host defines the HTTP settings for connection with the Apigee organization. All API proxies in an environment share the same virtual hosts. This method returns the list of named virtual hosts. You can use the names here to get details for the virtual host. This is the best way to verify the connection settings that client apps must use to invoke your APIs.
 	</p>
 
-	<b>Sample Request:</b>
-	<pre>$ curl https://api.enterprise.apigee.com/v1/o/{org_name}/environments/(env_name)/virtualhosts/{virtualhost_name}\
--u myname:mypass</pre>
 
 
 <b>Sample Response:</b> 
@@ -103,31 +100,31 @@
 <td>VirtualHost </td>
 <td>Settings for a named virtual host</td>
 <!-- <td><a href="/response_elements/378" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/23-get-a-virtual-host-for-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/23-get-a-virtual-host-for-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_379">
 <td>name </td>
 <td>The name of the virutal host</td>
 <!-- <td><a href="/response_elements/379" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/23-get-a-virtual-host-for-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/23-get-a-virtual-host-for-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_380">
 <td>HostAliases </td>
 <td>The URL for the virtual host </td>
 <!-- <td><a href="/response_elements/380" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/23-get-a-virtual-host-for-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/23-get-a-virtual-host-for-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_381">
 <td>Interfaces </td>
 <td>Named interfaces used by the virtual host</td>
 <!-- <td><a href="/response_elements/381" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/23-get-a-virtual-host-for-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/23-get-a-virtual-host-for-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_382">
 <td>Port </td>
 <td>The port on which the virtual host listens</td>
 <!-- <td><a href="/response_elements/382" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/23-get-a-virtual-host-for-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/23-get-a-virtual-host-for-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 

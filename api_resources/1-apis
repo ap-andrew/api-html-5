@@ -52,7 +52,7 @@ API Configuration and Management
 </div>
 
 <!-- <div class=btn>
-<a href="/api_methods/new">Add an API Method</a>
+<a href="/docs/api/api_methods/new">Add an API Method</a>
 </div> -->
 
 <p><b>API Platform Base Path: </b>https://api.enterprise.apigee.com/v1/o/{org_name}</p>
@@ -86,7 +86,7 @@ API Configuration and Management
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Create an API</span></td><td><a href="/api_methods/15-create-an-api" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Create an API</span></td><td><a href="/docs/api/api_methods/15-create-an-api" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apis</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Creates an API facade (and an API proxy configuration) on Apigee</td></tr>
@@ -100,47 +100,47 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Delete an API</span></td><td><a href="/api_methods/3-delete-an-api" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete an API</span></td><td><a href="/docs/api/api_methods/3-delete-an-api" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apis/{api_name}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Deletes an API and all associated endpoints, policies,  resources, and revisions</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Delete an API Revision</span></td><td><a href="/api_methods/27-delete-an-api-revision" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete an API Revision</span></td><td><a href="/docs/api/api_methods/27-delete-an-api-revision" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apis/{api_name}/revision/{revision_number}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Deletes a specific revision of an API</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Deploy an API to an Environment</span></td><td><a href="/api_methods/25-deploy-an-api-to-an-environment" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Deploy an API to an Environment</span></td><td><a href="/docs/api/api_methods/25-deploy-an-api-to-an-environment" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apis/{api_name}/revisions/{revision_number}/deployments?action=deploy&amp;env={environment_name}&amp;basepath={/basepath}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Pushes an API to an environment (typically 'test' or 'prod') for execution</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Export an API</span></td><td><a href="/api_methods/105-export-an-api" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Export an API</span></td><td><a href="/docs/api/api_methods/105-export-an-api" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apis/{api_name}/revisions{revision_number}?format=bundle</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Exports an API from Apigee to the local machine a ZIP bundle of config and code files.</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get an API</span></td><td><a href="/api_methods/104-get-an-api" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get an API</span></td><td><a href="/docs/api/api_methods/104-get-an-api" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apis/{api_name}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets an API, providing a pointer to existing revisions of the API.</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Import an API</span></td><td><a href="/api_methods/24-import-an-api" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Import an API</span></td><td><a href="/docs/api/api_methods/24-import-an-api" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apis?action=import&amp;name={api_name}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Uploads an API proxy from a local machine to Apigee</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">List APIs</span></td><td><a href="/api_methods/1-list-apis" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List APIs</span></td><td><a href="/docs/api/api_methods/1-list-apis" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apis</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets all APIs in an organization. The names in the list map to the names defined in the API proxy configuration for each API.</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Undeploy an API from an Environment</span></td><td><a href="/api_methods/26-undeploy-an-api-from-an-environment" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Undeploy an API from an Environment</span></td><td><a href="/docs/api/api_methods/26-undeploy-an-api-from-an-environment" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apis/{api_name}/deployments?action=undeploy&amp;env={environment_name}&amp;revision={revision_number}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Removes an API from an environment (typically 'test' or 'prod')</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Update an API</span></td><td><a href="/api_methods/2-update-an-api" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Update an API</span></td><td><a href="/docs/api/api_methods/2-update-an-api" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apis/{api_name}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-PUT">PUT</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Use the POST method to update a specific API proxy in an organization</td></tr>

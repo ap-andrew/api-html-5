@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="JqOz7VksI/LzL8YruOtg96bh03U52CjJeHiRRLrFCks=" name="csrf-token" />
+<meta content="t4MzBrL1ShIk9mFO8fKfX3JWV8OlvZNAWArKcYQJ61w=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -76,8 +76,7 @@
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl https://api.enterprise.apigee.com/v1/o/{org_name}/apiproducts/{apiproduct_name} -X DELETE \
--u myname:mypass</pre>
+	<pre>$ curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/apiproducts/{apiproduct_name} -X DELETE</pre>
 
 
 <b>Sample Response:</b> 
@@ -129,67 +128,67 @@
 <td>apiResources </td>
 <td>A list of URIs bundled in the API product</td>
 <!-- <td><a href="/response_elements/458" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/13-delete-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/13-delete-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_459">
 <td>approvalType </td>
 <td>Approval mode for the API product: 'manual' or 'auto'</td>
 <!-- <td><a href="/response_elements/459" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/13-delete-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/13-delete-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_460">
 <td>attributes </td>
 <td>Name/value pairs used to extend the default API product profile</td>
 <!-- <td><a href="/response_elements/460" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/13-delete-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/13-delete-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_461">
 <td>createdAt </td>
 <td>Unix time when the API product was created</td>
 <!-- <td><a href="/response_elements/461" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/13-delete-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/13-delete-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_462">
 <td>createdBy </td>
 <td>User name for the Apigee who created the API product</td>
 <!-- <td><a href="/response_elements/462" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/13-delete-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/13-delete-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_463">
 <td>description </td>
 <td>Description of the API product</td>
 <!-- <td><a href="/response_elements/463" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/13-delete-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/13-delete-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_464">
 <td>displayName </td>
 <td>Display name of the API product</td>
 <!-- <td><a href="/response_elements/464" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/13-delete-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/13-delete-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_465">
 <td>lastModifiedAt </td>
 <td>Unix time when the API product was last modified</td>
 <!-- <td><a href="/response_elements/465" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/13-delete-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/13-delete-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_466">
 <td>lastModifiedBy </td>
 <td>User name for the Apigee who last modified the API product</td>
 <!-- <td><a href="/response_elements/466" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/13-delete-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/13-delete-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_467">
 <td>name </td>
 <td>Name of the API product</td>
 <!-- <td><a href="/response_elements/467" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/13-delete-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/13-delete-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_468">
 <td>scopes </td>
 <td>Optional, comma-separated list of OAuth scopes included in the API product for validation at runtime</td>
 <!-- <td><a href="/response_elements/468" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/13-delete-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/13-delete-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 

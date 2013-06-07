@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="JqOz7VksI/LzL8YruOtg96bh03U52CjJeHiRRLrFCks=" name="csrf-token" />
+<meta content="t4MzBrL1ShIk9mFO8fKfX3JWV8OlvZNAWArKcYQJ61w=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -121,55 +121,55 @@
 <td>aPIProxy </td>
 <td>The name of the API proxy</td>
 <!-- <td><a href="/response_elements/282" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/25-deploy-an-api-to-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/25-deploy-an-api-to-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_283">
 <td>configuration </td>
 <td>The basepath for this deployment (appended to the basepath defined in the Proxy Endpoint if any)</td>
 <!-- <td><a href="/response_elements/283" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/25-deploy-an-api-to-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/25-deploy-an-api-to-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_284">
 <td>steps </td>
 <td>Any policy steps attached to the API proxy</td>
 <!-- <td><a href="/response_elements/284" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/25-deploy-an-api-to-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/25-deploy-an-api-to-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_285">
 <td>environment </td>
 <td>The environment where the API proxy is deployed ('test' or 'prod')</td>
 <!-- <td><a href="/response_elements/285" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/25-deploy-an-api-to-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/25-deploy-an-api-to-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_286">
 <td>name </td>
 <td>The revision name (always a number)</td>
 <!-- <td><a href="/response_elements/286" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/25-deploy-an-api-to-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/25-deploy-an-api-to-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_287">
 <td>organization </td>
 <td>The API provider's Apigee organization name</td>
 <!-- <td><a href="/response_elements/287" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/25-deploy-an-api-to-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/25-deploy-an-api-to-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_288">
 <td>revision </td>
 <td>The number of the revision</td>
 <!-- <td><a href="/response_elements/288" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/25-deploy-an-api-to-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/25-deploy-an-api-to-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_289">
 <td>server </td>
 <td>A set of servers deployed in support of the API proxy (primarily for Apigee support)</td>
 <!-- <td><a href="/response_elements/289" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/25-deploy-an-api-to-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/25-deploy-an-api-to-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_290">
 <td>state </td>
 <td>The state of the API proxy, either 'deployed' or 'undeployed'</td>
 <!-- <td><a href="/response_elements/290" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/25-deploy-an-api-to-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/25-deploy-an-api-to-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 

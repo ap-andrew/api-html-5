@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="JqOz7VksI/LzL8YruOtg96bh03U52CjJeHiRRLrFCks=" name="csrf-token" />
+<meta content="t4MzBrL1ShIk9mFO8fKfX3JWV8OlvZNAWArKcYQJ61w=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -73,8 +73,7 @@
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl -X DELETE https://api.enterprise.apigee.com/v1/o/{org_name}/companies/{company_name} \
--u myname:mypass</pre>
+	<pre>$ curl -X DELETE -u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/companies/{company_name}</pre>
 
 
 <b>Sample Response:</b> 
@@ -108,66 +107,67 @@
 <td>apps </td>
 <td>A list of apps associated with the company</td>
 <!-- <td><a href="/response_elements/112" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/120-delete-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/120-delete-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_113">
 <td>name </td>
 <td>The name of the company</td>
 <!-- <td><a href="/response_elements/113" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/120-delete-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/120-delete-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_114">
 <td>displayName </td>
 <td>Display name of the company</td>
 <!-- <td><a href="/response_elements/114" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/120-delete-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/120-delete-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_115">
 <td>organization </td>
 <td>Organization containing the company</td>
 <!-- <td><a href="/response_elements/115" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/120-delete-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/120-delete-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_116">
 <td>status </td>
 <td>Status of the company--active or inactive.</td>
 <!-- <td><a href="/response_elements/116" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/120-delete-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/120-delete-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_117">
 <td>attributes </td>
 <td>Arbitrary attribues that may be used to extend the default company profile</td>
 <!-- <td><a href="/response_elements/117" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/120-delete-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/120-delete-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_118">
 <td>createdAt </td>
 <td>UNIX time when the entity was created</td>
 <!-- <td><a href="/response_elements/118" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/120-delete-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/120-delete-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_119">
 <td>createdBy </td>
 <td>User name of the Apigee user who created the company</td>
 <!-- <td><a href="/response_elements/119" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/120-delete-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/120-delete-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_120">
 <td>lastModifiedAt </td>
 <td>UNIX time when the entity was last modified</td>
 <!-- <td><a href="/response_elements/120" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/120-delete-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/120-delete-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_121">
 <td>lastModifiedBy </td>
 <td>User name of the Apigee user who last modified the company</td>
 <!-- <td><a href="/response_elements/121" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/120-delete-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/120-delete-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 
 	<b>Errors</b> 
-		<pre>{
+		<pre>Failure 4xx with proper error message
+{
   &quot;code&quot; : &quot;developer.service.CompanyDoesNotExist&quot;,
   &quot;message&quot; : &quot;Company named DevCompany1 does not exist in organization myorg&quot;,
   &quot;contexts&quot; : [ ]

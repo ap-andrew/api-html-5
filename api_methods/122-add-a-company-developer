@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="JqOz7VksI/LzL8YruOtg96bh03U52CjJeHiRRLrFCks=" name="csrf-token" />
+<meta content="t4MzBrL1ShIk9mFO8fKfX3JWV8OlvZNAWArKcYQJ61w=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -83,15 +83,15 @@ text/xml
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl -H "Content-Type:application/json" -X POST -d \
+	<pre>$ curl -H &quot;Content-Type:application/json&quot; -X POST -d \
 '{
-  "developer" : [ {
-    "email" : "dev@apigee.com",
-    "role" : "developer"
-  }, {
-    "email" : "developer@apigee.com",
-    "role" : "developer"
-  } ]
+ &quot;developer&quot; : [ {
+   &quot;email&quot; : &quot;dev@apigee.com&quot;,
+   &quot;role&quot; : &quot;developer&quot;
+ }, {
+   &quot;email&quot; : &quot;developer@apigee.com&quot;,
+   &quot;role&quot; : &quot;developer&quot;
+ } ]
 }' \
 https://api.enterprise.apigee.com/v1/o/{org_name}/companies/{company_name}/developers \
 -u myname:mypass</pre>
@@ -138,7 +138,9 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/companies/{company_name}/devel
     "email" : "developer@apigee.com",
     "role" : "developer"
   } ]
-}</pre>
+}
+
+</pre>
 
 	<b>Response Payload Elements:</b>
 		<table class="table table-bordered">
@@ -153,18 +155,19 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/companies/{company_name}/devel
 <td>email </td>
 <td>The unique key ID a Company Developer</td>
 <!-- <td><a href="/response_elements/122" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/122-add-a-company-developer?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/122-add-a-company-developer?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_123">
 <td>role </td>
 <td>An entry that may be used for acces control to App information by a client, but which is not enforced by Apigee</td>
 <!-- <td><a href="/response_elements/123" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/122-add-a-company-developer?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/122-add-a-company-developer?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 
 	<b>Errors</b> 
-		<pre>{
+		<pre>Failure 4xx with proper error message
+{
   &quot;code&quot; : &quot;developer.service.DevelopersDoesNotExist&quot;,
   &quot;message&quot; : &quot;Developers [dev2@apigee.com] doesnot exist&quot;,
   &quot;contexts&quot; : [ ]

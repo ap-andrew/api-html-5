@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="JqOz7VksI/LzL8YruOtg96bh03U52CjJeHiRRLrFCks=" name="csrf-token" />
+<meta content="t4MzBrL1ShIk9mFO8fKfX3JWV8OlvZNAWArKcYQJ61w=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -48,7 +48,7 @@
 <div class="row">
 	<div class="span6" style="width:340px;">
 		<p><b>API Platform Base Path:</b> https://api.enterprise.apigee.com/v1/o/{org_name}</p>
-		<p><b>API Resource Path:</b> /environments/{env_name}/apis/{api_name}/revisions/{revision_number/debugsessions/{ession_name}/data</p>
+		<p><b>API Resource Path:</b> /environments/{environmentName}/apis/{apiName}/revisions/{revisionId/debugsessions/{debugSessionId}/data</p>
 		<p>
 		
 		</p>

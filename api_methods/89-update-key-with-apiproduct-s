@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="JqOz7VksI/LzL8YruOtg96bh03U52CjJeHiRRLrFCks=" name="csrf-token" />
+<meta content="t4MzBrL1ShIk9mFO8fKfX3JWV8OlvZNAWArKcYQJ61w=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -154,37 +154,37 @@ The API product(s) specified in request payload will be merged with existing API
 <td>apiproduct </td>
 <td>The name of the API Product added to the Developer App Key</td>
 <!-- <td><a href="/response_elements/213" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/89-update-key-with-apiproduct-s?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/89-update-key-with-apiproduct-s?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_214">
 <td>status </td>
 <td>The status of the API Product</td>
 <!-- <td><a href="/response_elements/214" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/89-update-key-with-apiproduct-s?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/89-update-key-with-apiproduct-s?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_215">
 <td>attributes </td>
 <td>Arbitrary name/value pairs added by the client</td>
 <!-- <td><a href="/response_elements/215" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/89-update-key-with-apiproduct-s?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/89-update-key-with-apiproduct-s?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_216">
 <td>consumerKey </td>
 <td>The value of the Developer App Key to which the API Product was attached</td>
 <!-- <td><a href="/response_elements/216" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/89-update-key-with-apiproduct-s?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/89-update-key-with-apiproduct-s?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_217">
 <td>consumerSecret </td>
 <td>The value of the Developer App Key secret to which the API Product was attached</td>
 <!-- <td><a href="/response_elements/217" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/89-update-key-with-apiproduct-s?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/89-update-key-with-apiproduct-s?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_218">
 <td>status </td>
 <td>The status of the Consumer App Key (approved or pending). For API products whose approval type is set to &quot;Manual&quot;, keys are returned in pending state and must be explicitly approved.</td>
 <!-- <td><a href="/response_elements/218" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/89-update-key-with-apiproduct-s?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/89-update-key-with-apiproduct-s?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 

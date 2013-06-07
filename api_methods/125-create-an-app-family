@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="JqOz7VksI/LzL8YruOtg96bh03U52CjJeHiRRLrFCks=" name="csrf-token" />
+<meta content="t4MzBrL1ShIk9mFO8fKfX3JWV8OlvZNAWArKcYQJ61w=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -50,7 +50,7 @@
 		<p><b>API Platform Base Path:</b> https://api.enterprise.apigee.com/v1/o/{org_name}</p>
 		<p><b>API Resource Path:</b> /developers/{developer_email}/appfamilies</p>
 		<p>
-		Create an app family for developers
+		Create an App Family for Developers
 		</p>
 	</div>
 
@@ -63,16 +63,6 @@
 		Basic Auth
 		</p>
 
-		<p>
-		<b>Content Types:</b>
-		
-<div class="content_type" id="content_type_1">
-application/json
-</div>
-<div class="content_type" id="content_type_2">
-text/xml
-</div>
-		</p>
 
 	</div>
 </div>
@@ -83,8 +73,8 @@ text/xml
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl -H "Content-Type:application/json" -X POST -d \
-   '{"name" : "WeatherApps","apps": ["weatherapp", "weatherapp_prod"]}' \
+	<pre>$ curl -H &quot;Content-Type:application/json&quot; -X POST -d \
+   '{&quot;name&quot; : &quot;WeatherApps&quot;,&quot;apps&quot;: [&quot;weatherapp&quot;, &quot;weatherapp_prod&quot;]}' \
 -u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/developers/{developer_email}/appfamilies</pre>
 	<b>Request Payload Elements:</b> 
 	<table class="table table-bordered">
@@ -121,7 +111,8 @@ text/xml
 
 
 <b>Sample Response:</b> 
-	<pre>{
+	<pre>Success 201 
+{
   "apps" : [ "weatherapp", "weatherapp_prod" ],
   "name" : "WeatherApps"
 }</pre>
@@ -139,27 +130,28 @@ text/xml
 <td>apps </td>
 <td>App family to which Developer Apps will be added</td>
 <!-- <td><a href="/response_elements/232" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/125-create-an-app-family?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/125-create-an-app-family?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_233">
 <td>name </td>
 <td>App name of Developer App to add to App Family</td>
 <!-- <td><a href="/response_elements/233" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/125-create-an-app-family?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/125-create-an-app-family?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 
 	<b>Errors</b> 
-		<pre>&lt;Error&gt;
-  &lt;Code&gt;keymanagement.service.invalid_company_name&lt;/Code&gt;
-  &lt;Message&gt;Company Name is not valid &lt;/Message&gt;
-  &lt;Contexts/&gt;
+		<pre>Failure 4xx with proper error message
+&lt;Error&gt;
+&lt;Code&gt;keymanagement.service.invalid_company_name&lt;/Code&gt;
+&lt;Message&gt;Company Name is not valid &lt;/Message&gt;
+&lt;Contexts/&gt;
 &lt;/Error&gt;
 
 &lt;Error&gt;
-  &lt;Code&gt;keymanagement.service.invalid_developer_email&lt;/Code&gt;
-  &lt;Message&gt;Developer email  is not valid &lt;/Message&gt;
-  &lt;Contexts/&gt;
+&lt;Code&gt;keymanagement.service.invalid_developer_email&lt;/Code&gt;
+&lt;Message&gt;Developer email  is not valid &lt;/Message&gt;
+&lt;Contexts/&gt;
 &lt;/Error&gt;</pre>
 	
 

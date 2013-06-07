@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="JqOz7VksI/LzL8YruOtg96bh03U52CjJeHiRRLrFCks=" name="csrf-token" />
+<meta content="t4MzBrL1ShIk9mFO8fKfX3JWV8OlvZNAWArKcYQJ61w=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -69,12 +69,9 @@
 
 <div class="span18">
 	<p>
-	Retrieve a developer's profile based on the name of an app. The profile retrieved is for the developer who registered the app in your organization.
+	This call enables you to retrieve a developer's profile based on the name of an app. The profile retrieved is for the developer who registered the app in your organization.
 	</p>
 
-	<b>Sample Request:</b>
-	<pre>$ curl https://api.enterprise.apigee.com/v1/o/{org_name}/developers?"app={app_name}" \
--u myname:mypass</pre>
 
 
 <b>Sample Response:</b> 
@@ -109,73 +106,73 @@
 <td>apps </td>
 <td>The name of the App</td>
 <!-- <td><a href="/response_elements/192" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/138-get-developer-of-an-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/138-get-developer-of-an-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_193">
 <td>email </td>
 <td>The email address of the Developer who registered the App</td>
 <!-- <td><a href="/response_elements/193" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/138-get-developer-of-an-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/138-get-developer-of-an-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_194">
 <td>firstName </td>
 <td>The first name of the Developer who registered the App</td>
 <!-- <td><a href="/response_elements/194" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/138-get-developer-of-an-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/138-get-developer-of-an-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_195">
 <td>last_name </td>
 <td>The last name of the Developer who registered the App</td>
 <!-- <td><a href="/response_elements/195" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/138-get-developer-of-an-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/138-get-developer-of-an-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_196">
 <td>userName </td>
 <td>The username of the Developer who registered the App (unused by Apigee)</td>
 <!-- <td><a href="/response_elements/196" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/138-get-developer-of-an-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/138-get-developer-of-an-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_197">
 <td>organizationName </td>
 <td>The Organization which the Developer who registered the App belongs</td>
 <!-- <td><a href="/response_elements/197" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/138-get-developer-of-an-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/138-get-developer-of-an-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_198">
 <td>status </td>
 <td>The status of the Developer who registered the App (active, inactive, or login_lock</td>
 <!-- <td><a href="/response_elements/198" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/138-get-developer-of-an-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/138-get-developer-of-an-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_199">
 <td>attributes </td>
 <td>Arbitrary name/value attributes that are part of the Developer profile</td>
 <!-- <td><a href="/response_elements/199" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/138-get-developer-of-an-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/138-get-developer-of-an-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_200">
 <td>createdAt </td>
 <td>The Unix time at which the Developer profile was created</td>
 <!-- <td><a href="/response_elements/200" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/138-get-developer-of-an-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/138-get-developer-of-an-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_201">
 <td>createdBy </td>
 <td>The Apigee username of the user who created the Developer profile</td>
 <!-- <td><a href="/response_elements/201" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/138-get-developer-of-an-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/138-get-developer-of-an-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_202">
 <td>lastModifiedAt </td>
 <td>The Unix time at which the Developer profile was last modified</td>
 <!-- <td><a href="/response_elements/202" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/138-get-developer-of-an-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/138-get-developer-of-an-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_203">
 <td>lastModifiedAt </td>
 <td>The Apigee username of the user who most recently modified the Developer profile</td>
 <!-- <td><a href="/response_elements/203" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/138-get-developer-of-an-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/docs/api/api_methods/138-get-developer-of-an-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 
