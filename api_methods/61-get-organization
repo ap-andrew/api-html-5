@@ -105,55 +105,55 @@
 <td>createdAt </td>
 <td>Unix time when the organization was created</td>
 <!-- <td><a href="/response_elements/383" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/61-get-organization?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/61-get-organization?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_384">
 <td>createdBy </td>
 <td>User name of the Apigee user who created the organization</td>
 <!-- <td><a href="/response_elements/384" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/61-get-organization?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/61-get-organization?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_385">
 <td>displayName </td>
 <td>Display name of the organization</td>
 <!-- <td><a href="/response_elements/385" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/61-get-organization?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/61-get-organization?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_386">
 <td>environments </td>
 <td>Environments available in the organization (by default 'test' and 'prod' environments are available.</td>
 <!-- <td><a href="/response_elements/386" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/61-get-organization?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/61-get-organization?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_387">
 <td>lastModifiedAt </td>
 <td>Unix time when the organization was last modified</td>
 <!-- <td><a href="/response_elements/387" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/61-get-organization?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/61-get-organization?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_388">
 <td>name </td>
 <td>Internal name of the organization</td>
 <!-- <td><a href="/response_elements/388" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/61-get-organization?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/61-get-organization?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_389">
 <td>properties </td>
 <td>A list of descriptors used internally by Apigee</td>
 <!-- <td><a href="/response_elements/389" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/61-get-organization?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/61-get-organization?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_390">
 <td>type </td>
 <td>Organization type: currently 'trial' and 'paid' are valid</td>
 <!-- <td><a href="/response_elements/390" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/61-get-organization?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/61-get-organization?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_391">
 <td>users </td>
 <td>A list of user and roles for the organization. Only populated for users in sysadmn role.</td>
 <!-- <td><a href="/response_elements/391" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/61-get-organization?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/61-get-organization?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 

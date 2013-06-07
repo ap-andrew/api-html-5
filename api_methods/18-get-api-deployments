@@ -121,55 +121,55 @@
 <td>environment </td>
 <td>Settings for the environment</td>
 <!-- <td><a href="/response_elements/60" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/18-get-api-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/18-get-api-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_61">
 <td>name </td>
 <td>Name of the environment</td>
 <!-- <td><a href="/response_elements/61" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/18-get-api-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/18-get-api-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_62">
 <td>revision </td>
 <td>Configuration settings for the API revision</td>
 <!-- <td><a href="/response_elements/62" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/18-get-api-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/18-get-api-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_63">
 <td>basePath </td>
 <td>Basepath for the API in this environment</td>
 <!-- <td><a href="/response_elements/63" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/18-get-api-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/18-get-api-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_64">
 <td>steps </td>
 <td>Policies attached to the API</td>
 <!-- <td><a href="/response_elements/64" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/18-get-api-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/18-get-api-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_65">
 <td>server </td>
 <td>Servers deployed in support of this API (usedinternally by Apigee)</td>
 <!-- <td><a href="/response_elements/65" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/18-get-api-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/18-get-api-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_66">
 <td>state </td>
 <td>The deployment status of the API (deployed or undeployed)</td>
 <!-- <td><a href="/response_elements/66" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/18-get-api-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/18-get-api-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_67">
 <td>name </td>
 <td>Name of the API</td>
 <!-- <td><a href="/response_elements/67" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/18-get-api-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/18-get-api-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_68">
 <td>organization </td>
 <td>The organization in which the API is deployed</td>
 <!-- <td><a href="/response_elements/68" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/18-get-api-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/18-get-api-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 

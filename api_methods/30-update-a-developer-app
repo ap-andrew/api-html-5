@@ -135,97 +135,97 @@
 <td>accessType </td>
 <td></td>
 <!-- <td><a href="/response_elements/502" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_503">
 <td>attributes </td>
 <td>Name/value pairs used to extend the default app profile</td>
 <!-- <td><a href="/response_elements/503" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_504">
 <td>callbackUrl </td>
 <td>A callback URL that can be used for app specific callbacks</td>
 <!-- <td><a href="/response_elements/504" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_505">
 <td>createdAt </td>
 <td>Unix time when the app was created</td>
 <!-- <td><a href="/response_elements/505" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_506">
 <td>credentials </td>
 <td>A list of associations between API products and consumer keys for the app</td>
 <!-- <td><a href="/response_elements/506" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_507">
 <td>apiProducts </td>
 <td>A list of API products with which the app is associated</td>
 <!-- <td><a href="/response_elements/507" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_508">
 <td>apiproduct </td>
 <td>The API product with which teh app is associated</td>
 <!-- <td><a href="/response_elements/508" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_509">
 <td>status </td>
 <td>Status of the app association with the API product: 'approved' or 'pending'</td>
 <!-- <td><a href="/response_elements/509" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_510">
 <td>attributes </td>
 <td>Name'value pairs used to extend the profile</td>
 <!-- <td><a href="/response_elements/510" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_511">
 <td>consumerKey </td>
 <td>The value of the consumer key associated with the API product</td>
 <!-- <td><a href="/response_elements/511" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_512">
 <td>consumerSecret </td>
 <td>Value of the consumer secret associated with the consumer key</td>
 <!-- <td><a href="/response_elements/512" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_513">
 <td>status </td>
 <td>Status of the consumer key: 'approved' or 'pending'</td>
 <!-- <td><a href="/response_elements/513" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_514">
 <td>lastModifiedAt </td>
 <td>Unix time when the app was last modified</td>
 <!-- <td><a href="/response_elements/514" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_515">
 <td>lastModifiedBy </td>
 <td>User name of the Apigee user who last modified the app</td>
 <!-- <td><a href="/response_elements/515" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_516">
 <td>name </td>
 <td>Name of the app</td>
 <!-- <td><a href="/response_elements/516" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_517">
 <td>status </td>
 <td>Status of the app: 'approved or 'unapproved'</td>
 <!-- <td><a href="/response_elements/517" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 

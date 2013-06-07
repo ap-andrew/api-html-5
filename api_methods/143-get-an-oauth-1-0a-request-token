@@ -108,85 +108,85 @@
 <td>consumerKey </td>
 <td>The key associated with the app</td>
 <!-- <td><a href="/response_elements/346" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_343">
 <td>app </td>
 <td>The app for which the request token was generated</td>
 <!-- <td><a href="/response_elements/343" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_344">
 <td>attributes </td>
 <td>Name/value elements used to extend the default request token profile</td>
 <!-- <td><a href="/response_elements/344" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_345">
 <td>callbackUrl </td>
 <td>Fetches the client registration details and verifies for the following. It does not redirect if any of the following validation conditions fail. redirect_uri is not provided multiple redirect_uri instances are provided only a part of the redirect_uri is provided if the redirect_uri is provided, it is compared against the multiple redirect_uri instances (if any) ignores fragment components</td>
 <!-- <td><a href="/response_elements/345" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_347">
 <td>createdAt </td>
 <td>Unix time when the request token was created</td>
 <!-- <td><a href="/response_elements/347" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_348">
 <td>createdBy </td>
 <td>Apigee user name of the user who create the request token</td>
 <!-- <td><a href="/response_elements/348" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_349">
 <td>expiresAt </td>
 <td>Expiry time period of the token to be generated; token expires/is deleted when the expiry time ends</td>
 <!-- <td><a href="/response_elements/349" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_350">
 <td>issuedAt </td>
 <td>Validity time period for the OAuth verifier code </td>
 <!-- <td><a href="/response_elements/350" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_351">
 <td>lastModifiedAt </td>
 <td>Unix time when the request token was last modified</td>
 <!-- <td><a href="/response_elements/351" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_352">
 <td>lastModifiedBy </td>
 <td>Apigee user name of the user who last modified the request token</td>
 <!-- <td><a href="/response_elements/352" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_353">
 <td>scope </td>
 <td>Oauth scope(s) included in the request</td>
 <!-- <td><a href="/response_elements/353" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_354">
 <td>secret </td>
 <td>Secret password for getting the request token</td>
 <!-- <td><a href="/response_elements/354" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_355">
 <td>status </td>
 <td>Status of the request token; changes to expired when the expiry time ends</td>
 <!-- <td><a href="/response_elements/355" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_356">
 <td>token </td>
 <td>Value of the request token</td>
 <!-- <td><a href="/response_elements/356" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 

@@ -119,49 +119,49 @@
 <td>aPIProxy </td>
 <td>APi proxy settings</td>
 <!-- <td><a href="/response_elements/313" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/19-get-api-revision-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/19-get-api-revision-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_314">
 <td>environment </td>
 <td>Environment settings</td>
 <!-- <td><a href="/response_elements/314" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/19-get-api-revision-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/19-get-api-revision-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_315">
 <td>configuration </td>
 <td>Confirguation settings for the revision</td>
 <!-- <td><a href="/response_elements/315" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/19-get-api-revision-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/19-get-api-revision-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_316">
 <td>basePath </td>
 <td>Basepath for the API in this environment</td>
 <!-- <td><a href="/response_elements/316" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/19-get-api-revision-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/19-get-api-revision-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_317">
 <td>steps </td>
 <td>Policies attached to the API revision</td>
 <!-- <td><a href="/response_elements/317" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/19-get-api-revision-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/19-get-api-revision-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_318">
 <td>name </td>
 <td>Name of the environment where the revision is deployed</td>
 <!-- <td><a href="/response_elements/318" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/19-get-api-revision-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/19-get-api-revision-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_319">
 <td>name </td>
 <td>Name of the revision (the revision numer deployed)</td>
 <!-- <td><a href="/response_elements/319" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/19-get-api-revision-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/19-get-api-revision-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_320">
 <td>organization </td>
 <td>The organization where the API is deployed</td>
 <!-- <td><a href="/response_elements/320" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/19-get-api-revision-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/19-get-api-revision-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 

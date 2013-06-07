@@ -52,7 +52,7 @@ Administration
 </div>
 
 <!-- <div class=btn>
-<a href="/docs/api/api_methods/new">Add an API Method</a>
+<a href="/api_methods/new">Add an API Method</a>
 </div> -->
 
 <p><b>API Platform Base Path: </b>https://api.enterprise.apigee.com/v1/o/{org_name}</p>
@@ -92,7 +92,7 @@ Administration
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Add a user to a role</span></td><td><a href="/docs/api/api_methods/171-add-a-user-to-a-role" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Add a user to a role</span></td><td><a href="/api_methods/171-add-a-user-to-a-role" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/userroles/{role_name}/users?id={user_email}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Adds a user to a role</td></tr>
@@ -103,62 +103,62 @@ application/x-www-url-form-encoded
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Add permissions for a resource to a user role</span></td><td><a href="/docs/api/api_methods/181-add-permissions-for-a-resource-to-a-user-role" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Add permissions for a resource to a user role</span></td><td><a href="/api_methods/181-add-permissions-for-a-resource-to-a-user-role" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/userroles/{role_name}/permissions</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Associates permissions for a resource with a user role</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Create a user role in an organization</span></td><td><a href="/docs/api/api_methods/163-create-a-user-role-in-an-organization" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Create a user role in an organization</span></td><td><a href="/api_methods/163-create-a-user-role-in-an-organization" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/userroles</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Creates a role in an organization</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Delete a user role</span></td><td><a href="/docs/api/api_methods/169-delete-a-user-role" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete a user role</span></td><td><a href="/api_methods/169-delete-a-user-role" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/userroles/{role_name}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Deletes a role from an organization</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Delete permission for a resource</span></td><td><a href="/docs/api/api_methods/185-delete-permission-for-a-resource" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete permission for a resource</span></td><td><a href="/api_methods/185-delete-permission-for-a-resource" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/userroles/{role_name}/permissions/{permission_name}?path={resource_path}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Removes a permission from a resource for the role specified</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get a role</span></td><td><a href="/docs/api/api_methods/168-get-a-role" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get a role</span></td><td><a href="/api_methods/168-get-a-role" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/userroles/{role_name}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets a role</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get permissions for a resource</span></td><td><a href="/docs/api/api_methods/182-get-permissions-for-a-resource" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get permissions for a resource</span></td><td><a href="/api_methods/182-get-permissions-for-a-resource" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/userroles/{role_name}/permissions</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets permissions for all resources associated with a user role</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get resource permissions for a specific role</span></td><td><a href="/docs/api/api_methods/183-get-resource-permissions-for-a-specific-role" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get resource permissions for a specific role</span></td><td><a href="/api_methods/183-get-resource-permissions-for-a-specific-role" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/userroles/{role_name}/permissions?path={resource_path}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets a list of permissions associated with the specified resource for a single resource</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get user roles</span></td><td><a href="/docs/api/api_methods/164-get-user-roles" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get user roles</span></td><td><a href="/api_methods/164-get-user-roles" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/userroles</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets a list of roles available to users in an organization</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get users for a role</span></td><td><a href="/docs/api/api_methods/173-get-users-for-a-role" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get users for a role</span></td><td><a href="/api_methods/173-get-users-for-a-role" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/userroles/{role_name}/users</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Lists all users for a specified role</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Remove user membership in role</span></td><td><a href="/docs/api/api_methods/176-remove-user-membership-in-role" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Remove user membership in role</span></td><td><a href="/api_methods/176-remove-user-membership-in-role" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/userroles/{role_name}/users/{user_email}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Removes a user from membership in a role</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Verify a user role's permission on a specific resource</span></td><td><a href="/docs/api/api_methods/184-verify-a-user-role-s-permission-on-a-specific-resource" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Verify a user role's permission on a specific resource</span></td><td><a href="/api_methods/184-verify-a-user-role-s-permission-on-a-specific-resource" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/userroles/{role_name}/permissions/{permission_name}?path={resource_path}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Verifies that  a user role's permission on a specific resource exists</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Verify user role membership</span></td><td><a href="/docs/api/api_methods/174-verify-user-role-membership" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Verify user role membership</span></td><td><a href="/api_methods/174-verify-user-role-membership" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/userroles/{role_rame}/users/{user_email}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Verifies that a user is a member of a specific role</td></tr>

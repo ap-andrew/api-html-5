@@ -125,49 +125,49 @@ https://api.enterprise.apigee.com/v1/o/{org_name/}apis/{api_name}/deployments?&q
 <td>aPIProxy </td>
 <td>The name of the API</td>
 <!-- <td><a href="/response_elements/299" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/26-undeploy-an-api-from-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/26-undeploy-an-api-from-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_300">
 <td>configuration </td>
 <td>Base path and policy steps that are configured for the deployment</td>
 <!-- <td><a href="/response_elements/300" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/26-undeploy-an-api-from-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/26-undeploy-an-api-from-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_301">
 <td>environment </td>
 <td>The environment where the APi was deployed</td>
 <!-- <td><a href="/response_elements/301" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/26-undeploy-an-api-from-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/26-undeploy-an-api-from-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_302">
 <td>name </td>
 <td>The name of the APi revision</td>
 <!-- <td><a href="/response_elements/302" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/26-undeploy-an-api-from-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/26-undeploy-an-api-from-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_303">
 <td>organization </td>
 <td>The organization of the API provider</td>
 <!-- <td><a href="/response_elements/303" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/26-undeploy-an-api-from-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/26-undeploy-an-api-from-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_304">
 <td>revision </td>
 <td>The revision number of the APi proxy</td>
 <!-- <td><a href="/response_elements/304" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/26-undeploy-an-api-from-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/26-undeploy-an-api-from-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_305">
 <td>server </td>
 <td>Information on Apigee servers deployed to service the API</td>
 <!-- <td><a href="/response_elements/305" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/26-undeploy-an-api-from-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/26-undeploy-an-api-from-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_306">
 <td>state </td>
 <td>The state of the API: deployed or undeployed</td>
 <!-- <td><a href="/response_elements/306" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/26-undeploy-an-api-from-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/26-undeploy-an-api-from-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 

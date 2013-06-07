@@ -52,7 +52,7 @@ API Configuration and Management
 </div>
 
 <!-- <div class=btn>
-<a href="/docs/api/api_methods/new">Add an API Method</a>
+<a href="/api_methods/new">Add an API Method</a>
 </div> -->
 
 <p><b>API Platform Base Path: </b>https://api.enterprise.apigee.com/v1/o/{org_name}</p>
@@ -68,22 +68,22 @@ API Configuration and Management
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Get API deployments</span></td><td><a href="/docs/api/api_methods/18-get-api-deployments" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get API deployments</span></td><td><a href="/api_methods/18-get-api-deployments" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apis/{api_name}/deployments</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Returns detail on deployments of the API specified</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get API Revision Deployments</span></td><td><a href="/docs/api/api_methods/19-get-api-revision-deployments" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get API Revision Deployments</span></td><td><a href="/api_methods/19-get-api-revision-deployments" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apis/{api_name}/revisions/{revision_number}/deployments</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Get Deployments for an API Revision</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get Deployments for an Environment</span></td><td><a href="/docs/api/api_methods/20-get-deployments-for-an-environment" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get Deployments for an Environment</span></td><td><a href="/api_methods/20-get-deployments-for-an-environment" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/environments/{environment_name}/deployments</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets a list of all API deployments in a given environment</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get Deployments for an Organization</span></td><td><a href="/docs/api/api_methods/112-get-deployments-for-an-organization" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get Deployments for an Organization</span></td><td><a href="/api_methods/112-get-deployments-for-an-organization" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/deployments</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Returns all deployments for all APIs in an Organization</td></tr>

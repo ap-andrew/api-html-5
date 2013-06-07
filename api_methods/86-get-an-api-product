@@ -111,67 +111,67 @@
 <td>apiResources </td>
 <td>A list of URIs (including wildcards) that represent the bundle of APIs permitted to consumers of this API Product	</td>
 <!-- <td><a href="/response_elements/219" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_220">
 <td>approvalType </td>
 <td>Determines the state of the consumer key generated for requesters of this API Product. For Auto, key are generated in &quot;Approved' state. For Manual, keys are approved in 'Pending' state.</td>
 <!-- <td><a href="/response_elements/220" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_221">
 <td>attributes </td>
 <td>Any app-specific arbitrary attributes that may be used to define visibility of the API Product or runtime policy enforcement (such as setting for a rate-limiting policy.	</td>
 <!-- <td><a href="/response_elements/221" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_222">
 <td>createdAt </td>
 <td>Unix time when the API Product was created</td>
 <!-- <td><a href="/response_elements/222" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_223">
 <td>createdBy </td>
 <td>Apigee user account name of the individual who submitted the POST request that created this entity	</td>
 <!-- <td><a href="/response_elements/223" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_224">
 <td>description </td>
 <td>Human-readable description of the API Product</td>
 <!-- <td><a href="/response_elements/224" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_225">
 <td>displayName </td>
 <td>Friendly name to display to Developers, for example, in a Developer Onboarding app</td>
 <!-- <td><a href="/response_elements/225" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_226">
 <td>lastModifiedAt </td>
 <td>Unix time when the API Product was most recently updated</td>
 <!-- <td><a href="/response_elements/226" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_227">
 <td>lastModifiedBy </td>
 <td>Apigee user account name of the individual who last modified the API Product</td>
 <!-- <td><a href="/response_elements/227" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_228">
 <td>name </td>
 <td>The name of the API Product</td>
 <!-- <td><a href="/response_elements/228" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_229">
 <td>scopes </td>
 <td>Oauth scopes required in the Access Token(s) used to consume any of the API resources (URIs) bundled in this API Product</td>
 <!-- <td><a href="/response_elements/229" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 

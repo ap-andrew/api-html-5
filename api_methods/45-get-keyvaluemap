@@ -118,13 +118,13 @@ $ curl https://api.enterprise.apigee.com/v1/o/{org_name}/apis/{api_name}/keyvalu
 <td>entry </td>
 <td>Name/value pair that defines the map entry</td>
 <!-- <td><a href="/response_elements/403" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/45-get-keyvaluemap?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/45-get-keyvaluemap?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_404">
 <td>name </td>
 <td>The name of the map</td>
 <!-- <td><a href="/response_elements/404" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/45-get-keyvaluemap?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/45-get-keyvaluemap?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 

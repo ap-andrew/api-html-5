@@ -97,13 +97,13 @@
 <td>List </td>
 <td>A list of named virtual hosts</td>
 <!-- <td><a href="/response_elements/376" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/22-list-virtual-hosts-for-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/22-list-virtual-hosts-for-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_377">
 <td>Item </td>
 <td>The name of a virtual in the environment specified in the request. For detail, do a GET on the named virtual host.</td>
 <!-- <td><a href="/response_elements/377" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/22-list-virtual-hosts-for-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/22-list-virtual-hosts-for-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 

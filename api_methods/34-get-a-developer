@@ -106,49 +106,49 @@
 <td>apps </td>
 <td>A list of apps associated with the developer</td>
 <!-- <td><a href="/response_elements/291" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/34-get-a-developer?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/34-get-a-developer?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_292">
 <td>email </td>
 <td>The developers' email--used as the unique key to request info about the developer</td>
 <!-- <td><a href="/response_elements/292" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/34-get-a-developer?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/34-get-a-developer?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_293">
 <td>firstName </td>
 <td>The developer's first name</td>
 <!-- <td><a href="/response_elements/293" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/34-get-a-developer?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/34-get-a-developer?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_294">
 <td>lastName </td>
 <td>The developer's last name</td>
 <!-- <td><a href="/response_elements/294" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/34-get-a-developer?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/34-get-a-developer?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_295">
 <td>userName </td>
 <td>A username created by the developer--unused in Apigee</td>
 <!-- <td><a href="/response_elements/295" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/34-get-a-developer?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/34-get-a-developer?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_296">
 <td>organizationName </td>
 <td>The organization where the developer is registered</td>
 <!-- <td><a href="/response_elements/296" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/34-get-a-developer?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/34-get-a-developer?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_297">
 <td>status </td>
 <td>The developer's status--active, inactive,  login_lock</td>
 <!-- <td><a href="/response_elements/297" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/34-get-a-developer?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/34-get-a-developer?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_298">
 <td>attributes </td>
 <td>Arbitrary name/value attributes that can be used to extend the developer profile</td>
 <!-- <td><a href="/response_elements/298" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/34-get-a-developer?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/34-get-a-developer?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 

@@ -119,31 +119,31 @@
 <td>company </td>
 <td>Settings for the company</td>
 <!-- <td><a href="/response_elements/415" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/121-list-companies-in-an-organization-detailed-view?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/121-list-companies-in-an-organization-detailed-view?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_416">
 <td>apps </td>
 <td>A list of apps registered by the company</td>
 <!-- <td><a href="/response_elements/416" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/121-list-companies-in-an-organization-detailed-view?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/121-list-companies-in-an-organization-detailed-view?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_417">
 <td>name </td>
 <td>name of the company</td>
 <!-- <td><a href="/response_elements/417" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/121-list-companies-in-an-organization-detailed-view?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/121-list-companies-in-an-organization-detailed-view?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_418">
 <td>displayName </td>
 <td>Display name of the company</td>
 <!-- <td><a href="/response_elements/418" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/121-list-companies-in-an-organization-detailed-view?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/121-list-companies-in-an-organization-detailed-view?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_419">
 <td>organization </td>
 <td>Organization to which the company belongs</td>
 <!-- <td><a href="/response_elements/419" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/121-list-companies-in-an-organization-detailed-view?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/121-list-companies-in-an-organization-detailed-view?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 

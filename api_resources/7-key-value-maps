@@ -52,7 +52,7 @@ Appendix
 </div>
 
 <!-- <div class=btn>
-<a href="/docs/api/api_methods/new">Add an API Method</a>
+<a href="/api_methods/new">Add an API Method</a>
 </div> -->
 
 <p><b>API Platform Base Path: </b>https://api.enterprise.apigee.com/v1/o/{org_name}</p>
@@ -74,7 +74,7 @@ Appendix
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Create KeyValueMap</span></td><td><a href="/docs/api/api_methods/44-create-keyvaluemap" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Create KeyValueMap</span></td><td><a href="/api_methods/44-create-keyvaluemap" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/keyvaluemaps</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Creates a KeyValueMap</td></tr>
@@ -88,7 +88,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Delete Entry</span></td><td><a href="/docs/api/api_methods/48-delete-entry" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete Entry</span></td><td><a href="/api_methods/48-delete-entry" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/keyvaluemaps/{map_name}/entries/{entry_name}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Deletes a single entry by name</td></tr>
@@ -102,7 +102,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Delete KeyValueMap</span></td><td><a href="/docs/api/api_methods/63-delete-keyvaluemap" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete KeyValueMap</span></td><td><a href="/api_methods/63-delete-keyvaluemap" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/keyvaluemaps/{map_name}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Deletes a KeyValueMap and all associated entries.</td></tr>
@@ -116,7 +116,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get KeyValueMap</span></td><td><a href="/docs/api/api_methods/45-get-keyvaluemap" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get KeyValueMap</span></td><td><a href="/api_methods/45-get-keyvaluemap" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/keyvaluemaps/{map_name}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets a KeyValueMap by name, along  with associated entries</td></tr>
@@ -130,7 +130,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get list of KeyValueMaps (Expanded)</span></td><td><a href="/docs/api/api_methods/158-get-list-of-keyvaluemaps-expanded" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get list of KeyValueMaps (Expanded)</span></td><td><a href="/api_methods/158-get-list-of-keyvaluemaps-expanded" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/keyvaluemaps?expand=true</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Returns an expanded view of all Maps scoped by organization, environment, or API</td></tr>
@@ -144,7 +144,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">List KeyValueMaps</span></td><td><a href="/docs/api/api_methods/46-list-keyvaluemaps" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List KeyValueMaps</span></td><td><a href="/api_methods/46-list-keyvaluemaps" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/keyvaluemaps</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">List all KeyValueMaps by name</td></tr>
@@ -158,7 +158,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Update KeyValueMap</span></td><td><a href="/docs/api/api_methods/62-update-keyvaluemap" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Update KeyValueMap</span></td><td><a href="/api_methods/62-update-keyvaluemap" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/keyvaluemaps/{map_name}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Updates an existing KeyValueMap</td></tr>

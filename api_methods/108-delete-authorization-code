@@ -108,61 +108,61 @@
 <td>attributes </td>
 <td>Name/value pairs used to extend the default auth code profile</td>
 <!-- <td><a href="/response_elements/33" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_34">
 <td>client_id </td>
 <td>The consumer key of the app</td>
 <!-- <td><a href="/response_elements/34" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_35">
 <td>code </td>
 <td>The value of the authorization code</td>
 <!-- <td><a href="/response_elements/35" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_36">
 <td>createdAt </td>
 <td>Unix time when the auth code was generated</td>
 <!-- <td><a href="/response_elements/36" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_37">
 <td>createdBy </td>
 <td>User name of the Apigee user who created the auth code</td>
 <!-- <td><a href="/response_elements/37" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_38">
 <td>expiresAt </td>
 <td>Unix time when the auth code expires</td>
 <!-- <td><a href="/response_elements/38" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_39">
 <td>issuedAt </td>
 <td>Unix time when the auth code was issued</td>
 <!-- <td><a href="/response_elements/39" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_40">
 <td>lastModifiedAt </td>
 <td>Unix time when the auth code was last modified</td>
 <!-- <td><a href="/response_elements/40" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_41">
 <td>lastModifiedAt </td>
 <td>User name of the Apigee user who last modified the auth code</td>
 <!-- <td><a href="/response_elements/41" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_42">
 <td>status </td>
 <td>Status of the auth code, which changes to expired when the validity period has passed</td>
 <!-- <td><a href="/response_elements/42" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/108-delete-authorization-code?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 

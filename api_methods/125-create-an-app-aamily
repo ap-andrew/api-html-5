@@ -120,13 +120,13 @@
 <td>apps </td>
 <td>App family to which Developer Apps will be added</td>
 <!-- <td><a href="/response_elements/232" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/125-create-an-app-aamily?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/125-create-an-app-aamily?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_233">
 <td>name </td>
 <td>App name of Developer App to add to App Family</td>
 <!-- <td><a href="/response_elements/233" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/125-create-an-app-aamily?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/125-create-an-app-aamily?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 

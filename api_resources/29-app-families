@@ -52,7 +52,7 @@ Developer and App Administration
 </div>
 
 <!-- <div class=btn>
-<a href="/docs/api/api_methods/new">Add an API Method</a>
+<a href="/api_methods/new">Add an API Method</a>
 </div> -->
 
 <p><b>API Platform Base Path: </b>https://api.enterprise.apigee.com/v1/o/{org_name}</p>
@@ -71,37 +71,37 @@ Developer and App Administration
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Create an app family</span></td><td><a href="/docs/api/api_methods/125-create-an-app-family" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Create an app family</span></td><td><a href="/api_methods/125-create-an-app-family" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/appfamilies</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Create an App Family for Developers</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Delete an app family</span></td><td><a href="/docs/api/api_methods/129-delete-an-app-family" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete an app family</span></td><td><a href="/api_methods/129-delete-an-app-family" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/appfamilies/{app_family}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Deletes an App Family and all Apps it contains</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get an app family</span></td><td><a href="/docs/api/api_methods/126-get-an-app-family" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get an app family</span></td><td><a href="/api_methods/126-get-an-app-family" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/appfamilies/{app_family}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets a developer's apps in an app family</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">List all app families in an organization</span></td><td><a href="/docs/api/api_methods/130-list-all-app-families-in-an-organization" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List all app families in an organization</span></td><td><a href="/api_methods/130-list-all-app-families-in-an-organization" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_ email}/app_families</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">List all App Families in an Organization</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">List app families (detailed view)</span></td><td><a href="/docs/api/api_methods/131-list-app-families-detailed-view" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List app families (detailed view)</span></td><td><a href="/api_methods/131-list-app-families-detailed-view" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/app_families?expand=true</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">An expanded list of all App Families in an Organization, listing Apps in the collection </td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Remove an app from an app family</span></td><td><a href="/docs/api/api_methods/128-remove-an-app-from-an-app-family" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Remove an app from an app family</span></td><td><a href="/api_methods/128-remove-an-app-from-an-app-family" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/appfamilies/{app_family}/app/{app_name}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Removes an App from an App Family</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Update an app family</span></td><td><a href="/docs/api/api_methods/127-update-an-app-family" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Update an app family</span></td><td><a href="/api_methods/127-update-an-app-family" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/appfamilies/{appfamily_name}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Updates an existing App Family</td></tr>

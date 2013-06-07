@@ -52,7 +52,7 @@ Developer and App Administration
 </div>
 
 <!-- <div class=btn>
-<a href="/docs/api/api_methods/new">Add an API Method</a>
+<a href="/api_methods/new">Add an API Method</a>
 </div> -->
 
 <p><b>API Platform Base Path: </b>https://api.enterprise.apigee.com/v1/o/{org_name}</p>
@@ -68,7 +68,7 @@ Developer and App Administration
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Approve a company app key</span></td><td><a href="/docs/api/api_methods/53-approve-a-company-app-key" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Approve a company app key</span></td><td><a href="/api_methods/53-approve-a-company-app-key" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/companies/{company_name}/apps/{app_name}/keys/{consumer_key}?action=approve</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Changes the state of a consumer key provisioned to company app to 'Approved'</td></tr>
@@ -82,22 +82,22 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Delete a company app key</span></td><td><a href="/docs/api/api_methods/51-delete-a-company-app-key" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete a company app key</span></td><td><a href="/api_methods/51-delete-a-company-app-key" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/companies/{company_name}/apps/{app_name}/keys/{consumer_key}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Deletes a company app key</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get a specific key of company app</span></td><td><a href="/docs/api/api_methods/50-get-a-specific-key-of-company-app" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get a specific key of company app</span></td><td><a href="/api_methods/50-get-a-specific-key-of-company-app" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/companies/{company_name}/apps/{app_name}/keys/{consumer_key}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Get a specific key of a company app</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Revoke a company app key</span></td><td><a href="/docs/api/api_methods/52-revoke-a-company-app-key" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Revoke a company app key</span></td><td><a href="/api_methods/52-revoke-a-company-app-key" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>companies/{company_name}/apps/{app_name}/keys/{consumer_key}?action=revoke</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Revokes the App Key of a Company App</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Update existing app key with new API product(s).</span></td><td><a href="/docs/api/api_methods/49-update-existing-app-key-with-new-api-product-s" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Update existing app key with new API product(s).</span></td><td><a href="/api_methods/49-update-existing-app-key-with-new-api-product-s" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/companies/{company_name}/apps/{app_ame}/keys/{consumer key}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Update existing company app key with additional API product(s).</td></tr>

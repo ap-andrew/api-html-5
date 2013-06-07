@@ -105,37 +105,37 @@
 <td>apiProducts </td>
 <td>API products with which the company app key is associated</td>
 <!-- <td><a href="/response_elements/426" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/50-get-a-specific-key-of-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/50-get-a-specific-key-of-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_427">
 <td>status </td>
 <td>The status of the association between the company app key and the API product</td>
 <!-- <td><a href="/response_elements/427" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/50-get-a-specific-key-of-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/50-get-a-specific-key-of-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_428">
 <td>attributes </td>
 <td>Name/value pair attributes used to extend the default company app key profile</td>
 <!-- <td><a href="/response_elements/428" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/50-get-a-specific-key-of-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/50-get-a-specific-key-of-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_429">
 <td>consumer key </td>
 <td>The value of the consumer key</td>
 <!-- <td><a href="/response_elements/429" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/50-get-a-specific-key-of-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/50-get-a-specific-key-of-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_430">
 <td>consumer secret </td>
 <td>The consumer secret associated with the consumer key</td>
 <!-- <td><a href="/response_elements/430" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/50-get-a-specific-key-of-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/50-get-a-specific-key-of-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_431">
 <td>status </td>
 <td>The status of the consumer key: 'approved' or 'unapproved'</td>
 <!-- <td><a href="/response_elements/431" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/50-get-a-specific-key-of-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/50-get-a-specific-key-of-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 

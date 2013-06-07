@@ -115,91 +115,91 @@
 <td>app </td>
 <td>The app for which the access token was generated</td>
 <!-- <td><a href="/response_elements/69" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/114-delete-an-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/114-delete-an-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_70">
 <td>attributes </td>
 <td>Name/value pairs used to extend the default access token profile</td>
 <!-- <td><a href="/response_elements/70" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/114-delete-an-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/114-delete-an-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_71">
 <td>clientId </td>
 <td>The consumer key for the app</td>
 <!-- <td><a href="/response_elements/71" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/114-delete-an-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/114-delete-an-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_72">
 <td>createdAt </td>
 <td>Unix time when the access token was created</td>
 <!-- <td><a href="/response_elements/72" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/114-delete-an-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/114-delete-an-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_73">
 <td>createdBy </td>
 <td>Apigee username of the user who created the access token</td>
 <!-- <td><a href="/response_elements/73" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/114-delete-an-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/114-delete-an-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_74">
 <td>expiresAt </td>
 <td>Unix time when the access token expires</td>
 <!-- <td><a href="/response_elements/74" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/114-delete-an-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/114-delete-an-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_75">
 <td>grantType </td>
 <td>Grant type of the access token: auth code, client_credential, refresh token</td>
 <!-- <td><a href="/response_elements/75" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/114-delete-an-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/114-delete-an-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_76">
 <td>issuedAt </td>
 <td>Unix time when the access token was issued</td>
 <!-- <td><a href="/response_elements/76" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/114-delete-an-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/114-delete-an-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_77">
 <td>lastModifiedAt </td>
 <td>Unix time when the access token last modified</td>
 <!-- <td><a href="/response_elements/77" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/114-delete-an-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/114-delete-an-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_78">
 <td>lastModifiedAt </td>
 <td>Apigee username of the user who last modified the access token</td>
 <!-- <td><a href="/response_elements/78" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/114-delete-an-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/114-delete-an-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_79">
 <td>refreshCount </td>
 <td>Number of times the access token has been refreshed</td>
 <!-- <td><a href="/response_elements/79" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/114-delete-an-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/114-delete-an-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_80">
 <td>refreshToken </td>
 <td>Value of the refresh token</td>
 <!-- <td><a href="/response_elements/80" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/114-delete-an-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/114-delete-an-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_81">
 <td>scope </td>
 <td>OAuth scopes encoded in to the access token</td>
 <!-- <td><a href="/response_elements/81" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/114-delete-an-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/114-delete-an-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_82">
 <td>status </td>
 <td>Status of the access token: 'approved', 'revoked', 'expired'</td>
 <!-- <td><a href="/response_elements/82" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/114-delete-an-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/114-delete-an-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_83">
 <td>tokenType </td>
 <td>Token type: 'bearer'</td>
 <!-- <td><a href="/response_elements/83" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/114-delete-an-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/114-delete-an-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 

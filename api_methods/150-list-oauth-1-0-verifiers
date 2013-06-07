@@ -110,61 +110,61 @@
 <td>code </td>
 <td>Fetches the detail of the verifier code provided by the resource owner </td>
 <!-- <td><a href="/response_elements/262" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/150-list-oauth-1-0-verifiers?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/150-list-oauth-1-0-verifiers?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_263">
 <td>appUserId </td>
 <td>Resource owner's user ID</td>
 <!-- <td><a href="/response_elements/263" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/150-list-oauth-1-0-verifiers?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/150-list-oauth-1-0-verifiers?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_264">
 <td>attributes </td>
 <td>Arbitrary name/value elements attached to the profile for the verifier</td>
 <!-- <td><a href="/response_elements/264" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/150-list-oauth-1-0-verifiers?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/150-list-oauth-1-0-verifiers?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_265">
 <td>requestToken </td>
 <td>Token to re-issue the request token</td>
 <!-- <td><a href="/response_elements/265" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/150-list-oauth-1-0-verifiers?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/150-list-oauth-1-0-verifiers?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_266">
 <td>createdAt </td>
 <td>UNIX time the verifier was created</td>
 <!-- <td><a href="/response_elements/266" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/150-list-oauth-1-0-verifiers?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/150-list-oauth-1-0-verifiers?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_267">
 <td>createdBy </td>
 <td>Apigee user account name of the individual who submitted the POST request that created the verifier</td>
 <!-- <td><a href="/response_elements/267" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/150-list-oauth-1-0-verifiers?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/150-list-oauth-1-0-verifiers?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_268">
 <td>expiresAt </td>
 <td>Expiry time period of the token to be generated; token expires/is deleted when the expiry time ends</td>
 <!-- <td><a href="/response_elements/268" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/150-list-oauth-1-0-verifiers?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/150-list-oauth-1-0-verifiers?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_269">
 <td>issuedAt </td>
 <td>UNIX time the verifier code is issued</td>
 <!-- <td><a href="/response_elements/269" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/150-list-oauth-1-0-verifiers?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/150-list-oauth-1-0-verifiers?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_270">
 <td>lastModifiedBy </td>
 <td>Apigee user account name of the individual who submitted the request that most recently modified this entity	</td>
 <!-- <td><a href="/response_elements/270" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/150-list-oauth-1-0-verifiers?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/150-list-oauth-1-0-verifiers?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_271">
 <td>lastModifiedAt </td>
 <td>UNIX time the app was last modified</td>
 <!-- <td><a href="/response_elements/271" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/150-list-oauth-1-0-verifiers?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/150-list-oauth-1-0-verifiers?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 

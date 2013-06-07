@@ -166,55 +166,55 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/companies \
 <td>name </td>
 <td>Name of the company</td>
 <!-- <td><a href="/response_elements/84" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/117-create-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/117-create-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_85">
 <td>displayName </td>
 <td>Display name of the company</td>
 <!-- <td><a href="/response_elements/85" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/117-create-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/117-create-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_86">
 <td>organization </td>
 <td>Organization in which the company is created</td>
 <!-- <td><a href="/response_elements/86" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/117-create-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/117-create-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_87">
 <td>status </td>
 <td>Status of the company: 'active' or 'inactive'</td>
 <!-- <td><a href="/response_elements/87" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/117-create-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/117-create-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_88">
 <td>attributes </td>
 <td>Custom name/value atributes used ot extend the default company profile</td>
 <!-- <td><a href="/response_elements/88" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/117-create-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/117-create-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_89">
 <td>createdAt </td>
 <td>Unix time when the entity was created</td>
 <!-- <td><a href="/response_elements/89" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/117-create-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/117-create-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_90">
 <td>createdBy </td>
 <td>Apigee username of the user who created the company</td>
 <!-- <td><a href="/response_elements/90" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/117-create-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/117-create-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_91">
 <td>lastModifiedAt </td>
 <td>Unix time when the entity was last modified</td>
 <!-- <td><a href="/response_elements/91" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/117-create-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/117-create-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_92">
 <td>lastModifiedBy </td>
 <td>Apigee username of the user who last modified the company</td>
 <!-- <td><a href="/response_elements/92" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/117-create-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/117-create-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 

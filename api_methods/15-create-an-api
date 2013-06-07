@@ -151,61 +151,61 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/apis \
 <td>configurationVersion </td>
 <td>The version of Apigee that the configuration is valid for</td>
 <!-- <td><a href="/response_elements/272" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_273">
 <td>contextInfo </td>
 <td>Apigee generated contextual information about the entity</td>
 <!-- <td><a href="/response_elements/273" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_274">
 <td>name </td>
 <td>The name of the API</td>
 <!-- <td><a href="/response_elements/274" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_275">
 <td>policies </td>
 <td>Policies attached to the API </td>
 <!-- <td><a href="/response_elements/275" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_276">
 <td>proxyEndpoints </td>
 <td>Named proxy endpoints (receiver) defined for the API proxy</td>
 <!-- <td><a href="/response_elements/276" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_277">
 <td>resources </td>
 <td>Any code, scripts, XSLT files used by policies attached to this API</td>
 <!-- <td><a href="/response_elements/277" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_278">
 <td>revision </td>
 <td>The sequential numbered packages of code and configuration that make up an API proxy</td>
 <!-- <td><a href="/response_elements/278" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_279">
 <td>targetEndpoints </td>
 <td>Named proxy endpoints (sender) defined for the API proxy</td>
 <!-- <td><a href="/response_elements/279" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_280">
 <td>targetServers </td>
 <td>Target servers defined for load balancing purposes</td>
 <!-- <td><a href="/response_elements/280" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_281">
 <td>type </td>
 <td>Internal entity definition used by Apigee</td>
 <!-- <td><a href="/response_elements/281" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 
