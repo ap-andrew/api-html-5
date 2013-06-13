@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="t4MzBrL1ShIk9mFO8fKfX3JWV8OlvZNAWArKcYQJ61w=" name="csrf-token" />
+<meta content="Y2rgL5amnZPUN36SFv/fxtO6I+KfQiEGj9xGhNlzZhs=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -44,7 +44,7 @@ Developer and App Administration
 </div>
 
 <div id="breadcrumb">
-<a href="/api-resources">Platform API Reference</a> > Company Developers</div>
+<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > Company Developers</div>
 
 
 <div class="page-header">

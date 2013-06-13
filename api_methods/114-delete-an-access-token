@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="t4MzBrL1ShIk9mFO8fKfX3JWV8OlvZNAWArKcYQJ61w=" name="csrf-token" />
+<meta content="Y2rgL5amnZPUN36SFv/fxtO6I+KfQiEGj9xGhNlzZhs=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/api_resources">Platform API Reference</a> > <a href="/api_resources/28-oauth-2-0-access-tokens">Oauth 2.0 Access Tokens</a> > Delete an Access Token</div>
+<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-platform/api/api-resources-reference">Platform API Reference</a> > <a href="/api_resources/28-oauth-2-0-access-tokens">Oauth 2.0 Access Tokens</a> > Delete an Access Token</div>
 <p>
 <h1>Delete an Access Token</h1> 
 </p>
@@ -204,18 +204,14 @@
 		</table>
 
 	<b>Errors</b> 
-		<pre>Failure 404 with proper error message
-&lt;Error&gt;
-&lt;Code&gt;keymanagement.service.invalid_account_name&lt;/Code&gt;
-&lt;Message&gt;Invalid Access Token&lt;/Message&gt;
-&lt;Contexts/&gt;
-&lt;/Error&gt;</pre>
+		<pre>{
+  &quot;code&quot; : &quot;keymanagement.service.....&quot;,
+  &quot;message&quot; : &quot;Access Token doesnot exist&quot;,
+  &quot;contexts&quot; : [ ]
+}</pre>
 	
 
 </div>
-
-
-
 
             </div>
         </div><!--/row-->

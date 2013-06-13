@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="t4MzBrL1ShIk9mFO8fKfX3JWV8OlvZNAWArKcYQJ61w=" name="csrf-token" />
+<meta content="Y2rgL5amnZPUN36SFv/fxtO6I+KfQiEGj9xGhNlzZhs=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -44,7 +44,7 @@ Developer and App Administration
 </div>
 
 <div id="breadcrumb">
-<a href="/api-resources">Platform API Reference</a> > App Families</div>
+<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > App Families</div>
 
 
 <div class="page-header">
@@ -74,7 +74,16 @@ Developer and App Administration
 				<tr><td colspan="2"><span class="lead">Create an app family</span></td><td><a href="/api_methods/125-create-an-app-family" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/appfamilies</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
-				<tr><td><strong>Description:</strong></td><td colspan="2">Create an App Family for Developers</td></tr>
+				<tr><td><strong>Description:</strong></td><td colspan="2">Create an app family for developers</td></tr>
+				<tr><td><strong>Content Types:</strong></td><td>
+				
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
 				<tr><td colspan="2"><span class="lead">Delete an app family</span></td><td><a href="/api_methods/129-delete-an-app-family" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/appfamilies/{app_family}</pre></span></td></tr>
@@ -82,9 +91,9 @@ Developer and App Administration
 				<tr><td><strong>Description:</strong></td><td colspan="2">Deletes an App Family and all Apps it contains</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
 				<tr><td colspan="2"><span class="lead">Get an app family</span></td><td><a href="/api_methods/126-get-an-app-family" class="btn btn-mini">Detail</a></td> 
-			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/appfamilies/{app_family}</pre></span></td></tr>
+			    <tr><td colspan="3"><span id="well"><pre>/appfamilies/{app_family}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
-				<tr><td><strong>Description:</strong></td><td colspan="2">Gets a developer's apps in an app family</td></tr>
+				<tr><td><strong>Description:</strong></td><td colspan="2">Gets a list of apps in an appfamily. Appfamilies can be associated with indiv developers, or with collections of developers, grouped into a company entity.</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
 				<tr><td colspan="2"><span class="lead">List all app families in an organization</span></td><td><a href="/api_methods/130-list-all-app-families-in-an-organization" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_ email}/app_families</pre></span></td></tr>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="t4MzBrL1ShIk9mFO8fKfX3JWV8OlvZNAWArKcYQJ61w=" name="csrf-token" />
+<meta content="Y2rgL5amnZPUN36SFv/fxtO6I+KfQiEGj9xGhNlzZhs=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/api_resources">Platform API Reference</a> > <a href="/api_resources/29-app-families">App Families</a> > Create an app family</div>
+<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-platform/api/api-resources-reference">Platform API Reference</a> > <a href="/api_resources/29-app-families">App Families</a> > Create an app family</div>
 <p>
 <h1>Create an app family</h1> 
 </p>
@@ -50,7 +50,7 @@
 		<p><b>API Platform Base Path:</b> https://api.enterprise.apigee.com/v1/o/{org_name}</p>
 		<p><b>API Resource Path:</b> /developers/{developer_email}/appfamilies</p>
 		<p>
-		Create an App Family for Developers
+		Create an app family for developers
 		</p>
 	</div>
 
@@ -63,6 +63,16 @@
 		Basic Auth
 		</p>
 
+		<p>
+		<b>Content Types:</b>
+		
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+		</p>
 
 	</div>
 </div>
@@ -73,8 +83,8 @@
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl -H &quot;Content-Type:application/json&quot; -X POST -d \
-   '{&quot;name&quot; : &quot;WeatherApps&quot;,&quot;apps&quot;: [&quot;weatherapp&quot;, &quot;weatherapp_prod&quot;]}' \
+	<pre>$ curl -H "Content-Type:application/json" -X POST -d \
+   '{"name" : "WeatherApps","apps": ["weatherapp", "weatherapp_prod"]}' \
 -u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/developers/{developer_email}/appfamilies</pre>
 	<b>Request Payload Elements:</b> 
 	<table class="table table-bordered">
@@ -111,8 +121,7 @@
 
 
 <b>Sample Response:</b> 
-	<pre>Success 201 
-{
+	<pre>{
   "apps" : [ "weatherapp", "weatherapp_prod" ],
   "name" : "WeatherApps"
 }</pre>
@@ -141,24 +150,20 @@
 		</table>
 
 	<b>Errors</b> 
-		<pre>Failure 4xx with proper error message
-&lt;Error&gt;
-&lt;Code&gt;keymanagement.service.invalid_company_name&lt;/Code&gt;
-&lt;Message&gt;Company Name is not valid &lt;/Message&gt;
-&lt;Contexts/&gt;
+		<pre>&lt;Error&gt;
+  &lt;Code&gt;keymanagement.service.invalid_company_name&lt;/Code&gt;
+  &lt;Message&gt;Company Name is not valid &lt;/Message&gt;
+  &lt;Contexts/&gt;
 &lt;/Error&gt;
 
 &lt;Error&gt;
-&lt;Code&gt;keymanagement.service.invalid_developer_email&lt;/Code&gt;
-&lt;Message&gt;Developer email  is not valid &lt;/Message&gt;
-&lt;Contexts/&gt;
+  &lt;Code&gt;keymanagement.service.invalid_developer_email&lt;/Code&gt;
+  &lt;Message&gt;Developer email  is not valid &lt;/Message&gt;
+  &lt;Contexts/&gt;
 &lt;/Error&gt;</pre>
 	
 
 </div>
-
-
-
 
             </div>
         </div><!--/row-->

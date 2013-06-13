@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="t4MzBrL1ShIk9mFO8fKfX3JWV8OlvZNAWArKcYQJ61w=" name="csrf-token" />
+<meta content="Y2rgL5amnZPUN36SFv/fxtO6I+KfQiEGj9xGhNlzZhs=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/api_resources">Platform API Reference</a> > <a href="/api_resources/1-apis">APIs</a> > Undeploy an API from an Environment</div>
+<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-platform/api/api-resources-reference">Platform API Reference</a> > <a href="/api_resources/1-apis">APIs</a> > Undeploy an API from an Environment</div>
 <p>
 <h1>Undeploy an API from an Environment</h1> 
 </p>
@@ -76,8 +76,8 @@
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl -H &quot;Content-type=application/octet-stream&quot; -X POST \
-https://api.enterprise.apigee.com/v1/o/{org_name/}apis/{api_name}/deployments?&quot;action=undeploy&env={env_name}&revision={revision_number}&quot;
+	<pre>$ curl -H "Content-type=application/octet-stream" -X POST \
+https://api.enterprise.apigee.com/v1/o/{org_name/}apis/{api_name}/deployments?"action=undeploy&env={env_name}&revision={revision_number}" \
 -u myname:mypass</pre>
 
 
@@ -180,9 +180,6 @@ https://api.enterprise.apigee.com/v1/o/{org_name/}apis/{api_name}/deployments?&q
 	
 
 </div>
-
-
-
 
             </div>
         </div><!--/row-->

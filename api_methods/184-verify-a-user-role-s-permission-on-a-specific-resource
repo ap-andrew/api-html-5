@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="t4MzBrL1ShIk9mFO8fKfX3JWV8OlvZNAWArKcYQJ61w=" name="csrf-token" />
+<meta content="Y2rgL5amnZPUN36SFv/fxtO6I+KfQiEGj9xGhNlzZhs=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/api_resources">Platform API Reference</a> > <a href="/api_resources/38-user-roles">User roles</a> > Verify a user role's permission on a specific resource</div>
+<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-platform/api/api-resources-reference">Platform API Reference</a> > <a href="/api_resources/38-user-roles">User roles</a> > Verify a user role's permission on a specific resource</div>
 <p>
 <h1>Verify a user role's permission on a specific resource</h1> 
 </p>
@@ -87,9 +87,6 @@
 	
 
 </div>
-
-
-
 
             </div>
         </div><!--/row-->

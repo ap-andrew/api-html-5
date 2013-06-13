@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="t4MzBrL1ShIk9mFO8fKfX3JWV8OlvZNAWArKcYQJ61w=" name="csrf-token" />
+<meta content="Y2rgL5amnZPUN36SFv/fxtO6I+KfQiEGj9xGhNlzZhs=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -44,7 +44,7 @@ API Configuration and Management
 </div>
 
 <div id="breadcrumb">
-<a href="/api-resources">Platform API Reference</a> > Deployments</div>
+<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > Deployments</div>
 
 
 <div class="page-header">
@@ -79,11 +79,11 @@ API Configuration and Management
 				<tr><td><strong>Description:</strong></td><td colspan="2">Get Deployments for an API Revision</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
 				<tr><td colspan="2"><span class="lead">Get Deployments for an Environment</span></td><td><a href="/api_methods/20-get-deployments-for-an-environment" class="btn btn-mini">Detail</a></td> 
-			    <tr><td colspan="3"><span id="well"><pre>/environments/{environment_name}/deployments</pre></span></td></tr>
+			    <tr><td colspan="3"><span id="well"><pre>/environments/{env_name}/deployments</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets a list of all API deployments in a given environment</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get Deployments for an Organization</span></td><td><a href="/api_methods/112-get-deployments-for-an-organization" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get deployments for an organization</span></td><td><a href="/api_methods/112-get-deployments-for-an-organization" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/deployments</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Returns all deployments for all APIs in an Organization</td></tr>

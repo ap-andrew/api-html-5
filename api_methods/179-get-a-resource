@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="t4MzBrL1ShIk9mFO8fKfX3JWV8OlvZNAWArKcYQJ61w=" name="csrf-token" />
+<meta content="Y2rgL5amnZPUN36SFv/fxtO6I+KfQiEGj9xGhNlzZhs=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/api_resources">Platform API Reference</a> > <a href="/api_resources/41-rbac-resources">RBAC Resources</a> > Get a resource</div>
+<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-platform/api/api-resources-reference">Platform API Reference</a> > <a href="/api_resources/41-rbac-resources">RBAC Resources</a> > Get a resource</div>
 <p>
 <h1>Get a resource</h1> 
 </p>
@@ -50,7 +50,7 @@
 		<p><b>API Platform Base Path:</b> https://api.enterprise.apigee.com/v1/o/{org_name}</p>
 		<p><b>API Resource Path:</b> /resources/{resource_name}</p>
 		<p>
-		Gets a resource based on resource path
+		Gets an RBAC resource based on resource path
 		</p>
 	</div>
 
@@ -72,6 +72,9 @@
 	
 	</p>
 
+	<b>Sample Request:</b>
+	<pre>$ curl https://api.enterprise.apigee.com/v1/o/{org_name}/resources/{resource_name} \
+-u myname:mypass</pre>
 
 
 <b>Query Parameters:</b>
@@ -115,9 +118,6 @@
 	
 
 </div>
-
-
-
 
             </div>
         </div><!--/row-->

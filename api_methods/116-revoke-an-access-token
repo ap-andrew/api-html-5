@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="t4MzBrL1ShIk9mFO8fKfX3JWV8OlvZNAWArKcYQJ61w=" name="csrf-token" />
+<meta content="Y2rgL5amnZPUN36SFv/fxtO6I+KfQiEGj9xGhNlzZhs=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/api_resources">Platform API Reference</a> > <a href="/api_resources/28-oauth-2-0-access-tokens">Oauth 2.0 Access Tokens</a> > Revoke an Access Token</div>
+<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-platform/api/api-resources-reference">Platform API Reference</a> > <a href="/api_resources/28-oauth-2-0-access-tokens">Oauth 2.0 Access Tokens</a> > Revoke an Access Token</div>
 <p>
 <h1>Revoke an Access Token</h1> 
 </p>
@@ -73,8 +73,8 @@
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl -H &quot;Content-type: application/x-www-url-form-encoded&quot; -X POST \
-https://api.enterprise.apigee.com/v1/o/{org_name}}/oauth2/accesstokens/{access_token}?&quot;action=revoke&quot; \
+	<pre>$ curl -H "Content-type: application/x-www-url-form-encoded" -X POST \
+https://api.enterprise.apigee.com/v1/o/{org_name}}/oauth2/accesstokens/{access_token}?"action=revoke" \
 -u myname:mypass</pre>
 
 
@@ -83,23 +83,19 @@ https://api.enterprise.apigee.com/v1/o/{org_name}}/oauth2/accesstokens/{access_t
 
 
 	<b>Errors</b> 
-		<pre> 404 
-&lt;Error&gt;
-&lt;Code&gt;keymanagement.service.invalid_access_token&lt;/Code&gt;
-&lt;Message&gt;Invalid Access Token&lt;/Message&gt;
-&lt;Contexts/&gt;
-&lt;/Error&gt;
+		<pre>{
+  &quot;code&quot; : &quot;keymanagement.service.....&quot;,
+  &quot;message&quot; : &quot;Access Token doesnot exist&quot;,
+  &quot;contexts&quot; : [ ]
+}
 
 Error Codes:
-1. keymanagement.service.application_not_approved
-2. keymanagement.service.invalid_access_token
-3. keymanagement.service.access_token_revoke_failed</pre>
+1. keymanagement.service.oauth10_access_token_doesnotexist
+3. keymanagement.service.application_not_approved
+4. keymanagement.service.oauth10_access_token_revoke_failed</pre>
 	
 
 </div>
-
-
-
 
             </div>
         </div><!--/row-->

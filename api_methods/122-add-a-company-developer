@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="t4MzBrL1ShIk9mFO8fKfX3JWV8OlvZNAWArKcYQJ61w=" name="csrf-token" />
+<meta content="Y2rgL5amnZPUN36SFv/fxtO6I+KfQiEGj9xGhNlzZhs=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/api_resources">Platform API Reference</a> > <a href="/api_resources/13-company-developers">Company Developers</a> > Add a company developer</div>
+<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-platform/api/api-resources-reference">Platform API Reference</a> > <a href="/api_resources/13-company-developers">Company Developers</a> > Add a company developer</div>
 <p>
 <h1>Add a company developer</h1> 
 </p>
@@ -83,15 +83,15 @@ text/xml
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl -H &quot;Content-Type:application/json&quot; -X POST -d \
+	<pre>$ curl -H "Content-Type:application/json" -X POST -d \
 '{
- &quot;developer&quot; : [ {
-   &quot;email&quot; : &quot;dev@apigee.com&quot;,
-   &quot;role&quot; : &quot;developer&quot;
- }, {
-   &quot;email&quot; : &quot;developer@apigee.com&quot;,
-   &quot;role&quot; : &quot;developer&quot;
- } ]
+  "developer" : [ {
+    "email" : "dev@apigee.com",
+    "role" : "developer"
+  }, {
+    "email" : "developer@apigee.com",
+    "role" : "developer"
+  } ]
 }' \
 https://api.enterprise.apigee.com/v1/o/{org_name}/companies/{company_name}/developers \
 -u myname:mypass</pre>
@@ -138,9 +138,7 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/companies/{company_name}/devel
     "email" : "developer@apigee.com",
     "role" : "developer"
   } ]
-}
-
-</pre>
+}</pre>
 
 	<b>Response Payload Elements:</b>
 		<table class="table table-bordered">
@@ -166,8 +164,7 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/companies/{company_name}/devel
 		</table>
 
 	<b>Errors</b> 
-		<pre>Failure 4xx with proper error message
-{
+		<pre>{
   &quot;code&quot; : &quot;developer.service.DevelopersDoesNotExist&quot;,
   &quot;message&quot; : &quot;Developers [dev2@apigee.com] doesnot exist&quot;,
   &quot;contexts&quot; : [ ]
@@ -175,9 +172,6 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/companies/{company_name}/devel
 	
 
 </div>
-
-
-
 
             </div>
         </div><!--/row-->

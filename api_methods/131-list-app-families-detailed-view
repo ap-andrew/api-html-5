@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="t4MzBrL1ShIk9mFO8fKfX3JWV8OlvZNAWArKcYQJ61w=" name="csrf-token" />
+<meta content="Y2rgL5amnZPUN36SFv/fxtO6I+KfQiEGj9xGhNlzZhs=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/api_resources">Platform API Reference</a> > <a href="/api_resources/29-app-families">App Families</a> > List app families (detailed view)</div>
+<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-platform/api/api-resources-reference">Platform API Reference</a> > <a href="/api_resources/29-app-families">App Families</a> > List app families (detailed view)</div>
 <p>
 <h1>List app families (detailed view)</h1> 
 </p>
@@ -73,7 +73,7 @@
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/developers/{developer_email}/appfamilies?&quot;expand=true&quot;</pre>
+	<pre>$ curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/developers/{developer_email}/appfamilies?"expand=true"</pre>
 
 
 <b>Sample Response:</b> 
@@ -86,8 +86,7 @@
 
 
 	<b>Errors</b> 
-		<pre>Failure 4xx with proper error message
-{
+		<pre>{
   &quot;code&quot; : &quot;developer.service.DeveloperDoesNotExist&quot;,
   &quot;message&quot; : &quot;Developer named dev11@apigee.com does not exist in organization AutomationOrganization&quot;,
   &quot;contexts&quot; : [ ]
@@ -101,9 +100,6 @@
 	
 
 </div>
-
-
-
 
             </div>
         </div><!--/row-->

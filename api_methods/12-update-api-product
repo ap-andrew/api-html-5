@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="t4MzBrL1ShIk9mFO8fKfX3JWV8OlvZNAWArKcYQJ61w=" name="csrf-token" />
+<meta content="Y2rgL5amnZPUN36SFv/fxtO6I+KfQiEGj9xGhNlzZhs=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/api_resources">Platform API Reference</a> > <a href="/api_resources/3-api-products">API Products</a> > Update API Product</div>
+<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-platform/api/api-resources-reference">Platform API Reference</a> > <a href="/api_resources/3-api-products">API Products</a> > Update API Product</div>
 <p>
 <h1>Update API Product</h1> 
 </p>
@@ -86,19 +86,19 @@ text/xml
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>curl -H &quot;Content-Type:application/json&quot; -X PUT -d \
-   '{&quot;apiResources&quot;: [ &quot;/weather&quot; ],      
-     &quot;approvalType&quot;: &quot;auto&quot;, 
-     &quot;attributes&quot;:
-      [{&quot;name&quot;: &quot;description&quot;, &quot;value&quot;: &quot;Introductory API Product&quot;},
-       {&quot;name&quot;: &quot;developer.quota.interval&quot;,&quot;value&quot;: &quot;1&quot;},
-       {&quot;name&quot;: &quot;developer.quota.limit&quot;,&quot;value&quot;: &quot;1000&quot;},
-       {&quot;name&quot;: &quot;developer.quota.timeunit&quot;,&quot;value&quot;: &quot;month&quot;},
-       {&quot;name&quot;: &quot;servicePlan&quot;, &quot;value&quot;: &quot;Introductory&quot;}],
-     &quot;description&quot;: &quot;New Description&quot;,
-     &quot;displayName&quot;: &quot;Free API Product&quot;,
-     &quot;name&quot;: &quot;weather_free&quot;,
-     &quot;scopes&quot;: []}' \
+	<pre>$ curl -H "Content-Type:application/json" -X PUT -d \
+   '{"apiResources": [ "/weather" ],      
+     "approvalType": "auto", 
+     "attributes":
+      [{"name": "description", "value": "Introductory API Product"},
+       {"name": "developer.quota.interval","value": "1"},
+       {"name": "developer.quota.limit","value": "1000"},
+       {"name": "developer.quota.timeunit","value": "month"},
+       {"name": "servicePlan", "value": "Introductory"}],
+     "description": "New Description",
+     "displayName": "Free API Product",
+     "name": "weather_free",
+     "scopes": []}' \
 -u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/apiproducts/{apiproduct_name}</pre>
 	<b>Request Payload Elements:</b> 
 	<table class="table table-bordered">
@@ -258,9 +258,6 @@ text/xml
 	
 
 </div>
-
-
-
 
             </div>
         </div><!--/row-->
