@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="Y2rgL5amnZPUN36SFv/fxtO6I+KfQiEGj9xGhNlzZhs=" name="csrf-token" />
+<meta content="lfQiYBuMyF7DvtN2URRMKHNwjdmsTxYQF2nf0fRY/8g=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-platform/api/api-resources-reference">Platform API Reference</a> > <a href="/api_resources/33-oauth-1-0a-access-tokens">OAuth 1.0a Access Tokens</a> > Delete Oauth 1.0 Access Token</div>
+<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-resources-reference">Platform API Reference</a> > <a href="/api_resources/33-oauth-1-0a-access-tokens">OAuth 1.0a Access Tokens</a> > Delete Oauth 1.0 Access Token</div>
 <p>
 <h1>Delete Oauth 1.0 Access Token</h1> 
 </p>
