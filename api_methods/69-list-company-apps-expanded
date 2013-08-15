@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="PyQ1VRmeYzFAVsVuVKt+9I4Kg9ON1pPkjIMDdwoRWRU=" name="csrf-token" />
+<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -36,19 +36,23 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="row">
+        <div class="row"> 
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-resources-reference">Platform API Reference</a> > <a href="/api_resources/14-apps-company">Apps: Company</a> > List Company Apps (Expanded)</div>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/14-apps-company">Apps: Company</a> > List Company Apps (Expanded)</i>
+</div>
+
 <p>
 <h1>List Company Apps (Expanded)</h1> 
 </p>
 
+<p><b>API Platform Base Path:</b> <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></p>
+
 <div class="row">
 	<div class="span6" style="width:340px;">
-		<p><b>API Platform Base Path:</b> https://api.enterprise.apigee.com/v1/o/{org_name}</p>
-		<p><b>API Resource Path:</b> /companies/{company_name}/apps?expand=true</p>
+
+		<p><b>API Resource Path:</b> <code>/companies/{company_name}/apps?expand=true</code></p>
 		<p>
 		Gets an expanded list Company Apps
 		</p>
@@ -73,7 +77,7 @@
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/companies/{company_name}/apps?"expand=true"</pre>
+	<div class="terminal">$ curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/companies/{company_name}/apps?"expand=true"</div>
 
 
 <b>Sample Response:</b> 
@@ -123,81 +127,55 @@
 <div class="response_element" id="response_element_432">
 <td>app </td>
 <td>The list of all company apps in an organization</td>
-<!-- <td><a href="/response_elements/432" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/69-list-company-apps-expanded?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_433">
 <td>access_type </td>
 <td>Access type for the app</td>
-<!-- <td><a href="/response_elements/433" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/69-list-company-apps-expanded?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_434">
 <td>app_family </td>
 <td>App family that the app belongs to</td>
-<!-- <td><a href="/response_elements/434" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/69-list-company-apps-expanded?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_435">
 <td>attributes </td>
 <td>name/value pairs used to extend the default company app profile</td>
-<!-- <td><a href="/response_elements/435" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/69-list-company-apps-expanded?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_436">
 <td>callback_url </td>
 <td>Callback URL for the app</td>
-<!-- <td><a href="/response_elements/436" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/69-list-company-apps-expanded?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_437">
 <td>company_name </td>
 <td>Name of the company with which the app is associated</td>
-<!-- <td><a href="/response_elements/437" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/69-list-company-apps-expanded?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_438">
 <td>created_at </td>
 <td>Unix time when the app was created</td>
-<!-- <td><a href="/response_elements/438" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/69-list-company-apps-expanded?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_439">
 <td>created_by </td>
 <td>User name of the Apigee user who created the app</td>
-<!-- <td><a href="/response_elements/439" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/69-list-company-apps-expanded?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_440">
 <td>lastmodified_at </td>
 <td>Unix time when the app was last modified</td>
-<!-- <td><a href="/response_elements/440" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/69-list-company-apps-expanded?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_441">
 <td>lastmodified_by </td>
 <td>User name of the Apigee user who last modified the app</td>
-<!-- <td><a href="/response_elements/441" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/69-list-company-apps-expanded?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_442">
 <td>name </td>
 <td>The name of the app</td>
-<!-- <td><a href="/response_elements/442" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/69-list-company-apps-expanded?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_443">
 <td>status </td>
-<td>The status of the app: 'approved' or 'unapproved'</td>
-<!-- <td><a href="/response_elements/443" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/69-list-company-apps-expanded?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<td>The status of the app: &#x27;approved&#x27; or &#x27;unapproved&#x27;</td>
 </div></tr>
 		</table>
 
 	
-
 </div>
-
             </div>
         </div><!--/row-->
       </div><!--/content-->

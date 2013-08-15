@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="PyQ1VRmeYzFAVsVuVKt+9I4Kg9ON1pPkjIMDdwoRWRU=" name="csrf-token" />
+<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -36,7 +36,7 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="row">
+        <div class="row"> 
            <div class="span12">
 
             <div id="category">
@@ -44,16 +44,14 @@ Developer and App Administration
 </div>
 
 <div id="breadcrumb">
-<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > Company Developers</div>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > Company Developers</i>
+</div>
 
 
 <div class="page-header">
   <h1>Company Developers</h1>
 </div>
 
-<!-- <div class=btn>
-<a href="/api_methods/new">Add an API Method</a>
-</div> -->
 
 <p><b>API Platform Base Path: </b>https://api.enterprise.apigee.com/v1/o/{org_name}</p>
 
@@ -72,7 +70,6 @@ Company developer roles are enforced within the client application that you buil
 
 
 Company developers are mapped to developers in your organization using the developer email as a key. The mapping associates the developer with the company and adds a role. The company developer entity thus has simply an email address and a role while the organization developer entity that it maps to can have a wide variety of attributes defined.</td></tr>
-		       <!-- <td><div id="well"><pre></pre></div></td></tr> -->
 		</table>
 
 
@@ -98,17 +95,13 @@ text/xml
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Removes the association of a Developer with a Company</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">List Developers in a Company</span></td><td><a href="/api_methods/124-list-developers-in-a-company" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List developers in a company</span></td><td><a href="/api_methods/124-list-developers-in-a-company" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/companies/{company_name}/developers/</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
-				<tr><td><strong>Description:</strong></td><td colspan="2">Lists all Developers associated with a Company</td></tr>
+				<tr><td><strong>Description:</strong></td><td colspan="2">Lists all developers associated with a company</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
 		</tbody>
 		</table>
-
-<!-- Schema:
-
-<div id="well"><pre></pre></div> -->
 
 
 

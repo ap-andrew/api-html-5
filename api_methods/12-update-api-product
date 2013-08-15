@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="PyQ1VRmeYzFAVsVuVKt+9I4Kg9ON1pPkjIMDdwoRWRU=" name="csrf-token" />
+<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -36,19 +36,23 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="row">
+        <div class="row"> 
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-resources-reference">Platform API Reference</a> > <a href="/api_resources/3-api-products">API Products</a> > Update API Product</div>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/3-api-products">API Products</a> > Update API Product</i>
+</div>
+
 <p>
 <h1>Update API Product</h1> 
 </p>
 
+<p><b>API Platform Base Path:</b> <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></p>
+
 <div class="row">
 	<div class="span6" style="width:340px;">
-		<p><b>API Platform Base Path:</b> https://api.enterprise.apigee.com/v1/o/{org_name}</p>
-		<p><b>API Resource Path:</b> /apiproducts/{apiproduct_name}</p>
+
+		<p><b>API Resource Path:</b> <code>/apiproducts/{apiproduct_name}</code></p>
 		<p>
 		This method updates an existing APi Product
 		</p>
@@ -82,24 +86,30 @@ text/xml
 
 <div class="span18">
 	<p>
-	Call PUT on an existing API Product to update the API Product. You are must include the entire profile of the existing API product,  include the elements to be updated, in the update request payload.
+	Call PUT on an existing API Product to update the API Product. You must include the entire profile of the existing API product,  including the properties to be updated, in the update request payload.
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl -H "Content-Type:application/json" -X PUT -d \
-   '{"apiResources": [ "/weather" ],      
-     "approvalType": "auto", 
-     "attributes":
-      [{"name": "description", "value": "Introductory API Product"},
-       {"name": "developer.quota.interval","value": "1"},
-       {"name": "developer.quota.limit","value": "1000"},
-       {"name": "developer.quota.timeunit","value": "month"},
-       {"name": "servicePlan", "value": "Introductory"}],
-     "description": "New Description",
-     "displayName": "Free API Product",
-     "name": "weather_free",
-     "scopes": []}' \
--u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/apiproducts/{apiproduct_name}</pre>
+	<div class="terminal">$ curl -H "Content-Type:application/json" -X PUT -d \
+ '{
+  "approvalType" : "auto",
+  "attributes" : [ {
+    "name" : "division",
+    "value" : "accounting"
+  } ],
+  "displayName" : "Sandbox Silver",
+  "name" : "sandbox",
+  "apiResources" : [ "/forecasts", "/categories/*/articles" ],
+  "description" : "Provides rate limited read and write access to sandbox account APIs",
+  "scopes": [ "read, write" ],
+  "environments": [ "test" ],
+  "proxies": [ "weatherapi" ],
+  "quota": "10000",
+  "quotaInterval": "1",
+  "quotaTimeUnit": "month"
+}'  \
+https://api.enterprise.apigee.com/v1/o/apifactory/apiproducts/sandbox \
+-u myname:mypass</div>
 	<b>Request Payload Elements:</b> 
 	<table class="table table-bordered">
 		<thead>
@@ -113,7 +123,7 @@ text/xml
 			<tr>
 <div class="request_element" id="request_element_42">
 <td>approvalType</td>
-<td>Manual or Auto. If Manual, consumer key is generated and returned in 'pending' state. If manual consumer key generated and returned in 'Approved' state.</td>
+<td>Manual or Auto. If Manual, consumer key is generated and returned in &#x27;pending&#x27; state. If manual consumer key generated and returned in &#x27;Approved&#x27; state.</td>
 <td>N/A</td>
 <td>No</td>
 <!-- <td><a href="/request_elements/42" class="btn btn-mini">Detail</a></td> -->
@@ -156,32 +166,25 @@ text/xml
 
 <b>Sample Response:</b> 
 	<pre>{
-  "apiResources" : [ "/**" ],
+  "apiResources" : [ "/forecasts", "/categories/*/articles" ],
   "approvalType" : "auto",
   "attributes" : [ {
-    "name" : "description",
-    "value" : "Introductory API Product"
-  }, {
-    "name" : "developer.quota.interval",
-    "value" : "1"
-  }, {
-    "name" : "developer.quota.limit",
-    "value" : "1000"
-  }, {
-    "name" : "developer.quota.timeunit",
-    "value" : "month"
-  }, {
-    "name" : "servicePlan",
-    "value" : "Introductory"
+    "name" : "division",
+    "value" : "accounting"
   } ],
-  "createdAt" : 1349794919450,
-  "createdBy" : "admin@apigee.com",
-  "description" : "New Description",
-  "displayName" : "Free API Product",
-  "lastModifiedAt" : 1354734065117,
-  "lastModifiedBy" : "admin@apigee.com",
-  "name" : "weather_free",
-  "scopes" : [ ]
+  "createdAt" : 1374679889295,
+  "createdBy" : "andrew@apigee.com",
+  "description" : "Provides rate limited read and write access to sandbox account APIs",
+  "displayName" : "Sandbox Silver",
+  "environments" : [ "test" ],
+  "lastModifiedAt" : 1374680530762,
+  "lastModifiedBy" : "andrew@apigee.com",
+  "name" : "sandbox",
+  "proxies" : [ "weatherapi" ],
+  "quota" : "10000",
+  "quotaInterval" : "1",
+  "quotaTimeUnit" : "month",
+  "scopes" : [ "read, write" ]
 }</pre>
 
 	<b>Response Payload Elements:</b>
@@ -196,56 +199,38 @@ text/xml
 <div class="response_element" id="response_element_138">
 <td>apiResources </td>
 <td>A list of URIs (including wildcards) that represent the bundle of APIs permitted to consumers of this API Product</td>
-<!-- <td><a href="/response_elements/138" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/12-update-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_139">
 <td>approvalType </td>
-<td>Determines the state of the consumer key generated for requesters of this API Product. For Auto, key are generated in &quot;Approved' state. For Manual, keys are approved in 'Pending' state. </td>
-<!-- <td><a href="/response_elements/139" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/12-update-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<td>Determines the state of the consumer key generated for requesters of this API Product. For Auto, key are generated in &quot;Approved&#x27; state. For Manual, keys are approved in &#x27;Pending&#x27; state. </td>
 </div></tr><tr>
 <div class="response_element" id="response_element_140">
 <td>attributes </td>
 <td>Any app-specific arbitrary attributes that may be used to define visibility of the API Product or runtime policy enforcement (such as setting for a rate-limiting policy.</td>
-<!-- <td><a href="/response_elements/140" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/12-update-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_141">
 <td>createdAt </td>
 <td>Unix time</td>
-<!-- <td><a href="/response_elements/141" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/12-update-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_142">
 <td>createdBy </td>
 <td>Apigee user account name of the individual who submitted the POST request that created this entity</td>
-<!-- <td><a href="/response_elements/142" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/12-update-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_143">
 <td>lastModifiedAt </td>
 <td>Unix time when the API product was last modified</td>
-<!-- <td><a href="/response_elements/143" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/12-update-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_144">
 <td>lastModifiedBy </td>
 <td>Apigee user account name of the individual who last modified this entity</td>
-<!-- <td><a href="/response_elements/144" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/12-update-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_145">
 <td>name </td>
 <td>Name of the API Product</td>
-<!-- <td><a href="/response_elements/145" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/12-update-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_146">
 <td>scopes </td>
 <td>Oauth scopes required in the access token used to consume any of the API resources (URIs) bundled in this API Product</td>
-<!-- <td><a href="/response_elements/146" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/12-update-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 
@@ -256,9 +241,7 @@ text/xml
   &quot;contexts&quot; : [ ]
 }</pre>
 	
-
 </div>
-
             </div>
         </div><!--/row-->
       </div><!--/content-->

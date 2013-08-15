@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="PyQ1VRmeYzFAVsVuVKt+9I4Kg9ON1pPkjIMDdwoRWRU=" name="csrf-token" />
+<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -36,19 +36,23 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="row">
+        <div class="row"> 
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-resources-reference">Platform API Reference</a> > <a href="/api_resources/36-deployments">Deployments</a> > Get API deployments</div>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/36-deployments">Deployments</a> > Get API deployments</i>
+</div>
+
 <p>
 <h1>Get API deployments</h1> 
 </p>
 
+<p><b>API Platform Base Path:</b> <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></p>
+
 <div class="row">
 	<div class="span6" style="width:340px;">
-		<p><b>API Platform Base Path:</b> https://api.enterprise.apigee.com/v1/o/{org_name}</p>
-		<p><b>API Resource Path:</b> /apis/{api_name}/deployments</p>
+
+		<p><b>API Resource Path:</b> <code>/apis/{api_name}/deployments</code></p>
 		<p>
 		Returns detail on deployments of the API specified
 		</p>
@@ -73,8 +77,8 @@
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl https://api.enterprise.apigee.com/v1/o/(org_name)/apis/{api_name}/deployments \
--u myname:mypass</pre>
+	<div class="terminal">$ curl https://api.enterprise.apigee.com/v1/o/(org_name)/apis/{api_name}/deployments \
+-u myname:mypass</div>
 
 
 <b>Sample Response:</b> 
@@ -123,56 +127,38 @@
 <div class="response_element" id="response_element_60">
 <td>environment </td>
 <td>Settings for the environment</td>
-<!-- <td><a href="/response_elements/60" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/18-get-api-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_61">
 <td>name </td>
 <td>Name of the environment</td>
-<!-- <td><a href="/response_elements/61" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/18-get-api-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_62">
 <td>revision </td>
 <td>Configuration settings for the API revision</td>
-<!-- <td><a href="/response_elements/62" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/18-get-api-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_63">
 <td>basePath </td>
 <td>Basepath for the API in this environment</td>
-<!-- <td><a href="/response_elements/63" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/18-get-api-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_64">
 <td>steps </td>
 <td>Policies attached to the API</td>
-<!-- <td><a href="/response_elements/64" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/18-get-api-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_65">
 <td>server </td>
 <td>Servers deployed in support of this API (usedinternally by Apigee)</td>
-<!-- <td><a href="/response_elements/65" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/18-get-api-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_66">
 <td>state </td>
 <td>The deployment status of the API (deployed or undeployed)</td>
-<!-- <td><a href="/response_elements/66" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/18-get-api-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_67">
 <td>name </td>
 <td>Name of the API</td>
-<!-- <td><a href="/response_elements/67" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/18-get-api-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_68">
 <td>organization </td>
 <td>The organization in which the API is deployed</td>
-<!-- <td><a href="/response_elements/68" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/18-get-api-deployments?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 
@@ -184,9 +170,7 @@
 	&lt;Contexts/&gt;
 &lt;/Error&gt;</pre>
 	
-
 </div>
-
             </div>
         </div><!--/row-->
       </div><!--/content-->

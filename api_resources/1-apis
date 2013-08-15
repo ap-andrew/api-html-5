@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="PyQ1VRmeYzFAVsVuVKt+9I4Kg9ON1pPkjIMDdwoRWRU=" name="csrf-token" />
+<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -36,7 +36,7 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="row">
+        <div class="row"> 
            <div class="span12">
 
             <div id="category">
@@ -44,16 +44,14 @@ API Configuration and Management
 </div>
 
 <div id="breadcrumb">
-<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > APIs</div>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > APIs</i>
+</div>
 
 
 <div class="page-header">
   <h1>APIs</h1>
 </div>
 
-<!-- <div class=btn>
-<a href="/api_methods/new">Add an API Method</a>
-</div> -->
 
 <p><b>API Platform Base Path: </b>https://api.enterprise.apigee.com/v1/o/{org_name}</p>
 
@@ -61,25 +59,6 @@ API Configuration and Management
 				<tr><td class="lead">API Resource Path: /apis</td></tr>
 				<tr><td>API facades that act as managed proxies for backend services</td></tr>
 		  		<tr><td>An API to create and manage API facades, which act as a proxies for existing services.  In Apigee, an API facade is defined by a base URL, a backend service URL, and  a number of API resources (URIs).</td></tr>
-		       <!-- <td><div id="well"><pre>{
-  &quot;configurationVersion&quot; : {
-    &quot;majorVersion&quot; : 4,
-    &quot;minorVersion&quot; : 0
-  },
-  &quot;contextInfo&quot; : &quot;Revision 10 of application weatherAPI, in organization apiProvider&quot;,
-  &quot;createdAt&quot; : 1343781993471,
-  &quot;createdBy&quot; : &quot;orgAdmin&quot;,
-  &quot;lastModifiedAt&quot; : 1343781993471,
-  &quot;lastModifiedBy&quot; : &quot;orgAdmin&quot;,
-  &quot;name&quot; : &quot;weatherAPI&quot;,
-  &quot;policies&quot; : [ &quot;Quota&quot; ],
-  &quot;proxyEndpoints&quot; : [ &quot;default&quot; ],
-  &quot;resources&quot; : [ ],
-  &quot;revision&quot; : &quot;10&quot;,
-  &quot;targetEndpoints&quot; : [ &quot;default&quot; ],
-  &quot;targetServers&quot; : [ ],
-  &quot;type&quot; : &quot;Application&quot;
-}</pre></div></td></tr> -->
 		</table>
 
 
@@ -110,12 +89,18 @@ text/xml
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Deletes a specific revision of an API</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Deploy an API to an Environment</span></td><td><a href="/api_methods/25-deploy-an-api-to-an-environment" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Deploy an API proxy to an environment</span></td><td><a href="/api_methods/25-deploy-an-api-proxy-to-an-environment" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apis/{api_name}/revisions/{revision_number}/deployments?action=deploy&amp;env={environment_name}&amp;basepath={/basepath}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
-				<tr><td><strong>Description:</strong></td><td colspan="2">Pushes an API to an environment (typically 'test' or 'prod') for execution</td></tr>
+				<tr><td><strong>Description:</strong></td><td colspan="2">Pushes an API to an environment (typically &#x27;test&#x27; or &#x27;prod&#x27;) for execution</td></tr>
+				<tr><td><strong>Content Types:</strong></td><td>
+				
+<div class="content_type" id="content_type_3">
+application/x-www-url-form-encoded
+</div>
+				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Export an API</span></td><td><a href="/api_methods/105-export-an-api" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Export an API proxy</span></td><td><a href="/api_methods/105-export-an-api-proxy" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apis/{api_name}/revisions{revision_number}?format=bundle</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Exports an API from Apigee to the local machine a ZIP bundle of config and code files.</td></tr>
@@ -135,10 +120,10 @@ text/xml
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets all APIs in an organization. The names in the list map to the names defined in the API proxy configuration for each API.</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Undeploy an API from an Environment</span></td><td><a href="/api_methods/26-undeploy-an-api-from-an-environment" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Undeploy an API from an environment</span></td><td><a href="/api_methods/26-undeploy-an-api-from-an-environment" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apis/{api_name}/deployments?action=undeploy&amp;env={environment_name}&amp;revision={revision_number}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
-				<tr><td><strong>Description:</strong></td><td colspan="2">Removes an API from an environment (typically 'test' or 'prod')</td></tr>
+				<tr><td><strong>Description:</strong></td><td colspan="2">Removes an API from an environment (typically &#x27;test&#x27; or &#x27;prod&#x27;)</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
 				<tr><td colspan="2"><span class="lead">Update an API</span></td><td><a href="/api_methods/2-update-an-api" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apis/{api_name}</pre></span></td></tr>
@@ -156,10 +141,6 @@ text/xml
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
 		</tbody>
 		</table>
-
-<!-- Schema:
-
-<div id="well"><pre></pre></div> -->
 
 
 

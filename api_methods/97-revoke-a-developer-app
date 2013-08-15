@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="PyQ1VRmeYzFAVsVuVKt+9I4Kg9ON1pPkjIMDdwoRWRU=" name="csrf-token" />
+<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -36,19 +36,23 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="row">
+        <div class="row"> 
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-resources-reference">Platform API Reference</a> > <a href="/api_resources/17-apps-developer">Apps: Developer</a> > Revoke a Developer App</div>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/17-apps-developer">Apps: Developer</a> > Revoke a Developer App</i>
+</div>
+
 <p>
 <h1>Revoke a Developer App</h1> 
 </p>
 
+<p><b>API Platform Base Path:</b> <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></p>
+
 <div class="row">
 	<div class="span6" style="width:340px;">
-		<p><b>API Platform Base Path:</b> https://api.enterprise.apigee.com/v1/o/{org_name}</p>
-		<p><b>API Resource Path:</b> /developers/{developer_email}/apps/{app_name}?action=revoke</p>
+
+		<p><b>API Resource Path:</b> <code>/developers/{developer_email}/apps/{app_name}?action=revoke</code></p>
 		<p>
 		Revokes a Developer App, disabling access to all API Products
 		</p>
@@ -80,9 +84,9 @@ application/x-www-url-form-encoded
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl -H "Content-type: application/x-www-url-form-encoded" -X POST \
+	<div class="terminal">$ curl -X POST \
 https://api.enterprise.apigee.com/v1/o/{org_name}//developers/{developer_email}/apps/{app_name}?"action=revoke" \
--u myname:mypass</pre>
+-u myname:mypass</div>
 
 
 <b>Sample Response:</b> 
@@ -90,9 +94,7 @@ https://api.enterprise.apigee.com/v1/o/{org_name}//developers/{developer_email}/
 
 
 	
-
 </div>
-
             </div>
         </div><!--/row-->
       </div><!--/content-->

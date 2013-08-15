@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="PyQ1VRmeYzFAVsVuVKt+9I4Kg9ON1pPkjIMDdwoRWRU=" name="csrf-token" />
+<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -36,19 +36,23 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="row">
+        <div class="row"> 
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-resources-reference">Platform API Reference</a> > <a href="/api_resources/37-users">Users</a> > Create a user</div>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/37-users">Users</a> > Create a user</i>
+</div>
+
 <p>
 <h1>Create a user</h1> 
 </p>
 
+<p><b>API Platform Base Path:</b> <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></p>
+
 <div class="row">
 	<div class="span6" style="width:340px;">
-		<p><b>API Platform Base Path:</b> https://api.enterprise.apigee.com/v1/o/{org_name}</p>
-		<p><b>API Resource Path:</b> /users</p>
+
+		<p><b>API Resource Path:</b> <code>/users</code></p>
 		<p>
 		Creates a user in an organization on the API Platform
 		</p>
@@ -73,7 +77,7 @@
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl -H "Content-type:application/json"; -X POST -d \
+	<div class="terminal">$ curl -H "Content-type:application/json" -X POST -d \
 '{
   "emailId" : "user@company",
   "firstName" : "User",
@@ -81,7 +85,7 @@
    "password" : "secret"
 }' \
 https://api.enterprise.apigee.com/v1/o/{org_name}/users \
--u myname:mypass</pre>
+-u myname:mypass</div>
 	<b>Request Payload Elements:</b> 
 	<table class="table table-bordered">
 		<thead>
@@ -95,7 +99,7 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/users \
 			<tr>
 <div class="request_element" id="request_element_72">
 <td>emailId</td>
-<td>The user's email address, which functions as username for the account</td>
+<td>The user&#x27;s email address, which functions as username for the account</td>
 <td>N/A</td>
 <td>Yes</td>
 <!-- <td><a href="/request_elements/72" class="btn btn-mini">Detail</a></td> -->
@@ -105,7 +109,7 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/users \
 <tr>
 <div class="request_element" id="request_element_73">
 <td>FirstName</td>
-<td>The user's first name</td>
+<td>The user&#x27;s first name</td>
 <td>N/A</td>
 <td>Yes</td>
 <!-- <td><a href="/request_elements/73" class="btn btn-mini">Detail</a></td> -->
@@ -115,7 +119,7 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/users \
 <tr>
 <div class="request_element" id="request_element_74">
 <td>LastName</td>
-<td>The user's last name</td>
+<td>The user&#x27;s last name</td>
 <td>N/A</td>
 <td>Yes</td>
 <!-- <td><a href="/request_elements/74" class="btn btn-mini">Detail</a></td> -->
@@ -146,9 +150,7 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/users \
 
 
 	
-
 </div>
-
             </div>
         </div><!--/row-->
       </div><!--/content-->

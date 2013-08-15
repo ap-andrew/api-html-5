@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="PyQ1VRmeYzFAVsVuVKt+9I4Kg9ON1pPkjIMDdwoRWRU=" name="csrf-token" />
+<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -36,19 +36,23 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="row">
+        <div class="row"> 
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-resources-reference">Platform API Reference</a> > <a href="/api_resources/30-apps">Apps</a> > List apps in an organization</div>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/30-apps">Apps</a> > List apps in an organization</i>
+</div>
+
 <p>
 <h1>List apps in an organization</h1> 
 </p>
 
+<p><b>API Platform Base Path:</b> <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></p>
+
 <div class="row">
 	<div class="span6" style="width:340px;">
-		<p><b>API Platform Base Path:</b> https://api.enterprise.apigee.com/v1/o/{org_name}</p>
-		<p><b>API Resource Path:</b> /apps</p>
+
+		<p><b>API Resource Path:</b> <code>/apps</code></p>
 		<p>
 		Gets a list of app IDs in an organization
 		</p>
@@ -63,28 +67,132 @@
 		Basic Auth
 		</p>
 
+		<p>
+		<b>Content Types:</b>
+		
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+		</p>
 
 	</div>
 </div>
 
 <div class="span18">
 	<p>
-	Retrieves a list of all app IDs in an organization.
+	<p>Retrieves a list of all app in an organization by app ID. </p>
+
+<p>To retrieve a list of all app profiles in an organization, set the query parameter <code>expand=true</code>. </p>
+
+<p>To retrieve a list of all apps in an organization along with the consumer key and secret for each app, set the query parameter <code>includeCred=true</code>. </p>
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl https://api.enterprise.apigee.com/v1/o/{org_name}/apps \
--u myname:mypass </pre>
+	<div class="terminal">$ curl https://api.enterprise.apigee.com/v1/o/{org_name}/apps \
+-u myname:mypass </div>
 
+
+<b>Query Parameters:</b>
+
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Default</th>
+				<th>Required?</th>
+			</tr>
+			</thead>
+			
+<tr>
+<td>includeCred</td>
+<td>When set to &#x27;true&#x27;, returns consumer key and secret for each app listed.</td>
+<td>false</td>
+<td>No</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+<td>expand</td>
+<td>When set to &#x27;true&#x27;, returns the full app profile for each app listed.</td>
+<td>false</td>
+<td>No</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+			</table>
 
 <b>Sample Response:</b> 
-	<pre>[ "7b3ec66d-de8b-4ab5-8025-d949285bed4f", "3cb6d175-0cb9-5521-bcbd-c9b33b64fffe"  ]</pre>
+	<pre>[ "7b3ec66d-de8b-4ab5-8025-d949285bed4f", "3cb6d175-0cb9-5521-bcbd-c9b33b64fffe"  ]
+
+with "expand=true"
+
+{
+  "app" : [ {
+    "accessType" : "read",
+    "apiProducts" : [ ],
+    "appFamily" : "default",
+    "appId" : "b568290c-8d8a-4320-9d67-5049529808bf",
+    "attributes" : [ {
+      "name" : "Developer",
+      "value" : "tesla@weathersample.com"
+    }, {
+      "name" : "DisplayName",
+      "value" : "TestAPIKey"
+    }, {
+      "name" : "Notes",
+      "value" : ""
+    }, {
+      "name" : "lastModifier",
+      "value" : ""
+    } ],
+    "callbackUrl" : "login.key",
+    "createdAt" : 1361464819504,
+    "createdBy" : "adminui@apigee.com",
+    "credentials" : [ {
+      "apiProducts" : [ {
+        "apiproduct" : "FreeAPIProduct",
+        "status" : "approved"
+      } ],
+      "attributes" : [ ],
+      "consumerKey" : "VthHL9GzLWGZpsBrRLG8RfebvQOa1G6",
+      "consumerSecret" : "rAzd4hsxikl14xF",
+      "scopes" : [ ],
+      "status" : "approved"
+    } ],
+    "developerId" : "KwwkQ8Fsp6Fm3Zmz",
+    "lastModifiedAt" : 1361464819504,
+    "lastModifiedBy" : "adminui@apigee.com",
+    "name" : "testapikey",
+    "scopes" : [ ],
+    "status" : "approved"
+  } ]
+}</pre>
 
 
 	
-
 </div>
-
             </div>
         </div><!--/row-->
       </div><!--/content-->

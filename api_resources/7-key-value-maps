@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="PyQ1VRmeYzFAVsVuVKt+9I4Kg9ON1pPkjIMDdwoRWRU=" name="csrf-token" />
+<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -36,7 +36,7 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="row">
+        <div class="row"> 
            <div class="span12">
 
             <div id="category">
@@ -44,16 +44,14 @@ Appendix
 </div>
 
 <div id="breadcrumb">
-<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > Key/Value Maps</div>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > Key/Value Maps</i>
+</div>
 
 
 <div class="page-header">
   <h1>Key/Value Maps</h1>
 </div>
 
-<!-- <div class=btn>
-<a href="/api_methods/new">Add an API Method</a>
-</div> -->
 
 <p><b>API Platform Base Path: </b>https://api.enterprise.apigee.com/v1/o/{org_name}</p>
 
@@ -61,13 +59,6 @@ Appendix
 				<tr><td class="lead">API Resource Path: /keyvaluemaps</td></tr>
 				<tr><td>Persistence resources that enable storing arbitrary data</td></tr>
 		  		<tr><td>Maps provide an API for storing arbitrary name/value pairs that can be access at runtime by custom policies, or for other custom runtime requirements such as protocol support. Each keyvaluemap has one or more 'entries', each of which which defines a name/value pair that can be fetched, updated, deleted via the API.</td></tr>
-		       <!-- <td><div id="well"><pre>{
-  &quot;entry&quot; : [ {
-    &quot;name&quot; : &quot;dev&quot;,
-    &quot;value&quot; : &quot;user1&quot;
-  } ],
-  &quot;name&quot; : &quot;prodmap&quot;
-}</pre></div></td></tr> -->
 		</table>
 
 
@@ -160,7 +151,7 @@ text/xml
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
 				<tr><td colspan="2"><span class="lead">Update KeyValueMap</span></td><td><a href="/api_methods/62-update-keyvaluemap" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/keyvaluemaps/{map_name}</pre></span></td></tr>
-				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
+				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-PUT">PUT</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Updates an existing KeyValueMap</td></tr>
 				<tr><td><strong>Content Types:</strong></td><td>
 				
@@ -174,10 +165,6 @@ text/xml
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
 		</tbody>
 		</table>
-
-<!-- Schema:
-
-<div id="well"><pre></pre></div> -->
 
 
 

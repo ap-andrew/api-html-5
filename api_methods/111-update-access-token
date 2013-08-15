@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="PyQ1VRmeYzFAVsVuVKt+9I4Kg9ON1pPkjIMDdwoRWRU=" name="csrf-token" />
+<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -36,19 +36,23 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="row">
+        <div class="row"> 
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-resources-reference">Platform API Reference</a> > <a href="/api_resources/28-oauth-2-0-access-tokens">Oauth 2.0 Access Tokens</a> > Update Access Token</div>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/28-oauth-2-0-access-tokens">OAuth 2.0 Access Tokens</a> > Update Access Token</i>
+</div>
+
 <p>
 <h1>Update Access Token</h1> 
 </p>
 
+<p><b>API Platform Base Path:</b> <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></p>
+
 <div class="row">
 	<div class="span6" style="width:340px;">
-		<p><b>API Platform Base Path:</b> https://api.enterprise.apigee.com/v1/o/{org_name}</p>
-		<p><b>API Resource Path:</b> /oauth2/accesstokens/{access_token}</p>
+
+		<p><b>API Resource Path:</b> <code>/oauth2/accesstokens/{access_token}</code></p>
 		<p>
 		Updates the access token attributes.
 		</p>
@@ -83,7 +87,7 @@ text/xml
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl -H "Content-type=application/json" -X POST -d \
+	<div class="terminal">$ curl -H "Content-type=application/json" -X POST -d \
 {
   "attributes" : [ {
 	"name" : "att_n1",
@@ -91,7 +95,7 @@ text/xml
   } ],
   "scope" : "read"
 } \
-https://api.enterprise.apigee.com/v1/o/{org_name}/oauth2/accesstokens/{access_token}</pre>
+https://api.enterprise.apigee.com/v1/o/{org_name}/oauth2/accesstokens/{access_token}</div>
 	<b>Request Payload Elements:</b> 
 	<table class="table table-bordered">
 		<thead>
@@ -162,110 +166,74 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/oauth2/accesstokens/{access_to
 <div class="response_element" id="response_element_234">
 <td>apiProducts </td>
 <td>API products associated with this consumer key</td>
-<!-- <td><a href="/response_elements/234" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/111-update-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_235">
 <td>app </td>
 <td>App to which this key belongs</td>
-<!-- <td><a href="/response_elements/235" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/111-update-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_236">
 <td>attributes </td>
 <td>Name/value pairs used to extend the default profile</td>
-<!-- <td><a href="/response_elements/236" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/111-update-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_237">
 <td>clientId </td>
 <td>The id associated with the app end user </td>
-<!-- <td><a href="/response_elements/237" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/111-update-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_238">
 <td>createdAt </td>
 <td>Unix time when this access token was created</td>
-<!-- <td><a href="/response_elements/238" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/111-update-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_239">
 <td>createdBy </td>
 <td>User name of the Apigee user who created this access token</td>
-<!-- <td><a href="/response_elements/239" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/111-update-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_240">
 <td>expiresAt </td>
 <td>Unix time when this access token will expire</td>
-<!-- <td><a href="/response_elements/240" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/111-update-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_241">
 <td>grantType </td>
 <td>Grant type of the access token: auth code, client_credential, refresh token</td>
-<!-- <td><a href="/response_elements/241" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/111-update-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_242">
 <td>issuedAt </td>
 <td>Unix time when the token was issued</td>
-<!-- <td><a href="/response_elements/242" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/111-update-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_243">
 <td>lastModifiedAt </td>
 <td>Unix time when the token profile was last modified</td>
-<!-- <td><a href="/response_elements/243" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/111-update-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_244">
 <td>lastModifiedAt </td>
 <td>Unix time when the AccessToken was most recently updated (its attributes)</td>
-<!-- <td><a href="/response_elements/244" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/111-update-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_245">
 <td>lastModifiedBy </td>
 <td>Unix time when the token was last modified</td>
-<!-- <td><a href="/response_elements/245" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/111-update-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_246">
 <td>refreshCount </td>
 <td>Number of times the token may be refreshed</td>
-<!-- <td><a href="/response_elements/246" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/111-update-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_247">
 <td>refreshToken </td>
 <td>Value of the refresh token</td>
-<!-- <td><a href="/response_elements/247" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/111-update-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_248">
 <td>scope </td>
 <td>Scope associated with the token</td>
-<!-- <td><a href="/response_elements/248" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/111-update-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_249">
 <td>status </td>
 <td>Status of the access token</td>
-<!-- <td><a href="/response_elements/249" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/111-update-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_250">
 <td>token </td>
 <td>Value of the access token</td>
-<!-- <td><a href="/response_elements/250" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/111-update-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_251">
 <td>tokenType </td>
 <td>Type of OAuth token: bearer or HMAC</td>
-<!-- <td><a href="/response_elements/251" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/111-update-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 
@@ -281,9 +249,7 @@ Error Codes:
 2. keymanagement.service.invalid_access_token
 3. keymanagement.service.access_token_update_failed</pre>
 	
-
 </div>
-
             </div>
         </div><!--/row-->
       </div><!--/content-->

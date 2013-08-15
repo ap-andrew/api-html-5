@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="PyQ1VRmeYzFAVsVuVKt+9I4Kg9ON1pPkjIMDdwoRWRU=" name="csrf-token" />
+<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -36,19 +36,23 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="row">
+        <div class="row"> 
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-resources-reference">Platform API Reference</a> > <a href="/api_resources/31-oauth-1-0a-request-tokens">OAuth 1.0a Request Tokens</a> > Delete a Request Token</div>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/31-oauth-1-0a-request-tokens">OAuth 1.0a Request Tokens</a> > Delete a Request Token</i>
+</div>
+
 <p>
 <h1>Delete a Request Token</h1> 
 </p>
 
+<p><b>API Platform Base Path:</b> <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></p>
+
 <div class="row">
 	<div class="span6" style="width:340px;">
-		<p><b>API Platform Base Path:</b> https://api.enterprise.apigee.com/v1/o/{org_name}</p>
-		<p><b>API Resource Path:</b> /oauth1/requesttokens/{request_token}</p>
+
+		<p><b>API Resource Path:</b> <code>/oauth1/requesttokens/{request_token}</code></p>
 		<p>
 		Deletes the request token specified
 		</p>
@@ -73,7 +77,7 @@
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/oauth1/request_tokens/{request_token} -X DELETE</pre>
+	<div class="terminal">$ curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/oauth1/request_tokens/{request_token} -X DELETE</div>
 
 
 <b>Sample Response:</b> 
@@ -109,9 +113,7 @@ Error Code:
 1. keymanagement.service.oauth10_request_token_doesnot_exist
 2. keymanagement.service.oauth10_request_token_deletion_failed</pre>
 	
-
 </div>
-
             </div>
         </div><!--/row-->
       </div><!--/content-->

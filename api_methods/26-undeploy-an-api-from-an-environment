@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="PyQ1VRmeYzFAVsVuVKt+9I4Kg9ON1pPkjIMDdwoRWRU=" name="csrf-token" />
+<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -36,21 +36,25 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="row">
+        <div class="row"> 
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-resources-reference">Platform API Reference</a> > <a href="/api_resources/1-apis">APIs</a> > Undeploy an API from an Environment</div>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/1-apis">APIs</a> > Undeploy an API from an environment</i>
+</div>
+
 <p>
-<h1>Undeploy an API from an Environment</h1> 
+<h1>Undeploy an API from an environment</h1> 
 </p>
+
+<p><b>API Platform Base Path:</b> <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></p>
 
 <div class="row">
 	<div class="span6" style="width:340px;">
-		<p><b>API Platform Base Path:</b> https://api.enterprise.apigee.com/v1/o/{org_name}</p>
-		<p><b>API Resource Path:</b> /apis/{api_name}/deployments?action=undeploy&amp;env={environment_name}&amp;revision={revision_number}</p>
+
+		<p><b>API Resource Path:</b> <code>/apis/{api_name}/deployments?action=undeploy&amp;env={environment_name}&amp;revision={revision_number}</code></p>
 		<p>
-		Removes an API from an environment (typically 'test' or 'prod')
+		Removes an API from an environment (typically &#x27;test&#x27; or &#x27;prod&#x27;)
 		</p>
 	</div>
 
@@ -76,9 +80,9 @@
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl -H "Content-type=application/octet-stream" -X POST \
-https://api.enterprise.apigee.com/v1/o/{org_name/}apis/{api_name}/deployments?"action=undeploy&env={env_name}&revision={revision_number}" \
--u myname:mypass</pre>
+	<div class="terminal">$ curl -X POST \
+https://api.enterprise.apigee.com/v1/o/{org_name}/apis/{api_name}/deployments?"action=undeploy&env={env_name}&revision={revision_number}" \
+-u myname:mypass</div>
 
 
 <b>Sample Response:</b> 
@@ -124,50 +128,34 @@ https://api.enterprise.apigee.com/v1/o/{org_name/}apis/{api_name}/deployments?"a
 <div class="response_element" id="response_element_299">
 <td>aPIProxy </td>
 <td>The name of the API</td>
-<!-- <td><a href="/response_elements/299" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/26-undeploy-an-api-from-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_300">
 <td>configuration </td>
 <td>Base path and policy steps that are configured for the deployment</td>
-<!-- <td><a href="/response_elements/300" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/26-undeploy-an-api-from-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_301">
 <td>environment </td>
 <td>The environment where the APi was deployed</td>
-<!-- <td><a href="/response_elements/301" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/26-undeploy-an-api-from-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_302">
 <td>name </td>
 <td>The name of the APi revision</td>
-<!-- <td><a href="/response_elements/302" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/26-undeploy-an-api-from-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_303">
 <td>organization </td>
 <td>The organization of the API provider</td>
-<!-- <td><a href="/response_elements/303" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/26-undeploy-an-api-from-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_304">
 <td>revision </td>
 <td>The revision number of the APi proxy</td>
-<!-- <td><a href="/response_elements/304" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/26-undeploy-an-api-from-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_305">
 <td>server </td>
 <td>Information on Apigee servers deployed to service the API</td>
-<!-- <td><a href="/response_elements/305" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/26-undeploy-an-api-from-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_306">
 <td>state </td>
 <td>The state of the API: deployed or undeployed</td>
-<!-- <td><a href="/response_elements/306" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/26-undeploy-an-api-from-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 
@@ -178,9 +166,7 @@ https://api.enterprise.apigee.com/v1/o/{org_name/}apis/{api_name}/deployments?"a
   &quot;contexts&quot; : [ ]
 }</pre>
 	
-
 </div>
-
             </div>
         </div><!--/row-->
       </div><!--/content-->

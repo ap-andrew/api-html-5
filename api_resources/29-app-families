@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="PyQ1VRmeYzFAVsVuVKt+9I4Kg9ON1pPkjIMDdwoRWRU=" name="csrf-token" />
+<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -36,7 +36,7 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="row">
+        <div class="row"> 
            <div class="span12">
 
             <div id="category">
@@ -44,16 +44,14 @@ Developer and App Administration
 </div>
 
 <div id="breadcrumb">
-<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > App Families</div>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > App Families</i>
+</div>
 
 
 <div class="page-header">
   <h1>App Families</h1>
 </div>
 
-<!-- <div class=btn>
-<a href="/api_methods/new">Add an API Method</a>
-</div> -->
 
 <p><b>API Platform Base Path: </b>https://api.enterprise.apigee.com/v1/o/{org_name}</p>
 
@@ -61,10 +59,6 @@ Developer and App Administration
 				<tr><td class="lead">API Resource Path: /developers/{developer_email}/appfamilies</td></tr>
 				<tr><td>App collections, associated with individual developers, that enable aggregate management of app instances.</td></tr>
 		  		<tr><td>App families enable you to create functional groups of apps. A single app may be instantiated in several forms. For example, an app may have sandbox instance and a production instance. App families enable these app instances to be associated. You can do this by linking the instances of the app together in a an app family collection. Specify an app family name, associate that name with a developer or a company of your organization, and select one or more app IDs to add to the contents of the app family. You can create app families for developer apps or for company apps within your organization.</td></tr>
-		       <!-- <td><div id="well"><pre>{
-  &quot;apps&quot; : [ &quot;weatherapp_sandbox&quot;, &quot;weatherapp_prod&quot; ],
-  &quot;name&quot; : &quot;WeatherApps&quot;
-}</pre></div></td></tr> -->
 		</table>
 
 
@@ -103,7 +97,7 @@ text/xml
 				<tr><td colspan="2"><span class="lead">List app families (detailed view)</span></td><td><a href="/api_methods/131-list-app-families-detailed-view" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/app_families?expand=true</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
-				<tr><td><strong>Description:</strong></td><td colspan="2">An expanded list of all App Families in an Organization, listing Apps in the collection </td></tr>
+				<tr><td><strong>Description:</strong></td><td colspan="2">An expanded list of all app families in an organization, listing Apps in the collection </td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
 				<tr><td colspan="2"><span class="lead">Remove an app from an app family</span></td><td><a href="/api_methods/128-remove-an-app-from-an-app-family" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/appfamilies/{app_family}/app/{app_name}</pre></span></td></tr>
@@ -117,10 +111,6 @@ text/xml
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
 		</tbody>
 		</table>
-
-<!-- Schema:
-
-<div id="well"><pre></pre></div> -->
 
 
 

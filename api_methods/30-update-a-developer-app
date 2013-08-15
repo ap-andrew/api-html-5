@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="PyQ1VRmeYzFAVsVuVKt+9I4Kg9ON1pPkjIMDdwoRWRU=" name="csrf-token" />
+<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -36,19 +36,23 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="row">
+        <div class="row"> 
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-resources-reference">Platform API Reference</a> > <a href="/api_resources/17-apps-developer">Apps: Developer</a> > Update a developer app</div>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/17-apps-developer">Apps: Developer</a> > Update a developer app</i>
+</div>
+
 <p>
 <h1>Update a developer app</h1> 
 </p>
 
+<p><b>API Platform Base Path:</b> <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></p>
+
 <div class="row">
 	<div class="span6" style="width:340px;">
-		<p><b>API Platform Base Path:</b> https://api.enterprise.apigee.com/v1/o/{org_name}</p>
-		<p><b>API Resource Path:</b> /developers/{developer_email}/apps/{app_name}</p>
+
+		<p><b>API Resource Path:</b> <code>/developers/{developer_email}/apps/{app_name}</code></p>
 		<p>
 		Updates the app to get a new set of consumer credentials. 
 		</p>
@@ -73,7 +77,7 @@
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl -H "Content-type:application/json" -X PUT -d \
+	<div class="terminal">$ curl -H "Content-type:application/json" -X PUT -d \
 '{
   "access_type" : "write",
   "attributes" : [ {
@@ -84,7 +88,7 @@
   "callback_url" : "www.apigee.com",
   "name" : "MyTestApp"
 }' \
--u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/developers/{developerEmail}/apps/{appName}</pre>
+-u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/developers/{developerEmail}/apps/{appName}</div>
 
 
 <b>Sample Response:</b> 
@@ -134,105 +138,71 @@
 <div class="response_element" id="response_element_502">
 <td>accessType </td>
 <td></td>
-<!-- <td><a href="/response_elements/502" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_503">
 <td>attributes </td>
 <td>Name/value pairs used to extend the default app profile</td>
-<!-- <td><a href="/response_elements/503" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_504">
 <td>callbackUrl </td>
 <td>A callback URL that can be used for app specific callbacks</td>
-<!-- <td><a href="/response_elements/504" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_505">
 <td>createdAt </td>
 <td>Unix time when the app was created</td>
-<!-- <td><a href="/response_elements/505" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_506">
 <td>credentials </td>
 <td>A list of associations between API products and consumer keys for the app</td>
-<!-- <td><a href="/response_elements/506" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_507">
 <td>apiProducts </td>
 <td>A list of API products with which the app is associated</td>
-<!-- <td><a href="/response_elements/507" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_508">
 <td>apiproduct </td>
 <td>The API product with which teh app is associated</td>
-<!-- <td><a href="/response_elements/508" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_509">
 <td>status </td>
-<td>Status of the app association with the API product: 'approved' or 'pending'</td>
-<!-- <td><a href="/response_elements/509" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<td>Status of the app association with the API product: &#x27;approved&#x27; or &#x27;pending&#x27;</td>
 </div></tr><tr>
 <div class="response_element" id="response_element_510">
 <td>attributes </td>
-<td>Name'value pairs used to extend the profile</td>
-<!-- <td><a href="/response_elements/510" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<td>Name&#x27;value pairs used to extend the profile</td>
 </div></tr><tr>
 <div class="response_element" id="response_element_511">
 <td>consumerKey </td>
 <td>The value of the consumer key associated with the API product</td>
-<!-- <td><a href="/response_elements/511" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_512">
 <td>consumerSecret </td>
 <td>Value of the consumer secret associated with the consumer key</td>
-<!-- <td><a href="/response_elements/512" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_513">
 <td>status </td>
-<td>Status of the consumer key: 'approved' or 'pending'</td>
-<!-- <td><a href="/response_elements/513" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<td>Status of the consumer key: &#x27;approved&#x27; or &#x27;pending&#x27;</td>
 </div></tr><tr>
 <div class="response_element" id="response_element_514">
 <td>lastModifiedAt </td>
 <td>Unix time when the app was last modified</td>
-<!-- <td><a href="/response_elements/514" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_515">
 <td>lastModifiedBy </td>
 <td>User name of the Apigee user who last modified the app</td>
-<!-- <td><a href="/response_elements/515" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_516">
 <td>name </td>
 <td>Name of the app</td>
-<!-- <td><a href="/response_elements/516" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_517">
 <td>status </td>
-<td>Status of the app: 'approved or 'unapproved'</td>
-<!-- <td><a href="/response_elements/517" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/30-update-a-developer-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<td>Status of the app: &#x27;approved or &#x27;unapproved&#x27;</td>
 </div></tr>
 		</table>
 
 	
-
 </div>
-
             </div>
         </div><!--/row-->
       </div><!--/content-->

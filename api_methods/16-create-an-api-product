@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="PyQ1VRmeYzFAVsVuVKt+9I4Kg9ON1pPkjIMDdwoRWRU=" name="csrf-token" />
+<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -36,21 +36,25 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="row">
+        <div class="row"> 
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-resources-reference">Platform API Reference</a> > <a href="/api_resources/3-api-products">API Products</a> > Create an API product</div>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/3-api-products">API Products</a> > Create an API product</i>
+</div>
+
 <p>
 <h1>Create an API product</h1> 
 </p>
 
+<p><b>API Platform Base Path:</b> <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></p>
+
 <div class="row">
 	<div class="span6" style="width:340px;">
-		<p><b>API Platform Base Path:</b> https://api.enterprise.apigee.com/v1/o/{org_name}</p>
-		<p><b>API Resource Path:</b> /apiproducts</p>
+
+		<p><b>API Resource Path:</b> <code>/apiproducts</code></p>
 		<p>
-		Create an API product to enable developers to access a set of API resources (URIs)
+		Create an API product to enable developers to access a list of API resources (URIs) via named proxies and in named environments
 		</p>
 	</div>
 
@@ -84,18 +88,33 @@ text/xml
 	<p>
 	<p>Use the POST method to create a new API product in an organization.</p>
 
-<p>An API product is a list of API resources (URIs) with associated quota settings and metadata. The goal of API resources is to enable the definition of API 'bundles' that are selected by app developers at design time. API product settings are enforced on the API Platform at runtime by policies: Authorization (API Key, OAuth 1.0a, OAuth 2.0) and Quota. Client apps present credentials (API keys, OAuth tokens) approved for API products. The association of app keys with API products is a primary method of access control on the Apigee API Platform.</p>
+<p>API products enable API developers to 'package' RESTful API resources for consumption by developers of different types: internal, partner, and external.</p>
+
+<p>An API product is a list of URIs plus Quota settings and metadata, including scope, environments, API proxies, and an extensible profile.</p>
+
+<p>API product settings are enforced on the API Platform at runtime by the following policies: API Key, OAuth 1.0a, OAuth 2.0 and Quota. The API Platform validates credentials presented by apps, and dynamically verifies the credential's association (if any) with the API products defined in the organization.</p>
+
+<p>By binding the credentials presented by the app to an API product, the API Platform dynamically enforces access control, authorization, and quota settings for each request message.</p>
+
+<p>The simplest API product defines only an API proxy name. Such API product definitions can be useful when setting up the system (before you have defined any API resources). By creating an API product with only a named API proxy, you can provision credentials to apps that enable those apps to access a single API proxy (and all API resources that the API proxy exposes).</p>
+
+<p>Once you have authentication and authorization working against such a simple API product, you can iterate to create finer-grained API products, defining different sets of API resources for each API product.</p>
 
 <p>Defining API resources:</p>
-<p>An API resource is a URI that equates to the predefined variable <code>proxy.pathsuffix</code>. In other words, an API resource is a URI that occurs in the request path following the base path defined in the ProxyEndpoint configuration.</p>
-For example, if a ProxyEndpoint in the environment 'test' in the organization 'apifactory' is configured with a base path <code>/weather</code>, then an API resource is any URI path that occurs after:  <code>apifactory-test.apigee.net/weather</code>. For example, in the request path <code>apifactory-test.apigee.net/weather/forecasts</code>, <code>/forecasts</code> is an API resource.
+<p>An API resource is a URI fragment whose value is the same as the predefined variable <code>proxy.pathsuffix</code>. </p>
+
+<p>Therefore, an API resource is the URI request path that follows the base path defined in the ProxyEndpoint configuration.</p>
+
+<p>For example, if a ProxyEndpoint in the environment 'test' in the organization 'apifactory' is configured with a base path <code>/weather</code>, then an API resource is any URI path that occurs after:  <code>apifactory-test.apigee.net/weather</code>.</p> 
+
+<p>For example, in the request path <code>apifactory-test.apigee.net/weather/forecasts</code>, <code>/forecasts</code> is an API resource.</p>
 
 <p>API resources can be defined explicitly as URI fragments (for example, <code>/forecasts</code>, <code>/reports</code>, <code>/blogs</code>, <code>/articles</code>), or they can be defined using wildcards:</p>
 <ul><li><code>/*</code>:  Defines a single URI level as wild card. For example, <code>/forecast/*</code> defines <code>/forecast/toronto</code> and <code>/forecasts/newyork</code> as valid URIs. This is often used to support IDs, for example, <code>/reports/*/forecasts</code> defines the following as valid URIs: <code>/reports/toronto/forecasts</code> and /reports/newyork/forecasts</code>.</li>
 <li><code>/**</code>: Defines all levels as wild cards. For example, <code>/reports/**</code> defines <code>/reports/toronto/forecasts</code> and <code>/reports/newyork/forecasts</code> as valid URIs.</li></ul>
 
 
-Quota variables can be set as API Product attributes or as elements:
+<p>Quota variables can be set as API Product attributes or as elements:</p>
 <p>As attributes:</p>
 <ul><li>developer.quota.limit</li>
 <li>developer.quota.interval </li>
@@ -107,33 +126,33 @@ Quota variables can be set as API Product attributes or as elements:
 
 <p>To further limit access to the URIs defined in an API proxy, you can optionally define:
 <ul><li>scopes: A comma-separated list of named scopes, which are validated at runtime against a list of scopes presented in the access token associated with an incoming request. A scope mismatch between API product configuration and access token contents results in an authorization failure.</li>
-<li>proxies: A comma-separated list of API proxies, the names of which derive from APIs listed in an organization. If proxies are specified, request made to the list API resource via API proxies other than those listed result in authorization failures. This feature is used to prevent URIs from being accidentally exposed by other API proxies in an organization.</li>
-<li>environments: A comma-separated list of environments. If environments are specified, requests made to API resources via API proxies deployed in environments other than those specified result in authorization failures. This feature is used to prevent access to production resources via APIs deployed test, for example.</li></ul>
+<li>proxies: A comma-separated list of API proxies, the names of which derive from APIs listed in an organization. If any proxies are specified, requests made to the list API resource via API proxies other than those listed result in authorization failures. This feature is used to prevent URIs from being accidentally exposed by other API proxies in an organization. It can also be used to simplify configuration, since you can define an API product with only an API proxy name.</li>
+<li>environments: A comma-separated list of environments. If environments are specified, requests made to API resources via API proxies deployed in environments other than those specified result in authorization failures. This feature is used to prevent access to production resources via APIs deployed in test, for example.</li></ul>
 
-
-<p>Attributes can be used to set any arbitrary metadata that you need for monitoring or analytics.</p>
+<p>Attributes can be used to set any arbitrary metadata that you need for authorization, monitoring or analytics.</p>
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl -H "Content-Type:application/json" -X POST -d \
- '{
-  "approvalType" : "auto",
-  "attributes" : [ {
-    "name" : "division",
-    "value" : "accounting"
-  } ],
-  "displayName" : "Sandbox Silver",
-  "name" : "sandbox",
-  "apiResources" : [ "/v2/**", "/v1/receiveSMS", "/v3/*/send" ],
-  "description" : "Provides rate limited access to sandbox account APIs",
-  "scopes": ["read", "write"],
-  "environments": [ "test" ],
-  "proxies": [ "MyAPI" ],
-  "quota": "10",
-  "quotaInterval": "2",
-  "quotaTimeUnit": "hour"
-}'  \
--u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/apiproducts</pre>
+	<div class="terminal">$  curl -H "Content-Type:application/json" -X POST -d \
+'{
+   "approvalType" : "auto",
+   "attributes" : [ {
+     "name" : "division",
+     "value" : "accounting"
+   } ],
+   "displayName" : "Sandbox Silver",
+   "name" : "sandbox",
+   "apiResources" : [ "/forecasts", "/categories/*/articles" ],
+   "description" : "Provides rate limited read-only access to sandbox account APIs",
+   "scopes": [ "read" ],
+   "environments": [ "test" ],
+   "proxies": [ "weatherapi" ],
+   "quota": "10000",
+   "quotaInterval": "1",
+   "quotaTimeUnit": "month"
+ }'  \
+ https://api.enterprise.apigee.com/v1/o/apifactory/apiproducts \
+-u myname:mypass</div>
 	<b>Request Payload Elements:</b> 
 	<table class="table table-bordered">
 		<thead>
@@ -147,7 +166,7 @@ Quota variables can be set as API Product attributes or as elements:
 			<tr>
 <div class="request_element" id="request_element_1">
 <td>approvalType</td>
-<td>Manual or Auto. If Manual, consumer key is generated and returned in 'pending' state. If manual consumer key generated and returned in 'Approved' state.</td>
+<td>Manual or Auto. If Manual, consumer key is generated and returned in &#x27;pending&#x27; state. If manual consumer key generated and returned in &#x27;Approved&#x27; state.</td>
 <td>N/A</td>
 <td>Yes</td>
 <!-- <td><a href="/request_elements/1" class="btn btn-mini">Detail</a></td> -->
@@ -260,25 +279,25 @@ Quota variables can be set as API Product attributes or as elements:
 
 <b>Sample Response:</b> 
 	<pre>{
-  "apiResources" : [ "/v2/**", "/v1/receiveSMS", "/v3/*/send" ],
+  "apiResources" : [ "/forecasts", "/categories/*/articles" ],
   "approvalType" : "auto",
   "attributes" : [ {
     "name" : "division",
     "value" : "accounting"
   } ],
-  "createdAt" : 1360001831329,
-  "createdBy" : "admin@apigee.com",
-  "description" : "Provides rate limited access to sandbox account APIs",
+  "createdAt" : 1374679889295,
+  "createdBy" : "andrew@apigee.com",
+  "description" : "Provides rate limited read-only access to sandbox account APIs",
   "displayName" : "Sandbox Silver",
   "environments" : [ "test" ],
-  "lastModifiedAt" : 1360001831329,
-  "lastModifiedBy" : "admin@apigee.com",
+  "lastModifiedAt" : 1374679889295,
+  "lastModifiedBy" : "andrew@apigee.com",
   "name" : "sandbox",
-  "proxies" : [ "MyAPI" ],
-  "quota" : "10",
-  "quotaInterval" : "2",
-  "quotaTimeUnit" : "hour",
-  "scopes" : [ "read", "write" ]
+  "proxies" : [ "weatherapi" ],
+  "quota" : "10000",
+  "quotaInterval" : "1",
+  "quotaTimeUnit" : "month",
+  "scopes" : [ "read" ]
 }</pre>
 
 	<b>Response Payload Elements:</b>
@@ -290,95 +309,65 @@ Quota variables can be set as API Product attributes or as elements:
 			</tr>
 			</thead>
 			<tr>
-<div class="response_element" id="response_element_204">
-<td>apiResources </td>
-<td>A comma separated list of API resources to be bundled in the API Product. </td>
-<!-- <td><a href="/response_elements/204" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
-</div></tr><tr>
 <div class="response_element" id="response_element_205">
 <td>approvalType </td>
-<td>Manual or Auto. If Manual, consumer key is generated and returned in 'pending' state. If manual consumer key generated and returned in 'Approved' state.</td>
-<!-- <td><a href="/response_elements/205" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
-</div></tr><tr>
-<div class="response_element" id="response_element_206">
-<td>attributes </td>
-<td>Arbitrary name/value pairs</td>
-<!-- <td><a href="/response_elements/206" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<td>Manual or Auto. If Manual, consumer key is generated and returned in &#x27;pending&#x27; state. If manual consumer key generated and returned in &#x27;Approved&#x27; state.</td>
 </div></tr><tr>
 <div class="response_element" id="response_element_207">
 <td>createdAt </td>
 <td>UNIX time when the API Product was created</td>
-<!-- <td><a href="/response_elements/207" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_208">
 <td>createdby </td>
 <td>username of the user who created the API Product</td>
-<!-- <td><a href="/response_elements/208" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_209">
 <td>displayName  </td>
 <td>The display name of the API Product, used in Apps that display the API Product to Developers Apigee </td>
-<!-- <td><a href="/response_elements/209" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_210">
 <td>lastModifiedAt  </td>
 <td>UNIX time when the API Product was most recently updated </td>
-<!-- <td><a href="/response_elements/210" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_211">
 <td>lastModifiedBy  </td>
 <td>Apigee username of the user who most recently updated the API Product </td>
-<!-- <td><a href="/response_elements/211" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_212">
 <td>name  </td>
 <td>The internal name of the API Product</td>
-<!-- <td><a href="/response_elements/212" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_705">
 <td>environments </td>
 <td>A comma-separated list of environment name in an organization. Requests to environments not listed are rejected.</td>
-<!-- <td><a href="/response_elements/705" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_706">
 <td>proxies </td>
 <td>A comma-separated list of API proxy names in an organization. Requests to API proxies not listed are rejected.</td>
-<!-- <td><a href="/response_elements/706" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_707">
 <td>quota </td>
 <td>The number of request messages permitted by this API product.</td>
-<!-- <td><a href="/response_elements/707" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_708">
 <td>quotaInterval </td>
 <td>The time interval over which the number of request messages is calculated.</td>
-<!-- <td><a href="/response_elements/708" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_709">
 <td>quotaTimeUnit </td>
 <td>The time unit defined for the quotaInterval</td>
-<!-- <td><a href="/response_elements/709" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_710">
 <td>scopes </td>
 <td>A comma separated list of scopes. These must map to the scopes defined in an Oauth policy associated with the API Product. Any scope mismatch between an Acces Token presented and the API product results in authorization failure.</td>
-<!-- <td><a href="/response_elements/710" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/16-create-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_204">
+<td>apiResources </td>
+<td>A comma separated list of API resources (URI paths) to be bundled in the API Product. </td>
+</div></tr><tr>
+<div class="response_element" id="response_element_206">
+<td>attributes </td>
+<td>Arbitrary name/value pairs that can be used to create custom profiles</td>
 </div></tr>
 		</table>
 
@@ -391,9 +380,7 @@ Quota variables can be set as API Product attributes or as elements:
    }
 }</pre>
 	
-
 </div>
-
             </div>
         </div><!--/row-->
       </div><!--/content-->

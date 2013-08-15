@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="PyQ1VRmeYzFAVsVuVKt+9I4Kg9ON1pPkjIMDdwoRWRU=" name="csrf-token" />
+<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -36,7 +36,7 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="row">
+        <div class="row"> 
            <div class="span12">
 
             <div id="category">
@@ -44,24 +44,21 @@ Administration
 </div>
 
 <div id="breadcrumb">
-<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > Virtual Hosts</div>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > Virtual Hosts</i>
+</div>
 
 
 <div class="page-header">
   <h1>Virtual Hosts</h1>
 </div>
 
-<!-- <div class=btn>
-<a href="/api_methods/new">Add an API Method</a>
-</div> -->
 
 <p><b>API Platform Base Path: </b>https://api.enterprise.apigee.com/v1/o/{org_name}</p>
 
 		<table class="table">
 				<tr><td class="lead">API Resource Path: /virtualhosts</td></tr>
-				<tr><td>A named network configuration (including URL) for an environment (for example 'test' or 'prod') on the API Platform.</td></tr>
+				<tr><td>A named network configuration (including URL) for an environment (for example &#x27;test&#x27; or &#x27;prod&#x27;) on the API Platform.</td></tr>
 		  		<tr><td>Provides the runtime network address for APIs managed by Apigee.</td></tr>
-		       <!-- <td><div id="well"><pre></pre></div></td></tr> -->
 		</table>
 
 
@@ -80,10 +77,6 @@ Administration
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
 		</tbody>
 		</table>
-
-<!-- Schema:
-
-<div id="well"><pre></pre></div> -->
 
 
 

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="PyQ1VRmeYzFAVsVuVKt+9I4Kg9ON1pPkjIMDdwoRWRU=" name="csrf-token" />
+<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -36,19 +36,23 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="row">
+        <div class="row"> 
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-resources-reference">Platform API Reference</a> > <a href="/api_resources/6-companies">Companies</a> > Update a company</div>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/6-companies">Companies</a> > Update a company</i>
+</div>
+
 <p>
 <h1>Update a company</h1> 
 </p>
 
+<p><b>API Platform Base Path:</b> <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></p>
+
 <div class="row">
 	<div class="span6" style="width:340px;">
-		<p><b>API Platform Base Path:</b> https://api.enterprise.apigee.com/v1/o/{org_name}</p>
-		<p><b>API Resource Path:</b> /companies/{company_name}</p>
+
+		<p><b>API Resource Path:</b> <code>/companies/{company_name}</code></p>
 		<p>
 		Updates an existing Company
 		</p>
@@ -73,7 +77,7 @@
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl  -H "Content-type:application/json" -X POST -d \
+	<div class="terminal">$ curl  -H "Content-type:application/json" -X POST -d \
 '{
  "name" : "DevCompany",
  "displayName" : "Developer Company",
@@ -84,7 +88,7 @@
  } ]
 }' \
 https://api.enterprise.apigee.com/v1/o/{org_name}/companies/{company_name} \
--u myname:mypass</pre>
+-u myname:mypass</div>
 	<b>Request Payload Elements:</b> 
 	<table class="table table-bordered">
 		<thead>
@@ -118,7 +122,7 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/companies/{company_name} \
 <tr>
 <div class="request_element" id="request_element_15">
 <td>status</td>
-<td>Status of the company: 'active&quot; or 'inactive'</td>
+<td>Status of the company: &#x27;active&quot; or &#x27;inactive&#x27;</td>
 <td>N/A</td>
 <td>Yes</td>
 <!-- <td><a href="/request_elements/15" class="btn btn-mini">Detail</a></td> -->
@@ -167,63 +171,43 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/companies/{company_name} \
 <div class="response_element" id="response_element_93">
 <td>name </td>
 <td>Name of the company</td>
-<!-- <td><a href="/response_elements/93" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/118-update-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_94">
 <td>displayName </td>
 <td>Display name of the company</td>
-<!-- <td><a href="/response_elements/94" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/118-update-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_95">
 <td>organization </td>
 <td>Apigee organization of the company</td>
-<!-- <td><a href="/response_elements/95" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/118-update-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_96">
 <td>status </td>
 <td>Status of the company: Active or Inactive</td>
-<!-- <td><a href="/response_elements/96" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/118-update-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_97">
 <td>attributes </td>
 <td>Arbitrary attributes that can be used to customize the default company profile</td>
-<!-- <td><a href="/response_elements/97" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/118-update-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_98">
 <td>createdAt </td>
 <td>Unix time when the entity was created</td>
-<!-- <td><a href="/response_elements/98" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/118-update-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_99">
 <td>createdBy </td>
 <td>Apigee username of the user who created the company</td>
-<!-- <td><a href="/response_elements/99" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/118-update-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_100">
 <td>lastModifiedAt </td>
 <td>Unix time when the entity was last modified</td>
-<!-- <td><a href="/response_elements/100" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/118-update-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_101">
 <td>lastModifiedBy </td>
 <td>Apigee username of the user who last modified the company</td>
-<!-- <td><a href="/response_elements/101" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/118-update-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 
 	
-
 </div>
-
             </div>
         </div><!--/row-->
       </div><!--/content-->

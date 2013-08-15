@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="PyQ1VRmeYzFAVsVuVKt+9I4Kg9ON1pPkjIMDdwoRWRU=" name="csrf-token" />
+<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -36,19 +36,23 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="row">
+        <div class="row"> 
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-resources-reference">Platform API Reference</a> > <a href="/api_resources/33-oauth-1-0a-access-tokens">OAuth 1.0a Access Tokens</a> > Get Oauth 1.0 Access Token</div>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/33-oauth-1-0a-access-tokens">OAuth 1.0a Access Tokens</a> > Get Oauth 1.0 Access Token</i>
+</div>
+
 <p>
 <h1>Get Oauth 1.0 Access Token</h1> 
 </p>
 
+<p><b>API Platform Base Path:</b> <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></p>
+
 <div class="row">
 	<div class="span6" style="width:340px;">
-		<p><b>API Platform Base Path:</b> https://api.enterprise.apigee.com/v1/o/{org_name}</p>
-		<p><b>API Resource Path:</b> /oauth1/accesstokens/{access_token}</p>
+
+		<p><b>API Resource Path:</b> <code>/oauth1/accesstokens/{access_token}</code></p>
 		<p>
 		Fetches the details of given access token
 		</p>
@@ -73,8 +77,8 @@
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl https://api.enterprise.apigee.com/v1/o/{org_name}/oauth1/accesstokens/{access_token} \
--u myname:mypass</pre>
+	<div class="terminal">$ curl https://api.enterprise.apigee.com/v1/o/{org_name}/oauth1/accesstokens/{access_token} \
+-u myname:mypass</div>
 
 
 <b>Sample Response:</b> 
@@ -116,98 +120,66 @@
 <div class="response_element" id="response_element_327">
 <td>apiProducts </td>
 <td>API products associated with the consumer key used by the app</td>
-<!-- <td><a href="/response_elements/327" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/152-get-oauth-1-0-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_328">
 <td>app </td>
 <td>App with which the access token is associated</td>
-<!-- <td><a href="/response_elements/328" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/152-get-oauth-1-0-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_329">
 <td>appUserId </td>
 <td>The ID of the app end user for whom the access token is generated</td>
-<!-- <td><a href="/response_elements/329" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/152-get-oauth-1-0-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_330">
 <td>attributes </td>
 <td>Name/value pairs used to exntend the default OAuth 1.0a access token profile</td>
-<!-- <td><a href="/response_elements/330" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/152-get-oauth-1-0-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_331">
 <td>consumerKey </td>
 <td>The consumer key associated with access toen</td>
-<!-- <td><a href="/response_elements/331" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/152-get-oauth-1-0-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_332">
 <td>consumerSecret </td>
 <td>The consumer secret associated with the consumer key for the access token</td>
-<!-- <td><a href="/response_elements/332" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/152-get-oauth-1-0-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_333">
 <td>createdAt </td>
 <td>Unix time the access token was generated</td>
-<!-- <td><a href="/response_elements/333" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/152-get-oauth-1-0-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_334">
 <td>createdBy </td>
 <td>User name of the Apigee user who created the access token</td>
-<!-- <td><a href="/response_elements/334" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/152-get-oauth-1-0-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_335">
 <td>expiresAt </td>
 <td>Unix time the access token will expire</td>
-<!-- <td><a href="/response_elements/335" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/152-get-oauth-1-0-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_336">
 <td>issuedAt </td>
 <td>Validity time period for the OAuth verifier code</td>
-<!-- <td><a href="/response_elements/336" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/152-get-oauth-1-0-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_337">
 <td>lastModifiedAt </td>
 <td>Unix time the access token was last modified</td>
-<!-- <td><a href="/response_elements/337" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/152-get-oauth-1-0-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_338">
 <td>lastModifiedBy </td>
 <td>User name of the Apigee user who last modified</td>
-<!-- <td><a href="/response_elements/338" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/152-get-oauth-1-0-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_339">
 <td>scope </td>
 <td>The OAuth scope of the access token (used at runtime to validate access to API product)</td>
-<!-- <td><a href="/response_elements/339" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/152-get-oauth-1-0-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_340">
 <td>secret </td>
 <td>The screat associated with the access token</td>
-<!-- <td><a href="/response_elements/340" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/152-get-oauth-1-0-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_341">
 <td>status </td>
-<td>The status of the access token: 'approved', 'revoked', expired'</td>
-<!-- <td><a href="/response_elements/341" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/152-get-oauth-1-0-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<td>The status of the access token: &#x27;approved&#x27;, &#x27;revoked&#x27;, expired&#x27;</td>
 </div></tr><tr>
 <div class="response_element" id="response_element_342">
 <td>token </td>
 <td>The value of the Access Token</td>
-<!-- <td><a href="/response_elements/342" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/152-get-oauth-1-0-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 
@@ -218,9 +190,7 @@
   &quot;contexts&quot; : [ ]
 }</pre>
 	
-
 </div>
-
             </div>
         </div><!--/row-->
       </div><!--/content-->

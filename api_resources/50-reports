@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apigee API Reference</title>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
+    <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
+
+	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
+       <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+       <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+       <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+       <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+	  <script src="/assets/application-dc5c9a427e1f5afd21166897f350d896.js" type="text/javascript"></script> 
+	  <script type="text/javascript" charset="utf-8">
+	jQuery(document).ready(function () {
+	    jQuery("td span.expand").click(function () {
+	        jQuery(this).parents("tr.main").nextUntil("tr.main").toggle();
+	    });
+	});
+	  </script>
+	<script type="text/javascript">
+	jQuery(document).ready(function() {
+	  jQuery("resource_table").hide();
+	  //toggle the componenet with class msg_body
+	  jQuery(".heading").click(function()
+	  {
+	    jQuery(this).next(".content").slideToggle(500);
+	  });
+	});
+	</script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="row"> 
+           <div class="span12">
+
+            <div id="category">
+API Analytics
+</div>
+
+<div id="breadcrumb">
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > Reports</i>
+</div>
+
+
+<div class="page-header">
+  <h1>Reports</h1>
+</div>
+
+
+<p><b>API Platform Base Path: </b>https://api.enterprise.apigee.com/v1/o/{org_name}</p>
+
+		<table class="table">
+				<tr><td class="lead">API Resource Path: /reports</td></tr>
+				<tr><td>Analytics report metadata stored in an organization on the API Platform</td></tr>
+		  		<tr><td></td></tr>
+		</table>
+
+
+
+		<table class="table table-bordered">
+		<tbody>
+				<tr><td colspan="2"><span class="lead">Create an Analytics report</span></td><td><a href="/api_methods/226-create-an-analytics-report" class="btn btn-mini">Detail</a></td> 
+			    <tr><td colspan="3"><span id="well"><pre>/reports</pre></span></td></tr>
+				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
+				<tr><td><strong>Description:</strong></td><td colspan="2">Generates metadata for an Analytics report</td></tr>
+				<tr><td><strong>Content Types:</strong></td><td>
+				
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+				</td></tr>
+		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+				<tr><td colspan="2"><span class="lead">Delete a report</span></td><td><a href="/api_methods/228-delete-a-report" class="btn btn-mini">Detail</a></td> 
+			    <tr><td colspan="3"><span id="well"><pre>/reports/{report_name}</pre></span></td></tr>
+				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
+				<tr><td><strong>Description:</strong></td><td colspan="2">Deletes an existing report</td></tr>
+				<tr><td><strong>Content Types:</strong></td><td>
+				
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+				</td></tr>
+		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+				<tr><td colspan="2"><span class="lead">Get a report</span></td><td><a href="/api_methods/223-get-a-report" class="btn btn-mini">Detail</a></td> 
+			    <tr><td colspan="3"><span id="well"><pre>/reports/{report_name}</pre></span></td></tr>
+				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
+				<tr><td><strong>Description:</strong></td><td colspan="2">Gets the contents of a report stored in an organization on the API Platform</td></tr>
+				<tr><td><strong>Content Types:</strong></td><td>
+				
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+				</td></tr>
+		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+				<tr><td colspan="2"><span class="lead">List reports</span></td><td><a href="/api_methods/222-list-reports" class="btn btn-mini">Detail</a></td> 
+			    <tr><td colspan="3"><span id="well"><pre>/reports</pre></span></td></tr>
+				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
+				<tr><td><strong>Description:</strong></td><td colspan="2">Lists all Analytics reports in an organization</td></tr>
+				<tr><td><strong>Content Types:</strong></td><td>
+				
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+				</td></tr>
+		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+				<tr><td colspan="2"><span class="lead">List reports</span></td><td><a href="/api_methods/229-list-reports" class="btn btn-mini">Detail</a></td> 
+			    <tr><td colspan="3"><span id="well"><pre>/reports</pre></span></td></tr>
+				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
+				<tr><td><strong>Description:</strong></td><td colspan="2">Returns a list of reports in an organization</td></tr>
+				<tr><td><strong>Content Types:</strong></td><td>
+				
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+				</td></tr>
+		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+				<tr><td colspan="2"><span class="lead">Update an existing report definition</span></td><td><a href="/api_methods/227-update-an-existing-report-definition" class="btn btn-mini">Detail</a></td> 
+			    <tr><td colspan="3"><span id="well"><pre>/reports/{report_name}</pre></span></td></tr>
+				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-PUT">PUT</span> </td></tr>
+				<tr><td><strong>Description:</strong></td><td colspan="2">Update an existing report definition</td></tr>
+		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+		</tbody>
+		</table>
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->
+
+		<!-- <footer>
+        	<p>&copy; Apigee, Inc. 2012</p>
+      	</footer>  -->
+
+    </div> <!-- /container -->
+
+
+
+  </body>
+</html>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="PyQ1VRmeYzFAVsVuVKt+9I4Kg9ON1pPkjIMDdwoRWRU=" name="csrf-token" />
+<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -36,7 +36,7 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="row">
+        <div class="row"> 
            <div class="span12">
 
             <div id="category">
@@ -44,16 +44,14 @@ Oauth
 </div>
 
 <div id="breadcrumb">
-<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > OAuth 1.0a Access Tokens</div>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > OAuth 1.0a Access Tokens</i>
+</div>
 
 
 <div class="page-header">
   <h1>OAuth 1.0a Access Tokens</h1>
 </div>
 
-<!-- <div class=btn>
-<a href="/api_methods/new">Add an API Method</a>
-</div> -->
 
 <p><b>API Platform Base Path: </b>https://api.enterprise.apigee.com/v1/o/{org_name}</p>
 
@@ -77,26 +75,6 @@ You have created an App.
 You have a valid consumer key.
 
 An access token has been generated.</td></tr>
-		       <!-- <td><div id="well"><pre>  &quot;apiProducts&quot; : [ &quot;apiProduct&quot; ],
-  &quot;app&quot; : &quot;myApp&quot;,
-  &quot;appUserId&quot; : &quot;Developer@apigee.com&quot;,
-  &quot;attributes&quot; : [ {
-    &quot;name&quot; : &quot;region&quot;,
-    &quot;value&quot; : &quot;east&quot;
-  } ],
-  &quot;consumerKey&quot; : &quot;mlfBg7NH9tCua8wUhuamKHeTdfHxMB0A&quot;,
-  &quot;consumerSecret&quot; : &quot;iF1lDg239ngfhLWH&quot;,
-  &quot;createdAt&quot; : 1343037194128,
-  &quot;createdBy&quot; : &quot;1343037194128&quot;,
-  &quot;expiresAt&quot; : 1343038994128,
-  &quot;issuedAt&quot; : 1343037194128,
-  &quot;lastModifiedAt&quot; : 1343037194128,
-  &quot;lastModifiedBy&quot; : &quot;Admin&quot;,
-  &quot;scope&quot; : &quot;local&quot;,
-  &quot;secret&quot; : &quot;HJ3Gl6KTF01pAH24GAAdGfb8dOq1&quot;,
-  &quot;status&quot; : &quot;approved&quot;,
-  &quot;token&quot; : &quot;kNw6eQrL5G7etEBcvqvRTL01E5rY&quot;
-}</pre></div></td></tr> -->
 		</table>
 
 
@@ -129,8 +107,8 @@ An access token has been generated.</td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Revokes the issued accesstoken</td></tr>
 				<tr><td><strong>Content Types:</strong></td><td>
 				
-<div class="content_type" id="content_type_3">
-application/x-www-url-form-encoded
+<div class="content_type" id="content_type_4">
+application/octet-stream
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
@@ -141,10 +119,6 @@ application/x-www-url-form-encoded
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
 		</tbody>
 		</table>
-
-<!-- Schema:
-
-<div id="well"><pre></pre></div> -->
 
 
 

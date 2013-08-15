@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="PyQ1VRmeYzFAVsVuVKt+9I4Kg9ON1pPkjIMDdwoRWRU=" name="csrf-token" />
+<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -36,7 +36,7 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="row">
+        <div class="row"> 
            <div class="span12">
 
             <div id="category">
@@ -44,33 +44,21 @@ Administration
 </div>
 
 <div id="breadcrumb">
-<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > Environments</div>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > Environments</i>
+</div>
 
 
 <div class="page-header">
   <h1>Environments</h1>
 </div>
 
-<!-- <div class=btn>
-<a href="/api_methods/new">Add an API Method</a>
-</div> -->
 
 <p><b>API Platform Base Path: </b>https://api.enterprise.apigee.com/v1/o/{org_name}</p>
 
 		<table class="table">
 				<tr><td class="lead">API Resource Path: /environments</td></tr>
-				<tr><td>Network-accessible runtime deployment containers (typically named 'test' and 'prod') available for APIs on the API Platform.</td></tr>
+				<tr><td>Network-accessible runtime deployment containers (typically named &#x27;test&#x27; and &#x27;prod&#x27;) available for APIs on the API Platform.</td></tr>
 		  		<tr><td>By default, Apigee organizations are provisioned with two environments: 'test' and 'prod'. An environment provides a runtime execution context for APIs. An API revision must be deployed to an environment before it can be accessed at runtime. No constraints are placed on the usage between different environments--test versus prod, for example. Developers are free to implement and enforce any type or testing, promotion, and deployment procedures that suit their development lifecycle.</td></tr>
-		       <!-- <td><div id="well"><pre>{
-  &quot;createdAt&quot; : 1336660158465,
-  &quot;createdBy&quot; : &quot;admin&quot;,
-  &quot;lastModifiedAt&quot; : 1336660158465,
-  &quot;lastModifiedBy&quot; : &quot;admin&quot;,
-  &quot;name&quot; : &quot;test&quot;,
-  &quot;properties&quot; : {
-    &quot;property&quot; : [ ]
-  }
-}</pre></div></td></tr> -->
 		</table>
 
 
@@ -89,10 +77,6 @@ Administration
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
 		</tbody>
 		</table>
-
-<!-- Schema:
-
-<div id="well"><pre></pre></div> -->
 
 
 

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="PyQ1VRmeYzFAVsVuVKt+9I4Kg9ON1pPkjIMDdwoRWRU=" name="csrf-token" />
+<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -36,19 +36,23 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="row">
+        <div class="row"> 
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-resources-reference">Platform API Reference</a> > <a href="/api_resources/31-oauth-1-0a-request-tokens">OAuth 1.0a Request Tokens</a> > Get an Oauth 1.0a Request Token</div>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/31-oauth-1-0a-request-tokens">OAuth 1.0a Request Tokens</a> > Get an Oauth 1.0a Request Token</i>
+</div>
+
 <p>
 <h1>Get an Oauth 1.0a Request Token</h1> 
 </p>
 
+<p><b>API Platform Base Path:</b> <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></p>
+
 <div class="row">
 	<div class="span6" style="width:340px;">
-		<p><b>API Platform Base Path:</b> https://api.enterprise.apigee.com/v1/o/{org_name}</p>
-		<p><b>API Resource Path:</b> /oauth1/requesttokens/{request_token}?consumerKey={consumer_key}</p>
+
+		<p><b>API Resource Path:</b> <code>/oauth1/requesttokens/{request_token}?consumerKey={consumer_key}</code></p>
 		<p>
 		Gets the Oauth 1.0a Request Token for the speficied consumer key
 		</p>
@@ -73,8 +77,8 @@
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl https://api.enterprise.apigee.com/v1/o/(org_name)/oauth1/requesttokens/{request_token}?"consumerKey={consumer_key}" \
--u myname:mypass</pre>
+	<div class="terminal">$ curl https://api.enterprise.apigee.com/v1/o/(org_name)/oauth1/requesttokens/{request_token}?"consumerKey={consumer_key}" \
+-u myname:mypass</div>
 
 
 <b>Sample Response:</b> 
@@ -110,86 +114,58 @@
 <div class="response_element" id="response_element_346">
 <td>consumerKey </td>
 <td>The key associated with the app</td>
-<!-- <td><a href="/response_elements/346" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_343">
 <td>app </td>
 <td>The app for which the request token was generated</td>
-<!-- <td><a href="/response_elements/343" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_344">
 <td>attributes </td>
 <td>Name/value elements used to extend the default request token profile</td>
-<!-- <td><a href="/response_elements/344" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_345">
 <td>callbackUrl </td>
 <td>Fetches the client registration details and verifies for the following. It does not redirect if any of the following validation conditions fail. redirect_uri is not provided multiple redirect_uri instances are provided only a part of the redirect_uri is provided if the redirect_uri is provided, it is compared against the multiple redirect_uri instances (if any) ignores fragment components</td>
-<!-- <td><a href="/response_elements/345" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_347">
 <td>createdAt </td>
 <td>Unix time when the request token was created</td>
-<!-- <td><a href="/response_elements/347" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_348">
 <td>createdBy </td>
 <td>Apigee user name of the user who create the request token</td>
-<!-- <td><a href="/response_elements/348" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_349">
 <td>expiresAt </td>
 <td>Expiry time period of the token to be generated; token expires/is deleted when the expiry time ends</td>
-<!-- <td><a href="/response_elements/349" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_350">
 <td>issuedAt </td>
 <td>Validity time period for the OAuth verifier code </td>
-<!-- <td><a href="/response_elements/350" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_351">
 <td>lastModifiedAt </td>
 <td>Unix time when the request token was last modified</td>
-<!-- <td><a href="/response_elements/351" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_352">
 <td>lastModifiedBy </td>
 <td>Apigee user name of the user who last modified the request token</td>
-<!-- <td><a href="/response_elements/352" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_353">
 <td>scope </td>
 <td>Oauth scope(s) included in the request</td>
-<!-- <td><a href="/response_elements/353" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_354">
 <td>secret </td>
 <td>Secret password for getting the request token</td>
-<!-- <td><a href="/response_elements/354" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_355">
 <td>status </td>
 <td>Status of the request token; changes to expired when the expiry time ends</td>
-<!-- <td><a href="/response_elements/355" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_356">
 <td>token </td>
 <td>Value of the request token</td>
-<!-- <td><a href="/response_elements/356" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/143-get-an-oauth-1-0a-request-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 
@@ -205,9 +181,7 @@ Error Code:
 2. keymanagement.service.application_not_approved
 3. keymanagement.service.oauth10_request_token_fetch_failed</pre>
 	
-
 </div>
-
             </div>
         </div><!--/row-->
       </div><!--/content-->

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="PyQ1VRmeYzFAVsVuVKt+9I4Kg9ON1pPkjIMDdwoRWRU=" name="csrf-token" />
+<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -36,19 +36,23 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="row">
+        <div class="row"> 
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-resources-reference">Platform API Reference</a> > <a href="/api_resources/1-apis">APIs</a> > Create an API</div>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/1-apis">APIs</a> > Create an API</i>
+</div>
+
 <p>
 <h1>Create an API</h1> 
 </p>
 
+<p><b>API Platform Base Path:</b> <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></p>
+
 <div class="row">
 	<div class="span6" style="width:340px;">
-		<p><b>API Platform Base Path:</b> https://api.enterprise.apigee.com/v1/o/{org_name}</p>
-		<p><b>API Resource Path:</b> /apis</p>
+
+		<p><b>API Resource Path:</b> <code>/apis</code></p>
 		<p>
 		Creates an API facade (and an API proxy configuration) on Apigee
 		</p>
@@ -89,10 +93,10 @@ text/xml
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl -H "Content-type:application/json" -X POST -d \
+	<div class="terminal">$ curl -H "Content-type:application/json" -X POST -d \
 '{"name" : "myAPI"}'  \
 https://api.enterprise.apigee.com/v1/o/{org_name}/apis \
--u myname:mypass</pre>
+-u myname:mypass</div>
 	<b>Request Payload Elements:</b> 
 	<table class="table table-bordered">
 		<thead>
@@ -150,69 +154,47 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/apis \
 <div class="response_element" id="response_element_272">
 <td>configurationVersion </td>
 <td>The version of Apigee that the configuration is valid for</td>
-<!-- <td><a href="/response_elements/272" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_273">
 <td>contextInfo </td>
 <td>Apigee generated contextual information about the entity</td>
-<!-- <td><a href="/response_elements/273" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_274">
 <td>name </td>
 <td>The name of the API</td>
-<!-- <td><a href="/response_elements/274" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_275">
 <td>policies </td>
 <td>Policies attached to the API </td>
-<!-- <td><a href="/response_elements/275" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_276">
 <td>proxyEndpoints </td>
 <td>Named proxy endpoints (receiver) defined for the API proxy</td>
-<!-- <td><a href="/response_elements/276" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_277">
 <td>resources </td>
 <td>Any code, scripts, XSLT files used by policies attached to this API</td>
-<!-- <td><a href="/response_elements/277" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_278">
 <td>revision </td>
 <td>The sequential numbered packages of code and configuration that make up an API proxy</td>
-<!-- <td><a href="/response_elements/278" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_279">
 <td>targetEndpoints </td>
 <td>Named proxy endpoints (sender) defined for the API proxy</td>
-<!-- <td><a href="/response_elements/279" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_280">
 <td>targetServers </td>
 <td>Target servers defined for load balancing purposes</td>
-<!-- <td><a href="/response_elements/280" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_281">
 <td>type </td>
 <td>Internal entity definition used by Apigee</td>
-<!-- <td><a href="/response_elements/281" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/15-create-an-api?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 
 	
-
 </div>
-
             </div>
         </div><!--/row-->
       </div><!--/content-->

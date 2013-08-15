@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="PyQ1VRmeYzFAVsVuVKt+9I4Kg9ON1pPkjIMDdwoRWRU=" name="csrf-token" />
+<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -36,19 +36,23 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="row">
+        <div class="row"> 
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-resources-reference">Platform API Reference</a> > <a href="/api_resources/35-developers">Developers</a> > Create a Developer</div>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/35-developers">Developers</a> > Create a Developer</i>
+</div>
+
 <p>
 <h1>Create a Developer</h1> 
 </p>
 
+<p><b>API Platform Base Path:</b> <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></p>
+
 <div class="row">
 	<div class="span6" style="width:340px;">
-		<p><b>API Platform Base Path:</b> https://api.enterprise.apigee.com/v1/o/{org_name}</p>
-		<p><b>API Resource Path:</b> /developers</p>
+
+		<p><b>API Resource Path:</b> <code>/developers</code></p>
 		<p>
 		Create a developer in an organization
 		</p>
@@ -73,7 +77,7 @@
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl -H "Content-type:application/json" -X POST -d \
+	<div class="terminal">$ curl -H "Content-type:application/json" -X POST -d \
 '{
   "email" : "ntesla@theramin.com",
   "firstName" : "Nikola",
@@ -90,7 +94,7 @@
   "lastModifiedAt" : 1345058241037,
   "lastModifiedBy" : "andrew@apigee.com"
 }' \
--u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/developers</pre>
+-u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/developers</div>
 	<b>Request Payload Elements:</b> 
 	<table class="table table-bordered">
 		<thead>
@@ -104,7 +108,7 @@
 			<tr>
 <div class="request_element" id="request_element_19">
 <td>email</td>
-<td>The developer's email, used to unique identify the developer in Apigee</td>
+<td>The developer&#x27;s email, used to unique identify the developer in Apigee</td>
 <td>N/A</td>
 <td>Yes</td>
 <!-- <td><a href="/request_elements/19" class="btn btn-mini">Detail</a></td> -->
@@ -134,7 +138,7 @@
 <tr>
 <div class="request_element" id="request_element_22">
 <td>userName</td>
-<td>The developer's username (currently unused by Apigee)</td>
+<td>The developer&#x27;s username (currently unused by Apigee)</td>
 <td>N/A</td>
 <td>No</td>
 <!-- <td><a href="/request_elements/22" class="btn btn-mini">Detail</a></td> -->
@@ -184,76 +188,52 @@
 			<tr>
 <div class="response_element" id="response_element_518">
 <td>email </td>
-<td>The developer's email (used asa unique key to retrieve information about this developer)</td>
-<!-- <td><a href="/response_elements/518" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/32-create-a-developer?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<td>The developer&#x27;s email (used asa unique key to retrieve information about this developer)</td>
 </div></tr><tr>
 <div class="response_element" id="response_element_519">
 <td>firstName </td>
 <td>The first name of the developer</td>
-<!-- <td><a href="/response_elements/519" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/32-create-a-developer?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_520">
 <td>lastName </td>
 <td>The last name of the developer</td>
-<!-- <td><a href="/response_elements/520" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/32-create-a-developer?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_521">
 <td>userName </td>
 <td>The username of the developer (currently unused in Apigee)</td>
-<!-- <td><a href="/response_elements/521" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/32-create-a-developer?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_522">
 <td>organizationName </td>
 <td>The Apigee organization where the developer is regsitered</td>
-<!-- <td><a href="/response_elements/522" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/32-create-a-developer?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_523">
 <td>status </td>
-<td>The developer status: 'active' or 'inactive'</td>
-<!-- <td><a href="/response_elements/523" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/32-create-a-developer?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<td>The developer status: &#x27;active&#x27; or &#x27;inactive&#x27;</td>
 </div></tr><tr>
 <div class="response_element" id="response_element_524">
 <td>attributes </td>
 <td>Name/value pairs used to extend the default developer profile</td>
-<!-- <td><a href="/response_elements/524" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/32-create-a-developer?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_525">
 <td>createdAt </td>
 <td>Unix time when the developer was created</td>
-<!-- <td><a href="/response_elements/525" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/32-create-a-developer?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_526">
 <td>createdBy </td>
 <td>User name of the Apigee user who created the developer</td>
-<!-- <td><a href="/response_elements/526" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/32-create-a-developer?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_527">
 <td>lastModifiedAt </td>
 <td>Unix time when the developer profile was last modified</td>
-<!-- <td><a href="/response_elements/527" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/32-create-a-developer?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_528">
 <td>lastModifiedBy </td>
 <td>User name of the Apigee user who last modified the developer profile</td>
-<!-- <td><a href="/response_elements/528" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/32-create-a-developer?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 
 	
-
 </div>
-
             </div>
         </div><!--/row-->
       </div><!--/content-->

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="PyQ1VRmeYzFAVsVuVKt+9I4Kg9ON1pPkjIMDdwoRWRU=" name="csrf-token" />
+<meta content="NEPBu8/KaNMChWYFJKLkdwS9LCavD4M0xdwvtxxu1rQ=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -99,7 +99,7 @@ API Analytics
 		<table class="table table-bordered">
 		<tbody>
 				<tr><td colspan="2"><span class="lead">Get an analytics report for a dimension</span></td><td><a href="/api_methods/71-get-an-analytics-report-for-a-dimension" class="btn btn-mini">Detail</a></td> 
-			    <tr><td colspan="3"><span id="well"><pre>/environments/{environment_name}/stats/{dimension_name}</pre></span></td></tr>
+			    <tr><td colspan="3"><span id="well"><pre>/environments/{env_name}/stats/{dimension_name}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Use the GET method to retrieve metrics for a dimension</td></tr>
 				<tr><td><strong>Content Types:</strong></td><td>

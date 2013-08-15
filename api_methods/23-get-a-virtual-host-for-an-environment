@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="PyQ1VRmeYzFAVsVuVKt+9I4Kg9ON1pPkjIMDdwoRWRU=" name="csrf-token" />
+<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -36,19 +36,23 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="row">
+        <div class="row"> 
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-resources-reference">Platform API Reference</a> > <a href="/api_resources/16-virtual-hosts">Virtual Hosts</a> > Get a Virtual Host for an Environment</div>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/16-virtual-hosts">Virtual Hosts</a> > Get a Virtual Host for an Environment</i>
+</div>
+
 <p>
 <h1>Get a Virtual Host for an Environment</h1> 
 </p>
 
+<p><b>API Platform Base Path:</b> <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></p>
+
 <div class="row">
 	<div class="span6" style="width:340px;">
-		<p><b>API Platform Base Path:</b> https://api.enterprise.apigee.com/v1/o/{org_name}</p>
-		<p><b>API Resource Path:</b> /environments/{environment_name}/virtualhosts/{virtualhost_name}</p>
+
+		<p><b>API Resource Path:</b> <code>/environments/{environment_name}/virtualhosts/{virtualhost_name}</code></p>
 		<p>
 		Gets details for a named virtual host
 		</p>
@@ -73,8 +77,8 @@
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl https://api.enterprise.apigee.com/v1/o/{org_name}/environments/(env_name)/virtualhosts/{virtualhost_name}\
--u myname:mypass</pre>
+	<div class="terminal">$ curl https://api.enterprise.apigee.com/v1/o/{org_name}/environments/(env_name)/virtualhosts/{virtualhost_name}\
+-u myname:mypass</div>
 
 
 <b>Sample Response:</b> 
@@ -102,39 +106,27 @@
 <div class="response_element" id="response_element_378">
 <td>VirtualHost </td>
 <td>Settings for a named virtual host</td>
-<!-- <td><a href="/response_elements/378" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/23-get-a-virtual-host-for-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_379">
 <td>name </td>
 <td>The name of the virutal host</td>
-<!-- <td><a href="/response_elements/379" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/23-get-a-virtual-host-for-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_380">
 <td>HostAliases </td>
 <td>The URL for the virtual host </td>
-<!-- <td><a href="/response_elements/380" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/23-get-a-virtual-host-for-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_381">
 <td>Interfaces </td>
 <td>Named interfaces used by the virtual host</td>
-<!-- <td><a href="/response_elements/381" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/23-get-a-virtual-host-for-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_382">
 <td>Port </td>
 <td>The port on which the virtual host listens</td>
-<!-- <td><a href="/response_elements/382" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/23-get-a-virtual-host-for-an-environment?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 
 	
-
 </div>
-
             </div>
         </div><!--/row-->
       </div><!--/content-->

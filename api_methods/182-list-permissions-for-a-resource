@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apigee API Reference</title>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
+    <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
+
+	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
+       <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+       <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+       <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+       <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+	  <script src="/assets/application-dc5c9a427e1f5afd21166897f350d896.js" type="text/javascript"></script> 
+	  <script type="text/javascript" charset="utf-8">
+	jQuery(document).ready(function () {
+	    jQuery("td span.expand").click(function () {
+	        jQuery(this).parents("tr.main").nextUntil("tr.main").toggle();
+	    });
+	});
+	  </script>
+	<script type="text/javascript">
+	jQuery(document).ready(function() {
+	  jQuery("resource_table").hide();
+	  //toggle the componenet with class msg_body
+	  jQuery(".heading").click(function()
+	  {
+	    jQuery(this).next(".content").slideToggle(500);
+	  });
+	});
+	</script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="row"> 
+           <div class="span12">
+
+            <div id="breadcrumb">
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/38-user-roles">User roles</a> > List permissions for a resource</i>
+</div>
+
+<p>
+<h1>List permissions for a resource</h1> 
+</p>
+
+<p><b>API Platform Base Path:</b> <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></p>
+
+<div class="row">
+	<div class="span6" style="width:340px;">
+
+		<p><b>API Resource Path:</b> <code>/userroles/{role_name}/permissions</code></p>
+		<p>
+		Gets permissions for all resources associated with a user role
+		</p>
+	</div>
+
+	<div class="span6" style="width:340px;">
+		<p>
+		<b>Verb:</b>
+		<span class="verb-GET">GET</span>
+		</p>
+		<b>Auth:</b>
+		Basic Auth
+		</p>
+
+
+	</div>
+</div>
+
+<div class="span18">
+	<p>
+	
+	</p>
+
+	<b>Sample Request:</b>
+	<div class="terminal">$ curl https://api.enterprise.apigee.com/v1/o/{org_name}/userroles/businessuser/permissions \
+-u myname:mypass</div>
+
+
+<b>Sample Response:</b> 
+	<pre>{
+  "resourcePermission" : [ {
+    "organization" : "apifactory",
+    "path" : "/",
+    "permissions" : [ "get" ]
+  }, {
+    "organization" : "apifactory",
+    "path" : "/applications",
+    "permissions" : [ "get" ]
+  }, {
+    "organization" : "apifactory",
+    "path" : "/apiproducts",
+    "permissions" : [ "put", "delete", "get" ]
+  }, {
+    "organization" : "apifactory",
+    "path" : "/developers",
+    "permissions" : [ "put", "delete", "get" ]
+  }, {
+    "organization" : "apifactory",
+    "path" : "/apps",
+    "permissions" : [ "put", "delete", "get" ]
+  }, {
+    "organization" : "apifactory",
+    "path" : "/companies",
+    "permissions" : [ "put", "delete", "get" ]
+  }, {
+    "organization" : "apifactory",
+    "path" : "/environments",
+    "permissions" : [ "get" ]
+  }, {
+    "organization" : "apifactory",
+    "path" : "/environments/*/stats",
+    "permissions" : [ "get" ]
+  }, {
+    "organization" : "apifactory",
+    "path" : "/environments/*/analytics/admin",
+    "permissions" : [ "get" ]
+  }, {
+    "organization" : "apifactory",
+    "path" : "/axCustomReports",
+    "permissions" : [ "put", "delete", "get" ]
+  }, {
+    "organization" : "apifactory",
+    "path" : "/environments/*/applications/*/revisions/*/deployments",
+    "permissions" : [ "get" ]
+  }, {
+    "organization" : "apifactory",
+    "path" : "/applications/*/revisions/*/deployments",
+    "permissions" : [ "get" ]
+  }, {
+    "organization" : "apifactory",
+    "path" : "/environments/test/applications/*/revisions/*/deployments",
+    "permissions" : [ "get" ]
+  }, {
+    "organization" : "apifactory",
+    "path" : "/deployments",
+    "permissions" : [ "get" ]
+  }, {
+    "organization" : "apifactory",
+    "path" : "/environments/test/applications/*/revisions/*/debugsessions",
+    "permissions" : [ "put", "delete", "get" ]
+  }, {
+    "organization" : "apifactory",
+    "path" : "/devPortalButton",
+    "permissions" : [ "get" ]
+  }, {
+    "organization" : "apifactory",
+    "path" : "/userroles/*/permissions",
+    "permissions" : [ "get" ]
+  }, {
+    "organization" : "apifactory",
+    "path" : "/appKeys",
+    "permissions" : [ "get" ]
+  }, {
+    "organization" : "apifactory",
+    "path" : "/devConnectUser",
+    "permissions" : [ "put" ]
+  }, {
+    "organization" : "apifactory",
+    "path" : "/environments/*",
+    "permissions" : [ "get" ]
+  }, {
+    "organization" : "apifactory",
+    "path" : "/environments/*/virtualhosts",
+    "permissions" : [ "get" ]
+  }, {
+    "organization" : "apifactory",
+    "path" : "/environments/*/virtualhosts/*",
+    "permissions" : [ "get" ]
+  } ]
+}</pre>
+
+
+	
+</div>
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->
+
+		<!-- <footer>
+        	<p>&copy; Apigee, Inc. 2012</p>
+      	</footer>  -->
+
+    </div> <!-- /container -->
+
+
+
+  </body>
+</html>

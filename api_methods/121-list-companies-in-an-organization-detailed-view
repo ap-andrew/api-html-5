@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="PyQ1VRmeYzFAVsVuVKt+9I4Kg9ON1pPkjIMDdwoRWRU=" name="csrf-token" />
+<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -36,19 +36,23 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="row">
+        <div class="row"> 
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-resources-reference">Platform API Reference</a> > <a href="/api_resources/6-companies">Companies</a> > List companies in an organization  (detailed view)</div>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/6-companies">Companies</a> > List companies in an organization  (detailed view)</i>
+</div>
+
 <p>
 <h1>List companies in an organization  (detailed view)</h1> 
 </p>
 
+<p><b>API Platform Base Path:</b> <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></p>
+
 <div class="row">
 	<div class="span6" style="width:340px;">
-		<p><b>API Platform Base Path:</b> https://api.enterprise.apigee.com/v1/o/{org_name}</p>
-		<p><b>API Resource Path:</b> /companies?expand=true</p>
+
+		<p><b>API Resource Path:</b> <code>/companies?expand=true</code></p>
 		<p>
 		Returns an expanded list of Companies, displaying a full profile for each Company in the Organization
 		</p>
@@ -73,7 +77,7 @@
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/companies?"expand=true"</pre>
+	<div class="terminal">$ curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/companies?"expand=true"</div>
 
 
 <b>Sample Response:</b> 
@@ -118,32 +122,22 @@
 <div class="response_element" id="response_element_415">
 <td>company </td>
 <td>Settings for the company</td>
-<!-- <td><a href="/response_elements/415" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/121-list-companies-in-an-organization-detailed-view?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_416">
 <td>apps </td>
 <td>A list of apps registered by the company</td>
-<!-- <td><a href="/response_elements/416" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/121-list-companies-in-an-organization-detailed-view?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_417">
 <td>name </td>
 <td>name of the company</td>
-<!-- <td><a href="/response_elements/417" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/121-list-companies-in-an-organization-detailed-view?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_418">
 <td>displayName </td>
 <td>Display name of the company</td>
-<!-- <td><a href="/response_elements/418" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/121-list-companies-in-an-organization-detailed-view?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_419">
 <td>organization </td>
 <td>Organization to which the company belongs</td>
-<!-- <td><a href="/response_elements/419" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/121-list-companies-in-an-organization-detailed-view?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 
@@ -154,9 +148,7 @@
  &quot;contexts&quot; : [ ]
 }</pre>
 	
-
 </div>
-
             </div>
         </div><!--/row-->
       </div><!--/content-->

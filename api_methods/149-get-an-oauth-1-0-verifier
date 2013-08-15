@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="PyQ1VRmeYzFAVsVuVKt+9I4Kg9ON1pPkjIMDdwoRWRU=" name="csrf-token" />
+<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -36,19 +36,23 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="row">
+        <div class="row"> 
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-resources-reference">Platform API Reference</a> > <a href="/api_resources/32-oauth-1-0a-verifiers">OAuth 1.0a Verifiers</a> > Get an OAuth 1.0 Verifier</div>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/32-oauth-1-0a-verifiers">OAuth 1.0a Verifiers</a> > Get an OAuth 1.0 Verifier</i>
+</div>
+
 <p>
 <h1>Get an OAuth 1.0 Verifier</h1> 
 </p>
 
+<p><b>API Platform Base Path:</b> <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></p>
+
 <div class="row">
 	<div class="span6" style="width:340px;">
-		<p><b>API Platform Base Path:</b> https://api.enterprise.apigee.com/v1/o/{org_name}</p>
-		<p><b>API Resource Path:</b> /oauth1/verifiers/{verifier_code}</p>
+
+		<p><b>API Resource Path:</b> <code>/oauth1/verifiers/{verifier_code}</code></p>
 		<p>
 		Gets the detail of given verifier code
 		</p>
@@ -73,8 +77,8 @@
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl https://api.enterprise.apigee.com/v1/o/(org_name)/oauth1/verifiers/{verifier_code} \
--u myname:mypass</pre>
+	<div class="terminal">$ curl https://api.enterprise.apigee.com/v1/o/(org_name)/oauth1/verifiers/{verifier_code} \
+-u myname:mypass</div>
 
 
 <b>Sample Response:</b> 
@@ -105,63 +109,43 @@
 			<tr>
 <div class="response_element" id="response_element_252">
 <td>appUserId </td>
-<td>Resource owner's user ID</td>
-<!-- <td><a href="/response_elements/252" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/149-get-an-oauth-1-0-verifier?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<td>Resource owner&#x27;s user ID</td>
 </div></tr><tr>
 <div class="response_element" id="response_element_253">
 <td>attributes </td>
 <td>Name/value attributes for the verifier</td>
-<!-- <td><a href="/response_elements/253" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/149-get-an-oauth-1-0-verifier?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_254">
 <td>code </td>
 <td>The verifier code provided by the resource owner</td>
-<!-- <td><a href="/response_elements/254" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/149-get-an-oauth-1-0-verifier?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_255">
 <td>createdAt </td>
 <td>UNIX time the app was created</td>
-<!-- <td><a href="/response_elements/255" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/149-get-an-oauth-1-0-verifier?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_256">
 <td>createdBy </td>
 <td>Apigee user account name of the individual who submitted the POST request that created this entity</td>
-<!-- <td><a href="/response_elements/256" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/149-get-an-oauth-1-0-verifier?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_257">
 <td>expiresAt </td>
 <td>Expiry time period of the token to be generated; token expires/is deleted when the expiry time ends</td>
-<!-- <td><a href="/response_elements/257" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/149-get-an-oauth-1-0-verifier?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_258">
 <td>issuedAt </td>
 <td>UNIX time the verifier code is issued </td>
-<!-- <td><a href="/response_elements/258" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/149-get-an-oauth-1-0-verifier?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_259">
 <td>lastModifiedAt </td>
 <td>UNIX time the app was last modified</td>
-<!-- <td><a href="/response_elements/259" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/149-get-an-oauth-1-0-verifier?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_260">
 <td>lastModifiedBy </td>
 <td>Apigee user account name of the individual who submitted the request that most recently modified this entity</td>
-<!-- <td><a href="/response_elements/260" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/149-get-an-oauth-1-0-verifier?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_261">
 <td>requestToken </td>
 <td>Request token associated with the verifier</td>
-<!-- <td><a href="/response_elements/261" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/149-get-an-oauth-1-0-verifier?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 
@@ -177,9 +161,7 @@ Error Codes:
 3. keymanagement.service.application_not_approved
 4. keymanagement.service.oauth10_verifier_fetch_failed</pre>
 	
-
 </div>
-
             </div>
         </div><!--/row-->
       </div><!--/content-->

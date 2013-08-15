@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="PyQ1VRmeYzFAVsVuVKt+9I4Kg9ON1pPkjIMDdwoRWRU=" name="csrf-token" />
+<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -36,19 +36,23 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="row">
+        <div class="row"> 
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-resources-reference">Platform API Reference</a> > <a href="/api_resources/14-apps-company">Apps: Company</a> > Update a Company App</div>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/14-apps-company">Apps: Company</a> > Update a Company App</i>
+</div>
+
 <p>
 <h1>Update a Company App</h1> 
 </p>
 
+<p><b>API Platform Base Path:</b> <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></p>
+
 <div class="row">
 	<div class="span6" style="width:340px;">
-		<p><b>API Platform Base Path:</b> https://api.enterprise.apigee.com/v1/o/{org_name}</p>
-		<p><b>API Resource Path:</b> /companies/{company_name}/apps/{app_name}</p>
+
+		<p><b>API Resource Path:</b> <code>/companies/{company_name}/apps/{app_name}</code></p>
 		<p>
 		Updates an existing Company App
 		</p>
@@ -73,7 +77,7 @@
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl  -H "Content-type:application/json" -X PUT -d \
+	<div class="terminal">$ curl  -H "Content-type:application/json" -X PUT -d \
 '{
   "access_type" : "read",
   "attributes" : [ {
@@ -84,7 +88,7 @@
   "callback_url" : "www.apigee.com"
 }' \
 https://api.enterprise.apigee.com/v1/o/{org_name}/companies/{company_name}/apps/{app_name} \
--u myname:mypass</pre>
+-u myname:mypass</div>
 	<b>Request Payload Elements:</b> 
 	<table class="table table-bordered">
 		<thead>
@@ -167,56 +171,38 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/companies/{company_name}/apps/
 <div class="response_element" id="response_element_155">
 <td>access_type </td>
 <td>Unenforced by Apigee</td>
-<!-- <td><a href="/response_elements/155" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/65-update-a-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_156">
 <td>attributes </td>
 <td>Name/value pairs used to extend the default profile</td>
-<!-- <td><a href="/response_elements/156" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/65-update-a-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_157">
 <td>callback_url </td>
 <td>A callback that is used as the redirect_uri in OAuth flows</td>
-<!-- <td><a href="/response_elements/157" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/65-update-a-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_158">
 <td>created_at </td>
 <td>Unix time when the app was created</td>
-<!-- <td><a href="/response_elements/158" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/65-update-a-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_159">
 <td>created_at </td>
 <td>Unix time when the app was created</td>
-<!-- <td><a href="/response_elements/159" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/65-update-a-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_160">
 <td>created_by </td>
 <td>Apigee user name of the user who created this app</td>
-<!-- <td><a href="/response_elements/160" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/65-update-a-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_161">
 <td>lastmodified_at </td>
 <td>Unix time when the app was last modified</td>
-<!-- <td><a href="/response_elements/161" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/65-update-a-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_162">
 <td>lastmodified_by </td>
 <td>Apigee user name of the user who last modified this app</td>
-<!-- <td><a href="/response_elements/162" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/65-update-a-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_163">
 <td>status </td>
-<td>Status of the app: 'active' or 'inactive'</td>
-<!-- <td><a href="/response_elements/163" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/65-update-a-company-app?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<td>Status of the app: &#x27;active&#x27; or &#x27;inactive&#x27;</td>
 </div></tr>
 		</table>
 
@@ -227,9 +213,7 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/companies/{company_name}/apps/
   &quot;contexts&quot; : [ ]
 }</pre>
 	
-
 </div>
-
             </div>
         </div><!--/row-->
       </div><!--/content-->

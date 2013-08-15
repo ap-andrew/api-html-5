@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="PyQ1VRmeYzFAVsVuVKt+9I4Kg9ON1pPkjIMDdwoRWRU=" name="csrf-token" />
+<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -36,7 +36,7 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="row">
+        <div class="row"> 
            <div class="span12">
 
             <div id="category">
@@ -44,16 +44,14 @@ Developer and App Administration
 </div>
 
 <div id="breadcrumb">
-<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > Apps</div>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > Apps</i>
+</div>
 
 
 <div class="page-header">
   <h1>Apps</h1>
 </div>
 
-<!-- <div class=btn>
-<a href="/api_methods/new">Add an API Method</a>
-</div> -->
 
 <p><b>API Platform Base Path: </b>https://api.enterprise.apigee.com/v1/o/{org_name}</p>
 
@@ -61,32 +59,6 @@ Developer and App Administration
 				<tr><td class="lead">API Resource Path: /apps</td></tr>
 				<tr><td>Client/consumer applications (apps) registered by developers or companies in an organization on the API Platform to consume provider APIs</td></tr>
 		  		<tr><td>Apps are APi consumer applications registered with an API provider's organization. Apps are registered with an organization to obtain credentials that enable access to one or more API products (or, a set of URIs). The default app profile can be extended by using custom attributes. Apps can be associated with developers (as developer apps) or with companies (company apps).</td></tr>
-		       <!-- <td><div id="well"><pre>{
-  &quot;accessType&quot; : &quot;read&quot;,
-  &quot;appFamily&quot; : &quot;default&quot;,
-  &quot;attributes&quot; : [ {
-    &quot;name&quot; : &quot;Platform&quot;,
-    &quot;value&quot; : &quot;iOS&quot;
-  } ],
-  &quot;callbackUrl&quot; : &quot;api.company.com&quot;,
-  &quot;createdAt&quot; : 1343835346639,
-  &quot;createdBy&quot; : &quot;andrew@apigee.com&quot;,
-  &quot;credentials&quot; : [ {
-    &quot;apiProducts&quot; : [ {
-      &quot;apiproduct&quot; : &quot;premium_api_product&quot;,
-      &quot;status&quot; : &quot;approved&quot;
-    } ],
-    &quot;attributes&quot; : [ ],
-    &quot;consumerKey&quot; : &quot;GlouKJyAARkstGJt2rp8HbGmWd7qf0Hv&quot;,
-    &quot;consumerSecret&quot; : &quot;NOGKpokG1ThDPUdU&quot;,
-    &quot;status&quot; : &quot;approved&quot;
-  } ],
-  &quot;developerId&quot; : &quot;apigee-cs@@@6ejTv4l6eQpvqesS&quot;,
-  &quot;lastModifiedAt&quot; : 1343835346639,
-  &quot;lastModifiedBy&quot; : &quot;admin@apigee.com&quot;,
-  &quot;name&quot; : &quot;myApp&quot;,
-  &quot;status&quot; : &quot;approved&quot;
-}</pre></div></td></tr> -->
 		</table>
 
 
@@ -112,6 +84,20 @@ text/xml
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">List all apps in an app familty</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+				<tr><td colspan="2"><span class="lead">Get apps by key status</span></td><td><a href="/api_methods/219-get-apps-by-key-status" class="btn btn-mini">Detail</a></td> 
+			    <tr><td colspan="3"><span id="well"><pre>/apps?keyStatus={consumerkey_status}</pre></span></td></tr>
+				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
+				<tr><td><strong>Description:</strong></td><td colspan="2">Lists apps in an organization that have the specified status (approved, pending, or revoked)</td></tr>
+				<tr><td><strong>Content Types:</strong></td><td>
+				
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+				</td></tr>
+		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
 				<tr><td colspan="2"><span class="lead">Get apps by status</span></td><td><a href="/api_methods/134-get-apps-by-status" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apps?status={status}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
@@ -131,13 +117,18 @@ text/xml
 			    <tr><td colspan="3"><span id="well"><pre>/apps</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets a list of app IDs in an organization</td></tr>
+				<tr><td><strong>Content Types:</strong></td><td>
+				
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
 		</tbody>
 		</table>
-
-<!-- Schema:
-
-<div id="well"><pre></pre></div> -->
 
 
 

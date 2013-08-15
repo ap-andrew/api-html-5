@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="PyQ1VRmeYzFAVsVuVKt+9I4Kg9ON1pPkjIMDdwoRWRU=" name="csrf-token" />
+<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -36,19 +36,23 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="row">
+        <div class="row"> 
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-resources-reference">Platform API Reference</a> > <a href="/api_resources/3-api-products">API Products</a> > Get an API product</div>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/3-api-products">API Products</a> > Get an API product</i>
+</div>
+
 <p>
 <h1>Get an API product</h1> 
 </p>
 
+<p><b>API Platform Base Path:</b> <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></p>
+
 <div class="row">
 	<div class="span6" style="width:340px;">
-		<p><b>API Platform Base Path:</b> https://api.enterprise.apigee.com/v1/o/{org_name}</p>
-		<p><b>API Resource Path:</b> /apiproducts/{apiproduct_name}</p>
+
+		<p><b>API Resource Path:</b> <code>/apiproducts/{apiproduct_name}</code></p>
 		<p>
 		Gets an API Product
 		</p>
@@ -76,8 +80,8 @@
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl https://api.enterprise.apigee.com/v1/o/(org_name)/apiproducts/{apiproduct_name} \
--u myname:mypass</pre>
+	<div class="terminal">$ curl https://api.enterprise.apigee.com/v1/o/(org_name)/apiproducts/{apiproduct_name} \
+-u myname:mypass</div>
 
 
 <b>Sample Response:</b> 
@@ -109,80 +113,54 @@
 <div class="response_element" id="response_element_219">
 <td>apiResources </td>
 <td>A list of URIs (including wildcards) that represent the bundle of APIs permitted to consumers of this API Product	</td>
-<!-- <td><a href="/response_elements/219" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_220">
 <td>approvalType </td>
-<td>Determines the state of the consumer key generated for requesters of this API Product. For Auto, key are generated in &quot;Approved' state. For Manual, keys are approved in 'Pending' state.</td>
-<!-- <td><a href="/response_elements/220" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<td>Determines the state of the consumer key generated for requesters of this API Product. For Auto, key are generated in &quot;Approved&#x27; state. For Manual, keys are approved in &#x27;Pending&#x27; state.</td>
 </div></tr><tr>
 <div class="response_element" id="response_element_221">
 <td>attributes </td>
 <td>Any app-specific arbitrary attributes that may be used to define visibility of the API Product or runtime policy enforcement (such as setting for a rate-limiting policy.	</td>
-<!-- <td><a href="/response_elements/221" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_222">
 <td>createdAt </td>
 <td>Unix time when the API Product was created</td>
-<!-- <td><a href="/response_elements/222" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_223">
 <td>createdBy </td>
 <td>Apigee user account name of the individual who submitted the POST request that created this entity	</td>
-<!-- <td><a href="/response_elements/223" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_224">
 <td>description </td>
 <td>Human-readable description of the API Product</td>
-<!-- <td><a href="/response_elements/224" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_225">
 <td>displayName </td>
 <td>Friendly name to display to Developers, for example, in a Developer Onboarding app</td>
-<!-- <td><a href="/response_elements/225" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_226">
 <td>lastModifiedAt </td>
 <td>Unix time when the API Product was most recently updated</td>
-<!-- <td><a href="/response_elements/226" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_227">
 <td>lastModifiedBy </td>
 <td>Apigee user account name of the individual who last modified the API Product</td>
-<!-- <td><a href="/response_elements/227" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_228">
 <td>name </td>
 <td>The name of the API Product</td>
-<!-- <td><a href="/response_elements/228" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_229">
 <td>scopes </td>
 <td>Oauth scopes required in the Access Token(s) used to consume any of the API resources (URIs) bundled in this API Product</td>
-<!-- <td><a href="/response_elements/229" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_713">
 <td>proxies </td>
 <td>Every API product is bound to one or more API proxies by name</td>
-<!-- <td><a href="/response_elements/713" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_714">
 <td>environments </td>
 <td>Every API product is bound to at least one environment</td>
-<!-- <td><a href="/response_elements/714" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/86-get-an-api-product?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 
@@ -195,9 +173,7 @@
    }
 }</pre>
 	
-
 </div>
-
             </div>
         </div><!--/row-->
       </div><!--/content-->

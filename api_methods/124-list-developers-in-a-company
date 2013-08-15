@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="PyQ1VRmeYzFAVsVuVKt+9I4Kg9ON1pPkjIMDdwoRWRU=" name="csrf-token" />
+<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -36,21 +36,25 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="row">
+        <div class="row"> 
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-resources-reference">Platform API Reference</a> > <a href="/api_resources/13-company-developers">Company Developers</a> > List Developers in a Company</div>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/13-company-developers">Company Developers</a> > List developers in a company</i>
+</div>
+
 <p>
-<h1>List Developers in a Company</h1> 
+<h1>List developers in a company</h1> 
 </p>
+
+<p><b>API Platform Base Path:</b> <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></p>
 
 <div class="row">
 	<div class="span6" style="width:340px;">
-		<p><b>API Platform Base Path:</b> https://api.enterprise.apigee.com/v1/o/{org_name}</p>
-		<p><b>API Resource Path:</b> /companies/{company_name}/developers/</p>
+
+		<p><b>API Resource Path:</b> <code>/companies/{company_name}/developers/</code></p>
 		<p>
-		Lists all Developers associated with a Company
+		Lists all developers associated with a company
 		</p>
 	</div>
 
@@ -73,7 +77,7 @@
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/companies/{company_name}/developers</pre>
+	<div class="terminal">$ curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/companies/{company_name}/developers</div>
 
 
 <b>Sample Response:</b> 
@@ -97,14 +101,10 @@
 <div class="response_element" id="response_element_124">
 <td>email </td>
 <td>Email address of the developer</td>
-<!-- <td><a href="/response_elements/124" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/124-list-developers-in-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_125">
 <td>role </td>
 <td>Role of the developer within the company--currently unenforced by Apigee</td>
-<!-- <td><a href="/response_elements/125" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/124-list-developers-in-a-company?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 
@@ -116,9 +116,7 @@
  &quot;contexts&quot; : [ ]
 }</pre>
 	
-
 </div>
-
             </div>
         </div><!--/row-->
       </div><!--/content-->

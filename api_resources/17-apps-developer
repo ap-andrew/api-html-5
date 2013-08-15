@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="PyQ1VRmeYzFAVsVuVKt+9I4Kg9ON1pPkjIMDdwoRWRU=" name="csrf-token" />
+<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -36,7 +36,7 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="row">
+        <div class="row"> 
            <div class="span12">
 
             <div id="category">
@@ -44,16 +44,14 @@ Developer and App Administration
 </div>
 
 <div id="breadcrumb">
-<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-resources">Platform API Reference</a> > Apps: Developer</div>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > Apps: Developer</i>
+</div>
 
 
 <div class="page-header">
   <h1>Apps: Developer</h1>
 </div>
 
-<!-- <div class=btn>
-<a href="/api_methods/new">Add an API Method</a>
-</div> -->
 
 <p><b>API Platform Base Path: </b>https://api.enterprise.apigee.com/v1/o/{org_name}</p>
 
@@ -67,32 +65,6 @@ Apps registered by API providers on the API Platform can belong to individual de
 Apps are registered on the API Platform by API providers in order to obtain credentials to access API products. A developer app always has associated credentials, API products, and other metadata (stored as attributes) that can be used for profile-based access control, Analytics, etc. 
 
 Apps also have status, and may be approved or unapproved. By default, apps are created in the 'approved' state.</td></tr>
-		       <!-- <td><div id="well"><pre>{
-  &quot;accessType&quot; : &quot;read&quot;,
-  &quot;appFamily&quot; : &quot;default&quot;,
-  &quot;attributes&quot; : [ {
-    &quot;name&quot; : &quot;Platform&quot;,
-    &quot;value&quot; : &quot;iOS&quot;
-  } ],
-  &quot;callbackUrl&quot; : &quot;api.company.com&quot;,
-  &quot;createdAt&quot; : 1343835346639,
-  &quot;createdBy&quot; : &quot;andrew@apigee.com&quot;,
-  &quot;credentials&quot; : [ {
-    &quot;apiProducts&quot; : [ {
-      &quot;apiproduct&quot; : &quot;weather_free&quot;,
-      &quot;status&quot; : &quot;approved&quot;
-    } ],
-    &quot;attributes&quot; : [ ],
-    &quot;consumerKey&quot; : &quot;GlouKJyAARkstGJt2rp8HbGmWd7qf0Hv&quot;,
-    &quot;consumerSecret&quot; : &quot;NOGKpokG1ThDPUdU&quot;,
-    &quot;status&quot; : &quot;approved&quot;
-  } ],
-  &quot;developerId&quot; : &quot;apiprovider@@@6ejTv4l6eQpvqesS&quot;,
-  &quot;lastModifiedAt&quot; : 1343835346639,
-  &quot;lastModifiedBy&quot; : &quot;admin@apigee.com&quot;,
-  &quot;name&quot; : &quot;weatherapp&quot;,
-  &quot;status&quot; : &quot;approved&quot;
-}</pre></div></td></tr> -->
 		</table>
 
 
@@ -101,8 +73,14 @@ Apps also have status, and may be approved or unapproved. By default, apps are c
 		<tbody>
 				<tr><td colspan="2"><span class="lead">Approve a developer app</span></td><td><a href="/api_methods/88-approve-a-developer-app" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/apps/{app_name}</pre></span></td></tr>
-				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
-				<tr><td><strong>Description:</strong></td><td colspan="2">Changes the status of a developer from 'unapproved' to 'approved'.</td></tr>
+				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
+				<tr><td><strong>Description:</strong></td><td colspan="2">Changes the status of a developer from &#x27;unapproved&#x27; to &#x27;approved&#x27;.</td></tr>
+				<tr><td><strong>Content Types:</strong></td><td>
+				
+<div class="content_type" id="content_type_3">
+application/x-www-url-form-encoded
+</div>
+				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
 				<tr><td colspan="2"><span class="lead">Create a Developer App</span></td><td><a href="/api_methods/14-create-a-developer-app" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/apps</pre></span></td></tr>
@@ -112,7 +90,7 @@ Apps also have status, and may be approved or unapproved. By default, apps are c
 				<tr><td colspan="2"><span class="lead">Delete a Developer App</span></td><td><a href="/api_methods/31-delete-a-developer-app" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/apps/{app_name}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
-				<tr><td><strong>Description:</strong></td><td colspan="2">Delete a Developer's App</td></tr>
+				<tr><td><strong>Description:</strong></td><td colspan="2">Delete a Developer&#x27;s App</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
 				<tr><td colspan="2"><span class="lead">Get a developer app</span></td><td><a href="/api_methods/87-get-a-developer-app" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/apps/{app_name}</pre></span></td></tr>
@@ -132,7 +110,21 @@ Apps also have status, and may be approved or unapproved. By default, apps are c
 				<tr><td colspan="2"><span class="lead">List Developer Apps (Expanded)</span></td><td><a href="/api_methods/96-list-developer-apps-expanded" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/apps?expand=true</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
-				<tr><td><strong>Description:</strong></td><td colspan="2">Provides an expanded view of a developer's collection of apps</td></tr>
+				<tr><td><strong>Description:</strong></td><td colspan="2">Provides an expanded view of a developer&#x27;s collection of apps</td></tr>
+		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
+				<tr><td colspan="2"><span class="lead">List developers app by key status</span></td><td><a href="/api_methods/225-list-developers-app-by-key-status" class="btn btn-mini">Detail</a></td> 
+			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/apps?&quot;keyStatus={consumerkey_status}</pre></span></td></tr>
+				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
+				<tr><td><strong>Description:</strong></td><td colspan="2">Lists developer apps based on the status of the app&#x27;s consumer key (approved | pending | revoked )</td></tr>
+				<tr><td><strong>Content Types:</strong></td><td>
+				
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
 				<tr><td colspan="2"><span class="lead">Revoke a Developer App</span></td><td><a href="/api_methods/97-revoke-a-developer-app" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/apps/{app_name}?action=revoke</pre></span></td></tr>
@@ -152,10 +144,6 @@ application/x-www-url-form-encoded
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
 		</tbody>
 		</table>
-
-<!-- Schema:
-
-<div id="well"><pre></pre></div> -->
 
 
 

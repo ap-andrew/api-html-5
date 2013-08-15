@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="PyQ1VRmeYzFAVsVuVKt+9I4Kg9ON1pPkjIMDdwoRWRU=" name="csrf-token" />
+<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -36,19 +36,23 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="row">
+        <div class="row"> 
            <div class="span12">
 
             <div id="breadcrumb">
-<a href="/enterprise/enterprise_home">Home</a> > <a href="/api-resources-reference">Platform API Reference</a> > <a href="/api_resources/34-analytics">Analytics</a> > Get an analytics report for a dimension</div>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/34-stats">Stats</a> > Get an analytics report for a dimension</i>
+</div>
+
 <p>
 <h1>Get an analytics report for a dimension</h1> 
 </p>
 
+<p><b>API Platform Base Path:</b> <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></p>
+
 <div class="row">
 	<div class="span6" style="width:340px;">
-		<p><b>API Platform Base Path:</b> https://api.enterprise.apigee.com/v1/o/{org_name}</p>
-		<p><b>API Resource Path:</b> /environments/{environment_name}/stats/{dimension_name}</p>
+
+		<p><b>API Resource Path:</b> <code>/environments/{env_name}/stats/{dimension_name}</code></p>
 		<p>
 		Use the GET method to retrieve metrics for a dimension
 		</p>
@@ -86,7 +90,8 @@ application/json
 
 <p><code>dimension_name</code>: A URI parameter that defines the entity for which the API Platform metrics should be retrieved. Apigee defines a set of dimensions that can be used in reports. Supported dimensions include:</p>
 
-<ul><li><code>/stats/apis</code>: APIs in an organization on the API Platform</li>
+<ul><li><code>/stats/apis</code>: API proxies in an organization on the API Platform</li>
+<li><code>/stats/uris</code>: API patterns in an organization on the API Platform</li>
 <li><code>/stats/apiproducts</code>: API products defined in an organization</li>
 <li><code>/stats/client_ip</code>: IP addresses of apps making the request to APIs on the API Platform</li>
 <li><code>/stats/developer_email</code>: The email address of a developer registered in an organization on the API Platform </li>
@@ -98,12 +103,11 @@ For a complete list of dimensions, metrics, and sample requests, see the <a href
 Custom dimensions can be added by defining custom variables as described in the <a href="/docs/enterprise/content/analyzing-api-message-content-using-custom-analytics">Custom Analytics Developer Guide Topic</a>.
 
 
-
 	</p>
 
 	<b>Sample Request:</b>
-	<pre>$ curl https://api.enterprise.apigee.com/v1/o/{org_name}/environments/{env_name}/stats/{dimension_name}?"select=message_count&timeRange=1/1/2013%2000:00~1/2/2013%2000:00&timeUnit=hour&sortby=message_count&sort=DESC&filter=(apis%20in%20'weather','news')" \
--u myname:mypass</pre>
+	<div class="terminal">$ curl https://api.enterprise.apigee.com/v1/o/{org_name}/environments/{env_name}/stats/{dimension_name}?"select=message_count&timeRange=1/1/2013%2000:00~1/2/2013%2000:00&timeUnit=hour&sortby=message_count&sort=DESC&filter=(apis%20in%20'weather','news')" \
+-u myname:mypass</div>
 
 
 <b>Query Parameters:</b>
@@ -171,7 +175,7 @@ Custom dimensions can be added by defining custom variables as described in the 
 
 <tr>
 <td>sortby</td>
-<td>When two or more select values are specified, 'sortby' can be used to specify the select used for sorting results: message_count, error_count, total_response_time, max_response_time, min_response_time, data_exchange_size, end_point_response_time</td>
+<td>When two or more select values are specified, &#x27;sortby&#x27; can be used to specify the select used for sorting results: message_count, error_count, total_response_time, max_response_time, min_response_time, data_exchange_size, end_point_response_time</td>
 <td>N/A</td>
 <td>No</td>
 </tr>
@@ -303,39 +307,27 @@ Custom dimensions can be added by defining custom variables as described in the 
 <div class="response_element" id="response_element_1">
 <td>metadata </td>
 <td>Metadata associated with the report</td>
-<!-- <td><a href="/response_elements/1" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/71-get-an-analytics-report-for-a-dimension?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_2">
 <td>environments </td>
 <td>Environments in the organization where the statistics are collected (supports wildcard * for cross environment statistics collection)</td>
-<!-- <td><a href="/response_elements/2" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/71-get-an-analytics-report-for-a-dimension?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_3">
 <td>metrics </td>
 <td>The values returned for the specified dimension</td>
-<!-- <td><a href="/response_elements/3" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/71-get-an-analytics-report-for-a-dimension?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_7">
 <td>dimensions </td>
 <td>The dimension defined for measurement: in this example api_name.</td>
-<!-- <td><a href="/response_elements/7" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/71-get-an-analytics-report-for-a-dimension?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_10">
 <td>metrics </td>
 <td>Metrics for the report</td>
-<!-- <td><a href="/response_elements/10" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/71-get-an-analytics-report-for-a-dimension?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 
 	
-
 </div>
-
             </div>
         </div><!--/row-->
       </div><!--/content-->
