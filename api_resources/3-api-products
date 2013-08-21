@@ -69,7 +69,7 @@ API products provide the basis for access control in Apigee. As part of the app 
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Create an API product</span></td><td><a href="/api_methods/16-create-an-api-product" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Create an API product</span></td><td><a href="/docs/api/api_methods/16-create-an-api-product" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apiproducts</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Create an API product to enable developers to access a list of API resources (URIs) via named proxies and in named environments</td></tr>
@@ -83,27 +83,27 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Delete an API product</span></td><td><a href="/api_methods/13-delete-an-api-product" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete an API product</span></td><td><a href="/docs/api/api_methods/13-delete-an-api-product" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apiproducts/{apiproduct_name}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Deletes an API Product</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get an API product</span></td><td><a href="/api_methods/86-get-an-api-product" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get an API product</span></td><td><a href="/docs/api/api_methods/86-get-an-api-product" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apiproducts/{apiproduct_name}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets an API Product</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get count of keys, apps, developers, or companies for an API product</span></td><td><a href="/api_methods/10-get-count-of-keys-apps-developers-or-companies-for-an-api-product" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get count of keys, apps, developers, or companies for an API product</span></td><td><a href="/docs/api/api_methods/10-get-count-of-keys-apps-developers-or-companies-for-an-api-product" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apiproducts/{apiproductName}?query=count&amp;entity={entity_name}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets a count of one of the entities (either keys/apps/developers/companies ) associated with a given API Product</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get list of keys, apps, developers, or companies for an API product</span></td><td><a href="/api_methods/11-get-list-of-keys-apps-developers-or-companies-for-an-api-product" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get list of keys, apps, developers, or companies for an API product</span></td><td><a href="/docs/api/api_methods/11-get-list-of-keys-apps-developers-or-companies-for-an-api-product" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apiproducts/{apiproduct_name}?query=list&amp;entity={entity_name}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets the list of keys/apps/developers for an API product of an organization </td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">List API Products</span></td><td><a href="/api_methods/4-list-api-products" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List API Products</span></td><td><a href="/docs/api/api_methods/4-list-api-products" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apiproducts</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Lists all API Products by name for an organization</td></tr>
@@ -117,7 +117,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Search API Products</span></td><td><a href="/api_methods/202-search-api-products" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Search API Products</span></td><td><a href="/docs/api/api_methods/202-search-api-products" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apiproducts</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Returns a list of API products filtered by attribute names and values</td></tr>
@@ -131,7 +131,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Update API Product</span></td><td><a href="/api_methods/12-update-api-product" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Update API Product</span></td><td><a href="/docs/api/api_methods/12-update-api-product" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apiproducts/{apiproduct_name}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-PUT">PUT</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">This method updates an existing APi Product</td></tr>

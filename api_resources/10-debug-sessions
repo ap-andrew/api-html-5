@@ -65,7 +65,7 @@ API Configuration and Management
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Create Debug Session</span></td><td><a href="/api_methods/41-create-debug-session" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Create Debug Session</span></td><td><a href="/docs/api/api_methods/41-create-debug-session" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/environments/{env_name} /apis/{api_name}/revisions/{revision_number}/debugsessions</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Creates a debug session on Apigee</td></tr>
@@ -76,12 +76,12 @@ application/x-www-url-form-encoded
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Delete a debug session</span></td><td><a href="/api_methods/43-delete-a-debug-session" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete a debug session</span></td><td><a href="/docs/api/api_methods/43-delete-a-debug-session" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/environments/{environmentName}/apis/{apiName}/revisions/{revisionVersion}/debugsessions/{sessionID}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Deletes a debug session previously generated in an environment</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get Debug session data</span></td><td><a href="/api_methods/42-get-debug-session-data" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get Debug session data</span></td><td><a href="/docs/api/api_methods/42-get-debug-session-data" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/environments/{env_name}/apis/{api_name}/revisions/{revision_number/debugsessions/{session_name}/data</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Retrieves the data for a debug session that was created by the Create debug session APi call or via the Trace tool in the Management UI.</td></tr>
@@ -95,7 +95,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">List Debug Sessions</span></td><td><a href="/api_methods/7-list-debug-sessions" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List Debug Sessions</span></td><td><a href="/docs/api/api_methods/7-list-debug-sessions" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/environment/{environmentName}/debugsessions</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Get a list of debug sessions by ID within an environment</td></tr>
