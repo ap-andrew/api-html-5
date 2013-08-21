@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
+<meta content="pCYaHYqKxhn4wlCeRSajwTXatEZdirAm9TPRoJIs5fE=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,11 +40,11 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/36-deployments">Deployments</a> > Get Deployments for an Environment</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/36-deployments">Deployments</a> > Get deployments for an environment</i>
 </div>
 
 <p>
-<h1>Get Deployments for an Environment</h1> 
+<h1>Get deployments for an environment</h1> 
 </p>
 
 <p><b>API Platform Base Path:</b> <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></p>
@@ -73,7 +73,7 @@
 
 <div class="span18">
 	<p>
-	Gets a list of all API deployments in a given environment, along with deployment status and other metadata
+	Gets a list of all API proxies that are deployed in the environment specified, along with deployment status and other metadata about the deployment.
 	</p>
 
 	<b>Sample Request:</b>

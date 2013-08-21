@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
+<meta content="pCYaHYqKxhn4wlCeRSajwTXatEZdirAm9TPRoJIs5fE=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -68,7 +68,7 @@
 		</p>
 
 		<p>
-		<b>Content Types:</b>
+		<b>Media types:</b>
 		
 <div class="content_type" id="content_type_1">
 application/json
@@ -83,12 +83,15 @@ text/xml
 
 <div class="span18">
 	<p>
-	Creates a KeyValueMapap, a simple structure for persistently storing name/value pairs (entry) for use at runtime, such as for profile-based access control, for supporting certain non-standard protocols, application specific behavior, and so on.
-<p>
-Note: KeyValueMaps can be scoped to the organization, environment, and API level 
-<p>
-To scope KeyValueMaps to these entities, use URI parameters as demonstrated in the sample requests.
+	<p>Creates a KeyValueMap.</p>
 
+<p>A key/value map is a simple structure for persistently storing name/value pairs as entries in a named map. The entries in a key/value map can be retrieved at runtime by policies or code running on the API Platform.</p>
+
+<p>Key/value maps can be used to support profile-based access control, for supporting certain non-standard protocols, application specific behavior, and so on.</p>
+<p>
+Key/value maps  can be scoped to the organization, environment, and API proxy level.</p>
+<p>
+To scope Key/value maps to these entities, use URI parameters as demonstrated in the sample requests.</p>
 	</p>
 
 	<b>Sample Request:</b>

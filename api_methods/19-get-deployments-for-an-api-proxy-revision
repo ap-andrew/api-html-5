@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="tOjTyRxM5A6TZDHBjDRm/MAzuMkCn2ahYnYUc0xdfpk=" name="csrf-token" />
+<meta content="pCYaHYqKxhn4wlCeRSajwTXatEZdirAm9TPRoJIs5fE=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,11 +40,11 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/36-deployments">Deployments</a> > Get API deployments</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/36-deployments">Deployments</a> > Get deployments for an API proxy revision </i>
 </div>
 
 <p>
-<h1>Get API deployments</h1> 
+<h1>Get deployments for an API proxy revision </h1> 
 </p>
 
 <p><b>API Platform Base Path:</b> <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></p>
@@ -52,9 +52,9 @@
 <div class="row">
 	<div class="span6" style="width:340px;">
 
-		<p><b>API Resource Path:</b> <code>/apis/{api_name}/deployments</code></p>
+		<p><b>API Resource Path:</b> <code>/apis/{api_name}/revisions/{revision_number}/deployments</code></p>
 		<p>
-		Returns detail on deployments of the API specified
+		Get Deployments for an API Revision
 		</p>
 	</div>
 
@@ -73,45 +73,43 @@
 
 <div class="span18">
 	<p>
-	Returns detail on deployments of the API specified. Returns result across environments (that is, returns deployments of the API in test and in prod environments (as well others if they exist)
+	Returns deployment details for a specific revision number of an API.
 	</p>
 
 	<b>Sample Request:</b>
-	<div class="terminal">$ curl https://api.enterprise.apigee.com/v1/o/(org_name)/apis/{api_name}/deployments \
+	<div class="terminal">$ curl https://api.enterprise.apigee.com/v1/o/(org_name)/apis/{api_name}/revisions/{revision_number}/deployments \
 -u myname:mypass</div>
 
 
 <b>Sample Response:</b> 
 	<pre>{
+  "aPIProxy" : "weatherTest",
   "environment" : [ {
+    "configuration" : {
+      "basePath" : "/",
+      "steps" : [ ]
+    },
     "name" : "test",
-    "revision" : [ {
-      "configuration" : {
-        "basePath" : "/",
-        "steps" : [ ]
-      },
-      "name" : "1",
-      "server" : [ {
-        "status" : "deployed",
-        "type" : [ "message-processor" ],
-        "uUID" : "90096dd1-1019-406b-9f42-fbb80cd01200"
-      }, {
-        "status" : "deployed",
-        "type" : [ "message-processor" ],
-        "uUID" : "7d6e2eb1-581a-4db0-8045-20d9c3306549"
-      }, {
-        "status" : "deployed",
-        "type" : [ "router" ],
-        "uUID" : "1619e2d7-c822-45e0-9f97-63882fb6a805"
-      }, {
-        "status" : "deployed",
-        "type" : [ "router" ],
-        "uUID" : "8a5f3d5f-46f8-4e99-b4cc-955875c8a8c8"
-      } ],
-      "state" : "deployed"
-    } ]
+    "server" : [ {
+      "status" : "deployed",
+      "type" : [ "message-processor" ],
+      "uUID" : "90096dd1-1019-406b-9f42-fbb80cd01200"
+    }, {
+      "status" : "deployed",
+      "type" : [ "message-processor" ],
+      "uUID" : "7d6e2eb1-581a-4db0-8045-20d9c3306549"
+    }, {
+      "status" : "deployed",
+      "type" : [ "router" ],
+      "uUID" : "1619e2d7-c822-45e0-9f97-63882fb6a805"
+    }, {
+      "status" : "deployed",
+      "type" : [ "router" ],
+      "uUID" : "8a5f3d5f-46f8-4e99-b4cc-955875c8a8c8"
+    } ],
+    "state" : "deployed"
   } ],
-  "name" : "weatherTest",
+  "name" : "1",
   "organization" : "myorg"
 }</pre>
 
@@ -124,50 +122,47 @@
 			</tr>
 			</thead>
 			<tr>
-<div class="response_element" id="response_element_60">
+<div class="response_element" id="response_element_313">
+<td>aPIProxy </td>
+<td>APi proxy settings</td>
+</div></tr><tr>
+<div class="response_element" id="response_element_314">
 <td>environment </td>
-<td>Settings for the environment</td>
+<td>Environment settings</td>
 </div></tr><tr>
-<div class="response_element" id="response_element_61">
-<td>name </td>
-<td>Name of the environment</td>
+<div class="response_element" id="response_element_315">
+<td>configuration </td>
+<td>Confirguation settings for the revision</td>
 </div></tr><tr>
-<div class="response_element" id="response_element_62">
-<td>revision </td>
-<td>Configuration settings for the API revision</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_63">
+<div class="response_element" id="response_element_316">
 <td>basePath </td>
 <td>Basepath for the API in this environment</td>
 </div></tr><tr>
-<div class="response_element" id="response_element_64">
+<div class="response_element" id="response_element_317">
 <td>steps </td>
-<td>Policies attached to the API</td>
+<td>Policies attached to the API revision</td>
 </div></tr><tr>
-<div class="response_element" id="response_element_65">
-<td>server </td>
-<td>Servers deployed in support of this API (usedinternally by Apigee)</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_66">
-<td>state </td>
-<td>The deployment status of the API (deployed or undeployed)</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_67">
+<div class="response_element" id="response_element_318">
 <td>name </td>
-<td>Name of the API</td>
+<td>Name of the environment where the revision is deployed</td>
 </div></tr><tr>
-<div class="response_element" id="response_element_68">
+<div class="response_element" id="response_element_319">
+<td>name </td>
+<td>Name of the revision (the revision numer deployed)</td>
+</div></tr><tr>
+<div class="response_element" id="response_element_320">
 <td>organization </td>
-<td>The organization in which the API is deployed</td>
+<td>The organization where the API is deployed</td>
 </div></tr>
 		</table>
 
 	<b>Errors</b> 
 		<pre>Failure 4xx with proper error message
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
 &lt;Error&gt;
-	&lt;Code&gt;messaging.config.beans.ApplicationDoesNotExist&lt;/Code&gt;
-	&lt;Message&gt;APIProxy named myapp1 does not exist&lt;/Message&gt;
-	&lt;Contexts/&gt;
+     &lt;Code&gt;messaging.config.beans.ApplicationRevisionDoesNotExist&lt;/Code&gt;
+     &lt;Message&gt;APIProxy revision 2 does not exist&lt;/Message&gt;
+     &lt;Contexts/&gt;
 &lt;/Error&gt;</pre>
 	
 </div>

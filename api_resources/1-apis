@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
+<meta content="pCYaHYqKxhn4wlCeRSajwTXatEZdirAm9TPRoJIs5fE=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -57,8 +57,12 @@ API Configuration and Management
 
 		<table class="table">
 				<tr><td class="lead">API Resource Path: /apis</td></tr>
-				<tr><td>API facades that act as managed proxies for backend services</td></tr>
-		  		<tr><td>An API to create and manage API facades, which act as a proxies for existing services.  In Apigee, an API facade is defined by a base URL, a backend service URL, and  a number of API resources (URIs).</td></tr>
+				<tr><td>API proxies act as managed facades for one or more backend services or APIs.</td></tr>
+		  		<tr><td><p>This API provides a direct call to create an API proxy in an organization on the API Platform.</p>
+
+<p>For tools and sample API proxies, see:</p>
+
+<a href="http://apigee.com/docs/enterprise/content/api-platform-samples">API Platform Samples</a>.</td></tr>
 		</table>
 
 
@@ -69,7 +73,7 @@ API Configuration and Management
 			    <tr><td colspan="3"><span id="well"><pre>/apis</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Creates an API facade (and an API proxy configuration) on Apigee</td></tr>
-				<tr><td><strong>Content Types:</strong></td><td>
+				<tr><td><strong>Media types:</strong></td><td>
 				
 <div class="content_type" id="content_type_1">
 application/json
@@ -93,7 +97,7 @@ text/xml
 			    <tr><td colspan="3"><span id="well"><pre>/apis/{api_name}/revisions/{revision_number}/deployments?action=deploy&amp;env={environment_name}&amp;basepath={/basepath}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Pushes an API to an environment (typically &#x27;test&#x27; or &#x27;prod&#x27;) for execution</td></tr>
-				<tr><td><strong>Content Types:</strong></td><td>
+				<tr><td><strong>Media types:</strong></td><td>
 				
 <div class="content_type" id="content_type_3">
 application/x-www-url-form-encoded
@@ -129,7 +133,7 @@ application/x-www-url-form-encoded
 			    <tr><td colspan="3"><span id="well"><pre>/apis/{api_name}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-PUT">PUT</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Use the POST method to update a specific API proxy in an organization</td></tr>
-				<tr><td><strong>Content Types:</strong></td><td>
+				<tr><td><strong>Media types:</strong></td><td>
 				
 <div class="content_type" id="content_type_1">
 application/json

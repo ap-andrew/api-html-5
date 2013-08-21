@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
+<meta content="pCYaHYqKxhn4wlCeRSajwTXatEZdirAm9TPRoJIs5fE=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -103,11 +103,11 @@ API Analytics
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Get an analytics report for a dimension</span></td><td><a href="/api_methods/71-get-an-analytics-report-for-a-dimension" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Retrieve and filter metrics for a dimension from Apigee Analytics services</span></td><td><a href="/api_methods/71-retrieve-and-filter-metrics-for-a-dimension-from-apigee-analytics-services" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/environments/{env_name}/stats/{dimension_name}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Use the GET method to retrieve metrics for a dimension</td></tr>
-				<tr><td><strong>Content Types:</strong></td><td>
+				<tr><td><strong>Media types:</strong></td><td>
 				
 <div class="content_type" id="content_type_1">
 application/json

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
+<meta content="pCYaHYqKxhn4wlCeRSajwTXatEZdirAm9TPRoJIs5fE=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,11 +40,11 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/10-debug-sessions">Debug Sessions</a> > Get Debug Session Data</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/10-debug-sessions">Debug Sessions</a> > Get Debug session data</i>
 </div>
 
 <p>
-<h1>Get Debug Session Data</h1> 
+<h1>Get Debug session data</h1> 
 </p>
 
 <p><b>API Platform Base Path:</b> <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></p>
@@ -52,9 +52,9 @@
 <div class="row">
 	<div class="span6" style="width:340px;">
 
-		<p><b>API Resource Path:</b> <code>/environments/{env_name}/apis/{api_name}/revisions/{revision_number/debugsessions/{ession_name}/data</code></p>
+		<p><b>API Resource Path:</b> <code>/environments/{env_name}/apis/{api_name}/revisions/{revision_number/debugsessions/{session_name}/data</code></p>
 		<p>
-		
+		Retrieves the data for a debug session that was created by the Create debug session APi call or via the Trace tool in the Management UI.
 		</p>
 	</div>
 
@@ -67,19 +67,1444 @@
 		Basic Auth
 		</p>
 
+		<p>
+		<b>Media types:</b>
+		
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+		</p>
 
 	</div>
 </div>
 
 <div class="span18">
 	<p>
-	
+	This call returns a list of items. Each item is the ID of the debug data for an API request.
 	</p>
 
+	<b>Sample Request:</b>
+	<div class="terminal">First get SessionIDs
+
+$ curl -X GET -H "Accept:application/json" \
+https://api.enterprise.apigee.com/v1/organizations/{org_name}/environments/{env_name}/apis/{api_name}/revisions/{revision_number/debugsessions/{session_name}/data \
+-u myname:mypass
+
+Then get session data 
+
+$ curl -X GET -H "Accept:application/json" \
+https://api.enterprise.apigee.com/v1/organizations/{org_name}/environments/{env_name}/apis/{api_name}/revisions/{revision_number/debugsessions/{session_name}/data/{sessionID} \
+-u myname:mypass</div>
 
 
 <b>Sample Response:</b> 
-	<pre></pre>
+	<pre>SessionIDs:
+
+[ "8a4549fe-ceff-44cf-967f-ab4a500a0479__17250", "8a4549fe-ceff-44cf-967f-ab4a500a0479__17251" ]
+
+SessionData:
+
+{
+  "completed" : true,
+  "point" : [ {
+    "id" : "Paused",
+    "results" : [ ]
+  }, {
+    "id" : "Resumed",
+    "results" : [ ]
+  }, {
+    "id" : "StateChange",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ {
+          "name" : "To",
+          "value" : "REQ_HEADERS_PARSED"
+        }, {
+          "name" : "From",
+          "value" : "REQ_START"
+        } ]
+      },
+      "timestamp" : "20-08-13 20:23:47:207"
+    }, {
+      "ActionResult" : "RequestMessage",
+      "content" : "",
+      "headers" : [ {
+        "name" : "Accept",
+        "value" : "*/*"
+      }, {
+        "name" : "Host",
+        "value" : "apifactory-prod.apigee.net"
+      }, {
+        "name" : "User-Agent",
+        "value" : "curl/7.24.0 (x86_64-apple-darwin12.0) libcurl/7.24.0 OpenSSL/0.9.8x zlib/1.2.5"
+      }, {
+        "name" : "X-Apigee.application",
+        "value" : "weatherapi"
+      }, {
+        "name" : "X-Apigee.environment",
+        "value" : "prod"
+      }, {
+        "name" : "X-Apigee.organization",
+        "value" : "apifactory"
+      }, {
+        "name" : "X-Apigee.proxy",
+        "value" : "default"
+      }, {
+        "name" : "X-Apigee.revision",
+        "value" : "64"
+      }, {
+        "name" : "X-Apigee.vhost",
+        "value" : "default"
+      } ],
+      "uRI" : "/weather/forecastrss?w=12797282",
+      "verb" : "GET"
+    } ]
+  }, {
+    "id" : "FlowInfo",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ {
+          "name" : "environment.name",
+          "value" : "prod"
+        }, {
+          "name" : "environment.qualifiedname",
+          "value" : "apifactory__prod"
+        }, {
+          "name" : "environment.orgname",
+          "value" : "apifactory"
+        } ]
+      },
+      "timestamp" : "20-08-13 20:23:47:208"
+    } ]
+  }, {
+    "id" : "FlowInfo",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ {
+          "name" : "organization.name",
+          "value" : "apifactory"
+        } ]
+      },
+      "timestamp" : "20-08-13 20:23:47:208"
+    } ]
+  }, {
+    "id" : "FlowInfo",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ {
+          "name" : "virtualhost.port",
+          "value" : "80"
+        }, {
+          "name" : "virtualhost.name",
+          "value" : "default"
+        }, {
+          "name" : "virtualhost.ssl.enabled",
+          "value" : "false"
+        }, {
+          "name" : "virtualhost.aliases",
+          "value" : "{apifactory-prod.apigee.net}"
+        }, {
+          "name" : "virtualhost.ip",
+          "value" : "192.168.4.27"
+        } ]
+      },
+      "timestamp" : "20-08-13 20:23:47:208"
+    } ]
+  }, {
+    "id" : "FlowInfo",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ {
+          "name" : "apiproxy.qualifiedname",
+          "value" : "weatherapi__64"
+        }, {
+          "name" : "apiproxy.basepath",
+          "value" : "/"
+        }, {
+          "name" : "apiproxy.revision",
+          "value" : "64"
+        }, {
+          "name" : "apiproxy.name",
+          "value" : "weatherapi"
+        } ]
+      },
+      "timestamp" : "20-08-13 20:23:47:208"
+    } ]
+  }, {
+    "id" : "FlowInfo",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ {
+          "name" : "proxy.basepath",
+          "value" : "/weather"
+        }, {
+          "name" : "proxy.pathsuffix",
+          "value" : "/forecastrss"
+        }, {
+          "name" : "proxy.url",
+          "value" : "http://192.168.4.27/weather/forecastrss?w=12797282"
+        }, {
+          "name" : "proxy.name",
+          "value" : "default"
+        }, {
+          "name" : "proxy.client.ip",
+          "value" : "76.73.247.59"
+        } ]
+      },
+      "timestamp" : "20-08-13 20:23:47:210"
+    } ]
+  }, {
+    "id" : "StateChange",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ {
+          "name" : "To",
+          "value" : "PROXY_REQ_FLOW"
+        }, {
+          "name" : "From",
+          "value" : "REQ_HEADERS_PARSED"
+        } ]
+      },
+      "timestamp" : "20-08-13 20:23:47:210"
+    }, {
+      "ActionResult" : "RequestMessage",
+      "content" : "",
+      "headers" : [ {
+        "name" : "Accept",
+        "value" : "*/*"
+      }, {
+        "name" : "Host",
+        "value" : "apifactory-prod.apigee.net"
+      }, {
+        "name" : "User-Agent",
+        "value" : "curl/7.24.0 (x86_64-apple-darwin12.0) libcurl/7.24.0 OpenSSL/0.9.8x zlib/1.2.5"
+      } ],
+      "uRI" : "/weather/forecastrss?w=12797282",
+      "verb" : "GET"
+    } ]
+  }, {
+    "id" : "Condition",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ {
+          "name" : "ExpressionResult",
+          "value" : "true"
+        }, {
+          "name" : "Expression",
+          "value" : "(\"default\" equals proxy.name)"
+        }, {
+          "name" : "Tree",
+          "value" : "PROXY_default"
+        } ]
+      },
+      "timestamp" : "20-08-13 20:23:47:210"
+    }, {
+      "ActionResult" : "VariableAccess",
+      "accessList" : [ {
+        "Get" : {
+          "name" : "proxy.name",
+          "value" : "default"
+        }
+      } ]
+    } ]
+  }, {
+    "id" : "FlowInfo",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ {
+          "name" : "proxy.flow.name",
+          "value" : "PreFlow"
+        } ]
+      },
+      "timestamp" : "20-08-13 20:23:47:210"
+    } ]
+  }, {
+    "id" : "FlowInfo",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ {
+          "name" : "current.flow.name",
+          "value" : "PreFlow"
+        } ]
+      },
+      "timestamp" : "20-08-13 20:23:47:211"
+    } ]
+  }, {
+    "id" : "FlowInfo",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ ]
+      },
+      "timestamp" : "20-08-13 20:23:47:211"
+    } ]
+  }, {
+    "id" : "FlowInfo",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ ]
+      },
+      "timestamp" : "20-08-13 20:23:47:211"
+    } ]
+  }, {
+    "id" : "FlowInfo",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ {
+          "name" : "route.name",
+          "value" : "default"
+        }, {
+          "name" : "route.target",
+          "value" : "default"
+        } ]
+      },
+      "timestamp" : "20-08-13 20:23:47:211"
+    } ]
+  }, {
+    "id" : "FlowInfo",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ {
+          "name" : "target.url",
+          "value" : "http://weather.yahooapis.com"
+        }, {
+          "name" : "target.basepath.with.query",
+          "value" : ""
+        }, {
+          "name" : "target.copy.queryparams",
+          "value" : "true"
+        }, {
+          "name" : "target.copy.pathsuffix",
+          "value" : "true"
+        }, {
+          "name" : "target.basepath",
+          "value" : ""
+        }, {
+          "name" : "target.name",
+          "value" : "default"
+        } ]
+      },
+      "timestamp" : "20-08-13 20:23:47:211"
+    } ]
+  }, {
+    "id" : "FlowInfo",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ {
+          "name" : "targetURL",
+          "value" : "http://weather.yahooapis.com"
+        }, {
+          "name" : "targetBasePath",
+          "value" : ""
+        }, {
+          "name" : "targetRequestSender",
+          "value" : "InlineTargetRequestSender"
+        }, {
+          "name" : "targetEndpoint",
+          "value" : "default{Organization=apifactoryEnvironment=prod,Application=weatherapi__64}"
+        } ]
+      },
+      "timestamp" : "20-08-13 20:23:47:211"
+    } ]
+  }, {
+    "id" : "StateChange",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ {
+          "name" : "To",
+          "value" : "TARGET_REQ_FLOW"
+        }, {
+          "name" : "From",
+          "value" : "PROXY_REQ_FLOW"
+        } ]
+      },
+      "timestamp" : "20-08-13 20:23:47:212"
+    }, {
+      "ActionResult" : "RequestMessage",
+      "content" : "",
+      "headers" : [ {
+        "name" : "Accept",
+        "value" : "*/*"
+      }, {
+        "name" : "Host",
+        "value" : "apifactory-prod.apigee.net"
+      }, {
+        "name" : "User-Agent",
+        "value" : "curl/7.24.0 (x86_64-apple-darwin12.0) libcurl/7.24.0 OpenSSL/0.9.8x zlib/1.2.5"
+      } ],
+      "uRI" : "/weather/forecastrss?w=12797282",
+      "verb" : "GET"
+    } ]
+  }, {
+    "id" : "Condition",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ {
+          "name" : "ExpressionResult",
+          "value" : "true"
+        }, {
+          "name" : "Expression",
+          "value" : "(\"default\" equals target.name)"
+        }, {
+          "name" : "Tree",
+          "value" : "TARGET_default"
+        } ]
+      },
+      "timestamp" : "20-08-13 20:23:47:212"
+    }, {
+      "ActionResult" : "VariableAccess",
+      "accessList" : [ {
+        "Get" : {
+          "name" : "target.name",
+          "value" : "default"
+        }
+      } ]
+    } ]
+  }, {
+    "id" : "FlowInfo",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ {
+          "name" : "target.flow.name",
+          "value" : "PreFlow"
+        } ]
+      },
+      "timestamp" : "20-08-13 20:23:47:212"
+    } ]
+  }, {
+    "id" : "FlowInfo",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ {
+          "name" : "current.flow.name",
+          "value" : "PreFlow"
+        } ]
+      },
+      "timestamp" : "20-08-13 20:23:47:212"
+    } ]
+  }, {
+    "id" : "FlowInfo",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ {
+          "name" : "target.flow.name",
+          "value" : "PostFlow"
+        } ]
+      },
+      "timestamp" : "20-08-13 20:23:47:212"
+    } ]
+  }, {
+    "id" : "FlowInfo",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ {
+          "name" : "current.flow.name",
+          "value" : "PostFlow"
+        } ]
+      },
+      "timestamp" : "20-08-13 20:23:47:212"
+    } ]
+  }, {
+    "id" : "Paused",
+    "results" : [ ]
+  }, {
+    "id" : "Resumed",
+    "results" : [ ]
+  }, {
+    "id" : "StateChange",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ {
+          "name" : "To",
+          "value" : "REQ_SENT"
+        }, {
+          "name" : "From",
+          "value" : "TARGET_REQ_FLOW"
+        } ]
+      },
+      "timestamp" : "20-08-13 20:23:47:250"
+    }, {
+      "ActionResult" : "ResponseMessage",
+      "content" : "",
+      "headers" : [ ],
+      "reasonPhrase" : "OK",
+      "statusCode" : "200"
+    } ]
+  }, {
+    "id" : "Paused",
+    "results" : [ ]
+  }, {
+    "id" : "Resumed",
+    "results" : [ ]
+  }, {
+    "id" : "StateChange",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ {
+          "name" : "To",
+          "value" : "RESP_START"
+        }, {
+          "name" : "From",
+          "value" : "REQ_SENT"
+        } ]
+      },
+      "timestamp" : "20-08-13 20:23:47:279"
+    }, {
+      "ActionResult" : "ResponseMessage",
+      "content" : "",
+      "headers" : [ {
+        "name" : "Age",
+        "value" : "0"
+      }, {
+        "name" : "Cache-Control",
+        "value" : "max-age=200"
+      }, {
+        "name" : "Connection",
+        "value" : "keep-alive"
+      }, {
+        "name" : "Content-Type",
+        "value" : "text/xml;charset=UTF-8"
+      }, {
+        "name" : "Date",
+        "value" : "Tue, 20 Aug 2013 20:23:47 GMT"
+      }, {
+        "name" : "P3P",
+        "value" : "policyref=\"http://info.yahoo.com/w3c/p3p.xml\""
+      }, {
+        "name" : "Server",
+        "value" : "YTS/1.20.13"
+      }, {
+        "name" : "Transfer-Encoding",
+        "value" : "chunked"
+      }, {
+        "name" : "Vary",
+        "value" : "Accept-Encoding"
+      } ],
+      "reasonPhrase" : "OK",
+      "statusCode" : "200"
+    } ]
+  }, {
+    "id" : "Condition",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ {
+          "name" : "ExpressionResult",
+          "value" : "true"
+        }, {
+          "name" : "Expression",
+          "value" : "(\"default\" equals target.name)"
+        }, {
+          "name" : "Tree",
+          "value" : "TARGET_default"
+        } ]
+      },
+      "timestamp" : "20-08-13 20:23:47:279"
+    }, {
+      "ActionResult" : "VariableAccess",
+      "accessList" : [ {
+        "Get" : {
+          "name" : "target.name",
+          "value" : "default"
+        }
+      } ]
+    } ]
+  }, {
+    "id" : "Paused",
+    "results" : [ ]
+  }, {
+    "id" : "Resumed",
+    "results" : [ ]
+  }, {
+    "id" : "StateChange",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ {
+          "name" : "To",
+          "value" : "TARGET_RESP_FLOW"
+        }, {
+          "name" : "From",
+          "value" : "RESP_START"
+        } ]
+      },
+      "timestamp" : "20-08-13 20:23:47:304"
+    }, {
+      "ActionResult" : "ResponseMessage",
+      "content" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\" ?>\n\t\t<rss version=\"2.0\" xmlns:yweather=\"http://xml.weather.yahoo.com/ns/rss/1.0\" xmlns:geo=\"http://www.w3.org/2003/01/geo/wgs84_pos#\">\n\t\t\t<channel>\n\t\t\n<title>Yahoo! Weather - Palo Alto, CA</title>\n<link>http://us.rd.yahoo.com/dailynews/rss/weather/Palo_Alto__CA/*http://weather.yahoo.com/forecast/USCA1093_f.html</link>\n<description>Yahoo! Weather for Palo Alto, CA</description>\n<language>en-us</language>\n<lastBuildDate>Tue, 20 Aug 2013 12:46 p.....",
+      "headers" : [ {
+        "name" : "Age",
+        "value" : "0"
+      }, {
+        "name" : "Cache-Control",
+        "value" : "max-age=200"
+      }, {
+        "name" : "Connection",
+        "value" : "keep-alive"
+      }, {
+        "name" : "Content-Type",
+        "value" : "text/xml;charset=UTF-8"
+      }, {
+        "name" : "Date",
+        "value" : "Tue, 20 Aug 2013 20:23:47 GMT"
+      }, {
+        "name" : "P3P",
+        "value" : "policyref=\"http://info.yahoo.com/w3c/p3p.xml\""
+      }, {
+        "name" : "Server",
+        "value" : "YTS/1.20.13"
+      }, {
+        "name" : "Transfer-Encoding",
+        "value" : "chunked"
+      }, {
+        "name" : "Vary",
+        "value" : "Accept-Encoding"
+      } ],
+      "reasonPhrase" : "OK",
+      "statusCode" : "200"
+    } ]
+  }, {
+    "id" : "Condition",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ {
+          "name" : "ExpressionResult",
+          "value" : "true"
+        }, {
+          "name" : "Expression",
+          "value" : "(\"default\" equals target.name)"
+        }, {
+          "name" : "Tree",
+          "value" : "TARGET_default"
+        } ]
+      },
+      "timestamp" : "20-08-13 20:23:47:304"
+    }, {
+      "ActionResult" : "VariableAccess",
+      "accessList" : [ {
+        "Get" : {
+          "name" : "target.name",
+          "value" : "default"
+        }
+      } ]
+    } ]
+  }, {
+    "id" : "StateChange",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ {
+          "name" : "To",
+          "value" : "PROXY_RESP_FLOW"
+        }, {
+          "name" : "From",
+          "value" : "TARGET_RESP_FLOW"
+        } ]
+      },
+      "timestamp" : "20-08-13 20:23:47:305"
+    }, {
+      "ActionResult" : "ResponseMessage",
+      "content" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\" ?>\n\t\t<rss version=\"2.0\" xmlns:yweather=\"http://xml.weather.yahoo.com/ns/rss/1.0\" xmlns:geo=\"http://www.w3.org/2003/01/geo/wgs84_pos#\">\n\t\t\t<channel>\n\t\t\n<title>Yahoo! Weather - Palo Alto, CA</title>\n<link>http://us.rd.yahoo.com/dailynews/rss/weather/Palo_Alto__CA/*http://weather.yahoo.com/forecast/USCA1093_f.html</link>\n<description>Yahoo! Weather for Palo Alto, CA</description>\n<language>en-us</language>\n<lastBuildDate>Tue, 20 Aug 2013 12:46 p.....",
+      "headers" : [ {
+        "name" : "Age",
+        "value" : "0"
+      }, {
+        "name" : "Cache-Control",
+        "value" : "max-age=200"
+      }, {
+        "name" : "Connection",
+        "value" : "keep-alive"
+      }, {
+        "name" : "Content-Type",
+        "value" : "text/xml;charset=UTF-8"
+      }, {
+        "name" : "Date",
+        "value" : "Tue, 20 Aug 2013 20:23:47 GMT"
+      }, {
+        "name" : "P3P",
+        "value" : "policyref=\"http://info.yahoo.com/w3c/p3p.xml\""
+      }, {
+        "name" : "Server",
+        "value" : "YTS/1.20.13"
+      }, {
+        "name" : "Transfer-Encoding",
+        "value" : "chunked"
+      }, {
+        "name" : "Vary",
+        "value" : "Accept-Encoding"
+      } ],
+      "reasonPhrase" : "OK",
+      "statusCode" : "200"
+    } ]
+  }, {
+    "id" : "Condition",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ {
+          "name" : "ExpressionResult",
+          "value" : "true"
+        }, {
+          "name" : "Expression",
+          "value" : "(\"default\" equals proxy.name)"
+        }, {
+          "name" : "Tree",
+          "value" : "PROXY_default"
+        } ]
+      },
+      "timestamp" : "20-08-13 20:23:47:305"
+    }, {
+      "ActionResult" : "VariableAccess",
+      "accessList" : [ {
+        "Get" : {
+          "name" : "proxy.name",
+          "value" : "default"
+        }
+      } ]
+    } ]
+  }, {
+    "id" : "Paused",
+    "results" : [ ]
+  }, {
+    "id" : "FlowInfo",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ {
+          "name" : "javascript.GenerateResponse.failed",
+          "value" : "false"
+        } ]
+      },
+      "timestamp" : "20-08-13 20:23:47:314"
+    } ]
+  }, {
+    "id" : "FlowInfo",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ {
+          "name" : "Identifier",
+          "value" : "fault"
+        } ]
+      },
+      "timestamp" : "20-08-13 20:23:47:314"
+    } ]
+  }, {
+    "id" : "Error",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ {
+          "name" : "error",
+          "value" : "Execution of GenerateResponse failed with error: Javascript runtime error: \"TypeError: Cannot set property \"country\" of undefined to \"us\" (generateResponse_js#5). at line 5 \""
+        }, {
+          "name" : "type",
+          "value" : "ErrorPoint"
+        }, {
+          "name" : "state",
+          "value" : "PROXY_RESP_FLOW"
+        }, {
+          "name" : "error.class",
+          "value" : "com.apigee.flow.FlowException"
+        } ]
+      },
+      "timestamp" : "20-08-13 20:23:47:314"
+    } ]
+  }, {
+    "id" : "Resumed",
+    "results" : [ ]
+  }, {
+    "id" : "Condition",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ {
+          "name" : "ExpressionResult",
+          "value" : "true"
+        }, {
+          "name" : "Expression",
+          "value" : "((error.state equals PROXY_REQ_FLOW) or (error.state equals PROXY_RESP_FLOW))"
+        }, {
+          "name" : "Tree",
+          "value" : "PROXY_FAULT_HANDLING"
+        } ]
+      },
+      "timestamp" : "20-08-13 20:23:47:314"
+    }, {
+      "ActionResult" : "VariableAccess",
+      "accessList" : [ {
+        "Get" : {
+          "name" : "error.state",
+          "value" : "PROXY_RESP_FLOW"
+        }
+      }, {
+        "Get" : {
+          "name" : "error.state",
+          "value" : "PROXY_RESP_FLOW"
+        }
+      } ]
+    } ]
+  }, {
+    "id" : "Condition",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ {
+          "name" : "ExpressionResult",
+          "value" : "true"
+        }, {
+          "name" : "Expression",
+          "value" : "(\"default\" equals proxy.name)"
+        }, {
+          "name" : "Tree",
+          "value" : "PROXY_default"
+        } ]
+      },
+      "timestamp" : "20-08-13 20:23:47:315"
+    }, {
+      "ActionResult" : "VariableAccess",
+      "accessList" : [ {
+        "Get" : {
+          "name" : "proxy.name",
+          "value" : "default"
+        }
+      } ]
+    } ]
+  }, {
+    "id" : "Condition",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ {
+          "name" : "ExpressionResult",
+          "value" : "false"
+        }, {
+          "name" : "Expression",
+          "value" : "((error.state equals TARGET_REQ_FLOW) or (error.state equals TARGET_RESP_FLOW))"
+        }, {
+          "name" : "Tree",
+          "value" : "TARGET_FAULT_HANDLING"
+        } ]
+      },
+      "timestamp" : "20-08-13 20:23:47:315"
+    }, {
+      "ActionResult" : "VariableAccess",
+      "accessList" : [ {
+        "Get" : {
+          "name" : "error.state",
+          "value" : "PROXY_RESP_FLOW"
+        }
+      }, {
+        "Get" : {
+          "name" : "error.state",
+          "value" : "PROXY_RESP_FLOW"
+        }
+      } ]
+    } ]
+  }, {
+    "id" : "StateChange",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ {
+          "name" : "To",
+          "value" : "RESP_SENT"
+        }, {
+          "name" : "From",
+          "value" : "ERROR"
+        } ]
+      },
+      "timestamp" : "20-08-13 20:23:47:315"
+    }, {
+      "ActionResult" : "ErrorMessage",
+      "content" : "{\"fault\":\"{\\\"detail\\\":{\\\"errorcode\\\":\\\"steps.javascript.ScriptExecutionFailed\\\"},\\\"faultstring\\\":\\\"Execution of GenerateResponse failed with error: Javascript runtime error: \\\\\\\"TypeError: Cannot set property \\\\\\\"country\\\\\\\" of undefined to \\\\\\\"us\\\\\\\" (generateResponse_js#5). at line 5 \\\\\\\"\\\"}\"}",
+      "headers" : [ {
+        "name" : "Content-Type",
+        "value" : "application/json"
+      } ],
+      "reasonPhrase" : "Internal Server Error",
+      "statusCode" : "500"
+    } ]
+  }, {
+    "id" : "Condition",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ {
+          "name" : "ExpressionResult",
+          "value" : "true"
+        }, {
+          "name" : "Expression",
+          "value" : "(\"default\" equals proxy.name)"
+        }, {
+          "name" : "Tree",
+          "value" : "PROXY_default"
+        } ]
+      },
+      "timestamp" : "20-08-13 20:23:47:315"
+    }, {
+      "ActionResult" : "VariableAccess",
+      "accessList" : [ {
+        "Get" : {
+          "name" : "proxy.name",
+          "value" : "default"
+        }
+      } ]
+    } ]
+  }, {
+    "id" : "Condition",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ {
+          "name" : "ExpressionResult",
+          "value" : "true"
+        }, {
+          "name" : "Expression",
+          "value" : "(\"default\" equals target.name)"
+        }, {
+          "name" : "Tree",
+          "value" : "TARGET_default"
+        } ]
+      },
+      "timestamp" : "20-08-13 20:23:47:315"
+    }, {
+      "ActionResult" : "VariableAccess",
+      "accessList" : [ {
+        "Get" : {
+          "name" : "target.name",
+          "value" : "default"
+        }
+      } ]
+    } ]
+  }, {
+    "id" : "Execution",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ {
+          "name" : "expressionResult",
+          "value" : "true"
+        }, {
+          "name" : "type",
+          "value" : "AnalyticsPredefinedVariablesPublisher"
+        }, {
+          "name" : "expression",
+          "value" : "(analytics equals null )"
+        } ]
+      },
+      "timestamp" : "20-08-13 20:23:47:621"
+    }, {
+      "ActionResult" : "ErrorMessage",
+      "content" : "{\"fault\":\"{\\\"detail\\\":{\\\"errorcode\\\":\\\"steps.javascript.ScriptExecutionFailed\\\"},\\\"faultstring\\\":\\\"Execution of GenerateResponse failed with error: Javascript runtime error: \\\\\\\"TypeError: Cannot set property \\\\\\\"country\\\\\\\" of undefined to \\\\\\\"us\\\\\\\" (generateResponse_js#5). at line 5 \\\\\\\"\\\"}\"}",
+      "headers" : [ {
+        "name" : "Content-Type",
+        "value" : "application/json"
+      } ],
+      "reasonPhrase" : "Internal Server Error",
+      "statusCode" : "500"
+    }, {
+      "ActionResult" : "VariableAccess",
+      "accessList" : [ {
+        "Get" : {
+          "name" : "organization.name",
+          "value" : "apifactory"
+        }
+      }, {
+        "Get" : {
+          "name" : "environment.name",
+          "value" : "prod"
+        }
+      }, {
+        "Get" : {
+          "name" : "apiproxy.name",
+          "value" : "weatherapi"
+        }
+      }, {
+        "Get" : {
+          "name" : "apiproxy.revision",
+          "value" : "64"
+        }
+      }, {
+        "Get" : {
+          "name" : "proxy.name",
+          "value" : "default"
+        }
+      }, {
+        "Get" : {
+          "name" : "proxy.basepath",
+          "value" : "/weather"
+        }
+      }, {
+        "Get" : {
+          "name" : "proxy.pathsuffix",
+          "value" : "/forecastrss"
+        }
+      }, {
+        "Get" : {
+          "name" : "request.header.X-Forwarded-For"
+        }
+      }, {
+        "Get" : {
+          "name" : "proxy.client.ip",
+          "value" : "76.73.247.59"
+        }
+      }, {
+        "Get" : {
+          "name" : "target.name",
+          "value" : "default"
+        }
+      }, {
+        "Get" : {
+          "name" : "dynamic.target"
+        }
+      }, {
+        "Get" : {
+          "name" : "target.basepath",
+          "value" : ""
+        }
+      }, {
+        "Get" : {
+          "name" : "dynamic.target"
+        }
+      }, {
+        "Get" : {
+          "name" : "target.url",
+          "value" : "http://weather.yahooapis.com"
+        }
+      }, {
+        "Get" : {
+          "name" : "target.ip",
+          "value" : "98.137.204.103"
+        }
+      }, {
+        "Get" : {
+          "name" : "client.ip",
+          "value" : "76.73.247.59"
+        }
+      }, {
+        "Get" : {
+          "name" : "is.error",
+          "value" : "true"
+        }
+      }, {
+        "Get" : {
+          "name" : "target.sent.start.timestamp",
+          "value" : "1377030227250"
+        }
+      }, {
+        "Get" : {
+          "name" : "target.sent.end.timestamp",
+          "value" : "1377030227250"
+        }
+      }, {
+        "Get" : {
+          "name" : "target.received.start.timestamp",
+          "value" : "1377030227279"
+        }
+      }, {
+        "Get" : {
+          "name" : "target.received.end.timestamp",
+          "value" : "1377030227304"
+        }
+      }, {
+        "Get" : {
+          "name" : "client.received.start.timestamp",
+          "value" : "1377030227206"
+        }
+      }, {
+        "Get" : {
+          "name" : "client.received.end.timestamp",
+          "value" : "1377030227207"
+        }
+      }, {
+        "Get" : {
+          "name" : "response.status.code",
+          "value" : "200"
+        }
+      }, {
+        "Get" : {
+          "name" : "request.uri",
+          "value" : "/forecastrss?w=12797282"
+        }
+      }, {
+        "Get" : {
+          "name" : "request.path",
+          "value" : "/forecastrss"
+        }
+      }, {
+        "Get" : {
+          "name" : "request.verb",
+          "value" : "GET"
+        }
+      }, {
+        "Get" : {
+          "name" : "virtualhost.name",
+          "value" : "default"
+        }
+      }, {
+        "Get" : {
+          "name" : "developer.app.name"
+        }
+      }, {
+        "Get" : {
+          "name" : "apiproduct.name"
+        }
+      }, {
+        "Get" : {
+          "name" : "access_token"
+        }
+      }, {
+        "Get" : {
+          "name" : "client_id"
+        }
+      }, {
+        "Get" : {
+          "name" : "flow.resource.name"
+        }
+      }, {
+        "Get" : {
+          "name" : "gateway.flow.id"
+        }
+      }, {
+        "Get" : {
+          "name" : "sla"
+        }
+      }, {
+        "Get" : {
+          "name" : "client.received.content.length",
+          "value" : "0"
+        }
+      }, {
+        "Get" : {
+          "name" : "target.received.content.length",
+          "value" : "2769"
+        }
+      }, {
+        "Get" : {
+          "name" : "cachehit"
+        }
+      }, {
+        "Get" : {
+          "name" : "developer.id"
+        }
+      }, {
+        "Get" : {
+          "name" : "target.response.status.code",
+          "value" : "200"
+        }
+      }, {
+        "Get" : {
+          "name" : "request.header.X-Forwarded-For"
+        }
+      }, {
+        "Get" : {
+          "name" : "developer.email"
+        }
+      }, {
+        "Get" : {
+          "name" : "organization.name",
+          "value" : "apifactory"
+        }
+      }, {
+        "Get" : {
+          "name" : "environment.name",
+          "value" : "prod"
+        }
+      } ]
+    } ]
+  }, {
+    "id" : "Execution",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ {
+          "name" : "expressionResult",
+          "value" : "false"
+        }, {
+          "name" : "type",
+          "value" : "AnalyticsPublisher"
+        }, {
+          "name" : "expression",
+          "value" : "(analytics not null)"
+        } ]
+      },
+      "timestamp" : "20-08-13 20:23:47:621"
+    }, {
+      "ActionResult" : "ErrorMessage",
+      "content" : "{\"fault\":\"{\\\"detail\\\":{\\\"errorcode\\\":\\\"steps.javascript.ScriptExecutionFailed\\\"},\\\"faultstring\\\":\\\"Execution of GenerateResponse failed with error: Javascript runtime error: \\\\\\\"TypeError: Cannot set property \\\\\\\"country\\\\\\\" of undefined to \\\\\\\"us\\\\\\\" (generateResponse_js#5). at line 5 \\\\\\\"\\\"}\"}",
+      "headers" : [ {
+        "name" : "Content-Type",
+        "value" : "application/json"
+      } ],
+      "reasonPhrase" : "Internal Server Error",
+      "statusCode" : "500"
+    }, {
+      "ActionResult" : "VariableAccess",
+      "accessList" : [ {
+        "Get" : {
+          "name" : "organization.name",
+          "value" : "apifactory"
+        }
+      }, {
+        "Get" : {
+          "name" : "environment.name",
+          "value" : "prod"
+        }
+      }, {
+        "Get" : {
+          "name" : "apiproxy.name",
+          "value" : "weatherapi"
+        }
+      }, {
+        "Get" : {
+          "name" : "apiproxy.revision",
+          "value" : "64"
+        }
+      }, {
+        "Get" : {
+          "name" : "proxy.name",
+          "value" : "default"
+        }
+      }, {
+        "Get" : {
+          "name" : "proxy.basepath",
+          "value" : "/weather"
+        }
+      }, {
+        "Get" : {
+          "name" : "proxy.pathsuffix",
+          "value" : "/forecastrss"
+        }
+      }, {
+        "Get" : {
+          "name" : "request.header.X-Forwarded-For"
+        }
+      }, {
+        "Get" : {
+          "name" : "proxy.client.ip",
+          "value" : "76.73.247.59"
+        }
+      }, {
+        "Get" : {
+          "name" : "target.name",
+          "value" : "default"
+        }
+      }, {
+        "Get" : {
+          "name" : "dynamic.target"
+        }
+      }, {
+        "Get" : {
+          "name" : "target.basepath",
+          "value" : ""
+        }
+      }, {
+        "Get" : {
+          "name" : "dynamic.target"
+        }
+      }, {
+        "Get" : {
+          "name" : "target.url",
+          "value" : "http://weather.yahooapis.com"
+        }
+      }, {
+        "Get" : {
+          "name" : "target.ip",
+          "value" : "98.137.204.103"
+        }
+      }, {
+        "Get" : {
+          "name" : "client.ip",
+          "value" : "76.73.247.59"
+        }
+      }, {
+        "Get" : {
+          "name" : "is.error",
+          "value" : "true"
+        }
+      }, {
+        "Get" : {
+          "name" : "target.sent.start.timestamp",
+          "value" : "1377030227250"
+        }
+      }, {
+        "Get" : {
+          "name" : "target.sent.end.timestamp",
+          "value" : "1377030227250"
+        }
+      }, {
+        "Get" : {
+          "name" : "target.received.start.timestamp",
+          "value" : "1377030227279"
+        }
+      }, {
+        "Get" : {
+          "name" : "target.received.end.timestamp",
+          "value" : "1377030227304"
+        }
+      }, {
+        "Get" : {
+          "name" : "client.received.start.timestamp",
+          "value" : "1377030227206"
+        }
+      }, {
+        "Get" : {
+          "name" : "client.received.end.timestamp",
+          "value" : "1377030227207"
+        }
+      }, {
+        "Get" : {
+          "name" : "response.status.code",
+          "value" : "200"
+        }
+      }, {
+        "Get" : {
+          "name" : "request.uri",
+          "value" : "/forecastrss?w=12797282"
+        }
+      }, {
+        "Get" : {
+          "name" : "request.path",
+          "value" : "/forecastrss"
+        }
+      }, {
+        "Get" : {
+          "name" : "request.verb",
+          "value" : "GET"
+        }
+      }, {
+        "Get" : {
+          "name" : "virtualhost.name",
+          "value" : "default"
+        }
+      }, {
+        "Get" : {
+          "name" : "developer.app.name"
+        }
+      }, {
+        "Get" : {
+          "name" : "apiproduct.name"
+        }
+      }, {
+        "Get" : {
+          "name" : "access_token"
+        }
+      }, {
+        "Get" : {
+          "name" : "client_id"
+        }
+      }, {
+        "Get" : {
+          "name" : "flow.resource.name"
+        }
+      }, {
+        "Get" : {
+          "name" : "gateway.flow.id"
+        }
+      }, {
+        "Get" : {
+          "name" : "sla"
+        }
+      }, {
+        "Get" : {
+          "name" : "client.received.content.length",
+          "value" : "0"
+        }
+      }, {
+        "Get" : {
+          "name" : "target.received.content.length",
+          "value" : "2769"
+        }
+      }, {
+        "Get" : {
+          "name" : "cachehit"
+        }
+      }, {
+        "Get" : {
+          "name" : "developer.id"
+        }
+      }, {
+        "Get" : {
+          "name" : "target.response.status.code",
+          "value" : "200"
+        }
+      }, {
+        "Get" : {
+          "name" : "request.header.X-Forwarded-For"
+        }
+      }, {
+        "Get" : {
+          "name" : "developer.email"
+        }
+      }, {
+        "Get" : {
+          "name" : "organization.name",
+          "value" : "apifactory"
+        }
+      }, {
+        "Get" : {
+          "name" : "environment.name",
+          "value" : "prod"
+        }
+      }, {
+        "Get" : {
+          "name" : "analytics"
+        }
+      } ]
+    } ]
+  }, {
+    "id" : "StateChange",
+    "results" : [ {
+      "ActionResult" : "DebugInfo",
+      "properties" : {
+        "property" : [ {
+          "name" : "To",
+          "value" : "END"
+        }, {
+          "name" : "From",
+          "value" : "RESP_SENT"
+        } ]
+      },
+      "timestamp" : "20-08-13 20:23:47:622"
+    }, {
+      "ActionResult" : "ErrorMessage",
+      "content" : "{\"fault\":\"{\\\"detail\\\":{\\\"errorcode\\\":\\\"steps.javascript.ScriptExecutionFailed\\\"},\\\"faultstring\\\":\\\"Execution of GenerateResponse failed with error: Javascript runtime error: \\\\\\\"TypeError: Cannot set property \\\\\\\"country\\\\\\\" of undefined to \\\\\\\"us\\\\\\\" (generateResponse_js#5). at line 5 \\\\\\\"\\\"}\"}",
+      "headers" : [ {
+        "name" : "Content-Type",
+        "value" : "application/json"
+      } ],
+      "reasonPhrase" : "Internal Server Error",
+      "statusCode" : "500"
+    } ]
+  } ]
+}</pre>
 
 
 	

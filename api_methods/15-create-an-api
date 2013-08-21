@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
+<meta content="pCYaHYqKxhn4wlCeRSajwTXatEZdirAm9TPRoJIs5fE=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -68,7 +68,7 @@
 		</p>
 
 		<p>
-		<b>Content Types:</b>
+		<b>Media types:</b>
 		
 <div class="content_type" id="content_type_1">
 application/json
@@ -86,10 +86,13 @@ text/xml
 
 <div class="span18">
 	<p>
-	This method creates the framework of an API proxy in Apigee, providing an alternative to creating APIs via the UI. 
+	<p>This method creates an API proxy in an organization on the Apigee API Platform.</p>
 
-<p>The API will not be accessible at runtime until a proxy endpoint and target endpoint are defined. 
-<p>Usually, this request is followed up with an export API proxy method call, which exports the API proxy bundle to the developer's local machine for development.
+<p>The API proxy that is created using this call will not be accessible at runtime until the proxy is deployed to an environment. </p>
+
+<p>Usually, this request is followed up with an export API proxy method call, which exports the API proxy bundle to the developer's local machine for development.</p>
+
+API proxies can also be created and deployed using the Apigee <A href="http://enterprise.apigee.com">Enterprise Management User Interface</a>.
 	</p>
 
 	<b>Sample Request:</b>

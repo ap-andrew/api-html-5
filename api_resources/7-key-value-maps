@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
+<meta content="pCYaHYqKxhn4wlCeRSajwTXatEZdirAm9TPRoJIs5fE=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -58,7 +58,15 @@ Appendix
 		<table class="table">
 				<tr><td class="lead">API Resource Path: /keyvaluemaps</td></tr>
 				<tr><td>Persistence resources that enable storing arbitrary data</td></tr>
-		  		<tr><td>Maps provide an API for storing arbitrary name/value pairs that can be access at runtime by custom policies, or for other custom runtime requirements such as protocol support. Each keyvaluemap has one or more 'entries', each of which which defines a name/value pair that can be fetched, updated, deleted via the API.</td></tr>
+		  		<tr><td><p>The KeyValueMaps resource provides an API that enables client applications to interact with the API Platform's key/value store. </p>
+
+<p>Key/ValueMaps provide an API for storing arbitrary name/value pairs that can be access at runtime by custom policies, or for other custom runtime requirements such as protocol support.</p>
+
+<p>Each key/value map consists of one or more 'entries'. Each entry in a map defines a name/value pair that can be fetched, updated, deleted via the API.</p>
+
+<p>API proxies can also interact with the Key/value store at runtime using policies. </p>
+<p>See the policy reference, <a href="http://mktg-dev.apigee.com/docs/api-platform/content/persist-data-using-keyvaluemap">Persist data using KeyValueMap</a>.</p>
+</td></tr>
 		</table>
 
 
@@ -69,7 +77,7 @@ Appendix
 			    <tr><td colspan="3"><span id="well"><pre>/keyvaluemaps</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Creates a KeyValueMap</td></tr>
-				<tr><td><strong>Content Types:</strong></td><td>
+				<tr><td><strong>Media types:</strong></td><td>
 				
 <div class="content_type" id="content_type_1">
 application/json
@@ -83,7 +91,7 @@ text/xml
 			    <tr><td colspan="3"><span id="well"><pre>/keyvaluemaps/{map_name}/entries/{entry_name}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Deletes a single entry by name</td></tr>
-				<tr><td><strong>Content Types:</strong></td><td>
+				<tr><td><strong>Media types:</strong></td><td>
 				
 <div class="content_type" id="content_type_1">
 application/json
@@ -97,7 +105,7 @@ text/xml
 			    <tr><td colspan="3"><span id="well"><pre>/keyvaluemaps/{map_name}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Deletes a KeyValueMap and all associated entries.</td></tr>
-				<tr><td><strong>Content Types:</strong></td><td>
+				<tr><td><strong>Media types:</strong></td><td>
 				
 <div class="content_type" id="content_type_1">
 application/json
@@ -111,7 +119,7 @@ text/xml
 			    <tr><td colspan="3"><span id="well"><pre>/keyvaluemaps/{map_name}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets a KeyValueMap by name, along  with associated entries</td></tr>
-				<tr><td><strong>Content Types:</strong></td><td>
+				<tr><td><strong>Media types:</strong></td><td>
 				
 <div class="content_type" id="content_type_1">
 application/json
@@ -125,7 +133,7 @@ text/xml
 			    <tr><td colspan="3"><span id="well"><pre>/keyvaluemaps?expand=true</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Returns an expanded view of all Maps scoped by organization, environment, or API</td></tr>
-				<tr><td><strong>Content Types:</strong></td><td>
+				<tr><td><strong>Media types:</strong></td><td>
 				
 <div class="content_type" id="content_type_1">
 application/json
@@ -139,7 +147,7 @@ text/xml
 			    <tr><td colspan="3"><span id="well"><pre>/keyvaluemaps</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">List all KeyValueMaps by name</td></tr>
-				<tr><td><strong>Content Types:</strong></td><td>
+				<tr><td><strong>Media types:</strong></td><td>
 				
 <div class="content_type" id="content_type_1">
 application/json
@@ -153,7 +161,7 @@ text/xml
 			    <tr><td colspan="3"><span id="well"><pre>/keyvaluemaps/{map_name}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-PUT">PUT</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Updates an existing KeyValueMap</td></tr>
-				<tr><td><strong>Content Types:</strong></td><td>
+				<tr><td><strong>Media types:</strong></td><td>
 				
 <div class="content_type" id="content_type_1">
 application/json

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
+<meta content="pCYaHYqKxhn4wlCeRSajwTXatEZdirAm9TPRoJIs5fE=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -71,7 +71,7 @@ For more background information, see companies for a description of the distinct
 			    <tr><td colspan="3"><span id="well"><pre>/companies/{company_name}/apps</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Creates an app for a company</td></tr>
-				<tr><td><strong>Content Types:</strong></td><td>
+				<tr><td><strong>Media types:</strong></td><td>
 				
 <div class="content_type" id="content_type_1">
 application/json
@@ -100,7 +100,7 @@ text/xml
 			    <tr><td colspan="3"><span id="well"><pre>/companies/{company_name}/apps?&quot;keyStatus={consumerkey_status}&quot;</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Lists all company apps whose keys are in the specified state ( approved | pending | revoked )</td></tr>
-				<tr><td><strong>Content Types:</strong></td><td>
+				<tr><td><strong>Media types:</strong></td><td>
 				
 <div class="content_type" id="content_type_1">
 application/json
@@ -124,7 +124,7 @@ text/xml
 			    <tr><td colspan="3"><span id="well"><pre>/companies/{company_name}/apps/{app_name}/keys/{consumer_key}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Update existing app key with an API product.</td></tr>
-				<tr><td><strong>Content Types:</strong></td><td>
+				<tr><td><strong>Media types:</strong></td><td>
 				
 <div class="content_type" id="content_type_1">
 application/json

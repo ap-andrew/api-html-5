@@ -40,11 +40,11 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/50-reports">Reports</a> > Get a report</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/35-developers">Developers</a> > Update developer status</i>
 </div>
 
 <p>
-<h1>Get a report</h1> 
+<h1>Update developer status</h1> 
 </p>
 
 <p><b>API Platform Base Path:</b> <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></p>
@@ -52,16 +52,16 @@
 <div class="row">
 	<div class="span6" style="width:340px;">
 
-		<p><b>API Resource Path:</b> <code>/reports/{report_name}</code></p>
+		<p><b>API Resource Path:</b> <code>/developers/{developer_email}?action={status}</code></p>
 		<p>
-		Gets the contents of a report stored in an organization on the API Platform
+		Updates a developer status (active, inactive, login_lock)
 		</p>
 	</div>
 
 	<div class="span6" style="width:340px;">
 		<p>
 		<b>Verb:</b>
-		<span class="verb-GET">GET</span>
+		<span class="verb-POST">POST</span>
 		</p>
 		<b>Auth:</b>
 		Basic Auth
@@ -70,8 +70,8 @@
 		<p>
 		<b>Media types:</b>
 		
-<div class="content_type" id="content_type_1">
-application/json
+<div class="content_type" id="content_type_4">
+application/octet-stream
 </div>
 		</p>
 
@@ -80,50 +80,51 @@ application/json
 
 <div class="span18">
 	<p>
-	<p>This call returns the full contents of a report stored on the API Platform.</p>
-
-<p>Reports can be configured using the Management UI or using Management API.</p>
-
-<p>The contents of a report are dependent on the configuration of report. The results below are illustrative, but will vary from report to report.</p>
-
-
+	
 	</p>
 
 	<b>Sample Request:</b>
-	<div class="terminal">$ curl  https://api.apigee.apigee.com/v1/o/{org_name}/reports/{report_name} \
+	<div class="terminal">$ curl -H "Content-type:application/octet-stream" -X POST \https://api.enterprise.apigee.com/v1/o/{org_name}/developers/{developer_email}?"action=inactive" \
 -u myname:mypass</div>
 
 
+<b>Query Parameters:</b>
+
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Default</th>
+				<th>Required?</th>
+			</tr>
+			</thead>
+			
+<tr>
+<td>action</td>
+<td>Set the value of this parameter to the desired status for the developer: active, inactive, login_lock.</td>
+<td>N/A</td>
+<td>Yes</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+			</table>
+
 <b>Sample Response:</b> 
-	<pre>{
-  "chartType" : "column",
-  "comments" : [ ],
-  "createdAt" : 1375721048398,
-  "createdBy" : "noreply_admin@apigee.com",
-  "dimensions" : [ ],
-  "displayName" : "MyReport",
-  "environment" : "test",
-  "filter" : "",
-  "fromTime" : "2013-08-05T04:00:00.000Z",
-  "lastModifiedAt" : 1375721067418,
-  "lastModifiedBy" : "noreply_admin@apigee.com",
-  "lastViewedAt" : 1375722403723,
-  "metrics" : [ ],
-  "name" : "949d3ff2-05bc-40b8-a18a-83b13e4315a1",
-  "organization" : "{org_name}",
-  "properties" : [ {
-    "property" : "__ui__",
-    "value" : [ {
-      "name" : "description",
-      "value" : "Data about API consumption"
-    } ]
-  } ],
-  "sortbyCols" : [ ],
-  "tags" : [ ],
-  "timeDuration" : "1h",
-  "timeUnit" : "hour",
-  "toTime" : "2013-08-06T03:59:59.000Z"
-}</pre>
+	<pre>< HTTP/1.1 204 No Content
+< Content-length: 0
+< Content-Type: */*
+< Date: Tue, 20 Aug 2013 13:19:13 GMT
+< Connection: keep-alive</pre>
 
 
 	

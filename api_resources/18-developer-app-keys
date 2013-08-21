@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
+<meta content="pCYaHYqKxhn4wlCeRSajwTXatEZdirAm9TPRoJIs5fE=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -69,7 +69,7 @@ Developer and App Administration
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_emal}/apps/{app_name}/keys/{consumer_key}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Changes the status of a consumer key from &#x27;pending&#x27; to &#x27;approved&#x27;</td></tr>
-				<tr><td><strong>Content Types:</strong></td><td>
+				<tr><td><strong>Media types:</strong></td><td>
 				
 <div class="content_type" id="content_type_3">
 application/x-www-url-form-encoded
@@ -90,7 +90,7 @@ application/x-www-url-form-encoded
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/apps/{app_name}/keys/{consumer_key}/apiproducts/{apiproduct_name}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Removes an API product from a developer app key profile, and thereby renders the developer app unable to access the URIs defined in the API product specified. </td></tr>
-				<tr><td><strong>Content Types:</strong></td><td>
+				<tr><td><strong>Media types:</strong></td><td>
 				
 <div class="content_type" id="content_type_1">
 application/json

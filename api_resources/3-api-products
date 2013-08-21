@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="ub4oolVKtkaKM/J0KQFtsnAv8gUP9OSJeJzm0d6dRis=" name="csrf-token" />
+<meta content="pCYaHYqKxhn4wlCeRSajwTXatEZdirAm9TPRoJIs5fE=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -57,7 +57,7 @@ API Configuration and Management
 
 		<table class="table">
 				<tr><td class="lead">API Resource Path: /apiproducts</td></tr>
-				<tr><td>Bundled URIs combined with rate limit settings and developer-defined metadata that enable OAuth-based runtime authorization to API resources</td></tr>
+				<tr><td>A URI bundle with an associated Quota, used to provide OAuth-based runtime authorization to APIs managed by the API Platform.</td></tr>
 		  		<tr><td>API products enable you to bundle and distribute your APIs to multiple developer groups simultaneously, without having to modify code. An APi product consists of a list of API resources (URIs) combined with a Service Plan (rate-limiting policy settings) plus any custom metadata required by the API provider.
 
 
@@ -73,7 +73,7 @@ API products provide the basis for access control in Apigee. As part of the app 
 			    <tr><td colspan="3"><span id="well"><pre>/apiproducts</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Create an API product to enable developers to access a list of API resources (URIs) via named proxies and in named environments</td></tr>
-				<tr><td><strong>Content Types:</strong></td><td>
+				<tr><td><strong>Media types:</strong></td><td>
 				
 <div class="content_type" id="content_type_1">
 application/json
@@ -107,7 +107,7 @@ text/xml
 			    <tr><td colspan="3"><span id="well"><pre>/apiproducts</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Lists all API Products by name for an organization</td></tr>
-				<tr><td><strong>Content Types:</strong></td><td>
+				<tr><td><strong>Media types:</strong></td><td>
 				
 <div class="content_type" id="content_type_1">
 application/json
@@ -121,7 +121,7 @@ text/xml
 			    <tr><td colspan="3"><span id="well"><pre>/apiproducts</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Returns a list of API products filtered by attribute names and values</td></tr>
-				<tr><td><strong>Content Types:</strong></td><td>
+				<tr><td><strong>Media types:</strong></td><td>
 				
 <div class="content_type" id="content_type_1">
 application/json
@@ -135,7 +135,7 @@ text/xml
 			    <tr><td colspan="3"><span id="well"><pre>/apiproducts/{apiproduct_name}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-PUT">PUT</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">This method updates an existing APi Product</td></tr>
-				<tr><td><strong>Content Types:</strong></td><td>
+				<tr><td><strong>Media types:</strong></td><td>
 				
 <div class="content_type" id="content_type_1">
 application/json
