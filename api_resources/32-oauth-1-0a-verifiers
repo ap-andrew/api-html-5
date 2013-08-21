@@ -69,17 +69,17 @@ If the request fails the verification, the server sends a response with an appro
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Delete OAuth 1.0 Verifier</span></td><td><a href="/docs/api/api_methods/151-delete-oauth-1-0-verifier" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete OAuth 1.0 Verifier</span></td><td><a href="/api_methods/151-delete-oauth-1-0-verifier" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/oauth1/verifiers/{verifier_code}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Deletes the issued verifier code</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get an OAuth 1.0 Verifier</span></td><td><a href="/docs/api/api_methods/149-get-an-oauth-1-0-verifier" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get an OAuth 1.0 Verifier</span></td><td><a href="/api_methods/149-get-an-oauth-1-0-verifier" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/oauth1/verifiers/{verifier_code}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets the detail of given verifier code</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">List OAuth 1.0 Verifiers</span></td><td><a href="/docs/api/api_methods/150-list-oauth-1-0-verifiers" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List OAuth 1.0 Verifiers</span></td><td><a href="/api_methods/150-list-oauth-1-0-verifiers" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/oauth1/verifiers</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">List OAuth 1.0 Verifiers</td></tr>

@@ -103,7 +103,7 @@ API Analytics
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Retrieve and filter metrics for a dimension from Apigee Analytics services</span></td><td><a href="/docs/api/api_methods/71-retrieve-and-filter-metrics-for-a-dimension-from-apigee-analytics-services" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Retrieve and filter metrics for a dimension from Apigee Analytics services</span></td><td><a href="/api_methods/71-retrieve-and-filter-metrics-for-a-dimension-from-apigee-analytics-services" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/environments/{env_name}/stats/{dimension_name}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Use the GET method to retrieve metrics for a dimension</td></tr>

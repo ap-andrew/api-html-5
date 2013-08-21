@@ -65,27 +65,27 @@ Oauth
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Approve a Request Token</span></td><td><a href="/docs/api/api_methods/147-approve-a-request-token" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Approve a Request Token</span></td><td><a href="/api_methods/147-approve-a-request-token" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/oauth1/requesttokens/{request_token}?action=approve</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Approves an OAuth 1.0a Request Token</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Delete a Request Token</span></td><td><a href="/docs/api/api_methods/146-delete-a-request-token" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete a Request Token</span></td><td><a href="/api_methods/146-delete-a-request-token" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/oauth1/requesttokens/{request_token}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Deletes the request token specified</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get an Oauth 1.0a Request Token</span></td><td><a href="/docs/api/api_methods/143-get-an-oauth-1-0a-request-token" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get an Oauth 1.0a Request Token</span></td><td><a href="/api_methods/143-get-an-oauth-1-0a-request-token" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/oauth1/requesttokens/{request_token}?consumerKey={consumer_key}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets the Oauth 1.0a Request Token for the speficied consumer key</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">List Request Tokens</span></td><td><a href="/docs/api/api_methods/144-list-request-tokens" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List Request Tokens</span></td><td><a href="/api_methods/144-list-request-tokens" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/oauth1/requesttokens</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Returns list of all Oauth 1.0a request tokens, with detail for each token</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Revoke a Request Token</span></td><td><a href="/docs/api/api_methods/148-revoke-a-request-token" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Revoke a Request Token</span></td><td><a href="/api_methods/148-revoke-a-request-token" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/oauth1/requesttokens/{request_token}?action=revoke</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2"></td></tr>
@@ -96,7 +96,7 @@ application/octet-stream
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Update a Request Token</span></td><td><a href="/docs/api/api_methods/145-update-a-request-token" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Update a Request Token</span></td><td><a href="/api_methods/145-update-a-request-token" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/oauth1/requesttokens/{request_token}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-PUT">PUT</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Updates a Request Token with new profile</td></tr>

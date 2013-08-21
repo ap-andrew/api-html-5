@@ -65,7 +65,7 @@ Administration
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Associate a user with a user role</span></td><td><a href="/docs/api/api_methods/170-associate-a-user-with-a-user-role" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Associate a user with a user role</span></td><td><a href="/api_methods/170-associate-a-user-with-a-user-role" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/users/{user_email}/userroles</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Associates a user with one or more roles</td></tr>
@@ -79,37 +79,37 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Create a user</span></td><td><a href="/docs/api/api_methods/160-create-a-user" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Create a user</span></td><td><a href="/api_methods/160-create-a-user" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/users</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Creates a user in an organization on the API Platform</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Delete a user from an organization</span></td><td><a href="/docs/api/api_methods/162-delete-a-user-from-an-organization" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete a user from an organization</span></td><td><a href="/api_methods/162-delete-a-user-from-an-organization" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/users/{user_email}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Deletes a user and all associated roles from an organization</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Delete role for user</span></td><td><a href="/docs/api/api_methods/175-delete-role-for-user" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete role for user</span></td><td><a href="/api_methods/175-delete-role-for-user" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/users/{user_email}/userroles/{role_name}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Removes a users role membership</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get roles for a user</span></td><td><a href="/docs/api/api_methods/172-get-roles-for-a-user" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get roles for a user</span></td><td><a href="/api_methods/172-get-roles-for-a-user" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/users/{user_email}/userroles</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Lists all roles for a user</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Gets a user </span></td><td><a href="/docs/api/api_methods/167-gets-a-user" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Gets a user </span></td><td><a href="/api_methods/167-gets-a-user" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/users/{user_email}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets the profile for a user in an organization</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">List users in an organization</span></td><td><a href="/docs/api/api_methods/166-list-users-in-an-organization" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List users in an organization</span></td><td><a href="/api_methods/166-list-users-in-an-organization" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/users</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets a list of users in an organization</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Update a user</span></td><td><a href="/docs/api/api_methods/161-update-a-user" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Update a user</span></td><td><a href="/api_methods/161-update-a-user" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/users/{user_email}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Updates an existing user</td></tr>

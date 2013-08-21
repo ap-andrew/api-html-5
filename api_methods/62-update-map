@@ -163,25 +163,25 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/maps/{map_name} \
 <td>entry </td>
 <td>The name of the list of entries in the map</td>
 <!-- <td><a href="/response_elements/392" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/62-update-map?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/62-update-map?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_393">
 <td>name </td>
 <td>The name of the entry</td>
 <!-- <td><a href="/response_elements/393" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/62-update-map?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/62-update-map?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_394">
 <td>value </td>
 <td>The value of the entry</td>
 <!-- <td><a href="/response_elements/394" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/62-update-map?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/62-update-map?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_395">
 <td>name </td>
 <td>The name of the map</td>
 <!-- <td><a href="/response_elements/395" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/docs/api/api_methods/62-update-map?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api_methods/62-update-map?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 

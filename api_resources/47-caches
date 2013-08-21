@@ -74,7 +74,7 @@ API Configuration and Management
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Clear all cache entries</span></td><td><a href="/docs/api/api_methods/221-clear-all-cache-entries" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Clear all cache entries</span></td><td><a href="/api_methods/221-clear-all-cache-entries" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/environments/{env_name}/caches/{cache_name}/entries?action=clear</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Clears all entries from the specified cache. Entries to be cleared can be scoped by CacheKey prefix by using the &#x27;prefix&#x27; parameter.</td></tr>
@@ -85,7 +85,7 @@ application/x-www-url-form-encoded
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Clear cache entry</span></td><td><a href="/docs/api/api_methods/220-clear-cache-entry" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Clear cache entry</span></td><td><a href="/api_methods/220-clear-cache-entry" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/environments/{env_name}/caches/{cache_name}/entries/{entry}?action=clear</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Clears the cache entry, which by the full CacheKey prefix and value</td></tr>
@@ -96,7 +96,7 @@ application/x-www-url-form-encoded
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Create a cache</span></td><td><a href="/docs/api/api_methods/207-create-a-cache" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Create a cache</span></td><td><a href="/api_methods/207-create-a-cache" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/environments/{env_name}/caches</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Creates a cache in an environment</td></tr>
@@ -110,7 +110,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get a cache configuration</span></td><td><a href="/docs/api/api_methods/210-get-a-cache-configuration" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get a cache configuration</span></td><td><a href="/api_methods/210-get-a-cache-configuration" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/environments/{env_name}/caches/{cache_name}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets a representation of a a cache resource</td></tr>
@@ -124,7 +124,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">List caches in an environment</span></td><td><a href="/docs/api/api_methods/209-list-caches-in-an-environment" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List caches in an environment</span></td><td><a href="/api_methods/209-list-caches-in-an-environment" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/environments/{env_name}/caches</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Returns a list of caches that are available in an environment</td></tr>
@@ -138,7 +138,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Update a cache</span></td><td><a href="/docs/api/api_methods/208-update-a-cache" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Update a cache</span></td><td><a href="/api_methods/208-update-a-cache" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/environments/{env_name}/caches/{cache_name}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Updates the configuration of an existing cache</td></tr>
