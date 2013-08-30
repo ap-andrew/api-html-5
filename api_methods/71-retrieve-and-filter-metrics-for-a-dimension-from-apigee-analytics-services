@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="ZI+Jnm1CYArXLaqcI56fnZfDShJOci12YBoI1Ch2KQI=" name="csrf-token" />
+<meta content="D6tv8OW026aISDCFnsmVCooTFgbe9DcdfvrxzeFMQr4=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/34-stats">Stats</a> > Retrieve and filter metrics for a dimension from Apigee Analytics services</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api/api_resources/34-stats">Stats</a> > Retrieve and filter metrics for a dimension from Apigee Analytics services</i>
 </div>
 
 <p>
@@ -53,37 +53,36 @@
 	<div class="span6" style="width:340px;">
 
 		<p><b>API Resource Path:</b> <code>/environments/{env_name}/stats/{dimension_name}</code></p>
-		<p>
-		Use the GET method to retrieve metrics for a dimension
+		<p><b>Description:</b> Use the GET method to retrieve metrics for a dimension
 		</p>
 	</div>
 
 	<div class="span6" style="width:340px;">
-		<p>
-		<b>Verb:</b>
-		<span class="verb-GET">GET</span>
-		</p>
-		<b>Auth:</b>
-		Basic Auth
-		</p>
+<table>		
+	<tbody><tr><td><b>Verb:</b></td> <td><span class="verb-GET">GET</span></td></tr>
+	<tr><td><b>Auth:</b></td> <td>Basic Auth</td></tr>
 
-		<p>
-		<b>Media types:</b>
-		
+
+		<tr><td style="vertical-align:top"><b>Media types:</b></td>  <td>
 <div class="content_type" id="content_type_1">
 application/json
-</div>
-		</p>
+</div></td></tr>
 
-		<p>
-		<b><a href="http://apigee.com/docs/api/content/reporting-api-analytics">Developer Guide Topic</a></b>
-		</p>
+		</tbody>
+</table>
+
+
 	</div>
 </div>
 
 <div class="span18">
-	<p>
-	A report is generated using a GET request on the <code>/stats</code> API resource, accompanied by:
+	
+
+		<div class=""><i class="icon-wrench">p</i> For detailed instructions on using the "Retrieve and filter metrics for a dimension from Apigee Analytics services" method, see the <a href="http://apigee.com/docs/api/content/reporting-api-analytics">Developer Guide Topic</a> in the <a href="http://apigee.com/docs/enterprise/content/developer_guide">API Proxy Developer Guide</a>.</div>
+
+		
+		
+	<p><b>Overview: </b>A report is generated using a GET request on the <code>/stats</code> API resource, accompanied by:
 
 <ul><li>An optional URI parameter that defines the dimension for the report. Apigee defines a set of dimensions an pre-aggregates a set of metrics against those dimensions. If no dimension is defined (i.e., if the URI parameter is empty), then a report is generated for all APIs present in the environment specified.</li>
 <li>A set of query parameters that define the metrics, time range, time interval, and filter/drill-down aspects of the report. </li></ul>
@@ -145,9 +144,11 @@ For a complete list of dimensions, metrics, and sample requests, see the <a href
 
 Custom dimensions can be added by defining custom variables as described in the <a href="/docs/enterprise/content/analyzing-api-message-content-using-custom-analytics">Custom Analytics Developer Guide Topic</a>.
 	</p>
+	
 
 	<b>Sample Request:</b>
-	<div class="terminal">$ curl https://api.enterprise.apigee.com/v1/o/{org_name}/environments/{env_name}/stats/{dimension_name}?"select=message_count&timeRange=1/1/2013%2000:00~1/2/2013%2000:00&timeUnit=hour&sortby=message_count&sort=DESC&filter=(apiproxy%20in%20'weather','news')" \
+	<div class="terminal">$ curl -X GET -H "Accept:application/json" \
+https://api.enterprise.apigee.com/v1/o/{org_name}/environments/{env_name}/stats/{dimension_name}?"select={metric_name}&timeRange=1/1/2013%2000:00~1/2/2013%2000:00&timeUnit=hour&sortby={metric_name}&sort=DESC&filter=(apiproxy%20in%20'weather','news')" \
 -u myname:mypass</div>
 
 
@@ -268,6 +269,40 @@ Custom dimensions can be added by defining custom variables as described in the 
 <tr>
 <td>filter</td>
 <td>Enables drill-down on specific dimension values</td>
+<td>N/A</td>
+<td>No</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+<td>limit</td>
+<td>Set the limit for the number of entries returned by the API </td>
+<td>N/A</td>
+<td>No</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+<td>offset</td>
+<td>Use offset with limit to enable pagination of results. For example, to display results 11-20, set limit to &#x27;10&#x27; and offset to &#x27;10&#x27;.</td>
 <td>N/A</td>
 <td>No</td>
 </tr>

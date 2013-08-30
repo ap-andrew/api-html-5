@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="ZI+Jnm1CYArXLaqcI56fnZfDShJOci12YBoI1Ch2KQI=" name="csrf-token" />
+<meta content="D6tv8OW026aISDCFnsmVCooTFgbe9DcdfvrxzeFMQr4=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -47,6 +47,8 @@ Developer and App Administration
 <i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > Apps</i>
 </div>
 
+<hr />
+
 
 <div class="page-header">
   <h1>Apps</h1>
@@ -65,9 +67,9 @@ Developer and App Administration
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Get an app profile</span></td><td><a href="/api_methods/206-get-an-app-profile" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get an app profile</span></td><td><a href="/api/api_methods/206-get-an-app-profile" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apps/{app_id}</pre></span></td></tr>
-				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
+				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets an app by ID</td></tr>
 				<tr><td><strong>Media types:</strong></td><td>
 				
@@ -79,14 +81,23 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get apps by app family</span></td><td><a href="/api_methods/136-get-apps-by-app-family" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get apps by app family</span></td><td><a href="/api/api_methods/136-get-apps-by-app-family" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apps?appfamily={app_family}</pre></span></td></tr>
-				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
+				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">List all apps in an app familty</td></tr>
+				<tr><td><strong>Media types:</strong></td><td>
+				
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get apps by key status</span></td><td><a href="/api_methods/219-get-apps-by-key-status" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get apps by key status</span></td><td><a href="/api/api_methods/219-get-apps-by-key-status" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apps?keyStatus={consumerkey_status}</pre></span></td></tr>
-				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
+				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Lists apps in an organization that have the specified status (approved, pending, or revoked)</td></tr>
 				<tr><td><strong>Media types:</strong></td><td>
 				
@@ -98,24 +109,51 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get apps by status</span></td><td><a href="/api_methods/134-get-apps-by-status" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get apps by status</span></td><td><a href="/api/api_methods/134-get-apps-by-status" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apps?status={status}</pre></span></td></tr>
-				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
+				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Returns all apps with the status of approved, revoked, or pending</td></tr>
+				<tr><td><strong>Media types:</strong></td><td>
+				
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get apps by type</span></td><td><a href="/api_methods/135-get-apps-by-type" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get apps by type</span></td><td><a href="/api/api_methods/135-get-apps-by-type" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apps?apptype={app_type}</pre></span></td></tr>
-				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
+				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">List all apps by app type (either company app or developer app)</td></tr>
+				<tr><td><strong>Media types:</strong></td><td>
+				
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">List apps by creation date</span></td><td><a href="/api_methods/137-list-apps-by-creation-date" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List apps by creation date</span></td><td><a href="/api/api_methods/137-list-apps-by-creation-date" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apps?createdat={created_at}</pre></span></td></tr>
-				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
+				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">List all apps created on the specified date</td></tr>
+				<tr><td><strong>Media types:</strong></td><td>
+				
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">List apps in an organization</span></td><td><a href="/api_methods/205-list-apps-in-an-organization" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List apps in an organization</span></td><td><a href="/api/api_methods/205-list-apps-in-an-organization" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apps</pre></span></td></tr>
-				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
+				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets a list of app IDs in an organization</td></tr>
 				<tr><td><strong>Media types:</strong></td><td>
 				

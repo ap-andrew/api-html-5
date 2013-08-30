@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="ZI+Jnm1CYArXLaqcI56fnZfDShJOci12YBoI1Ch2KQI=" name="csrf-token" />
+<meta content="D6tv8OW026aISDCFnsmVCooTFgbe9DcdfvrxzeFMQr4=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,11 +40,11 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/17-apps-developer">Apps: Developer</a> > Create a Developer App</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api/api_resources/17-apps-developer">Apps: Developer</a> > Create a developer app</i>
 </div>
 
 <p>
-<h1>Create a Developer App</h1> 
+<h1>Create a developer app</h1> 
 </p>
 
 <p><b>API Platform Base Path:</b> <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></p>
@@ -53,32 +53,41 @@
 	<div class="span6" style="width:340px;">
 
 		<p><b>API Resource Path:</b> <code>/developers/{developer_email}/apps</code></p>
-		<p>
-		Creates an App associated with a Developer
+		<p><b>Description:</b> Creates an app associated with a developer
 		</p>
 	</div>
 
 	<div class="span6" style="width:340px;">
-		<p>
-		<b>Verb:</b>
-		<span class="verb-POST">POST</span>
-		</p>
-		<b>Auth:</b>
-		Basic Auth
-		</p>
+<table>		
+	<tbody><tr><td><b>Verb:</b></td> <td><span class="verb-POST">POST</span></td></tr>
+	<tr><td><b>Auth:</b></td> <td>Basic Auth</td></tr>
+
+
+		<tr><td style="vertical-align:top"><b>Media types:</b></td>  <td>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+<div class="content_type" id="content_type_1">
+application/json
+</div></td></tr>
+
+		</tbody>
+</table>
 
 
 	</div>
 </div>
 
 <div class="span18">
-	<p>
-	Optional elements:
-AccessType, CallbackUrl, ApiProducts, Attributes
- 
-Note:
-CallbackUrl can be ‘,’ separated multiple callback URLs’.
+	
+
+		<div class=""><i class="icon-wrench">p</i> For detailed instructions on using the "Create a developer app" method, see the <a href="http://apigee.com/docs/enterprise/content/provision-developers-and-apps">Developer Guide Topic</a> in the <a href="http://apigee.com/docs/enterprise/content/developer_guide">API Proxy Developer Guide</a>.</div>
+
+		
+		
+	<p><b>Overview: </b>
 	</p>
+	
 
 	<b>Sample Request:</b>
 	<div class="terminal">$ curl -H "Content-type:application/json" -X POST -d \
@@ -103,32 +112,12 @@ CallbackUrl can be ‘,’ separated multiple callback URLs’.
 			</tr>
 			</thead>
 			<tr>
-<div class="request_element" id="request_element_36">
-<td>accessType</td>
-<td>Legacy Apigee-specific element, unused in current version of Apigee</td>
-<td>N/A</td>
-<td>No</td>
-<!-- <td><a href="/request_elements/36" class="btn btn-mini">Detail</a></td> -->
-</div></tr>
-
-
-<tr>
 <div class="request_element" id="request_element_37">
 <td>attributes</td>
 <td>Arbitrary name/value attributes that may be used for customizing profile information or for app specific processing.</td>
 <td>N/A</td>
 <td>No</td>
 <!-- <td><a href="/request_elements/37" class="btn btn-mini">Detail</a></td> -->
-</div></tr>
-
-
-<tr>
-<div class="request_element" id="request_element_38">
-<td>callbackUrl</td>
-<td>A URL that can be used by the API to programatically update consumer Apps, Unused by Apigee. Can be multiple comma separated values. </td>
-<td>N/A</td>
-<td>No</td>
-<!-- <td><a href="/request_elements/38" class="btn btn-mini">Detail</a></td> -->
 </div></tr>
 
 
@@ -152,13 +141,22 @@ CallbackUrl can be ‘,’ separated multiple callback URLs’.
 </div></tr>
 
 
+<tr>
+<div class="request_element" id="request_element_38">
+<td>callbackUrl</td>
+<td>The callbackUrl is used by OAuth 2.0 authorization servers to communicate authorization codes back to apps. See the documentation on OAuth 2.0 for more details.</td>
+<td>N/A</td>
+<td>No</td>
+<!-- <td><a href="/request_elements/38" class="btn btn-mini">Detail</a></td> -->
+</div></tr>
+
+
 
 			</table>
 
 
 <b>Sample Response:</b> 
 	<pre>{
-  "accessType" : "read",
   "attributes" : [ {
 	"name" : "Language",
 	"value" : "java"
@@ -191,18 +189,6 @@ CallbackUrl can be ‘,’ separated multiple callback URLs’.
 			</tr>
 			</thead>
 			<tr>
-<div class="response_element" id="response_element_164">
-<td>accessType </td>
-<td>Unenforced by  Apigee</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_165">
-<td>attributes </td>
-<td>Name/value  formatted attributes used to extend the default profile</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_166">
-<td>callbackUrl </td>
-<td>A URL that can be used for app specific callbacks</td>
-</div></tr><tr>
 <div class="response_element" id="response_element_167">
 <td>createdAt </td>
 <td>Unix time when the app was created</td>
@@ -254,6 +240,14 @@ CallbackUrl can be ‘,’ separated multiple callback URLs’.
 <div class="response_element" id="response_element_179">
 <td>status </td>
 <td>Status of the app: &#x27;approved&#x27; or &#x27;unapproved&#x27;</td>
+</div></tr><tr>
+<div class="response_element" id="response_element_165">
+<td>attributes </td>
+<td>Name/value formatted attributes used to extend the default profile</td>
+</div></tr><tr>
+<div class="response_element" id="response_element_166">
+<td>callbackUrl </td>
+<td>The callbackUrl is used by OAuth 2.0 authorization servers to communicate authorization codes back to apps. CallbackUrl must match the value of redirect_uri in some OAuth 2.0 See the documentation on OAuth 2.0 for more details. </td>
 </div></tr>
 		</table>
 

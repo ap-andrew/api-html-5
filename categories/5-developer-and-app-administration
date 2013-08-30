@@ -29,31 +29,31 @@
             <h1>Developer and App Administration</h1>
 <table>
 <tr>
-<td><a href="/api_resources/29-app-families">App Families</a></td>
+<td><a href="/api/api_resources/29-app-families">App Families</a></td>
 </tr>
 <tr>
-<td><a href="/api_resources/30-apps">Apps</a></td>
+<td><a href="/api/api_resources/30-apps">Apps</a></td>
 </tr>
 <tr>
-<td><a href="/api_resources/6-companies">Companies</a></td>
+<td><a href="/api/api_resources/6-companies">Companies</a></td>
 </tr>
 <tr>
-<td><a href="/api_resources/21-company-app-keys">Company App Keys</a></td>
+<td><a href="/api/api_resources/21-company-app-keys">Company App Keys</a></td>
 </tr>
 <tr>
-<td><a href="/api_resources/14-company-apps">Company Apps</a></td>
+<td><a href="/api/api_resources/14-company-apps">Company Apps</a></td>
 </tr>
 <tr>
-<td><a href="/api_resources/13-company-developers">Company Developers</a></td>
+<td><a href="/api/api_resources/13-company-developers">Company Developers</a></td>
 </tr>
 <tr>
-<td><a href="/api_resources/18-developer-app-keys">Developer App Keys</a></td>
+<td><a href="/api/api_resources/18-developer-app-keys">Developer App Keys</a></td>
 </tr>
 <tr>
-<td><a href="/api_resources/17-developer-apps">Developer Apps</a></td>
+<td><a href="/api/api_resources/17-developer-apps">Developer Apps</a></td>
 </tr>
 <tr>
-<td><a href="/api_resources/35-developers">Developers</a></td>
+<td><a href="/api/api_resources/35-developers">Developers</a></td>
 </tr>
 
 Developer & App Administration

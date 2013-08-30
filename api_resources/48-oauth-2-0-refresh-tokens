@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="ZI+Jnm1CYArXLaqcI56fnZfDShJOci12YBoI1Ch2KQI=" name="csrf-token" />
+<meta content="D6tv8OW026aISDCFnsmVCooTFgbe9DcdfvrxzeFMQr4=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -47,6 +47,8 @@ Oauth
 <i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > OAuth 2.0 Refresh Tokens</i>
 </div>
 
+<hr />
+
 
 <div class="page-header">
   <h1>OAuth 2.0 Refresh Tokens</h1>
@@ -67,25 +69,25 @@ Oauth
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Approve an OAuth 2.0 refresh token</span></td><td><a href="/api_methods/211-approve-an-oauth-2-0-refresh-token" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Approve an OAuth 2.0 refresh token</span></td><td><a href="/api/api_methods/211-approve-an-oauth-2-0-refresh-token" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/refreshtokens/{refresh_token}?action=approve&amp;cascade=true</pre></span></td></tr>
-				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
+				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2"></td></tr>
 				<tr><td><strong>Media types:</strong></td><td>
 				
-<div class="content_type" id="content_type_4">
-application/octet-stream
+<div class="content_type" id="content_type_3">
+application/x-www-url-form-encoded
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Revoke an OAuth 2.0 refresh token</span></td><td><a href="/api_methods/212-revoke-an-oauth-2-0-refresh-token" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Revoke an OAuth 2.0 refresh token</span></td><td><a href="/api/api_methods/212-revoke-an-oauth-2-0-refresh-token" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre> /refreshtokens/{refresh_token}?action=revoke&amp;cascade=true</pre></span></td></tr>
-				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
+				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Revokes an OAuth 2.0 refresh token</td></tr>
 				<tr><td><strong>Media types:</strong></td><td>
 				
-<div class="content_type" id="content_type_4">
-application/octet-stream
+<div class="content_type" id="content_type_3">
+application/x-www-url-form-encoded
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>

@@ -41,7 +41,7 @@
 
             <div id="breadcrumb">
 <a href="/docs/enterprise/enterprise_home">Home</a> > <a href="/api-resources
-<a href="/docs/enterprise/enterprise_home">Home</a> > <a href="/docs/api/api-resources">Platform API Reference</a>">Platform API Reference</a> > <a href="/api_resources/7-maps">Maps</a> > Get List of Maps (Expanded)</div>
+<a href="/docs/enterprise/enterprise_home">Home</a> > <a href="/docs/api/api-resources">Platform API Reference</a>">Platform API Reference</a> > <a href="/api/api_resources/7-maps">Maps</a> > Get List of Maps (Expanded)</div>
 <p>
 <h1>Get List of Maps (Expanded)</h1> 
 </p>
@@ -105,19 +105,19 @@
 <td>map </td>
 <td>Top level element for a map</td>
 <!-- <td><a href="/response_elements/400" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/158-get-list-of-maps-expanded?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api/api_methods/158-get-list-of-maps-expanded?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_401">
 <td>entry </td>
 <td>Name/value pair that defines the entry</td>
 <!-- <td><a href="/response_elements/401" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/158-get-list-of-maps-expanded?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api/api_methods/158-get-list-of-maps-expanded?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr><tr>
 <div class="response_element" id="response_element_402">
 <td>name </td>
 <td>The name of the map</td>
 <!-- <td><a href="/response_elements/402" class="btn btn-mini">Detail</a></td> -->
-<!-- <td><a href="/api_methods/158-get-list-of-maps-expanded?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+<!-- <td><a href="/api/api_methods/158-get-list-of-maps-expanded?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
 </div></tr>
 		</table>
 

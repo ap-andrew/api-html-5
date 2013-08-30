@@ -29,22 +29,22 @@
             <h1>Administration</h1>
 <table>
 <tr>
-<td><a href="/api_resources/46-audits">Audits</a></td>
+<td><a href="/api/api_resources/46-audits">Audits</a></td>
 </tr>
 <tr>
-<td><a href="/api_resources/15-environments">Environments</a></td>
+<td><a href="/api/api_resources/15-environments">Environments</a></td>
 </tr>
 <tr>
-<td><a href="/api_resources/41-rbac-resources">RBAC Resources</a></td>
+<td><a href="/api/api_resources/41-rbac-resources">RBAC Resources</a></td>
 </tr>
 <tr>
-<td><a href="/api_resources/38-user-roles">User roles</a></td>
+<td><a href="/api/api_resources/38-user-roles">User roles</a></td>
 </tr>
 <tr>
-<td><a href="/api_resources/37-users">Users</a></td>
+<td><a href="/api/api_resources/37-users">Users</a></td>
 </tr>
 <tr>
-<td><a href="/api_resources/16-virtual-hosts">Virtual Hosts</a></td>
+<td><a href="/api/api_resources/16-virtual-hosts">Virtual Hosts</a></td>
 </tr>
 
 

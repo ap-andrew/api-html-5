@@ -52,7 +52,7 @@ API Analytics
 </div>
 
 <!-- <div class=btn>
-<a href="/api_methods/new">Add an API Method</a>
+<a href="/api/api_methods/new">Add an API Method</a>
 </div> -->
 
 <p><b>API Platform Base Path: </b>https://api.enterprise.apigee.com/v1/o/{org_name}</p>
@@ -98,7 +98,7 @@ API Analytics
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Get an analytics report for a dimension</span></td><td><a href="/api_methods/71-get-an-analytics-report-for-a-dimension" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get an analytics report for a dimension</span></td><td><a href="/api/api_methods/71-get-an-analytics-report-for-a-dimension" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/environments/{env_name}/stats/{dimension_name}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Use the GET method to retrieve metrics for a dimension</td></tr>

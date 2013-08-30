@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="ZI+Jnm1CYArXLaqcI56fnZfDShJOci12YBoI1Ch2KQI=" name="csrf-token" />
+<meta content="D6tv8OW026aISDCFnsmVCooTFgbe9DcdfvrxzeFMQr4=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,11 +40,11 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/17-apps-developer">Apps: Developer</a> > List Developer Apps (Expanded)</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api/api_resources/17-apps-developer">Apps: Developer</a> > List developer apps (Expanded)</i>
 </div>
 
 <p>
-<h1>List Developer Apps (Expanded)</h1> 
+<h1>List developer apps (Expanded)</h1> 
 </p>
 
 <p><b>API Platform Base Path:</b> <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></p>
@@ -53,31 +53,43 @@
 	<div class="span6" style="width:340px;">
 
 		<p><b>API Resource Path:</b> <code>/developers/{developer_email}/apps?expand=true</code></p>
-		<p>
-		Provides an expanded view of a developer&#x27;s collection of apps
+		<p><b>Description:</b> Provides an expanded view of a developer&#x27;s collection of apps
 		</p>
 	</div>
 
 	<div class="span6" style="width:340px;">
-		<p>
-		<b>Verb:</b>
-		<span class="verb-GET">GET</span>
-		</p>
-		<b>Auth:</b>
-		Basic Auth
-		</p>
+<table>		
+	<tbody><tr><td><b>Verb:</b></td> <td><span class="verb-GET">GET</span></td></tr>
+	<tr><td><b>Auth:</b></td> <td>Basic Auth</td></tr>
+
+
+		<tr><td style="vertical-align:top"><b>Media types:</b></td>  <td>
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div></td></tr>
+
+		</tbody>
+</table>
 
 
 	</div>
 </div>
 
 <div class="span18">
-	<p>
 	
+		
+		
+	<p><b>Overview: </b>
 	</p>
+	
 
 	<b>Sample Request:</b>
-	<div class="terminal">$ curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}developers/{developer_email}/apps?"expand=true"</div>
+	<div class="terminal">$ curl -X GET -H "Accept:application/json" \
+https://api.enterprise.apigee.com/v1/o/{org_name}developers/{developer_email}/apps?"expand=true" \
+-u myname:mypass</div>
 
 
 <b>Sample Response:</b> 

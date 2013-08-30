@@ -29,16 +29,16 @@
             <h1>API Configuration and Management</h1>
 <table>
 <tr>
-<td><a href="/api_resources/3-api-products">API Products</a></td>
+<td><a href="/api/api_resources/3-api-products">API Products</a></td>
 </tr>
 <tr>
-<td><a href="/api_resources/1-apis">APIs</a></td>
+<td><a href="/api/api_resources/1-apis">APIs</a></td>
 </tr>
 <tr>
-<td><a href="/api_resources/10-debug-sessions">Debug Sessions</a></td>
+<td><a href="/api/api_resources/10-debug-sessions">Debug Sessions</a></td>
 </tr>
 <tr>
-<td><a href="/api_resources/36-deployments">Deployments</a></td>
+<td><a href="/api/api_resources/36-deployments">Deployments</a></td>
 </tr>
 
 Apigee Enterprise API enables developers to create, modify, deploy, and debug the behavior of APIs.

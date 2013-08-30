@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apigee API Reference</title>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="D6tv8OW026aISDCFnsmVCooTFgbe9DcdfvrxzeFMQr4=" name="csrf-token" />
+    <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
+
+	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
+       <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+       <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+       <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+       <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+	  <script src="/assets/application-dc5c9a427e1f5afd21166897f350d896.js" type="text/javascript"></script> 
+	  <script type="text/javascript" charset="utf-8">
+	jQuery(document).ready(function () {
+	    jQuery("td span.expand").click(function () {
+	        jQuery(this).parents("tr.main").nextUntil("tr.main").toggle();
+	    });
+	});
+	  </script>
+	<script type="text/javascript">
+	jQuery(document).ready(function() {
+	  jQuery("resource_table").hide();
+	  //toggle the componenet with class msg_body
+	  jQuery(".heading").click(function()
+	  {
+	    jQuery(this).next(".content").slideToggle(500);
+	  });
+	});
+	</script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="row"> 
+           <div class="span12">
+
+            <div id="breadcrumb">
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api/api_resources/31-oauth-1-0a-request-tokens">OAuth 1.0a Request Tokens</a> > List OAuth 1.0a request tokens</i>
+</div>
+
+<p>
+<h1>List OAuth 1.0a request tokens</h1> 
+</p>
+
+<p><b>API Platform Base Path:</b> <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></p>
+
+<div class="row">
+	<div class="span6" style="width:340px;">
+
+		<p><b>API Resource Path:</b> <code>/oauth1/requesttokens</code></p>
+		<p><b>Description:</b> Returns list of all Oauth 1.0a request tokens, with detail for each token
+		</p>
+	</div>
+
+	<div class="span6" style="width:340px;">
+<table>		
+	<tbody><tr><td><b>Verb:</b></td> <td><span class="verb-GET">GET</span></td></tr>
+	<tr><td><b>Auth:</b></td> <td>Basic Auth</td></tr>
+
+</tbody>
+</table>
+
+
+	</div>
+</div>
+
+<div class="span18">
+	
+		
+		
+	<p><b>Overview: </b>
+	</p>
+	
+
+	<b>Sample Request:</b>
+	<div class="terminal">$ curl -X GET -H "Accept:application/json" \ 
+https://api.enterprise.apigee.com/v1/o/{org_name}/oauth1/requesttokens \
+-u myname:mypass</div>
+
+
+<b>Sample Response:</b> 
+	<pre>{
+  "requestToken" : [ {
+    "app" : "app1",
+    "attributes" : [ ],
+    "callbackUrl" : "api.company.com",
+    "consumerKey" : "HAflZ3JzeQaEuPzTVQ5YCIy9TAh0Lhba",
+    "createdAt" : 1343028237179,
+    "createdBy" : "defaultUser",
+    "expiresAt" : 1343028237184,
+    "issuedAt" : 1343028237179,
+    "lastModifiedAt" : 1343028237179,
+    "lastModifiedBy" : "defaultUser",
+    "secret" : "u3rn4tdRaBYvnk4FdZmOD6oDoQA8",
+    "status" : "expired",
+    "token" : "bKf4sSPg8vUoeLmR4iNCbl2y94NB"
+  }, {
+    "app" : "myApp",
+    "attributes" : [ {
+      "name" : "region",
+      "value" : "south"
+    } ],
+    "callbackUrl" : "www.nike.com",
+    "consumerKey" : "Lmupmwb5mD6CAEl6vqii1kojTGMiCnWj",
+    "createdAt" : 1343034561737,
+    "createdBy" : "Admin",
+    "expiresAt" : 1343036361737,
+    "issuedAt" : 1343034561737,
+    "lastModifiedAt" : 1343034561737,
+    "lastModifiedBy" : "Admin",
+    "scope" : "local",
+    "secret" : "kSdnf7pBZADjxg5qfMkHhDVTumR5",
+    "status" : "approved",
+    "token" : "1wXHJFNXLA0Haeg4lVMToZWJHaFM"
+  },
+  {.....}
+ ]
+}</pre>
+
+
+	<b>Errors</b> 
+		<pre>Failure 500 with proper error message
+{
+  &quot;code&quot; : &quot;keymanagement.service.oauth10_request_token_fetch_failed,
+  &quot;message&quot; : &quot;unable to fetch request token details&quot;,
+  &quot;contexts&quot; : [ ]
+}
+
+Error Codes:
+1. keymanagement.service.oauth10_request_token_fetch_failed</pre>
+	
+</div>
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->
+
+		<!-- <footer>
+        	<p>&copy; Apigee, Inc. 2012</p>
+      	</footer>  -->
+
+    </div> <!-- /container -->
+
+
+
+  </body>
+</html>

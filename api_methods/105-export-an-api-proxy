@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="ZI+Jnm1CYArXLaqcI56fnZfDShJOci12YBoI1Ch2KQI=" name="csrf-token" />
+<meta content="D6tv8OW026aISDCFnsmVCooTFgbe9DcdfvrxzeFMQr4=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/1-apis">APIs</a> > Export an API proxy</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api/api_resources/1-apis">APIs</a> > Export an API proxy</i>
 </div>
 
 <p>
@@ -53,33 +53,40 @@
 	<div class="span6" style="width:340px;">
 
 		<p><b>API Resource Path:</b> <code>/apis/{api_name}/revisions{revision_number}?format=bundle</code></p>
-		<p>
-		Exports an API from Apigee to the local machine a ZIP bundle of config and code files.
+		<p><b>Description:</b> Exports an API from Apigee to the local machine a ZIP bundle of config and code files.
 		</p>
 	</div>
 
 	<div class="span6" style="width:340px;">
-		<p>
-		<b>Verb:</b>
-		<span class="verb-GET">GET</span>
-		</p>
-		<b>Auth:</b>
-		Basic Auth
-		</p>
+<table>		
+	<tbody><tr><td><b>Verb:</b></td> <td><span class="verb-GET">GET</span></td></tr>
+	<tr><td><b>Auth:</b></td> <td>Basic Auth</td></tr>
 
 
-		<p>
-		<b><a href="http://apigee.com/docs/api/content/quickstarts/local-api-development">Developer Guide Topic</a></b>
-		</p>
+		<tr><td style="vertical-align:top"><b>Media types:</b></td>  <td>
+<div class="content_type" id="content_type_4">
+application/octet-stream
+</div></td></tr>
+
+		</tbody>
+</table>
+
+
 	</div>
 </div>
 
 <div class="span18">
-	<p>
-	<p>Outputs an API revision as a ZIP formatted bundle of code and config files. This enables local configuration and development, including attachment of policies and scripts. </p>
+	
+
+		<div class=""><i class="icon-wrench">p</i> For detailed instructions on using the "Export an API proxy" method, see the <a href="http://apigee.com/docs/api/content/quickstarts/local-api-development">Developer Guide Topic</a> in the <a href="http://apigee.com/docs/enterprise/content/developer_guide">API Proxy Developer Guide</a>.</div>
+
+		
+		
+	<p><b>Overview: </b><p>Outputs an API revision as a ZIP formatted bundle of code and config files. This enables local configuration and development, including attachment of policies and scripts. </p>
 
 <p>To export the ZIP file to a local file add <code>-o {file_name}.zip</code> to the curl command above to create the named ZIP in the current working directory.</p>
 	</p>
+	
 
 	<b>Sample Request:</b>
 	<div class="terminal">$ curl  https://api.enterprise.apigee.com/v1/o/{org_name}/apis/{api_name}/revisions/{revision_number}?"format=bundle" -o {file_name}.zip \

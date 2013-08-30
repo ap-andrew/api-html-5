@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="ZI+Jnm1CYArXLaqcI56fnZfDShJOci12YBoI1Ch2KQI=" name="csrf-token" />
+<meta content="D6tv8OW026aISDCFnsmVCooTFgbe9DcdfvrxzeFMQr4=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/3-api-products">API Products</a> > Delete an API product</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api/api_resources/3-api-products">API Products</a> > Delete an API product</i>
 </div>
 
 <p>
@@ -53,31 +53,32 @@
 	<div class="span6" style="width:340px;">
 
 		<p><b>API Resource Path:</b> <code>/apiproducts/{apiproduct_name}</code></p>
-		<p>
-		Deletes an API Product
+		<p><b>Description:</b> Deletes an API Product
 		</p>
 	</div>
 
 	<div class="span6" style="width:340px;">
-		<p>
-		<b>Verb:</b>
-		<span class="verb-DELETE">DELETE</span>
-		</p>
-		<b>Auth:</b>
-		Basic Auth
-		</p>
+<table>		
+	<tbody><tr><td><b>Verb:</b></td> <td><span class="verb-DELETE">DELETE</span></td></tr>
+	<tr><td><b>Auth:</b></td> <td>Basic Auth</td></tr>
+
+</tbody>
+</table>
 
 
-		<p>
-		<b><a href="http://apigee.com/docs/api/content/provision-developers-and-apps">Developer Guide Topic</a></b>
-		</p>
 	</div>
 </div>
 
 <div class="span18">
-	<p>
-	Deletes an API product from an organization. Note that deleting an API product will cause app requests to the resources URIs)  defined in the API product to fail. Make sure you create a new API product to serve existing apps (unless your intention is disable access to the resources defined in the API product.)
+	
+
+		<div class=""><i class="icon-wrench">p</i> For detailed instructions on using the "Delete an API product" method, see the <a href="http://apigee.com/docs/api/content/provision-developers-and-apps">Developer Guide Topic</a> in the <a href="http://apigee.com/docs/enterprise/content/developer_guide">API Proxy Developer Guide</a>.</div>
+
+		
+		
+	<p><b>Overview: </b>Deletes an API product from an organization. Note that deleting an API product will cause app requests to the resources URIs)  defined in the API product to fail. Make sure you create a new API product to serve existing apps (unless your intention is disable access to the resources defined in the API product.)
 	</p>
+	
 
 	<b>Sample Request:</b>
 	<div class="terminal">$ curl https://api.enterprise.apigee.com/v1/o/{org_name}/apiproducts/{apiproduct_name} -X DELETE \

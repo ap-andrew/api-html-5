@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="ZI+Jnm1CYArXLaqcI56fnZfDShJOci12YBoI1Ch2KQI=" name="csrf-token" />
+<meta content="D6tv8OW026aISDCFnsmVCooTFgbe9DcdfvrxzeFMQr4=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/29-app-families">App Families</a> > Remove an app from an app family</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api/api_resources/29-app-families">App Families</a> > Remove an app from an app family</i>
 </div>
 
 <p>
@@ -53,31 +53,34 @@
 	<div class="span6" style="width:340px;">
 
 		<p><b>API Resource Path:</b> <code>/developers/{developer_email}/appfamilies/{app_family}/app/{app_name}</code></p>
-		<p>
-		Removes an App from an App Family
+		<p><b>Description:</b> Removes an App from an App Family
 		</p>
 	</div>
 
 	<div class="span6" style="width:340px;">
-		<p>
-		<b>Verb:</b>
-		<span class="verb-DELETE">DELETE</span>
-		</p>
-		<b>Auth:</b>
-		Basic Auth
-		</p>
+<table>		
+	<tbody><tr><td><b>Verb:</b></td> <td><span class="verb-DELETE">DELETE</span></td></tr>
+	<tr><td><b>Auth:</b></td> <td>Basic Auth</td></tr>
+
+</tbody>
+</table>
 
 
 	</div>
 </div>
 
 <div class="span18">
-	<p>
-	Removes a single App from an App Family.
+	
+		
+		
+	<p><b>Overview: </b>Removes a single App from an App Family.
 	</p>
+	
 
 	<b>Sample Request:</b>
-	<div class="terminal">$ curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/developers/{developer_email}/appfamilies/{appfamily_name}/apps/{app_name} -X DELETE</div>
+	<div class="terminal">$ curl -X DELETE \
+https://api.enterprise.apigee.com/v1/o/{org_name}/developers/{developer_email}/appfamilies/{appfamily_name}/apps/{app_name} \
+-u myname:mypass</div>
 
 
 <b>Sample Response:</b> 

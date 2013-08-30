@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="ZI+Jnm1CYArXLaqcI56fnZfDShJOci12YBoI1Ch2KQI=" name="csrf-token" />
+<meta content="D6tv8OW026aISDCFnsmVCooTFgbe9DcdfvrxzeFMQr4=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/1-apis">APIs</a> > Update an API</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api/api_resources/1-apis">APIs</a> > Update an API</i>
 </div>
 
 <p>
@@ -53,41 +53,41 @@
 	<div class="span6" style="width:340px;">
 
 		<p><b>API Resource Path:</b> <code>/apis/{api_name}</code></p>
-		<p>
-		Use the POST method to update a specific API proxy in an organization
+		<p><b>Description:</b> Use the POST method to update a specific API proxy in an organization
 		</p>
 	</div>
 
 	<div class="span6" style="width:340px;">
-		<p>
-		<b>Verb:</b>
-		<span class="verb-PUT">PUT</span>
-		</p>
-		<b>Auth:</b>
-		Basic Auth
-		</p>
+<table>		
+	<tbody><tr><td><b>Verb:</b></td> <td><span class="verb-PUT">PUT</span></td></tr>
+	<tr><td><b>Auth:</b></td> <td>Basic Auth</td></tr>
 
-		<p>
-		<b>Media types:</b>
-		
+
+		<tr><td style="vertical-align:top"><b>Media types:</b></td>  <td>
 <div class="content_type" id="content_type_1">
 application/json
 </div>
 <div class="content_type" id="content_type_2">
 text/xml
-</div>
-		</p>
+</div></td></tr>
 
-		<p>
-		<b><a href="http://apigee.com/docs/api/content/quickstarts/local-api-development">Developer Guide Topic</a></b>
-		</p>
+		</tbody>
+</table>
+
+
 	</div>
 </div>
 
 <div class="span18">
-	<p>
-	Updates the API using the information included in the request. Only the information to be updated needs to be included. In this example, we add a description to the API proxy using the PUT method.
+	
+
+		<div class=""><i class="icon-wrench">p</i> For detailed instructions on using the "Update an API" method, see the <a href="http://apigee.com/docs/api/content/quickstarts/local-api-development">Developer Guide Topic</a> in the <a href="http://apigee.com/docs/enterprise/content/developer_guide">API Proxy Developer Guide</a>.</div>
+
+		
+		
+	<p><b>Overview: </b>Updates the API using the information included in the request. Only the information to be updated needs to be included. In this example, we add a description to the API proxy using the PUT method.
 	</p>
+	
 
 	<b>Sample Request:</b>
 	<div class="terminal">$ curl -H "Content-type:application/json" -X PUT -d \

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="ZI+Jnm1CYArXLaqcI56fnZfDShJOci12YBoI1Ch2KQI=" name="csrf-token" />
+<meta content="D6tv8OW026aISDCFnsmVCooTFgbe9DcdfvrxzeFMQr4=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/37-users">Users</a> > Associate a user with a user role</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api/api_resources/37-users">Users</a> > Associate a user with a user role</i>
 </div>
 
 <p>
@@ -53,37 +53,39 @@
 	<div class="span6" style="width:340px;">
 
 		<p><b>API Resource Path:</b> <code>/users/{user_email}/userroles</code></p>
-		<p>
-		Associates a user with one or more roles
+		<p><b>Description:</b> Associates a user with one or more roles
 		</p>
 	</div>
 
 	<div class="span6" style="width:340px;">
-		<p>
-		<b>Verb:</b>
-		<span class="verb-POST">POST</span>
-		</p>
-		<b>Auth:</b>
-		Basic Auth
-		</p>
+<table>		
+	<tbody><tr><td><b>Verb:</b></td> <td><span class="verb-POST">POST</span></td></tr>
+	<tr><td><b>Auth:</b></td> <td>Basic Auth</td></tr>
 
-		<p>
-		<b>Media types:</b>
-		
+
+		<tr><td style="vertical-align:top"><b>Media types:</b></td>  <td>
 <div class="content_type" id="content_type_1">
 application/json
 </div>
 <div class="content_type" id="content_type_2">
 text/xml
-</div>
-		</p>
+</div></td></tr>
+
+		</tbody>
+</table>
+
 
 	</div>
 </div>
 
 <div class="span18">
-	<p>
-	<p>Associates a user with one more user roles, providing access to the permissions defined for that role.</p>
+	
+
+		<div class=""><i class="icon-wrench">p</i> For detailed instructions on using the "Associate a user with a user role" method, see the <a href="http://apigee.com/docs/api-platform/content/creating-automation-clients">Developer Guide Topic</a> in the <a href="http://apigee.com/docs/enterprise/content/developer_guide">API Proxy Developer Guide</a>.</div>
+
+		
+		
+	<p><b>Overview: </b><p>Associates a user with one more user roles, providing access to the permissions defined for that role.</p>
 
 <p>Predefined roles API Platform users are:</p>
 
@@ -116,6 +118,7 @@ text/xml
 
 <p>Note : The API call will return an error if one of the roles is invalid or does not exist. The role must belong to the organization scope.</p>
 	</p>
+	
 
 	<b>Sample Request:</b>
 	<div class="terminal">$ curl -H "Content-type:application/json" -X POST -d \
