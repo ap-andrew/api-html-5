@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="D6tv8OW026aISDCFnsmVCooTFgbe9DcdfvrxzeFMQr4=" name="csrf-token" />
+<meta content="EWcnCkE7pbRXg2ciOee+rKK/RNoqTZe7mYuItKRfTWI=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-platform/api/api-resources-reference">Platform  API Reference</a> > <a href="/api/api_resources/29-app-families">App Families</a> > Create an app family</i>
+<i><a href="/docs/enterprise/enterprise_home">Home</a> > <a href="/docs/enterprise/content/ref_library">Reference</a> > <a href="/docs/api/api-resources">Platform API Reference</a> > <a href="/api_resources/29-app-families">App Families</a> > Create an app family</i>
 </div>
 
 <p>
@@ -81,13 +81,11 @@ text/xml
 <div class="span18">
 	
 		
-		
-	<p><b>Overview: </b>This method enables developer apps to be associated in a collection called an 'App Family". The association of such apps is entirely arbitrary. This is often used to associate a 'sandbox' version of an app with a 'production' version of an app. Apigee does no special processing on such collections, except to maintain the relationship among apps that are contained in the family that is created using this method. 
-	</p>
+	<p><b>Overview: </b>This method enables developer apps to be associated in a collection called an 'App Family". The association of such apps is entirely arbitrary. This is often used to associate a 'sandbox' version of an app with a 'production' version of an app. Apigee does no special processing on such collections, except to maintain the relationship among apps that are contained in the family that is created using this method. </p>
 	
 
 	<b>Sample Request:</b>
-	<div class="terminal">$ curl -H "Content-Type:application/json" -X POST -d \
+	<pre class="terminal">$ curl -H "Content-Type:application/json" -X POST -d \
    '{"name" : "WeatherApps","apps": ["weatherapp", "weatherapp_prod"]}' \
 -u myname:mypass https://api.enterprise.apigee.com/v1/o/{org_name}/developers/{developer_email}/appfamilies</div>
 	<b>Request Payload Elements:</b> 

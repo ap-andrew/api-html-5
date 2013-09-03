@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="D6tv8OW026aISDCFnsmVCooTFgbe9DcdfvrxzeFMQr4=" name="csrf-token" />
+<meta content="EWcnCkE7pbRXg2ciOee+rKK/RNoqTZe7mYuItKRfTWI=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-platform/api/api-resources-reference">Platform  API Reference</a> > <a href="/api/api_resources/21-company-app-keys">Company App Keys</a> > Update existing app key with new API product(s).</i>
+<i><a href="/docs/enterprise/enterprise_home">Home</a> > <a href="/docs/enterprise/content/ref_library">Reference</a> > <a href="/docs/api/api-resources">Platform API Reference</a> > <a href="/api_resources/21-company-app-keys">Company app keys</a> > Update existing app key with new API product(s).</i>
 </div>
 
 <p>
@@ -53,7 +53,7 @@
 	<div class="span6" style="width:340px;">
 
 		<p><b>API Resource Path:</b> <code>/companies/{company_name}/apps/{app_ame}/keys/{consumer key}</code></p>
-		<p><b>Description:</b> Update existing company app key with additional API product(s).
+		<p><b>Description:</b> Updates an existing company app key with additional API product(s).
 		</p>
 	</div>
 
@@ -62,7 +62,16 @@
 	<tbody><tr><td><b>Verb:</b></td> <td><span class="verb-POST">POST</span></td></tr>
 	<tr><td><b>Auth:</b></td> <td>Basic Auth</td></tr>
 
-</tbody>
+
+		<tr><td style="vertical-align:top"><b>Media types:</b></td>  <td>
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div></td></tr>
+
+		</tbody>
 </table>
 
 
@@ -71,15 +80,18 @@
 
 <div class="span18">
 	
+
+		<div class="prerequisites"><b>For detailed instructions on using the "Update existing app key with new API product(s)." method, see the <a href="http://apigee.com/docs/api-platform/content/provision-api-products-developers-and-apps">Developer Guide Topic</a> in the <a href="http://apigee.com/docs/enterprise/content/developer_guide">API Proxy Developer Guide</a>.</b></div>
+
 		
-		
-	<p><b>Overview: </b>Update existing App Key with New ApiProduct(s).
-New ApiProduct(s) will merge existing ApiProduct(s).
-	</p>
+	<p><b>Overview: </b><p>This method updates existing app key with one or more API products.</p>
+<p>New API products added to an app key are merged with any existing API products for the key.</p>
+<p>Use this method to "promote" apps by adding access to additional API calls, or by adding access to an API product with higher Quota.</p>
+<p>Note that only a single API product can be resolved per app key at runtime. API products are resolved by name, in alphabetical order. The first API product found in the list will be returned.</p> </p>
 	
 
 	<b>Sample Request:</b>
-	<div class="terminal">$ curl -H "Content-type:application/json" -X POST -d \
+	<pre class="terminal">$ curl -H "Content-type:application/json" -X POST -d \
 '{
   "apiProducts" : ["TestApiProduct1","TestApiProduct2"],
   "attributes" : [ {

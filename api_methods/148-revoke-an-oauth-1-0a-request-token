@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="D6tv8OW026aISDCFnsmVCooTFgbe9DcdfvrxzeFMQr4=" name="csrf-token" />
+<meta content="EWcnCkE7pbRXg2ciOee+rKK/RNoqTZe7mYuItKRfTWI=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-platform/api/api-resources-reference">Platform  API Reference</a> > <a href="/api/api_resources/31-oauth-1-0a-request-tokens">OAuth 1.0a Request Tokens</a> > Revoke an OAuth 1.0a request token</i>
+<i><a href="/docs/enterprise/enterprise_home">Home</a> > <a href="/docs/enterprise/content/ref_library">Reference</a> > <a href="/docs/api/api-resources">Platform API Reference</a> > <a href="/api_resources/31-oauth-1-0a-request-tokens">OAuth 1.0a Request Tokens</a> > Revoke an OAuth 1.0a request token</i>
 </div>
 
 <p>
@@ -78,13 +78,10 @@ application/x-www-url-form-encoded
 <div class="span18">
 	
 		
-		
-	<p><b>Overview: </b>
-	</p>
 	
 
 	<b>Sample Request:</b>
-	<div class="terminal">$ curl -H "Content-type: application/x-www-url-form-encoded" -X POST \
+	<pre class="terminal">$ curl -H "Content-type: application/x-www-url-form-encoded" -X POST \
 https://api.enterprise.apigee.com/v1/organizations/{org_name}/oauth1/requesttokens/{request_token}?"action=revoke" \
 -u myname:mypass</div>
 

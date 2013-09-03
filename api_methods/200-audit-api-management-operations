@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="D6tv8OW026aISDCFnsmVCooTFgbe9DcdfvrxzeFMQr4=" name="csrf-token" />
+<meta content="EWcnCkE7pbRXg2ciOee+rKK/RNoqTZe7mYuItKRfTWI=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-platform/api/api-resources-reference">Platform  API Reference</a> > <a href="/api/api_resources/46-audits">Audits</a> > Audit API management operations</i>
+<i><a href="/docs/enterprise/enterprise_home">Home</a> > <a href="/docs/enterprise/content/ref_library">Reference</a> > <a href="/docs/api/api-resources">Platform API Reference</a> > <a href="/api_resources/46-audits">Audits</a> > Audit API management operations</i>
 </div>
 
 <p>
@@ -52,7 +52,7 @@
 <div class="row">
 	<div class="span6" style="width:340px;">
 
-		<p><b>API Resource Path:</b> <code>/audits</code></p>
+		<p><b>API Resource Path:</b> <code>/audits/o/{org_name}</code></p>
 		<p><b>Description:</b> Lists audit records  for management operations against APIs, API revisions, and policies. (Note that base path inserts audits before organizations: /audits/organizations/org_name}.
 		</p>
 	</div>
@@ -81,31 +81,34 @@ text/xml
 <div class="span18">
 	
 		
-		
-	<p><b>Overview: </b><p>The /audits API enables you to obtain a record of all management calls made against API proxies in an organization.</p>
+	<p><b>Overview: </b><p>The <code>/audits</code> API enables you to obtain a record of all management calls made against entities in an organization.</p>
 
-<p>By calling /audits, you can determine for example, when an API proxy was deployed to an environment, and by whom.</p>
+<p>By calling <code>/audits</code>, you can determine, for example, when an API proxy was deployed to an environment, and by whom. You can also use the Audits API to retrieve the management history of OAuth tokens, enabling you to verify app end user consent.</p>
 
-<p>Append the target resource as a URL parameter to the base path of the request for an audit.</p>
+<p>To generate a request to the Audit API, append the target resource as a URL parameter to the base path of the request for an audit.</p>
+
+<p>An response returns a history of GET, CREATE, UPDATE, and DELETE operations on the audit target.</p>
 
 <p>Supported audit targets:</p>
 <ul>
-<li>/apis/{api_name}</li>
-<li>/apis/{api_name}/revisions/{revision_number}/policies/{policy_name}</li>
-<li>/apis/{api_name}/revisions/{revision_number}/resources/{resource_name}</li></ul>
+<li><code>/apis/{api_name}</code></li>
+<li><code>/apis/{api_name}/revisions/{revision_number}/policies/{policy_name}</code></li>
+<li><code>/apis/{api_name}/revisions/{revision_number}/resources/{resource_name}</code></li>
+<li><code>/oauth2/accesstokens</code></li>
+<li><code>/oauth2/authorizationcodes</code></li>
+<li><code>/oauth1/accesstokens</code></li>
+<li><code>/oauth1/requesttokens</code></li>
+</ul>
 
 <p>Note that a resource name identifies a JavaScript, Python, Java, or XSLT file stored under <code>/resources</code> in an API proxy configuration.</p>
 
-<p>An audit returns a history of GET, CREATE, UPDATE, and DELETE operations on the audit target.</p>
-
 <p>To retrieve all audit records for sub-entities, use the query parameter <code>expand=true</code>. By setting <code>expand=true</code> on <code>/apis</code>, you return audit records for all revisions, policies, and resources for all API proxies in your organization.</p>
 
-<p>For API revisions, deploy and undeploy actions are recorded as CREATE operations. Therefore a CREATE action on an API revision indicates that a new revision was deployed while the previous revision was undeployed. </p>
-	</p>
+<p>For API revisions, deploy and undeploy actions are recorded as CREATE operations. Therefore a CREATE action on an API revision indicates that a new revision was deployed while the previous revision was undeployed. </p></p>
 	
 
 	<b>Sample Request:</b>
-	<div class="terminal">$ curl -X GET -H "Accept:application/json" \
+	<pre class="terminal">$ curl -X GET -H "Accept:application/json" \
 https://api.enterprise.apigee.com/v1/audits/o/[org_name}/apis/{api_name}?"operation=create&timeline=week" \
 -u myname:mypass</div>
 
@@ -174,10 +177,61 @@ https://api.enterprise.apigee.com/v1/audits/o/[org_name}/apis/{api_name}?"operat
 
 
 <tr>
-<td>expand</td>
-<td>&#x27;true&#x27; is the only valid value for this query parameter. When set to true, the audit records for all sub-resources are returned in the list of records. </td>
+<td>startTime</td>
+<td>The beginning time, in Unix epoch format, for which audit entries should be returned</td>
 <td>N/A</td>
 <td>No</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+<td>endTime</td>
+<td>The end time, in Unix epoch format, for which audit entries should be returned</td>
+<td>N/A</td>
+<td>Yes</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+<td>rows</td>
+<td>A limit on the total number of entries returned by the API call</td>
+<td>N/A</td>
+<td>Yes</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+<td>expand</td>
+<td>&#x27;true&#x27; is the only valid value for this query parameter. When set to true, the audit records for all sub-resources are returned in the list of records. </td>
+<td></td>
+<td>Yes</td>
 </tr>
 
 

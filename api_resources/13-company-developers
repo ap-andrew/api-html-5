@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="D6tv8OW026aISDCFnsmVCooTFgbe9DcdfvrxzeFMQr4=" name="csrf-token" />
+<meta content="EWcnCkE7pbRXg2ciOee+rKK/RNoqTZe7mYuItKRfTWI=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -44,7 +44,7 @@ Developer and App Administration
 </div>
 
 <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-platform/api/api-resources-reference">Platform  API Reference</a> > Company Developers</i>
+<i><a href="/docs/enterprise/enterprise_home">Home</a> > <a href="/docs/enterprise/content/ref_library">Reference</a> > <a href="/docs/api/api-resources">Platform API Reference</a> > Company Developers</i>
 </div>
 
 <hr />
@@ -78,7 +78,7 @@ Company developers are mapped to developers in your organization using the devel
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Add a company developer</span></td><td><a href="/api/api_methods/122-add-a-company-developer" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Add a company developer</span></td><td><a href="/docs/api/api_methods/122-add-a-company-developer" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/companies/{company_name}/developers</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Adds a developer to a company</td></tr>
@@ -92,12 +92,12 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Delete a developer association with a company</span></td><td><a href="/api/api_methods/123-delete-a-developer-association-with-a-company" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete a developer association with a company</span></td><td><a href="/docs/api/api_methods/123-delete-a-developer-association-with-a-company" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/companies/{company_name}/developers/{developer_email}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Removes the association of a Developer with a Company</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">List developers in a company</span></td><td><a href="/api/api_methods/124-list-developers-in-a-company" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List developers in a company</span></td><td><a href="/docs/api/api_methods/124-list-developers-in-a-company" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/companies/{company_name}/developers/</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Lists all developers associated with a company</td></tr>

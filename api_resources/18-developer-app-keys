@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="D6tv8OW026aISDCFnsmVCooTFgbe9DcdfvrxzeFMQr4=" name="csrf-token" />
+<meta content="EWcnCkE7pbRXg2ciOee+rKK/RNoqTZe7mYuItKRfTWI=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -44,7 +44,7 @@ Developer and App Administration
 </div>
 
 <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-platform/api/api-resources-reference">Platform  API Reference</a> > Developer App Keys</i>
+<i><a href="/docs/enterprise/enterprise_home">Home</a> > <a href="/docs/enterprise/content/ref_library">Reference</a> > <a href="/docs/api/api-resources">Platform API Reference</a> > Developer App Keys</i>
 </div>
 
 <hr />
@@ -67,7 +67,7 @@ Developer and App Administration
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Approve a developer app key</span></td><td><a href="/api/api_methods/93-approve-a-developer-app-key" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Approve a developer app key</span></td><td><a href="/docs/api/api_methods/93-approve-a-developer-app-key" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_emal}/apps/{app_name}/keys/{consumer_key}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Changes the status of a consumer key from &#x27;pending&#x27; to &#x27;approved&#x27;</td></tr>
@@ -78,7 +78,7 @@ application/x-www-url-form-encoded
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Approve API Product for the Key of Developer App</span></td><td><a href="/api/api_methods/95-approve-api-product-for-the-key-of-developer-app" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Approve API Product for the Key of Developer App</span></td><td><a href="/docs/api/api_methods/95-approve-api-product-for-the-key-of-developer-app" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/apps/{app_name}/keys/{consumer_key}/apiproducts/{apiproduct_name}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Approves the association of a Developer App&#x27;s consumer key with an API Product</td></tr>
@@ -89,12 +89,12 @@ application/x-www-url-form-encoded
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Delete a developer app key</span></td><td><a href="/api/api_methods/91-delete-a-developer-app-key" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete a developer app key</span></td><td><a href="/docs/api/api_methods/91-delete-a-developer-app-key" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/apps/{app_name}/keys/{consumer_key}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Deletes a consumer key that belongs to an app.</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Delete API product from a developer app key profile</span></td><td><a href="/api/api_methods/204-delete-api-product-from-a-developer-app-key-profile" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete API product from a developer app key profile</span></td><td><a href="/docs/api/api_methods/204-delete-api-product-from-a-developer-app-key-profile" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/apps/{app_name}/keys/{consumer_key}/apiproducts/{apiproduct_name}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Removes an API product from a developer app key profile, and thereby renders the developer app unable to access the URIs defined in the API product specified. </td></tr>
@@ -108,12 +108,12 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get the consumer key for a developer app</span></td><td><a href="/api/api_methods/90-get-the-consumer-key-for-a-developer-app" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get the consumer key for a developer app</span></td><td><a href="/docs/api/api_methods/90-get-the-consumer-key-for-a-developer-app" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/apps/{app_name}/keys/{consumer_key}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Returns details for a consumer key for a developer app</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Revoke a developer app key</span></td><td><a href="/api/api_methods/92-revoke-a-developer-app-key" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Revoke a developer app key</span></td><td><a href="/docs/api/api_methods/92-revoke-a-developer-app-key" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/apps/{app_name}/keys/{consumer_key}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Revokes a developer app key</td></tr>
@@ -124,7 +124,7 @@ application/x-www-url-form-encoded
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Revoke an API product association with a specific developer app key</span></td><td><a href="/api/api_methods/94-revoke-an-api-product-association-with-a-specific-developer-app-key" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Revoke an API product association with a specific developer app key</span></td><td><a href="/docs/api/api_methods/94-revoke-an-api-product-association-with-a-specific-developer-app-key" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/apps/{app_name}/keys/{consumer_key}/apiproducts/{apiproduct_name}?action=revoke</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Revokes the association of an API Product with a Developer App&#x27;s consumer key.</td></tr>
@@ -135,7 +135,7 @@ application/x-www-url-form-encoded
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Update an app&#x27;s consumer key with one or more API products</span></td><td><a href="/api/api_methods/89-update-an-app-s-consumer-key-with-one-or-more-api-products" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Update an app&#x27;s consumer key with one or more API products</span></td><td><a href="/docs/api/api_methods/89-update-an-app-s-consumer-key-with-one-or-more-api-products" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/apps/{app_name}/keys/{consumer_key}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Adds an API product to a developer app key</td></tr>

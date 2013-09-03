@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="D6tv8OW026aISDCFnsmVCooTFgbe9DcdfvrxzeFMQr4=" name="csrf-token" />
+<meta content="EWcnCkE7pbRXg2ciOee+rKK/RNoqTZe7mYuItKRfTWI=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -44,7 +44,7 @@ Developer and App Administration
 </div>
 
 <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-platform/api/api-resources-reference">Platform  API Reference</a> > Companies</i>
+<i><a href="/docs/enterprise/enterprise_home">Home</a> > <a href="/docs/enterprise/content/ref_library">Reference</a> > <a href="/docs/api/api-resources">Platform API Reference</a> > Companies</i>
 </div>
 
 <hr />
@@ -75,7 +75,7 @@ Note that a developer is always a single entity, uniquely identified by the emai
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Create a company</span></td><td><a href="/api/api_methods/117-create-a-company" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Create a company</span></td><td><a href="/docs/api/api_methods/117-create-a-company" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/companies</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Creates a company in an organization</td></tr>
@@ -89,32 +89,68 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Delete a company</span></td><td><a href="/api/api_methods/120-delete-a-company" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete a company</span></td><td><a href="/docs/api/api_methods/120-delete-a-company" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/companies/{company_name}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Deletes an existing Company</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get details for a company</span></td><td><a href="/api/api_methods/119-get-details-for-a-company" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get details for a company</span></td><td><a href="/docs/api/api_methods/119-get-details-for-a-company" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/companies/{company_name}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets details for a Company</td></tr>
+				<tr><td><strong>Media types:</strong></td><td>
+				
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">List companies</span></td><td><a href="/api/api_methods/6-list-companies" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List companies</span></td><td><a href="/docs/api/api_methods/6-list-companies" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/companies</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">List all companies in an organization</td></tr>
+				<tr><td><strong>Media types:</strong></td><td>
+				
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">List companies in an organization  (expanded view)</span></td><td><a href="/api/api_methods/121-list-companies-in-an-organization-expanded-view" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List companies in an organization  (expanded view)</span></td><td><a href="/docs/api/api_methods/121-list-companies-in-an-organization-expanded-view" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/companies?expand=true</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
-				<tr><td><strong>Description:</strong></td><td colspan="2">Returns an expanded list of Companies, displaying a full profile for each Company in the Organization</td></tr>
+				<tr><td><strong>Description:</strong></td><td colspan="2">Returns an expanded list of companies, displaying a full profile for each company in the organization</td></tr>
+				<tr><td><strong>Media types:</strong></td><td>
+				
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">List company app families</span></td><td><a href="/api/api_methods/59-list-company-app-families" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List company app families</span></td><td><a href="/docs/api/api_methods/59-list-company-app-families" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/companies/{company_name}/appfamilies</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">List company app families in an organization</td></tr>
+				<tr><td><strong>Media types:</strong></td><td>
+				
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Update a company</span></td><td><a href="/api/api_methods/118-update-a-company" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Update a company</span></td><td><a href="/docs/api/api_methods/118-update-a-company" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/companies/{company_name}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Updates an existing Company</td></tr>

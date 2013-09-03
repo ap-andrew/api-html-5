@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="D6tv8OW026aISDCFnsmVCooTFgbe9DcdfvrxzeFMQr4=" name="csrf-token" />
+<meta content="EWcnCkE7pbRXg2ciOee+rKK/RNoqTZe7mYuItKRfTWI=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -44,7 +44,7 @@ Oauth
 </div>
 
 <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-platform/api/api-resources-reference">Platform  API Reference</a> > OAuth 2.0 Access Tokens</i>
+<i><a href="/docs/enterprise/enterprise_home">Home</a> > <a href="/docs/enterprise/content/ref_library">Reference</a> > <a href="/docs/api/api-resources">Platform API Reference</a> > OAuth 2.0 Access Tokens</i>
 </div>
 
 <hr />
@@ -67,7 +67,7 @@ Oauth
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Approve an OAuth 2.0 access token</span></td><td><a href="/api/api_methods/115-approve-an-oauth-2-0-access-token" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Approve an OAuth 2.0 access token</span></td><td><a href="/docs/api/api_methods/115-approve-an-oauth-2-0-access-token" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/oauth2/accesstokens/{access_token}?action=approve</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2"></td></tr>
@@ -78,12 +78,12 @@ application/x-www-url-form-encoded
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Delete an OAuth 2.0 access token</span></td><td><a href="/api/api_methods/114-delete-an-oauth-2-0-access-token" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete an OAuth 2.0 access token</span></td><td><a href="/docs/api/api_methods/114-delete-an-oauth-2-0-access-token" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/oauth2/accesstokens/{access_token}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Deletes the Access Token specified</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get an OAuth 2.0 access token</span></td><td><a href="/api/api_methods/109-get-an-oauth-2-0-access-token" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get an OAuth 2.0 access token</span></td><td><a href="/docs/api/api_methods/109-get-an-oauth-2-0-access-token" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/oauth2/accesstokens/{access_token}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets details of a specific Access Token </td></tr>
@@ -97,12 +97,12 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get count of OAuth 2.0 access tokens</span></td><td><a href="/api/api_methods/110-get-count-of-oauth-2-0-access-tokens" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get count of OAuth 2.0 access tokens</span></td><td><a href="/docs/api/api_methods/110-get-count-of-oauth-2-0-access-tokens" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/oauth2/accesstokens</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Get count of oauth 2.0 access tokens under an organization</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Revoke an OAuth 2.0 access token</span></td><td><a href="/api/api_methods/116-revoke-an-oauth-2-0-access-token" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Revoke an OAuth 2.0 access token</span></td><td><a href="/docs/api/api_methods/116-revoke-an-oauth-2-0-access-token" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/oauth2/accesstokens/{access_token}?action=revoke</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Revokes a specific access token</td></tr>
@@ -113,7 +113,7 @@ application/x-www-url-form-encoded
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Update Access Token</span></td><td><a href="/api/api_methods/111-update-access-token" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Update Access Token</span></td><td><a href="/docs/api/api_methods/111-update-access-token" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/oauth2/accesstokens/{access_token}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Updates the access token attributes.</td></tr>

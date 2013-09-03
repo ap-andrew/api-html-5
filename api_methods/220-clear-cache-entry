@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="D6tv8OW026aISDCFnsmVCooTFgbe9DcdfvrxzeFMQr4=" name="csrf-token" />
+<meta content="EWcnCkE7pbRXg2ciOee+rKK/RNoqTZe7mYuItKRfTWI=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-platform/api/api-resources-reference">Platform  API Reference</a> > <a href="/api/api_resources/47-caches">Caches</a> > Clear cache entry</i>
+<i><a href="/docs/enterprise/enterprise_home">Home</a> > <a href="/docs/enterprise/content/ref_library">Reference</a> > <a href="/docs/api/api-resources">Platform API Reference</a> > <a href="/api_resources/47-caches">Caches</a> > Clear cache entry</i>
 </div>
 
 <p>
@@ -78,9 +78,8 @@ application/x-www-url-form-encoded
 <div class="span18">
 	
 
-		<div class=""><i class="icon-wrench">p</i> For detailed instructions on using the "Clear cache entry" method, see the <a href="http://apigee.com/docs/api-platform/content/optimize-performance-using-cache">Developer Guide Topic</a> in the <a href="http://apigee.com/docs/enterprise/content/developer_guide">API Proxy Developer Guide</a>.</div>
+		<div class="prerequisites"><b>For detailed instructions on using the "Clear cache entry" method, see the <a href="http://apigee.com/docs/api-platform/content/optimize-performance-using-cache">Developer Guide Topic</a> in the <a href="http://apigee.com/docs/enterprise/content/developer_guide">API Proxy Developer Guide</a>.</b></div>
 
-		
 		
 	<p><b>Overview: </b><p>Specify the complete CacheKey (any Prefix and KeyFragments) and value.</p>
 
@@ -94,12 +93,11 @@ application/x-www-url-form-encoded
 
 <p>CacheKey is specified in the Cache or Response Cache policy responsible for interacting with the specified Cache resource.</p>
 
-
-	</p>
+</p>
 	
 
 	<b>Sample Request:</b>
-	<div class="terminal">$ curl -X POST -H "Content-type:application/x-www-form-urlencoded" \
+	<pre class="terminal">$ curl -X POST -H "Content-type:application/x-www-form-urlencoded" \
 https://api.enterprise.apigee.com/v1/o/{org_name}/e/{env_name}/caches}/{cache_name}/entries/{entry_value}?"action=clear" \
 -u myname:mypass</div>
 
