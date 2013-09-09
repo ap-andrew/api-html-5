@@ -40,11 +40,11 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/29-app-families">App Families</a> > Get a company app family</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/32-oauth-1-0a-verifiers">OAuth 1.0a Verifiers</a> > Delete OAuth 1.0a Verifier</i>
 </div>
 
 <p>
-<h1>Get a company app family</h1> 
+<h1>Delete OAuth 1.0a Verifier</h1> 
 </p>
 
 <p><b>API Platform Base Path:</b> <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></p>
@@ -52,24 +52,15 @@
 <div class="row">
 	<div class="span6" style="width:340px;">
 
-		<p><b>API Resource Path:</b> <code>/companies/{companyname}/appfamilies/{appfamily}</code></p>
-		<p><b>Description:</b> 
+		<p><b>API Resource Path:</b> <code>/oauth1/verifiers/{verifier_code}</code></p>
+		<p><b>Description:</b> Deletes the issued verifier code
 		</p>
 	</div>
 
 	<div class="span6" style="width:340px;">
 		<table>		
-		<tbody><tr><td><b>Verb:</b></td> <td><span class="verb-GET">GET</span></td></tr>
+		<tbody><tr><td><b>Verb:</b></td> <td><span class="verb-DELETE">DELETE</span></td></tr>
 		<tr><td><b>Auth:</b></td> <td>Basic Auth</td></tr>
-
-
-		<tr><td style="vertical-align:top"><b>Media types:</b></td>  <td>
-<div class="content_type" id="content_type_1">
-application/json
-</div>
-<div class="content_type" id="content_type_2">
-text/xml
-</div></td></tr>
 
 		
 		</tbody>
@@ -82,14 +73,40 @@ text/xml
 <div class="span18">
 	
 		
+	<p><b>Overview:</b> Deletes the specified verifier code, which is the verifier code given by the provider</p>
 	
 
 
 
 <b>Sample Response:</b> 
-	<pre></pre>
+	<pre>{
+  "appUserId" : "Developer@apigee.com",
+  "attributes" : [ {
+    "name" : "region",
+    "value" : "north"
+  } ],
+  "code" : "1234",
+  "createdAt" : 1343035589955,
+  "createdBy" : "Admin",
+  "expiresAt" : 1343037389955,
+  "issuedAt" : 1343035589955,
+  "lastModifiedAt" : 1343035589955,
+  "lastModifiedBy" : "Admin",
+  "requestToken" : "wsxHGWZBwruGfkDGrPNWM2HNVddd"
+}</pre>
 
 
+	<b>Errors</b> 
+		<pre>{
+  &quot;code&quot; : &quot;keymanagement.service.....&quot;,
+  &quot;message&quot; : &quot;Verifier doesnot exist&quot;,
+  &quot;contexts&quot; : [ ]
+}
+
+
+Error Codes:
+1. keymanagement.service.oauth10_verifier_doesnot_exist
+2. keymanagement.service.oauth10_verifier_deletion_failed</pre>
 	
 </div>
             </div>

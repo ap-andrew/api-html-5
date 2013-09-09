@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="EWcnCkE7pbRXg2ciOee+rKK/RNoqTZe7mYuItKRfTWI=" name="csrf-token" />
+<meta content="yAq9rityNo+nbaFBhpSmoY4TrSgmbQunwjcifKM+/BA=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -44,7 +44,7 @@ Administration
 </div>
 
 <div id="breadcrumb">
-<i><a href="/docs/enterprise/enterprise_home">Home</a> > <a href="/docs/enterprise/content/ref_library">Reference</a> > <a href="/docs/api/api-resources">Platform API Reference</a> > RBAC Resources</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > RBAC Resources</i>
 </div>
 
 <hr />
@@ -78,7 +78,7 @@ Orgadmins cannot manage the resources listed above.</td></tr>
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Create an RBAC resource</span></td><td><a href="/docs/api/api_methods/177-create-an-rbac-resource" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Create an RBAC resource</span></td><td><a href="/api_methods/177-create-an-rbac-resource" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/resources</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Creates a resource</td></tr>
@@ -92,12 +92,12 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Delete a resource</span></td><td><a href="/docs/api/api_methods/180-delete-a-resource" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete a resource</span></td><td><a href="/api_methods/180-delete-a-resource" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/resources/?path={resource_name}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Deletes a resource</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get an RBAC resource</span></td><td><a href="/docs/api/api_methods/179-get-an-rbac-resource" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get an RBAC resource</span></td><td><a href="/api_methods/179-get-an-rbac-resource" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/resources/{resource_name}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets an RBAC resource based on resource path</td></tr>
@@ -111,10 +111,19 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">List resources</span></td><td><a href="/docs/api/api_methods/178-list-resources" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List resources</span></td><td><a href="/api_methods/178-list-resources" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/resources</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets a list of RBAC resources in an organization</td></tr>
+				<tr><td><strong>Media types:</strong></td><td>
+				
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
 		</tbody>
 		</table>

@@ -40,11 +40,11 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/41-rbac-resources">RBAC Resources</a> > Get an RBAC resource</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/10-debug-sessions">Debug Sessions</a> > Create a debug dession</i>
 </div>
 
 <p>
-<h1>Get an RBAC resource</h1> 
+<h1>Create a debug dession</h1> 
 </p>
 
 <p><b>API Platform Base Path:</b> <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></p>
@@ -52,23 +52,20 @@
 <div class="row">
 	<div class="span6" style="width:340px;">
 
-		<p><b>API Resource Path:</b> <code>/resources/{resource_name}</code></p>
-		<p><b>Description:</b> Gets an RBAC resource based on resource path
+		<p><b>API Resource Path:</b> <code>/environments/{env_name} /apis/{api_name}/revisions/{revision_number}/debugsessions</code></p>
+		<p><b>Description:</b> Creates a debug session on Apigee
 		</p>
 	</div>
 
 	<div class="span6" style="width:340px;">
 		<table>		
-		<tbody><tr><td><b>Verb:</b></td> <td><span class="verb-GET">GET</span></td></tr>
+		<tbody><tr><td><b>Verb:</b></td> <td><span class="verb-POST">POST</span></td></tr>
 		<tr><td><b>Auth:</b></td> <td>Basic Auth</td></tr>
 
 
 		<tr><td style="vertical-align:top"><b>Media types:</b></td>  <td>
-<div class="content_type" id="content_type_1">
-application/json
-</div>
-<div class="content_type" id="content_type_2">
-text/xml
+<div class="content_type" id="content_type_3">
+application/x-www-url-form-encoded
 </div></td></tr>
 
 		
@@ -81,16 +78,29 @@ text/xml
 
 <div class="span18">
 	
-
-		<p>For detailed instructions on using the "Get an RBAC resource" method, see the <a href="http://apigee.com/docs/enterprise/content/setting-role-based-access-control-your-apigee-organization1">Developer Guide Topic</a> in the <a href="http://apigee.com/docs/enterprise/content/developer_guide">API Proxy Developer Guide</a>.</b></p>
-
 		
+	<p><b>Overview:</b> <p>A debug session records detailed information on messages, the Flow processing, and policy execution during processing by an API proxy. </p>
+<p>The data returned in the debug session is a single XML or JSON representation of all debug data for each message exchange. The debug data is the same as that used to generate the 'Trace' view in the Management UI.</p>
+<p>
+A debug  session captures a maximum of 10 messages or records for a maximum for 2 minutes (by default), whichever comes first.
+<p>
+NOTE: In this API call, <code>/organizations</code> cannot be abbreviated as <code>/o</code>.
+<p>
+Debugging involves the following steps:
+<p>
+1. Start a debug session by creating a debug session 
+<p>
+2. Send a message for that deployed API proxy.
+<p>
+3. Retrieve the debug data associated with the debug session. The data can be fetched by issuing a GET call on the session. 
+<p>
+4 Close the debug session. (Closing the debug session discards all the associated data)</p>
 	
 
 	<b>Sample Request:</b>
 	
-	<pre class="terminal">$ curl -X GET -H "Accept:application/json" \
-https://api.enterprise.apigee.com/v1/o/{org_name}/resources/{resource_name} \
+	<pre class="terminal">$ curl  -X POST -H "Content-type:application/x-www-url-form-encoded" \ 
+https://api.enterprise.apigee.com/v1/organizations/(org_name)/environments/(env_name)/apis/(api_name)/revisions/{revision_number}/debugsessions?"session=MySession" \
 -u myname:mypass</pre>
 
 
@@ -107,10 +117,27 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/resources/{resource_name} \
 			</thead>
 			
 <tr>
-<td>path</td>
-<td></td>
+<td>session</td>
+<td>The user-given name of the debug session (used to retrieve the results after debugging completes).</td>
 <td>N/A</td>
 <td>Yes</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+<td>timeout</td>
+<td>The time in seconds after which the particular session should be discarded. Default is 120 seconds.</td>
+<td>120 (seconds)</td>
+<td>No</td>
 </tr>
 
 
@@ -126,12 +153,21 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/resources/{resource_name} \
 			</table>
 
 <b>Sample Response:</b> 
-	<pre>    {
-	"displayName" : "Reports",
-	"path" : "/reports"
- }</pre>
+	<pre>{
+  "matchingHeaders" : {
+  },
+  "matchingQParams" : {
+  },
+  "name" : "MySession"
+}</pre>
 
 
+	<b>Errors</b> 
+		<pre>{
+  &quot;code&quot; : &quot;distribution.NotDeployed&quot;,
+  &quot;message&quot; : &quot;Revision 5 of APIProxy weatherapi is not deployed to the environment test&quot;,
+  &quot;contexts&quot; : [ ]
+}</pre>
 	
 </div>
             </div>

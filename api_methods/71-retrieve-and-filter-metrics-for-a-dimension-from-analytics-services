@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apigee API Reference</title>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="yAq9rityNo+nbaFBhpSmoY4TrSgmbQunwjcifKM+/BA=" name="csrf-token" />
+    <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
+
+	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
+       <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+       <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+       <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+       <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+	  <script src="/assets/application-dc5c9a427e1f5afd21166897f350d896.js" type="text/javascript"></script> 
+	  <script type="text/javascript" charset="utf-8">
+	jQuery(document).ready(function () {
+	    jQuery("td span.expand").click(function () {
+	        jQuery(this).parents("tr.main").nextUntil("tr.main").toggle();
+	    });
+	});
+	  </script>
+	<script type="text/javascript">
+	jQuery(document).ready(function() {
+	  jQuery("resource_table").hide();
+	  //toggle the componenet with class msg_body
+	  jQuery(".heading").click(function()
+	  {
+	    jQuery(this).next(".content").slideToggle(500);
+	  });
+	});
+	</script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="row"> 
+           <div class="span12">
+
+            <div id="breadcrumb">
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/34-stats">Stats</a> > Retrieve and filter metrics for a dimension from  Analytics Services</i>
+</div>
+
+<p>
+<h1>Retrieve and filter metrics for a dimension from  Analytics Services</h1> 
+</p>
+
+<p><b>API Platform Base Path:</b> <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></p>
+
+<div class="row">
+	<div class="span6" style="width:340px;">
+
+		<p><b>API Resource Path:</b> <code>/environments/{env_name}/stats/{dimension_name}</code></p>
+		<p><b>Description:</b> Use the GET method to retrieve metrics for a dimension
+		</p>
+	</div>
+
+	<div class="span6" style="width:340px;">
+		<table>		
+		<tbody><tr><td><b>Verb:</b></td> <td><span class="verb-GET">GET</span></td></tr>
+		<tr><td><b>Auth:</b></td> <td>Basic Auth</td></tr>
+
+
+		<tr><td style="vertical-align:top"><b>Media types:</b></td>  <td>
+<div class="content_type" id="content_type_1">
+application/json
+</div></td></tr>
+
+		
+		</tbody>
+		</table>
+
+
+	</div>
+</div>
+
+<div class="span18">
+	
+
+		<p>For detailed instructions on using the "Retrieve and filter metrics for a dimension from  Analytics Services" method, see the <a href="http://apigee.com/docs/api/content/reporting-api-analytics">Developer Guide Topic</a> in the <a href="http://apigee.com/docs/enterprise/content/developer_guide">API Proxy Developer Guide</a>.</b></p>
+
+		
+	<p><b>Overview:</b> A report is generated using a GET request on the <code>/stats</code> API resource, accompanied by:
+
+<ul><li>An optional URI parameter that defines the dimension for the report. Apigee defines a set of dimensions an pre-aggregates a set of metrics against those dimensions. If no dimension is defined (i.e., if the URI parameter is empty), then a report is generated for all APIs present in the environment specified.</li>
+<li>A set of query parameters that define the metrics, time range, time interval, and filter/drill-down aspects of the report. </li></ul>
+
+<p><code>dimension_name</code>: A URI parameter that defines the entity for which the API Platform metrics should be retrieved. Apigee defines a set of dimensions that can be used in reports. Supported dimensions include:</p>
+
+<ul><li><code>/stats/apis</code>: API proxies in an organization on the API Platform</li>
+<li><code>/stats/uris</code>: API patterns in an organization on the API Platform</li>
+<li><code>/stats/apiproducts</code>: API products defined in an organization</li>
+<li><code>/stats/client_ip</code>: IP addresses of apps making the request to APIs on the API Platform</li>
+<li><code>/stats/developer_email</code>: The email address of a developer registered in an organization on the API Platform </li>
+<li><code>/stats/developer_app</code>: The name of the developer app making the request to your API</li>
+<li><code>/stats/access_token</code>: The app end user's OAuth access token</li></ul>
+
+<b>Filtering</b>
+
+<p>Filters can be applied to custom resources. Custom resources are:</p>
+
+<table border="0" class="table" style="width: 690px;" width="690">
+<thead>
+<th>Symbol</th>
+<th>Operation</th>
+</thead>
+
+<tr><td><code>in</code></td> <td>for list inclusion</td></tr>
+<tr><td><code>notin</code></td> <td>for list exclusion</td></tr>
+<tr><td><code>eq</code></td> <td>=</td></tr>
+<tr><td><code>ne</code></td> <td>!= or  <></td></tr>
+<tr><td><code>gt</code></td> <td>></td></tr>
+<tr><td><code>lt</code></td> <td><</td></tr>
+<tr><td><code>ge</code></td> <td>>=</td></tr>
+<tr><td><code>le</code></td> <td><=</td></tr>
+</tbody>
+</table>
+
+<b>Sample filters</b>
+
+<table border="0" class="table" style="width: 690px;" width="690">
+<thead>
+<th>Description </th>
+<th>Filter query structure</th>
+</thead>
+
+
+
+<tr><td>Stats for API proxies named either api1 or api2</td> <td><code>filter=(apiproxy in  'api1','api2')</code></td></tr>
+<tr><td>Stats for all API proxies except api1 and api2 </td><td><code>filter=(apiproxy notin  'ap1','api2')</code></td></tr>
+<tr><td>Stats where there are no errors </td><td><code>filter=(iserror eq 0)</code></td></tr>
+<tr><td>Stats where there is no error messages or the API proxy name is api1 or api2</td> <td><code>filter=(iserror eq 1)  or (apiproxy in  'api1','api2')</code></td></tr>
+
+<tr><td>Stats where (response code is either 201 or 301) and (there are errors) or (API proxy name is either api1 or api2)</td>
+<td><code>filter=(responsecode le 201 or responsecode eq 301) and (iserror eq 1)  or (apiproxy in  'api1','api2')</code></td></tr>
+
+</tbody>
+</table>
+
+
+For a complete list of dimensions, metrics, and sample requests, see the <a href="/docs/api/content/reporting-api-analytics">Analytics Developer Guide Topic</a>.
+
+Custom dimensions can be added by defining custom variables as described in the <a href="/docs/enterprise/content/analyzing-api-message-content-using-custom-analytics">Custom Analytics Developer Guide Topic</a>.</p>
+	
+
+	<b>Sample Request:</b>
+	
+	<pre class="terminal">$ curl -X GET -H "Accept:application/json" \
+https://api.enterprise.apigee.com/v1/o/{org_name}/environments/{env_name}/stats/{dimension_name}?"select={metric_name}&timeRange=1/1/2013%2000:00~1/2/2013%2000:00&timeUnit=hour&sortby={metric_name}&sort=DESC&filter=(apiproxy%20in%20'weather','news')" \
+-u myname:mypass</pre>
+
+
+<b>Query Parameters:</b>
+
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Default</th>
+				<th>Required?</th>
+			</tr>
+			</thead>
+			
+<tr>
+<td>select</td>
+<td>Designates the metric to be aggregated for the report. Supported metrics are message_count, error_count, total_response_time, max_response_time, min_response_time, data_exchange_size, end_point_response_time</td>
+<td>N/A</td>
+<td>Yes</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+<td>timeRange</td>
+<td>The start and end time for the desired interval. The date format is MM/DD/YYYY HH:MM. For example, 1/1/2013%2000:00~1/2/2013%2000:00</td>
+<td>N/A</td>
+<td>Yes</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+<td>timeUnit</td>
+<td>second, minute, hour, day, week, month, quarter, year, decade, century, millennium</td>
+<td>N/A</td>
+<td>Yes</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+<td>sortby</td>
+<td>When two or more select values are specified, &#x27;sortby&#x27; can be used to specify the select used for sorting results: message_count, error_count, total_response_time, max_response_time, min_response_time, data_exchange_size, end_point_response_time</td>
+<td>N/A</td>
+<td>No</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+<td>sort</td>
+<td>Supported sort scopes are DESC or ASC</td>
+<td>N/A</td>
+<td>No</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+<td>topk</td>
+<td>Take &quot;top k&quot; results from results, for example, to return the top 5 results &quot;topk=5&quot;.</td>
+<td>N/A</td>
+<td>No</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+<td>filter</td>
+<td>Enables drill-down on specific dimension values</td>
+<td>N/A</td>
+<td>No</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+<td>limit</td>
+<td>Set the limit for the number of entries returned by the API </td>
+<td>N/A</td>
+<td>No</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+<td>offset</td>
+<td>Use offset with limit to enable pagination of results. For example, to display results 11-20, set limit to &#x27;10&#x27; and offset to &#x27;10&#x27;.</td>
+<td>N/A</td>
+<td>No</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+			</table>
+
+<b>Sample Response:</b> 
+	<pre>{
+  "environments" : [ {
+	"dimensions" : [ {
+  	  "metrics" : [ 
+                 {
+    	        "name" : "message_count",
+    	        "values" : [ {
+      	           "timestamp" : 1335241800000,
+      	           "value" : "1.0"
+    	         } ]
+  	      } ,
+                 {
+    	         "name" : "error_count",
+    	         "values" : [ {
+      	            "timestamp" : 1335241800000,
+      	            "value" : "0.0"
+    	           } ]
+  	    } 
+              ],
+  	
+               "name" : "api1"
+	}, 
+            {
+  	  "metrics" : [ 
+               {
+    	      "name" : "message_count",
+    	      "values" : [ {
+      	             "timestamp" : 1335241800000,
+      	             "value" : "1.0"
+    	          } ]
+  	     },
+                {
+    	        "name" : "error_count",
+    	        "values" : [ {
+      	              "timestamp" : 1335241800000,
+      	              "value" : "0.0"
+    	        } ]
+  	    } 
+             ],
+  	
+             "name" : "api2"
+	} 
+          ],
+        
+         "name" : "test"
+      } 
+    ],
+   "metaData" : {
+    }
+}</pre>
+
+	<b>Response Payload Elements:</b>
+		<table class="table table-bordered">
+			<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+			</thead>
+			<tr>
+<div class="response_element" id="response_element_1">
+<td>metadata </td>
+<td>Metadata associated with the report</td>
+</div></tr><tr>
+<div class="response_element" id="response_element_2">
+<td>environments </td>
+<td>Environments in the organization where the statistics are collected (supports wildcard * for cross environment statistics collection)</td>
+</div></tr><tr>
+<div class="response_element" id="response_element_3">
+<td>metrics </td>
+<td>The values returned for the specified dimension</td>
+</div></tr><tr>
+<div class="response_element" id="response_element_7">
+<td>dimensions </td>
+<td>The dimension defined for measurement: in this example api_name.</td>
+</div></tr><tr>
+<div class="response_element" id="response_element_10">
+<td>metrics </td>
+<td>Metrics for the report</td>
+</div></tr>
+		</table>
+
+	
+</div>
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->
+
+		<!-- <footer>
+        	<p>&copy; Apigee, Inc. 2012</p>
+      	</footer>  -->
+
+    </div> <!-- /container -->
+
+
+
+  </body>
+</html>

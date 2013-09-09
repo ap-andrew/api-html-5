@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="EWcnCkE7pbRXg2ciOee+rKK/RNoqTZe7mYuItKRfTWI=" name="csrf-token" />
+<meta content="yAq9rityNo+nbaFBhpSmoY4TrSgmbQunwjcifKM+/BA=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/docs/enterprise/enterprise_home">Home</a> > <a href="/docs/enterprise/content/ref_library">Reference</a> > <a href="/docs/api/api-resources">Platform API Reference</a> > <a href="/docs/api/api_resources/31-oauth-1-0a-request-tokens">OAuth 1.0a Request Tokens</a> > Approve an OAuth 1.0a request token</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/31-oauth-1-0a-request-tokens">OAuth 1.0a Request Tokens</a> > Approve an OAuth 1.0a request token</i>
 </div>
 
 <p>
@@ -53,23 +53,24 @@
 	<div class="span6" style="width:340px;">
 
 		<p><b>API Resource Path:</b> <code>/oauth1/requesttokens/{request_token}?action=approve</code></p>
-		<p><b>Description:</b> Approves an OAuth 1.0a Request Token
+		<p><b>Description:</b> Approves an OAuth 1.0a request token
 		</p>
 	</div>
 
 	<div class="span6" style="width:340px;">
-<table>		
-	<tbody><tr><td><b>Verb:</b></td> <td><span class="verb-POST">POST</span></td></tr>
-	<tr><td><b>Auth:</b></td> <td>Basic Auth</td></tr>
+		<table>		
+		<tbody><tr><td><b>Verb:</b></td> <td><span class="verb-POST">POST</span></td></tr>
+		<tr><td><b>Auth:</b></td> <td>Basic Auth</td></tr>
 
 
 		<tr><td style="vertical-align:top"><b>Media types:</b></td>  <td>
-<div class="content_type" id="content_type_3">
-application/x-www-url-form-encoded
+<div class="content_type" id="content_type_4">
+application/octet-stream
 </div></td></tr>
 
+		
 		</tbody>
-</table>
+		</table>
 
 
 	</div>
@@ -81,9 +82,10 @@ application/x-www-url-form-encoded
 	
 
 	<b>Sample Request:</b>
-	<pre class="terminal">$ curl -H "Content-type:application/x-www-form-urlencoded" -X POST \
+	
+	<pre class="terminal">$ curl -H "Content-type:application/octet-stream" -X POST \
 https://api.enterprise.apigee.com/v1/o/{org_name}/oauth1/requesttokens/{request_token}?"action=approve" \
--u myname:mypass</div>
+-u myname:mypass</pre>
 
 
 <b>Sample Response:</b> 

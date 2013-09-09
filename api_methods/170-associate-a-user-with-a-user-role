@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="EWcnCkE7pbRXg2ciOee+rKK/RNoqTZe7mYuItKRfTWI=" name="csrf-token" />
+<meta content="yAq9rityNo+nbaFBhpSmoY4TrSgmbQunwjcifKM+/BA=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/docs/enterprise/enterprise_home">Home</a> > <a href="/docs/enterprise/content/ref_library">Reference</a> > <a href="/docs/api/api-resources">Platform API Reference</a> > <a href="/docs/api/api_resources/37-users">Users</a> > Associate a user with a user role</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/37-users">Users</a> > Associate a user with a user role</i>
 </div>
 
 <p>
@@ -58,9 +58,9 @@
 	</div>
 
 	<div class="span6" style="width:340px;">
-<table>		
-	<tbody><tr><td><b>Verb:</b></td> <td><span class="verb-POST">POST</span></td></tr>
-	<tr><td><b>Auth:</b></td> <td>Basic Auth</td></tr>
+		<table>		
+		<tbody><tr><td><b>Verb:</b></td> <td><span class="verb-POST">POST</span></td></tr>
+		<tr><td><b>Auth:</b></td> <td>Basic Auth</td></tr>
 
 
 		<tr><td style="vertical-align:top"><b>Media types:</b></td>  <td>
@@ -71,8 +71,9 @@ application/json
 text/xml
 </div></td></tr>
 
+		
 		</tbody>
-</table>
+		</table>
 
 
 	</div>
@@ -81,10 +82,10 @@ text/xml
 <div class="span18">
 	
 
-		<div class="prerequisites"><b>For detailed instructions on using the "Associate a user with a user role" method, see the <a href="http://apigee.com/docs/api-platform/content/creating-automation-clients">Developer Guide Topic</a> in the <a href="http://apigee.com/docs/enterprise/content/developer_guide">API Proxy Developer Guide</a>.</b></div>
+		<p>For detailed instructions on using the "Associate a user with a user role" method, see the <a href="http://apigee.com/docs/api-platform/content/creating-automation-clients">Developer Guide Topic</a> in the <a href="http://apigee.com/docs/enterprise/content/developer_guide">API Proxy Developer Guide</a>.</b></p>
 
 		
-	<p><b>Overview: </b><p>Associates a user with one more user roles, providing access to the permissions defined for that role.</p>
+	<p><b>Overview:</b> <p>Associates a user with one more user roles, providing access to the permissions defined for that role.</p>
 
 <p>Predefined roles API Platform users are:</p>
 
@@ -119,6 +120,7 @@ text/xml
 	
 
 	<b>Sample Request:</b>
+	
 	<pre class="terminal">$ curl -H "Content-type:application/json" -X POST -d \
 '{
   "role" : [ {
@@ -128,7 +130,7 @@ text/xml
   } ]
 }'
 https://api.enterprise.apigee.com/v1/o/{org_name}/users/{user_email}/userroles \
--u myname:mypass</div>
+-u myname:mypass</pre>
 
 
 <b>Sample Response:</b> 

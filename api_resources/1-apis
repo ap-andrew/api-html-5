@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="EWcnCkE7pbRXg2ciOee+rKK/RNoqTZe7mYuItKRfTWI=" name="csrf-token" />
+<meta content="yAq9rityNo+nbaFBhpSmoY4TrSgmbQunwjcifKM+/BA=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -44,7 +44,7 @@ API Configuration and Management
 </div>
 
 <div id="breadcrumb">
-<i><a href="/docs/enterprise/enterprise_home">Home</a> > <a href="/docs/enterprise/content/ref_library">Reference</a> > <a href="/docs/api/api-resources">Platform API Reference</a> > APIs</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > APIs</i>
 </div>
 
 <hr />
@@ -71,7 +71,7 @@ API Configuration and Management
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Create an API proxy</span></td><td><a href="/docs/api/api_methods/15-create-an-api-proxy" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Create an API proxy</span></td><td><a href="/api_methods/15-create-an-api-proxy" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apis</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Creates an API facade (and an API proxy configuration) on Apigee</td></tr>
@@ -85,28 +85,28 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Delete an API</span></td><td><a href="/docs/api/api_methods/3-delete-an-api" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete an API</span></td><td><a href="/api_methods/3-delete-an-api" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apis/{api_name}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Deletes an API and all associated endpoints, policies,  resources, and revisions</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Delete an API proxy revision</span></td><td><a href="/docs/api/api_methods/27-delete-an-api-proxy-revision" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete an API proxy revision</span></td><td><a href="/api_methods/27-delete-an-api-proxy-revision" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apis/{api_name}/revision/{revision_number}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Deletes a specific revision of an API</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Deploy an API proxy to an environment</span></td><td><a href="/docs/api/api_methods/25-deploy-an-api-proxy-to-an-environment" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Deploy an API proxy to an environment</span></td><td><a href="/api_methods/25-deploy-an-api-proxy-to-an-environment" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apis/{api_name}/revisions/{revision_number}/deployments?action=deploy&amp;env={environment_name}&amp;basepath={/basepath}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Pushes an API to an environment (typically &#x27;test&#x27; or &#x27;prod&#x27;) for execution</td></tr>
 				<tr><td><strong>Media types:</strong></td><td>
 				
-<div class="content_type" id="content_type_3">
-application/x-www-url-form-encoded
+<div class="content_type" id="content_type_4">
+application/octet-stream
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Export an API proxy</span></td><td><a href="/docs/api/api_methods/105-export-an-api-proxy" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Export an API proxy</span></td><td><a href="/api_methods/105-export-an-api-proxy" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apis/{api_name}/revisions{revision_number}?format=bundle</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Exports an API from Apigee to the local machine a ZIP bundle of config and code files.</td></tr>
@@ -117,7 +117,7 @@ application/octet-stream
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get an API proxy</span></td><td><a href="/docs/api/api_methods/104-get-an-api-proxy" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get an API proxy</span></td><td><a href="/api_methods/104-get-an-api-proxy" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apis/{api_name}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets an API proxy by name, providing a list of existing revisions of the API proxy configuration.</td></tr>
@@ -131,7 +131,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Import an API proxy</span></td><td><a href="/docs/api/api_methods/24-import-an-api-proxy" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Import an API proxy</span></td><td><a href="/api_methods/24-import-an-api-proxy" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apis?action=import&amp;name={api_name}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Uploads a ZIP-formatted API proxy configuration bundle from a local machine to an organization on the API Platform.</td></tr>
@@ -142,7 +142,7 @@ application/octet-stream
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">List APIs</span></td><td><a href="/docs/api/api_methods/1-list-apis" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List APIs</span></td><td><a href="/api_methods/1-list-apis" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apis</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets all APIs in an organization. The names in the list map to the names defined in the API proxy configuration for each API.</td></tr>
@@ -156,18 +156,18 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Undeploy a revision of an API proxy from an environment</span></td><td><a href="/docs/api/api_methods/26-undeploy-a-revision-of-an-api-proxy-from-an-environment" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Undeploy a revision of an API proxy from an environment</span></td><td><a href="/api_methods/26-undeploy-a-revision-of-an-api-proxy-from-an-environment" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apis/{api_name}/deployments?action=undeploy&amp;env={environment_name}&amp;revision={revision_number}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Removes an API from an environment (typically &#x27;test&#x27; or &#x27;prod&#x27;)</td></tr>
 				<tr><td><strong>Media types:</strong></td><td>
 				
-<div class="content_type" id="content_type_3">
-application/x-www-url-form-encoded
+<div class="content_type" id="content_type_4">
+application/octet-stream
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Update an API</span></td><td><a href="/docs/api/api_methods/2-update-an-api" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Update an API</span></td><td><a href="/api_methods/2-update-an-api" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/apis/{api_name}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-PUT">PUT</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Use the POST method to update a specific API proxy in an organization</td></tr>

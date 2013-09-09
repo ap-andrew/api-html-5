@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="EWcnCkE7pbRXg2ciOee+rKK/RNoqTZe7mYuItKRfTWI=" name="csrf-token" />
+<meta content="yAq9rityNo+nbaFBhpSmoY4TrSgmbQunwjcifKM+/BA=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/docs/enterprise/enterprise_home">Home</a> > <a href="/docs/enterprise/content/ref_library">Reference</a> > <a href="/docs/api/api-resources">Platform API Reference</a> > <a href="/docs/api/api_resources/10-debug-sessions">Debug Sessions</a> > Delete a debug session</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/10-debug-sessions">Debug Sessions</a> > Delete a debug session</i>
 </div>
 
 <p>
@@ -52,18 +52,19 @@
 <div class="row">
 	<div class="span6" style="width:340px;">
 
-		<p><b>API Resource Path:</b> <code>/environments/{environmentName}/apis/{apiName}/revisions/{revisionVersion}/debugsessions/{sessionID}</code></p>
-		<p><b>Description:</b> Deletes a debug session previously generated in an environment
+		<p><b>API Resource Path:</b> <code>/environments/{environment_name}/apis/{apiName}/revisions/{revision_number}/debugsessions/{session_ID}</code></p>
+		<p><b>Description:</b> Deletes a debug session that was previously generated in an environmen.
 		</p>
 	</div>
 
 	<div class="span6" style="width:340px;">
-<table>		
-	<tbody><tr><td><b>Verb:</b></td> <td><span class="verb-DELETE">DELETE</span></td></tr>
-	<tr><td><b>Auth:</b></td> <td>Basic Auth</td></tr>
+		<table>		
+		<tbody><tr><td><b>Verb:</b></td> <td><span class="verb-DELETE">DELETE</span></td></tr>
+		<tr><td><b>Auth:</b></td> <td>Basic Auth</td></tr>
 
-</tbody>
-</table>
+		
+		</tbody>
+		</table>
 
 
 	</div>
@@ -75,8 +76,9 @@
 	
 
 	<b>Sample Request:</b>
+	
 	<pre class="terminal">$ curl https://api.enterprise.apigee.com/v1/organizations/{org_name}/environments/{env_name}/apis/{api_name}/revisions/{revision_number}/debugsessions/{session_id} -X DELETE \
--u myname:mypass</div>
+-u myname:mypass</pre>
 
 
 <b>Sample Response:</b> 

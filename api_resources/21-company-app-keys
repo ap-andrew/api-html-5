@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="EWcnCkE7pbRXg2ciOee+rKK/RNoqTZe7mYuItKRfTWI=" name="csrf-token" />
+<meta content="yAq9rityNo+nbaFBhpSmoY4TrSgmbQunwjcifKM+/BA=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -44,14 +44,14 @@ Developer and App Administration
 </div>
 
 <div id="breadcrumb">
-<i><a href="/docs/enterprise/enterprise_home">Home</a> > <a href="/docs/enterprise/content/ref_library">Reference</a> > <a href="/docs/api/api-resources">Platform API Reference</a> > Company app keys</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > Company App Keys</i>
 </div>
 
 <hr />
 
 
 <div class="page-header">
-  <h1>Company app keys</h1>
+  <h1>Company App Keys</h1>
 </div>
 
 
@@ -59,7 +59,7 @@ Developer and App Administration
 
 		<table class="table">
 				<tr><td class="lead">API Resource Path: /companies/{company_name}/apps/{app_name}/keys</td></tr>
-				<tr><td>Consumer credentials (also known as &quot;API keys&quot; or &quot;app keys&quot;) generated, provisioned, and managed by the API Platform for apps associated with company entities.</td></tr>
+				<tr><td>Consumer credentials (also known as &quot;API keys&quot; or &quot;app keys&quot;) that are generated, provisioned, and managed by the API Platform for apps associated with company entities.</td></tr>
 		  		<tr><td></td></tr>
 		</table>
 
@@ -67,26 +67,23 @@ Developer and App Administration
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Approve a company app key</span></td><td><a href="/docs/api/api_methods/53-approve-a-company-app-key" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Approve a company app key</span></td><td><a href="/api_methods/53-approve-a-company-app-key" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/companies/{company_name}/apps/{app_name}/keys/{consumer_key}?action=approve</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Changes the state of a consumer key provisioned to company app to &#x27;Approved&#x27;</td></tr>
 				<tr><td><strong>Media types:</strong></td><td>
 				
-<div class="content_type" id="content_type_1">
-application/json
-</div>
-<div class="content_type" id="content_type_2">
-text/xml
+<div class="content_type" id="content_type_4">
+application/octet-stream
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Delete a company app key</span></td><td><a href="/docs/api/api_methods/51-delete-a-company-app-key" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete a company app key</span></td><td><a href="/api_methods/51-delete-a-company-app-key" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/companies/{company_name}/apps/{app_name}/keys/{consumer_key}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Deletes a company app key</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get the consumer key for a company app</span></td><td><a href="/docs/api/api_methods/50-get-the-consumer-key-for-a-company-app" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get the consumer key for a company app</span></td><td><a href="/api_methods/50-get-the-consumer-key-for-a-company-app" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/companies/{company_name}/apps/{app_name}/keys/{consumer_key}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Getsthe consumer key issued to a company app</td></tr>
@@ -100,18 +97,18 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Revoke a company app key</span></td><td><a href="/docs/api/api_methods/52-revoke-a-company-app-key" class="btn btn-mini">Detail</a></td> 
-			    <tr><td colspan="3"><span id="well"><pre>companies/{company_name}/apps/{app_name}/keys/{consumer_key}?action=revoke</pre></span></td></tr>
+				<tr><td colspan="2"><span class="lead">Revoke a company app key</span></td><td><a href="/api_methods/52-revoke-a-company-app-key" class="btn btn-mini">Detail</a></td> 
+			    <tr><td colspan="3"><span id="well"><pre>/companies/{company_name}/apps/{app_name}/keys/{consumer_key}?action=revoke</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
-				<tr><td><strong>Description:</strong></td><td colspan="2">Revokes the App Key of a Company App</td></tr>
+				<tr><td><strong>Description:</strong></td><td colspan="2">Revokes the app key of a company app</td></tr>
 				<tr><td><strong>Media types:</strong></td><td>
 				
-<div class="content_type" id="content_type_3">
-application/x-www-url-form-encoded
+<div class="content_type" id="content_type_4">
+application/octet-stream
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Update existing app key with new API product(s).</span></td><td><a href="/docs/api/api_methods/49-update-existing-app-key-with-new-api-product-s" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Update existing app key with new API product(s).</span></td><td><a href="/api_methods/49-update-existing-app-key-with-new-api-product-s" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/companies/{company_name}/apps/{app_ame}/keys/{consumer key}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Updates an existing company app key with additional API product(s).</td></tr>

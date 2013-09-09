@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="EWcnCkE7pbRXg2ciOee+rKK/RNoqTZe7mYuItKRfTWI=" name="csrf-token" />
+<meta content="yAq9rityNo+nbaFBhpSmoY4TrSgmbQunwjcifKM+/BA=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -44,7 +44,7 @@ API Analytics
 </div>
 
 <div id="breadcrumb">
-<i><a href="/docs/enterprise/enterprise_home">Home</a> > <a href="/docs/enterprise/content/ref_library">Reference</a> > <a href="/docs/api/api-resources">Platform API Reference</a> > Reports</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > Reports</i>
 </div>
 
 <hr />
@@ -67,7 +67,7 @@ API Analytics
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Create an Analytics report</span></td><td><a href="/docs/api/api_methods/226-create-an-analytics-report" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Create an Analytics report</span></td><td><a href="/api_methods/226-create-an-analytics-report" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/reports</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Generates metadata for an Analytics report</td></tr>
@@ -78,7 +78,7 @@ application/json
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Delete a report</span></td><td><a href="/docs/api/api_methods/228-delete-a-report" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete a report</span></td><td><a href="/api_methods/228-delete-a-report" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/reports/{report_name}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Deletes an existing report</td></tr>
@@ -89,7 +89,7 @@ application/json
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get a report</span></td><td><a href="/docs/api/api_methods/223-get-a-report" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get a report</span></td><td><a href="/api_methods/223-get-a-report" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/reports/{report_name}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets the contents of a report stored in an organization on the API Platform</td></tr>
@@ -100,7 +100,7 @@ application/json
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">List reports</span></td><td><a href="/docs/api/api_methods/222-list-reports" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List reports</span></td><td><a href="/api_methods/222-list-reports" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/reports</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Lists all Analytics reports in an organization</td></tr>
@@ -114,7 +114,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">List reports</span></td><td><a href="/docs/api/api_methods/229-list-reports" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List reports</span></td><td><a href="/api_methods/229-list-reports" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/reports</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Returns a list of reports in an organization</td></tr>
@@ -125,7 +125,7 @@ application/json
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Update an existing report definition</span></td><td><a href="/docs/api/api_methods/227-update-an-existing-report-definition" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Update an existing report definition</span></td><td><a href="/api_methods/227-update-an-existing-report-definition" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/reports/{report_name}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-PUT">PUT</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Update an existing report definition</td></tr>

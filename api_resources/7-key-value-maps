@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="EWcnCkE7pbRXg2ciOee+rKK/RNoqTZe7mYuItKRfTWI=" name="csrf-token" />
+<meta content="yAq9rityNo+nbaFBhpSmoY4TrSgmbQunwjcifKM+/BA=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -44,7 +44,7 @@ Appendix
 </div>
 
 <div id="breadcrumb">
-<i><a href="/docs/enterprise/enterprise_home">Home</a> > <a href="/docs/enterprise/content/ref_library">Reference</a> > <a href="/docs/api/api-resources">Platform API Reference</a> > Key/Value Maps</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > Key/Value Maps</i>
 </div>
 
 <hr />
@@ -75,7 +75,7 @@ Appendix
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Create key/value map</span></td><td><a href="/docs/api/api_methods/44-create-key-value-map" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Create key/value map</span></td><td><a href="/api_methods/44-create-key-value-map" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/keyvaluemaps</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Creates a KeyValueMap</td></tr>
@@ -89,12 +89,12 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Delete a key/value map</span></td><td><a href="/docs/api/api_methods/63-delete-a-key-value-map" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete a key/value map</span></td><td><a href="/api_methods/63-delete-a-key-value-map" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/keyvaluemaps/{map_name}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Deletes a KeyValueMap and all associated entries.</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Delete an entry from a key/value map</span></td><td><a href="/docs/api/api_methods/48-delete-an-entry-from-a-key-value-map" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete an entry from a key/value map</span></td><td><a href="/api_methods/48-delete-an-entry-from-a-key-value-map" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/keyvaluemaps/{map_name}/entries/{entry_name}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Deletes a single entry by name</td></tr>
@@ -108,7 +108,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get key/value map</span></td><td><a href="/docs/api/api_methods/45-get-key-value-map" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get key/value map</span></td><td><a href="/api_methods/45-get-key-value-map" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/keyvaluemaps/{map_name}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets a KeyValueMap by name, along  with associated entries</td></tr>
@@ -122,7 +122,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get list of key/value maps (Expanded)</span></td><td><a href="/docs/api/api_methods/158-get-list-of-key-value-maps-expanded" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get list of key/value maps (Expanded)</span></td><td><a href="/api_methods/158-get-list-of-key-value-maps-expanded" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/keyvaluemaps?expand=true</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Returns an expanded view of all Maps scoped by organization, environment, or API</td></tr>
@@ -136,7 +136,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">List key/value maps</span></td><td><a href="/docs/api/api_methods/46-list-key-value-maps" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List key/value maps</span></td><td><a href="/api_methods/46-list-key-value-maps" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/keyvaluemaps</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">List all KeyValueMaps by name</td></tr>
@@ -150,7 +150,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Update key/value map</span></td><td><a href="/docs/api/api_methods/62-update-key-value-map" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Update key/value map</span></td><td><a href="/api_methods/62-update-key-value-map" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/keyvaluemaps/{map_name}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-PUT">PUT</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Updates an existing KeyValueMap</td></tr>

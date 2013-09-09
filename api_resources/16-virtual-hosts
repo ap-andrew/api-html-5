@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="EWcnCkE7pbRXg2ciOee+rKK/RNoqTZe7mYuItKRfTWI=" name="csrf-token" />
+<meta content="yAq9rityNo+nbaFBhpSmoY4TrSgmbQunwjcifKM+/BA=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -44,7 +44,7 @@ Administration
 </div>
 
 <div id="breadcrumb">
-<i><a href="/docs/enterprise/enterprise_home">Home</a> > <a href="/docs/enterprise/content/ref_library">Reference</a> > <a href="/docs/api/api-resources">Platform API Reference</a> > Virtual Hosts</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > Virtual Hosts</i>
 </div>
 
 <hr />
@@ -67,7 +67,7 @@ Administration
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Get a virtual host for an environment</span></td><td><a href="/docs/api/api_methods/23-get-a-virtual-host-for-an-environment" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get a virtual host for an environment</span></td><td><a href="/api_methods/23-get-a-virtual-host-for-an-environment" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/environments/{environment_name}/virtualhosts/{virtualhost_name}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets details for a named virtual host</td></tr>
@@ -81,7 +81,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">List virtual hosts for an environment</span></td><td><a href="/docs/api/api_methods/22-list-virtual-hosts-for-an-environment" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List virtual hosts for an environment</span></td><td><a href="/api_methods/22-list-virtual-hosts-for-an-environment" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/environments/{environment_name}/virtualhosts</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Get a list of named virual hosts for an environment.</td></tr>
