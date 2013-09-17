@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="yAq9rityNo+nbaFBhpSmoY4TrSgmbQunwjcifKM+/BA=" name="csrf-token" />
+<meta content="iKdIHHRt++wbdaRQxj2QF4p+JuyGfOojUF5uOxTNJXc=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/49-api-patterns">API Patterns</a> > Create an API pattern</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/49-api-patterns">API Patterns</a> > Create an API pattern</i>
 </div>
 
 <p>
@@ -52,7 +52,7 @@
 <div class="row">
 	<div class="span6" style="width:340px;">
 
-		<p><b>API Resource Path:</b> <code>/environments/{env_name}/apipatterns</code></p>
+		<p><b>API Resource Path:</b> <pre>/environments/{env_name}/apipatterns</pre></p>
 		<p><b>Description:</b> Creates a collection of API patterns, for which metrics will be collected.
 		</p>
 	</div>
@@ -188,22 +188,18 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/environments/{env_name}/apipat
 			</tr>
 			</thead>
 			<tr>
-<div class="response_element" id="response_element_715">
 <td>apiproxy </td>
 <td>The name of an API proxy in the environment</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_716">
+</tr><tr>
 <td>request_verb </td>
 <td>The HTTP verb associated with request messages</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_717">
+</tr><tr>
 <td>apipattern </td>
 <td>The URI matching pattern used to collect metrics for this API patternn</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_718">
+</tr><tr>
 <td>groupid </td>
 <td>System-generated unique number that identifies the API pattern</td>
-</div></tr>
+</tr>
 		</table>
 
 	

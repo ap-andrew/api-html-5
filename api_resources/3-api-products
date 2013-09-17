@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="yAq9rityNo+nbaFBhpSmoY4TrSgmbQunwjcifKM+/BA=" name="csrf-token" />
+<meta content="iKdIHHRt++wbdaRQxj2QF4p+JuyGfOojUF5uOxTNJXc=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -44,7 +44,7 @@ API Configuration and Management
 </div>
 
 <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > API Products</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-resources">Platform API Reference</a> > API Products</i>
 </div>
 
 <hr />
@@ -59,7 +59,7 @@ API Configuration and Management
 
 		<table class="table">
 				<tr><td class="lead">API Resource Path: /apiproducts</td></tr>
-				<tr><td>A URI bundle with an associated Quota, used to provide OAuth-based runtime authorization to APIs managed by the API Platform.</td></tr>
+				<tr><td>A list of URIs with an associated Quota (or &quot;service plan&quot;), which is used to expose customized API bundles to different developer groups.</td></tr>
 		  		<tr><td>API products enable you to bundle and distribute your APIs to multiple developer groups simultaneously, without having to modify code. An APi product consists of a list of API resources (URIs) combined with a Service Plan (rate-limiting policy settings) plus any custom metadata required by the API provider.
 
 

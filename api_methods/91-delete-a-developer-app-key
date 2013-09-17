@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="yAq9rityNo+nbaFBhpSmoY4TrSgmbQunwjcifKM+/BA=" name="csrf-token" />
+<meta content="iKdIHHRt++wbdaRQxj2QF4p+JuyGfOojUF5uOxTNJXc=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/18-developer-app-keys">Developer App Keys</a> > Delete a developer app key</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/18-developer-app-keys">Developer App Keys</a> > Delete a developer app key</i>
 </div>
 
 <p>
@@ -52,7 +52,7 @@
 <div class="row">
 	<div class="span6" style="width:340px;">
 
-		<p><b>API Resource Path:</b> <code>/developers/{developer_email}/apps/{app_name}/keys/{consumer_key}</code></p>
+		<p><b>API Resource Path:</b> <pre>/developers/{developer_email}/apps/{app_name}/keys/{consumer_key}</pre></p>
 		<p><b>Description:</b> Deletes a consumer key that belongs to an app.
 		</p>
 	</div>
@@ -112,34 +112,27 @@
 			</tr>
 			</thead>
 			<tr>
-<div class="response_element" id="response_element_451">
 <td>apiProducts </td>
 <td>List of API products with which the app key is associated</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_452">
+</tr><tr>
 <td>apiproduct </td>
 <td>An API product in the list</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_453">
+</tr><tr>
 <td>status </td>
 <td>Status of the association between the app key and the API product: &#x27;approved&#x27; or &#x27;unapproved&#x27;</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_454">
+</tr><tr>
 <td>attributes </td>
 <td>Name&#x27;value pairs used to extend the defautl API product profile</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_455">
+</tr><tr>
 <td>consumerKey </td>
 <td>The value of the consumer key</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_456">
+</tr><tr>
 <td>consumerSecret </td>
 <td>The value of the consumer secret associated with the consumer key</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_457">
+</tr><tr>
 <td>status </td>
 <td>Status of the consumer key: &#x27;approved&#x27; or &#x27;pending&#x27;</td>
-</div></tr>
+</tr>
 		</table>
 
 	

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="yAq9rityNo+nbaFBhpSmoY4TrSgmbQunwjcifKM+/BA=" name="csrf-token" />
+<meta content="iKdIHHRt++wbdaRQxj2QF4p+JuyGfOojUF5uOxTNJXc=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/35-developers">Developers</a> > Create a developer</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/35-developers">Developers</a> > Create a developer</i>
 </div>
 
 <p>
@@ -52,7 +52,7 @@
 <div class="row">
 	<div class="span6" style="width:340px;">
 
-		<p><b>API Resource Path:</b> <code>/developers</code></p>
+		<p><b>API Resource Path:</b> <pre>/developers</pre></p>
 		<p><b>Description:</b> Create a developer in an organization
 		</p>
 	</div>
@@ -196,50 +196,39 @@ text/xml
 			</tr>
 			</thead>
 			<tr>
-<div class="response_element" id="response_element_518">
 <td>email </td>
 <td>The developer&#x27;s email (used asa unique key to retrieve information about this developer)</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_519">
+</tr><tr>
 <td>firstName </td>
 <td>The first name of the developer</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_520">
+</tr><tr>
 <td>lastName </td>
 <td>The last name of the developer</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_521">
+</tr><tr>
 <td>userName </td>
 <td>The username of the developer (currently unused in Apigee)</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_522">
+</tr><tr>
 <td>organizationName </td>
 <td>The Apigee organization where the developer is regsitered</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_523">
+</tr><tr>
 <td>status </td>
 <td>The developer status: &#x27;active&#x27; or &#x27;inactive&#x27;</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_524">
+</tr><tr>
 <td>attributes </td>
 <td>Name/value pairs used to extend the default developer profile</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_525">
+</tr><tr>
 <td>createdAt </td>
 <td>Unix time when the developer was created</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_526">
+</tr><tr>
 <td>createdBy </td>
 <td>User name of the Apigee user who created the developer</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_527">
+</tr><tr>
 <td>lastModifiedAt </td>
 <td>Unix time when the developer profile was last modified</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_528">
+</tr><tr>
 <td>lastModifiedBy </td>
 <td>User name of the Apigee user who last modified the developer profile</td>
-</div></tr>
+</tr>
 		</table>
 
 	

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="yAq9rityNo+nbaFBhpSmoY4TrSgmbQunwjcifKM+/BA=" name="csrf-token" />
+<meta content="iKdIHHRt++wbdaRQxj2QF4p+JuyGfOojUF5uOxTNJXc=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/28-oauth-2-0-access-tokens">OAuth 2.0 Access Tokens</a> > Revoke an OAuth 2.0 access token</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/28-oauth-2-0-access-tokens">OAuth 2.0 Access Tokens</a> > Revoke an OAuth 2.0 access token</i>
 </div>
 
 <p>
@@ -52,7 +52,7 @@
 <div class="row">
 	<div class="span6" style="width:340px;">
 
-		<p><b>API Resource Path:</b> <code>/oauth2/accesstokens/{access_token}?action=revoke</code></p>
+		<p><b>API Resource Path:</b> <pre>/oauth2/accesstokens/{access_token}?action=revoke</pre></p>
 		<p><b>Description:</b> Revokes a specific access token
 		</p>
 	</div>
@@ -105,6 +105,7 @@ https://api.enterprise.apigee.com/v1/o/{org_name}}/oauth2/accesstokens/{access_t
 <td>Identifies the action to be taken, in this case &#x27;revoke&#x27;.</td>
 <td>N/A</td>
 <td>Yes</td>
+<td><a href="/api_methods/116-revoke-an-oauth-2-0-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 
@@ -122,6 +123,7 @@ https://api.enterprise.apigee.com/v1/o/{org_name}}/oauth2/accesstokens/{access_t
 <td>Setting &#x27;cascade&#x27; to &#x27;true&#x27; causes refresh tokens associated with the access token to be affected by the same action. Setting &#x27;cascade&#x27; to &#x27;false&#x27; leaves associated refresh tokens unaffected by this action.</td>
 <td>true</td>
 <td>No</td>
+<td><a href="/api_methods/116-revoke-an-oauth-2-0-access-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 

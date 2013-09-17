@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="yAq9rityNo+nbaFBhpSmoY4TrSgmbQunwjcifKM+/BA=" name="csrf-token" />
+<meta content="iKdIHHRt++wbdaRQxj2QF4p+JuyGfOojUF5uOxTNJXc=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/32-oauth-1-0a-verifiers">OAuth 1.0a Verifiers</a> > List OAuth 1.0a verifiers</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/32-oauth-1-0a-verifiers">OAuth 1.0a Verifiers</a> > List OAuth 1.0a verifiers</i>
 </div>
 
 <p>
@@ -52,7 +52,7 @@
 <div class="row">
 	<div class="span6" style="width:340px;">
 
-		<p><b>API Resource Path:</b> <code>/oauth1/verifiers</code></p>
+		<p><b>API Resource Path:</b> <pre>/oauth1/verifiers</pre></p>
 		<p><b>Description:</b> List OAuth 1.0a verifiers
 		</p>
 	</div>
@@ -122,46 +122,36 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/oauth1/verifiers \
 			</tr>
 			</thead>
 			<tr>
-<div class="response_element" id="response_element_262">
 <td>code </td>
 <td>Fetches the detail of the verifier code provided by the resource owner </td>
-</div></tr><tr>
-<div class="response_element" id="response_element_263">
+</tr><tr>
 <td>appUserId </td>
 <td>Resource owner&#x27;s user ID</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_264">
+</tr><tr>
 <td>attributes </td>
 <td>Arbitrary name/value elements attached to the profile for the verifier</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_265">
+</tr><tr>
 <td>requestToken </td>
 <td>Token to re-issue the request token</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_266">
+</tr><tr>
 <td>createdAt </td>
 <td>UNIX time the verifier was created</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_267">
+</tr><tr>
 <td>createdBy </td>
 <td>Apigee user account name of the individual who submitted the POST request that created the verifier</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_268">
+</tr><tr>
 <td>expiresAt </td>
 <td>Expiry time period of the token to be generated; token expires/is deleted when the expiry time ends</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_269">
+</tr><tr>
 <td>issuedAt </td>
 <td>UNIX time the verifier code is issued</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_270">
+</tr><tr>
 <td>lastModifiedBy </td>
 <td>Apigee user account name of the individual who submitted the request that most recently modified this entity	</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_271">
+</tr><tr>
 <td>lastModifiedAt </td>
 <td>UNIX time the app was last modified</td>
-</div></tr>
+</tr>
 		</table>
 
 	<b>Errors</b> 

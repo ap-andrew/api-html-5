@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="yAq9rityNo+nbaFBhpSmoY4TrSgmbQunwjcifKM+/BA=" name="csrf-token" />
+<meta content="iKdIHHRt++wbdaRQxj2QF4p+JuyGfOojUF5uOxTNJXc=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/3-api-products">API Products</a> > Create an API product</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/3-api-products">API Products</a> > Create an API product</i>
 </div>
 
 <p>
@@ -52,7 +52,7 @@
 <div class="row">
 	<div class="span6" style="width:340px;">
 
-		<p><b>API Resource Path:</b> <code>/apiproducts</code></p>
+		<p><b>API Resource Path:</b> <pre>/apiproducts</pre></p>
 		<p><b>Description:</b> Create an API product: a list of API resources (URIs) combined with Quota settings that you can use to deliver customized API bundles to your developers.
 		</p>
 	</div>
@@ -309,66 +309,51 @@ text/xml
 			</tr>
 			</thead>
 			<tr>
-<div class="response_element" id="response_element_205">
 <td>approvalType </td>
 <td>Manual or Auto. If Manual, consumer key is generated and returned in &#x27;pending&#x27; state. If manual consumer key generated and returned in &#x27;Approved&#x27; state.</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_207">
+</tr><tr>
 <td>createdAt </td>
 <td>UNIX time when the API Product was created</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_208">
+</tr><tr>
 <td>createdby </td>
 <td>username of the user who created the API Product</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_209">
+</tr><tr>
 <td>displayName  </td>
 <td>The display name of the API Product, used in Apps that display the API Product to Developers Apigee </td>
-</div></tr><tr>
-<div class="response_element" id="response_element_210">
+</tr><tr>
 <td>lastModifiedAt  </td>
 <td>UNIX time when the API Product was most recently updated </td>
-</div></tr><tr>
-<div class="response_element" id="response_element_211">
+</tr><tr>
 <td>lastModifiedBy  </td>
 <td>Apigee username of the user who most recently updated the API Product </td>
-</div></tr><tr>
-<div class="response_element" id="response_element_212">
+</tr><tr>
 <td>name  </td>
 <td>The internal name of the API Product</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_705">
+</tr><tr>
 <td>environments </td>
 <td>A comma-separated list of environment name in an organization. Requests to environments not listed are rejected.</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_706">
+</tr><tr>
 <td>proxies </td>
 <td>A comma-separated list of API proxy names in an organization. Requests to API proxies not listed are rejected.</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_707">
+</tr><tr>
 <td>quota </td>
 <td>The number of request messages permitted by this API product.</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_708">
+</tr><tr>
 <td>quotaInterval </td>
 <td>The time interval over which the number of request messages is calculated.</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_709">
+</tr><tr>
 <td>quotaTimeUnit </td>
 <td>The time unit defined for the quotaInterval</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_710">
+</tr><tr>
 <td>scopes </td>
 <td>A comma separated list of scopes. These must map to the scopes defined in an Oauth policy associated with the API Product. Any scope mismatch between an Acces Token presented and the API product results in authorization failure.</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_204">
+</tr><tr>
 <td>apiResources </td>
 <td>A comma separated list of API resources (URI paths) to be bundled in the API Product. </td>
-</div></tr><tr>
-<div class="response_element" id="response_element_206">
+</tr><tr>
 <td>attributes </td>
 <td>Arbitrary name/value pairs that can be used to create custom profiles</td>
-</div></tr>
+</tr>
 		</table>
 
 	<b>Errors</b> 

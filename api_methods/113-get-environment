@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="yAq9rityNo+nbaFBhpSmoY4TrSgmbQunwjcifKM+/BA=" name="csrf-token" />
+<meta content="iKdIHHRt++wbdaRQxj2QF4p+JuyGfOojUF5uOxTNJXc=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/15-environments">Environments</a> > Get environment</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/15-environments">Environments</a> > Get environment</i>
 </div>
 
 <p>
@@ -52,7 +52,7 @@
 <div class="row">
 	<div class="span6" style="width:340px;">
 
-		<p><b>API Resource Path:</b> <code>/environments/{environment_name}</code></p>
+		<p><b>API Resource Path:</b> <pre>/environments/{environment_name}</pre></p>
 		<p><b>Description:</b> Gets details for an environment
 		</p>
 	</div>
@@ -104,30 +104,24 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/environments/{env_name} \
 			</tr>
 			</thead>
 			<tr>
-<div class="response_element" id="response_element_409">
 <td>createdAt </td>
 <td>Unix time when the environment was created</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_410">
+</tr><tr>
 <td>createdBy </td>
 <td>User name of the Apigee user who created the environment</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_411">
+</tr><tr>
 <td>lastModifiedAt </td>
 <td>Unix time when the environment was last modified</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_412">
+</tr><tr>
 <td>lastModifiedBy </td>
 <td>User name of the Apigee user who last modified the environment</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_413">
+</tr><tr>
 <td>name </td>
 <td>Name of the environment</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_414">
+</tr><tr>
 <td>properties </td>
 <td>A list of properties reserved for use by Apigee</td>
-</div></tr>
+</tr>
 		</table>
 
 	

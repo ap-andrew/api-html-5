@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="yAq9rityNo+nbaFBhpSmoY4TrSgmbQunwjcifKM+/BA=" name="csrf-token" />
+<meta content="iKdIHHRt++wbdaRQxj2QF4p+JuyGfOojUF5uOxTNJXc=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/46-audits">Audits</a> > Audit API management operations</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/46-audits">Audits</a> > Audit API management operations</i>
 </div>
 
 <p>
@@ -52,7 +52,7 @@
 <div class="row">
 	<div class="span6" style="width:340px;">
 
-		<p><b>API Resource Path:</b> <code>/audits/o/{org_name}</code></p>
+		<p><b>API Resource Path:</b> <pre>/audits/o/{org_name}</pre></p>
 		<p><b>Description:</b> Lists audit records  for management operations against APIs, API revisions, and policies. (Note that base path inserts audits before organizations: /audits/organizations/org_name}.
 		</p>
 	</div>
@@ -132,6 +132,7 @@ https://api.enterprise.apigee.com/v1/audits/o/[org_name}/apis/{api_name}?"operat
 <td>Filters results by Apigee user&#x27;s email address</td>
 <td>N/A</td>
 <td>No</td>
+<td><a href="/api_methods/200-audit-api-management-operations?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 
@@ -149,6 +150,7 @@ https://api.enterprise.apigee.com/v1/audits/o/[org_name}/apis/{api_name}?"operat
 <td>Filters results by time interval, defaults to day if no value is specified. Valid values are day, week, month.</td>
 <td>Last 24 hours</td>
 <td>Yes</td>
+<td><a href="/api_methods/200-audit-api-management-operations?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 
@@ -166,6 +168,7 @@ https://api.enterprise.apigee.com/v1/audits/o/[org_name}/apis/{api_name}?"operat
 <td>Filters results by operation. Valid values are create, update, get, delete.</td>
 <td>N/A</td>
 <td>No</td>
+<td><a href="/api_methods/200-audit-api-management-operations?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 
@@ -183,6 +186,7 @@ https://api.enterprise.apigee.com/v1/audits/o/[org_name}/apis/{api_name}?"operat
 <td>The beginning time, in Unix epoch format, for which audit entries should be returned</td>
 <td>N/A</td>
 <td>No</td>
+<td><a href="/api_methods/200-audit-api-management-operations?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 
@@ -200,6 +204,7 @@ https://api.enterprise.apigee.com/v1/audits/o/[org_name}/apis/{api_name}?"operat
 <td>The end time, in Unix epoch format, for which audit entries should be returned</td>
 <td>N/A</td>
 <td>Yes</td>
+<td><a href="/api_methods/200-audit-api-management-operations?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 
@@ -217,6 +222,7 @@ https://api.enterprise.apigee.com/v1/audits/o/[org_name}/apis/{api_name}?"operat
 <td>A limit on the total number of entries returned by the API call</td>
 <td>N/A</td>
 <td>Yes</td>
+<td><a href="/api_methods/200-audit-api-management-operations?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 
@@ -234,6 +240,7 @@ https://api.enterprise.apigee.com/v1/audits/o/[org_name}/apis/{api_name}?"operat
 <td>&#x27;true&#x27; is the only valid value for this query parameter. When set to true, the audit records for all sub-resources are returned in the list of records. </td>
 <td></td>
 <td>Yes</td>
+<td><a href="/api_methods/200-audit-api-management-operations?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 
@@ -273,38 +280,30 @@ https://api.enterprise.apigee.com/v1/audits/o/[org_name}/apis/{api_name}?"operat
 			</tr>
 			</thead>
 			<tr>
-<div class="response_element" id="response_element_696">
 <td>auditRecord </td>
 <td>The audit record for an operation on the target resource</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_698">
+</tr><tr>
 <td>operation </td>
 <td>The operation (GET, CREATE, UPDATE, or DELETE) logged for this target</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_699">
+</tr><tr>
 <td>requestUri </td>
 <td>The URI path of the request to the audit target</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_701">
+</tr><tr>
 <td>response </td>
 <td>The configuration of the API proxy that managed the outbound response</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_702">
+</tr><tr>
 <td>responseCode </td>
 <td>The HTTP response code returned for the operation from the AIP Platform to the requesting app</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_704">
+</tr><tr>
 <td>timeStamp </td>
 <td>Unix time when the action was logged by the auditing system</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_711">
+</tr><tr>
 <td>request </td>
 <td>The configuration of the API proxy that managed the inbound request</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_712">
+</tr><tr>
 <td>user </td>
 <td>The ID of the user who who issued the API call in the audit record</td>
-</div></tr>
+</tr>
 		</table>
 
 	<b>Errors</b> 

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="yAq9rityNo+nbaFBhpSmoY4TrSgmbQunwjcifKM+/BA=" name="csrf-token" />
+<meta content="iKdIHHRt++wbdaRQxj2QF4p+JuyGfOojUF5uOxTNJXc=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/34-stats">Stats</a> > Retrieve and filter metrics for a dimension from  Analytics Services</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/34-stats">Stats</a> > Retrieve and filter metrics for a dimension from  Analytics Services</i>
 </div>
 
 <p>
@@ -52,7 +52,7 @@
 <div class="row">
 	<div class="span6" style="width:340px;">
 
-		<p><b>API Resource Path:</b> <code>/environments/{env_name}/stats/{dimension_name}</code></p>
+		<p><b>API Resource Path:</b> <pre>/environments/{env_name}/stats/{dimension_name}</pre></p>
 		<p><b>Description:</b> Use the GET method to retrieve metrics for a dimension
 		</p>
 	</div>
@@ -169,6 +169,7 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/environments/{env_name}/stats/
 <td>Designates the metric to be aggregated for the report. Supported metrics are message_count, error_count, total_response_time, max_response_time, min_response_time, data_exchange_size, end_point_response_time</td>
 <td>N/A</td>
 <td>Yes</td>
+<td><a href="/api_methods/71-retrieve-and-filter-metrics-for-a-dimension-from-analytics-services?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 
@@ -186,6 +187,7 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/environments/{env_name}/stats/
 <td>The start and end time for the desired interval. The date format is MM/DD/YYYY HH:MM. For example, 1/1/2013%2000:00~1/2/2013%2000:00</td>
 <td>N/A</td>
 <td>Yes</td>
+<td><a href="/api_methods/71-retrieve-and-filter-metrics-for-a-dimension-from-analytics-services?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 
@@ -203,6 +205,7 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/environments/{env_name}/stats/
 <td>second, minute, hour, day, week, month, quarter, year, decade, century, millennium</td>
 <td>N/A</td>
 <td>Yes</td>
+<td><a href="/api_methods/71-retrieve-and-filter-metrics-for-a-dimension-from-analytics-services?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 
@@ -220,6 +223,7 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/environments/{env_name}/stats/
 <td>When two or more select values are specified, &#x27;sortby&#x27; can be used to specify the select used for sorting results: message_count, error_count, total_response_time, max_response_time, min_response_time, data_exchange_size, end_point_response_time</td>
 <td>N/A</td>
 <td>No</td>
+<td><a href="/api_methods/71-retrieve-and-filter-metrics-for-a-dimension-from-analytics-services?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 
@@ -237,6 +241,7 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/environments/{env_name}/stats/
 <td>Supported sort scopes are DESC or ASC</td>
 <td>N/A</td>
 <td>No</td>
+<td><a href="/api_methods/71-retrieve-and-filter-metrics-for-a-dimension-from-analytics-services?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 
@@ -254,6 +259,7 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/environments/{env_name}/stats/
 <td>Take &quot;top k&quot; results from results, for example, to return the top 5 results &quot;topk=5&quot;.</td>
 <td>N/A</td>
 <td>No</td>
+<td><a href="/api_methods/71-retrieve-and-filter-metrics-for-a-dimension-from-analytics-services?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 
@@ -271,6 +277,7 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/environments/{env_name}/stats/
 <td>Enables drill-down on specific dimension values</td>
 <td>N/A</td>
 <td>No</td>
+<td><a href="/api_methods/71-retrieve-and-filter-metrics-for-a-dimension-from-analytics-services?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 
@@ -288,6 +295,7 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/environments/{env_name}/stats/
 <td>Set the limit for the number of entries returned by the API </td>
 <td>N/A</td>
 <td>No</td>
+<td><a href="/api_methods/71-retrieve-and-filter-metrics-for-a-dimension-from-analytics-services?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 
@@ -305,6 +313,7 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/environments/{env_name}/stats/
 <td>Use offset with limit to enable pagination of results. For example, to display results 11-20, set limit to &#x27;10&#x27; and offset to &#x27;10&#x27;.</td>
 <td>N/A</td>
 <td>No</td>
+<td><a href="/api_methods/71-retrieve-and-filter-metrics-for-a-dimension-from-analytics-services?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 
@@ -380,26 +389,21 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/environments/{env_name}/stats/
 			</tr>
 			</thead>
 			<tr>
-<div class="response_element" id="response_element_1">
 <td>metadata </td>
 <td>Metadata associated with the report</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_2">
+</tr><tr>
 <td>environments </td>
 <td>Environments in the organization where the statistics are collected (supports wildcard * for cross environment statistics collection)</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_3">
+</tr><tr>
 <td>metrics </td>
 <td>The values returned for the specified dimension</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_7">
+</tr><tr>
 <td>dimensions </td>
 <td>The dimension defined for measurement: in this example api_name.</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_10">
+</tr><tr>
 <td>metrics </td>
 <td>Metrics for the report</td>
-</div></tr>
+</tr>
 		</table>
 
 	

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="yAq9rityNo+nbaFBhpSmoY4TrSgmbQunwjcifKM+/BA=" name="csrf-token" />
+<meta content="iKdIHHRt++wbdaRQxj2QF4p+JuyGfOojUF5uOxTNJXc=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/31-oauth-1-0a-request-tokens">OAuth 1.0a Request Tokens</a> > Get an OAuth 1.0a request token</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/31-oauth-1-0a-request-tokens">OAuth 1.0a Request Tokens</a> > Get an OAuth 1.0a request token</i>
 </div>
 
 <p>
@@ -52,7 +52,7 @@
 <div class="row">
 	<div class="span6" style="width:340px;">
 
-		<p><b>API Resource Path:</b> <code>/oauth1/requesttokens/{request_token}?consumerKey={consumer_key}</code></p>
+		<p><b>API Resource Path:</b> <pre>/oauth1/requesttokens/{request_token}?consumerKey={consumer_key}</pre></p>
 		<p><b>Description:</b> Gets the Oauth 1.0a Request Token for the speficied consumer key
 		</p>
 	</div>
@@ -121,62 +121,48 @@ https://api.enterprise.apigee.com/v1/o/(org_name)/oauth1/requesttokens/{request_
 			</tr>
 			</thead>
 			<tr>
-<div class="response_element" id="response_element_346">
 <td>consumerKey </td>
 <td>The key associated with the app</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_343">
+</tr><tr>
 <td>app </td>
 <td>The app for which the request token was generated</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_344">
+</tr><tr>
 <td>attributes </td>
 <td>Name/value elements used to extend the default request token profile</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_345">
+</tr><tr>
 <td>callbackUrl </td>
 <td>Fetches the client registration details and verifies for the following. It does not redirect if any of the following validation conditions fail. redirect_uri is not provided multiple redirect_uri instances are provided only a part of the redirect_uri is provided if the redirect_uri is provided, it is compared against the multiple redirect_uri instances (if any) ignores fragment components</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_347">
+</tr><tr>
 <td>createdAt </td>
 <td>Unix time when the request token was created</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_348">
+</tr><tr>
 <td>createdBy </td>
 <td>Apigee user name of the user who create the request token</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_349">
+</tr><tr>
 <td>expiresAt </td>
 <td>Expiry time period of the token to be generated; token expires/is deleted when the expiry time ends</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_350">
+</tr><tr>
 <td>issuedAt </td>
 <td>Validity time period for the OAuth verifier code </td>
-</div></tr><tr>
-<div class="response_element" id="response_element_351">
+</tr><tr>
 <td>lastModifiedAt </td>
 <td>Unix time when the request token was last modified</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_352">
+</tr><tr>
 <td>lastModifiedBy </td>
 <td>Apigee user name of the user who last modified the request token</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_353">
+</tr><tr>
 <td>scope </td>
 <td>Oauth scope(s) included in the request</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_354">
+</tr><tr>
 <td>secret </td>
 <td>Secret password for getting the request token</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_355">
+</tr><tr>
 <td>status </td>
 <td>Status of the request token; changes to expired when the expiry time ends</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_356">
+</tr><tr>
 <td>token </td>
 <td>Value of the request token</td>
-</div></tr>
+</tr>
 		</table>
 
 	<b>Errors</b> 

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="yAq9rityNo+nbaFBhpSmoY4TrSgmbQunwjcifKM+/BA=" name="csrf-token" />
+<meta content="iKdIHHRt++wbdaRQxj2QF4p+JuyGfOojUF5uOxTNJXc=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/18-developer-app-keys">Developer App Keys</a> > Update an app&#x27;s consumer key with one or more API products</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/18-developer-app-keys">Developer App Keys</a> > Update an app&#x27;s consumer key with one or more API products</i>
 </div>
 
 <p>
@@ -52,7 +52,7 @@
 <div class="row">
 	<div class="span6" style="width:340px;">
 
-		<p><b>API Resource Path:</b> <code>/developers/{developer_email}/apps/{app_name}/keys/{consumer_key}</code></p>
+		<p><b>API Resource Path:</b> <pre>/developers/{developer_email}/apps/{app_name}/keys/{consumer_key}</pre></p>
 		<p><b>Description:</b> Adds an API product to a developer app key
 		</p>
 	</div>
@@ -162,30 +162,24 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/developers/{developer_email}/a
 			</tr>
 			</thead>
 			<tr>
-<div class="response_element" id="response_element_213">
 <td>apiproduct </td>
 <td>The name of the API Product added to the Developer App Key</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_214">
+</tr><tr>
 <td>status </td>
 <td>The status of the API Product</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_215">
+</tr><tr>
 <td>attributes </td>
 <td>Arbitrary name/value pairs added by the client</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_216">
+</tr><tr>
 <td>consumerKey </td>
 <td>The value of the Developer App Key to which the API Product was attached</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_217">
+</tr><tr>
 <td>consumerSecret </td>
 <td>The value of the Developer App Key secret to which the API Product was attached</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_218">
+</tr><tr>
 <td>status </td>
 <td>The status of the Consumer App Key (approved or pending). For API products whose approval type is set to &quot;Manual&quot;, keys are returned in pending state and must be explicitly approved.</td>
-</div></tr>
+</tr>
 		</table>
 
 	<b>Errors</b> 

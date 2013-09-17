@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="yAq9rityNo+nbaFBhpSmoY4TrSgmbQunwjcifKM+/BA=" name="csrf-token" />
+<meta content="iKdIHHRt++wbdaRQxj2QF4p+JuyGfOojUF5uOxTNJXc=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/33-oauth-1-0a-access-tokens">OAuth 1.0a Access Tokens</a> > Get OAuth 1.0a access token</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/33-oauth-1-0a-access-tokens">OAuth 1.0a Access Tokens</a> > Get OAuth 1.0a access token</i>
 </div>
 
 <p>
@@ -52,7 +52,7 @@
 <div class="row">
 	<div class="span6" style="width:340px;">
 
-		<p><b>API Resource Path:</b> <code>/oauth1/accesstokens/{access_token}</code></p>
+		<p><b>API Resource Path:</b> <pre>/oauth1/accesstokens/{access_token}</pre></p>
 		<p><b>Description:</b> Fetches the details of given access token
 		</p>
 	</div>
@@ -124,70 +124,54 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/oauth1/accesstokens/{access_to
 			</tr>
 			</thead>
 			<tr>
-<div class="response_element" id="response_element_327">
 <td>apiProducts </td>
 <td>API products associated with the consumer key used by the app</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_328">
+</tr><tr>
 <td>app </td>
 <td>App with which the access token is associated</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_329">
+</tr><tr>
 <td>appUserId </td>
 <td>The ID of the app end user for whom the access token is generated</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_330">
+</tr><tr>
 <td>attributes </td>
 <td>Name/value pairs used to exntend the default OAuth 1.0a access token profile</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_331">
+</tr><tr>
 <td>consumerKey </td>
 <td>The consumer key associated with access toen</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_332">
+</tr><tr>
 <td>consumerSecret </td>
 <td>The consumer secret associated with the consumer key for the access token</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_333">
+</tr><tr>
 <td>createdAt </td>
 <td>Unix time the access token was generated</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_334">
+</tr><tr>
 <td>createdBy </td>
 <td>User name of the Apigee user who created the access token</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_335">
+</tr><tr>
 <td>expiresAt </td>
 <td>Unix time the access token will expire</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_336">
+</tr><tr>
 <td>issuedAt </td>
 <td>Validity time period for the OAuth verifier code</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_337">
+</tr><tr>
 <td>lastModifiedAt </td>
 <td>Unix time the access token was last modified</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_338">
+</tr><tr>
 <td>lastModifiedBy </td>
 <td>User name of the Apigee user who last modified</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_339">
+</tr><tr>
 <td>scope </td>
 <td>The OAuth scope of the access token (used at runtime to validate access to API product)</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_340">
+</tr><tr>
 <td>secret </td>
 <td>The screat associated with the access token</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_341">
+</tr><tr>
 <td>status </td>
 <td>The status of the access token: &#x27;approved&#x27;, &#x27;revoked&#x27;, expired&#x27;</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_342">
+</tr><tr>
 <td>token </td>
 <td>The value of the Access Token</td>
-</div></tr>
+</tr>
 		</table>
 
 	<b>Errors</b> 

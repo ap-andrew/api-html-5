@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="yAq9rityNo+nbaFBhpSmoY4TrSgmbQunwjcifKM+/BA=" name="csrf-token" />
+<meta content="iKdIHHRt++wbdaRQxj2QF4p+JuyGfOojUF5uOxTNJXc=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/7-key-value-maps">Key/Value Maps</a> > Get key/value map</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/7-key-value-maps">Key/Value Maps</a> > Get key/value map</i>
 </div>
 
 <p>
@@ -52,7 +52,7 @@
 <div class="row">
 	<div class="span6" style="width:340px;">
 
-		<p><b>API Resource Path:</b> <code>/keyvaluemaps/{map_name}</code></p>
+		<p><b>API Resource Path:</b> <pre>/keyvaluemaps/{map_name}</pre></p>
 		<p><b>Description:</b> Gets a KeyValueMap by name, along  with associated entries
 		</p>
 	</div>
@@ -121,14 +121,12 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/apis/{api_name}/keyvaluemaps/{
 			</tr>
 			</thead>
 			<tr>
-<div class="response_element" id="response_element_403">
 <td>entry </td>
 <td>Name/value pair that defines the map entry</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_404">
+</tr><tr>
 <td>name </td>
 <td>The name of the map</td>
-</div></tr>
+</tr>
 		</table>
 
 	<b>Errors</b> 

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="yAq9rityNo+nbaFBhpSmoY4TrSgmbQunwjcifKM+/BA=" name="csrf-token" />
+<meta content="iKdIHHRt++wbdaRQxj2QF4p+JuyGfOojUF5uOxTNJXc=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/17-apps-developer">Apps: Developer</a> > Update a developer app</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/17-apps-developer">Apps: Developer</a> > Update a developer app</i>
 </div>
 
 <p>
@@ -52,7 +52,7 @@
 <div class="row">
 	<div class="span6" style="width:340px;">
 
-		<p><b>API Resource Path:</b> <code>/developers/{developer_email}/apps/{app_name}</code></p>
+		<p><b>API Resource Path:</b> <pre>/developers/{developer_email}/apps/{app_name}</pre></p>
 		<p><b>Description:</b> Updates the app to get a new set of consumer credentials. 
 		</p>
 	</div>
@@ -145,70 +145,54 @@ text/xml
 			</tr>
 			</thead>
 			<tr>
-<div class="response_element" id="response_element_502">
 <td>accessType </td>
 <td></td>
-</div></tr><tr>
-<div class="response_element" id="response_element_503">
+</tr><tr>
 <td>attributes </td>
 <td>Name/value pairs used to extend the default app profile</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_504">
+</tr><tr>
 <td>callbackUrl </td>
 <td>A callback URL that can be used for app specific callbacks</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_505">
+</tr><tr>
 <td>createdAt </td>
 <td>Unix time when the app was created</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_506">
+</tr><tr>
 <td>credentials </td>
 <td>A list of associations between API products and consumer keys for the app</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_507">
+</tr><tr>
 <td>apiProducts </td>
 <td>A list of API products with which the app is associated</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_508">
+</tr><tr>
 <td>apiproduct </td>
 <td>The API product with which teh app is associated</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_509">
+</tr><tr>
 <td>status </td>
 <td>Status of the app association with the API product: &#x27;approved&#x27; or &#x27;pending&#x27;</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_510">
+</tr><tr>
 <td>attributes </td>
 <td>Name&#x27;value pairs used to extend the profile</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_511">
+</tr><tr>
 <td>consumerKey </td>
 <td>The value of the consumer key associated with the API product</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_512">
+</tr><tr>
 <td>consumerSecret </td>
 <td>Value of the consumer secret associated with the consumer key</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_513">
+</tr><tr>
 <td>status </td>
 <td>Status of the consumer key: &#x27;approved&#x27; or &#x27;pending&#x27;</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_514">
+</tr><tr>
 <td>lastModifiedAt </td>
 <td>Unix time when the app was last modified</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_515">
+</tr><tr>
 <td>lastModifiedBy </td>
 <td>User name of the Apigee user who last modified the app</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_516">
+</tr><tr>
 <td>name </td>
 <td>Name of the app</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_517">
+</tr><tr>
 <td>status </td>
 <td>Status of the app: &#x27;approved or &#x27;unapproved&#x27;</td>
-</div></tr>
+</tr>
 		</table>
 
 	

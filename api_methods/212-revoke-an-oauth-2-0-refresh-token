@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="yAq9rityNo+nbaFBhpSmoY4TrSgmbQunwjcifKM+/BA=" name="csrf-token" />
+<meta content="iKdIHHRt++wbdaRQxj2QF4p+JuyGfOojUF5uOxTNJXc=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/48-oauth-2-0-refresh-tokens">OAuth 2.0 Refresh Tokens</a> > Revoke an OAuth 2.0 refresh token</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/48-oauth-2-0-refresh-tokens">OAuth 2.0 Refresh Tokens</a> > Revoke an OAuth 2.0 refresh token</i>
 </div>
 
 <p>
@@ -52,7 +52,7 @@
 <div class="row">
 	<div class="span6" style="width:340px;">
 
-		<p><b>API Resource Path:</b> <code> /refreshtokens/{refresh_token}?action=revoke&amp;cascade=true</code></p>
+		<p><b>API Resource Path:</b> <pre> /refreshtokens/{refresh_token}?action=revoke&amp;cascade=true</pre></p>
 		<p><b>Description:</b> Revokes an OAuth 2.0 refresh token
 		</p>
 	</div>
@@ -105,6 +105,7 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/oauth2/refreshtokens/{refresh_
 <td>Specifies the action, &#x27;approve&#x27; or &#x27;revoke&#x27;, to be taken against the specified token.	</td>
 <td>N/A</td>
 <td>Yes</td>
+<td><a href="/api_methods/212-revoke-an-oauth-2-0-refresh-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 
@@ -122,6 +123,7 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/oauth2/refreshtokens/{refresh_
 <td>Specifies whether the action should also be applied to the access token associated with the specified refresh token.</td>
 <td>true</td>
 <td>No</td>
+<td><a href="/api_methods/212-revoke-an-oauth-2-0-refresh-token?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 

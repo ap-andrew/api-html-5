@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="yAq9rityNo+nbaFBhpSmoY4TrSgmbQunwjcifKM+/BA=" name="csrf-token" />
+<meta content="iKdIHHRt++wbdaRQxj2QF4p+JuyGfOojUF5uOxTNJXc=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/3-api-products">API Products</a> > Update API Product</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/3-api-products">API Products</a> > Update API Product</i>
 </div>
 
 <p>
@@ -52,7 +52,7 @@
 <div class="row">
 	<div class="span6" style="width:340px;">
 
-		<p><b>API Resource Path:</b> <code>/apiproducts/{apiproduct_name}</code></p>
+		<p><b>API Resource Path:</b> <pre>/apiproducts/{apiproduct_name}</pre></p>
 		<p><b>Description:</b> This method updates an existing APi Product
 		</p>
 	</div>
@@ -110,58 +110,6 @@ text/xml
 }'  \
 https://api.enterprise.apigee.com/v1/o/apifactory/apiproducts/sandbox \
 -u myname:mypass</pre>
-	<b>Request Payload Elements:</b> 
-	<table class="table table-bordered">
-		<thead>
-			<tr>
-				<th>Name</th>
-				<th>Description</th>
-				<th>Default</th>
-				<th>Required?</th>
-			</tr>
-			</thead>
-			<tr>
-<div class="request_element" id="request_element_42">
-<td>approvalType</td>
-<td>Manual or Auto. If Manual, consumer key is generated and returned in &#x27;pending&#x27; state. If manual consumer key generated and returned in &#x27;Approved&#x27; state.</td>
-<td>N/A</td>
-<td>No</td>
-<!-- <td><a href="/request_elements/42" class="btn btn-mini">Detail</a></td> -->
-</div></tr>
-
-
-<tr>
-<div class="request_element" id="request_element_43">
-<td>attributes</td>
-<td>Arbitrary name/value pairs, most commonly used to store variables that define Rate Limit (Quota or Spike Arrest) settings for an API Product (otherwise known as a Service Plan)</td>
-<td>N/A</td>
-<td>No</td>
-<!-- <td><a href="/request_elements/43" class="btn btn-mini">Detail</a></td> -->
-</div></tr>
-
-
-<tr>
-<div class="request_element" id="request_element_44">
-<td>displayName</td>
-<td>The display name of the API Product, used in Apps that display the API Product to Developers</td>
-<td>N/A</td>
-<td>No</td>
-<!-- <td><a href="/request_elements/44" class="btn btn-mini">Detail</a></td> -->
-</div></tr>
-
-
-<tr>
-<div class="request_element" id="request_element_45">
-<td>apiResources</td>
-<td>A comma separated list of API resources to be bundled in the API Product.</td>
-<td>N/A</td>
-<td>No</td>
-<!-- <td><a href="/request_elements/45" class="btn btn-mini">Detail</a></td> -->
-</div></tr>
-
-
-
-			</table>
 
 
 <b>Sample Response:</b> 
@@ -187,52 +135,6 @@ https://api.enterprise.apigee.com/v1/o/apifactory/apiproducts/sandbox \
   "scopes" : [ "read, write" ]
 }</pre>
 
-	<b>Response Payload Elements:</b>
-		<table class="table table-bordered">
-			<thead>
-			<tr>
-				<th>Name</th>
-				<th>Description</th>
-			</tr>
-			</thead>
-			<tr>
-<div class="response_element" id="response_element_138">
-<td>apiResources </td>
-<td>A list of URIs (including wildcards) that represent the bundle of APIs permitted to consumers of this API Product</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_139">
-<td>approvalType </td>
-<td>Determines the state of the consumer key generated for requesters of this API Product. For Auto, key are generated in &quot;Approved&#x27; state. For Manual, keys are approved in &#x27;Pending&#x27; state. </td>
-</div></tr><tr>
-<div class="response_element" id="response_element_140">
-<td>attributes </td>
-<td>Any app-specific arbitrary attributes that may be used to define visibility of the API Product or runtime policy enforcement (such as setting for a rate-limiting policy.</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_141">
-<td>createdAt </td>
-<td>Unix time</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_142">
-<td>createdBy </td>
-<td>Apigee user account name of the individual who submitted the POST request that created this entity</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_143">
-<td>lastModifiedAt </td>
-<td>Unix time when the API product was last modified</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_144">
-<td>lastModifiedBy </td>
-<td>Apigee user account name of the individual who last modified this entity</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_145">
-<td>name </td>
-<td>Name of the API Product</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_146">
-<td>scopes </td>
-<td>Oauth scopes required in the access token used to consume any of the API resources (URIs) bundled in this API Product</td>
-</div></tr>
-		</table>
 
 	<b>Errors</b> 
 		<pre>{

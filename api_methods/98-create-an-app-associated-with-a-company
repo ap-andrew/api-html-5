@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="yAq9rityNo+nbaFBhpSmoY4TrSgmbQunwjcifKM+/BA=" name="csrf-token" />
+<meta content="iKdIHHRt++wbdaRQxj2QF4p+JuyGfOojUF5uOxTNJXc=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/14-apps-company">Apps: Company</a> > Create an app associated with a company</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/14-apps-company">Apps: Company</a> > Create an app associated with a company</i>
 </div>
 
 <p>
@@ -52,7 +52,7 @@
 <div class="row">
 	<div class="span6" style="width:340px;">
 
-		<p><b>API Resource Path:</b> <code>/companies/{company_name}/apps</code></p>
+		<p><b>API Resource Path:</b> <pre>/companies/{company_name}/apps</pre></p>
 		<p><b>Description:</b> Creates an app for a company
 		</p>
 	</div>
@@ -204,74 +204,57 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/companies/{company_name}/apps 
 			</tr>
 			</thead>
 			<tr>
-<div class="response_element" id="response_element_529">
 <td>accessType </td>
 <td></td>
-</div></tr><tr>
-<div class="response_element" id="response_element_530">
+</tr><tr>
 <td>attributes </td>
 <td>Name/value pairs used to extend the default profile</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_531">
+</tr><tr>
 <td>callbackUrl </td>
 <td>If set, the Oauth policy will not provide an access token unless the redirect_uri in the request matches the value of the callback in the app</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_532">
+</tr><tr>
 <td>createdAt </td>
 <td>Unix time when the app was created</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_533">
+</tr><tr>
 <td>createdBy </td>
 <td>User name of the Apigee user who created the app</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_534">
+</tr><tr>
 <td>credentials </td>
 <td>A set of credentials for the app--credentials are app key/secret pairs associated with API products</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_535">
+</tr><tr>
 <td>apiProducts </td>
 <td>A list of API products with which the app is associated</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_536">
+</tr><tr>
 <td>apiproduct </td>
 <td>Name of the API product</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_537">
+</tr><tr>
 <td>status </td>
 <td>The status of the association between the API product and the consumer key: &#x27;approved&#x27; or &#x27;unapproved&#x27;</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_538">
+</tr><tr>
 <td>attributes </td>
 <td>Name/value pairs used to extend the default profile</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_539">
+</tr><tr>
 <td>consumerKey </td>
 <td>The value of the consumer key</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_540">
+</tr><tr>
 <td>consumerSecret </td>
 <td>The value of the consumer secret associated with the consumer key</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_541">
+</tr><tr>
 <td>status </td>
 <td>The status of the consumer key: &#x27;approved&#x27; or &#x27;pending&#x27;</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_542">
+</tr><tr>
 <td>lastModifiedAt </td>
 <td>Unix time when the app was last modified</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_543">
+</tr><tr>
 <td>lastModifiedBy </td>
 <td>User name of teh Apigee user who last modified the app</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_544">
+</tr><tr>
 <td>name </td>
 <td>Name of the app</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_545">
+</tr><tr>
 <td>status </td>
 <td>Status of the app: &#x27;approved&#x27; or &#x27;unapproved&#x27;</td>
-</div></tr>
+</tr>
 		</table>
 
 	<b>Errors</b> 

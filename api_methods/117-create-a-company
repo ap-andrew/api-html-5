@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="yAq9rityNo+nbaFBhpSmoY4TrSgmbQunwjcifKM+/BA=" name="csrf-token" />
+<meta content="iKdIHHRt++wbdaRQxj2QF4p+JuyGfOojUF5uOxTNJXc=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/6-companies">Companies</a> > Create a company</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/6-companies">Companies</a> > Create a company</i>
 </div>
 
 <p>
@@ -52,7 +52,7 @@
 <div class="row">
 	<div class="span6" style="width:340px;">
 
-		<p><b>API Resource Path:</b> <code>/companies</code></p>
+		<p><b>API Resource Path:</b> <pre>/companies</pre></p>
 		<p><b>Description:</b> Creates a company in an organization
 		</p>
 	</div>
@@ -179,42 +179,33 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/companies \
 			</tr>
 			</thead>
 			<tr>
-<div class="response_element" id="response_element_84">
 <td>name </td>
 <td>Name of the company</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_85">
+</tr><tr>
 <td>displayName </td>
 <td>Display name of the company</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_86">
+</tr><tr>
 <td>organization </td>
 <td>Organization in which the company is created</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_87">
+</tr><tr>
 <td>status </td>
 <td>Status of the company: &#x27;active&#x27; or &#x27;inactive&#x27;</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_88">
+</tr><tr>
 <td>attributes </td>
 <td>Custom name/value atributes used ot extend the default company profile</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_89">
+</tr><tr>
 <td>createdAt </td>
 <td>Unix time when the entity was created</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_90">
+</tr><tr>
 <td>createdBy </td>
 <td>Apigee username of the user who created the company</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_91">
+</tr><tr>
 <td>lastModifiedAt </td>
 <td>Unix time when the entity was last modified</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_92">
+</tr><tr>
 <td>lastModifiedBy </td>
 <td>Apigee username of the user who last modified the company</td>
-</div></tr>
+</tr>
 		</table>
 
 	<b>Errors</b> 

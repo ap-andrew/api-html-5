@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="yAq9rityNo+nbaFBhpSmoY4TrSgmbQunwjcifKM+/BA=" name="csrf-token" />
+<meta content="iKdIHHRt++wbdaRQxj2QF4p+JuyGfOojUF5uOxTNJXc=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/3-api-products">API Products</a> > Get an API product</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/3-api-products">API Products</a> > Get an API product</i>
 </div>
 
 <p>
@@ -52,7 +52,7 @@
 <div class="row">
 	<div class="span6" style="width:340px;">
 
-		<p><b>API Resource Path:</b> <code>/apiproducts/{apiproduct_name}</code></p>
+		<p><b>API Resource Path:</b> <pre>/apiproducts/{apiproduct_name}</pre></p>
 		<p><b>Description:</b> Gets an API Product
 		</p>
 	</div>
@@ -121,58 +121,45 @@ https://api.enterprise.apigee.com/v1/o/(org_name)/apiproducts/{apiproduct_name} 
 			</tr>
 			</thead>
 			<tr>
-<div class="response_element" id="response_element_219">
 <td>apiResources </td>
 <td>A list of URIs (including wildcards) that represent the bundle of APIs permitted to consumers of this API Product	</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_220">
+</tr><tr>
 <td>approvalType </td>
 <td>Determines the state of the consumer key generated for requesters of this API Product. For Auto, key are generated in &quot;Approved&#x27; state. For Manual, keys are approved in &#x27;Pending&#x27; state.</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_221">
+</tr><tr>
 <td>attributes </td>
 <td>Any app-specific arbitrary attributes that may be used to define visibility of the API Product or runtime policy enforcement (such as setting for a rate-limiting policy.	</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_222">
+</tr><tr>
 <td>createdAt </td>
 <td>Unix time when the API Product was created</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_223">
+</tr><tr>
 <td>createdBy </td>
 <td>Apigee user account name of the individual who submitted the POST request that created this entity	</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_224">
+</tr><tr>
 <td>description </td>
 <td>Human-readable description of the API Product</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_225">
+</tr><tr>
 <td>displayName </td>
 <td>Friendly name to display to Developers, for example, in a Developer Onboarding app</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_226">
+</tr><tr>
 <td>lastModifiedAt </td>
 <td>Unix time when the API Product was most recently updated</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_227">
+</tr><tr>
 <td>lastModifiedBy </td>
 <td>Apigee user account name of the individual who last modified the API Product</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_228">
+</tr><tr>
 <td>name </td>
 <td>The name of the API Product</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_229">
+</tr><tr>
 <td>scopes </td>
 <td>Oauth scopes required in the Access Token(s) used to consume any of the API resources (URIs) bundled in this API Product</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_713">
+</tr><tr>
 <td>proxies </td>
 <td>Every API product is bound to one or more API proxies by name</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_714">
+</tr><tr>
 <td>environments </td>
 <td>Every API product is bound to at least one environment</td>
-</div></tr>
+</tr>
 		</table>
 
 	<b>Errors</b> 

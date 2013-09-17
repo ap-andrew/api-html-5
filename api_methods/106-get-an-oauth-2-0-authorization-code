@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="yAq9rityNo+nbaFBhpSmoY4TrSgmbQunwjcifKM+/BA=" name="csrf-token" />
+<meta content="iKdIHHRt++wbdaRQxj2QF4p+JuyGfOojUF5uOxTNJXc=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/27-oauth-2-0-authorization-code">Oauth 2.0 Authorization Code</a> > Get an OAuth 2.0 authorization code</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/27-oauth-2-0-authorization-code">Oauth 2.0 Authorization Code</a> > Get an OAuth 2.0 authorization code</i>
 </div>
 
 <p>
@@ -52,7 +52,7 @@
 <div class="row">
 	<div class="span6" style="width:340px;">
 
-		<p><b>API Resource Path:</b> <code>/oauth2/authorizationcodes/{authorization_code}</code></p>
+		<p><b>API Resource Path:</b> <pre>/oauth2/authorizationcodes/{authorization_code}</pre></p>
 		<p><b>Description:</b> Get a specific Authorization Code
 		</p>
 	</div>
@@ -118,50 +118,39 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/oauth2/authorizationcodes/{aut
 			</tr>
 			</thead>
 			<tr>
-<div class="response_element" id="response_element_11">
 <td>attributes </td>
 <td>Name/value pairs used to extend the default auth code profile</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_12">
+</tr><tr>
 <td>client_id </td>
 <td>The consumer key of the app</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_13">
+</tr><tr>
 <td>code </td>
 <td>The value of the authorization code</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_14">
+</tr><tr>
 <td>createdAt </td>
 <td>Unix time when the auth code was generated</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_15">
+</tr><tr>
 <td>createdBy </td>
 <td>User name of the Apigee user who created the auth code</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_16">
+</tr><tr>
 <td>expiresAt </td>
 <td>Unix time when the auth code expires</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_17">
+</tr><tr>
 <td>issuedAt </td>
 <td>Unix time when the auth code was issued</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_18">
+</tr><tr>
 <td>lastModifiedAt </td>
 <td>Unix time when the auth code was last modified</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_19">
+</tr><tr>
 <td>lastModifiedBy </td>
 <td>User name of the Apigee user who last modified the auth code</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_20">
+</tr><tr>
 <td>scope </td>
 <td>Comma separated list of OAuth scopes</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_21">
+</tr><tr>
 <td>status </td>
 <td>Status of the auth code, which changes to expired when the validity period has passed</td>
-</div></tr>
+</tr>
 		</table>
 
 	<b>Errors</b> 

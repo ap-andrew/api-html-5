@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="yAq9rityNo+nbaFBhpSmoY4TrSgmbQunwjcifKM+/BA=" name="csrf-token" />
+<meta content="iKdIHHRt++wbdaRQxj2QF4p+JuyGfOojUF5uOxTNJXc=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/1-apis">APIs</a> > Create an API proxy</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/1-apis">APIs</a> > Create an API proxy</i>
 </div>
 
 <p>
@@ -52,7 +52,7 @@
 <div class="row">
 	<div class="span6" style="width:340px;">
 
-		<p><b>API Resource Path:</b> <code>/apis</code></p>
+		<p><b>API Resource Path:</b> <pre>/apis</pre></p>
 		<p><b>Description:</b> Creates an API facade (and an API proxy configuration) on Apigee
 		</p>
 	</div>
@@ -154,46 +154,36 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/apis \
 			</tr>
 			</thead>
 			<tr>
-<div class="response_element" id="response_element_272">
 <td>configurationVersion </td>
 <td>The version of Apigee that the configuration is valid for</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_273">
+</tr><tr>
 <td>contextInfo </td>
 <td>Apigee generated contextual information about the entity</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_274">
+</tr><tr>
 <td>name </td>
 <td>The name of the API</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_275">
+</tr><tr>
 <td>policies </td>
 <td>Policies attached to the API </td>
-</div></tr><tr>
-<div class="response_element" id="response_element_276">
+</tr><tr>
 <td>proxyEndpoints </td>
 <td>Named proxy endpoints (receiver) defined for the API proxy</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_277">
+</tr><tr>
 <td>resources </td>
 <td>Any code, scripts, XSLT files used by policies attached to this API</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_278">
+</tr><tr>
 <td>revision </td>
 <td>The sequential numbered packages of code and configuration that make up an API proxy</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_279">
+</tr><tr>
 <td>targetEndpoints </td>
 <td>Named proxy endpoints (sender) defined for the API proxy</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_280">
+</tr><tr>
 <td>targetServers </td>
 <td>Target servers defined for load balancing purposes</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_281">
+</tr><tr>
 <td>type </td>
 <td>Internal entity definition used by Apigee</td>
-</div></tr>
+</tr>
 		</table>
 
 	

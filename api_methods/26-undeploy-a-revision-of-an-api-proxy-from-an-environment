@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="yAq9rityNo+nbaFBhpSmoY4TrSgmbQunwjcifKM+/BA=" name="csrf-token" />
+<meta content="iKdIHHRt++wbdaRQxj2QF4p+JuyGfOojUF5uOxTNJXc=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/1-apis">APIs</a> > Undeploy a revision of an API proxy from an environment</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/1-apis">APIs</a> > Undeploy a revision of an API proxy from an environment</i>
 </div>
 
 <p>
@@ -52,8 +52,8 @@
 <div class="row">
 	<div class="span6" style="width:340px;">
 
-		<p><b>API Resource Path:</b> <code>/apis/{api_name}/deployments?action=undeploy&amp;env={environment_name}&amp;revision={revision_number}</code></p>
-		<p><b>Description:</b> Removes an API from an environment (typically &#x27;test&#x27; or &#x27;prod&#x27;)
+		<p><b>API Resource Path:</b> <pre>/environments/{env_name}/apis/{api_name}/revisions/{revision_number}/deployments/</pre></p>
+		<p><b>Description:</b> Undeploys an API proxy revision from an environment (typically &#x27;test&#x27; or &#x27;prod&#x27;)
 		</p>
 	</div>
 
@@ -64,8 +64,8 @@
 
 
 		<tr><td style="vertical-align:top"><b>Media types:</b></td>  <td>
-<div class="content_type" id="content_type_4">
-application/octet-stream
+<div class="content_type" id="content_type_3">
+application/x-www-url-form-encoded
 </div></td></tr>
 
 		
@@ -82,19 +82,17 @@ application/octet-stream
 		<p>For detailed instructions on using the "Undeploy a revision of an API proxy from an environment" method, see the <a href="http://apigee.com/docs/api/content/quickstarts/local-api-development">Developer Guide Topic</a> in the <a href="http://apigee.com/docs/enterprise/content/developer_guide">API Proxy Developer Guide</a>.</b></p>
 
 		
-	<p><b>Overview:</b> <p>This method undeploys a revision of an API from the named environment. </p>
+	<p><b>Overview:</b> <p>This method undeploys a revision of an API proxy from the environment specified </p>
 
-<p>Call this method before you deploy a new revision of an API proxy.</p>
+<p>Call this method before you deploy a new revision of an API proxy to the environment.</p>
 
-<p>This method is also used before an API is deleted, since an API proxy cannot be deleted while it is deployed in an environment.</p>
-
-<p>Note that you pass the environment name and API revision number as parameters to the method.</p></p>
+<p>This method is also used before an API is deleted, since an API proxy cannot be deleted while it is deployed in an environment.</p></p>
 	
 
 	<b>Sample Request:</b>
 	
-	<pre class="terminal">$ curl -H "Content-type: application/octet-stream" -X POST \
-https://api.enterprise.apigee.com/v1/o/{org_name}/apis/{api_name}/deployments?"action=undeploy&env={env_name}&revision={revision_number}" \
+	<pre class="terminal">$ curl -H "Content-type: application/application/x-www-form-urlencoded" -X DELETE \
+https://api.enterprise.apigee.com/v1/o/{org_name}/environments/{env_name}/apis/{api_name}/revisions/{revision_number}/deployments" \
 -u myname:mypass</pre>
 
 
@@ -138,38 +136,30 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/apis/{api_name}/deployments?"a
 			</tr>
 			</thead>
 			<tr>
-<div class="response_element" id="response_element_299">
 <td>aPIProxy </td>
 <td>The name of the API</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_300">
+</tr><tr>
 <td>configuration </td>
 <td>Base path and policy steps that are configured for the deployment</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_301">
+</tr><tr>
 <td>environment </td>
 <td>The environment where the APi was deployed</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_302">
+</tr><tr>
 <td>name </td>
 <td>The name of the APi revision</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_303">
+</tr><tr>
 <td>organization </td>
 <td>The organization of the API provider</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_304">
+</tr><tr>
 <td>revision </td>
 <td>The revision number of the APi proxy</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_305">
+</tr><tr>
 <td>server </td>
 <td>Information on Apigee servers deployed to service the API</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_306">
+</tr><tr>
 <td>state </td>
 <td>The state of the API: deployed or undeployed</td>
-</div></tr>
+</tr>
 		</table>
 
 	<b>Errors</b> 

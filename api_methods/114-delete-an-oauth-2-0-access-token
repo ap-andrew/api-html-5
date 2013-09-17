@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="yAq9rityNo+nbaFBhpSmoY4TrSgmbQunwjcifKM+/BA=" name="csrf-token" />
+<meta content="iKdIHHRt++wbdaRQxj2QF4p+JuyGfOojUF5uOxTNJXc=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api/api-resources">Platform API Reference</a> > <a href="/api_resources/28-oauth-2-0-access-tokens">OAuth 2.0 Access Tokens</a> > Delete an OAuth 2.0 access token</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/28-oauth-2-0-access-tokens">OAuth 2.0 Access Tokens</a> > Delete an OAuth 2.0 access token</i>
 </div>
 
 <p>
@@ -52,7 +52,7 @@
 <div class="row">
 	<div class="span6" style="width:340px;">
 
-		<p><b>API Resource Path:</b> <code>/oauth2/accesstokens/{access_token}</code></p>
+		<p><b>API Resource Path:</b> <pre>/oauth2/accesstokens/{access_token}</pre></p>
 		<p><b>Description:</b> Deletes the Access Token specified
 		</p>
 	</div>
@@ -115,66 +115,51 @@
 			</tr>
 			</thead>
 			<tr>
-<div class="response_element" id="response_element_69">
 <td>app </td>
 <td>The app for which the access token was generated</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_70">
+</tr><tr>
 <td>attributes </td>
 <td>Name/value pairs used to extend the default access token profile</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_71">
+</tr><tr>
 <td>clientId </td>
 <td>The consumer key for the app</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_72">
+</tr><tr>
 <td>createdAt </td>
 <td>Unix time when the access token was created</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_73">
+</tr><tr>
 <td>createdBy </td>
 <td>Apigee username of the user who created the access token</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_74">
+</tr><tr>
 <td>expiresAt </td>
 <td>Unix time when the access token expires</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_75">
+</tr><tr>
 <td>grantType </td>
 <td>Grant type of the access token: auth code, client_credential, refresh token</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_76">
+</tr><tr>
 <td>issuedAt </td>
 <td>Unix time when the access token was issued</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_77">
+</tr><tr>
 <td>lastModifiedAt </td>
 <td>Unix time when the access token last modified</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_78">
+</tr><tr>
 <td>lastModifiedAt </td>
 <td>Apigee username of the user who last modified the access token</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_79">
+</tr><tr>
 <td>refreshCount </td>
 <td>Number of times the access token has been refreshed</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_80">
+</tr><tr>
 <td>refreshToken </td>
 <td>Value of the refresh token</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_81">
+</tr><tr>
 <td>scope </td>
 <td>OAuth scopes encoded in to the access token</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_82">
+</tr><tr>
 <td>status </td>
 <td>Status of the access token: &#x27;approved&#x27;, &#x27;revoked&#x27;, &#x27;expired&#x27;</td>
-</div></tr><tr>
-<div class="response_element" id="response_element_83">
+</tr><tr>
 <td>tokenType </td>
 <td>Token type: &#x27;bearer&#x27;</td>
-</div></tr>
+</tr>
 		</table>
 
 	<b>Errors</b> 
