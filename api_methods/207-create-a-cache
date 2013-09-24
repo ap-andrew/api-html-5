@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="iKdIHHRt++wbdaRQxj2QF4p+JuyGfOojUF5uOxTNJXc=" name="csrf-token" />
+<meta content="pYRRg8j81midPfUYNSFJlZ8jCENfLQuHALJifOoUyJ0=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -94,9 +94,6 @@ text/xml
 '<Cache name="mycache">
   <Description>A Cache resource for the test environment.</Description>
   <MaxElementsInMemory>100</MaxElementsInMemory>
-  <MaxElementsOnDisk>1000</MaxElementsOnDisk>
-  <OverflowToDisk>true</OverflowToDisk>
-  <Persistent>false</Persistent>
   <ExpirySettings>
 	<TimeoutInSec>300</TimeoutInSec>
   </ExpirySettings>
@@ -113,13 +110,10 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/environments/test/caches \
 	<pre><Cache name="mycache">
   <Description>A Cache resource for the test environment.</Description>
   <MaxElementsInMemory>100</MaxElementsInMemory>
-  <MaxElementsOnDisk>1000</MaxElementsOnDisk>
-  <OverflowToDisk>true</OverflowToDisk>
-  <Persistent>false</Persistent>
   <ExpirySettings>
 	<TimeoutInSec>300</TimeoutInSec>
   </ExpirySettings>
-        <Compression>
+  <Compression>
 	<MinimumSizeInKB>1024</MinimumSizeInKB>
   </Compression>
 </Cache></pre>
