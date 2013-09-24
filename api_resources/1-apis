@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="iKdIHHRt++wbdaRQxj2QF4p+JuyGfOojUF5uOxTNJXc=" name="csrf-token" />
+<meta content="pYRRg8j81midPfUYNSFJlZ8jCENfLQuHALJifOoUyJ0=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -158,7 +158,7 @@ text/xml
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
 				<tr><td colspan="2"><span class="lead">Undeploy a revision of an API proxy from an environment</span></td><td><a href="/api_methods/26-undeploy-a-revision-of-an-api-proxy-from-an-environment" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/environments/{env_name}/apis/{api_name}/revisions/{revision_number}/deployments/</pre></span></td></tr>
-				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
+				<tr><td><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Undeploys an API proxy revision from an environment (typically &#x27;test&#x27; or &#x27;prod&#x27;)</td></tr>
 				<tr><td><strong>Media types:</strong></td><td>
 				
