@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="pYRRg8j81midPfUYNSFJlZ8jCENfLQuHALJifOoUyJ0=" name="csrf-token" />
+<meta content="Ymu99C5T2lqL4VPDtBn+JtKPsX9/nVHsLEDgAZ6OAY4=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -140,9 +140,9 @@ application/json
 </table>
 
 
-For a complete list of dimensions, metrics, and sample requests, see the <a href="/docs/api/content/reporting-api-analytics">Analytics Developer Guide Topic</a>.
+For a complete list of dimensions, metrics, and sample requests, see the <a href="http://apigee.com/docs/api/content/reporting-api-analytics">Analytics Developer Guide Topic</a>.
 
-Custom dimensions can be added by defining custom variables as described in the <a href="/docs/enterprise/content/analyzing-api-message-content-using-custom-analytics">Custom Analytics Developer Guide Topic</a>.</p>
+Custom dimensions can be added by defining custom variables as described in the <a href="http://apigee.com/docs/enterprise/content/analyzing-api-message-content-using-custom-analytics">Custom Analytics Developer Guide Topic</a>.</p>
 	
 
 	<b>Sample Request:</b>
@@ -169,7 +169,6 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/environments/{env_name}/stats/
 <td>Designates the metric to be aggregated for the report. Supported metrics are message_count, error_count, total_response_time, max_response_time, min_response_time, data_exchange_size, end_point_response_time</td>
 <td>N/A</td>
 <td>Yes</td>
-<td><a href="/api_methods/71-retrieve-and-filter-metrics-for-a-dimension-from-analytics-services?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 
@@ -187,7 +186,6 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/environments/{env_name}/stats/
 <td>The start and end time for the desired interval. The date format is MM/DD/YYYY HH:MM. For example, 1/1/2013%2000:00~1/2/2013%2000:00</td>
 <td>N/A</td>
 <td>Yes</td>
-<td><a href="/api_methods/71-retrieve-and-filter-metrics-for-a-dimension-from-analytics-services?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 
@@ -205,7 +203,6 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/environments/{env_name}/stats/
 <td>second, minute, hour, day, week, month, quarter, year, decade, century, millennium</td>
 <td>N/A</td>
 <td>Yes</td>
-<td><a href="/api_methods/71-retrieve-and-filter-metrics-for-a-dimension-from-analytics-services?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 
@@ -223,7 +220,6 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/environments/{env_name}/stats/
 <td>When two or more select values are specified, &#x27;sortby&#x27; can be used to specify the select used for sorting results: message_count, error_count, total_response_time, max_response_time, min_response_time, data_exchange_size, end_point_response_time</td>
 <td>N/A</td>
 <td>No</td>
-<td><a href="/api_methods/71-retrieve-and-filter-metrics-for-a-dimension-from-analytics-services?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 
@@ -241,7 +237,6 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/environments/{env_name}/stats/
 <td>Supported sort scopes are DESC or ASC</td>
 <td>N/A</td>
 <td>No</td>
-<td><a href="/api_methods/71-retrieve-and-filter-metrics-for-a-dimension-from-analytics-services?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 
@@ -259,7 +254,6 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/environments/{env_name}/stats/
 <td>Take &quot;top k&quot; results from results, for example, to return the top 5 results &quot;topk=5&quot;.</td>
 <td>N/A</td>
 <td>No</td>
-<td><a href="/api_methods/71-retrieve-and-filter-metrics-for-a-dimension-from-analytics-services?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 
@@ -277,7 +271,6 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/environments/{env_name}/stats/
 <td>Enables drill-down on specific dimension values</td>
 <td>N/A</td>
 <td>No</td>
-<td><a href="/api_methods/71-retrieve-and-filter-metrics-for-a-dimension-from-analytics-services?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 
@@ -295,7 +288,6 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/environments/{env_name}/stats/
 <td>Set the limit for the number of entries returned by the API </td>
 <td>N/A</td>
 <td>No</td>
-<td><a href="/api_methods/71-retrieve-and-filter-metrics-for-a-dimension-from-analytics-services?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 
@@ -313,7 +305,6 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/environments/{env_name}/stats/
 <td>Use offset with limit to enable pagination of results. For example, to display results 11-20, set limit to &#x27;10&#x27; and offset to &#x27;10&#x27;.</td>
 <td>N/A</td>
 <td>No</td>
-<td><a href="/api_methods/71-retrieve-and-filter-metrics-for-a-dimension-from-analytics-services?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 

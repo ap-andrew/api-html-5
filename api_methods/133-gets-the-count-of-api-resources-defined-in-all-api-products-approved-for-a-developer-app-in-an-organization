@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="pYRRg8j81midPfUYNSFJlZ8jCENfLQuHALJifOoUyJ0=" name="csrf-token" />
+<meta content="Ymu99C5T2lqL4VPDtBn+JtKPsX9/nVHsLEDgAZ6OAY4=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -109,7 +109,6 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/{developer_email}/apps/{app_na
 <td>The type of query to be performed. &#x27;count&#x27; is the only supported value.</td>
 <td>N/A</td>
 <td>Yes</td>
-<td><a href="/api_methods/133-gets-the-count-of-api-resources-defined-in-all-api-products-approved-for-a-developer-app-in-an-organization?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 
@@ -127,7 +126,6 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/{developer_email}/apps/{app_na
 <td>The type of entity to be counted, in this case &#x27;apiresources&#x27;</td>
 <td>N/A</td>
 <td>Yes</td>
-<td><a href="/api_methods/133-gets-the-count-of-api-resources-defined-in-all-api-products-approved-for-a-developer-app-in-an-organization?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 

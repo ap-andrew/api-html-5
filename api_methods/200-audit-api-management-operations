@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="pYRRg8j81midPfUYNSFJlZ8jCENfLQuHALJifOoUyJ0=" name="csrf-token" />
+<meta content="Ymu99C5T2lqL4VPDtBn+JtKPsX9/nVHsLEDgAZ6OAY4=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -132,7 +132,6 @@ https://api.enterprise.apigee.com/v1/audits/o/[org_name}/apis/{api_name}?"operat
 <td>Filters results by Apigee user&#x27;s email address</td>
 <td>N/A</td>
 <td>No</td>
-<td><a href="/api_methods/200-audit-api-management-operations?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 
@@ -150,7 +149,6 @@ https://api.enterprise.apigee.com/v1/audits/o/[org_name}/apis/{api_name}?"operat
 <td>Filters results by time interval, defaults to day if no value is specified. Valid values are day, week, month.</td>
 <td>Last 24 hours</td>
 <td>Yes</td>
-<td><a href="/api_methods/200-audit-api-management-operations?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 
@@ -168,7 +166,6 @@ https://api.enterprise.apigee.com/v1/audits/o/[org_name}/apis/{api_name}?"operat
 <td>Filters results by operation. Valid values are create, update, get, delete.</td>
 <td>N/A</td>
 <td>No</td>
-<td><a href="/api_methods/200-audit-api-management-operations?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 
@@ -186,7 +183,6 @@ https://api.enterprise.apigee.com/v1/audits/o/[org_name}/apis/{api_name}?"operat
 <td>The beginning time, in Unix epoch format, for which audit entries should be returned</td>
 <td>N/A</td>
 <td>No</td>
-<td><a href="/api_methods/200-audit-api-management-operations?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 
@@ -204,7 +200,6 @@ https://api.enterprise.apigee.com/v1/audits/o/[org_name}/apis/{api_name}?"operat
 <td>The end time, in Unix epoch format, for which audit entries should be returned</td>
 <td>N/A</td>
 <td>Yes</td>
-<td><a href="/api_methods/200-audit-api-management-operations?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 
@@ -222,7 +217,6 @@ https://api.enterprise.apigee.com/v1/audits/o/[org_name}/apis/{api_name}?"operat
 <td>A limit on the total number of entries returned by the API call</td>
 <td>N/A</td>
 <td>Yes</td>
-<td><a href="/api_methods/200-audit-api-management-operations?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 
@@ -240,7 +234,6 @@ https://api.enterprise.apigee.com/v1/audits/o/[org_name}/apis/{api_name}?"operat
 <td>&#x27;true&#x27; is the only valid value for this query parameter. When set to true, the audit records for all sub-resources are returned in the list of records. </td>
 <td></td>
 <td>Yes</td>
-<td><a href="/api_methods/200-audit-api-management-operations?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 

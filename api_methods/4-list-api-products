@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="pYRRg8j81midPfUYNSFJlZ8jCENfLQuHALJifOoUyJ0=" name="csrf-token" />
+<meta content="Ymu99C5T2lqL4VPDtBn+JtKPsX9/nVHsLEDgAZ6OAY4=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -120,7 +120,6 @@ https://api.enterprise.apigee.com/v1/o/{org_name}/apiproducts?"expand=true" \
 <td>Returns a list of API products with a detailed profile for each record</td>
 <td>false</td>
 <td>No</td>
-<td><a href="/api_methods/4-list-api-products?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td>
 </tr>
 
 
