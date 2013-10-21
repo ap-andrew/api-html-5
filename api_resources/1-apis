@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="Ymu99C5T2lqL4VPDtBn+JtKPsX9/nVHsLEDgAZ6OAY4=" name="csrf-token" />
+<meta content="5disBWQSwVlYWmNc+w3T3I4i3IP35DkZaDZRLWc6CyM=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -59,8 +59,12 @@ API Configuration and Management
 
 		<table class="table">
 				<tr><td class="lead">API Resource Path: /apis</td></tr>
-				<tr><td>API proxies act as managed facades for one or more backend services or APIs.</td></tr>
-		  		<tr><td><p>This API provides a direct call to create an API proxy in an organization on the API Platform.</p>
+				<tr><td>API proxies that function as managed facades for one or more backend services or APIs.</td></tr>
+		  		<tr><td><p>The API Platform exposes a RESTful API that enables you to create, import, deploy, and manage API proxies.</p>
+
+<p>An API proxy is a bundle of configuration files that act as a managed facade for existing HTTP services.</p>
+
+<p>For usage, see <a href="http://apigee.com/docs/api-platform/content/deploy-api-proxies-using-platform-api">Deploy API proxies using the Platform API</a>.
 
 <p>For tools and sample API proxies, see:</p>
 

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="Ymu99C5T2lqL4VPDtBn+JtKPsX9/nVHsLEDgAZ6OAY4=" name="csrf-token" />
+<meta content="5disBWQSwVlYWmNc+w3T3I4i3IP35DkZaDZRLWc6CyM=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -302,7 +302,7 @@ text/xml
 
 	  </td>
 	</tr>
-	<tr><td  colspan="5">API proxies act as managed facades for one or more backend services or APIs.</td></tr>
+	<tr><td  colspan="5">API proxies that function as managed facades for one or more backend services or APIs.</td></tr>
 	<tr><td  colspan="5">Resource path: <code>/apis</code></td></tr>
 	<tr bgcolor="#EDEDED" class="resource_table">
 		<td><b>URI</b></td>
@@ -1664,7 +1664,7 @@ text/xml
 				    </td>
 	 </tr>
 	<tr>
-					<td><pre>/environment/{environment_name}/debugsessions</pre></td>  
+					<td><pre>/environment/{environment_name}/apis/{api_name}/revisions/{revision_number}/debugsessions</pre></td>  
 				    <td><span class="verb-GET">
 					GET</span></td>
 					<td>
@@ -1690,7 +1690,7 @@ text/xml
 
 	  </td>
 	</tr>
-	<tr><td  colspan="5">APIs actively deployed in environments on the API Platform</td></tr>
+	<tr><td  colspan="5">API proxies that are actively deployed in environments on the API Platform</td></tr>
 	<tr><td  colspan="5">Resource path: <code>/apis/{api_name}/deployments</code></td></tr>
 	<tr bgcolor="#EDEDED" class="resource_table">
 		<td><b>URI</b></td>
@@ -1720,7 +1720,15 @@ text/xml
 					<td><pre>/apis/{api_name}/revisions/{revision_number}/deployments</pre></td>  
 				    <td><span class="verb-GET">
 					GET</span></td>
-					<td></td>
+					<td>
+					  	
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+						</td>
 				    <td>Get deployments for an API proxy revision </td>  
 				    <td><a href="/api_methods/19-get-deployments-for-an-api-proxy-revision" class="btn btn-mini">Detail</a> 
 
@@ -1730,7 +1738,15 @@ text/xml
 					<td><pre>/environments/{env_name}/deployments</pre></td>  
 				    <td><span class="verb-GET">
 					GET</span></td>
-					<td></td>
+					<td>
+					  	
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+						</td>
 				    <td>Get deployments for an environment</td>  
 				    <td><a href="/api_methods/20-get-deployments-for-an-environment" class="btn btn-mini">Detail</a> 
 
@@ -1740,7 +1756,15 @@ text/xml
 					<td><pre>/deployments</pre></td>  
 				    <td><span class="verb-GET">
 					GET</span></td>
-					<td></td>
+					<td>
+					  	
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+						</td>
 				    <td>Get deployments for an organization</td>  
 				    <td><a href="/api_methods/112-get-deployments-for-an-organization" class="btn btn-mini">Detail</a> 
 
@@ -2936,6 +2960,84 @@ application/json
 
 
 <tbody>
+	<tr><td  colspan="4"><h2 class="lead">Resource files</h2></td>
+	  <td><a href="/api_resources/52-resource-files" class="btn btn-mini">Resource Detail</a>
+
+	  </td>
+	</tr>
+	<tr><td  colspan="5">A files containing executable code or definitions used by API policies to enable custom behavior and extensibility</td></tr>
+	<tr><td  colspan="5">Resource path: <code>/resourcefiles</code></td></tr>
+	<tr bgcolor="#EDEDED" class="resource_table">
+		<td><b>URI</b></td>
+		<td><b>Verb</b></td>
+		<td><b>Media types:</b></td>
+		<td colspan="2"><b>Action</b></td>
+	</tr> 
+	<tr>
+					<td><pre>/resourcefiles/{resource_type}/{resource_name}</pre></td>  
+				    <td><span class="verb-DELETE">
+					DELETE</span></td>
+					<td></td>
+				    <td>Delete a resource file</td>  
+				    <td><a href="/api_methods/239-delete-a-resource-file" class="btn btn-mini">Detail</a> 
+
+				    </td>
+	 </tr>
+	<tr>
+					<td><pre>/resourcefiles/{resource_type}/{resource_name}</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td>
+					  	
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+						</td>
+				    <td>Get a resource file</td>  
+				    <td><a href="/api_methods/238-get-a-resource-file" class="btn btn-mini">Detail</a> 
+
+				    </td>
+	 </tr>
+	<tr>
+					<td><pre>/resourcefiles</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td>
+					  	
+<div class="content_type" id="content_type_4">
+application/octet-stream
+</div>
+						</td>
+				    <td>Import a resource file</td>  
+				    <td><a href="/api_methods/236-import-a-resource-file" class="btn btn-mini">Detail</a> 
+
+				    </td>
+	 </tr>
+	<tr>
+					<td><pre>/resourcefiles</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td>
+					  	
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+						</td>
+				    <td>List resource files</td>  
+				    <td><a href="/api_methods/237-list-resource-files" class="btn btn-mini">Detail</a> 
+
+				    </td>
+	 </tr>
+</tbody>
+
+
+<tbody>
 	<tr><td  colspan="4"><h2 class="lead">Stats</h2></td>
 	  <td><a href="/api_resources/34-stats" class="btn btn-mini">Resource Detail</a>
 
@@ -2961,6 +3063,87 @@ application/json
 						</td>
 				    <td>Retrieve and filter metrics for a dimension from  Analytics Services</td>  
 				    <td><a href="/api_methods/71-retrieve-and-filter-metrics-for-a-dimension-from-analytics-services" class="btn btn-mini">Detail</a> 
+
+				    </td>
+	 </tr>
+</tbody>
+
+
+<tbody>
+	<tr><td  colspan="4"><h2 class="lead">TargetServers</h2></td>
+	  <td><a href="/api_resources/51-targetservers" class="btn btn-mini">Resource Detail</a>
+
+	  </td>
+	</tr>
+	<tr><td  colspan="5">A named target (outbound) HTTP configuration, which can be used to configure load balancing for a single TargetEndpoint across multiple backend service URLs.</td></tr>
+	<tr><td  colspan="5">Resource path: <code>/environments/{env_name}/targetservers</code></td></tr>
+	<tr bgcolor="#EDEDED" class="resource_table">
+		<td><b>URI</b></td>
+		<td><b>Verb</b></td>
+		<td><b>Media types:</b></td>
+		<td colspan="2"><b>Action</b></td>
+	</tr> 
+	<tr>
+					<td><pre>/environments/{env_name}/targetservers</pre></td>  
+				    <td><span class="verb-POST">
+					POST</span></td>
+					<td>
+					  	
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+						</td>
+				    <td>Create a TargetServer</td>  
+				    <td><a href="/api_methods/232-create-a-targetserver" class="btn btn-mini">Detail</a> 
+
+				    </td>
+	 </tr>
+	<tr>
+					<td><pre>{environments}/env/targetservers/{targetserver_name}</pre></td>  
+				    <td><span class="verb-DELETE">
+					DELETE</span></td>
+					<td></td>
+				    <td>Delete a TargetServer</td>  
+				    <td><a href="/api_methods/233-delete-a-targetserver" class="btn btn-mini">Detail</a> 
+
+				    </td>
+	 </tr>
+	<tr>
+					<td><pre>/environments/{env_name}/targetservers</pre></td>  
+				    <td><span class="verb-GET">
+					GET</span></td>
+					<td>
+					  	
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+						</td>
+				    <td>List TargetServers in an environment</td>  
+				    <td><a href="/api_methods/234-list-targetservers-in-an-environment" class="btn btn-mini">Detail</a> 
+
+				    </td>
+	 </tr>
+	<tr>
+					<td><pre>/environments/{env_name}/targetservers/{targetserver_name}</pre></td>  
+				    <td><span class="verb-PUT">
+					PUT</span></td>
+					<td>
+					  	
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div>
+						</td>
+				    <td>Update a TargetServer</td>  
+				    <td><a href="/api_methods/235-update-a-targetserver" class="btn btn-mini">Detail</a> 
 
 				    </td>
 	 </tr>

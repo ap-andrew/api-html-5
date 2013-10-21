@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="Ymu99C5T2lqL4VPDtBn+JtKPsX9/nVHsLEDgAZ6OAY4=" name="csrf-token" />
+<meta content="5disBWQSwVlYWmNc+w3T3I4i3IP35DkZaDZRLWc6CyM=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,11 +40,11 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/49-api-patterns">API Patterns</a> > List API patterns</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/52-resource-files">Resource files</a> > List resource files</i>
 </div>
 
 <p>
-<h1>List API patterns</h1> 
+<h1>List resource files</h1> 
 </p>
 
 <p><b>API Platform Base Path:</b> <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></p>
@@ -52,8 +52,8 @@
 <div class="row">
 	<div class="span6" style="width:340px;">
 
-		<p><b>API Resource Path:</b> <pre>/environments/{env_name}/apipatterns</pre></p>
-		<p><b>Description:</b> Returns an expanded list of all API patterns defined in an environment
+		<p><b>API Resource Path:</b> <pre>/resourcefiles</pre></p>
+		<p><b>Description:</b> This method lists resource files available in an organization, an environment, or an API proxy
 		</p>
 	</div>
 
@@ -66,6 +66,9 @@
 		<tr><td style="vertical-align:top"><b>Media types:</b></td>  <td>
 <div class="content_type" id="content_type_1">
 application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
 </div></td></tr>
 
 		
@@ -83,32 +86,32 @@ application/json
 
 	<b>Sample Request:</b>
 	
-	<pre class="terminal">$ curl -X GET -H "Accept:application/json" \ 
-https://api.enterprise.apigee.com/v1/o/{org_name}/environments/{env_name}/apipatterns \
--u myname:mypass</pre>
+	<pre class="terminal">At the organization level:
+
+$ curl -X GET -H "Accept:application/json" \ https://api.enterprise.apigee.com/v1/o/{org_name}/resourcefiles \
+-u myname:mypass
+
+At the environment level:
+
+$ curl -X GET -H "Accept:application/json" \ https://api.enterprise.apigee.com/v1/o/{org_name}/environments/test/resourcefiles \
+-u myname:mypass
+
+At the API proxy level level:
+
+$ curl -X GET -H "Accept: application/json" https://api.enterprise.apigee.com/v1/o/{org_name}/apis/{api_name}/revisions/{revision_number}/resourcefiles \
+-u myname:mypass </pre>
 
 
 <b>Sample Response:</b> 
-	<pre>{ "apipatterns" : [
-{
-  "apiproxy": "Books",
-  "request_verb": "GET",
-  "apipattern": "/v1/books/*/stores/*",
-            "groupid": "1"
-  },
-{
-  "apiproxy": "Books",
-  "request_verb": "POST”,
-  "apipattern": "/v1/books/*/stores/*",
-  "groupid": "2"
-        },
-{
-  "apiproxy": "Stores",
-  "request_verb": "GET",
-  "apipattern": "/v1/stores/*/cities",
-            "groupid": "3"
-  }
-]}</pre>
+	<pre>{
+  "resourceFile" : [ {
+    "name" : "transformer.xslt",
+    "type" : "xsl"
+  }, {
+    "name" : "setHeader.js",
+    "type" : "jsc"
+  } ]
+}</pre>
 
 
 	

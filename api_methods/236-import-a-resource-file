@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="Ymu99C5T2lqL4VPDtBn+JtKPsX9/nVHsLEDgAZ6OAY4=" name="csrf-token" />
+<meta content="5disBWQSwVlYWmNc+w3T3I4i3IP35DkZaDZRLWc6CyM=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,11 +40,11 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/49-api-patterns">API Patterns</a> > Delete API patterns by group ID</i>
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/52-resource-files">Resource files</a> > Import a resource file</i>
 </div>
 
 <p>
-<h1>Delete API patterns by group ID</h1> 
+<h1>Import a resource file</h1> 
 </p>
 
 <p><b>API Platform Base Path:</b> <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></p>
@@ -52,20 +52,20 @@
 <div class="row">
 	<div class="span6" style="width:340px;">
 
-		<p><b>API Resource Path:</b> <pre>/environments/{env_name}/apipatterns/{group_id}</pre></p>
-		<p><b>Description:</b> Deletes a set of API patterns based on group ID
+		<p><b>API Resource Path:</b> <pre>/resourcefiles</pre></p>
+		<p><b>Description:</b> imports and creates a resource file at the prganization, environment, or API proxy level
 		</p>
 	</div>
 
 	<div class="span6" style="width:340px;">
 		<table>		
-		<tbody><tr><td><b>Verb:</b></td> <td><span class="verb-DELETE">DELETE</span></td></tr>
+		<tbody><tr><td><b>Verb:</b></td> <td><span class="verb-POST">POST</span></td></tr>
 		<tr><td><b>Auth:</b></td> <td>Basic Auth</td></tr>
 
 
 		<tr><td style="vertical-align:top"><b>Media types:</b></td>  <td>
-<div class="content_type" id="content_type_1">
-application/json
+<div class="content_type" id="content_type_4">
+application/octet-stream
 </div></td></tr>
 
 		
@@ -79,24 +79,79 @@ application/json
 <div class="span18">
 	
 		
+	<p><b>Overview:</b> Use this method to import and create a resource file at the organization, the environment or the API proxy level.
+
+</p>
 	
 
 	<b>Sample Request:</b>
 	
-	<pre class="terminal">$ curl -X DELETE \
-https://api.enterprise.apigee.com/v1/o/{org_name}/environments/{env_name}/apipatterns/3 \
--u myname:mypass</pre>
+	<pre class="terminal">At the organization level:
 
+$ curl -H "Content-Type: application/octet-stream" -X POST -T setHeader.js https://api.enterprise.apigee.com/v1/o/{org_name}/resourcefiles?"name=setHeader.js&type=jsc" -u myname:mypass
+
+At the environment level:
+
+$ curl -H "Content-Type: application/octet-stream" -X POST -T setHeader.js https://api.enterprise.apigee.com/v1/o/{org_name}/environments/test/resourcefiles?"name=setHeader.js&type=jsc" -u myname:mypass
+
+At the API proxy level
+
+$ curl -H "Content-Type: application/octet-stream" -X POST -T setHeader.js https://api.enterprise.apigee.com/v1/o/{org_name}/apis/weatherapi/revisions/{revision_number}/resourcefiles?"name=setHeader.js&type=jsc" -u myname:mypass</pre>
+
+
+<b>Query Parameters:</b>
+
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Default</th>
+				<th>Required?</th>
+			</tr>
+			</thead>
+			
+<tr>
+<td>name</td>
+<td>The name of the resource, including the file type extension.</td>
+<td>N/A</td>
+<td>Yes</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+<td>type</td>
+<td>The resource type (jsc, java, py, xsl, wsdl, xsd)</td>
+<td>N/A</td>
+<td>Yes</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+			</table>
 
 <b>Sample Response:</b> 
-	<pre>{“apipatterns” : [  
-{
-            "apiproxy": "Stores",
-            "request_verb": "GET",
-            "apipattern": "/v1/stores/*/states",
-            "groupid": "3"
-        }
-]}</pre>
+	<pre>{
+  "name" : "setHeader.js",
+  "type" : "jsc"
+}</pre>
 
 
 	

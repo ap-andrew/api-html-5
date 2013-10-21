@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="Ymu99C5T2lqL4VPDtBn+JtKPsX9/nVHsLEDgAZ6OAY4=" name="csrf-token" />
+<meta content="5disBWQSwVlYWmNc+w3T3I4i3IP35DkZaDZRLWc6CyM=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -82,67 +82,28 @@ application/json
 		<p>For detailed instructions on using the "Retrieve and filter metrics for a dimension from  Analytics Services" method, see the <a href="http://apigee.com/docs/api/content/reporting-api-analytics">Developer Guide Topic</a> in the <a href="http://apigee.com/docs/enterprise/content/developer_guide">API Proxy Developer Guide</a>.</b></p>
 
 		
-	<p><b>Overview:</b> A report is generated using a GET request on the <code>/stats</code> API resource, accompanied by:
-
-<ul><li>An optional URI parameter that defines the dimension for the report. Apigee defines a set of dimensions an pre-aggregates a set of metrics against those dimensions. If no dimension is defined (i.e., if the URI parameter is empty), then a report is generated for all APIs present in the environment specified.</li>
-<li>A set of query parameters that define the metrics, time range, time interval, and filter/drill-down aspects of the report. </li></ul>
-
-<p><code>dimension_name</code>: A URI parameter that defines the entity for which the API Platform metrics should be retrieved. Apigee defines a set of dimensions that can be used in reports. Supported dimensions include:</p>
-
-<ul><li><code>/stats/apis</code>: API proxies in an organization on the API Platform</li>
-<li><code>/stats/uris</code>: API patterns in an organization on the API Platform</li>
-<li><code>/stats/apiproducts</code>: API products defined in an organization</li>
-<li><code>/stats/client_ip</code>: IP addresses of apps making the request to APIs on the API Platform</li>
-<li><code>/stats/developer_email</code>: The email address of a developer registered in an organization on the API Platform </li>
-<li><code>/stats/developer_app</code>: The name of the developer app making the request to your API</li>
-<li><code>/stats/access_token</code>: The app end user's OAuth access token</li></ul>
-
-<b>Filtering</b>
-
-<p>Filters can be applied to custom resources. Custom resources are:</p>
-
-<table border="0" class="table" style="width: 690px;" width="690">
-<thead>
-<th>Symbol</th>
-<th>Operation</th>
-</thead>
-
-<tr><td><code>in</code></td> <td>for list inclusion</td></tr>
-<tr><td><code>notin</code></td> <td>for list exclusion</td></tr>
-<tr><td><code>eq</code></td> <td>=</td></tr>
-<tr><td><code>ne</code></td> <td>!= or  <></td></tr>
-<tr><td><code>gt</code></td> <td>></td></tr>
-<tr><td><code>lt</code></td> <td><</td></tr>
-<tr><td><code>ge</code></td> <td>>=</td></tr>
-<tr><td><code>le</code></td> <td><=</td></tr>
-</tbody>
-</table>
-
-<b>Sample filters</b>
-
-<table border="0" class="table" style="width: 690px;" width="690">
-<thead>
-<th>Description </th>
-<th>Filter query structure</th>
-</thead>
-
-
-
-<tr><td>Stats for API proxies named either api1 or api2</td> <td><code>filter=(apiproxy in  'api1','api2')</code></td></tr>
-<tr><td>Stats for all API proxies except api1 and api2 </td><td><code>filter=(apiproxy notin  'ap1','api2')</code></td></tr>
-<tr><td>Stats where there are no errors </td><td><code>filter=(iserror eq 0)</code></td></tr>
-<tr><td>Stats where there is no error messages or the API proxy name is api1 or api2</td> <td><code>filter=(iserror eq 1)  or (apiproxy in  'api1','api2')</code></td></tr>
-
-<tr><td>Stats where (response code is either 201 or 301) and (there are errors) or (API proxy name is either api1 or api2)</td>
-<td><code>filter=(responsecode le 201 or responsecode eq 301) and (iserror eq 1)  or (apiproxy in  'api1','api2')</code></td></tr>
-
-</tbody>
-</table>
-
-
-For a complete list of dimensions, metrics, and sample requests, see the <a href="http://apigee.com/docs/api/content/reporting-api-analytics">Analytics Developer Guide Topic</a>.
-
-Custom dimensions can be added by defining custom variables as described in the <a href="http://apigee.com/docs/enterprise/content/analyzing-api-message-content-using-custom-analytics">Custom Analytics Developer Guide Topic</a>.</p>
+	<p><b>Overview:</b> 				<p>The /stats resource provides access to metrics collected by the API Platform.</p>
+				<p>The API Platform records and aggregates metrics for dimensions.</p>
+				<p>The API Platform defines 3 classes of dimensions:</p>
+				<ul>
+					<li>Pre-computed, static dimensions used for operational dashboards</li>
+					<li>Dynamic dimensions, whose metrics are computed 'on-demand' when a report is built</li>
+					<li>Custom dimensions, which enable you to build reports based on message content</li>
+				</ul>
+				<p>For each type of dimension, you construct a request by adding the desired dimension by name as a URI parameter following <code>/stats</code>.</p>
+				<p>For example:</p>
+				<pre>
+/stats/apis</pre>
+				<pre>
+/stats/apps</pre>
+				<p>You can define queries against the collected metrics by specifying metrics, type of calculation to run, time range, and, optionally, any filters to use for drill-down into the data set that is returned by the query.</p>
+				<p>For pre-computed metrics, only simple calculations are needed, since the specific function used to perform the calculation is embedded in the metric.</p>
+				<p>To generate custom reports, you select a <code>metric + function</code> calculation to run over the specified dimensions.</p>
+				<p>The base request to create a custom report that calculates average response time for all APIs in an environment is:</p>
+				<pre>
+/stats/apis?select=avg(total_response_time)</pre>
+				<p>Use the additional query parameters defined in the API method to construct the complete request.</p>
+				<p>For usage, see the <a href="https://apigee.com/docs/enterprise/content/reporting-api-analytics">API Platform Developer Guide topic</a>.</p></p>
 	
 
 	<b>Sample Request:</b>

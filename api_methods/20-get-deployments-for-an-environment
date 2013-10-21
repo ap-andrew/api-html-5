@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="Ymu99C5T2lqL4VPDtBn+JtKPsX9/nVHsLEDgAZ6OAY4=" name="csrf-token" />
+<meta content="5disBWQSwVlYWmNc+w3T3I4i3IP35DkZaDZRLWc6CyM=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -53,7 +53,7 @@
 	<div class="span6" style="width:340px;">
 
 		<p><b>API Resource Path:</b> <pre>/environments/{env_name}/deployments</pre></p>
-		<p><b>Description:</b> Gets a list of all API deployments in a given environment
+		<p><b>Description:</b> Gets a list of all API proxies that are deployed in a given environment
 		</p>
 	</div>
 
@@ -61,6 +61,15 @@
 		<table>		
 		<tbody><tr><td><b>Verb:</b></td> <td><span class="verb-GET">GET</span></td></tr>
 		<tr><td><b>Auth:</b></td> <td>Basic Auth</td></tr>
+
+
+		<tr><td style="vertical-align:top"><b>Media types:</b></td>  <td>
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div></td></tr>
 
 		
 		</tbody>

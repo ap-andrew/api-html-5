@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apigee API Reference</title>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="5disBWQSwVlYWmNc+w3T3I4i3IP35DkZaDZRLWc6CyM=" name="csrf-token" />
+    <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
+
+	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
+       <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+       <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+       <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+       <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+	  <script src="/assets/application-dc5c9a427e1f5afd21166897f350d896.js" type="text/javascript"></script> 
+	  <script type="text/javascript" charset="utf-8">
+	jQuery(document).ready(function () {
+	    jQuery("td span.expand").click(function () {
+	        jQuery(this).parents("tr.main").nextUntil("tr.main").toggle();
+	    });
+	});
+	  </script>
+	<script type="text/javascript">
+	jQuery(document).ready(function() {
+	  jQuery("resource_table").hide();
+	  //toggle the componenet with class msg_body
+	  jQuery(".heading").click(function()
+	  {
+	    jQuery(this).next(".content").slideToggle(500);
+	  });
+	});
+	</script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="row"> 
+           <div class="span12">
+
+            <div id="breadcrumb">
+<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/51-targetservers">TargetServers</a> > Create a TargetServer</i>
+</div>
+
+<p>
+<h1>Create a TargetServer</h1> 
+</p>
+
+<p><b>API Platform Base Path:</b> <code>https://api.enterprise.apigee.com/v1/o/{org_name}</code></p>
+
+<div class="row">
+	<div class="span6" style="width:340px;">
+
+		<p><b>API Resource Path:</b> <pre>/environments/{env_name}/targetservers</pre></p>
+		<p><b>Description:</b> Creates a TargetServer in the environment specified
+		</p>
+	</div>
+
+	<div class="span6" style="width:340px;">
+		<table>		
+		<tbody><tr><td><b>Verb:</b></td> <td><span class="verb-POST">POST</span></td></tr>
+		<tr><td><b>Auth:</b></td> <td>Basic Auth</td></tr>
+
+
+		<tr><td style="vertical-align:top"><b>Media types:</b></td>  <td>
+<div class="content_type" id="content_type_1">
+application/json
+</div>
+<div class="content_type" id="content_type_2">
+text/xml
+</div></td></tr>
+
+		
+		</tbody>
+		</table>
+
+
+	</div>
+</div>
+
+<div class="span18">
+	
+
+		<p>For detailed instructions on using the "Create a TargetServer" method, see the <a href="http://apigee.com/docs/api-platform/content/load-balance-api-traffic-across-multiple-backend-servers">Developer Guide Topic</a> in the <a href="http://apigee.com/docs/enterprise/content/developer_guide">API Proxy Developer Guide</a>.</b></p>
+
+		
+	<p><b>Overview:</b> Use this method to create TargetServer definitions in an environment. 
+
+TargetServers are used to decouple TargetEndpoint HTTPTargetConnections from concrete HTTP configurations. An HTTPConnection can be configured to use a LoadBalancer that lists one ore more 'named' TargetSevers. 
+
+Using TargetServers, you can create an HTTPTargetConnection that calls a different backend server based on the environment where the API proxy is deployed. 
+
+For example, instead of the following configuration:
+
+<pre>&lt;TargetEndpoint name=&quot;default&quot;&gt;
+  &lt;HTTPTargetConnection&gt;
+    &lt;URL&gt;http://weather.yahooapis.com&lt;/URL&gt;
+  &lt;/HTTPTargetConnection&gt;
+&lt;/TargetEndpoint&gt;</pre>
+
+You can reference a TargetServer as follows:
+
+<pre>&lt;TargetEndpoint name=&quot;default&quot;&gt;
+    &lt;HTTPTargetConnection&gt;
+        &lt;LoadBalancer&gt;
+            &lt;Server name=&quot;target1&quot; /&gt;
+        &lt;/LoadBalancer&gt;
+  &lt;/HTTPTargetConnection&gt;
+&lt;/TargetEndpoint&gt;</pre>
+
+You can then set up a TargetServer called <code>target1</code> in the 'test' environment that points to a test backend service, and a different TargetServer called <code>target1</code> in the 'prod' environment that points to a production backend.
+
+When you 'promote' the API proxy with this configuration from the test to the prod environment, the TargetEndpoint will use the appropriate backend service, without requiring any changes in the API proxy configuration.
+
+
+
+</p>
+	
+
+	<b>Sample Request:</b>
+	
+	<pre class="terminal">$ curl -H "Content-Type:text/xml" -X POST -d \
+'<TargetServer name="target1">
+<Host>1.mybackendservice.com</Host>
+  <Port>80</Port>
+  <IsEnabled>true</IsEnabled>
+</TargetServer>' \
+https://api.enterprise.apigee.com/v1/o/{org_name}/environments/test/targetservers \
+-u myname:mypass </pre>
+	<b>Request Payload Elements:</b> 
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Default</th>
+				<th>Required?</th>
+			</tr>
+			</thead>
+			<tr>
+<div class="request_element" id="request_element_99">
+<td>Host</td>
+<td>The network address (URL) of the backend service that this TargetServer definition will call.</td>
+<td>N/A</td>
+<td>Yes</td>
+<!-- <td><a href="/request_elements/99" class="btn btn-mini">Detail</a></td> -->
+</div></tr>
+
+
+<tr>
+<div class="request_element" id="request_element_101">
+<td>IsEnabled</td>
+<td>A boolean (true/false) that determines whether this TargetServer is enabled or not. You can use this setting to take TargetServers out of rotation, without requiring you to delete the TargetServer definition.</td>
+<td>false</td>
+<td>No</td>
+<!-- <td><a href="/request_elements/101" class="btn btn-mini">Detail</a></td> -->
+</div></tr>
+
+
+<tr>
+<div class="request_element" id="request_element_100">
+<td>Port</td>
+<td>The port on which the backend service is configured to listen.</td>
+<td>0</td>
+<td>No</td>
+<!-- <td><a href="/request_elements/100" class="btn btn-mini">Detail</a></td> -->
+</div></tr>
+
+
+
+			</table>
+
+
+<b>Sample Response:</b> 
+	<pre>{
+  "host" : "1.mybackendservice.com",
+  "isEnabled" : true,
+  "name" : "target1",
+  "port" : 80
+}</pre>
+
+
+	
+</div>
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->
+
+		<!-- <footer>
+        	<p>&copy; Apigee, Inc. 2012</p>
+      	</footer>  -->
+
+    </div> <!-- /container -->
+
+
+
+  </body>
+</html>
