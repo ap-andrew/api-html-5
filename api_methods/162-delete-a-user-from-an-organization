@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5disBWQSwVlYWmNc+w3T3I4i3IP35DkZaDZRLWc6CyM=" name="csrf-token" />
+<meta content="hBcuSdLMl+LhFYW5YGXLecFhAXZetHwhflaoSioN4yM=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/enterprise/enterprise_home">Home</a> > <a href="/enterprise/content/ref_library">Reference</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/37-users">Users</a> > Delete a user from an organization</i>
+<i><a href="http://apigee.com/docs/enterprise/enterprise_home">Home</a> > <a href="http://apigee.com/docs/enterprise/content/ref_library">Reference</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/37-users">Users</a> > Delete a user from an organization</i>
 </div>
 
 <p>
