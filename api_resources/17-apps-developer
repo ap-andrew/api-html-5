@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="hBcuSdLMl+LhFYW5YGXLecFhAXZetHwhflaoSioN4yM=" name="csrf-token" />
+<meta content="YLomzWHwrWAr3fPejsP/46AmKvIfLbyQsPs/JUKIStE=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -73,7 +73,7 @@ Apps also have status, and may be approved or unapproved. By default, apps are c
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Approve a developer app</span></td><td><a href="/docs/api/api_methods/88-approve-a-developer-app" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Approve a developer app</span></td><td><a href="/api_methods/88-approve-a-developer-app" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/apps/{app_name}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Changes the status of a developer from &#x27;unapproved&#x27; to &#x27;approved&#x27;.</td></tr>
@@ -84,7 +84,7 @@ application/octet-stream
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Create a developer app</span></td><td><a href="/docs/api/api_methods/14-create-a-developer-app" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Create a developer app</span></td><td><a href="/api_methods/14-create-a-developer-app" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/apps</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Creates an app associated with a developer</td></tr>
@@ -98,12 +98,12 @@ application/json
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Delete a developer app</span></td><td><a href="/docs/api/api_methods/31-delete-a-developer-app" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete a developer app</span></td><td><a href="/api_methods/31-delete-a-developer-app" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/apps/{app_name}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Delete a Developer&#x27;s App</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get a developer app</span></td><td><a href="/docs/api/api_methods/87-get-a-developer-app" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get a developer app</span></td><td><a href="/api_methods/87-get-a-developer-app" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/apps/{app_name}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Get the profile of a Developer App</td></tr>
@@ -117,7 +117,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get count of apps by developer</span></td><td><a href="/docs/api/api_methods/35-get-count-of-apps-by-developer" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get count of apps by developer</span></td><td><a href="/api_methods/35-get-count-of-apps-by-developer" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_name}?query=count&amp;entity=apps</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Get a count of apps by developer email address.</td></tr>
@@ -131,7 +131,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Gets the count of API resources defined in all API products approved for a developer app in an organization</span></td><td><a href="/docs/api/api_methods/133-gets-the-count-of-api-resources-defined-in-all-api-products-approved-for-a-developer-app-in-an-organization" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Gets the count of API resources defined in all API products approved for a developer app in an organization</span></td><td><a href="/api_methods/133-gets-the-count-of-api-resources-defined-in-all-api-products-approved-for-a-developer-app-in-an-organization" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/apps/{app_name}?&quot;query=count&amp;entity={entity_name}&quot;</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets a count of all API resources (URIs) in the API products accessible by a developer app</td></tr>
@@ -145,7 +145,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">List apps by developer</span></td><td><a href="/docs/api/api_methods/5-list-apps-by-developer" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List apps by developer</span></td><td><a href="/api_methods/5-list-apps-by-developer" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/apps</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Lists all apps created by a developer in an organization</td></tr>
@@ -159,7 +159,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">List developer apps (Expanded)</span></td><td><a href="/docs/api/api_methods/96-list-developer-apps-expanded" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List developer apps (Expanded)</span></td><td><a href="/api_methods/96-list-developer-apps-expanded" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/apps?expand=true</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Provides an expanded view of a developer&#x27;s collection of apps</td></tr>
@@ -173,7 +173,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">List developers app by key status</span></td><td><a href="/docs/api/api_methods/225-list-developers-app-by-key-status" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List developers app by key status</span></td><td><a href="/api_methods/225-list-developers-app-by-key-status" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/apps?&quot;keyStatus={consumerkey_status}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Lists developer apps based on the status of the app&#x27;s consumer key (approved | pending | revoked )</td></tr>
@@ -187,7 +187,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Revoke a developer app</span></td><td><a href="/docs/api/api_methods/97-revoke-a-developer-app" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Revoke a developer app</span></td><td><a href="/api_methods/97-revoke-a-developer-app" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/apps/{app_name}?action=revoke</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Revokes a Developer App, disabling access to all API Products</td></tr>
@@ -198,7 +198,7 @@ application/octet-stream
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Update a developer app</span></td><td><a href="/docs/api/api_methods/30-update-a-developer-app" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Update a developer app</span></td><td><a href="/api_methods/30-update-a-developer-app" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/apps/{app_name}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-PUT">PUT</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Updates the app to get a new set of consumer credentials. </td></tr>

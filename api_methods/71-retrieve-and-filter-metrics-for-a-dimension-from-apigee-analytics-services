@@ -40,7 +40,7 @@
            <div class="span12">
 
             <div id="breadcrumb">
-<i><a href="/docs/enterprise/enterprise_home">Home</a> > <a href="/docs/enterprise/content/ref_library">Reference</a> > <a href="/docs/api/api-resources">Platform API Reference</a> > <a href="/docs/api/api_resources/34-stats">Stats</a> > Retrieve and filter metrics for a dimension from Apigee Analytics services</i>
+<i><a href="/docs/enterprise/enterprise_home">Home</a> > <a href="/docs/enterprise/content/ref_library">Reference</a> > <a href="/api-resources">Platform API Reference</a> > <a href="/api_resources/34-stats">Stats</a> > Retrieve and filter metrics for a dimension from Apigee Analytics services</i>
 </div>
 
 <p>
@@ -139,7 +139,7 @@ application/json
 </table>
 
 
-For a complete list of dimensions, metrics, and sample requests, see the <a href="/docs/api/content/reporting-api-analytics">Analytics Developer Guide Topic</a>.
+For a complete list of dimensions, metrics, and sample requests, see the <a href="/content/reporting-api-analytics">Analytics Developer Guide Topic</a>.
 
 Custom dimensions can be added by defining custom variables as described in the <a href="/docs/enterprise/content/analyzing-api-message-content-using-custom-analytics">Custom Analytics Developer Guide Topic</a>.</p>
 	

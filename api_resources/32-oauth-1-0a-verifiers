@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="hBcuSdLMl+LhFYW5YGXLecFhAXZetHwhflaoSioN4yM=" name="csrf-token" />
+<meta content="YLomzWHwrWAr3fPejsP/46AmKvIfLbyQsPs/JUKIStE=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -71,12 +71,12 @@ If the request fails the verification, the server sends a response with an appro
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Delete OAuth 1.0a Verifier</span></td><td><a href="/docs/api/api_methods/151-delete-oauth-1-0a-verifier" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete OAuth 1.0a Verifier</span></td><td><a href="/api_methods/151-delete-oauth-1-0a-verifier" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/oauth1/verifiers/{verifier_code}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Deletes the issued verifier code</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get an OAuth 1.0a verifier</span></td><td><a href="/docs/api/api_methods/149-get-an-oauth-1-0a-verifier" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get an OAuth 1.0a verifier</span></td><td><a href="/api_methods/149-get-an-oauth-1-0a-verifier" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/oauth1/verifiers/{verifier_code}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets the detail of given verifier code</td></tr>
@@ -90,7 +90,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">List OAuth 1.0a verifiers</span></td><td><a href="/docs/api/api_methods/150-list-oauth-1-0a-verifiers" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List OAuth 1.0a verifiers</span></td><td><a href="/api_methods/150-list-oauth-1-0a-verifiers" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/oauth1/verifiers</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">List OAuth 1.0a verifiers</td></tr>

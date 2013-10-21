@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="hBcuSdLMl+LhFYW5YGXLecFhAXZetHwhflaoSioN4yM=" name="csrf-token" />
+<meta content="YLomzWHwrWAr3fPejsP/46AmKvIfLbyQsPs/JUKIStE=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -78,7 +78,7 @@ Administration
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Audit API management operations</span></td><td><a href="/docs/api/api_methods/200-audit-api-management-operations" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Audit API management operations</span></td><td><a href="/api_methods/200-audit-api-management-operations" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/audits/o/{org_name}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Lists audit records  for management operations against APIs, API revisions, and policies. (Note that base path inserts audits before organizations: /audits/organizations/org_name}.</td></tr>
@@ -92,7 +92,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Lists audit entries for a user in an organization</span></td><td><a href="/docs/api/api_methods/201-lists-audit-entries-for-a-user-in-an-organization" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Lists audit entries for a user in an organization</span></td><td><a href="/api_methods/201-lists-audit-entries-for-a-user-in-an-organization" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/users/{user_email}/audits</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">List audit entries for an Apigee user. Note that the base path for this request does not include organization.</td></tr>

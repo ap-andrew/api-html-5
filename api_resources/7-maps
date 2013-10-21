@@ -52,7 +52,7 @@ Appendix
 </div>
 
 <!-- <div class=btn>
-<a href="/docs/api/api_methods/new">Add an API Method</a>
+<a href="/api_methods/new">Add an API Method</a>
 </div> -->
 
 <p><b>API Platform Base Path: </b>https://api.enterprise.apigee.com/v1/o/{org_name}</p>
@@ -74,37 +74,37 @@ Appendix
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Create Map</span></td><td><a href="/docs/api/api_methods/44-create-map" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Create Map</span></td><td><a href="/api_methods/44-create-map" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/maps</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Creates a Map</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Delete Entry</span></td><td><a href="/docs/api/api_methods/48-delete-entry" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete Entry</span></td><td><a href="/api_methods/48-delete-entry" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/maps/{map_name}/entries/{entry_name}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Deletes a single entry by name</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Delete Map</span></td><td><a href="/docs/api/api_methods/63-delete-map" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete Map</span></td><td><a href="/api_methods/63-delete-map" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/maps/{map_name}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Deletes a map and all associated entries.</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get List of Maps (Expanded)</span></td><td><a href="/docs/api/api_methods/158-get-list-of-maps-expanded" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get List of Maps (Expanded)</span></td><td><a href="/api_methods/158-get-list-of-maps-expanded" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/maps?expand=true</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Returns an expanded view of all Maps in an Organization</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get Map</span></td><td><a href="/docs/api/api_methods/45-get-map" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get Map</span></td><td><a href="/api_methods/45-get-map" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/maps/{map_name}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets a map by name, along  with associated entries</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">List Maps</span></td><td><a href="/docs/api/api_methods/46-list-maps" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List Maps</span></td><td><a href="/api_methods/46-list-maps" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/maps</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">List all Maps by name</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Update map</span></td><td><a href="/docs/api/api_methods/62-update-map" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Update map</span></td><td><a href="/api_methods/62-update-map" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/maps/{map_name}</pre></span></td></tr>
 				<tr><td colspan="2"><strong>Verb:</strong></td><td><span class="verb-PUT">PUT</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Updates an existing map</td></tr>

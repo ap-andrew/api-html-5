@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="hBcuSdLMl+LhFYW5YGXLecFhAXZetHwhflaoSioN4yM=" name="csrf-token" />
+<meta content="YLomzWHwrWAr3fPejsP/46AmKvIfLbyQsPs/JUKIStE=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -67,7 +67,7 @@ Administration
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Associate a user with a user role</span></td><td><a href="/docs/api/api_methods/170-associate-a-user-with-a-user-role" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Associate a user with a user role</span></td><td><a href="/api_methods/170-associate-a-user-with-a-user-role" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/users/{user_email}/userroles</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Associates a user with one or more roles</td></tr>
@@ -81,7 +81,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Create a user</span></td><td><a href="/docs/api/api_methods/79-create-a-user" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Create a user</span></td><td><a href="/api_methods/79-create-a-user" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/users</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Creates a user in an Apigee Enterprise Organization</td></tr>
@@ -95,17 +95,17 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Delete a role for a user</span></td><td><a href="/docs/api/api_methods/175-delete-a-role-for-a-user" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete a role for a user</span></td><td><a href="/api_methods/175-delete-a-role-for-a-user" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/users/{user_email}/userroles/{role_name}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Removes a users role membership</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Delete a user from an organization</span></td><td><a href="/docs/api/api_methods/162-delete-a-user-from-an-organization" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete a user from an organization</span></td><td><a href="/api_methods/162-delete-a-user-from-an-organization" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/users/{user_email}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Deletes a user and all associated roles from an organization</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get a user </span></td><td><a href="/docs/api/api_methods/167-get-a-user" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get a user </span></td><td><a href="/api_methods/167-get-a-user" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/users/{user_email}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets the profile for a user in an organization</td></tr>
@@ -119,7 +119,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get roles for a user</span></td><td><a href="/docs/api/api_methods/172-get-roles-for-a-user" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get roles for a user</span></td><td><a href="/api_methods/172-get-roles-for-a-user" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/users/{user_email}/userroles</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Lists all roles for a user</td></tr>
@@ -133,7 +133,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Update a user</span></td><td><a href="/docs/api/api_methods/161-update-a-user" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Update a user</span></td><td><a href="/api_methods/161-update-a-user" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/users/{user_email}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Updates an existing user</td></tr>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="hBcuSdLMl+LhFYW5YGXLecFhAXZetHwhflaoSioN4yM=" name="csrf-token" />
+<meta content="YLomzWHwrWAr3fPejsP/46AmKvIfLbyQsPs/JUKIStE=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -69,7 +69,7 @@ For more background information, see companies for a description of the distinct
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Create an app associated with a company</span></td><td><a href="/docs/api/api_methods/98-create-an-app-associated-with-a-company" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Create an app associated with a company</span></td><td><a href="/api_methods/98-create-an-app-associated-with-a-company" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/companies/{company_name}/apps</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Creates an app for a company</td></tr>
@@ -83,12 +83,12 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Delete a company app</span></td><td><a href="/docs/api/api_methods/67-delete-a-company-app" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete a company app</span></td><td><a href="/api_methods/67-delete-a-company-app" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/companies/{company_name}/apps/{app_name}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Deletes a company app</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get count of API resources (URIs) for a company app</span></td><td><a href="/docs/api/api_methods/66-get-count-of-api-resources-uris-for-a-company-app" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get count of API resources (URIs) for a company app</span></td><td><a href="/api_methods/66-get-count-of-api-resources-uris-for-a-company-app" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/companies/{companyName}/apps/{appname}?query=count&amp;entity=apiresources</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets the count API resources for a company app</td></tr>
@@ -102,7 +102,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">List company apps</span></td><td><a href="/docs/api/api_methods/68-list-company-apps" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List company apps</span></td><td><a href="/api_methods/68-list-company-apps" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/companies/{company_name}/apps</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">List Company Apps in an Organization</td></tr>
@@ -116,7 +116,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">List company apps by key status</span></td><td><a href="/docs/api/api_methods/224-list-company-apps-by-key-status" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List company apps by key status</span></td><td><a href="/api_methods/224-list-company-apps-by-key-status" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/companies/{company_name}/apps?&quot;keyStatus={consumerkey_status}&quot;</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Lists all company apps whose keys are in the specified state ( approved | pending | revoked )</td></tr>
@@ -130,7 +130,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">List company apps (Expanded)</span></td><td><a href="/docs/api/api_methods/69-list-company-apps-expanded" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List company apps (Expanded)</span></td><td><a href="/api_methods/69-list-company-apps-expanded" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/companies/{company_name}/apps?expand=true</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets an expanded list Company Apps</td></tr>
@@ -144,7 +144,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Update a company app</span></td><td><a href="/docs/api/api_methods/65-update-a-company-app" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Update a company app</span></td><td><a href="/api_methods/65-update-a-company-app" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/companies/{company_name}/apps/{app_name}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-PUT">PUT</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Updates an existing Company App</td></tr>
@@ -158,7 +158,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Update a company app with an additional API product</span></td><td><a href="/docs/api/api_methods/132-update-a-company-app-with-an-additional-api-product" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Update a company app with an additional API product</span></td><td><a href="/api_methods/132-update-a-company-app-with-an-additional-api-product" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/companies/{company_name}/apps/{app_name}/keys/{consumer_key}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Update existing app key with an API product.</td></tr>
@@ -172,7 +172,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Update Company App</span></td><td><a href="/docs/api/api_methods/99-update-company-app" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Update Company App</span></td><td><a href="/api_methods/99-update-company-app" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/companies/{company_name}/apps/{app_name}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-PUT">PUT</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Updates an existing company app with a new profile</td></tr>

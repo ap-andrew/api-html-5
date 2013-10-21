@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apigee API Reference</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="hBcuSdLMl+LhFYW5YGXLecFhAXZetHwhflaoSioN4yM=" name="csrf-token" />
+<meta content="YLomzWHwrWAr3fPejsP/46AmKvIfLbyQsPs/JUKIStE=" name="csrf-token" />
     <link href="/assets/application-daf951cde0e371b7f0600bb03230056d.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link rel="shortcut icon" href="http://apigee.com/sites/default/files/apigee_favicon.ico">
@@ -67,7 +67,7 @@ Developer and App Administration
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Create a developer</span></td><td><a href="/docs/api/api_methods/32-create-a-developer" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Create a developer</span></td><td><a href="/api_methods/32-create-a-developer" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Create a developer in an organization</td></tr>
@@ -81,12 +81,12 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Delete a developer</span></td><td><a href="/docs/api/api_methods/39-delete-a-developer" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete a developer</span></td><td><a href="/api_methods/39-delete-a-developer" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Deletes a Developer from an Organization</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get a developer</span></td><td><a href="/docs/api/api_methods/34-get-a-developer" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get a developer</span></td><td><a href="/api_methods/34-get-a-developer" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Returns the profile for a developer by email address.</td></tr>
@@ -100,7 +100,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get the developer of an app</span></td><td><a href="/docs/api/api_methods/138-get-the-developer-of-an-app" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get the developer of an app</span></td><td><a href="/api_methods/138-get-the-developer-of-an-app" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers?app={app_name}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets the developer profile by app name</td></tr>
@@ -114,7 +114,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">List developers</span></td><td><a href="/docs/api/api_methods/9-list-developers" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List developers</span></td><td><a href="/api_methods/9-list-developers" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Lists all developers by email address (the unique key for developers in Apigee)</td></tr>
@@ -128,7 +128,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Set a developer&#x27;s status</span></td><td><a href="/docs/api/api_methods/40-set-a-developer-s-status" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Set a developer&#x27;s status</span></td><td><a href="/api_methods/40-set-a-developer-s-status" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>developers/{developer_email}?action={newStatus}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Sets the status of a developer</td></tr>
@@ -139,7 +139,7 @@ application/octet-stream
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Update a developer</span></td><td><a href="/docs/api/api_methods/38-update-a-developer" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Update a developer</span></td><td><a href="/api_methods/38-update-a-developer" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-PUT">PUT</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Update an existing developer profile with new values or additional attributes.</td></tr>
@@ -153,7 +153,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Update developer status</span></td><td><a href="/docs/api/api_methods/230-update-developer-status" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Update developer status</span></td><td><a href="/api_methods/230-update-developer-status" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}?action={status}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Updates a developer status (active, inactive, login_lock)</td></tr>
