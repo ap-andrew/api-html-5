@@ -29,19 +29,19 @@
             <h1>Oauth</h1>
 <table>
 <tr>
-<td><a href="/api/api_resources/33-oauth-1-0a-access-tokens">OAuth 1.0a Access Tokens</a></td>
+<td><a href="/docs/api/api_resources/33-oauth-1-0a-access-tokens">OAuth 1.0a Access Tokens</a></td>
 </tr>
 <tr>
-<td><a href="/api/api_resources/31-oauth-1-0a-request-tokens">OAuth 1.0a Request Tokens</a></td>
+<td><a href="/docs/api/api_resources/31-oauth-1-0a-request-tokens">OAuth 1.0a Request Tokens</a></td>
 </tr>
 <tr>
-<td><a href="/api/api_resources/32-oauth-1-0a-verifiers">OAuth 1.0a Verifiers</a></td>
+<td><a href="/docs/api/api_resources/32-oauth-1-0a-verifiers">OAuth 1.0a Verifiers</a></td>
 </tr>
 <tr>
-<td><a href="/api/api_resources/28-oauth-2-0-access-tokens">Oauth 2.0 Access Tokens</a></td>
+<td><a href="/docs/api/api_resources/28-oauth-2-0-access-tokens">Oauth 2.0 Access Tokens</a></td>
 </tr>
 <tr>
-<td><a href="/api/api_resources/27-oauth-2-0-authorization-code">Oauth 2.0 Authorization Code</a></td>
+<td><a href="/docs/api/api_resources/27-oauth-2-0-authorization-code">Oauth 2.0 Authorization Code</a></td>
 </tr>
 
 Apigee OAuth support is implemented in a set of OAuth policies. Developers configuring Apigee OAuth for their API resources interact mainly with OAuth policies. APIs can be secured with OAuth without requiring any code to be written. 
