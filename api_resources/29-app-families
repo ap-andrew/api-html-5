@@ -67,7 +67,7 @@ Developer and App Administration
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Create an app family</span></td><td><a href="/api_methods/125-create-an-app-family" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Create an app family</span></td><td><a href="/docs/api/api_methods/125-create-an-app-family" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/appfamilies</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Create an app family for developers</td></tr>
@@ -81,12 +81,12 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Delete an app family</span></td><td><a href="/api_methods/129-delete-an-app-family" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete an app family</span></td><td><a href="/docs/api/api_methods/129-delete-an-app-family" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/appfamilies/{app_family}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Deletes an App Family and all Apps it contains</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get a company app family</span></td><td><a href="/api_methods/55-get-a-company-app-family" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get a company app family</span></td><td><a href="/docs/api/api_methods/55-get-a-company-app-family" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/companies/{companyname}/appfamilies/{appfamily}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2"></td></tr>
@@ -100,7 +100,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get an app family</span></td><td><a href="/api_methods/126-get-an-app-family" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get an app family</span></td><td><a href="/docs/api/api_methods/126-get-an-app-family" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/appfamilies/{app_family}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets a list of apps in an appfamily. Appfamilies can be associated with indiv developers, or with collections of developers, grouped into a company entity.</td></tr>
@@ -114,7 +114,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">List app families </span></td><td><a href="/api_methods/130-list-app-families" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List app families </span></td><td><a href="/docs/api/api_methods/130-list-app-families" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_ email}/app_families</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">List all app families in an organization</td></tr>
@@ -128,7 +128,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">List app families (Expanded)</span></td><td><a href="/api_methods/131-list-app-families-expanded" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List app families (Expanded)</span></td><td><a href="/docs/api/api_methods/131-list-app-families-expanded" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/app_families?expand=true</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">An expanded list of all app families in an organization, listing Apps in the collection </td></tr>
@@ -142,12 +142,12 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Remove an app from an app family</span></td><td><a href="/api_methods/128-remove-an-app-from-an-app-family" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Remove an app from an app family</span></td><td><a href="/docs/api/api_methods/128-remove-an-app-from-an-app-family" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/appfamilies/{app_family}/app/{app_name}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Removes an App from an App Family</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Update a company app famiy</span></td><td><a href="/api_methods/56-update-a-company-app-famiy" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Update a company app famiy</span></td><td><a href="/docs/api/api_methods/56-update-a-company-app-famiy" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/companies/{company_name}/appfamilies/{appfamily_name}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2"></td></tr>
@@ -161,7 +161,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Update an app family</span></td><td><a href="/api_methods/127-update-an-app-family" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Update an app family</span></td><td><a href="/docs/api/api_methods/127-update-an-app-family" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/developers/{developer_email}/appfamilies/{appfamily_name}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Updates an existing app family</td></tr>

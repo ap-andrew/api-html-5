@@ -67,7 +67,7 @@ Administration
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Get a virtual host for an environment</span></td><td><a href="/api_methods/23-get-a-virtual-host-for-an-environment" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get a virtual host for an environment</span></td><td><a href="/docs/api/api_methods/23-get-a-virtual-host-for-an-environment" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/environments/{environment_name}/virtualhosts/{virtualhost_name}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets details for a named virtual host</td></tr>
@@ -81,7 +81,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">List virtual hosts for an environment</span></td><td><a href="/api_methods/22-list-virtual-hosts-for-an-environment" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List virtual hosts for an environment</span></td><td><a href="/docs/api/api_methods/22-list-virtual-hosts-for-an-environment" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/environments/{environment_name}/virtualhosts</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Get a list of named virual hosts for an environment.</td></tr>

@@ -87,12 +87,12 @@ Resource files can be stored at one of three levels:
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Delete a resource file</span></td><td><a href="/api_methods/239-delete-a-resource-file" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete a resource file</span></td><td><a href="/docs/api/api_methods/239-delete-a-resource-file" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/resourcefiles/{resource_type}/{resource_name}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Deletes a resource file from an organization, environment or API proxy</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get a resource file</span></td><td><a href="/api_methods/238-get-a-resource-file" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get a resource file</span></td><td><a href="/docs/api/api_methods/238-get-a-resource-file" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/resourcefiles/{resource_type}/{resource_name}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Gets the body of a resource from an organization, environment, or API proxy.</td></tr>
@@ -106,7 +106,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Import a resource file</span></td><td><a href="/api_methods/236-import-a-resource-file" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Import a resource file</span></td><td><a href="/docs/api/api_methods/236-import-a-resource-file" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/resourcefiles</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">imports and creates a resource file at the prganization, environment, or API proxy level</td></tr>
@@ -117,7 +117,7 @@ application/octet-stream
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">List resource files</span></td><td><a href="/api_methods/237-list-resource-files" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">List resource files</span></td><td><a href="/docs/api/api_methods/237-list-resource-files" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/resourcefiles</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">This method lists resource files available in an organization, an environment, or an API proxy</td></tr>

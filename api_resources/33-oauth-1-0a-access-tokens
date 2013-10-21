@@ -83,7 +83,7 @@ An access token has been generated.</td></tr>
 
 		<table class="table table-bordered">
 		<tbody>
-				<tr><td colspan="2"><span class="lead">Approve OAuth 1.0a  access token</span></td><td><a href="/api_methods/156-approve-oauth-1-0a-access-token" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Approve OAuth 1.0a  access token</span></td><td><a href="/docs/api/api_methods/156-approve-oauth-1-0a-access-token" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/oauth1/accesstokens/{access_token}?action=approve</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Approves the specified Access Token</td></tr>
@@ -94,12 +94,12 @@ application/octet-stream
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Delete an Oauth 1.0a access token</span></td><td><a href="/api_methods/155-delete-an-oauth-1-0a-access-token" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Delete an Oauth 1.0a access token</span></td><td><a href="/docs/api/api_methods/155-delete-an-oauth-1-0a-access-token" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/oauth1/accesstokens/{access_token}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-DELETE">DELETE</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Deletes the specified access token</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get count of OAuth 1.0a access tokens</span></td><td><a href="/api_methods/153-get-count-of-oauth-1-0a-access-tokens" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get count of OAuth 1.0a access tokens</span></td><td><a href="/docs/api/api_methods/153-get-count-of-oauth-1-0a-access-tokens" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/oauth1/accesstokens</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Returns a count of all 1.0a access tokens in an orgnization</td></tr>
@@ -113,7 +113,7 @@ text/xml
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Get OAuth 1.0a access token</span></td><td><a href="/api_methods/152-get-oauth-1-0a-access-token" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Get OAuth 1.0a access token</span></td><td><a href="/docs/api/api_methods/152-get-oauth-1-0a-access-token" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/oauth1/accesstokens/{access_token}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-GET">GET</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Fetches the details of given access token</td></tr>
@@ -124,7 +124,7 @@ application/octet-stream
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Revoke an OAuth 1.0a access token</span></td><td><a href="/api_methods/157-revoke-an-oauth-1-0a-access-token" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Revoke an OAuth 1.0a access token</span></td><td><a href="/docs/api/api_methods/157-revoke-an-oauth-1-0a-access-token" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/oauth1/accesstokens/{access_token}?action=revoke</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Revokes the specified access token</td></tr>
@@ -135,7 +135,7 @@ application/octet-stream
 </div>
 				</td></tr>
 		  		<tr><td><strong>Auth:</strong></td><td colspan="2">Basic Auth</td></tr>
-				<tr><td colspan="2"><span class="lead">Update OAuth 1.0a Access Token</span></td><td><a href="/api_methods/154-update-oauth-1-0a-access-token" class="btn btn-mini">Detail</a></td> 
+				<tr><td colspan="2"><span class="lead">Update OAuth 1.0a Access Token</span></td><td><a href="/docs/api/api_methods/154-update-oauth-1-0a-access-token" class="btn btn-mini">Detail</a></td> 
 			    <tr><td colspan="3"><span id="well"><pre>/oauth1/accesstokens/{access_token}</pre></span></td></tr>
 				<tr><td><strong>Verb:</strong></td><td><span class="verb-POST">POST</span> </td></tr>
 				<tr><td><strong>Description:</strong></td><td colspan="2">Updates the attributes of given accesstoken</td></tr>
